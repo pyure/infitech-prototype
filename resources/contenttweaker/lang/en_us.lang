@@ -1,0 +1,49 @@
+contenttweaker.part.purified_ore=Purified %s Ore
+contenttweaker.part.tiny_dust=Tiny Pile of %s Dust
+contenttweaker.part.washed_ore=Washed %s Ore
+contenttweaker.part.ore_flake=%s Flakes
+contenttweaker.part.crushed_ore=Crushed %s Ore
+contenttweaker.part.industrial_turbine_rotor=Industrial %s Turbine Rotor
+contenttweaker.part.large_turbine_rotor=Large %s Turbine Rotor
+contenttweaker.part.standard_turbine_rotor=Standard %s Turbine Rotor
+contenttweaker.part.small_turbine_rotor=Small %s Turbine Rotor
+contenttweaker.part.machine_frame=%s Machine Frame
+contenttweaker.part.agitator=%s Agitator Unit
+contenttweaker.part.mortar=%s Mortar
+contenttweaker.part.macerator_blade=%s Macerator Blade
+contenttweaker.part.electrode=%s Electrode
+contenttweaker.part.gearbox=%s Gearbox
+contenttweaker.part.screw=%s Screw
+contenttweaker.part.heat_conductor=%s Heat Conductor
+contenttweaker.part.wire=%s Wire
+contenttweaker.part.cable=%s Cable
+
+item.contenttweaker.sticky_resin.name=Sticky Resin
+item.contenttweaker.tree_tap.name=Tree Tap
+item.contenttweaker.rubber.name=Rubber
+item.contenttweaker.raw_rubber.name=Raw Rubber
+item.contenttweaker.bronze_mortar.name=Bronze Mortar
+item.contenttweaker.flint_mortar.name=Flint Mortar
+item.contenttweaker.iron_mortar.name=Iron Mortar
+item.contenttweaker.steel_mortar.name=Steel Mortar
+
+
+item.contenttweaker.bronze_hammer.name=Bronze Hammer
+item.contenttweaker.flint_hammer.name=Flint Hammer
+item.contenttweaker.iron_hammer.name=Iron Hammer
+item.contenttweaker.steel_hammer.name=Steel Hammer
+
+item.contenttweaker.bronze_wrench.name=Bronze Wrench
+item.contenttweaker.flint_wrench.name=Flint Wrench
+item.contenttweaker.iron_wrench.name=Iron Wrench
+item.contenttweaker.steel_wrench.name=Steel Wrench
+
+
+tile.contenttweaker.bronze_plated_brick.name=Bronze Plated Brick
+tile.contenttweaker.dried_spruce_log.name=Dried Spruce Log
+
+// FLUIDS
+fluid.fluid_latex=Latex
+fluid.fluid_distilled_water=Distilled Water
+fluid.fluid_placeholder_acid1=Placeholder Acid I
+fluid.fluid_placeholder_acid2=Placeholder Acid II

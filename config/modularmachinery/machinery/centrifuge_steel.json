@@ -1,0 +1,168 @@
+{
+    "registryname": "centrifuge_steel",
+    "localizedname": "Steel Centrifuge",
+    "requires-blueprint": true, 
+    "color": "4E4E4E",      
+    "parts": [
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": "ct_machine_frame_steel"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": ["casings_all", "ct_machine_frame_steel"]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": "ct_machine_frame_steel"
+        },
+
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": ["casings_all", "ct_machine_frame_steel"]
+        },
+
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": ["casings_all", "ct_machine_frame_steel"]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": ["casings_all", "ct_machine_frame_steel"]
+        },
+
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": "ct_machine_frame_steel"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": ["casings_all", "ct_machine_frame_steel"]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": "ct_machine_frame_steel"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": "minecraft:iron_block"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": "minecraft:iron_block"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": "minecraft:iron_block"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": "minecraft:iron_block"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": "minecraft:iron_bars"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": "minecraft:iron_bars"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": "minecraft:iron_bars"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": "minecraft:iron_bars"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": "minecraft:glass"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": "minecraft:iron_block"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": "minecraft:iron_block"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": "minecraft:iron_block"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": "minecraft:iron_bars"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": "minecraft:iron_bars"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": "minecraft:iron_bars"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": "minecraft:iron_bars"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": "minecraft:water"
+        }
+
+    ]
+}

@@ -1,0 +1,39 @@
+{
+	"drop_pools": [{
+		"name": "harvest_resin_from_spruce",
+		"type": {
+			"type": "block",
+			"name": "minecraft:log",
+			"meta": 1
+		},
+		"properties": [{
+				"type": "set_block_replacement",
+				"name": "contenttweaker:dried_spruce_log",
+				"chance": 20
+			},
+			{
+				"type": "require_item",
+				"name": "contenttweaker:tree_tap"
+			},
+			{
+				"type": "damage_item",
+				"damage": 1
+			},
+			{
+				"type": "set_rolls",
+				"amount": 2
+			}
+
+		],
+
+		"drops": {
+			"type": "item",
+			"name": "contenttweaker:sticky_resin",
+			"properties": {
+				"type": "set_chance",
+				"chance": 60,
+				"max_rolls": 2
+			}
+		}
+	}]
+}

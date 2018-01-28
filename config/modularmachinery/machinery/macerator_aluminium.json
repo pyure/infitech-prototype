@@ -1,0 +1,99 @@
+{
+        "registryname": "macerator_aluminium", 
+        "localizedname": "Aluminium Macerator (MV/III)", 
+        "requires-blueprint": true, 
+        "color": "80C8F0",  
+        "parts": [
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_aluminium",
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockenergyoutputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_aluminium",
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockenergyoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_aluminium"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_aluminium"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": "casings_all"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_aluminium",
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockenergyoutputhatch" 
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": "casings_all"
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_aluminium"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_aluminium"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_aluminium"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "minecraft:iron_bars@0",
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockenergyoutputhatch"
+            ]
+        }
+    ]}
