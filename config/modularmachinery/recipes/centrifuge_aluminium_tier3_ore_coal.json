@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_aluminium",
   "registryName": "centrifuge_aluminium_tier3_ore_coal",
-  "recipeTime": 10,
+  "recipeTime": 20,
   "requirements": [
     {
       "type": "energy",
@@ -9,7 +9,7 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 4826,
+      "energyPerTick": 2413,
       "chance": 1.0
     },
     {
@@ -24,7 +24,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@144",
+      "item": "ore:dustCoal",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@145",
+      "item": "ore:tinyDustCoal",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@285",
+      "item": "ore:tinyDustThorium",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,

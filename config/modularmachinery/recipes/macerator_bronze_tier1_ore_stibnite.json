@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@299",
+      "item": "ore:crushedOreStibnite",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,

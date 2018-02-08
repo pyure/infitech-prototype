@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@231",
+      "item": "ore:crushedOreTin",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@232",
+      "item": "ore:dustTin",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,

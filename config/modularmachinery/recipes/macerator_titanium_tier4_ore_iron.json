@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@240",
+      "item": "ore:dustIron",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@257",
+      "item": "ore:tinyDustNickel",
       "amount": 12,
       "fluid": null,
       "energyPerTick": 0,

@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@220",
+      "item": "ore:dustManganese",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@221",
+      "item": "ore:tinyDustManganese",
       "amount": 12,
       "fluid": null,
       "energyPerTick": 0,

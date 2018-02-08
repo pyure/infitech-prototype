@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@228",
+      "item": "ore:dustIridium",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@229",
+      "item": "ore:tinyDustIridium",
       "amount": 12,
       "fluid": null,
       "energyPerTick": 0,

@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_bronze",
   "registryName": "centrifuge_bronze_tier1_ore_gold",
-  "recipeTime": 120,
+  "recipeTime": 240,
   "requirements": [
     {
       "type": "fluid",
@@ -24,7 +24,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@236",
+      "item": "ore:dustGold",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@249",
+      "item": "ore:tinyDustCopper",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@237",
+      "item": "ore:tinyDustGold",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,

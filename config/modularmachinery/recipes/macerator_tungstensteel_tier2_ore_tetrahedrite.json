@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@295",
+      "item": "ore:crushedOreTetrahedrite",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@296",
+      "item": "ore:dustTetrahedrite",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,

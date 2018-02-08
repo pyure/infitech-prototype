@@ -60,8 +60,8 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@245",
-      "amount": 10,
+      "item": "ore:tinyDustSilver",
+      "amount": 9,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0

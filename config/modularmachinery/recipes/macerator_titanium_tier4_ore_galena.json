@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@320",
+      "item": "ore:dustGalena",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@253",
+      "item": "ore:tinyDustLead",
       "amount": 12,
       "fluid": null,
       "energyPerTick": 0,

@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@243",
+      "item": "ore:crushedOreSilver",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@244",
+      "item": "ore:dustSilver",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,

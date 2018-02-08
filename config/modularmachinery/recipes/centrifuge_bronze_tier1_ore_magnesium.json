@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_bronze",
   "registryName": "centrifuge_bronze_tier1_ore_magnesium",
-  "recipeTime": 120,
+  "recipeTime": 240,
   "requirements": [
     {
       "type": "fluid",
@@ -24,7 +24,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@216",
+      "item": "ore:dustMagnesium",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@217",
+      "item": "ore:tinyDustMagnesium",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@217",
+      "item": "ore:tinyDustMagnesium",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,

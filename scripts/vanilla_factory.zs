@@ -5,6 +5,7 @@ import mods.contenttweaker.Block;
 import mods.contenttweaker.Item;
 import crafttweaker.item.IItemStack;
 import mods.contenttweaker.IItemDestroySpeed;
+import mods.contenttweaker.IItemDestroyedBlock;
 
 
 // BLOCKS
@@ -38,8 +39,11 @@ test_pick.maxDamage = 10;
 test_pick.maxStackSize = 1;
 test_pick.toolLevel = 3;
 test_pick.itemDestroySpeed = function(stack, block){
-//  stack.damage += 1;
   return 10.0 as float;
+};
+test_pick.itemDestroyedBlock = function(stack, world, blockState, pos, entity){
+  stack.damage(1, entity);
+  return true;
 };
 test_pick.register();
 
@@ -141,7 +145,6 @@ for tool_metal in tool_metals {
     tool.itemGetContainerItem = function(item) {
       return (item.damage + 1 < item.maxDamage) ? item.withDamage(item.damage + 1) : null;
     };
-    
     tool.register();
   }
 }
