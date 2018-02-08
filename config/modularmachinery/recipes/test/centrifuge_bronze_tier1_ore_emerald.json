@@ -1,0 +1,52 @@
+{
+  "machine": "centrifuge_bronze",
+  "registryName": "centrifuge_bronze_tier1_ore_emerald",
+  "recipeTime": 240,
+  "requirements": [
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 4800,
+      "fluid": "steam",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:washed_oreEmerald",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@323",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@324",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@193",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

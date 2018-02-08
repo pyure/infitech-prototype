@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@268",
+      "item": "ore:dustLithium",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@269",
+      "item": "ore:tinyDustLithium",
       "amount": 12,
       "fluid": null,
       "energyPerTick": 0,

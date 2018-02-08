@@ -1,0 +1,52 @@
+{
+  "machine": "centrifuge_titanium",
+  "registryName": "centrifuge_titanium_tier4_ore_thorium",
+  "recipeTime": 7,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 15404,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:washed_oreThorium",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@144",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@137",
+      "amount": 3,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@141",
+      "amount": 3,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

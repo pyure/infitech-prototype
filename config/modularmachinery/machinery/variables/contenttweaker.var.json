@@ -1,32 +1,32 @@
 {
   "ct_agitator_aluminium": [
-    "contenttweaker:sub_block_holder_2@11"
+    "contenttweaker:sub_block_holder_0@2"
   ],
   "ct_agitator_bronze": [
-    "contenttweaker:sub_block_holder_3@6"
+    "contenttweaker:sub_block_holder_0@3"
   ],
   "ct_agitator_steel": [
-    "contenttweaker:sub_block_holder_4@8"
+    "contenttweaker:sub_block_holder_0@4"
   ],
   "ct_agitator_titanium": [
-    "contenttweaker:sub_block_holder_2@8"
+    "contenttweaker:sub_block_holder_0@8"
   ],
   "ct_agitator_tungstensteel": [
-    "contenttweaker:sub_block_holder_0@12"
+    "contenttweaker:sub_block_holder_0@9"
   ],
   "ct_machine_frame_aluminium": [
-    "contenttweaker:sub_block_holder_0@13"
+    "contenttweaker:sub_block_holder_0@0"
   ],
   "ct_machine_frame_bronze": [
-    "contenttweaker:sub_block_holder_4@10"
+    "contenttweaker:sub_block_holder_0@7"
   ],
   "ct_machine_frame_steel": [
-    "contenttweaker:sub_block_holder_0@10"
+    "contenttweaker:sub_block_holder_0@5"
   ],
   "ct_machine_frame_titanium": [
-    "contenttweaker:sub_block_holder_1@7"
+    "contenttweaker:sub_block_holder_0@6"
   ],
   "ct_machine_frame_tungstensteel": [
-    "contenttweaker:sub_block_holder_0@3"
+    "contenttweaker:sub_block_holder_0@1"
   ]
 }

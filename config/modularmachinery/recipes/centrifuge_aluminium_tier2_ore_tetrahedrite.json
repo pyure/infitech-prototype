@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@208",
+      "item": "ore:dustAntimony",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -69,7 +69,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@209",
+      "item": "ore:tinyDustAntimony",
       "amount": 3,
       "fluid": null,
       "energyPerTick": 0,

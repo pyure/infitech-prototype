@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_tungstensteel",
   "registryName": "centrifuge_tungstensteel_tier4_ore_nickel",
-  "recipeTime": 1,
+  "recipeTime": 3,
   "requirements": [
     {
       "type": "energy",
@@ -9,7 +9,7 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 73939,
+      "energyPerTick": 36969,
       "chance": 1.0
     },
     {
@@ -24,7 +24,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@256",
+      "item": "ore:dustNickel",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@213",
+      "item": "ore:tinyDustCobalt",
       "amount": 4,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@225",
+      "item": "ore:tinyDustPlatinum",
       "amount": 4,
       "fluid": null,
       "energyPerTick": 0,

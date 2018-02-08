@@ -1,0 +1,52 @@
+{
+  "machine": "centrifuge_aluminium",
+  "registryName": "centrifuge_aluminium_tier3_ore_aluminium",
+  "recipeTime": 20,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 2413,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:washed_oreAluminium",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@152",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@153",
+      "amount": 2,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@153",
+      "amount": 2,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

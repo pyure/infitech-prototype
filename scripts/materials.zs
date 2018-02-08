@@ -74,7 +74,7 @@ var ilmenite = MaterialSystem.getMaterialBuilder().setName('Ilmenite').setColor(
 var pitchblende = MaterialSystem.getMaterialBuilder().setName('Pitchblende').setColor(13160960).build();
 var emerald = MaterialSystem.getMaterialBuilder().setName('Emerald').setColor(5308240).build();
 var sulfur =  MaterialSystem.getMaterialBuilder().setName('Sulfur').setColor(13158400).build();
-
+var flint =  MaterialSystem.getMaterialBuilder().setName('Flint').setColor(8256).build();
 
 /*
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setPartType(MaterialSystem.getPartType("item")).build();
@@ -87,16 +87,18 @@ var turbine_rotor_metals_list = [steel] as Material[];
 var mortar_metals_list = [iron, copper, bronze, steel] as Material[];
 var machine_subcomponents_list = [bronze, steel, titanium, tungstensteel, aluminium] as Material[];
 var gemstone_list = [diamond, coal, redstone, nether_quartz] as Material[];
+var tool_metal_list = [flint, bronze, iron, steel] as Material[];
 
 var part_names = ["nugget", "ingot", "plate", "rod", "screw"] as string[]; 
 var gemstone_part_names = ["dust", "tiny_dust", "crushed_ore", "washed_ore"] as string[];
 var ore_part_names = ["crushed_ore", "dust", "tiny_dust", "washed_ore"] as string[]; 
 
+
 // ORES
 var ore_list = [antimony, cobalt, pyrolusite, tetrahedrite, stibnite, graphite, lignite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, limonite] as Material[];
-var ore_byproducts_list = [
-  antimony,  cobalt, magnesium, manganese, platinum, iridium, tin, gold, iron, silver, copper, lead, nickel, chrome, lapis, lithium, boron, uranium238, 
-  uranium235, thorium, zinc, aluminium, tetrahedrite, stibnite, graphite, lignite, limonite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, pyrolusite, emerald, sulfur] as Material[];
+var ore_byproducts_list = [antimony, cobalt, magnesium, manganese, platinum, iridium, tin, gold, iron, silver, copper, lead, nickel, chrome, lapis, lithium, boron, uranium238, uranium235, thorium, zinc, aluminium, 
+                      tetrahedrite, stibnite, graphite, lignite, limonite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, pyrolusite, emerald, sulfur] as Material[];
+//
 var ore_types = ["ore"] as string[];
 
 // Add "item" parts here
@@ -114,13 +116,50 @@ mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Standard Turbine Ro
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Small Turbine Rotor").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Screw").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Wire").setPartType(MaterialSystem.getPartType("item")).build();
-
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Axe Head").setPartType(MaterialSystem.getPartType("item")).build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Pickaxe Head").setPartType(MaterialSystem.getPartType("item")).build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Saw Blade").setPartType(MaterialSystem.getPartType("item")).build();
 
 // Add "block" parts here
 var machineFrame = MaterialSystem.getPartBuilder().setName("machine_frame").setPartType(MaterialSystem.getPartType("storage")).build(); // "machine_frame" instead of "Machine Frame" due to a potential bug; reported to team.
 var agitator = MaterialSystem.getPartBuilder().setName("agitator").setPartType(MaterialSystem.getPartType("storage")).build();
 
+for i, gemstone in gemstone_list {
+    gemstone.registerParts(gemstone_part_names);
+}
 
+for i, metal in ore_byproducts_list {
+    metal.registerParts(ore_part_names);
+}
+
+for i, metal in tool_metal_list {
+    metal.registerPart("axe_head");
+    metal.registerPart("pickaxe_head");
+    metal.registerPart("saw_blade");
+}
+
+for i, metal in machine_frame_metals_list {
+    metal.registerPart(machineFrame);
+    metal.registerPart(agitator);
+}
+
+for i, metal in turbine_rotor_metals_list {
+    metal.registerPart("small_turbine_rotor");
+    metal.registerPart("standard_turbine_rotor");
+    metal.registerPart("large_turbine_rotor");
+    metal.registerPart("industrial_turbine_rotor");
+}
+
+for i, metal in machine_subcomponents_list {
+   metal.registerPart("macerator_blade");
+   metal.registerPart("electrode");
+   metal.registerPart("gearbox");
+   metal.registerPart("heat_conductor");
+   metal.registerPart("wire");
+}
+  
+
+  
 for i, metal in metal_list {
     metal.registerParts(part_names);
 
@@ -129,39 +168,6 @@ for i, metal in metal_list {
     blockData.addDataValue("resistance", "30");
     blockData.addDataValue("harvestTool", "pickaxe");
     blockData.addDataValue("harvestLevel", "1");  
-}
-
-for i, gemstone in gemstone_list {
-    gemstone.registerParts(gemstone_part_names);
-}
-
-for i, metal in machine_frame_metals_list {
-    metal.registerPart(machineFrame);
-    metal.registerPart(agitator);
-}
-
-for i, metal in mortar_metals_list {
-//  var someItem = metal.registerPart("mortar");
- // var item = <materialpart:metal:mortar>;
-  //var someStack = someItem.makeStack(0);
-  //item.itemGetContainerItem = function(item) {
- //   return (item.damage < item.maxDamage) ? item.withDamage(item.damage + 1) : null;
- // };
-}
-
-for i, metal in machine_subcomponents_list {
-   //metal.registerPart("macerator_blade");
-   metal.registerPart("electrode");
-   metal.registerPart("gearbox");
-   metal.registerPart("heat_conductor");
-   metal.registerPart("wire");
-}
-
-for i, metal in turbine_rotor_metals_list {
-    metal.registerPart("small_turbine_rotor");
-    metal.registerPart("standard_turbine_rotor");
-    metal.registerPart("large_turbine_rotor");
-    metal.registerPart("industrial_turbine_rotor");
 }
 
 for i, metal in ore_list {
@@ -176,6 +182,15 @@ for i, metal in ore_list {
     }
 }
 
-for i, ore in ore_byproducts_list {
-    ore.registerParts(ore_part_names);
-}
+/*
+
+
+
+
+
+
+
+
+
+
+*/

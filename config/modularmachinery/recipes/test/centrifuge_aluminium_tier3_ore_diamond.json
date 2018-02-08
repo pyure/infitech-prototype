@@ -1,0 +1,52 @@
+{
+  "machine": "centrifuge_aluminium",
+  "registryName": "centrifuge_aluminium_tier3_ore_diamond",
+  "recipeTime": 20,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 2413,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:washed_oreDiamond",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@0",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@1",
+      "amount": 2,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@1",
+      "amount": 2,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

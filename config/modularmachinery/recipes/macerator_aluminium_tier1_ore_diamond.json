@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@141",
+      "item": "ore:crushedOreDiamond",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,

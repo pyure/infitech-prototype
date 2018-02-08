@@ -151,6 +151,37 @@ var mortar_flint = <contenttweaker:flint_mortar:32767>;
 var mortar_bronze = <contenttweaker:bronze_mortar:32767>;
 var mortar_iron = <contenttweaker:iron_mortar:32767>;
 var mortar_steel = <contenttweaker:steel_mortar:32767>;
+
+var oreFlint = <ore:ingotFlint>;  // name is a bit silly but makes it simpler to add dynamic recipes
+oreFlint.add(<minecraft:flint>);
+
+global tool_metals as string[] = [
+    "Flint",
+    "Bronze",
+    "Iron",
+    "Steel"
+];
+
+val mortar_metal_items = {
+    "Flint" : <contenttweaker:flint_mortar>,
+    "Bronze" : <contenttweaker:bronze_mortar>,
+    "Iron" : <contenttweaker:iron_mortar>,
+    "Steel" : <contenttweaker:steel_mortar>
+}  as IItemStack[string];
+
+
+for metal_name in tool_metals {
+  var oreDictName = "ingot" + metal_name;
+  var outputItem = mortar_metal_items[metal_name] as crafttweaker.item.IItemStack;
+  recipes.remove(outputItem);
+  recipes.addShaped(outputItem * 1, [[null, oreDict[oreDictName], null], 
+    [<ore:stone>, oreDict[oreDictName], <ore:stone>], 
+    [<ore:stone>,<ore:stone>,<ore:stone>]]);
+}
+
+
+    
+    
 var oreMortars = <ore:mortars>;
 oreMortars.add(mortar_flint);
 oreMortars.add(mortar_bronze);
@@ -300,7 +331,6 @@ recipes.remove(<forestry:ingot_bronze> * 4);
 
 // GREGGY WIDGETS
 var bronzePlatedBrick = <contenttweaker:bronze_plated_brick>;
-var plateBronze = <contenttweaker:material_part:121>;
 
 recipes.addShaped(bronzePlatedBrick, [[<ore:plateBronze>, oreHammers, <ore:plateBronze>], 
   [<ore:plateBronze>, blockBrick, <ore:plateBronze>], 

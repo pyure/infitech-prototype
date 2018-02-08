@@ -15,7 +15,7 @@
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:oreAluminium",
+      "item": "ore:oreAluminum",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@292",
+      "item": "ore:dustAluminium",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@293",
+      "item": "ore:tinyDustAluminium",
       "amount": 12,
       "fluid": null,
       "energyPerTick": 0,

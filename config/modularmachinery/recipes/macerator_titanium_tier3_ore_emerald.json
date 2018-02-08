@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@343",
+      "item": "ore:crushedOreEmerald",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@344",
+      "item": "ore:dustEmerald",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -51,7 +51,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@333",
+      "item": "ore:tinyDustBeryllium",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,

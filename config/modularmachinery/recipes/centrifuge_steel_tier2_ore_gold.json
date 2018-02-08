@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_steel",
   "registryName": "centrifuge_steel_tier2_ore_gold",
-  "recipeTime": 30,
+  "recipeTime": 60,
   "requirements": [
     {
       "type": "energy",
@@ -9,7 +9,7 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 506,
+      "energyPerTick": 253,
       "chance": 1.0
     },
     {
@@ -24,7 +24,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@236",
+      "item": "ore:dustGold",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@249",
+      "item": "ore:tinyDustCopper",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@237",
+      "item": "ore:tinyDustGold",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -51,7 +51,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@249",
+      "item": "ore:tinyDustCopper",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -60,7 +60,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@237",
+      "item": "ore:tinyDustGold",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,

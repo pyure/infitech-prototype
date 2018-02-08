@@ -1,0 +1,52 @@
+{
+  "machine": "centrifuge_tungstensteel",
+  "registryName": "centrifuge_tungstensteel_tier4_ore_redstone",
+  "recipeTime": 3,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 36969,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:washed_oreRedstone",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@8",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@9",
+      "amount": 4,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "contenttweaker:material_part@121",
+      "amount": 4,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

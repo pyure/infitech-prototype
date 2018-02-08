@@ -36,7 +36,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 11,
+            "metadata": 10,
             "weight": 95
           },
           {
@@ -71,7 +71,7 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 7,
+            "metadata": 8,
             "weight": 70
           },
           {
@@ -111,7 +111,7 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 11,
+            "metadata": 10,
             "weight": 5
           }
         ],
@@ -141,12 +141,12 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_0",
-            "metadata": 5,
+            "metadata": 14,
             "weight": 20
           },
           {
-            "name": "contenttweaker:sub_block_holder_0",
-            "metadata": 14,
+            "name": "contenttweaker:sub_block_holder_1",
+            "metadata": 4,
             "weight": 15
           },
           {
@@ -176,7 +176,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_3",
-            "metadata": 9,
+            "metadata": 10,
             "weight": 80
           },
           {
@@ -300,8 +300,8 @@
             "weight": 55
           },
           {
-            "name": "contenttweaker:sub_block_holder_0",
-            "metadata": 8,
+            "name": "contenttweaker:sub_block_holder_1",
+            "metadata": 1,
             "weight": 30
           },
           {
@@ -361,12 +361,12 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 12,
+            "metadata": 11,
             "weight": 70
           },
           {
-            "name": "contenttweaker:sub_block_holder_0",
-            "metadata": 11,
+            "name": "contenttweaker:sub_block_holder_1",
+            "metadata": 3,
             "weight": 30
           }
         ],
@@ -441,7 +441,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 2,
+            "metadata": 4,
             "weight": 70
           },
           {
@@ -516,7 +516,7 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_3",
-            "metadata": 11,
+            "metadata": 12,
             "weight": 80
           }
         ],
@@ -541,7 +541,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 1,
+            "metadata": 3,
             "weight": 100
           }
         ],
@@ -641,7 +641,7 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_0",
-            "metadata": 5,
+            "metadata": 14,
             "weight": 45
           },
           {
@@ -671,7 +671,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 11,
+            "metadata": 10,
             "weight": 65
           },
           {
@@ -746,7 +746,7 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_0",
-            "metadata": 5,
+            "metadata": 14,
             "weight": 45
           },
           {
@@ -776,7 +776,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 11,
+            "metadata": 10,
             "weight": 65
           },
           {

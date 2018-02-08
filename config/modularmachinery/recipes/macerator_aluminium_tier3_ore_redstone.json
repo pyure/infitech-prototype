@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@151",
+      "item": "ore:crushedOreRedstone",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@149",
+      "item": "ore:dustRedstone",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -51,7 +51,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@261",
+      "item": "ore:tinyDustChrome",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,

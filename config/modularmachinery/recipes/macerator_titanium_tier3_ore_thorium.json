@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@283",
+      "item": "ore:crushedOreThorium",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@284",
+      "item": "ore:dustThorium",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -51,7 +51,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@277",
+      "item": "ore:tinyDustUranium238",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,

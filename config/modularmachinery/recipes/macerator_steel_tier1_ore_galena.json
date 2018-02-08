@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@319",
+      "item": "ore:crushedOreGalena",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,

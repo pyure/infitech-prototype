@@ -1,0 +1,52 @@
+{
+  "machine": "blastfurnace_brick",
+  "registryName": "blastfurnace_brick_tier1_bf_ingot_bronze",
+  "recipeTime": 620,
+  "requirements": [
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 8000,
+      "fluid": "steam",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:heatConductorBronze",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:dustCopper",
+      "amount": 3,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:dustTin",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:ingotBronze",
+      "amount": 4,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

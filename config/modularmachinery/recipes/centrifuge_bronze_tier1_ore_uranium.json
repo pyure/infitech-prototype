@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_bronze",
   "registryName": "centrifuge_bronze_tier1_ore_uranium",
-  "recipeTime": 120,
+  "recipeTime": 240,
   "requirements": [
     {
       "type": "fluid",
@@ -15,7 +15,7 @@
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:washed_oreUranium",
+      "item": "ore:washed_oreUranium238",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -24,7 +24,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@276",
+      "item": "ore:dustUranium238",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@285",
+      "item": "ore:tinyDustThorium",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@281",
+      "item": "ore:tinyDustUranium235",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,

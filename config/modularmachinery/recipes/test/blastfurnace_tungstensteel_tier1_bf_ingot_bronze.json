@@ -1,0 +1,52 @@
+{
+  "machine": "blastfurnace_tungstensteel",
+  "registryName": "blastfurnace_tungstensteel_tier1_bf_ingot_bronze",
+  "recipeTime": 19,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 206,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:heatConductorBronze",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:dustCopper",
+      "amount": 3,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:dustTin",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:ingotBronze",
+      "amount": 4,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

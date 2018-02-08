@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@255",
+      "item": "ore:crushedOreNickel",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@224",
+      "item": "ore:dustPlatinum",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -51,7 +51,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@225",
+      "item": "ore:tinyDustPlatinum",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,

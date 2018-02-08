@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@263",
+      "item": "ore:crushedOreLapis_lazuli",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,7 +42,7 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "contenttweaker:material_part@264",
+      "item": "ore:dustLapis_lazuli",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
