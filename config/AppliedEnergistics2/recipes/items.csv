@@ -880,6 +880,44 @@ forestry:resource_storage:2, Block of Tin
 forestry:resource_storage:3, Block of Bronze
 forestry:ash_brick:0, Ash Bricks
 forestry:ash_stairs:0, Ash Brick Stairs
+forestry:crate, Crate
+forestry:apiarist_bag, Apiarist's Backpack
+forestry:lepidopterist_bag, Lepidopterist's Backpack
+forestry:miner_bag, Mining Backpack
+forestry:miner_bag_t2, Woven Mining Backpack
+forestry:digger_bag, Digging Backpack
+forestry:digger_bag_t2, Woven Digging Backpack
+forestry:forester_bag, Foresting Backpack
+forestry:forester_bag_t2, Woven Foresting Woven Backpack
+forestry:hunter_bag, Hunting Backpack
+forestry:hunter_bag_t2, Hunter's Woven Backpack
+forestry:adventurer_bag, Adventuring Backpack
+forestry:adventurer_bag_t2, Woven Adventuring Backpack
+forestry:builder_bag, Building Backpack
+forestry:builder_bag_t2, Woven Building Backpack
+forestry:stamps:0, Stamp (1n)
+forestry:stamps:1, Stamp (2n)
+forestry:stamps:2, Stamp (5n)
+forestry:stamps:3, Stamp (10n)
+forestry:stamps:4, Stamp (20n)
+forestry:stamps:5, Stamp (50n)
+forestry:stamps:6, Stamp (100n)
+forestry:letters, Letter
+forestry:catalogue, Catalogue
+forestry:mailbox:0, Mailbox
+forestry:trade_station:0, Trade Station
+forestry:stamp_collector:0, Stamp Collector
+forestry:greenhouse:0, Greenhouse Block
+forestry:greenhouse:3, Greenhouse Energy Distributor
+forestry:greenhouse:4, Greenhouse Control
+forestry:greenhouse:5, Greenhouse Screen
+forestry:climatiser:0, Greenhouse Hygroregulator
+forestry:climatiser:1, Greenhouse Heater
+forestry:climatiser:2, Greenhouse Fan
+forestry:climatiser:3, Greenhouse Humidifier
+forestry:climatiser:4, Greenhouse Dehumidifier
+forestry:greenhouse_screen, Portable Greenhouse Screen
+forestry:camouflage_spray_can, Camouflage Spray Can
 forestry:habitat_locator, Habitat Locator
 forestry:imprinter, Imprinter
 forestry:cart.beehouse:0, Minecart with Bee House
@@ -939,61 +977,69 @@ forestry:alveary.heater:0, Alveary Heater
 forestry:alveary.hygro:0, Alveary Hygroregulator
 forestry:alveary.stabiliser:0, Alveary Stabiliser
 forestry:alveary.sieve:0, Alveary Sieve
-forestry:fluid.bio.ethanol, Ethanol
-forestry:fluid.biomass, Biomass
-forestry:fluid.glass, Liquid Glass
-forestry:fluid.for.honey, Honey
-forestry:fluid.ice, Crushed Ice
-forestry:fluid.juice, Fruit Juice
-forestry:fluid.milk, Milk
-forestry:fluid.seed.oil, Seed Oil
-forestry:fluid.short.mead, Short Mead
-forestry:can, item.for.can.name
-forestry:capsule, item.for.capsule.name
-forestry:refractory, item.for.refractory.name
-forestry:crate, Crate
-forestry:apiarist_bag, Apiarist's Backpack
-forestry:lepidopterist_bag, Lepidopterist's Backpack
-forestry:miner_bag, Mining Backpack
-forestry:miner_bag_t2, Woven Mining Backpack
-forestry:digger_bag, Digging Backpack
-forestry:digger_bag_t2, Woven Digging Backpack
-forestry:forester_bag, Foresting Backpack
-forestry:forester_bag_t2, Woven Foresting Woven Backpack
-forestry:hunter_bag, Hunting Backpack
-forestry:hunter_bag_t2, Hunter's Woven Backpack
-forestry:adventurer_bag, Adventuring Backpack
-forestry:adventurer_bag_t2, Woven Adventuring Backpack
-forestry:builder_bag, Building Backpack
-forestry:builder_bag_t2, Woven Building Backpack
-forestry:butterfly_chest:0, Lepidopterist's Chest
-forestry:cocoon:0, tile.for.cocoon.name
-forestry:cocoon.solid:0, tile.for.cocoon.solid.name
-forestry:bottler:0, Bottler
-forestry:carpenter:0, Carpenter
-forestry:centrifuge:0, Centrifuge
-forestry:fermenter:0, Fermenter
-forestry:moistener:0, Moistener
-forestry:squeezer:0, Squeezer
-forestry:still:0, Still
-forestry:rainmaker:0, Rainmaker
-forestry:fabricator:0, Thermionic Fabricator
-forestry:raintank:0, Rain Tank
-forestry:worktable:0, Worktable
-forestry:greenhouse:0, Greenhouse Block
-forestry:greenhouse:3, Greenhouse Energy Distributor
-forestry:greenhouse:4, Greenhouse Control
-forestry:greenhouse:5, Greenhouse Screen
-forestry:climatiser:0, Greenhouse Hygroregulator
-forestry:climatiser:1, Greenhouse Heater
-forestry:climatiser:2, Greenhouse Fan
-forestry:climatiser:3, Greenhouse Humidifier
-forestry:climatiser:4, Greenhouse Dehumidifier
-forestry:greenhouse_screen, Portable Greenhouse Screen
-forestry:camouflage_spray_can, Camouflage Spray Can
+forestry:honeyed_slice, Honeyed Slice
+forestry:ambrosia, Ambrosia
+forestry:honey_pot, Honey Pot
 forestry:engine_peat:0, Peat-fired Engine
 forestry:engine_biogas:0, Biogas Engine
 forestry:engine_clockwork:0, Clockwork Engine
+forestry:mushroom:0, tile.for.mushroom.name
+forestry:mushroom:1, tile.for.mushroom.name
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
 forestry:grafter, Grafter
 forestry:grafter_proven, Proven Grafter
 forestry:logs.0:0, Larch Wood
@@ -1451,514 +1497,32 @@ forestry:wood_pile_decorative:0, Decorative Wood Pile
 forestry:ash_block:0, Ash Block
 forestry:loam:0, Loam
 forestry:tree_chest:0, Arborist's Chest
-forestry:stamps:0, Stamp (1n)
-forestry:stamps:1, Stamp (2n)
-forestry:stamps:2, Stamp (5n)
-forestry:stamps:3, Stamp (10n)
-forestry:stamps:4, Stamp (20n)
-forestry:stamps:5, Stamp (50n)
-forestry:stamps:6, Stamp (100n)
-forestry:letters, Letter
-forestry:catalogue, Catalogue
-forestry:mailbox:0, Mailbox
-forestry:trade_station:0, Trade Station
-forestry:stamp_collector:0, Stamp Collector
-forestry:mushroom:0, tile.for.mushroom.name
-forestry:mushroom:1, tile.for.mushroom.name
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:honeyed_slice, Honeyed Slice
-forestry:ambrosia, Ambrosia
-forestry:honey_pot, Honey Pot
-thermalfoundation:ore:0, Copper Ore
-thermalfoundation:ore:1, Tin Ore
-thermalfoundation:ore:2, Silver Ore
-thermalfoundation:ore:3, Lead Ore
-thermalfoundation:ore:4, Aluminum Ore
-thermalfoundation:ore:5, Nickel Ore
-thermalfoundation:ore:6, Platinum Ore
-thermalfoundation:ore:7, Iridium Ore
-thermalfoundation:ore:8, Mana Infused Ore
-thermalfoundation:ore_fluid:0, Oil Sand
-thermalfoundation:ore_fluid:1, Oil Shale
-thermalfoundation:ore_fluid:2, Destabilized Redstone Ore
-thermalfoundation:ore_fluid:3, Energized Netherrack
-thermalfoundation:ore_fluid:4, Resonant End Stone
-thermalfoundation:storage:0, Copper Block
-thermalfoundation:storage:1, Tin Block
-thermalfoundation:storage:2, Silver Block
-thermalfoundation:storage:3, Lead Block
-thermalfoundation:storage:4, Aluminum Block
-thermalfoundation:storage:5, Nickel Block
-thermalfoundation:storage:6, Platinum Block
-thermalfoundation:storage:7, Iridium Block
-thermalfoundation:storage:8, Mana Infused Block
-thermalfoundation:storage_alloy:0, Steel Block
-thermalfoundation:storage_alloy:1, Electrum Block
-thermalfoundation:storage_alloy:2, Invar Block
-thermalfoundation:storage_alloy:3, Bronze Block
-thermalfoundation:storage_alloy:4, Constantan Block
-thermalfoundation:storage_alloy:5, Signalum Block
-thermalfoundation:storage_alloy:6, Lumium Block
-thermalfoundation:storage_alloy:7, Enderium Block
-thermalfoundation:glass:0, Hardened Copper Glass
-thermalfoundation:glass:1, Hardened Tin Glass
-thermalfoundation:glass:2, Hardened Silver Glass
-thermalfoundation:glass:3, Hardened Glass
-thermalfoundation:glass:4, Hardened Aluminum Glass
-thermalfoundation:glass:5, Hardened Nickel Glass
-thermalfoundation:glass:6, Hardened Platinum Glass
-thermalfoundation:glass:7, Hardened Iridium Glass
-thermalfoundation:glass:8, Hardened Mana Infused Glass
-thermalfoundation:glass_alloy:0, Hardened Steel Glass
-thermalfoundation:glass_alloy:1, Hardened Electrum Glass
-thermalfoundation:glass_alloy:2, Hardened Invar Glass
-thermalfoundation:glass_alloy:3, Hardened Bronze Glass
-thermalfoundation:glass_alloy:4, Hardened Constantan Glass
-thermalfoundation:glass_alloy:5, Hardened Signalum Glass
-thermalfoundation:glass_alloy:6, Hardened Lumium Glass
-thermalfoundation:glass_alloy:7, Hardened Enderium Glass
-thermalfoundation:rockwool:0, Black Rockwool
-thermalfoundation:rockwool:1, Red Rockwool
-thermalfoundation:rockwool:2, Green Rockwool
-thermalfoundation:rockwool:3, Brown Rockwool
-thermalfoundation:rockwool:4, Blue Rockwool
-thermalfoundation:rockwool:5, Purple Rockwool
-thermalfoundation:rockwool:6, Cyan Rockwool
-thermalfoundation:rockwool:7, Light Gray Rockwool
-thermalfoundation:rockwool:8, Gray Rockwool
-thermalfoundation:rockwool:9, Pink Rockwool
-thermalfoundation:rockwool:10, Lime Rockwool
-thermalfoundation:rockwool:11, Yellow Rockwool
-thermalfoundation:rockwool:12, Light Blue Rockwool
-thermalfoundation:rockwool:13, Magenta Rockwool
-thermalfoundation:rockwool:14, Orange Rockwool
-thermalfoundation:rockwool:15, White Rockwool
-thermalfoundation:wrench:0, Crescent Hammer
-thermalfoundation:meter:0, Multimeter
-thermalfoundation:tome:0, Forge Lexicon
-thermalfoundation:security:0, Signalum Security Lock
-thermalfoundation:diagram:0, Schematic
-thermalfoundation:diagram:3, Redprint
-thermalfoundation:coin:0, Iron Coin
-thermalfoundation:coin:1, Gold Coin
-thermalfoundation:coin:64, Copper Coin
-thermalfoundation:coin:65, Tin Coin
-thermalfoundation:coin:66, Silver Coin
-thermalfoundation:coin:67, Lead Coin
-thermalfoundation:coin:68, Aluminum Coin
-thermalfoundation:coin:69, Nickel Coin
-thermalfoundation:coin:70, Platinum Coin
-thermalfoundation:coin:71, Iridium Coin
-thermalfoundation:coin:72, Mana Infused Coin
-thermalfoundation:coin:96, Steel Coin
-thermalfoundation:coin:97, Electrum Coin
-thermalfoundation:coin:98, Invar Coin
-thermalfoundation:coin:99, Bronze Coin
-thermalfoundation:coin:100, Constantan Coin
-thermalfoundation:coin:101, Signalum Coin
-thermalfoundation:coin:102, Lumium Coin
-thermalfoundation:coin:103, Enderium Coin
-thermalfoundation:fertilizer:0, Phyto-Gro
-thermalfoundation:fertilizer:1, Rich Phyto-Gro
-thermalfoundation:fertilizer:2, Fluxed Phyto-Gro
-thermalfoundation:bait:0, Aqua-Chow
-thermalfoundation:bait:1, Rich Aqua-Chow
-thermalfoundation:bait:2, Fluxed Aqua-Chow
-thermalfoundation:material:0, Pulverized Iron
-thermalfoundation:material:1, Pulverized Gold
-thermalfoundation:material:16, Diamond Nugget
-thermalfoundation:material:17, Emerald Nugget
-thermalfoundation:material:24, Iron Gear
-thermalfoundation:material:25, Gold Gear
-thermalfoundation:material:32, Iron Plate
-thermalfoundation:material:33, Gold Plate
-thermalfoundation:material:64, Pulverized Copper
-thermalfoundation:material:65, Pulverized Tin
-thermalfoundation:material:66, Pulverized Silver
-thermalfoundation:material:67, Pulverized Lead
-thermalfoundation:material:68, Pulverized Aluminum
-thermalfoundation:material:69, Pulverized Nickel
-thermalfoundation:material:70, Pulverized Platinum
-thermalfoundation:material:71, Pulverized Iridium
-thermalfoundation:material:72, Pulverized Mana Infused Metal
-thermalfoundation:material:96, Steel Blend
-thermalfoundation:material:97, Electrum Blend
-thermalfoundation:material:98, Invar Blend
-thermalfoundation:material:99, Bronze Blend
-thermalfoundation:material:100, Constantan Blend
-thermalfoundation:material:101, Signalum Blend
-thermalfoundation:material:102, Lumium Blend
-thermalfoundation:material:103, Enderium Blend
-thermalfoundation:material:128, Copper Ingot
-thermalfoundation:material:129, Tin Ingot
-thermalfoundation:material:130, Silver Ingot
-thermalfoundation:material:131, Lead Ingot
-thermalfoundation:material:132, Aluminum Ingot
-thermalfoundation:material:133, Nickel Ingot
-thermalfoundation:material:134, Platinum Ingot
-thermalfoundation:material:135, Iridium Ingot
-thermalfoundation:material:136, Mana Infused Ingot
-thermalfoundation:material:160, Steel Ingot
-thermalfoundation:material:161, Electrum Ingot
-thermalfoundation:material:162, Invar Ingot
-thermalfoundation:material:163, Bronze Ingot
-thermalfoundation:material:164, Constantan Ingot
-thermalfoundation:material:165, Signalum Ingot
-thermalfoundation:material:166, Lumium Ingot
-thermalfoundation:material:167, Enderium Ingot
-thermalfoundation:material:192, Copper Nugget
-thermalfoundation:material:193, Tin Nugget
-thermalfoundation:material:194, Silver Nugget
-thermalfoundation:material:195, Lead Nugget
-thermalfoundation:material:196, Aluminum Nugget
-thermalfoundation:material:197, Nickel Nugget
-thermalfoundation:material:198, Platinum Nugget
-thermalfoundation:material:199, Iridium Nugget
-thermalfoundation:material:200, Mana Infused Nugget
-thermalfoundation:material:224, Steel Nugget
-thermalfoundation:material:225, Electrum Nugget
-thermalfoundation:material:226, Invar Nugget
-thermalfoundation:material:227, Bronze Nugget
-thermalfoundation:material:228, Constantan Nugget
-thermalfoundation:material:229, Signalum Nugget
-thermalfoundation:material:230, Lumium Nugget
-thermalfoundation:material:231, Enderium Nugget
-thermalfoundation:material:256, Copper Gear
-thermalfoundation:material:257, Tin Gear
-thermalfoundation:material:258, Silver Gear
-thermalfoundation:material:259, Lead Gear
-thermalfoundation:material:260, Aluminum Gear
-thermalfoundation:material:261, Nickel Gear
-thermalfoundation:material:262, Platinum Gear
-thermalfoundation:material:263, Iridium Gear
-thermalfoundation:material:264, Mana Infused Gear
-thermalfoundation:material:288, Steel Gear
-thermalfoundation:material:289, Electrum Gear
-thermalfoundation:material:290, Invar Gear
-thermalfoundation:material:291, Bronze Gear
-thermalfoundation:material:292, Constantan Gear
-thermalfoundation:material:293, Signalum Gear
-thermalfoundation:material:294, Lumium Gear
-thermalfoundation:material:295, Enderium Gear
-thermalfoundation:material:320, Copper Plate
-thermalfoundation:material:321, Tin Plate
-thermalfoundation:material:322, Silver Plate
-thermalfoundation:material:323, Lead Plate
-thermalfoundation:material:324, Aluminum Plate
-thermalfoundation:material:325, Nickel Plate
-thermalfoundation:material:326, Platinum Plate
-thermalfoundation:material:327, Iridium Plate
-thermalfoundation:material:328, Mana Infused Plate
-thermalfoundation:material:352, Steel Plate
-thermalfoundation:material:353, Electrum Plate
-thermalfoundation:material:354, Invar Plate
-thermalfoundation:material:355, Bronze Plate
-thermalfoundation:material:356, Constantan Plate
-thermalfoundation:material:357, Signalum Plate
-thermalfoundation:material:358, Lumium Plate
-thermalfoundation:material:359, Enderium Plate
-thermalfoundation:material:512, Redstone Servo
-thermalfoundation:material:513, Redstone Reception Coil
-thermalfoundation:material:514, Redstone Transmission Coil
-thermalfoundation:material:515, Redstone Conductance Coil
-thermalfoundation:material:768, Pulverized Coal
-thermalfoundation:material:769, Pulverized Charcoal
-thermalfoundation:material:770, Pulverized Obsidian
-thermalfoundation:material:771, Sulfur
-thermalfoundation:material:772, Niter
-thermalfoundation:material:800, Sawdust
-thermalfoundation:material:801, Compressed Sawdust
-thermalfoundation:material:802, Coal Coke
-thermalfoundation:material:832, Rosin
-thermalfoundation:material:833, Tar
-thermalfoundation:material:864, Slag
-thermalfoundation:material:865, Rich Slag
-thermalfoundation:material:866, Cinnabar
-thermalfoundation:material:892, Bitumen
-thermalfoundation:material:893, Destabilized Clathrate
-thermalfoundation:material:894, Energized Clathrate
-thermalfoundation:material:895, Resonant Clathrate
-thermalfoundation:material:1024, Pyrotheum Dust
-thermalfoundation:material:1025, Cryotheum Dust
-thermalfoundation:material:1026, Aerotheum Dust
-thermalfoundation:material:1027, Petrotheum Dust
-thermalfoundation:material:1028, Mana Dust
-thermalfoundation:material:2048, Blizz Rod
-thermalfoundation:material:2049, Blizz Powder
-thermalfoundation:material:2050, Blitz Rod
-thermalfoundation:material:2051, Blitz Powder
-thermalfoundation:material:2052, Basalz Rod
-thermalfoundation:material:2053, Basalz Powder
-thermalfoundation:geode:0, Geode
-thermalfoundation:armor.helmet_copper, Copper Helmet
-thermalfoundation:armor.plate_copper, Copper Chestplate
-thermalfoundation:armor.legs_copper, Copper Leggings
-thermalfoundation:armor.boots_copper, Copper Boots
-thermalfoundation:armor.helmet_tin, Tin Helmet
-thermalfoundation:armor.plate_tin, Tin Chestplate
-thermalfoundation:armor.legs_tin, Tin Leggings
-thermalfoundation:armor.boots_tin, Tin Boots
-thermalfoundation:armor.helmet_silver, Silver Helmet
-thermalfoundation:armor.plate_silver, Silver Chestplate
-thermalfoundation:armor.legs_silver, Silver Leggings
-thermalfoundation:armor.boots_silver, Silver Boots
-thermalfoundation:armor.helmet_lead, Lead Helmet
-thermalfoundation:armor.plate_lead, Lead Chestplate
-thermalfoundation:armor.legs_lead, Lead Leggings
-thermalfoundation:armor.boots_lead, Lead Boots
-thermalfoundation:armor.helmet_aluminum, Aluminum Helmet
-thermalfoundation:armor.plate_aluminum, Aluminum Chestplate
-thermalfoundation:armor.legs_aluminum, Aluminum Leggings
-thermalfoundation:armor.boots_aluminum, Aluminum Boots
-thermalfoundation:armor.helmet_nickel, Nickel Helmet
-thermalfoundation:armor.plate_nickel, Nickel Chestplate
-thermalfoundation:armor.legs_nickel, Nickel Leggings
-thermalfoundation:armor.boots_nickel, Nickel Boots
-thermalfoundation:armor.helmet_platinum, Platinum Helmet
-thermalfoundation:armor.plate_platinum, Platinum Chestplate
-thermalfoundation:armor.legs_platinum, Platinum Leggings
-thermalfoundation:armor.boots_platinum, Platinum Boots
-thermalfoundation:armor.helmet_steel, Steel Helmet
-thermalfoundation:armor.plate_steel, Steel Chestplate
-thermalfoundation:armor.legs_steel, Steel Leggings
-thermalfoundation:armor.boots_steel, Steel Boots
-thermalfoundation:armor.helmet_electrum, Electrum Helmet
-thermalfoundation:armor.plate_electrum, Electrum Chestplate
-thermalfoundation:armor.legs_electrum, Electrum Leggings
-thermalfoundation:armor.boots_electrum, Electrum Boots
-thermalfoundation:armor.helmet_invar, Invar Helmet
-thermalfoundation:armor.plate_invar, Invar Chestplate
-thermalfoundation:armor.legs_invar, Invar Leggings
-thermalfoundation:armor.boots_invar, Invar Boots
-thermalfoundation:armor.helmet_bronze, Bronze Helmet
-thermalfoundation:armor.plate_bronze, Bronze Chestplate
-thermalfoundation:armor.legs_bronze, Bronze Leggings
-thermalfoundation:armor.boots_bronze, Bronze Boots
-thermalfoundation:armor.helmet_constantan, Constantan Helmet
-thermalfoundation:armor.plate_constantan, Constantan Chestplate
-thermalfoundation:armor.legs_constantan, Constantan Leggings
-thermalfoundation:armor.boots_constantan, Constantan Boots
-thermalfoundation:tool.sword_copper, Copper Sword
-thermalfoundation:tool.shovel_copper, Copper Shovel
-thermalfoundation:tool.pickaxe_copper, Copper Pickaxe
-thermalfoundation:tool.axe_copper, Copper Axe
-thermalfoundation:tool.hoe_copper, Copper Hoe
-thermalfoundation:tool.bow_copper, Copper Reinforced Bow
-thermalfoundation:tool.fishing_rod_copper, Copper Fishing Rod
-thermalfoundation:tool.shears_copper, Copper Shears
-thermalfoundation:tool.sickle_copper, Copper Sickle
-thermalfoundation:tool.hammer_copper, Copper Hammer
-thermalfoundation:tool.shield_copper, Copper Shield
-thermalfoundation:tool.sword_tin, Tin Sword
-thermalfoundation:tool.shovel_tin, Tin Shovel
-thermalfoundation:tool.pickaxe_tin, Tin Pickaxe
-thermalfoundation:tool.axe_tin, Tin Axe
-thermalfoundation:tool.hoe_tin, Tin Hoe
-thermalfoundation:tool.bow_tin, Tin Reinforced Bow
-thermalfoundation:tool.fishing_rod_tin, Tin Fishing Rod
-thermalfoundation:tool.shears_tin, Tin Shears
-thermalfoundation:tool.sickle_tin, Tin Sickle
-thermalfoundation:tool.hammer_tin, Tin Hammer
-thermalfoundation:tool.shield_tin, Tin Shield
-thermalfoundation:tool.sword_silver, Silver Sword
-thermalfoundation:tool.shovel_silver, Silver Shovel
-thermalfoundation:tool.pickaxe_silver, Silver Pickaxe
-thermalfoundation:tool.axe_silver, Silver Axe
-thermalfoundation:tool.hoe_silver, Silver Hoe
-thermalfoundation:tool.bow_silver, Silver Reinforced Bow
-thermalfoundation:tool.fishing_rod_silver, Silver Fishing Rod
-thermalfoundation:tool.shears_silver, Silver Shears
-thermalfoundation:tool.sickle_silver, Silver Sickle
-thermalfoundation:tool.hammer_silver, Silver Hammer
-thermalfoundation:tool.shield_silver, Silver Shield
-thermalfoundation:tool.sword_lead, Lead Sword
-thermalfoundation:tool.shovel_lead, Lead Shovel
-thermalfoundation:tool.pickaxe_lead, Lead Pickaxe
-thermalfoundation:tool.axe_lead, Lead Axe
-thermalfoundation:tool.hoe_lead, Lead Hoe
-thermalfoundation:tool.bow_lead, Lead Reinforced Bow
-thermalfoundation:tool.fishing_rod_lead, Lead Fishing Rod
-thermalfoundation:tool.shears_lead, Lead Shears
-thermalfoundation:tool.sickle_lead, Lead Sickle
-thermalfoundation:tool.hammer_lead, Lead Hammer
-thermalfoundation:tool.shield_lead, Lead Shield
-thermalfoundation:tool.sword_aluminum, Aluminum Sword
-thermalfoundation:tool.shovel_aluminum, Aluminum Shovel
-thermalfoundation:tool.pickaxe_aluminum, Aluminum Pickaxe
-thermalfoundation:tool.axe_aluminum, Aluminum Axe
-thermalfoundation:tool.hoe_aluminum, Aluminum Hoe
-thermalfoundation:tool.bow_aluminum, Aluminum Reinforced Bow
-thermalfoundation:tool.fishing_rod_aluminum, Aluminum Fishing Rod
-thermalfoundation:tool.shears_aluminum, Aluminum Shears
-thermalfoundation:tool.sickle_aluminum, Aluminum Sickle
-thermalfoundation:tool.hammer_aluminum, Aluminum Hammer
-thermalfoundation:tool.shield_aluminum, Aluminum Shield
-thermalfoundation:tool.sword_nickel, Nickel Sword
-thermalfoundation:tool.shovel_nickel, Nickel Shovel
-thermalfoundation:tool.pickaxe_nickel, Nickel Pickaxe
-thermalfoundation:tool.axe_nickel, Nickel Axe
-thermalfoundation:tool.hoe_nickel, Nickel Hoe
-thermalfoundation:tool.bow_nickel, Nickel Reinforced Bow
-thermalfoundation:tool.fishing_rod_nickel, Nickel Fishing Rod
-thermalfoundation:tool.shears_nickel, Nickel Shears
-thermalfoundation:tool.sickle_nickel, Nickel Sickle
-thermalfoundation:tool.hammer_nickel, Nickel Hammer
-thermalfoundation:tool.shield_nickel, Nickel Shield
-thermalfoundation:tool.sword_platinum, Platinum Sword
-thermalfoundation:tool.shovel_platinum, Platinum Shovel
-thermalfoundation:tool.pickaxe_platinum, Platinum Pickaxe
-thermalfoundation:tool.axe_platinum, Platinum Axe
-thermalfoundation:tool.hoe_platinum, Platinum Hoe
-thermalfoundation:tool.bow_platinum, Platinum Reinforced Bow
-thermalfoundation:tool.fishing_rod_platinum, Platinum Fishing Rod
-thermalfoundation:tool.shears_platinum, Platinum Shears
-thermalfoundation:tool.sickle_platinum, Platinum Sickle
-thermalfoundation:tool.hammer_platinum, Platinum Hammer
-thermalfoundation:tool.shield_platinum, Platinum Shield
-thermalfoundation:tool.sword_steel, Steel Sword
-thermalfoundation:tool.shovel_steel, Steel Shovel
-thermalfoundation:tool.pickaxe_steel, Steel Pickaxe
-thermalfoundation:tool.axe_steel, Steel Axe
-thermalfoundation:tool.hoe_steel, Steel Hoe
-thermalfoundation:tool.bow_steel, Steel Reinforced Bow
-thermalfoundation:tool.fishing_rod_steel, Steel Fishing Rod
-thermalfoundation:tool.shears_steel, Steel Shears
-thermalfoundation:tool.sickle_steel, Steel Sickle
-thermalfoundation:tool.hammer_steel, Steel Hammer
-thermalfoundation:tool.shield_steel, Steel Shield
-thermalfoundation:tool.sword_electrum, Electrum Sword
-thermalfoundation:tool.shovel_electrum, Electrum Shovel
-thermalfoundation:tool.pickaxe_electrum, Electrum Pickaxe
-thermalfoundation:tool.axe_electrum, Electrum Axe
-thermalfoundation:tool.hoe_electrum, Electrum Hoe
-thermalfoundation:tool.bow_electrum, Electrum Reinforced Bow
-thermalfoundation:tool.fishing_rod_electrum, Electrum Fishing Rod
-thermalfoundation:tool.shears_electrum, Electrum Shears
-thermalfoundation:tool.sickle_electrum, Electrum Sickle
-thermalfoundation:tool.hammer_electrum, Electrum Hammer
-thermalfoundation:tool.shield_electrum, Electrum Shield
-thermalfoundation:tool.sword_invar, Invar Sword
-thermalfoundation:tool.shovel_invar, Invar Shovel
-thermalfoundation:tool.pickaxe_invar, Invar Pickaxe
-thermalfoundation:tool.axe_invar, Invar Axe
-thermalfoundation:tool.hoe_invar, Invar Hoe
-thermalfoundation:tool.bow_invar, Invar Reinforced Bow
-thermalfoundation:tool.fishing_rod_invar, Invar Fishing Rod
-thermalfoundation:tool.shears_invar, Invar Shears
-thermalfoundation:tool.sickle_invar, Invar Sickle
-thermalfoundation:tool.hammer_invar, Invar Hammer
-thermalfoundation:tool.shield_invar, Invar Shield
-thermalfoundation:tool.sword_bronze, Bronze Sword
-thermalfoundation:tool.shovel_bronze, Bronze Shovel
-thermalfoundation:tool.pickaxe_bronze, Bronze Pickaxe
-thermalfoundation:tool.axe_bronze, Bronze Axe
-thermalfoundation:tool.hoe_bronze, Bronze Hoe
-thermalfoundation:tool.bow_bronze, Bronze Reinforced Bow
-thermalfoundation:tool.fishing_rod_bronze, Bronze Fishing Rod
-thermalfoundation:tool.shears_bronze, Bronze Shears
-thermalfoundation:tool.sickle_bronze, Bronze Sickle
-thermalfoundation:tool.hammer_bronze, Bronze Hammer
-thermalfoundation:tool.shield_bronze, Bronze Shield
-thermalfoundation:tool.sword_constantan, Constantan Sword
-thermalfoundation:tool.shovel_constantan, Constantan Shovel
-thermalfoundation:tool.pickaxe_constantan, Constantan Pickaxe
-thermalfoundation:tool.axe_constantan, Constantan Axe
-thermalfoundation:tool.hoe_constantan, Constantan Hoe
-thermalfoundation:tool.bow_constantan, Constantan Reinforced Bow
-thermalfoundation:tool.fishing_rod_constantan, Constantan Fishing Rod
-thermalfoundation:tool.shears_constantan, Constantan Shears
-thermalfoundation:tool.sickle_constantan, Constantan Sickle
-thermalfoundation:tool.hammer_constantan, Constantan Hammer
-thermalfoundation:tool.shield_constantan, Constantan Shield
-thermalfoundation:tool.shears_wood, Wooden Shears
-thermalfoundation:tool.sickle_wood, Wooden Sickle
-thermalfoundation:tool.hammer_wood, Wooden Hammer
-thermalfoundation:tool.bow_stone, Stone Reinforced Bow
-thermalfoundation:tool.fishing_rod_stone, Stone Fishing Rod
-thermalfoundation:tool.shears_stone, Stone Shears
-thermalfoundation:tool.sickle_stone, Stone Sickle
-thermalfoundation:tool.hammer_stone, Stone Hammer
-thermalfoundation:tool.shield_stone, Stone Shield
-thermalfoundation:tool.bow_iron, Iron Reinforced Bow
-thermalfoundation:tool.fishing_rod_iron, Iron Fishing Rod
-thermalfoundation:tool.sickle_iron, Iron Sickle
-thermalfoundation:tool.hammer_iron, Iron Hammer
-thermalfoundation:tool.shield_iron, Iron Shield
-thermalfoundation:tool.bow_diamond, Diamond Reinforced Bow
-thermalfoundation:tool.fishing_rod_diamond, Diamond Fishing Rod
-thermalfoundation:tool.shears_diamond, Diamond Shears
-thermalfoundation:tool.sickle_diamond, Diamond Sickle
-thermalfoundation:tool.hammer_diamond, Diamond Hammer
-thermalfoundation:tool.shield_diamond, Diamond Shield
-thermalfoundation:tool.bow_gold, Gold Reinforced Bow
-thermalfoundation:tool.fishing_rod_gold, Gold Fishing Rod
-thermalfoundation:tool.shears_gold, Gold Shears
-thermalfoundation:tool.sickle_gold, Gold Sickle
-thermalfoundation:tool.hammer_gold, Gold Hammer
-thermalfoundation:tool.shield_gold, Gold Shield
-thermalfoundation:fluid_crude_oil, Crude Oil
-thermalfoundation:fluid_redstone, Destabilized Redstone
-thermalfoundation:fluid_glowstone, Energized Glowstone
-thermalfoundation:fluid_ender, Resonant Ender
-thermalfoundation:fluid_pyrotheum, Blazing Pyrotheum
-thermalfoundation:fluid_cryotheum, Gelid Cryotheum
-thermalfoundation:fluid_aerotheum, Zephyrean Aerotheum
-thermalfoundation:fluid_petrotheum, Tectonic Petrotheum
-thermalfoundation:fluid_mana, Primal Mana
+forestry:fluid.bio.ethanol, Ethanol
+forestry:fluid.biomass, Biomass
+forestry:fluid.glass, Liquid Glass
+forestry:fluid.for.honey, Honey
+forestry:fluid.ice, Crushed Ice
+forestry:fluid.juice, Fruit Juice
+forestry:fluid.milk, Milk
+forestry:fluid.seed.oil, Seed Oil
+forestry:fluid.short.mead, Short Mead
+forestry:can, item.for.can.name
+forestry:capsule, item.for.capsule.name
+forestry:refractory, item.for.refractory.name
+forestry:bottler:0, Bottler
+forestry:carpenter:0, Carpenter
+forestry:centrifuge:0, Centrifuge
+forestry:fermenter:0, Fermenter
+forestry:moistener:0, Moistener
+forestry:squeezer:0, Squeezer
+forestry:still:0, Still
+forestry:rainmaker:0, Rainmaker
+forestry:fabricator:0, Thermionic Fabricator
+forestry:raintank:0, Rain Tank
+forestry:worktable:0, Worktable
+forestry:butterfly_chest:0, Lepidopterist's Chest
+forestry:cocoon:0, tile.for.cocoon.name
+forestry:cocoon.solid:0, tile.for.cocoon.solid.name
 nuclearcraft:ore:0, Copper Ore
 nuclearcraft:ore:1, Tin Ore
 nuclearcraft:ore:2, Lead Ore
@@ -2717,6 +2281,442 @@ nuclearcraft:helm_boron_nitride, Boron Nitride Helmet
 nuclearcraft:chest_boron_nitride, Boron Nitride Chestplate
 nuclearcraft:legs_boron_nitride, Boron Nitride Leggings
 nuclearcraft:boots_boron_nitride, Boron Nitride Boots
+thermalfoundation:ore:0, Copper Ore
+thermalfoundation:ore:1, Tin Ore
+thermalfoundation:ore:2, Silver Ore
+thermalfoundation:ore:3, Lead Ore
+thermalfoundation:ore:4, Aluminum Ore
+thermalfoundation:ore:5, Nickel Ore
+thermalfoundation:ore:6, Platinum Ore
+thermalfoundation:ore:7, Iridium Ore
+thermalfoundation:ore:8, Mana Infused Ore
+thermalfoundation:ore_fluid:0, Oil Sand
+thermalfoundation:ore_fluid:1, Oil Shale
+thermalfoundation:ore_fluid:2, Destabilized Redstone Ore
+thermalfoundation:ore_fluid:3, Energized Netherrack
+thermalfoundation:ore_fluid:4, Resonant End Stone
+thermalfoundation:storage:0, Copper Block
+thermalfoundation:storage:1, Tin Block
+thermalfoundation:storage:2, Silver Block
+thermalfoundation:storage:3, Lead Block
+thermalfoundation:storage:4, Aluminum Block
+thermalfoundation:storage:5, Nickel Block
+thermalfoundation:storage:6, Platinum Block
+thermalfoundation:storage:7, Iridium Block
+thermalfoundation:storage:8, Mana Infused Block
+thermalfoundation:storage_alloy:0, Steel Block
+thermalfoundation:storage_alloy:1, Electrum Block
+thermalfoundation:storage_alloy:2, Invar Block
+thermalfoundation:storage_alloy:3, Bronze Block
+thermalfoundation:storage_alloy:4, Constantan Block
+thermalfoundation:storage_alloy:5, Signalum Block
+thermalfoundation:storage_alloy:6, Lumium Block
+thermalfoundation:storage_alloy:7, Enderium Block
+thermalfoundation:glass:0, Hardened Copper Glass
+thermalfoundation:glass:1, Hardened Tin Glass
+thermalfoundation:glass:2, Hardened Silver Glass
+thermalfoundation:glass:3, Hardened Glass
+thermalfoundation:glass:4, Hardened Aluminum Glass
+thermalfoundation:glass:5, Hardened Nickel Glass
+thermalfoundation:glass:6, Hardened Platinum Glass
+thermalfoundation:glass:7, Hardened Iridium Glass
+thermalfoundation:glass:8, Hardened Mana Infused Glass
+thermalfoundation:glass_alloy:0, Hardened Steel Glass
+thermalfoundation:glass_alloy:1, Hardened Electrum Glass
+thermalfoundation:glass_alloy:2, Hardened Invar Glass
+thermalfoundation:glass_alloy:3, Hardened Bronze Glass
+thermalfoundation:glass_alloy:4, Hardened Constantan Glass
+thermalfoundation:glass_alloy:5, Hardened Signalum Glass
+thermalfoundation:glass_alloy:6, Hardened Lumium Glass
+thermalfoundation:glass_alloy:7, Hardened Enderium Glass
+thermalfoundation:rockwool:0, Black Rockwool
+thermalfoundation:rockwool:1, Red Rockwool
+thermalfoundation:rockwool:2, Green Rockwool
+thermalfoundation:rockwool:3, Brown Rockwool
+thermalfoundation:rockwool:4, Blue Rockwool
+thermalfoundation:rockwool:5, Purple Rockwool
+thermalfoundation:rockwool:6, Cyan Rockwool
+thermalfoundation:rockwool:7, Light Gray Rockwool
+thermalfoundation:rockwool:8, Gray Rockwool
+thermalfoundation:rockwool:9, Pink Rockwool
+thermalfoundation:rockwool:10, Lime Rockwool
+thermalfoundation:rockwool:11, Yellow Rockwool
+thermalfoundation:rockwool:12, Light Blue Rockwool
+thermalfoundation:rockwool:13, Magenta Rockwool
+thermalfoundation:rockwool:14, Orange Rockwool
+thermalfoundation:rockwool:15, White Rockwool
+thermalfoundation:wrench:0, Crescent Hammer
+thermalfoundation:meter:0, Multimeter
+thermalfoundation:tome:0, Forge Lexicon
+thermalfoundation:security:0, Signalum Security Lock
+thermalfoundation:diagram:0, Schematic
+thermalfoundation:diagram:3, Redprint
+thermalfoundation:coin:0, Iron Coin
+thermalfoundation:coin:1, Gold Coin
+thermalfoundation:coin:64, Copper Coin
+thermalfoundation:coin:65, Tin Coin
+thermalfoundation:coin:66, Silver Coin
+thermalfoundation:coin:67, Lead Coin
+thermalfoundation:coin:68, Aluminum Coin
+thermalfoundation:coin:69, Nickel Coin
+thermalfoundation:coin:70, Platinum Coin
+thermalfoundation:coin:71, Iridium Coin
+thermalfoundation:coin:72, Mana Infused Coin
+thermalfoundation:coin:96, Steel Coin
+thermalfoundation:coin:97, Electrum Coin
+thermalfoundation:coin:98, Invar Coin
+thermalfoundation:coin:99, Bronze Coin
+thermalfoundation:coin:100, Constantan Coin
+thermalfoundation:coin:101, Signalum Coin
+thermalfoundation:coin:102, Lumium Coin
+thermalfoundation:coin:103, Enderium Coin
+thermalfoundation:fertilizer:0, Phyto-Gro
+thermalfoundation:fertilizer:1, Rich Phyto-Gro
+thermalfoundation:fertilizer:2, Fluxed Phyto-Gro
+thermalfoundation:bait:0, Aqua-Chow
+thermalfoundation:bait:1, Rich Aqua-Chow
+thermalfoundation:bait:2, Fluxed Aqua-Chow
+thermalfoundation:material:0, Pulverized Iron
+thermalfoundation:material:1, Pulverized Gold
+thermalfoundation:material:16, Diamond Nugget
+thermalfoundation:material:17, Emerald Nugget
+thermalfoundation:material:24, Iron Gear
+thermalfoundation:material:25, Gold Gear
+thermalfoundation:material:32, Iron Plate
+thermalfoundation:material:33, Gold Plate
+thermalfoundation:material:64, Pulverized Copper
+thermalfoundation:material:65, Pulverized Tin
+thermalfoundation:material:66, Pulverized Silver
+thermalfoundation:material:67, Pulverized Lead
+thermalfoundation:material:68, Pulverized Aluminum
+thermalfoundation:material:69, Pulverized Nickel
+thermalfoundation:material:70, Pulverized Platinum
+thermalfoundation:material:71, Pulverized Iridium
+thermalfoundation:material:72, Pulverized Mana Infused Metal
+thermalfoundation:material:96, Steel Blend
+thermalfoundation:material:97, Electrum Blend
+thermalfoundation:material:98, Invar Blend
+thermalfoundation:material:99, Bronze Blend
+thermalfoundation:material:100, Constantan Blend
+thermalfoundation:material:101, Signalum Blend
+thermalfoundation:material:102, Lumium Blend
+thermalfoundation:material:103, Enderium Blend
+thermalfoundation:material:128, Copper Ingot
+thermalfoundation:material:129, Tin Ingot
+thermalfoundation:material:130, Silver Ingot
+thermalfoundation:material:131, Lead Ingot
+thermalfoundation:material:132, Aluminum Ingot
+thermalfoundation:material:133, Nickel Ingot
+thermalfoundation:material:134, Platinum Ingot
+thermalfoundation:material:135, Iridium Ingot
+thermalfoundation:material:136, Mana Infused Ingot
+thermalfoundation:material:160, Steel Ingot
+thermalfoundation:material:161, Electrum Ingot
+thermalfoundation:material:162, Invar Ingot
+thermalfoundation:material:163, Bronze Ingot
+thermalfoundation:material:164, Constantan Ingot
+thermalfoundation:material:165, Signalum Ingot
+thermalfoundation:material:166, Lumium Ingot
+thermalfoundation:material:167, Enderium Ingot
+thermalfoundation:material:192, Copper Nugget
+thermalfoundation:material:193, Tin Nugget
+thermalfoundation:material:194, Silver Nugget
+thermalfoundation:material:195, Lead Nugget
+thermalfoundation:material:196, Aluminum Nugget
+thermalfoundation:material:197, Nickel Nugget
+thermalfoundation:material:198, Platinum Nugget
+thermalfoundation:material:199, Iridium Nugget
+thermalfoundation:material:200, Mana Infused Nugget
+thermalfoundation:material:224, Steel Nugget
+thermalfoundation:material:225, Electrum Nugget
+thermalfoundation:material:226, Invar Nugget
+thermalfoundation:material:227, Bronze Nugget
+thermalfoundation:material:228, Constantan Nugget
+thermalfoundation:material:229, Signalum Nugget
+thermalfoundation:material:230, Lumium Nugget
+thermalfoundation:material:231, Enderium Nugget
+thermalfoundation:material:256, Copper Gear
+thermalfoundation:material:257, Tin Gear
+thermalfoundation:material:258, Silver Gear
+thermalfoundation:material:259, Lead Gear
+thermalfoundation:material:260, Aluminum Gear
+thermalfoundation:material:261, Nickel Gear
+thermalfoundation:material:262, Platinum Gear
+thermalfoundation:material:263, Iridium Gear
+thermalfoundation:material:264, Mana Infused Gear
+thermalfoundation:material:288, Steel Gear
+thermalfoundation:material:289, Electrum Gear
+thermalfoundation:material:290, Invar Gear
+thermalfoundation:material:291, Bronze Gear
+thermalfoundation:material:292, Constantan Gear
+thermalfoundation:material:293, Signalum Gear
+thermalfoundation:material:294, Lumium Gear
+thermalfoundation:material:295, Enderium Gear
+thermalfoundation:material:320, Copper Plate
+thermalfoundation:material:321, Tin Plate
+thermalfoundation:material:322, Silver Plate
+thermalfoundation:material:323, Lead Plate
+thermalfoundation:material:324, Aluminum Plate
+thermalfoundation:material:325, Nickel Plate
+thermalfoundation:material:326, Platinum Plate
+thermalfoundation:material:327, Iridium Plate
+thermalfoundation:material:328, Mana Infused Plate
+thermalfoundation:material:352, Steel Plate
+thermalfoundation:material:353, Electrum Plate
+thermalfoundation:material:354, Invar Plate
+thermalfoundation:material:355, Bronze Plate
+thermalfoundation:material:356, Constantan Plate
+thermalfoundation:material:357, Signalum Plate
+thermalfoundation:material:358, Lumium Plate
+thermalfoundation:material:359, Enderium Plate
+thermalfoundation:material:512, Redstone Servo
+thermalfoundation:material:513, Redstone Reception Coil
+thermalfoundation:material:514, Redstone Transmission Coil
+thermalfoundation:material:515, Redstone Conductance Coil
+thermalfoundation:material:768, Pulverized Coal
+thermalfoundation:material:769, Pulverized Charcoal
+thermalfoundation:material:770, Pulverized Obsidian
+thermalfoundation:material:771, Sulfur
+thermalfoundation:material:772, Niter
+thermalfoundation:material:800, Sawdust
+thermalfoundation:material:801, Compressed Sawdust
+thermalfoundation:material:802, Coal Coke
+thermalfoundation:material:832, Rosin
+thermalfoundation:material:833, Tar
+thermalfoundation:material:864, Slag
+thermalfoundation:material:865, Rich Slag
+thermalfoundation:material:866, Cinnabar
+thermalfoundation:material:892, Bitumen
+thermalfoundation:material:893, Destabilized Clathrate
+thermalfoundation:material:894, Energized Clathrate
+thermalfoundation:material:895, Resonant Clathrate
+thermalfoundation:material:1024, Pyrotheum Dust
+thermalfoundation:material:1025, Cryotheum Dust
+thermalfoundation:material:1026, Aerotheum Dust
+thermalfoundation:material:1027, Petrotheum Dust
+thermalfoundation:material:1028, Mana Dust
+thermalfoundation:material:2048, Blizz Rod
+thermalfoundation:material:2049, Blizz Powder
+thermalfoundation:material:2050, Blitz Rod
+thermalfoundation:material:2051, Blitz Powder
+thermalfoundation:material:2052, Basalz Rod
+thermalfoundation:material:2053, Basalz Powder
+thermalfoundation:geode:0, Geode
+thermalfoundation:armor.helmet_copper, Copper Helmet
+thermalfoundation:armor.plate_copper, Copper Chestplate
+thermalfoundation:armor.legs_copper, Copper Leggings
+thermalfoundation:armor.boots_copper, Copper Boots
+thermalfoundation:armor.helmet_tin, Tin Helmet
+thermalfoundation:armor.plate_tin, Tin Chestplate
+thermalfoundation:armor.legs_tin, Tin Leggings
+thermalfoundation:armor.boots_tin, Tin Boots
+thermalfoundation:armor.helmet_silver, Silver Helmet
+thermalfoundation:armor.plate_silver, Silver Chestplate
+thermalfoundation:armor.legs_silver, Silver Leggings
+thermalfoundation:armor.boots_silver, Silver Boots
+thermalfoundation:armor.helmet_lead, Lead Helmet
+thermalfoundation:armor.plate_lead, Lead Chestplate
+thermalfoundation:armor.legs_lead, Lead Leggings
+thermalfoundation:armor.boots_lead, Lead Boots
+thermalfoundation:armor.helmet_aluminum, Aluminum Helmet
+thermalfoundation:armor.plate_aluminum, Aluminum Chestplate
+thermalfoundation:armor.legs_aluminum, Aluminum Leggings
+thermalfoundation:armor.boots_aluminum, Aluminum Boots
+thermalfoundation:armor.helmet_nickel, Nickel Helmet
+thermalfoundation:armor.plate_nickel, Nickel Chestplate
+thermalfoundation:armor.legs_nickel, Nickel Leggings
+thermalfoundation:armor.boots_nickel, Nickel Boots
+thermalfoundation:armor.helmet_platinum, Platinum Helmet
+thermalfoundation:armor.plate_platinum, Platinum Chestplate
+thermalfoundation:armor.legs_platinum, Platinum Leggings
+thermalfoundation:armor.boots_platinum, Platinum Boots
+thermalfoundation:armor.helmet_steel, Steel Helmet
+thermalfoundation:armor.plate_steel, Steel Chestplate
+thermalfoundation:armor.legs_steel, Steel Leggings
+thermalfoundation:armor.boots_steel, Steel Boots
+thermalfoundation:armor.helmet_electrum, Electrum Helmet
+thermalfoundation:armor.plate_electrum, Electrum Chestplate
+thermalfoundation:armor.legs_electrum, Electrum Leggings
+thermalfoundation:armor.boots_electrum, Electrum Boots
+thermalfoundation:armor.helmet_invar, Invar Helmet
+thermalfoundation:armor.plate_invar, Invar Chestplate
+thermalfoundation:armor.legs_invar, Invar Leggings
+thermalfoundation:armor.boots_invar, Invar Boots
+thermalfoundation:armor.helmet_bronze, Bronze Helmet
+thermalfoundation:armor.plate_bronze, Bronze Chestplate
+thermalfoundation:armor.legs_bronze, Bronze Leggings
+thermalfoundation:armor.boots_bronze, Bronze Boots
+thermalfoundation:armor.helmet_constantan, Constantan Helmet
+thermalfoundation:armor.plate_constantan, Constantan Chestplate
+thermalfoundation:armor.legs_constantan, Constantan Leggings
+thermalfoundation:armor.boots_constantan, Constantan Boots
+thermalfoundation:tool.sword_copper, Copper Sword
+thermalfoundation:tool.shovel_copper, Copper Shovel
+thermalfoundation:tool.pickaxe_copper, Copper Pickaxe
+thermalfoundation:tool.axe_copper, Copper Axe
+thermalfoundation:tool.hoe_copper, Copper Hoe
+thermalfoundation:tool.bow_copper, Copper Reinforced Bow
+thermalfoundation:tool.fishing_rod_copper, Copper Fishing Rod
+thermalfoundation:tool.shears_copper, Copper Shears
+thermalfoundation:tool.sickle_copper, Copper Sickle
+thermalfoundation:tool.hammer_copper, Copper Hammer
+thermalfoundation:tool.shield_copper, Copper Shield
+thermalfoundation:tool.sword_tin, Tin Sword
+thermalfoundation:tool.shovel_tin, Tin Shovel
+thermalfoundation:tool.pickaxe_tin, Tin Pickaxe
+thermalfoundation:tool.axe_tin, Tin Axe
+thermalfoundation:tool.hoe_tin, Tin Hoe
+thermalfoundation:tool.bow_tin, Tin Reinforced Bow
+thermalfoundation:tool.fishing_rod_tin, Tin Fishing Rod
+thermalfoundation:tool.shears_tin, Tin Shears
+thermalfoundation:tool.sickle_tin, Tin Sickle
+thermalfoundation:tool.hammer_tin, Tin Hammer
+thermalfoundation:tool.shield_tin, Tin Shield
+thermalfoundation:tool.sword_silver, Silver Sword
+thermalfoundation:tool.shovel_silver, Silver Shovel
+thermalfoundation:tool.pickaxe_silver, Silver Pickaxe
+thermalfoundation:tool.axe_silver, Silver Axe
+thermalfoundation:tool.hoe_silver, Silver Hoe
+thermalfoundation:tool.bow_silver, Silver Reinforced Bow
+thermalfoundation:tool.fishing_rod_silver, Silver Fishing Rod
+thermalfoundation:tool.shears_silver, Silver Shears
+thermalfoundation:tool.sickle_silver, Silver Sickle
+thermalfoundation:tool.hammer_silver, Silver Hammer
+thermalfoundation:tool.shield_silver, Silver Shield
+thermalfoundation:tool.sword_lead, Lead Sword
+thermalfoundation:tool.shovel_lead, Lead Shovel
+thermalfoundation:tool.pickaxe_lead, Lead Pickaxe
+thermalfoundation:tool.axe_lead, Lead Axe
+thermalfoundation:tool.hoe_lead, Lead Hoe
+thermalfoundation:tool.bow_lead, Lead Reinforced Bow
+thermalfoundation:tool.fishing_rod_lead, Lead Fishing Rod
+thermalfoundation:tool.shears_lead, Lead Shears
+thermalfoundation:tool.sickle_lead, Lead Sickle
+thermalfoundation:tool.hammer_lead, Lead Hammer
+thermalfoundation:tool.shield_lead, Lead Shield
+thermalfoundation:tool.sword_aluminum, Aluminum Sword
+thermalfoundation:tool.shovel_aluminum, Aluminum Shovel
+thermalfoundation:tool.pickaxe_aluminum, Aluminum Pickaxe
+thermalfoundation:tool.axe_aluminum, Aluminum Axe
+thermalfoundation:tool.hoe_aluminum, Aluminum Hoe
+thermalfoundation:tool.bow_aluminum, Aluminum Reinforced Bow
+thermalfoundation:tool.fishing_rod_aluminum, Aluminum Fishing Rod
+thermalfoundation:tool.shears_aluminum, Aluminum Shears
+thermalfoundation:tool.sickle_aluminum, Aluminum Sickle
+thermalfoundation:tool.hammer_aluminum, Aluminum Hammer
+thermalfoundation:tool.shield_aluminum, Aluminum Shield
+thermalfoundation:tool.sword_nickel, Nickel Sword
+thermalfoundation:tool.shovel_nickel, Nickel Shovel
+thermalfoundation:tool.pickaxe_nickel, Nickel Pickaxe
+thermalfoundation:tool.axe_nickel, Nickel Axe
+thermalfoundation:tool.hoe_nickel, Nickel Hoe
+thermalfoundation:tool.bow_nickel, Nickel Reinforced Bow
+thermalfoundation:tool.fishing_rod_nickel, Nickel Fishing Rod
+thermalfoundation:tool.shears_nickel, Nickel Shears
+thermalfoundation:tool.sickle_nickel, Nickel Sickle
+thermalfoundation:tool.hammer_nickel, Nickel Hammer
+thermalfoundation:tool.shield_nickel, Nickel Shield
+thermalfoundation:tool.sword_platinum, Platinum Sword
+thermalfoundation:tool.shovel_platinum, Platinum Shovel
+thermalfoundation:tool.pickaxe_platinum, Platinum Pickaxe
+thermalfoundation:tool.axe_platinum, Platinum Axe
+thermalfoundation:tool.hoe_platinum, Platinum Hoe
+thermalfoundation:tool.bow_platinum, Platinum Reinforced Bow
+thermalfoundation:tool.fishing_rod_platinum, Platinum Fishing Rod
+thermalfoundation:tool.shears_platinum, Platinum Shears
+thermalfoundation:tool.sickle_platinum, Platinum Sickle
+thermalfoundation:tool.hammer_platinum, Platinum Hammer
+thermalfoundation:tool.shield_platinum, Platinum Shield
+thermalfoundation:tool.sword_steel, Steel Sword
+thermalfoundation:tool.shovel_steel, Steel Shovel
+thermalfoundation:tool.pickaxe_steel, Steel Pickaxe
+thermalfoundation:tool.axe_steel, Steel Axe
+thermalfoundation:tool.hoe_steel, Steel Hoe
+thermalfoundation:tool.bow_steel, Steel Reinforced Bow
+thermalfoundation:tool.fishing_rod_steel, Steel Fishing Rod
+thermalfoundation:tool.shears_steel, Steel Shears
+thermalfoundation:tool.sickle_steel, Steel Sickle
+thermalfoundation:tool.hammer_steel, Steel Hammer
+thermalfoundation:tool.shield_steel, Steel Shield
+thermalfoundation:tool.sword_electrum, Electrum Sword
+thermalfoundation:tool.shovel_electrum, Electrum Shovel
+thermalfoundation:tool.pickaxe_electrum, Electrum Pickaxe
+thermalfoundation:tool.axe_electrum, Electrum Axe
+thermalfoundation:tool.hoe_electrum, Electrum Hoe
+thermalfoundation:tool.bow_electrum, Electrum Reinforced Bow
+thermalfoundation:tool.fishing_rod_electrum, Electrum Fishing Rod
+thermalfoundation:tool.shears_electrum, Electrum Shears
+thermalfoundation:tool.sickle_electrum, Electrum Sickle
+thermalfoundation:tool.hammer_electrum, Electrum Hammer
+thermalfoundation:tool.shield_electrum, Electrum Shield
+thermalfoundation:tool.sword_invar, Invar Sword
+thermalfoundation:tool.shovel_invar, Invar Shovel
+thermalfoundation:tool.pickaxe_invar, Invar Pickaxe
+thermalfoundation:tool.axe_invar, Invar Axe
+thermalfoundation:tool.hoe_invar, Invar Hoe
+thermalfoundation:tool.bow_invar, Invar Reinforced Bow
+thermalfoundation:tool.fishing_rod_invar, Invar Fishing Rod
+thermalfoundation:tool.shears_invar, Invar Shears
+thermalfoundation:tool.sickle_invar, Invar Sickle
+thermalfoundation:tool.hammer_invar, Invar Hammer
+thermalfoundation:tool.shield_invar, Invar Shield
+thermalfoundation:tool.sword_bronze, Bronze Sword
+thermalfoundation:tool.shovel_bronze, Bronze Shovel
+thermalfoundation:tool.pickaxe_bronze, Bronze Pickaxe
+thermalfoundation:tool.axe_bronze, Bronze Axe
+thermalfoundation:tool.hoe_bronze, Bronze Hoe
+thermalfoundation:tool.bow_bronze, Bronze Reinforced Bow
+thermalfoundation:tool.fishing_rod_bronze, Bronze Fishing Rod
+thermalfoundation:tool.shears_bronze, Bronze Shears
+thermalfoundation:tool.sickle_bronze, Bronze Sickle
+thermalfoundation:tool.hammer_bronze, Bronze Hammer
+thermalfoundation:tool.shield_bronze, Bronze Shield
+thermalfoundation:tool.sword_constantan, Constantan Sword
+thermalfoundation:tool.shovel_constantan, Constantan Shovel
+thermalfoundation:tool.pickaxe_constantan, Constantan Pickaxe
+thermalfoundation:tool.axe_constantan, Constantan Axe
+thermalfoundation:tool.hoe_constantan, Constantan Hoe
+thermalfoundation:tool.bow_constantan, Constantan Reinforced Bow
+thermalfoundation:tool.fishing_rod_constantan, Constantan Fishing Rod
+thermalfoundation:tool.shears_constantan, Constantan Shears
+thermalfoundation:tool.sickle_constantan, Constantan Sickle
+thermalfoundation:tool.hammer_constantan, Constantan Hammer
+thermalfoundation:tool.shield_constantan, Constantan Shield
+thermalfoundation:tool.shears_wood, Wooden Shears
+thermalfoundation:tool.sickle_wood, Wooden Sickle
+thermalfoundation:tool.hammer_wood, Wooden Hammer
+thermalfoundation:tool.bow_stone, Stone Reinforced Bow
+thermalfoundation:tool.fishing_rod_stone, Stone Fishing Rod
+thermalfoundation:tool.shears_stone, Stone Shears
+thermalfoundation:tool.sickle_stone, Stone Sickle
+thermalfoundation:tool.hammer_stone, Stone Hammer
+thermalfoundation:tool.shield_stone, Stone Shield
+thermalfoundation:tool.bow_iron, Iron Reinforced Bow
+thermalfoundation:tool.fishing_rod_iron, Iron Fishing Rod
+thermalfoundation:tool.sickle_iron, Iron Sickle
+thermalfoundation:tool.hammer_iron, Iron Hammer
+thermalfoundation:tool.shield_iron, Iron Shield
+thermalfoundation:tool.bow_diamond, Diamond Reinforced Bow
+thermalfoundation:tool.fishing_rod_diamond, Diamond Fishing Rod
+thermalfoundation:tool.shears_diamond, Diamond Shears
+thermalfoundation:tool.sickle_diamond, Diamond Sickle
+thermalfoundation:tool.hammer_diamond, Diamond Hammer
+thermalfoundation:tool.shield_diamond, Diamond Shield
+thermalfoundation:tool.bow_gold, Gold Reinforced Bow
+thermalfoundation:tool.fishing_rod_gold, Gold Fishing Rod
+thermalfoundation:tool.shears_gold, Gold Shears
+thermalfoundation:tool.sickle_gold, Gold Sickle
+thermalfoundation:tool.hammer_gold, Gold Hammer
+thermalfoundation:tool.shield_gold, Gold Shield
+thermalfoundation:fluid_crude_oil, Crude Oil
+thermalfoundation:fluid_redstone, Destabilized Redstone
+thermalfoundation:fluid_glowstone, Energized Glowstone
+thermalfoundation:fluid_ender, Resonant Ender
+thermalfoundation:fluid_pyrotheum, Blazing Pyrotheum
+thermalfoundation:fluid_cryotheum, Gelid Cryotheum
+thermalfoundation:fluid_aerotheum, Zephyrean Aerotheum
+thermalfoundation:fluid_petrotheum, Tectonic Petrotheum
+thermalfoundation:fluid_mana, Primal Mana
 thermaldynamics:duct_0:0, Leadstone Fluxduct
 thermaldynamics:duct_0:1, Hardened Fluxduct
 thermaldynamics:duct_0:2, Redstone Energy Fluxduct
@@ -3122,53 +3122,6 @@ thermaldynamics:cover:0, Decorative Wood Pile Cover
 thermaldynamics:cover:0, Loam Cover
 thermaldynamics:cover:0, Copper Ore Cover
 thermaldynamics:cover:0, Tin Ore Cover
-thermaldynamics:cover:0, Silver Ore Cover
-thermaldynamics:cover:0, Lead Ore Cover
-thermaldynamics:cover:0, Aluminum Ore Cover
-thermaldynamics:cover:0, Nickel Ore Cover
-thermaldynamics:cover:0, Platinum Ore Cover
-thermaldynamics:cover:0, Iridium Ore Cover
-thermaldynamics:cover:0, Mana Infused Ore Cover
-thermaldynamics:cover:0, Oil Sand Cover
-thermaldynamics:cover:0, Oil Shale Cover
-thermaldynamics:cover:0, Destabilized Redstone Ore Cover
-thermaldynamics:cover:0, Energized Netherrack Cover
-thermaldynamics:cover:0, Resonant End Stone Cover
-thermaldynamics:cover:0, Copper Block Cover
-thermaldynamics:cover:0, Tin Block Cover
-thermaldynamics:cover:0, Silver Block Cover
-thermaldynamics:cover:0, Lead Block Cover
-thermaldynamics:cover:0, Aluminum Block Cover
-thermaldynamics:cover:0, Nickel Block Cover
-thermaldynamics:cover:0, Platinum Block Cover
-thermaldynamics:cover:0, Iridium Block Cover
-thermaldynamics:cover:0, Mana Infused Block Cover
-thermaldynamics:cover:0, Steel Block Cover
-thermaldynamics:cover:0, Electrum Block Cover
-thermaldynamics:cover:0, Invar Block Cover
-thermaldynamics:cover:0, Bronze Block Cover
-thermaldynamics:cover:0, Constantan Block Cover
-thermaldynamics:cover:0, Signalum Block Cover
-thermaldynamics:cover:0, Lumium Block Cover
-thermaldynamics:cover:0, Enderium Block Cover
-thermaldynamics:cover:0, Black Rockwool Cover
-thermaldynamics:cover:0, Red Rockwool Cover
-thermaldynamics:cover:0, Green Rockwool Cover
-thermaldynamics:cover:0, Brown Rockwool Cover
-thermaldynamics:cover:0, Blue Rockwool Cover
-thermaldynamics:cover:0, Purple Rockwool Cover
-thermaldynamics:cover:0, Cyan Rockwool Cover
-thermaldynamics:cover:0, Light Gray Rockwool Cover
-thermaldynamics:cover:0, Gray Rockwool Cover
-thermaldynamics:cover:0, Pink Rockwool Cover
-thermaldynamics:cover:0, Lime Rockwool Cover
-thermaldynamics:cover:0, Yellow Rockwool Cover
-thermaldynamics:cover:0, Light Blue Rockwool Cover
-thermaldynamics:cover:0, Magenta Rockwool Cover
-thermaldynamics:cover:0, Orange Rockwool Cover
-thermaldynamics:cover:0, White Rockwool Cover
-thermaldynamics:cover:0, Copper Ore Cover
-thermaldynamics:cover:0, Tin Ore Cover
 thermaldynamics:cover:0, Lead Ore Cover
 thermaldynamics:cover:0, Thorium Ore Cover
 thermaldynamics:cover:0, Uranium Ore Cover
@@ -3214,6 +3167,53 @@ thermaldynamics:cover:0, Depleted Berkelium Block Cover
 thermaldynamics:cover:0, Depleted Californium Block Cover
 thermaldynamics:cover:0, Supercold Ice Cover
 thermaldynamics:cover:0, Fusion Connector Cover
+thermaldynamics:cover:0, Copper Ore Cover
+thermaldynamics:cover:0, Tin Ore Cover
+thermaldynamics:cover:0, Silver Ore Cover
+thermaldynamics:cover:0, Lead Ore Cover
+thermaldynamics:cover:0, Aluminum Ore Cover
+thermaldynamics:cover:0, Nickel Ore Cover
+thermaldynamics:cover:0, Platinum Ore Cover
+thermaldynamics:cover:0, Iridium Ore Cover
+thermaldynamics:cover:0, Mana Infused Ore Cover
+thermaldynamics:cover:0, Oil Sand Cover
+thermaldynamics:cover:0, Oil Shale Cover
+thermaldynamics:cover:0, Destabilized Redstone Ore Cover
+thermaldynamics:cover:0, Energized Netherrack Cover
+thermaldynamics:cover:0, Resonant End Stone Cover
+thermaldynamics:cover:0, Copper Block Cover
+thermaldynamics:cover:0, Tin Block Cover
+thermaldynamics:cover:0, Silver Block Cover
+thermaldynamics:cover:0, Lead Block Cover
+thermaldynamics:cover:0, Aluminum Block Cover
+thermaldynamics:cover:0, Nickel Block Cover
+thermaldynamics:cover:0, Platinum Block Cover
+thermaldynamics:cover:0, Iridium Block Cover
+thermaldynamics:cover:0, Mana Infused Block Cover
+thermaldynamics:cover:0, Steel Block Cover
+thermaldynamics:cover:0, Electrum Block Cover
+thermaldynamics:cover:0, Invar Block Cover
+thermaldynamics:cover:0, Bronze Block Cover
+thermaldynamics:cover:0, Constantan Block Cover
+thermaldynamics:cover:0, Signalum Block Cover
+thermaldynamics:cover:0, Lumium Block Cover
+thermaldynamics:cover:0, Enderium Block Cover
+thermaldynamics:cover:0, Black Rockwool Cover
+thermaldynamics:cover:0, Red Rockwool Cover
+thermaldynamics:cover:0, Green Rockwool Cover
+thermaldynamics:cover:0, Brown Rockwool Cover
+thermaldynamics:cover:0, Blue Rockwool Cover
+thermaldynamics:cover:0, Purple Rockwool Cover
+thermaldynamics:cover:0, Cyan Rockwool Cover
+thermaldynamics:cover:0, Light Gray Rockwool Cover
+thermaldynamics:cover:0, Gray Rockwool Cover
+thermaldynamics:cover:0, Pink Rockwool Cover
+thermaldynamics:cover:0, Lime Rockwool Cover
+thermaldynamics:cover:0, Yellow Rockwool Cover
+thermaldynamics:cover:0, Light Blue Rockwool Cover
+thermaldynamics:cover:0, Magenta Rockwool Cover
+thermaldynamics:cover:0, Orange Rockwool Cover
+thermaldynamics:cover:0, White Rockwool Cover
 thermaldynamics:cover:0, Machine Structure Cover
 thermaldynamics:cover:0, Motor Cover
 thermaldynamics:cover:0, Advanced Motor Cover
@@ -3237,38 +3237,6 @@ thermaldynamics:cover:0, Copper Coil Cover
 thermaldynamics:cover:0, Titanium Coil Cover
 thermaldynamics:cover:0, Aluminum Coil Cover
 thermaldynamics:cover:0, Iridium Coil Cover
-thermaldynamics:cover:0, Porcelain Bricks Cover
-thermaldynamics:cover:0, Dark Bricks Cover
-thermaldynamics:cover:0, Marine Bricks Cover
-thermaldynamics:cover:0, Golden Bricks Cover
-thermaldynamics:cover:0, Dragon Bricks Cover
-thermaldynamics:cover:0, Lava Bricks Cover
-thermaldynamics:cover:0, Rainbow Bricks Cover
-thermaldynamics:cover:0, Unfired Porcelain Cover
-thermaldynamics:cover:0, White Porcelain Cover
-thermaldynamics:cover:0, Orange Porcelain Cover
-thermaldynamics:cover:0, Magenta Porcelain Cover
-thermaldynamics:cover:0, Light Blue Porcelain Cover
-thermaldynamics:cover:0, Yellow Porcelain Cover
-thermaldynamics:cover:0, Lime Porcelain Cover
-thermaldynamics:cover:0, Pink Porcelain Cover
-thermaldynamics:cover:0, Gray Porcelain Cover
-thermaldynamics:cover:0, Light Gray Porcelain Cover
-thermaldynamics:cover:0, Cyan Porcelain Cover
-thermaldynamics:cover:0, Purple Porcelain Cover
-thermaldynamics:cover:0, Blue Porcelain Cover
-thermaldynamics:cover:0, Brown Porcelain Cover
-thermaldynamics:cover:0, Green Porcelain Cover
-thermaldynamics:cover:0, Red Porcelain Cover
-thermaldynamics:cover:0, Black Porcelain Cover
-thermaldynamics:cover:0, Rainbow Porcelain Cover
-thermaldynamics:cover:0, Rainbow Porcelain Cover
-thermaldynamics:cover:0, Rainbow Porcelain Cover
-thermaldynamics:cover:0, Rainbow Porcelain Cover
-thermaldynamics:cover:0, Rainbow Porcelain Cover
-thermaldynamics:cover:0, Rainbow Porcelain Cover
-thermaldynamics:cover:0, Rainbow Porcelain Cover
-thermaldynamics:cover:0, Rainbow Porcelain Cover
 thermaldynamics:cover:0, Certus Quartz Ore Cover
 thermaldynamics:cover:0, Charged Certus Quartz Ore Cover
 thermaldynamics:cover:0, Certus Quartz Block Cover
@@ -3284,23 +3252,6 @@ thermaldynamics:cover:0, Dried Spruce Log Cover
 thermaldynamics:cover:0, Lift Receiver Cover
 thermaldynamics:cover:0, Redstone Notifier Cover
 thermaldynamics:cover:0, Scaffolding Cover
-thermaldynamics:cover:0, Refractory Casing (Standard) Cover
-thermaldynamics:cover:0, Refractory Clay Block Cover
-thermaldynamics:cover:0, Refractory Casing (Advanced) Cover
-thermaldynamics:cover:0, Refractory Casing (Basic) Cover
-thermaldynamics:cover:0, Machine Frame Cover
-thermaldynamics:cover:0, Machine Base Cover
-thermaldynamics:cover:0, Dimensional Shard Ore Cover
-thermaldynamics:cover:0, Dimensional Shard Ore Cover
-thermaldynamics:cover:0, Dimensional Shard Ore Cover
-thermaldynamics:cover:0, Destination Analyzer Cover
-thermaldynamics:cover:0, Matter Booster Cover
-thermaldynamics:cover:0, Space Chamber Corner Block Cover
-thermaldynamics:cover:0, Support Block Cover
-thermaldynamics:cover:0, Shield Template Cover
-thermaldynamics:cover:0, Shield Template Cover
-thermaldynamics:cover:0, Shield Template Cover
-thermaldynamics:cover:0, Shield Template Cover
 libvulpes:blockphantom, tile.blockPhantom.name
 libvulpes:hatch:0, Input Hatch
 libvulpes:hatch:1, Output Hatch
@@ -3388,483 +3339,16 @@ libvulpes:battery:1, 2x Small Battery
 libvulpes:holoprojector, Holo-Projector
 forge:bucketfilled, Format error: %s Bucket
 cd4017be_lib:m:0, Hint for modpack developers!
-ceramics:unfired_clay:0, Unfired Clay Bucket
-ceramics:unfired_clay:1, Unfired Clay Shears
-ceramics:unfired_clay:4, Unfired Porcelain
-ceramics:unfired_clay:5, Porcelain Brick
-ceramics:unfired_clay:8, Unfired Clay Plate
-ceramics:unfired_clay:9, Clay Plate
-ceramics:clay_bucket:0, Clay Bucket
-ceramics:clay_bucket:0, Water Clay Bucket
-ceramics:clay_bucket:0, Lava Clay Bucket
-ceramics:clay_bucket:0, Latex Clay Bucket
-ceramics:clay_bucket:0, Distilled Water Clay Bucket
-ceramics:clay_bucket:0, Placeholder Acid I Clay Bucket
-ceramics:clay_bucket:0, Placeholder Acid II Clay Bucket
-ceramics:clay_bucket:0, Ethanol Clay Bucket
-ceramics:clay_bucket:0, Biomass Clay Bucket
-ceramics:clay_bucket:0, Liquid Glass Clay Bucket
-ceramics:clay_bucket:0, Honey Clay Bucket
-ceramics:clay_bucket:0, Crushed Ice Clay Bucket
-ceramics:clay_bucket:0, Fruit Juice Clay Bucket
-ceramics:clay_bucket:0, Seed Oil Clay Bucket
-ceramics:clay_bucket:0, Short Mead Clay Bucket
-ceramics:clay_bucket:0, Sulphuric Acid Clay Bucket
-ceramics:clay_bucket:0, Propane Clay Bucket
-ceramics:clay_bucket:0, Liquid Sulphur Clay Bucket
-ceramics:clay_bucket:0, Energite Clay Bucket
-ceramics:clay_bucket:0, Liquefied Glowstone Clay Bucket
-ceramics:clay_bucket:0, Steam Clay Bucket
-ceramics:clay_bucket:0, Creosote Oil Clay Bucket
-ceramics:clay_bucket:0, Liquifacted Coal Clay Bucket
-ceramics:clay_bucket:0, Crude Oil Clay Bucket
-ceramics:clay_bucket:0, Naphtha Clay Bucket
-ceramics:clay_bucket:0, Refined Fuel Clay Bucket
-ceramics:clay_bucket:0, Sap Clay Bucket
-ceramics:clay_bucket:0, Syrup Clay Bucket
-ceramics:clay_bucket:0, Resin Clay Bucket
-ceramics:clay_bucket:0, Tree Oil Clay Bucket
-ceramics:clay_bucket:0, Mushroom Stew Clay Bucket
-ceramics:clay_bucket:0, Destabilized Redstone Clay Bucket
-ceramics:clay_bucket:0, Energized Glowstone Clay Bucket
-ceramics:clay_bucket:0, Resonant Ender Clay Bucket
-ceramics:clay_bucket:0, Blazing Pyrotheum Clay Bucket
-ceramics:clay_bucket:0, Gelid Cryotheum Clay Bucket
-ceramics:clay_bucket:0, Zephyrean Aerotheum Clay Bucket
-ceramics:clay_bucket:0, Tectonic Petrotheum Clay Bucket
-ceramics:clay_bucket:0, Primal Mana Clay Bucket
-ceramics:clay_bucket:0, Deuterium Clay Bucket
-ceramics:clay_bucket:0, Tritium Clay Bucket
-ceramics:clay_bucket:0, Helium-3 Clay Bucket
-ceramics:clay_bucket:0, Helium Clay Bucket
-ceramics:clay_bucket:0, Liquid Helium Clay Bucket
-ceramics:clay_bucket:0, Plasma Clay Bucket
-ceramics:clay_bucket:0, Molten Lithium-6 Clay Bucket
-ceramics:clay_bucket:0, Molten Lithium-7 Clay Bucket
-ceramics:clay_bucket:0, Molten Boron-10 Clay Bucket
-ceramics:clay_bucket:0, Molten Boron-11 Clay Bucket
-ceramics:clay_bucket:0, Neutron Fluid Clay Bucket
-ceramics:clay_bucket:0, Fluorine Clay Bucket
-ceramics:clay_bucket:0, Ammonia Clay Bucket
-ceramics:clay_bucket:0, Ethanol Clay Bucket
-ceramics:clay_bucket:0, Boric Acid Clay Bucket
-ceramics:clay_bucket:0, Diborane Clay Bucket
-ceramics:clay_bucket:0, RadAway Fluid Clay Bucket
-ceramics:clay_bucket:0, Molten Beryllium Clay Bucket
-ceramics:clay_bucket:0, Molten Lithium Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Beryllium Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Mixture Clay Bucket
-ceramics:clay_bucket:0, Boron Nitride Solution Clay Bucket
-ceramics:clay_bucket:0, Coolant Clay Bucket
-ceramics:clay_bucket:0, Molten Sulfur Clay Bucket
-ceramics:clay_bucket:0, Sulfur Dioxide Clay Bucket
-ceramics:clay_bucket:0, Sulfur Trioxide Clay Bucket
-ceramics:clay_bucket:0, Sulfuric Acid Clay Bucket
-ceramics:clay_bucket:0, Fluorite Water Clay Bucket
-ceramics:clay_bucket:0, Calcium Sulfate Solution Clay Bucket
-ceramics:clay_bucket:0, Hydrofluoric Acid Clay Bucket
-ceramics:clay_bucket:0, Oxygen Difluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Thorium Clay Bucket
-ceramics:clay_bucket:0, Molten Thorium Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Thorium Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Uranium Clay Bucket
-ceramics:clay_bucket:0, Molten Uranium Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Uranium Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Plutonium Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Thorium-230 Clay Bucket
-ceramics:clay_bucket:0, Molten Thorium-230 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Thorium-230 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Thorium-232 Clay Bucket
-ceramics:clay_bucket:0, Molten Thorium-232 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Thorium-232 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Uranium-233 Clay Bucket
-ceramics:clay_bucket:0, Molten Uranium-233 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Uranium-233 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Uranium-235 Clay Bucket
-ceramics:clay_bucket:0, Molten Uranium-235 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Uranium-235 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Uranium-238 Clay Bucket
-ceramics:clay_bucket:0, Molten Uranium-238 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Uranium-238 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Neptunium-236 Clay Bucket
-ceramics:clay_bucket:0, Molten Neptunium-236 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Neptunium-236 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Neptunium-237 Clay Bucket
-ceramics:clay_bucket:0, Molten Neptunium-237 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Neptunium-237  Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium-238 Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium-238 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Plutonium-238 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium-239 Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium-239 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Plutonium-239 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium-241 Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium-241 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Plutonium-241 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium-242 Clay Bucket
-ceramics:clay_bucket:0, Molten Plutonium-242 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Plutonium-242 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Americium-241 Clay Bucket
-ceramics:clay_bucket:0, Molten Americium-241 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Americium-241 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Americium-242 Clay Bucket
-ceramics:clay_bucket:0, Molten Americium-242 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Americium-242 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Americium-243 Clay Bucket
-ceramics:clay_bucket:0, Molten Americium-243 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Americium-243 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Curium-243 Clay Bucket
-ceramics:clay_bucket:0, Molten Curium-243 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Curium-243 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Curium-245 Clay Bucket
-ceramics:clay_bucket:0, Molten Curium-245 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Curium-245 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Curium-246 Clay Bucket
-ceramics:clay_bucket:0, Molten Curium-246 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Curium-246 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Curium-247 Clay Bucket
-ceramics:clay_bucket:0, Molten Curium-247 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Curium-247 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Berkelium-247 Clay Bucket
-ceramics:clay_bucket:0, Molten Berkelium-247 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Berkelium-247 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Berkelium-248 Clay Bucket
-ceramics:clay_bucket:0, Molten Berkelium-248 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Berkelium-248 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Californium-249 Clay Bucket
-ceramics:clay_bucket:0, Molten Californium-249 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Californium-249 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Californium-250 Clay Bucket
-ceramics:clay_bucket:0, Molten Californium-250 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Californium-250 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Californium-251 Clay Bucket
-ceramics:clay_bucket:0, Molten Californium-251 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Californium-251 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten Californium-252 Clay Bucket
-ceramics:clay_bucket:0, Molten Californium-252 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Californium-252 Fluoride Clay Bucket
-ceramics:clay_bucket:0, Molten TBU Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten TBU Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of TBU Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEU-233 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEU-233 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LEU-233 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEU-233 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEU-233 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HEU-233 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEU-235 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEU-235 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LEU-235 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEU-235 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEU-235 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HEU-235 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEN-236 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEN-236 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LEN-236 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEN-236 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEN-236 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HEN-236 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEP-239 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEP-239 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LEP-239 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEP-239 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEP-239 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HEP-239 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEP-241 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEP-241 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LEP-241 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEP-241 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEP-241 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HEP-241 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEA-242 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEA-242 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LEA-242 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEA-242 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEA-242 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HEA-242 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECm-243 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECm-243 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LECm-243 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECm-243 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECm-243 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HECm-243 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECm-245 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECm-245 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LECm-245 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECm-245 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECm-245 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HECm-245 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECm-247 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECm-247 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LECm-247 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECm-247 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECm-247 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HECm-247 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEB-248 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LEB-248 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LEB-248 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEB-248 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HEB-248 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HEB-248 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECf-249 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECf-249 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LECf-249 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECf-249 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECf-249 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HECf-249 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECf-251 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten LECf-251 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of LECf-251 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECf-251 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten HECf-251 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of HECf-251 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted TBU Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted TBU Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted TBU Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEU-233 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEU-233 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LEU-233 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEU-233 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEU-233 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HEU-233 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEU-235 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEU-235 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LEU-235 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEU-235 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEU-235 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HEU-235 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEN-236 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEN-236 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LEN-236 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEN-236 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEN-236 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HEN-236 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEP-239 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEP-239 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LEP-239 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEP-239 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEP-239 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HEP-239 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEP-241 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEP-241 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LEP-241 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEP-241 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEP-241 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HEP-241 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEA-242 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEA-242 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LEA-242 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEA-242 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEA-242 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HEA-242 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECm-243 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECm-243 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LECm-243 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECm-243 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECm-243 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HECm-243 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECm-245 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECm-245 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LECm-245 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECm-245 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECm-245 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HECm-245 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECm-247 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECm-247 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LECm-247 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECm-247 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECm-247 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HECm-247 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEB-248 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LEB-248 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LEB-248 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEB-248 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HEB-248 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HEB-248 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECf-249 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECf-249 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LECf-249 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECf-249 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECf-249 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HECf-249 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECf-251 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted LECf-251 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted LECf-251 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECf-251 Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten Depleted HECf-251 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Molten FLiBe Salt Solution of Depleted HECf-251 Fluoride Fuel Clay Bucket
-ceramics:clay_bucket:0, Etching Acid Clay Bucket
-ceramics:clay_bucket:0, Liquid Plastic Clay Bucket
-ceramics:clay_bucket:0, Oil Clay Bucket
-ceramics:clay_bucket:0, LPG Clay Bucket
-ceramics:clay_bucket:0, Gasoline Clay Bucket
-ceramics:clay_bucket:0, Kerosene Clay Bucket
-ceramics:clay_bucket:0, Diesel Clay Bucket
-ceramics:clay_bucket:0, Lubricant Clay Bucket
-ceramics:clay_bucket:1, Milk Clay Bucket
-ceramics:clay_shears, Clay Shears
-ceramics:clay_helmet, Clay Helmet
-ceramics:clay_chestplate, Clay Chestplate
-ceramics:clay_leggings, Clay Leggings
-ceramics:clay_boots, Clay Boots
-ceramics:clay_helmet_raw, Unfired Clay Helmet
-ceramics:clay_chestplate_raw, Unfired Clay Chestplate
-ceramics:clay_leggings_raw, Unfired Clay Leggings
-ceramics:clay_boots_raw, Unfired Clay Boots
-ceramics:clay_bucket_block, Unfired Clay Bucket
-ceramics:clay_hard:0, Porcelain Bricks
-ceramics:clay_hard:1, Dark Bricks
-ceramics:clay_hard:2, Marine Bricks
-ceramics:clay_hard:3, Golden Bricks
-ceramics:clay_hard:4, Dragon Bricks
-ceramics:clay_hard:5, Lava Bricks
-ceramics:clay_hard:6, Rainbow Bricks
-ceramics:clay_soft:0, Unfired Porcelain
-ceramics:clay_wall:0, Bricks Wall
-ceramics:clay_wall:1, Porcelain Bricks Wall
-ceramics:clay_wall:2, Dark Bricks Wall
-ceramics:clay_wall:3, Marine Bricks Wall
-ceramics:clay_wall:4, Golden Bricks Wall
-ceramics:clay_wall:5, Dragon Bricks Wall
-ceramics:clay_wall:6, Lava Bricks Wall
-ceramics:clay_wall:7, Rainbow Bricks Wall
-ceramics:clay_slab:0, Porcelain Bricks Slab
-ceramics:clay_slab:1, Dark Bricks Slab
-ceramics:clay_slab:2, Marine Bricks Slab
-ceramics:clay_slab:3, Golden Bricks Slab
-ceramics:clay_slab:4, Dragon Bricks Slab
-ceramics:clay_slab:5, Lava Bricks Slab
-ceramics:clay_slab:6, Rainbow Bricks Slab
-ceramics:porcelain:0, White Porcelain
-ceramics:porcelain:1, Orange Porcelain
-ceramics:porcelain:2, Magenta Porcelain
-ceramics:porcelain:3, Light Blue Porcelain
-ceramics:porcelain:4, Yellow Porcelain
-ceramics:porcelain:5, Lime Porcelain
-ceramics:porcelain:6, Pink Porcelain
-ceramics:porcelain:7, Gray Porcelain
-ceramics:porcelain:8, Light Gray Porcelain
-ceramics:porcelain:9, Cyan Porcelain
-ceramics:porcelain:10, Purple Porcelain
-ceramics:porcelain:11, Blue Porcelain
-ceramics:porcelain:12, Brown Porcelain
-ceramics:porcelain:13, Green Porcelain
-ceramics:porcelain:14, Red Porcelain
-ceramics:porcelain:15, Black Porcelain
-ceramics:porcelain_bricks_stairs, Porcelain Bricks Stairs
-ceramics:rainbow_clay:0, Rainbow Porcelain
-ceramics:rainbow_clay:1, Rainbow Porcelain
-ceramics:rainbow_clay:2, Rainbow Porcelain
-ceramics:rainbow_clay:3, Rainbow Porcelain
-ceramics:rainbow_clay:4, Rainbow Porcelain
-ceramics:rainbow_clay:5, Rainbow Porcelain
-ceramics:rainbow_clay:6, Rainbow Porcelain
-ceramics:rainbow_clay:7, Rainbow Porcelain
-ceramics:rainbow_bricks_stairs, Rainbow Bricks Stairs
-ceramics:dark_bricks_stairs, Dark Bricks Stairs
-ceramics:golden_bricks_stairs, Golden Bricks Stairs
-ceramics:marine_bricks_stairs, Marine Bricks Stairs
-ceramics:dragon_bricks_stairs, Dragon Bricks Stairs
-ceramics:lava_bricks_stairs, Lava Bricks Stairs
-ceramics:clay_barrel_unfired:0, Unfired Clay Barrel
-ceramics:clay_barrel_unfired:1, Unfired Clay Barrel Extension
-ceramics:clay_barrel_unfired:2, Unfired Porcelain Barrel
-ceramics:clay_barrel_unfired:3, Unfired Porcelain Barrel Extension
-ceramics:clay_barrel:0, Clay Barrel
-ceramics:clay_barrel:1, Clay Barrel Extension
-ceramics:clay_barrel_stained:0, White Clay Barrel
-ceramics:clay_barrel_stained:1, Orange Clay Barrel
-ceramics:clay_barrel_stained:2, Magenta Clay Barrel
-ceramics:clay_barrel_stained:3, Light Blue Clay Barrel
-ceramics:clay_barrel_stained:4, Yellow Clay Barrel
-ceramics:clay_barrel_stained:5, Lime Clay Barrel
-ceramics:clay_barrel_stained:6, Pink Clay Barrel
-ceramics:clay_barrel_stained:7, Gray Clay Barrel
-ceramics:clay_barrel_stained:8, Light Gray Clay Barrel
-ceramics:clay_barrel_stained:9, Cyan Clay Barrel
-ceramics:clay_barrel_stained:10, Purple Clay Barrel
-ceramics:clay_barrel_stained:11, Blue Clay Barrel
-ceramics:clay_barrel_stained:12, Brown Clay Barrel
-ceramics:clay_barrel_stained:13, Green Clay Barrel
-ceramics:clay_barrel_stained:14, Red Clay Barrel
-ceramics:clay_barrel_stained:15, Black Clay Barrel
-ceramics:clay_barrel_stained_extension:0, White Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:1, Orange Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:2, Magenta Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:3, Light Blue Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:4, Yellow Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:5, Lime Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:6, Pink Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:7, Gray Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:8, Light Gray Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:9, Cyan Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:10, Purple Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:11, Blue Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:12, Brown Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:13, Green Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:14, Red Clay Barrel Extension
-ceramics:clay_barrel_stained_extension:15, Black Clay Barrel Extension
-ceramics:porcelain_barrel:0, White Porcelain Barrel
-ceramics:porcelain_barrel:1, Orange Porcelain Barrel
-ceramics:porcelain_barrel:2, Magenta Porcelain Barrel
-ceramics:porcelain_barrel:3, Light Blue Porcelain Barrel
-ceramics:porcelain_barrel:4, Yellow Porcelain Barrel
-ceramics:porcelain_barrel:5, Lime Porcelain Barrel
-ceramics:porcelain_barrel:6, Pink Porcelain Barrel
-ceramics:porcelain_barrel:7, Gray Porcelain Barrel
-ceramics:porcelain_barrel:8, Light Gray Porcelain Barrel
-ceramics:porcelain_barrel:9, Cyan Porcelain Barrel
-ceramics:porcelain_barrel:10, Purple Porcelain Barrel
-ceramics:porcelain_barrel:11, Blue Porcelain Barrel
-ceramics:porcelain_barrel:12, Brown Porcelain Barrel
-ceramics:porcelain_barrel:13, Green Porcelain Barrel
-ceramics:porcelain_barrel:14, Red Porcelain Barrel
-ceramics:porcelain_barrel:15, Black Porcelain Barrel
-ceramics:porcelain_barrel_extension:0, White Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:1, Orange Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:2, Magenta Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:3, Light Blue Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:4, Yellow Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:5, Lime Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:6, Pink Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:7, Gray Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:8, Light Gray Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:9, Cyan Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:10, Purple Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:11, Blue Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:12, Brown Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:13, Green Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:14, Red Porcelain Barrel Extension
-ceramics:porcelain_barrel_extension:15, Black Porcelain Barrel Extension
-ceramics:faucet, Porcelain Faucet
-ceramics:channel, Porcelain Channel
 cttinycoal:tiny_coal, Tiny Coal
 cttinycoal:tiny_charcoal, Tiny Charcoal
-indlog:item_pipe:0, Item Transport Pipe
-indlog:item_pipe:1, Item Injection Pipe
-indlog:item_pipe:2, Item Extraction Pipe
-indlog:fluid_pipe:0, Fluid Transport Pipe
-indlog:fluid_pipe:1, Fluid Injection Pipe
-indlog:fluid_pipe:2, Fluid Extraction Pipe
-indlog:warp_pipe, Advanced Universal Pipe
-indlog:tank:0, Fluid Tank §8tiny
-indlog:buffer:0, Item Buffer §6normal-S
-indlog:auto_craft, Automatic Crafter
-indlog:inv_connector, Remote Access Pipe
-indlog:fluid_filter, Pipe Liquid-Filter
-indlog:item_filter, Pipe Item-Filter
-indlog:portable_craft, Portable Autocrafter
-indlog:remote_inv, Portable Inventory Remote Access
-pneumaticcraft:fluid.lpg, LPG
 pneumaticcraft:fluid.fuel, Gasoline
 pneumaticcraft:fluid.oil, Oil
-pneumaticcraft:fluid.plastic, Plastic
-pneumaticcraft:fluid.etchacid, Etching Acid
-pneumaticcraft:fluid.lubricant, Lubricant
-pneumaticcraft:fluid.kerosene, Kerosene
+pneumaticcraft:fluid.lpg, LPG
 pneumaticcraft:fluid.diesel, Diesel
+pneumaticcraft:fluid.kerosene, Kerosene
+pneumaticcraft:fluid.etchacid, Etching Acid
+pneumaticcraft:fluid.plastic, Plastic
+pneumaticcraft:fluid.lubricant, Lubricant
 pneumaticcraft:gps_tool, GPS Tool
 pneumaticcraft:ingot_iron_compressed, Compressed Iron Ingot
 pneumaticcraft:pressure_gauge, Pressure Gauge
@@ -4475,6 +3959,52 @@ appliedenergistics2:facade:0, Cable Facade - Ash Block
 appliedenergistics2:facade:0, Cable Facade - Loam
 appliedenergistics2:facade:0, Cable Facade - Copper Ore
 appliedenergistics2:facade:0, Cable Facade - Tin Ore
+appliedenergistics2:facade:0, Cable Facade - Lead Ore
+appliedenergistics2:facade:0, Cable Facade - Thorium Ore
+appliedenergistics2:facade:0, Cable Facade - Uranium Ore
+appliedenergistics2:facade:0, Cable Facade - Boron Ore
+appliedenergistics2:facade:0, Cable Facade - Lithium Ore
+appliedenergistics2:facade:0, Cable Facade - Magnesium Ore
+appliedenergistics2:facade:0, Cable Facade - Copper Block
+appliedenergistics2:facade:0, Cable Facade - Tin Block
+appliedenergistics2:facade:0, Cable Facade - Lead Block
+appliedenergistics2:facade:0, Cable Facade - Thorium Block
+appliedenergistics2:facade:0, Cable Facade - Uranium Block
+appliedenergistics2:facade:0, Cable Facade - Boron Block
+appliedenergistics2:facade:0, Cable Facade - Lithium Block
+appliedenergistics2:facade:0, Cable Facade - Magnesium Block
+appliedenergistics2:facade:0, Cable Facade - Graphite Block
+appliedenergistics2:facade:0, Cable Facade - Beryllium Block
+appliedenergistics2:facade:0, Cable Facade - Zirconium Block
+appliedenergistics2:facade:0, Cable Facade - Reactor Casing
+appliedenergistics2:facade:0, Cable Facade - Blast Block
+appliedenergistics2:facade:0, Cable Facade - Empty Cooler
+appliedenergistics2:facade:0, Cable Facade - Water Cooler
+appliedenergistics2:facade:0, Cable Facade - Redstone Cooler
+appliedenergistics2:facade:0, Cable Facade - Quartz Cooler
+appliedenergistics2:facade:0, Cable Facade - Gold Cooler
+appliedenergistics2:facade:0, Cable Facade - Glowstone Cooler
+appliedenergistics2:facade:0, Cable Facade - Lapis Cooler
+appliedenergistics2:facade:0, Cable Facade - Diamond Cooler
+appliedenergistics2:facade:0, Cable Facade - Liquid Helium Cooler
+appliedenergistics2:facade:0, Cable Facade - Enderium Cooler
+appliedenergistics2:facade:0, Cable Facade - Cryotheum Cooler
+appliedenergistics2:facade:0, Cable Facade - Iron Cooler
+appliedenergistics2:facade:0, Cable Facade - Emerald Cooler
+appliedenergistics2:facade:0, Cable Facade - Copper Cooler
+appliedenergistics2:facade:0, Cable Facade - Tin Cooler
+appliedenergistics2:facade:0, Cable Facade - Magnesium Cooler
+appliedenergistics2:facade:0, Cable Facade - Depleted Thorium Block
+appliedenergistics2:facade:0, Cable Facade - Depleted Uranium Block
+appliedenergistics2:facade:0, Cable Facade - Depleted Neptunium Block
+appliedenergistics2:facade:0, Cable Facade - Depleted Plutonium Block
+appliedenergistics2:facade:0, Cable Facade - Depleted Americium Block
+appliedenergistics2:facade:0, Cable Facade - Depleted Curium Block
+appliedenergistics2:facade:0, Cable Facade - Depleted Berkelium Block
+appliedenergistics2:facade:0, Cable Facade - Depleted Californium Block
+appliedenergistics2:facade:0, Cable Facade - Fusion Connector
+appliedenergistics2:facade:0, Cable Facade - Copper Ore
+appliedenergistics2:facade:0, Cable Facade - Tin Ore
 appliedenergistics2:facade:0, Cable Facade - Silver Ore
 appliedenergistics2:facade:0, Cable Facade - Lead Ore
 appliedenergistics2:facade:0, Cable Facade - Aluminum Ore
@@ -4520,52 +4050,6 @@ appliedenergistics2:facade:0, Cable Facade - Light Blue Rockwool
 appliedenergistics2:facade:0, Cable Facade - Magenta Rockwool
 appliedenergistics2:facade:0, Cable Facade - Orange Rockwool
 appliedenergistics2:facade:0, Cable Facade - White Rockwool
-appliedenergistics2:facade:0, Cable Facade - Copper Ore
-appliedenergistics2:facade:0, Cable Facade - Tin Ore
-appliedenergistics2:facade:0, Cable Facade - Lead Ore
-appliedenergistics2:facade:0, Cable Facade - Thorium Ore
-appliedenergistics2:facade:0, Cable Facade - Uranium Ore
-appliedenergistics2:facade:0, Cable Facade - Boron Ore
-appliedenergistics2:facade:0, Cable Facade - Lithium Ore
-appliedenergistics2:facade:0, Cable Facade - Magnesium Ore
-appliedenergistics2:facade:0, Cable Facade - Copper Block
-appliedenergistics2:facade:0, Cable Facade - Tin Block
-appliedenergistics2:facade:0, Cable Facade - Lead Block
-appliedenergistics2:facade:0, Cable Facade - Thorium Block
-appliedenergistics2:facade:0, Cable Facade - Uranium Block
-appliedenergistics2:facade:0, Cable Facade - Boron Block
-appliedenergistics2:facade:0, Cable Facade - Lithium Block
-appliedenergistics2:facade:0, Cable Facade - Magnesium Block
-appliedenergistics2:facade:0, Cable Facade - Graphite Block
-appliedenergistics2:facade:0, Cable Facade - Beryllium Block
-appliedenergistics2:facade:0, Cable Facade - Zirconium Block
-appliedenergistics2:facade:0, Cable Facade - Reactor Casing
-appliedenergistics2:facade:0, Cable Facade - Blast Block
-appliedenergistics2:facade:0, Cable Facade - Empty Cooler
-appliedenergistics2:facade:0, Cable Facade - Water Cooler
-appliedenergistics2:facade:0, Cable Facade - Redstone Cooler
-appliedenergistics2:facade:0, Cable Facade - Quartz Cooler
-appliedenergistics2:facade:0, Cable Facade - Gold Cooler
-appliedenergistics2:facade:0, Cable Facade - Glowstone Cooler
-appliedenergistics2:facade:0, Cable Facade - Lapis Cooler
-appliedenergistics2:facade:0, Cable Facade - Diamond Cooler
-appliedenergistics2:facade:0, Cable Facade - Liquid Helium Cooler
-appliedenergistics2:facade:0, Cable Facade - Enderium Cooler
-appliedenergistics2:facade:0, Cable Facade - Cryotheum Cooler
-appliedenergistics2:facade:0, Cable Facade - Iron Cooler
-appliedenergistics2:facade:0, Cable Facade - Emerald Cooler
-appliedenergistics2:facade:0, Cable Facade - Copper Cooler
-appliedenergistics2:facade:0, Cable Facade - Tin Cooler
-appliedenergistics2:facade:0, Cable Facade - Magnesium Cooler
-appliedenergistics2:facade:0, Cable Facade - Depleted Thorium Block
-appliedenergistics2:facade:0, Cable Facade - Depleted Uranium Block
-appliedenergistics2:facade:0, Cable Facade - Depleted Neptunium Block
-appliedenergistics2:facade:0, Cable Facade - Depleted Plutonium Block
-appliedenergistics2:facade:0, Cable Facade - Depleted Americium Block
-appliedenergistics2:facade:0, Cable Facade - Depleted Curium Block
-appliedenergistics2:facade:0, Cable Facade - Depleted Berkelium Block
-appliedenergistics2:facade:0, Cable Facade - Depleted Californium Block
-appliedenergistics2:facade:0, Cable Facade - Fusion Connector
 appliedenergistics2:facade:0, Cable Facade - Machine Structure
 appliedenergistics2:facade:0, Cable Facade - Motor
 appliedenergistics2:facade:0, Cable Facade - Advanced Motor
@@ -4589,38 +4073,6 @@ appliedenergistics2:facade:0, Cable Facade - Copper Coil
 appliedenergistics2:facade:0, Cable Facade - Titanium Coil
 appliedenergistics2:facade:0, Cable Facade - Aluminum Coil
 appliedenergistics2:facade:0, Cable Facade - Iridium Coil
-appliedenergistics2:facade:0, Cable Facade - Porcelain Bricks
-appliedenergistics2:facade:0, Cable Facade - Dark Bricks
-appliedenergistics2:facade:0, Cable Facade - Marine Bricks
-appliedenergistics2:facade:0, Cable Facade - Golden Bricks
-appliedenergistics2:facade:0, Cable Facade - Dragon Bricks
-appliedenergistics2:facade:0, Cable Facade - Lava Bricks
-appliedenergistics2:facade:0, Cable Facade - Rainbow Bricks
-appliedenergistics2:facade:0, Cable Facade - Unfired Porcelain
-appliedenergistics2:facade:0, Cable Facade - White Porcelain
-appliedenergistics2:facade:0, Cable Facade - Orange Porcelain
-appliedenergistics2:facade:0, Cable Facade - Magenta Porcelain
-appliedenergistics2:facade:0, Cable Facade - Light Blue Porcelain
-appliedenergistics2:facade:0, Cable Facade - Yellow Porcelain
-appliedenergistics2:facade:0, Cable Facade - Lime Porcelain
-appliedenergistics2:facade:0, Cable Facade - Pink Porcelain
-appliedenergistics2:facade:0, Cable Facade - Gray Porcelain
-appliedenergistics2:facade:0, Cable Facade - Light Gray Porcelain
-appliedenergistics2:facade:0, Cable Facade - Cyan Porcelain
-appliedenergistics2:facade:0, Cable Facade - Purple Porcelain
-appliedenergistics2:facade:0, Cable Facade - Blue Porcelain
-appliedenergistics2:facade:0, Cable Facade - Brown Porcelain
-appliedenergistics2:facade:0, Cable Facade - Green Porcelain
-appliedenergistics2:facade:0, Cable Facade - Red Porcelain
-appliedenergistics2:facade:0, Cable Facade - Black Porcelain
-appliedenergistics2:facade:0, Cable Facade - Rainbow Porcelain
-appliedenergistics2:facade:0, Cable Facade - Rainbow Porcelain
-appliedenergistics2:facade:0, Cable Facade - Rainbow Porcelain
-appliedenergistics2:facade:0, Cable Facade - Rainbow Porcelain
-appliedenergistics2:facade:0, Cable Facade - Rainbow Porcelain
-appliedenergistics2:facade:0, Cable Facade - Rainbow Porcelain
-appliedenergistics2:facade:0, Cable Facade - Rainbow Porcelain
-appliedenergistics2:facade:0, Cable Facade - Rainbow Porcelain
 appliedenergistics2:facade:0, Cable Facade - Certus Quartz Block
 appliedenergistics2:facade:0, Cable Facade - Certus Quartz Pillar
 appliedenergistics2:facade:0, Cable Facade - Chiseled Certus Quartz Block
@@ -4654,18 +4106,6 @@ appliedenergistics2:facade:0, Cable Facade - Rusted Sheet Metal
 appliedenergistics2:facade:0, Cable Facade - Sheet Metal Siding
 appliedenergistics2:facade:0, Cable Facade - Caution Striped Sheet Metal
 appliedenergistics2:facade:0, Cable Facade - Scaffolding
-appliedenergistics2:facade:0, Cable Facade - Refractory Casing (Standard)
-appliedenergistics2:facade:0, Cable Facade - Refractory Clay Block
-appliedenergistics2:facade:0, Cable Facade - Refractory Casing (Advanced)
-appliedenergistics2:facade:0, Cable Facade - Refractory Casing (Basic)
-appliedenergistics2:facade:0, Cable Facade - Machine Frame
-appliedenergistics2:facade:0, Cable Facade - Machine Base
-appliedenergistics2:facade:0, Cable Facade - Dimensional Shard Ore
-appliedenergistics2:facade:0, Cable Facade - Dimensional Shard Ore
-appliedenergistics2:facade:0, Cable Facade - Dimensional Shard Ore
-appliedenergistics2:facade:0, Cable Facade - Destination Analyzer
-appliedenergistics2:facade:0, Cable Facade - Matter Booster
-appliedenergistics2:facade:0, Cable Facade - Space Chamber Corner Block
 appliedenergistics2:crystal_seed:0, Certus Quartz Seed
 appliedenergistics2:crystal_seed:600, Nether Quartz Seed
 appliedenergistics2:crystal_seed:1200, Fluix Seed
@@ -4906,7 +4346,6 @@ contenttweaker:uranium238_dust, item.contenttweaker.uranium238_dust.name
 contenttweaker:antimony_screw, item.contenttweaker.antimony_screw.name
 contenttweaker:redstone_washed_ore, item.contenttweaker.redstone_washed_ore.name
 contenttweaker:chrome_crushed_ore, item.contenttweaker.chrome_crushed_ore.name
-contenttweaker:steel_mortar, Steel Mortar
 contenttweaker:nether_quartz_crushed_ore, item.contenttweaker.nether_quartz_crushed_ore.name
 contenttweaker:salt_tiny_dust, item.contenttweaker.salt_tiny_dust.name
 contenttweaker:iron_tiny_dust, item.contenttweaker.iron_tiny_dust.name
@@ -4929,8 +4368,6 @@ contenttweaker:gold_ingot, item.contenttweaker.gold_ingot.name
 contenttweaker:platinum_screw, item.contenttweaker.platinum_screw.name
 contenttweaker:chrome_washed_ore, item.contenttweaker.chrome_washed_ore.name
 contenttweaker:ilmenite_dust, item.contenttweaker.ilmenite_dust.name
-contenttweaker:bronze_hammer, Bronze Hammer
-contenttweaker:bronze_mortar, Bronze Mortar
 contenttweaker:titanium_gearbox, item.contenttweaker.titanium_gearbox.name
 contenttweaker:cobalt_nugget, item.contenttweaker.cobalt_nugget.name
 contenttweaker:manganese_tiny_dust, item.contenttweaker.manganese_tiny_dust.name
@@ -4995,7 +4432,6 @@ contenttweaker:coal_dust, item.contenttweaker.coal_dust.name
 contenttweaker:ilmenite_washed_ore, item.contenttweaker.ilmenite_washed_ore.name
 contenttweaker:titanium_nugget, item.contenttweaker.titanium_nugget.name
 contenttweaker:platinum_dust, item.contenttweaker.platinum_dust.name
-contenttweaker:iron_mortar, Iron Mortar
 contenttweaker:steel_industrial_turbine_rotor, item.contenttweaker.steel_industrial_turbine_rotor.name
 contenttweaker:tungstensteel_heat_conductor, item.contenttweaker.tungstensteel_heat_conductor.name
 contenttweaker:ilmenite_tiny_dust, item.contenttweaker.ilmenite_tiny_dust.name
@@ -5028,7 +4464,6 @@ contenttweaker:sulfur_crushed_ore, item.contenttweaker.sulfur_crushed_ore.name
 contenttweaker:bronze_screw, item.contenttweaker.bronze_screw.name
 contenttweaker:copper_rod, item.contenttweaker.copper_rod.name
 contenttweaker:antimony_plate, item.contenttweaker.antimony_plate.name
-contenttweaker:flint_mortar, Flint Mortar
 contenttweaker:stainless_steel_nugget, item.contenttweaker.stainless_steel_nugget.name
 contenttweaker:magnesium_nugget, item.contenttweaker.magnesium_nugget.name
 contenttweaker:cobalt_rod, item.contenttweaker.cobalt_rod.name
@@ -5083,7 +4518,6 @@ contenttweaker:iridium_screw, item.contenttweaker.iridium_screw.name
 contenttweaker:galena_tiny_dust, item.contenttweaker.galena_tiny_dust.name
 contenttweaker:tungstensteel_screw, item.contenttweaker.tungstensteel_screw.name
 contenttweaker:tin_screw, item.contenttweaker.tin_screw.name
-contenttweaker:bronze_saw, item.contenttweaker.bronze_saw.name
 contenttweaker:gold_plate, item.contenttweaker.gold_plate.name
 contenttweaker:steel_macerator_blade, item.contenttweaker.steel_macerator_blade.name
 contenttweaker:iron_crushed_ore, item.contenttweaker.iron_crushed_ore.name
@@ -5124,11 +4558,9 @@ contenttweaker:tetrahedrite_tiny_dust, item.contenttweaker.tetrahedrite_tiny_dus
 contenttweaker:nickel_dust, item.contenttweaker.nickel_dust.name
 contenttweaker:antimony_washed_ore, item.contenttweaker.antimony_washed_ore.name
 contenttweaker:nether_quartz_dust, item.contenttweaker.nether_quartz_dust.name
-contenttweaker:flint_hammer, Flint Hammer
 contenttweaker:iron_axe_head, item.contenttweaker.iron_axe_head.name
 contenttweaker:manganese_dust, item.contenttweaker.manganese_dust.name
 contenttweaker:graphite_ingot, item.contenttweaker.graphite_ingot.name
-contenttweaker:flint_saw, item.contenttweaker.flint_saw.name
 contenttweaker:iridium_rod, item.contenttweaker.iridium_rod.name
 contenttweaker:nickel_crushed_ore, item.contenttweaker.nickel_crushed_ore.name
 contenttweaker:tungstensteel_electrode, item.contenttweaker.tungstensteel_electrode.name
@@ -5136,7 +4568,6 @@ contenttweaker:gold_nugget, item.contenttweaker.gold_nugget.name
 contenttweaker:manganese_ingot, item.contenttweaker.manganese_ingot.name
 contenttweaker:stibnite_crushed_ore, item.contenttweaker.stibnite_crushed_ore.name
 contenttweaker:silicon_rod, item.contenttweaker.silicon_rod.name
-contenttweaker:bronze_wrench, Bronze Wrench
 contenttweaker:test_pick, item.contenttweaker.test_pick.name
 contenttweaker:pitchblende_crushed_ore, item.contenttweaker.pitchblende_crushed_ore.name
 contenttweaker:magnesium_tiny_dust, item.contenttweaker.magnesium_tiny_dust.name
@@ -5178,28 +4609,21 @@ contenttweaker:lapis_lazuli_crushed_ore, item.contenttweaker.lapis_lazuli_crushe
 contenttweaker:copper_screw, item.contenttweaker.copper_screw.name
 contenttweaker:iron_ingot, item.contenttweaker.iron_ingot.name
 contenttweaker:silver_crushed_ore, item.contenttweaker.silver_crushed_ore.name
-contenttweaker:steel_hammer, Steel Hammer
-contenttweaker:iron_saw, item.contenttweaker.iron_saw.name
 contenttweaker:aluminium_rod, item.contenttweaker.aluminium_rod.name
 contenttweaker:stainless_steel_ingot, item.contenttweaker.stainless_steel_ingot.name
 contenttweaker:redstone_tiny_dust, item.contenttweaker.redstone_tiny_dust.name
 contenttweaker:platinum_crushed_ore, item.contenttweaker.platinum_crushed_ore.name
 contenttweaker:silver_plate, item.contenttweaker.silver_plate.name
-contenttweaker:flint_wrench, Flint Wrench
-contenttweaker:steel_saw, item.contenttweaker.steel_saw.name
 contenttweaker:lignite_dust, item.contenttweaker.lignite_dust.name
 contenttweaker:titanium_screw, item.contenttweaker.titanium_screw.name
 contenttweaker:pitchblende_washed_ore, item.contenttweaker.pitchblende_washed_ore.name
 contenttweaker:silver_nugget, item.contenttweaker.silver_nugget.name
 contenttweaker:manganese_nugget, item.contenttweaker.manganese_nugget.name
-contenttweaker:iron_hammer, Iron Hammer
 contenttweaker:thorium_tiny_dust, item.contenttweaker.thorium_tiny_dust.name
 contenttweaker:lead_rod, item.contenttweaker.lead_rod.name
-contenttweaker:iron_wrench, Iron Wrench
 contenttweaker:iron_plate, item.contenttweaker.iron_plate.name
 contenttweaker:lithium_washed_ore, item.contenttweaker.lithium_washed_ore.name
 contenttweaker:tetrahedrite_dust, item.contenttweaker.tetrahedrite_dust.name
-contenttweaker:steel_wrench, Steel Wrench
 contenttweaker:uranium238_washed_ore, item.contenttweaker.uranium238_washed_ore.name
 contenttweaker:nickel_nugget, item.contenttweaker.nickel_nugget.name
 contenttweaker:lithium_ingot, item.contenttweaker.lithium_ingot.name
@@ -5296,490 +4720,6 @@ factorytech:hardhat, Hard Hat
 factorytech:safetyvest, Safety Vest
 factorytech:workpants, Work Pants
 factorytech:steeltoeboots, Steel-Toe Boots
-foundry:component:0, Heating Coil
-foundry:component:1, Refractory Clay
-foundry:component:2, Refractory Brick
-foundry:component:3, Gun Barrel
-foundry:component:4, Revolver Drum
-foundry:component:5, Revolver Frame
-foundry:component:6, Round Casing
-foundry:component:7, Bullet
-foundry:component:8, Hollow Point Bullet
-foundry:component:9, Jacketed Bullet
-foundry:component:10, Pellet
-foundry:component:11, Shell Casing
-foundry:component:12, Shotgun Pump
-foundry:component:13, Shotgun Frame
-foundry:component:14, Steel Bullet
-foundry:component:15, Steel Pellet
-foundry:component:16, Small Piece of Refractory Clay
-foundry:component:17, Inferno Clay
-foundry:component:18, Inferno Brick
-foundry:component:19, Lumium Bullet
-foundry:component:20, Lumium Pellet
-foundry:component:21, Coal Coke
-foundry:component:22, Small Pile of Blaze Powder
-foundry:component:23, Small Pile of Gunpowder
-foundry:component:24, Constantan Rod
-foundry:mold:0, Ingot Mold
-foundry:mold:1, Plate Mold
-foundry:mold:2, Gear Mold
-foundry:mold:3, Rod Mold
-foundry:mold:4, Block Mold
-foundry:mold:5, Slab Mold
-foundry:mold:6, Stairs Mold
-foundry:mold:7, Pickaxe Mold
-foundry:mold:8, Axe Mold
-foundry:mold:9, Sword Mold
-foundry:mold:10, Shovel Mold
-foundry:mold:11, Hoe Mold
-foundry:mold:12, Helmet Mold
-foundry:mold:13, Chestplate Mold
-foundry:mold:14, Leggings Mold
-foundry:mold:15, Boots Mold
-foundry:mold:16, Bullet Mold
-foundry:mold:17, Hollow Point Bullet Mold
-foundry:mold:18, Round Casing Mold
-foundry:mold:19, Gun Barrel Mold
-foundry:mold:20, Revolver Drum Mold
-foundry:mold:21, Revolver Frame Mold
-foundry:mold:22, Pellet Mold
-foundry:mold:23, Shell Casing Mold
-foundry:mold:24, Shotgun Pump Mold
-foundry:mold:25, Shotgun Frame Mold
-foundry:mold:26, Nugget Mold
-foundry:revolver, Revolver
-foundry:shotgun, Shotgun
-foundry:roundnormal, Standard Round
-foundry:roundjacketed, Jacketed Round
-foundry:roundhollow, Hollow Point Round
-foundry:roundfire, Incendiary Round
-foundry:roundpoison, Poison Round
-foundry:roundap, Armor Piercing Round
-foundry:roundlumium, Lumium Round
-foundry:roundsnow, Snow Round
-foundry:shellnormal, Standard Shell
-foundry:shellap, Armor Piercing Shell
-foundry:shelllumium, Lumium Shell
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:fluidcontainer:0, Refractory Fluid Container
-foundry:componentblock:0, Refractory Casing (Standard)
-foundry:componentblock:1, Refractory Clay Block
-foundry:componentblock:2, Refractory Casing (Advanced)
-foundry:componentblock:3, Refractory Casing (Basic)
-foundry:machine:0, Melting Crucible (Basic)
-foundry:machine:1, Metal Caster
-foundry:machine:2, Alloy Mixer
-foundry:machine:3, Metal Infuser
-foundry:machine:4, Material Router
-foundry:machine:5, Metal Atomizer
-foundry:machine:6, Induction Heater
-foundry:machine:7, Melting Crucible (Advanced)
-foundry:machine:8, Melting Crucible (Standard)
-foundry:machine:9, Alloying Crucible
-foundry:castingtable:0, Ingot Casting Table
-foundry:castingtable:1, Plate Casting Table
-foundry:castingtable:2, Rod Casting Table
-foundry:castingtable:3, Block Casting Table
-foundry:refractoryglass, Refractory Glass
-foundry:alloyfurnace, Alloy Furnace
-foundry:moldstation, Mold Crafting Station
-foundry:refractoryhopper, Refractory Hopper
-foundry:burnerheater, Burner Heater
-foundry:refractoryspout, Refractory Spout
-foundry:refractorytank, Refractory Tank (Basic)
-foundry:refractorytankstandard, Refractory Tank (Standard)
-foundry:infernotank, Refractory Tank (Advanced)
-foundry:bronzecauldron, Bronze Cauldron
-foundry:cokeoven, Coke Oven
-foundry:liquidiron, Liquid Iron
-foundry:liquidgold, Liquid Gold
-foundry:liquidcopper, Liquid Copper
-foundry:liquidtin, Liquid Tin
-foundry:liquidbronze, Liquid Bronze
-foundry:liquidelectrum, Liquid Electrum
-foundry:liquidinvar, Liquid Invar
-foundry:liquidnickel, Liquid Nickel
-foundry:liquidzinc, Liquid Zinc
-foundry:liquidbrass, Liquid Brass
-foundry:liquidsilver, Liquid Silver
-foundry:liquidsteel, Liquid Steel
-foundry:liquidcupronickel, Liquid Cupronickel
-foundry:liquidlead, Liquid Lead
-foundry:liquidplatinum, Liquid Platinum
-foundry:liquidaluminium, Liquid Aluminium
-foundry:liquidsignalum, Liquid Signalum
-foundry:liquidlumium, Liquid Lumium
-foundry:liquidenderium, Liquid Enderium
-foundry:liquidosmium, Liquid Osmium
-foundry:liquidalumina, Liquid Alumina
-foundry:liquidglass, Liquid Glass
-foundry:liquidglasswhite, Liquid Glass (White)
-foundry:liquidglassorange, Liquid Glass (Orange)
-foundry:liquidglassmagenta, Liquid Glass (Magenta)
-foundry:liquidglasslight_blue, Liquid Glass (Light Blue)
-foundry:liquidglassyellow, Liquid Glass (Yellow)
-foundry:liquidglasslime, Liquid Glass (Lime)
-foundry:liquidglasspink, Liquid Glass (Pink)
-foundry:liquidglassgray, Liquid Glass (Gray)
-foundry:liquidglasssilver, Liquid Glass (Light Gray)
-foundry:liquidglasscyan, Liquid Glass (Cyan)
-foundry:liquidglasspurple, Liquid Glass (Purple)
-foundry:liquidglassblue, Liquid Glass (Blue)
-foundry:liquidglassbrown, Liquid Glass (Brown)
-foundry:liquidglassgreen, Liquid Glass (Green)
-foundry:liquidglassred, Liquid Glass (Red)
-foundry:liquidglassblack, Liquid Glass (Black)
 modularmachinery:blockcontroller, Machine Controller
 modularmachinery:blockcasing:0, Machine Casing
 modularmachinery:blockcasing:1, Machine Vent
@@ -5836,173 +4776,6 @@ modularmachinery:blockenergyoutputhatch:7, Ultimate Energy Output Hatch
 modularmachinery:itemblueprint, Machine Blueprint
 modularmachinery:itemmodularium, Modularium
 modularmachinery:itemconstructtool, Construct Selection Tool
-rftools:smartwrench, Smart Wrench
-rftools:rftools_manual, RFTools Manual
-rftools:rftools_shape_manual, RFTools Shape Manual
-rftools:dimensional_shard, Dimensional Shard
-rftools:shard_wand, Shard Wand
-rftools:infused_diamond, Infused Diamond
-rftools:infused_enderpearl, Infused Enderpearl
-rftools:syringe, Syringe
-rftools:peace_essence, Peace Essence
-rftools:developers_delight, Developers Delight
-rftools:network_monitor, RF Network Monitor
-rftools:modifier_module, Modifier
-rftools:storage_module_tablet, Storage Module Tablet
-rftools:storage_module:0, Storage Module Tier 1
-rftools:storage_module:1, Storage Module Tier 2
-rftools:storage_module:2, Storage Module Tier 3
-rftools:storage_module:6, Remote Storage Module
-rftools:oredict_module, Ore Dictionary Storage Module
-rftools:generic_module, Generic Storage Module
-rftools:filter_module, Storage Filter Module
-rftools:teleport_probe, Teleporter Probe
-rftools:charged_porter, Charged Porter
-rftools:advanced_charged_porter, Advanced Charged Porter
-rftools:text_module, Text Module
-rftools:inventory_module, Inventory Module
-rftools:inventoryplus_module, Inventory Plus Module
-rftools:energy_module, Energy Module
-rftools:energyplus_module, Energy Plus Module
-rftools:clock_module, Clock Module
-rftools:fluid_module, Fluid Module
-rftools:fluidplus_module, Fluid Plus Module
-rftools:machineinformation_module, Machine Information Module
-rftools:button_module, Button Module
-rftools:elevator_button_module, Elevator Button Module
-rftools:redstone_module, Redstone Module
-rftools:counter_module, Counter Module
-rftools:counterplus_module, Counter Plus Module
-rftools:storage_control_module, Storage Control Module
-rftools:dump_module, Dump Module
-rftools:space_chamber_card, Space Chamber Card
-rftools:shape_card:0, Shape Card
-rftools:shape_card:1, Shape Card (Void)
-rftools:shape_card:2, Shape Card (Quarry)
-rftools:shape_card:3, Shape Card (Silk Quarry)
-rftools:shape_card:4, Shape Card (Fortune Quarry)
-rftools:shape_card:5, Shape Card (Clearing Quarry)
-rftools:shape_card:6, Shape Card (Clearing Silk Quarry)
-rftools:shape_card:7, Shape Card (Clearing Fortune Quarry)
-rftools:shape_card:8, Shape Card (Pump)
-rftools:shape_card:9, Shape Card (Clearing Pump)
-rftools:powercell_card, Powercell Card
-rftools:regeneration_module, Regeneration Module
-rftools:regenerationplus_module, Regeneration Plus Module
-rftools:speed_module, Speed Module
-rftools:speedplus_module, Speed Plus Module
-rftools:haste_module, Haste Module
-rftools:hasteplus_module, Haste Plus Module
-rftools:saturation_module, Saturation Module
-rftools:saturationplus_module, Saturation Plus Module
-rftools:featherfalling_module, Feather Falling Module
-rftools:featherfallingplus_module, Feather Falling Plus Module
-rftools:flight_module, Flight Module
-rftools:peaceful_module, Peaceful Module
-rftools:waterbreathing_module, Water Breathing Module
-rftools:nightvision_module, Night Vision Module
-rftools:blindness_module, Blindness Module
-rftools:weakness_module, Weakness Module
-rftools:poison_module, Poison Module
-rftools:slowness_module, Slowness Module
-rftools:glowing_module, Glowing Module
-rftools:luck_module, Luck Module
-rftools:noteleport_module, No Teleport Module
-rftools:orphaning_card, Orphaning Card
-rftools:security_card, Security Card
-rftools:machine_frame, Machine Frame
-rftools:machine_base, Machine Base
-rftools:dimensional_shard_ore, Dimensional Shard Ore
-rftools:coalgenerator, Coal Generator
-rftools:crafter1, Crafter Tier 1
-rftools:crafter2, Crafter Tier 2
-rftools:crafter3, Crafter Tier 3
-rftools:modular_storage, Modular Storage
-rftools:remote_storage, Remote Storage
-rftools:storage_terminal, Storage Terminal
-rftools:level_emitter, Level Emitter
-rftools:matter_transmitter, Matter Transmitter
-rftools:matter_receiver, Matter Receiver
-rftools:dialing_device, Dialing Device
-rftools:simple_dialer, Simple Dialer
-rftools:destination_analyzer, Destination Analyzer
-rftools:matter_booster, Matter Booster
-rftools:screen, Screen
-rftools:creative_screen, Creative Screen
-rftools:screen_hitblock, Screen
-rftools:screen_controller, Screen Controller
-rftools:sequencer_block, Sequencer
-rftools:timer_block, Timer
-rftools:counter_block, Counter
-rftools:redstone_transmitter_block, Redstone Transmitter
-rftools:redstone_receiver_block, Redstone Receiver
-rftools:logic_block, Logic Gate
-rftools:invchecker_block, Inventory Checker
-rftools:sensor_block, Sensor
-rftools:wire_block, Wire
-rftools:machine_infuser, Machine Infuser
-rftools:space_chamber, Space Chamber Corner Block
-rftools:space_chamber_controller, Space Chamber Controller Block
-rftools:builder, Builder
-rftools:support_block, Support Block
-rftools:composer, Composer
-rftools:scanner, Scanner
-rftools:remote_scanner, Remote Scanner
-rftools:projector, Projector
-rftools:locator, Locator
-rftools:powercell, Powercell
-rftools:powercell_advanced, Advanced Powercell
-rftools:powercell_creative, Creative Powercell
-rftools:powercell_simple, Simple Powercell
-rftools:relay, Power Relay
-rftools:rf_monitor, RF Monitor
-rftools:liquid_monitor, Liquid Monitor
-rftools:shield_block1, Shield Projector Tier 1
-rftools:shield_block2, Shield Projector Tier 2
-rftools:shield_block3, Shield Projector Tier 3
-rftools:shield_block4, Shield Projector Tier 4
-rftools:invisible_shield_block, Invisible Shield Block
-rftools:notick_invisible_shield_block, Invisible Shield Block
-rftools:solid_shield_block, Solid Shield Block
-rftools:notick_solid_shield_block, Solid Shield Block
-rftools:camo_shield_block, Camo Shield Block
-rftools:notick_camo_shield_block, Camo Shield Block
-rftools:shield_template_block, Shield Template
-rftools:environmental_controller, Environmental Controller
-rftools:spawner, Spawner
-rftools:matter_beamer, Matter Beamer
-rftools:block_protector, Block Protector
-rftools:item_filter, Item Filter
-rftools:security_manager, Security Manager
-rftools:endergenic, Endergenic Generator
-rftools:pearl_injector, Pearl Injector
-rftools:ender_monitor, Ender Monitor
-rftools:storage_scanner, Storage Scanner
-rftools:elevator, Elevator
-rftools:booster, Booster
-rftoolscontrol:rftoolscontrol_manual, RFTools Control Manual
-rftoolscontrol:program_card, Program Card
-rftoolscontrol:cpu_core_500, CPU Core B500
-rftoolscontrol:cpu_core_1000, CPU Core S1000
-rftoolscontrol:cpu_core_2000, CPU Core EX2000
-rftoolscontrol:ram_chip, RAM Chip 8E
-rftoolscontrol:network_card, Network Card
-rftoolscontrol:advanced_network_card, Advanced Network Card
-rftoolscontrol:card_base, Card Base
-rftoolscontrol:crafting_card, Crafting Card
-rftoolscontrol:token, Token
-rftoolscontrol:network_identifier, Network Identifier
-rftoolscontrol:graphics_card, Graphics Card
-rftoolscontrol:variable_module, Variable Module
-rftoolscontrol:interaction_module, Interaction Module
-rftoolscontrol:console_module, Console Module
-rftoolscontrol:vectorart_module, Vector Art Module
-rftoolscontrol:programmer, Programmer
-rftoolscontrol:processor, Processor
-rftoolscontrol:node, Node
-rftoolscontrol:craftingstation, Crafting Station
-rftoolscontrol:workbench, Workbench
-rftoolscontrol:tank, Multi Tank
 forestry:crated.forestry.peat.0, item.crated.forestry.peat.0.name
 forestry:crated.forestry.apatite.0, item.crated.forestry.apatite.0.name
 forestry:crated.forestry.fertilizer_compound.0, item.crated.forestry.fertilizer_compound.0.name

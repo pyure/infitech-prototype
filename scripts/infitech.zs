@@ -143,8 +143,6 @@ recipes.addShapeless(<forestry:planks.1:12>*2, [<forestry:logs.7:0>]);
 var logWood = <ore:logWood>;
 logWood.add(<contenttweaker:dried_spruce_log>); // Add our dried spruce log to logs
 
-
-
 /* Create oredictionaries for the GT-like tools.  Use meta 32767 to cover all "materials" for that tool */
 /* 32767 will register all meta of that item under that oredict (thanks Lord Plant/Shadows at discord: PackDev), alternative to anyDamage() that works with oredict */
 var mortar_flint = <contenttweaker:flint_mortar:32767>;  
@@ -155,13 +153,7 @@ var mortar_steel = <contenttweaker:steel_mortar:32767>;
 var oreFlint = <ore:ingotFlint>;  // name is a bit silly but makes it simpler to add dynamic recipes
 oreFlint.add(<minecraft:flint>);
 
-global tool_metals as string[] = [
-    "Flint",
-    "Bronze",
-    "Iron",
-    "Steel"
-];
-
+/* experimental method to produce meta tool recipes dynamically.
 val mortar_metal_items = {
     "Flint" : <contenttweaker:flint_mortar>,
     "Bronze" : <contenttweaker:bronze_mortar>,
@@ -169,19 +161,32 @@ val mortar_metal_items = {
     "Steel" : <contenttweaker:steel_mortar>
 }  as IItemStack[string];
 
+val mortar_metal_items2 = {
+    "Flint" : "flint",
+    "Bronze" : "bronze",
+    "Iron" : "iron",
+    "Steel" : "steel"
+}  as string[string];
 
-for metal_name in tool_metals {
-  var oreDictName = "ingot" + metal_name;
-  var outputItem = mortar_metal_items[metal_name] as crafttweaker.item.IItemStack;
-  recipes.remove(outputItem);
-  recipes.addShaped(outputItem * 1, [[null, oreDict[oreDictName], null], 
+for upper_name, lower_name in mortar_metal_items2 {
+  var oreDictName = "ingot" + upper_name;
+  var output_item_name = lower_name + "_" + "mortar" ~ "\\b";
+  print("************" ~ output_item_name);
+  var item = itemUtils.getItemsByRegexRegistryName(output_item_name );
+  //print(item);
+  
+  
+  
+  recipes.remove(item);
+
+  recipes.addShaped(item * 1, [[null, oreDict[oreDictName], null], 
     [<ore:stone>, oreDict[oreDictName], <ore:stone>], 
     [<ore:stone>,<ore:stone>,<ore:stone>]]);
+  
 }
+*/
 
 
-    
-    
 var oreMortars = <ore:mortars>;
 oreMortars.add(mortar_flint);
 oreMortars.add(mortar_bronze);
