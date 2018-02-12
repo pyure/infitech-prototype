@@ -20,6 +20,14 @@ var wrench_flint = <contenttweaker:flint_wrench>;
 var wrench_bronze = <contenttweaker:bronze_wrench>;
 var wrench_iron = <contenttweaker:iron_wrench>;
 var wrench_steel = <contenttweaker:steel_wrench>;
+val tools = {
+	files = {
+		flint : <contenttweaker:flint_file>,
+		bronze : <contenttweaker:bronze_file>,
+		iron : <contenttweaker:iron_file>,
+		steel : <contenttweaker:steel_file>
+	}
+}
 
 // MORTARS
 recipes.addShaped(mortar_flint, [[null, <minecraft:flint>, null], 
