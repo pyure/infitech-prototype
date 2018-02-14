@@ -133,7 +133,8 @@ val tool_types = [
     "saw",
     "hammer",
     "mortar",
-    "wrench"
+    "wrench",
+	"file"
 ] as string[];
 
 for tool_metal in tool_metals {
