@@ -33,6 +33,9 @@ BotaniaVars.dat
 realms_persistence.json
 scripts.zip
 usercache.json
+scripts.7z
+hs_err*.log
+replay*.log
 
 # Windows image file caches
 Thumbs.db
