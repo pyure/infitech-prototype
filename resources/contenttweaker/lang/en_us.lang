@@ -43,6 +43,11 @@ item.contenttweaker.flint_saw.name=Flint Saw
 item.contenttweaker.iron_saw.name=Iron Saw
 item.contenttweaker.steel_saw.name=Steel Saw
 
+item.contenttweaker.bronze_file.name=Bronze File
+item.contenttweaker.flint_file.name=Flint File
+item.contenttweaker.iron_file.name=Iron File
+item.contenttweaker.steel_file.name=Steel File
+
 tile.contenttweaker.bronze_plated_brick.name=Bronze Plated Brick
 tile.contenttweaker.dried_spruce_log.name=Dried Spruce Log
 

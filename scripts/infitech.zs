@@ -143,12 +143,6 @@ recipes.addShapeless(<forestry:planks.1:12>*2, [<forestry:logs.7:0>]);
 var logWood = <ore:logWood>;
 logWood.add(<contenttweaker:dried_spruce_log>); // Add our dried spruce log to logs
 
-/* Create oredictionaries for the GT-like tools.  Use meta 32767 to cover all "materials" for that tool */
-/* 32767 will register all meta of that item under that oredict (thanks Lord Plant/Shadows at discord: PackDev), alternative to anyDamage() that works with oredict */
-var mortar_flint = <contenttweaker:flint_mortar:32767>;  
-var mortar_bronze = <contenttweaker:bronze_mortar:32767>;
-var mortar_iron = <contenttweaker:iron_mortar:32767>;
-var mortar_steel = <contenttweaker:steel_mortar:32767>;
 
 var oreFlint = <ore:ingotFlint>;  // name is a bit silly but makes it simpler to add dynamic recipes
 oreFlint.add(<minecraft:flint>);
@@ -186,7 +180,12 @@ for upper_name, lower_name in mortar_metal_items2 {
 }
 */
 
-
+/* Create oredictionaries for the GT-like tools.  Use meta 32767 to cover all "materials" for that tool */
+/* 32767 will register all meta of that item under that oredict (thanks Lord Plant/Shadows at discord: PackDev), alternative to anyDamage() that works with oredict */
+var mortar_flint = <contenttweaker:flint_mortar:32767>;  
+var mortar_bronze = <contenttweaker:bronze_mortar:32767>;
+var mortar_iron = <contenttweaker:iron_mortar:32767>;
+var mortar_steel = <contenttweaker:steel_mortar:32767>;
 var oreMortars = <ore:mortars>;
 oreMortars.add(mortar_flint);
 oreMortars.add(mortar_bronze);
@@ -223,6 +222,15 @@ oreWrenches.add(wrench_bronze);
 oreWrenches.add(wrench_iron);
 oreWrenches.add(wrench_steel);
 
+var file_flint = <contenttweaker:flint_file:32767>;  
+var file_bronze = <contenttweaker:bronze_file:32767>;
+var file_iron = <contenttweaker:iron_file:32767>;
+var file_steel = <contenttweaker:steel_file:32767>;
+var oreFiles = <ore:files>;
+oreFiles.add(file_flint);
+oreFiles.add(file_bronze);
+oreFiles.add(file_iron);
+oreFiles.add(file_steel);
 
 var dustIron = <thermalfoundation:material:0>;
 var dustGold = <thermalfoundation:material:1>;
