@@ -75,13 +75,14 @@ var pitchblende = MaterialSystem.getMaterialBuilder().setName('Pitchblende').set
 var emerald = MaterialSystem.getMaterialBuilder().setName('Emerald').setColor(5308240).build();
 var sulfur =  MaterialSystem.getMaterialBuilder().setName('Sulfur').setColor(13158400).build();
 var flint =  MaterialSystem.getMaterialBuilder().setName('Flint').setColor(8256).build();
+var polyethylene =  MaterialSystem.getMaterialBuilder().setName('Polyethylene').setColor(13158600).build();
 
 /*
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setPartType(MaterialSystem.getPartType("item")).build();
 */
 
 
-var metal_list = [silicon, tin, soldering_alloy, antimony, aluminium, tungstensteel, titanium, steel, cobalt, stainless_steel, copper, bismuth_bronze, gold, iron, lead, lithium, magnesium, manganese, platinum, nickel, silver, bronze, iridium, graphite] as Material[];
+var metal_list = [silicon, tin, soldering_alloy, antimony, aluminium, tungstensteel, titanium, steel, cobalt, stainless_steel, copper, bismuth_bronze, gold, iron, lead, lithium, magnesium, manganese, platinum, nickel, silver, bronze, iridium, graphite, wrought_iron, polyethylene] as Material[];
 var machine_frame_metals_list = [bronze, steel, titanium, tungstensteel, aluminium] as Material[];
 var turbine_rotor_metals_list = [steel] as Material[];
 var mortar_metals_list = [iron, copper, bronze, steel] as Material[];

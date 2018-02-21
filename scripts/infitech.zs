@@ -216,7 +216,7 @@ var wrench_flint = <contenttweaker:flint_wrench:32767>;
 var wrench_bronze = <contenttweaker:bronze_wrench:32767>;
 var wrench_iron = <contenttweaker:iron_wrench:32767>;
 var wrench_steel = <contenttweaker:steel_wrench:32767>;
-var oreWrenches = <ore:wrenchs>;
+var oreWrenches = <ore:wrench>;
 oreWrenches.add(wrench_flint);
 oreWrenches.add(wrench_bronze);
 oreWrenches.add(wrench_iron);
@@ -232,65 +232,9 @@ oreFiles.add(file_bronze);
 oreFiles.add(file_iron);
 oreFiles.add(file_steel);
 
-var dustIron = <thermalfoundation:material:0>;
-var dustGold = <thermalfoundation:material:1>;
-var dustCopper = <thermalfoundation:material:64>;
-var dustTin = <thermalfoundation:material:65>;
-var dustSilver = <thermalfoundation:material:66>;
-var dustLead = <thermalfoundation:material:67>;
-var dustAluminum = <thermalfoundation:material:68>;
-var dustNickel = <thermalfoundation:material:69>;
-var dustPlatinum = <thermalfoundation:material:70>;
-var dustIridium = <thermalfoundation:material:71>;
-var dustCoal = <thermalfoundation:material:768>;
-var dustCharCoal = <thermalfoundation:material:769>;
-var dustObsidian = <thermalfoundation:material:770>;
 
 
 
-// MORTAR + INGOT = DUST
-recipes.addShapeless(dustIron , [oreMortars, <ore:ingotIron >]);
-recipes.addShapeless(dustGold , [oreMortars, <ore:ingotGold >]);
-recipes.addShapeless(dustCopper , [oreMortars, <ore:ingotCopper >]);
-recipes.addShapeless(dustTin , [oreMortars, <ore:ingotTin >]);
-recipes.addShapeless(dustSilver , [oreMortars, <ore:ingotSilver >]);
-recipes.addShapeless(dustLead , [oreMortars, <ore:ingotLead >]);
-recipes.addShapeless(dustAluminum , [oreMortars, <ore:ingotAluminum >]);
-recipes.addShapeless(dustNickel , [oreMortars, <ore:ingotNickel >]);
-recipes.addShapeless(dustPlatinum , [oreMortars, <ore:ingotPlatinum >]);
-recipes.addShapeless(dustIridium , [oreMortars, <ore:ingotIridium >]);
-recipes.addShapeless(dustCoal , [oreMortars, <ore:coal>]);
-recipes.addShapeless(dustCharCoal , [oreMortars, <ore:charcoal >]);
-recipes.addShapeless(dustObsidian , [oreMortars, <ore:obsidian>]);
-
-// MORTAR + CRUSHED_ORE = DUST
-recipes.addShapeless(dustIron , [oreMortars, <ore:crushedOreIron>]);
-recipes.addShapeless(dustGold , [oreMortars, <ore:crushedOreGold>]);
-recipes.addShapeless(dustCopper , [oreMortars, <ore:crushedOreCopper>]);
-recipes.addShapeless(dustTin , [oreMortars, <ore:crushedOreTin>]);
-recipes.addShapeless(dustSilver , [oreMortars, <ore:crushedOreSilver>]);
-recipes.addShapeless(dustLead , [oreMortars, <ore:crushedOreLead>]);
-recipes.addShapeless(dustAluminum , [oreMortars, <ore:crushedOreAluminum>]);
-recipes.addShapeless(dustNickel , [oreMortars, <ore:crushedOreNickel>]);
-recipes.addShapeless(dustPlatinum , [oreMortars, <ore:crushedOrePlatinum>]);
-recipes.addShapeless(dustIridium , [oreMortars, <ore:crushedOreIridium>]);
-recipes.addShapeless(dustCoal , [oreMortars, <ore:crushedOreCoal>]);
-recipes.addShapeless(dustCharCoal , [oreMortars, <ore:crushedOreCharCoal>]);
-recipes.addShapeless(dustObsidian , [oreMortars, <ore:crushedOreObsidian>]);
-
-
-
-// HAMMER + INGOTS = PLATE
-recipes.addShapedMirrored(<ore:plateIron>.items[0], [[oreHammers], [<ore:ingotIron>], [<ore:ingotIron>]]);
-recipes.addShapedMirrored(<ore:plateGold>.items[0], [[oreHammers], [<ore:ingotGold>], [<ore:ingotGold>]]);
-recipes.addShapedMirrored(<ore:plateCopper>.items[0], [[oreHammers], [<ore:ingotCopper>], [<ore:ingotCopper>]]);
-recipes.addShapedMirrored(<ore:plateTin>.items[0], [[oreHammers], [<ore:ingotTin>], [<ore:ingotTin>]]);
-recipes.addShapedMirrored(<ore:plateSilver>.items[0], [[oreHammers], [<ore:ingotSilver>], [<ore:ingotSilver>]]);
-recipes.addShapedMirrored(<ore:plateLead>.items[0], [[oreHammers], [<ore:ingotLead>], [<ore:ingotLead>]]);
-recipes.addShapedMirrored(<ore:plateAluminum>.items[0], [[oreHammers], [<ore:ingotAluminum>], [<ore:ingotAluminum>]]);
-recipes.addShapedMirrored(<ore:plateNickel>.items[0], [[oreHammers], [<ore:ingotNickel>], [<ore:ingotNickel>]]);
-recipes.addShapedMirrored(<ore:platePlatinum>.items[0], [[oreHammers], [<ore:ingotPlatinum>], [<ore:ingotPlatinum>]]);
-recipes.addShapedMirrored(<ore:plateIridium>.items[0], [[oreHammers], [<ore:ingotIridium>], [<ore:ingotIridium>]]);
 
 // SAW + FORESTRY-LOG = PLANKS x4 (Forestry, Vanilla)
 recipes.addShapedMirrored(<forestry:planks.0:0>*4, [[oreSaws], [<forestry:logs.0:0>]]);
@@ -345,7 +289,7 @@ recipes.remove(<forestry:ingot_bronze> * 4);
 // GREGGY WIDGETS
 var bronzePlatedBrick = <contenttweaker:bronze_plated_brick>;
 
-recipes.addShaped(bronzePlatedBrick, [[<ore:plateBronze>, oreHammers, <ore:plateBronze>], 
+recipes.addShaped(bronzePlatedBrick, [[<ore:plateBronze>, <ore:hammers>, <ore:plateBronze>], 
   [<ore:plateBronze>, blockBrick, <ore:plateBronze>], 
   [<ore:plateBronze>, oreWrenches, <ore:plateBronze>]]);
 
@@ -358,7 +302,8 @@ val machine_metals = [
 ] as string[];
 
 
-  
+var counter = 0;
+
 for metal in machine_metals {
   var new_machine_name = "machine_frame" ~ metal;
   var machine_frame = oreDict[new_machine_name].firstItem;
@@ -372,9 +317,19 @@ for metal in machine_metals {
   var plate_name = "plate" ~ metal;
   var plate = oreDict[plate_name];
   
-  recipes.addShaped(machine_frame, [[rod, screw, rod], 
-                          [plate, oreWrenches, plate], 
-                          [rod, screw, rod]]);
+  var machine_structure = counter <= 1 ? <libvulpes:structuremachine> : <libvulpes:advstructuremachine> ;
+  var sheet = counter <= 1 ? <ore:plateWroughtIron> : <ore:platePolyethylene>;
+  
+  var rubber = <contenttweaker:rubber>;
+  
+  var wire_name = "wire" ~ metal;
+  var wire = oreDict[wire_name];
+  
+  recipes.addShaped(machine_frame, [[sheet, screw, sheet], 
+                          [rubber, machine_structure, rubber], 
+                          [wire, oreWrenches, wire]]);
+                          
+  counter = counter + 1;
   
 }
   

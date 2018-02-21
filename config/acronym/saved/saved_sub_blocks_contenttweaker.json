@@ -84,7 +84,9 @@
       "8": "limonite_ore_minecraft_stone",
       "9": "beryllium_ore_minecraft_stone",
       "10": "lignite_ore_minecraft_stone",
-      "11": "bauxite_ore_minecraft_stone"
+      "11": "bauxite_ore_minecraft_stone",
+      "12": "wrought_iron_block",
+      "13": "polyethylene_block"
     }
   }
 }
