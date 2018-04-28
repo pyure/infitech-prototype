@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_steel",
   "registryName": "centrifuge_steel_tier2_ore_tetrahedrite",
-  "recipeTime": 90,
+  "recipeTime": 60,
   "requirements": [
     {
       "type": "energy",
@@ -9,58 +9,22 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 337,
+      "energyPerTick": 253,
       "chance": 1.0
     },
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:gearboxSteel",
+      "item": "ore:washed_oreTetrahedrite",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
-      "chance": 0.0
+      "chance": 1.0
     },
     {
       "type": "item",
-      "io-type": "input",
+      "io-type": "output",
       "item": "ore:dustTetrahedrite",
-      "amount": 9,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material@64",
-      "amount": 3,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "ore:dustAntimony",
-      "amount": 1,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material@771",
-      "amount": 3,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -70,10 +34,37 @@
       "type": "item",
       "io-type": "output",
       "item": "ore:tinyDustAntimony",
-      "amount": 3,
+      "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustZinc",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustAntimony",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.5
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustZinc",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.5
     }
   ]
 }

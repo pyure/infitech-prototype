@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_aluminium",
   "registryName": "centrifuge_aluminium_tier3_ore_tetrahedrite",
-  "recipeTime": 30,
+  "recipeTime": 20,
   "requirements": [
     {
       "type": "energy",
@@ -9,58 +9,22 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 3217,
+      "energyPerTick": 2413,
       "chance": 1.0
     },
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:gearboxAluminium",
+      "item": "ore:washed_oreTetrahedrite",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
-      "chance": 0.0
+      "chance": 1.0
     },
     {
       "type": "item",
-      "io-type": "input",
+      "io-type": "output",
       "item": "ore:dustTetrahedrite",
-      "amount": 9,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material@64",
-      "amount": 3,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "ore:dustAntimony",
-      "amount": 1,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material@771",
-      "amount": 3,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -70,7 +34,16 @@
       "type": "item",
       "io-type": "output",
       "item": "ore:tinyDustAntimony",
-      "amount": 6,
+      "amount": 2,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustZinc",
+      "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0

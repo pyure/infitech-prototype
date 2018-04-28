@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_tungstensteel",
   "registryName": "centrifuge_tungstensteel_tier4_ore_stibnite",
-  "recipeTime": 5,
+  "recipeTime": 3,
   "requirements": [
     {
       "type": "energy",
@@ -15,35 +15,26 @@
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:gearboxTitanium",
+      "item": "ore:washed_oreStibnite",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
-      "chance": 0.0
+      "chance": 1.0
     },
     {
       "type": "item",
-      "io-type": "input",
+      "io-type": "output",
       "item": "ore:dustStibnite",
-      "amount": 5,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "ore:dustAntimony",
-      "amount": 2,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material@771",
       "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustSulfur",
+      "amount": 4,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0
@@ -52,7 +43,7 @@
       "type": "item",
       "io-type": "output",
       "item": "ore:tinyDustAntimony",
-      "amount": 9,
+      "amount": 4,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0
