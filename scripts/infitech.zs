@@ -142,7 +142,10 @@ recipes.addShapeless(<forestry:planks.1:12>*2, [<forestry:logs.7:0>]);
 // OREDICT
 var logWood = <ore:logWood>;
 logWood.add(<contenttweaker:dried_spruce_log>); // Add our dried spruce log to logs
+var oreStickyResin = <ore:stickyResin>;
+oreStickyResin.add(<contenttweaker:sticky_resin>);
 
+<ore:ingotRubber>.add(<contenttweaker:rubber>);
 
 var oreFlint = <ore:ingotFlint>;  // name is a bit silly but makes it simpler to add dynamic recipes
 oreFlint.add(<minecraft:flint>);

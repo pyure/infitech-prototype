@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_aluminium",
   "registryName": "centrifuge_aluminium_tier3_ore_stibnite",
-  "recipeTime": 30,
+  "recipeTime": 20,
   "requirements": [
     {
       "type": "energy",
@@ -15,17 +15,8 @@
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:gearboxAluminium",
+      "item": "ore:washed_oreStibnite",
       "amount": 1,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 0.0
-    },
-    {
-      "type": "item",
-      "io-type": "input",
-      "item": "ore:dustStibnite",
-      "amount": 5,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0
@@ -33,7 +24,16 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "ore:dustAntimony",
+      "item": "ore:dustStibnite",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustSulfur",
       "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
@@ -42,17 +42,8 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "thermalfoundation:material@771",
-      "amount": 1,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
       "item": "ore:tinyDustAntimony",
-      "amount": 6,
+      "amount": 2,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0

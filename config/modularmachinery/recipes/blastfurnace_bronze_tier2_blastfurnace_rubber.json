@@ -1,0 +1,70 @@
+{
+  "machine": "blastfurnace_bronze",
+  "registryName": "blastfurnace_bronze_tier2_blastfurnace_rubber",
+  "recipeTime": 155,
+  "requirements": [
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 19200,
+      "fluid": "steam",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:heatConductorSteel",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:dustRawRubber",
+      "amount": 3,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:dustSulfur",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:ingotRubber",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustRawRubber",
+      "amount": 2,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustSulfur",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}
