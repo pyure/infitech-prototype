@@ -1,7 +1,7 @@
 {
   "machine": "centrifuge_titanium",
   "registryName": "centrifuge_titanium_tier4_ore_tetrahedrite",
-  "recipeTime": 11,
+  "recipeTime": 7,
   "requirements": [
     {
       "type": "energy",
@@ -9,58 +9,22 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 20538,
+      "energyPerTick": 15404,
       "chance": 1.0
     },
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:gearboxTitanium",
+      "item": "ore:washed_oreTetrahedrite",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
-      "chance": 0.0
+      "chance": 1.0
     },
     {
       "type": "item",
-      "io-type": "input",
+      "io-type": "output",
       "item": "ore:dustTetrahedrite",
-      "amount": 9,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material@64",
-      "amount": 3,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "ore:dustAntimony",
-      "amount": 1,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material@771",
-      "amount": 3,
-      "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "item",
-      "io-type": "output",
-      "item": "thermalfoundation:material",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -70,7 +34,16 @@
       "type": "item",
       "io-type": "output",
       "item": "ore:tinyDustAntimony",
-      "amount": 9,
+      "amount": 3,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustZinc",
+      "amount": 3,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0

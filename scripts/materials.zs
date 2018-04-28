@@ -76,6 +76,7 @@ var emerald = MaterialSystem.getMaterialBuilder().setName('Emerald').setColor(53
 var sulfur =  MaterialSystem.getMaterialBuilder().setName('Sulfur').setColor(13158400).build();
 var flint =  MaterialSystem.getMaterialBuilder().setName('Flint').setColor(8256).build();
 var polyethylene =  MaterialSystem.getMaterialBuilder().setName('Polyethylene').setColor(13158600).build();
+var raw_rubber =  MaterialSystem.getMaterialBuilder().setName('Raw Rubber').setColor(13420425).build();
 
 /*
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setPartType(MaterialSystem.getPartType("item")).build();
@@ -89,11 +90,12 @@ var mortar_metals_list = [iron, copper, bronze, steel] as Material[];
 var machine_subcomponents_list = [bronze, steel, titanium, tungstensteel, aluminium] as Material[];
 var gemstone_list = [diamond, coal, redstone, nether_quartz] as Material[];
 var tool_metal_list = [flint, bronze, iron, steel] as Material[];
+var dust_list = [raw_rubber] as Material[];
 
 var part_names = ["nugget", "ingot", "plate", "rod", "screw"] as string[]; 
 var gemstone_part_names = ["dust", "tiny_dust", "crushed_ore", "washed_ore"] as string[];
 var ore_part_names = ["crushed_ore", "dust", "tiny_dust", "washed_ore"] as string[]; 
-
+var dust_part_names = ["dust", "tiny_dust"] as string[]; 
 
 // ORES
 var ore_list = [antimony, cobalt, pyrolusite, tetrahedrite, stibnite, graphite, lignite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, limonite] as Material[];
@@ -128,7 +130,9 @@ var agitator = MaterialSystem.getPartBuilder().setName("agitator").setPartType(M
 for i, gemstone in gemstone_list {
     gemstone.registerParts(gemstone_part_names);
 }
-
+for i, dust_item in dust_list {
+    dust_item.registerParts(dust_part_names);
+}
 for i, metal in ore_byproducts_list {
     metal.registerParts(ore_part_names);
 }

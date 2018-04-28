@@ -9,23 +9,23 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 506,
+      "energyPerTick": 253,
       "chance": 1.0
     },
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:gearboxSteel",
+      "item": "ore:washed_oreLimonite",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
-      "chance": 0.0
+      "chance": 1.0
     },
     {
       "type": "item",
-      "io-type": "input",
+      "io-type": "output",
       "item": "ore:dustLimonite",
-      "amount": 4,
+      "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0
@@ -33,27 +33,9 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "thermalfoundation:material",
+      "item": "ore:tinyDustLimonite",
       "amount": 1,
       "fluid": null,
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "fluid",
-      "io-type": "output",
-      "item": null,
-      "amount": 1000,
-      "fluid": "hydrogen",
-      "energyPerTick": 0,
-      "chance": 1.0
-    },
-    {
-      "type": "fluid",
-      "io-type": "output",
-      "item": null,
-      "amount": 2000,
-      "fluid": "oxygen",
       "energyPerTick": 0,
       "chance": 1.0
     },
@@ -61,10 +43,28 @@
       "type": "item",
       "io-type": "output",
       "item": "ore:tinyDustIron",
-      "amount": 3,
+      "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustLimonite",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.5
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustIron",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.5
     }
   ]
 }

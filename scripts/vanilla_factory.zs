@@ -6,7 +6,7 @@ import mods.contenttweaker.Item;
 import crafttweaker.item.IItemStack;
 import mods.contenttweaker.IItemDestroySpeed;
 import mods.contenttweaker.IItemDestroyedBlock;
-
+import crafttweaker.data.IData;
 
 // BLOCKS
 var bronzePlatedBrick = VanillaFactory.createBlock("bronze_plated_brick", <blockmaterial:Iron>);
@@ -48,6 +48,24 @@ test_pick.itemDestroyedBlock = function(stack, world, blockState, pos, entity){
 test_pick.register();
 
 
+
+var test_drill = VanillaFactory.createItem("test_drill");
+test_drill.toolClass = "pickaxe";
+test_drill.maxDamage = 10;
+test_drill.maxStackSize = 1;
+test_drill.toolLevel = 4;
+test_drill.itemDestroySpeed = function(stack, block){
+  return 20.0 as float;
+};
+test_drill.itemDestroyedBlock = function(stack, world, blockState, pos, entity){
+  stack.damage(1, entity);
+  stack.updateTag({Energy: 100});
+  
+  var mytag = stack.tag;
+  print(mytag);
+  return true;
+};
+test_drill.register();
 
 
 // FLUIDS
