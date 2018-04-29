@@ -43,7 +43,7 @@
       "type": "item",
       "io-type": "output",
       "item": "ore:tinyDustRawRubber",
-      "amount": 3,
+      "amount": 9,
       "fluid": null,
       "energyPerTick": 0,
       "chance": 1.0
