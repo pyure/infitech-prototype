@@ -5390,6 +5390,14 @@ ceramics:clay_bucket:0, Primal Mana Clay Bucket
 ceramics:clay_bucket:0, Mutagen Clay Bucket
 ceramics:clay_bucket:0, Liquid DNA Clay Bucket
 ceramics:clay_bucket:0, Protein Clay Bucket
+ceramics:clay_bucket:0, Etching Acid Clay Bucket
+ceramics:clay_bucket:0, Liquid Plastic Clay Bucket
+ceramics:clay_bucket:0, Oil Clay Bucket
+ceramics:clay_bucket:0, LPG Clay Bucket
+ceramics:clay_bucket:0, Gasoline Clay Bucket
+ceramics:clay_bucket:0, Kerosene Clay Bucket
+ceramics:clay_bucket:0, Diesel Clay Bucket
+ceramics:clay_bucket:0, Lubricant Clay Bucket
 ceramics:clay_bucket:0, Deuterium Clay Bucket
 ceramics:clay_bucket:0, Tritium Clay Bucket
 ceramics:clay_bucket:0, Helium-3 Clay Bucket
@@ -5696,14 +5704,6 @@ ceramics:clay_bucket:0, Hot Eutectic NaK-Tin Mixture Clay Bucket
 ceramics:clay_bucket:0, Molten Magnesium Clay Bucket
 ceramics:clay_bucket:0, Eutectic NaK-Magnesium Mixture Clay Bucket
 ceramics:clay_bucket:0, Hot Eutectic NaK-Magnesium Mixture Clay Bucket
-ceramics:clay_bucket:0, Etching Acid Clay Bucket
-ceramics:clay_bucket:0, Liquid Plastic Clay Bucket
-ceramics:clay_bucket:0, Oil Clay Bucket
-ceramics:clay_bucket:0, LPG Clay Bucket
-ceramics:clay_bucket:0, Gasoline Clay Bucket
-ceramics:clay_bucket:0, Kerosene Clay Bucket
-ceramics:clay_bucket:0, Diesel Clay Bucket
-ceramics:clay_bucket:0, Lubricant Clay Bucket
 ceramics:clay_bucket:1, Milk Clay Bucket
 ceramics:clay_shears, Clay Shears
 ceramics:clay_helmet, Clay Helmet
@@ -6154,19 +6154,6 @@ ironchest:diamond_crystal_shulker_upgrade, Diamond to Crystal Shulker Box Upgrad
 ironchest:vanilla_iron_shulker_upgrade, Vanilla to Iron Shulker Box Upgrade
 ironchest:vanilla_copper_shulker_upgrade, Vanilla to Copper Shulker Box Upgrade
 ironchest:diamond_obsidian_shulker_upgrade, Diamond to Obsidian Shulker Box Upgrade
-jp.crafterkina.pipes:merchant_phone, Merchant phone
-jp.crafterkina.pipes:pipe, Pipe
-jp.crafterkina.pipes:processor_base, Processor board
-jp.crafterkina.pipes:strategy_acceleration, accelerator.name
-jp.crafterkina.pipes:strategy_extraction, extraction.name
-jp.crafterkina.pipes:strategy_oneway, oneway.name
-pneumaticcraft:safety_tube_module, Safety Tube Module
-pneumaticcraft:pressure_gauge_module, Pressure Gauge Tube Module
-pneumaticcraft:flow_detector_module, Flow Detector Tube Module
-pneumaticcraft:air_grate_module, Air Grate Tube Module
-pneumaticcraft:regulator_tube_module, Regulator Tube Module
-pneumaticcraft:charging_module, Charging Module
-pneumaticcraft:logistics_module, Logistics Module
 pneumaticcraft:logistic_frame_active_provider, Logistic Active Provider Frame
 pneumaticcraft:logistic_frame_passive_provider, Logistic Passive Provider Frame
 pneumaticcraft:logistic_frame_storage, Logistic Storage Frame
@@ -6176,14 +6163,6 @@ pneumaticcraft:heat_frame, Heat Frame
 pneumaticcraft:spawner_agitator, Spawner Agitator
 pneumaticcraft:crop_support, Crop Support
 pneumaticcraft:transfer_gadget, Transfer Gadget
-pneumaticcraft:fluid.etchacid, Etching Acid
-pneumaticcraft:fluid.plastic, Plastic
-pneumaticcraft:fluid.fuel, Gasoline
-pneumaticcraft:fluid.kerosene, Kerosene
-pneumaticcraft:fluid.lpg, LPG
-pneumaticcraft:fluid.lubricant, Lubricant
-pneumaticcraft:fluid.diesel, Diesel
-pneumaticcraft:fluid.oil, Oil
 pneumaticcraft:gps_tool, GPS Tool
 pneumaticcraft:ingot_iron_compressed, Compressed Iron Ingot
 pneumaticcraft:pressure_gauge, Pressure Gauge
@@ -6312,27 +6291,27 @@ pneumaticcraft:kerosene_lamp, Kerosene Lamp
 pneumaticcraft:sentry_turret, Sentry Turret
 pneumaticcraft:flux_compressor, Flux Compressor
 pneumaticcraft:pneumatic_dynamo, Pneumatic Dynamo
-storagedrawers:upgrade_template, Upgrade Template
-storagedrawers:upgrade_storage:0, Storage Upgrade (I)
-storagedrawers:upgrade_storage:1, Storage Upgrade (II)
-storagedrawers:upgrade_storage:2, Storage Upgrade (III)
-storagedrawers:upgrade_storage:3, Storage Upgrade (IV)
-storagedrawers:upgrade_storage:4, Storage Upgrade (V)
-storagedrawers:upgrade_one_stack, Storage Downgrade
-storagedrawers:upgrade_status:0, Status Upgrade (I)
-storagedrawers:upgrade_status:1, Status Upgrade (II)
-storagedrawers:upgrade_void, Void Upgrade
-storagedrawers:upgrade_conversion, Conversion Upgrade
-storagedrawers:upgrade_creative:0, Creative Storage Upgrade
-storagedrawers:upgrade_creative:1, Creative Vending Upgrade
-storagedrawers:upgrade_redstone:0, Redstone Upgrade
-storagedrawers:upgrade_redstone:1, Redstone Max Upgrade
-storagedrawers:upgrade_redstone:2, Redstone Min Upgrade
-storagedrawers:drawer_key, Drawer Key
-storagedrawers:shroud_key, Concealment Key
-storagedrawers:personal_key, Personal Key
-storagedrawers:quantify_key, Quantify Key
-storagedrawers:tape, Packing Tape
+pneumaticcraft:safety_tube_module, Safety Tube Module
+pneumaticcraft:pressure_gauge_module, Pressure Gauge Tube Module
+pneumaticcraft:flow_detector_module, Flow Detector Tube Module
+pneumaticcraft:air_grate_module, Air Grate Tube Module
+pneumaticcraft:regulator_tube_module, Regulator Tube Module
+pneumaticcraft:charging_module, Charging Module
+pneumaticcraft:logistics_module, Logistics Module
+pneumaticcraft:fluid.lubricant, Lubricant
+pneumaticcraft:fluid.plastic, Plastic
+pneumaticcraft:fluid.oil, Oil
+pneumaticcraft:fluid.kerosene, Kerosene
+pneumaticcraft:fluid.fuel, Gasoline
+pneumaticcraft:fluid.etchacid, Etching Acid
+pneumaticcraft:fluid.lpg, LPG
+pneumaticcraft:fluid.diesel, Diesel
+jp.crafterkina.pipes:merchant_phone, Merchant phone
+jp.crafterkina.pipes:pipe, Pipe
+jp.crafterkina.pipes:processor_base, Processor board
+jp.crafterkina.pipes:strategy_acceleration, accelerator.name
+jp.crafterkina.pipes:strategy_extraction, extraction.name
+jp.crafterkina.pipes:strategy_oneway, oneway.name
 storagedrawers:basicdrawers:0, Basic Drawer
 storagedrawers:basicdrawers:0, Basic Drawer
 storagedrawers:basicdrawers:0, Basic Drawer
@@ -6383,6 +6362,27 @@ storagedrawers:customdrawers:2, Framed Drawers 2x2
 storagedrawers:customdrawers:3, Framed Half Drawers 1x2
 storagedrawers:customdrawers:4, Framed Half Drawers 2x2
 storagedrawers:customtrim, Framed Trim
+storagedrawers:upgrade_template, Upgrade Template
+storagedrawers:upgrade_storage:0, Storage Upgrade (I)
+storagedrawers:upgrade_storage:1, Storage Upgrade (II)
+storagedrawers:upgrade_storage:2, Storage Upgrade (III)
+storagedrawers:upgrade_storage:3, Storage Upgrade (IV)
+storagedrawers:upgrade_storage:4, Storage Upgrade (V)
+storagedrawers:upgrade_one_stack, Storage Downgrade
+storagedrawers:upgrade_status:0, Status Upgrade (I)
+storagedrawers:upgrade_status:1, Status Upgrade (II)
+storagedrawers:upgrade_void, Void Upgrade
+storagedrawers:upgrade_conversion, Conversion Upgrade
+storagedrawers:upgrade_creative:0, Creative Storage Upgrade
+storagedrawers:upgrade_creative:1, Creative Vending Upgrade
+storagedrawers:upgrade_redstone:0, Redstone Upgrade
+storagedrawers:upgrade_redstone:1, Redstone Max Upgrade
+storagedrawers:upgrade_redstone:2, Redstone Min Upgrade
+storagedrawers:drawer_key, Drawer Key
+storagedrawers:shroud_key, Concealment Key
+storagedrawers:personal_key, Personal Key
+storagedrawers:quantify_key, Quantify Key
+storagedrawers:tape, Packing Tape
 waterstrainer:strainer_base, Strainer Base
 waterstrainer:net:0, Net
 waterstrainer:net:1, Dense Net
@@ -6466,20 +6466,6 @@ appliedenergistics2:fluix_slab:0, Fluix Slabs
 appliedenergistics2:quartz_slab:0, Certus Quartz Slabs
 appliedenergistics2:chiseled_quartz_slab:0, Chiseled Certus Quartz Slabs
 appliedenergistics2:quartz_pillar_slab:0, Certus Quartz Pillar Slabs
-appliedenergistics2:certus_quartz_axe, Certus Quartz Axe
-appliedenergistics2:certus_quartz_hoe, Certus Quartz Hoe
-appliedenergistics2:certus_quartz_spade, Certus Quartz Shovel
-appliedenergistics2:certus_quartz_pickaxe, Certus Quartz Pickaxe
-appliedenergistics2:certus_quartz_sword, Certus Quartz Sword
-appliedenergistics2:certus_quartz_wrench, Certus Quartz Wrench
-appliedenergistics2:certus_quartz_cutting_knife, Certus Quartz Cutting Knife
-appliedenergistics2:nether_quartz_axe, Nether Quartz Axe
-appliedenergistics2:nether_quartz_hoe, Nether Quartz Hoe
-appliedenergistics2:nether_quartz_spade, Nether Quartz Shovel
-appliedenergistics2:nether_quartz_pickaxe, Nether Quartz Pickaxe
-appliedenergistics2:nether_quartz_sword, Nether Quartz Sword
-appliedenergistics2:nether_quartz_wrench, Nether Quartz Wrench
-appliedenergistics2:nether_quartz_cutting_knife, Nether Quartz Cutting Knife
 appliedenergistics2:entropy_manipulator, Entropy Manipulator
 appliedenergistics2:wireless_terminal, Wireless Terminal
 appliedenergistics2:wireless_crafting_terminal, Wireless Crafting Terminal
@@ -8305,6 +8291,14 @@ chiselsandbits:block_bit:0, Chiseled Bit - Mutagen
 chiselsandbits:block_bit:0, Chiseled Bit - Liquid DNA
 chiselsandbits:block_bit:0, Chiseled Bit - Protein
 chiselsandbits:block_bit:0, Chiseled Bit - Syngas
+chiselsandbits:block_bit:0, Chiseled Bit - Etching Acid
+chiselsandbits:block_bit:0, Chiseled Bit - Plastic
+chiselsandbits:block_bit:0, Chiseled Bit - Oil
+chiselsandbits:block_bit:0, Chiseled Bit - LPG
+chiselsandbits:block_bit:0, Chiseled Bit - Gasoline
+chiselsandbits:block_bit:0, Chiseled Bit - Kerosene
+chiselsandbits:block_bit:0, Chiseled Bit - Diesel
+chiselsandbits:block_bit:0, Chiseled Bit - Lubricant
 chiselsandbits:block_bit:0, Chiseled Bit - Deuterium
 chiselsandbits:block_bit:0, Chiseled Bit - Tritium
 chiselsandbits:block_bit:0, Chiseled Bit - Helium-3
@@ -8380,14 +8374,6 @@ chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
-chiselsandbits:block_bit:0, Chiseled Bit - Etching Acid
-chiselsandbits:block_bit:0, Chiseled Bit - Plastic
-chiselsandbits:block_bit:0, Chiseled Bit - Oil
-chiselsandbits:block_bit:0, Chiseled Bit - LPG
-chiselsandbits:block_bit:0, Chiseled Bit - Gasoline
-chiselsandbits:block_bit:0, Chiseled Bit - Kerosene
-chiselsandbits:block_bit:0, Chiseled Bit - Diesel
-chiselsandbits:block_bit:0, Chiseled Bit - Lubricant
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
@@ -9499,13 +9485,13 @@ magicbees:mysteriousmagnet:18, Mysterious Magnet
 magicbees:moondial, Jade Moon Dial
 magicbees:manasteelgrafter, Manasteel Grafter
 magicbees:manasteelscoop, Manasteel Scoop
-magicbees:frames.resilient, Resilient Frame
-magicbees:frames.gentle, Gentle Frame
 magicbees:frames.oblivion, Oblivion Frame
-magicbees:frames.necrotic, Necrotic Frame
+magicbees:frames.resilient, Resilient Frame
 magicbees:frames.temporal, Temporal Frame
 magicbees:frames.magic, Magic Frame
 magicbees:frames.metabolic, Metabolic Frame
+magicbees:frames.gentle, Gentle Frame
+magicbees:frames.necrotic, Necrotic Frame
 magicbees:hiveblock, tile.magicbees.hiveblock.name
 magicbees:effectjar, Bee Collector's Jar
 magicbees:enchanted_earth, Enchanted Earth
