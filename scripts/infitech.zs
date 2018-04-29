@@ -12,6 +12,8 @@ var flint = <minecraft:flint:0>;
 recipes.addShapeless(raw_rubber * 1, [bucket_latex]);
 
 furnace.addRecipe(rubber, raw_rubber);
+furnace.addRecipe(<contenttweaker:wrought_iron_nugget>, <ore:nuggetIron>);
+
 
 // VANILLA STICKS
 recipes.remove(stick * 4);
