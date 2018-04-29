@@ -37,6 +37,11 @@ scripts.7z
 hs_err*.log
 minecraftinstance.json
 replay*.log
+config/splash.properties
+config/jei/worldSettings.cfg
+config/MouseTweaks.cfg
+config/InvTweaks.cfg
+minecraftinstance.json
 
 # Windows image file caches
 Thumbs.db
