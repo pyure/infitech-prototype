@@ -17,6 +17,7 @@ contenttweaker.part.screw=%s Screw
 contenttweaker.part.heat_conductor=%s Heat Conductor
 contenttweaker.part.wire=%s Wire
 contenttweaker.part.cable=%s Cable
+contenttweaker.part.io_unit=%s IO Unit
 
 item.contenttweaker.sticky_resin.name=Sticky Resin
 item.contenttweaker.tree_tap.name=Tree Tap
@@ -50,6 +51,9 @@ item.contenttweaker.steel_file.name=Steel File
 
 tile.contenttweaker.bronze_plated_brick.name=Bronze Plated Brick
 tile.contenttweaker.dried_spruce_log.name=Dried Spruce Log
+
+item.contenttweaker.basic_circuit.name=Basic Circuit
+item.contenttweaker.basic_circuit_board.name=Basic Circuit Board
 
 // FLUIDS
 fluid.fluid_latex=Latex
