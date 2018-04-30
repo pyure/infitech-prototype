@@ -113,6 +113,7 @@ mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Macerator Blade").s
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Gearbox").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Heat Conductor").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Electrode").setPartType(MaterialSystem.getPartType("item")).build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("io_unit").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Industrial Turbine Rotor").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Large Turbine Rotor").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Standard Turbine Rotor").setPartType(MaterialSystem.getPartType("item")).build();
@@ -161,6 +162,7 @@ for i, metal in machine_subcomponents_list {
    metal.registerPart("gearbox");
    metal.registerPart("heat_conductor");
    metal.registerPart("wire");
+   metal.registerPart("io_unit");
 }
   
 

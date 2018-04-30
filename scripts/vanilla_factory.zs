@@ -33,6 +33,15 @@ var raw_rubber = VanillaFactory.createItem("raw_rubber");
 raw_rubber.maxStackSize = 64;
 raw_rubber.register();
 
+var basic_circuit = VanillaFactory.createItem("basic_circuit");
+basic_circuit.maxStackSize = 64;
+basic_circuit.register();
+
+var basic_circuit_board = VanillaFactory.createItem("basic_circuit_board");
+basic_circuit_board.maxStackSize = 64;
+basic_circuit_board.register();
+
+/* TESTING STUFF THAT CAN BE DELETED */
 var test_pick = VanillaFactory.createItem("test_pick");
 test_pick.toolClass = "pickaxe";
 test_pick.maxDamage = 10;
@@ -46,7 +55,7 @@ test_pick.itemDestroyedBlock = function(stack, world, blockState, pos, entity){
   return true;
 };
 test_pick.register();
-
+/* /TESTING STUFF */
 
 
 var test_drill = VanillaFactory.createItem("test_drill");

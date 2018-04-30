@@ -1,0 +1,124 @@
+{
+    "registryname": "assembling_machine_steel", 
+    "localizedname": "Steel Assembling Machine", 
+    "requires-blueprint": true, 
+    "color": "4E4E4E", 
+    "parts": [
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_steel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thermalfoundation:glass_alloy@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+
+            "elements": [
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockfluidinputhatch",
+                "ct_machine_frame_steel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+
+            "elements": [
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockfluidinputhatch",
+                "ct_machine_frame_steel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_steel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+
+            "elements": [
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockfluidinputhatch",
+                "ct_machine_frame_steel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+
+            "elements": [
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockfluidinputhatch",
+                "ct_machine_frame_steel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+
+            "elements": [
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockfluidinputhatch",
+                "ct_machine_frame_steel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thermalfoundation:glass_alloy@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thermalfoundation:glass_alloy@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockfluidinputhatch",
+                "ct_machine_frame_steel"
+            ]
+        }
+    ]}
