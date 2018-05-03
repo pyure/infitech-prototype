@@ -1,0 +1,61 @@
+{
+  "machine": "centrifuge_tungstensteel",
+  "registryName": "centrifuge_tungstensteel_tier2_uranium_from_uf6",
+  "recipeTime": 7,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 3502,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:gearboxSteel",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 400,
+      "fluid": "uranium_hexafluoride",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:dustUranium238",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.2
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:dustUranium235",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.04
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 100,
+      "fluid": "uranium_hexafluoride",
+      "energyPerTick": 0,
+      "chance": 0.30000000000000004
+    }
+  ]
+}
