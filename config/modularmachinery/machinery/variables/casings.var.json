@@ -23,10 +23,23 @@
         "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus"
     ],
+    "casings_energy_and_item": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockenergyoutputhatch"
+    ],
     "casings_item_and_fluids": [
         "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_items_fluids_and_energy": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockfluidoutputhatch",
+        "modularmachinery:blockenergyinputhatch"
     ]
 }

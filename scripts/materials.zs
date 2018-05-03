@@ -123,6 +123,7 @@ mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Wire").setPartType(
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Axe Head").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Pickaxe Head").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Saw Blade").setPartType(MaterialSystem.getPartType("item")).build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Catalyst Support").setPartType(MaterialSystem.getPartType("item")).build();
 
 // Add "block" parts here
 var machineFrame = MaterialSystem.getPartBuilder().setName("machine_frame").setPartType(MaterialSystem.getPartType("storage")).build(); // "machine_frame" instead of "Machine Frame" due to a potential bug; reported to team.
@@ -163,6 +164,7 @@ for i, metal in machine_subcomponents_list {
    metal.registerPart("heat_conductor");
    metal.registerPart("wire");
    metal.registerPart("io_unit");
+   metal.registerPart("catalyst_support");
 }
   
 

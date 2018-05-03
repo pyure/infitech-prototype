@@ -1,0 +1,149 @@
+{
+    "registryname": "chemical_reactor_tungstensteel",
+    "localizedname": "Tungstensteel Chemical Reactor",
+    "requires-blueprint": true, 
+    "color": "6464A0",   
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel",
+                "casings_items_fluids_and_energy"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "factorytech:tankblock@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel",
+                "casings_items_fluids_and_energy"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel",
+                "casings_items_fluids_and_energy"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel",
+                "casings_items_fluids_and_energy"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel",
+                "casings_items_fluids_and_energy"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:iron_bars@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel",
+                "casings_items_fluids_and_energy"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "factorytech:tankblock@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "factorytech:tankblock@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:iron_bars@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "factorytech:tankblock@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "minecraft:stained_glass@15"
+            ]
+        }
+    ]}
