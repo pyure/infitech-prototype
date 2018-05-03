@@ -1,0 +1,52 @@
+{
+  "machine": "chemical_reactor_aluminium",
+  "registryName": "chemical_reactor_aluminium_tier1_fluorite_water",
+  "recipeTime": 200,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 60,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:catalystSupportBronze",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "nuclearcraft:gem_dust@5",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 1000,
+      "fluid": "water",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 500,
+      "fluid": "fluorite_water",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

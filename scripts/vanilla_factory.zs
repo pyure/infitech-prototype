@@ -98,6 +98,11 @@ placeholder_acid2.density = 100;
 placeholder_acid2.viscosity = 100;
 placeholder_acid2.register();
 
+var uranium_hexafluoride = mods.contenttweaker.VanillaFactory.createFluid("uranium_hexafluoride", "2142779");
+uranium_hexafluoride.density = 100;
+uranium_hexafluoride.viscosity = 100;
+uranium_hexafluoride.register();
+
 /*
 var mortar_flint = VanillaFactory.createItem("flint_mortar");
 mortar_flint.maxStackSize = 1;

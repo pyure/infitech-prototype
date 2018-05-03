@@ -1,0 +1,52 @@
+{
+  "machine": "chemical_reactor_tungstensteel",
+  "registryName": "chemical_reactor_tungstensteel_tier3_uranium_hexafluoride",
+  "recipeTime": 25,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 36,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:catalystSupportAluminium",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 1000,
+      "fluid": "hydrofluoric_acid",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:dustUranium238",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 8000,
+      "fluid": "uranium_hexafluoride",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

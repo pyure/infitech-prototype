@@ -18,6 +18,7 @@ contenttweaker.part.heat_conductor=%s Heat Conductor
 contenttweaker.part.wire=%s Wire
 contenttweaker.part.cable=%s Cable
 contenttweaker.part.io_unit=%s IO Unit
+contenttweaker.part.catalyst_support=%s Catalyst Support
 
 item.contenttweaker.sticky_resin.name=Sticky Resin
 item.contenttweaker.tree_tap.name=Tree Tap
@@ -60,3 +61,6 @@ fluid.fluid_latex=Latex
 fluid.fluid_distilled_water=Distilled Water
 fluid.fluid_placeholder_acid1=Placeholder Acid I
 fluid.fluid_placeholder_acid2=Placeholder Acid II
+fluid.hydrofluoric_acid=Hydrofluoric Acid
+fluid.fluorine=Fluorine
+fluid.uranium_hexafluoride=Uranium Hexafluoride

@@ -37,7 +37,8 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "ct_machine_frame_tungstensteel"
+                "ct_machine_frame_tungstensteel",
+                "casings_energy_and_item"
             ]
         },
         {
@@ -91,9 +92,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "minecraft:iron_bars@0",
-                "modularmachinery:blockenergyinputhatch",
-                "modularmachinery:blockenergyoutputhatch"
+                "minecraft:iron_bars@0"
             ]
         }
     ]}
