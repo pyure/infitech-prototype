@@ -1,7 +1,7 @@
 {
-  "machine": "centrifuge_aluminium",
-  "registryName": "centrifuge_aluminium_tier2_uranium_from_uf6",
-  "recipeTime": 30,
+  "machine": "centrifuge_tungstensteel",
+  "registryName": "centrifuge_tungstensteel_tier5_uranium_from_uf6",
+  "recipeTime": 3,
   "requirements": [
     {
       "type": "energy",
@@ -9,13 +9,13 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 608,
+      "energyPerTick": 78948,
       "chance": 1.0
     },
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:gearboxSteel",
+      "item": "ore:gearboxTungstensteel",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
@@ -46,7 +46,7 @@
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
-      "chance": 0.025
+      "chance": 0.085
     },
     {
       "type": "fluid",

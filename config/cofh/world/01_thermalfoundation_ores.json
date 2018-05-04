@@ -36,7 +36,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 12,
+            "metadata": 15,
             "weight": 95
           },
           {
@@ -71,7 +71,7 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 8,
+            "metadata": 11,
             "weight": 70
           },
           {
@@ -111,7 +111,7 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 12,
+            "metadata": 15,
             "weight": 5
           }
         ],
@@ -176,13 +176,18 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_3",
-            "metadata": 9,
+            "metadata": 12,
             "weight": 80
           },
           {
             "name": "nuclearcraft:ore",
             "metadata": 6,
-            "weight": 20
+            "weight": 10
+          },
+          {
+            "name": "contenttweaker:sub_block_holder_3",
+            "metadata": 7,
+            "weight": 10
           }
         ],
         "material": "minecraft:stone",
@@ -375,8 +380,8 @@
       "generator": {
         "block": [
           {
-            "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 13,
+            "name": "contenttweaker:sub_block_holder_5",
+            "metadata": 0,
             "weight": 70
           },
           {
@@ -456,7 +461,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 4,
+            "metadata": 7,
             "weight": 70
           },
           {
@@ -491,7 +496,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 10,
+            "metadata": 13,
             "weight": 65
           },
           {
@@ -531,7 +536,7 @@
           },
           {
             "name": "contenttweaker:sub_block_holder_3",
-            "metadata": 11,
+            "metadata": 14,
             "weight": 80
           }
         ],
@@ -556,7 +561,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 3,
+            "metadata": 6,
             "weight": 100
           }
         ],
@@ -686,7 +691,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 12,
+            "metadata": 15,
             "weight": 65
           },
           {
@@ -791,7 +796,7 @@
         "block": [
           {
             "name": "contenttweaker:sub_block_holder_4",
-            "metadata": 12,
+            "metadata": 15,
             "weight": 65
           },
           {

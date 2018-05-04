@@ -77,7 +77,7 @@ var sulfur =  MaterialSystem.getMaterialBuilder().setName('Sulfur').setColor(131
 var flint =  MaterialSystem.getMaterialBuilder().setName('Flint').setColor(8256).build();
 var polyethylene =  MaterialSystem.getMaterialBuilder().setName('Polyethylene').setColor(13158600).build();
 var raw_rubber =  MaterialSystem.getMaterialBuilder().setName('Raw Rubber').setColor(13420425).build();
-
+var lepidolite =  MaterialSystem.getMaterialBuilder().setName('Lepidolite').setColor(15741580).build();
 /*
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setPartType(MaterialSystem.getPartType("item")).build();
 */
@@ -98,9 +98,9 @@ var ore_part_names = ["crushed_ore", "dust", "tiny_dust", "washed_ore"] as strin
 var dust_part_names = ["dust", "tiny_dust"] as string[]; 
 
 // ORES
-var ore_list = [antimony, cobalt, pyrolusite, tetrahedrite, stibnite, graphite, lignite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, limonite] as Material[];
+var ore_list = [antimony, cobalt, pyrolusite, tetrahedrite, stibnite, graphite, lignite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, limonite, lepidolite] as Material[];
 var ore_byproducts_list = [antimony, cobalt, magnesium, manganese, platinum, iridium, tin, gold, iron, silver, copper, lead, nickel, chrome, lapis, lithium, boron, uranium238, uranium235, thorium, zinc, aluminium, 
-                      tetrahedrite, stibnite, graphite, lignite, limonite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, pyrolusite, emerald, sulfur] as Material[];
+                      tetrahedrite, stibnite, graphite, lignite, limonite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, pyrolusite, emerald, sulfur, lepidolite] as Material[];
 //
 var ore_types = ["ore"] as string[];
 

@@ -33,20 +33,20 @@
     {
       "type": "item",
       "io-type": "output",
-      "item": "ore:dustUranium238",
+      "item": "ore:ingotUranium238",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
-      "chance": 0.2
+      "chance": 0.25
     },
     {
       "type": "item",
       "io-type": "output",
-      "item": "ore:dustUranium235",
+      "item": "ore:ingotUranium235",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,
-      "chance": 0.04
+      "chance": 0.045
     },
     {
       "type": "fluid",
@@ -55,7 +55,7 @@
       "amount": 100,
       "fluid": "uranium_hexafluoride",
       "energyPerTick": 0,
-      "chance": 0.4
+      "chance": 0.2
     }
   ]
 }
