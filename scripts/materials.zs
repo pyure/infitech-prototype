@@ -94,7 +94,7 @@ var dust_list = [raw_rubber] as Material[];
 
 var part_names = ["nugget", "ingot", "plate", "rod", "screw"] as string[]; 
 var gemstone_part_names = ["dust", "tiny_dust", "crushed_ore", "washed_ore"] as string[];
-var ore_part_names = ["crushed_ore", "dust", "tiny_dust", "washed_ore"] as string[]; 
+var ore_part_names = ["crushed_ore", "dust", "tiny_dust", "washed_ore", "impure_dust"] as string[]; 
 var dust_part_names = ["dust", "tiny_dust"] as string[]; 
 
 // ORES
@@ -124,6 +124,7 @@ mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Axe Head").setPartT
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Pickaxe Head").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Saw Blade").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Catalyst Support").setPartType(MaterialSystem.getPartType("item")).build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Impure Dust").setPartType(MaterialSystem.getPartType("item")).build();
 
 // Add "block" parts here
 var machineFrame = MaterialSystem.getPartBuilder().setName("machine_frame").setPartType(MaterialSystem.getPartType("storage")).build(); // "machine_frame" instead of "Machine Frame" due to a potential bug; reported to team.

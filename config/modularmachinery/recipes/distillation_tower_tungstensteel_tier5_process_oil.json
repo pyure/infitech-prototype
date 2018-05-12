@@ -1,0 +1,61 @@
+{
+  "machine": "distillation_tower_tungstensteel",
+  "registryName": "distillation_tower_tungstensteel_tier5_process_oil",
+  "recipeTime": 8,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 9230,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:catalystSupportTungstensteel",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 100,
+      "fluid": "oil",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 60,
+      "fluid": "sulfuric_gas",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 60,
+      "fluid": "sulfuric_naphtha",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 100,
+      "fluid": "sulfuric_light_fuel",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

@@ -1,0 +1,653 @@
+{
+    "registryname": "distillation_tower_tungstensteel",
+    "localizedname": "Tungstensteel Distillation Tower",
+    "requires-blueprint": true, 
+    "color": "6464A0",  
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ct_agitator_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ct_agitator_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            
+            "elements": [
+                "distillation_tower_casings"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            
+            "elements": [
+                "distillation_tower_casings"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            
+            "elements": [
+                "distillation_tower_casings"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            
+            "elements": [
+                "distillation_tower_casings"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            
+            "elements": [
+                "distillation_tower_casings"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+                {
+            "x": 0,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },     
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },        
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },     
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },        
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },     
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },        
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+                {
+            "x": -1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },     
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },        
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },     
+        {
+            "x": -1,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },        
+        {
+            "x": 1,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+                {
+            "x": -1,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },     
+        {
+            "x": -1,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:glass@3"
+            ]
+        },        
+        {
+            "x": 1,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "ct_machine_frame_tungstensteel"
+            ]
+        }
+    ]}

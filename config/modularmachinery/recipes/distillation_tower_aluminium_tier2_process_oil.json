@@ -1,0 +1,43 @@
+{
+  "machine": "distillation_tower_aluminium",
+  "registryName": "distillation_tower_aluminium_tier2_process_oil",
+  "recipeTime": 81,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 147,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:catalystSupportSteel",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 100,
+      "fluid": "oil",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 60,
+      "fluid": "sulfuric_gas",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

@@ -19,6 +19,7 @@ contenttweaker.part.wire=%s Wire
 contenttweaker.part.cable=%s Cable
 contenttweaker.part.io_unit=%s IO Unit
 contenttweaker.part.catalyst_support=%s Catalyst Support
+contenttweaker.part.impure_dust=Impure %s Dust
 
 item.contenttweaker.sticky_resin.name=Sticky Resin
 item.contenttweaker.tree_tap.name=Tree Tap
@@ -64,3 +65,7 @@ fluid.fluid_placeholder_acid2=Placeholder Acid II
 fluid.hydrofluoric_acid=Hydrofluoric Acid
 fluid.fluorine=Fluorine
 fluid.uranium_hexafluoride=Uranium Hexafluoride
+fluid.sulfuric_gas=Sulfuric Gas
+fluid.sulfuric_naphtha=Sulfuric Naphtha
+fluid.sulfuric_light_fuel=Sulfuric Light Fuel
+fluid.sulfuric_heavy_fuel=Sulfuric Heavy Fuel

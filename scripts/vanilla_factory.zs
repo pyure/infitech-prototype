@@ -103,6 +103,27 @@ uranium_hexafluoride.density = 100;
 uranium_hexafluoride.viscosity = 100;
 uranium_hexafluoride.register();
 
+var sulfuric_gas = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_gas", "16777215");
+sulfuric_gas.density = 100;
+sulfuric_gas.viscosity = 100;
+sulfuric_gas.register();
+
+var sulfuric_naphtha = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_naphtha", "16776910");
+sulfuric_naphtha.density = 100;
+sulfuric_naphtha.viscosity = 100;
+sulfuric_naphtha.register();
+
+var sulfuric_light_fuel = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_light_fuel", "16776100");
+sulfuric_light_fuel.density = 100;
+sulfuric_light_fuel.viscosity = 100;
+sulfuric_light_fuel.register();
+
+var sulfuric_heavy_fuel = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_heavy_fuel", "16776310");
+sulfuric_heavy_fuel.density = 100;
+sulfuric_heavy_fuel.viscosity = 100;
+sulfuric_heavy_fuel.register();
+
+
 /*
 var mortar_flint = VanillaFactory.createItem("flint_mortar");
 mortar_flint.maxStackSize = 1;

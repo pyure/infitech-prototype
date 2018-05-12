@@ -1,15 +1,15 @@
 {
   "ct_agitator_aluminium": [
-    "contenttweaker:sub_block_holder_2@11"
+    "contenttweaker:sub_block_holder_2@12"
   ],
   "ct_agitator_bronze": [
-    "contenttweaker:sub_block_holder_3@6"
+    "contenttweaker:sub_block_holder_3@8"
   ],
   "ct_agitator_steel": [
-    "contenttweaker:sub_block_holder_4@9"
+    "contenttweaker:sub_block_holder_4@12"
   ],
   "ct_agitator_titanium": [
-    "contenttweaker:sub_block_holder_2@8"
+    "contenttweaker:sub_block_holder_1@8"
   ],
   "ct_agitator_tungstensteel": [
     "contenttweaker:sub_block_holder_0@12"

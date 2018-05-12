@@ -41,5 +41,11 @@
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockfluidoutputhatch",
         "modularmachinery:blockenergyinputhatch"
+    ],
+    "distillation_tower_casings": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockenergyinputhatch"
     ]
 }
