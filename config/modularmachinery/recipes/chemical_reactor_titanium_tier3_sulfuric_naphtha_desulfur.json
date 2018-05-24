@@ -1,0 +1,61 @@
+{
+  "machine": "chemical_reactor_titanium",
+  "registryName": "chemical_reactor_titanium_tier3_sulfuric_naphtha_desulfur",
+  "recipeTime": 41,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 648,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:catalystSupportAluminium",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 7000,
+      "fluid": "sulfuric_naphtha",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 1000,
+      "fluid": "hydrogen",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 4700,
+      "fluid": "naphtha",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 1400,
+      "fluid": "hydrogen_sulfide",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

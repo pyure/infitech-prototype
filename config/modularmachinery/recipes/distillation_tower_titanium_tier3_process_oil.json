@@ -9,7 +9,7 @@
       "item": null,
       "amount": 0,
       "fluid": null,
-      "energyPerTick": 996,
+      "energyPerTick": 642,
       "chance": 1.0
     },
     {
@@ -34,8 +34,8 @@
       "type": "fluid",
       "io-type": "output",
       "item": null,
-      "amount": 60,
-      "fluid": "sulfuric_gas",
+      "amount": 51,
+      "fluid": "sulfuric_light_fuel",
       "energyPerTick": 0,
       "chance": 1.0
     },
@@ -43,8 +43,17 @@
       "type": "fluid",
       "io-type": "output",
       "item": null,
-      "amount": 20,
+      "amount": 25,
       "fluid": "sulfuric_naphtha",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 15,
+      "fluid": "sulfuric_gas",
       "energyPerTick": 0,
       "chance": 1.0
     }

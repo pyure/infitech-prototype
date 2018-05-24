@@ -1,0 +1,79 @@
+{
+  "machine": "distillation_tower_titanium",
+  "registryName": "distillation_tower_titanium_tier4_process_cracked_heavy_fuel",
+  "recipeTime": 10,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 2520,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:catalystSupportTitanium",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 100,
+      "fluid": "cracked_heavy_fuel",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 15,
+      "fluid": "refinery_gas",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 15,
+      "fluid": "refined_oil",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 30,
+      "fluid": "light_fuel",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 10,
+      "fluid": "toluene",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 14,
+      "fluid": "lubricant",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

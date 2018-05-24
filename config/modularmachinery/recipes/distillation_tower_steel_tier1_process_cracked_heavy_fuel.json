@@ -1,0 +1,52 @@
+{
+  "machine": "distillation_tower_steel",
+  "registryName": "distillation_tower_steel_tier1_process_cracked_heavy_fuel",
+  "recipeTime": 175,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 17,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:catalystSupportBronze",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 100,
+      "fluid": "cracked_heavy_fuel",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 15,
+      "fluid": "light_fuel",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 2,
+      "fluid": "lubricant",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

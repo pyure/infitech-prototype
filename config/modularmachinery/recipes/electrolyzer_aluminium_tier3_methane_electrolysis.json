@@ -1,0 +1,52 @@
+{
+  "machine": "electrolyzer_aluminium",
+  "registryName": "electrolyzer_aluminium_tier3_methane_electrolysis",
+  "recipeTime": 41,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 216,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:electrodeAluminium",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 5000,
+      "fluid": "methane",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "output",
+      "item": "ore:tinyDustCarbon",
+      "amount": 6,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 3200,
+      "fluid": "hydrogen",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "machine": "electrolyzer_steel",
+  "registryName": "electrolyzer_steel_tier1_water_electrolysis",
+  "recipeTime": 450,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 13,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:electrodeBronze",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 3000,
+      "fluid": "water",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 400,
+      "fluid": "oxygen",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 800,
+      "fluid": "hydrogen",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}
