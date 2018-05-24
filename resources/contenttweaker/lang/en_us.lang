@@ -56,6 +56,7 @@ tile.contenttweaker.dried_spruce_log.name=Dried Spruce Log
 
 item.contenttweaker.basic_circuit.name=Basic Circuit
 item.contenttweaker.basic_circuit_board.name=Basic Circuit Board
+item.contenttweaker.gelled_toluene.name=Gelled Toluene
 
 // FLUIDS
 fluid.fluid_latex=Latex
@@ -69,3 +70,16 @@ fluid.sulfuric_gas=Sulfuric Gas
 fluid.sulfuric_naphtha=Sulfuric Naphtha
 fluid.sulfuric_light_fuel=Sulfuric Light Fuel
 fluid.sulfuric_heavy_fuel=Sulfuric Heavy Fuel
+fluid.heavy_oil=Heavy Oil
+fluid.cracked_light_fuel=Cracked Light Fuel
+fluid.cracked_heavy_fuel=Cracked Heavy Fuel
+fluid.fish_oil=Fish Oil
+fluid.heavy_fuel=Heavy Fuel
+fluid.hydrogen_sulfide=Hydrogen Sulfide
+fluid.light_fuel=Light Fuel
+fluid.natural_gas=Natural Gas
+fluid.refinery_gas=Refinery Gas
+fluid.toluene=Toluene
+fluid.methane=Methane
+fluid.epichlorohydrin=Epichlorohydrin
+fluid.chlorine=Chlorine

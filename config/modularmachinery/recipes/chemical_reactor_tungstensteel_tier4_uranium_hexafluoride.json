@@ -33,7 +33,7 @@
     {
       "type": "item",
       "io-type": "input",
-      "item": "ore:dustUranium238",
+      "item": "ore:dustPitchblende",
       "amount": 1,
       "fluid": null,
       "energyPerTick": 0,

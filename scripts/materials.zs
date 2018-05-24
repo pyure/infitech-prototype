@@ -78,6 +78,7 @@ var flint =  MaterialSystem.getMaterialBuilder().setName('Flint').setColor(8256)
 var polyethylene =  MaterialSystem.getMaterialBuilder().setName('Polyethylene').setColor(13158600).build();
 var raw_rubber =  MaterialSystem.getMaterialBuilder().setName('Raw Rubber').setColor(13420425).build();
 var lepidolite =  MaterialSystem.getMaterialBuilder().setName('Lepidolite').setColor(15741580).build();
+
 /*
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setPartType(MaterialSystem.getPartType("item")).build();
 */
@@ -90,7 +91,7 @@ var mortar_metals_list = [iron, copper, bronze, steel] as Material[];
 var machine_subcomponents_list = [bronze, steel, titanium, tungstensteel, aluminium] as Material[];
 var gemstone_list = [diamond, coal, redstone, nether_quartz] as Material[];
 var tool_metal_list = [flint, bronze, iron, steel] as Material[];
-var dust_list = [raw_rubber] as Material[];
+var dust_list = [raw_rubber, carbon, polyethylene] as Material[];
 
 var part_names = ["nugget", "ingot", "plate", "rod", "screw"] as string[]; 
 var gemstone_part_names = ["dust", "tiny_dust", "crushed_ore", "washed_ore"] as string[];

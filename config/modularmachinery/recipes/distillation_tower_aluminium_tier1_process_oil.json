@@ -34,8 +34,8 @@
       "type": "fluid",
       "io-type": "output",
       "item": null,
-      "amount": 60,
-      "fluid": "sulfuric_gas",
+      "amount": 45,
+      "fluid": "sulfuric_light_fuel",
       "energyPerTick": 0,
       "chance": 1.0
     }

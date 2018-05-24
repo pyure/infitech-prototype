@@ -1,0 +1,70 @@
+{
+  "machine": "distillation_tower_tungstensteel",
+  "registryName": "distillation_tower_tungstensteel_tier4_process_heavy_oil",
+  "recipeTime": 10,
+  "requirements": [
+    {
+      "type": "energy",
+      "io-type": "input",
+      "item": null,
+      "amount": 0,
+      "fluid": null,
+      "energyPerTick": 2714,
+      "chance": 1.0
+    },
+    {
+      "type": "item",
+      "io-type": "input",
+      "item": "ore:catalystSupportTitanium",
+      "amount": 1,
+      "fluid": null,
+      "energyPerTick": 0,
+      "chance": 0.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "input",
+      "item": null,
+      "amount": 100,
+      "fluid": "heavy_oil",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 49,
+      "fluid": "sulfuric_light_fuel",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 25,
+      "fluid": "sulfuric_naphtha",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 75,
+      "fluid": "sulfuric_gas",
+      "energyPerTick": 0,
+      "chance": 1.0
+    },
+    {
+      "type": "fluid",
+      "io-type": "output",
+      "item": null,
+      "amount": 100,
+      "fluid": "sulfuric_heavy_fuel",
+      "energyPerTick": 0,
+      "chance": 1.0
+    }
+  ]
+}
