@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "contenttweaker:items/cable"
-  }
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "contenttweaker:items/cable",
+        "layer1": "contenttweaker:items/cable_overlay"
+    }
 }

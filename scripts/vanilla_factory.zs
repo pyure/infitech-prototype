@@ -192,6 +192,17 @@ chlorine.density = 100;
 chlorine.viscosity = 100;
 chlorine.register();
 
+var soldering_alloy = mods.contenttweaker.VanillaFactory.createFluid("soldering_alloy", "14474470");
+soldering_alloy.density = 100;
+soldering_alloy.viscosity = 100;
+soldering_alloy.register();
+
+
+var nand_chip = VanillaFactory.createItem("nand_chip");
+nand_chip.maxStackSize = 64;
+nand_chip.register();
+
+
 /*
 var mortar_flint = VanillaFactory.createItem("flint_mortar");
 mortar_flint.maxStackSize = 1;

@@ -1238,6 +1238,178 @@ forestry:resource_storage:2, Block of Tin
 forestry:resource_storage:3, Block of Bronze
 forestry:ash_brick:0, Ash Bricks
 forestry:ash_stairs:0, Ash Brick Stairs
+forestry:habitat_locator, Habitat Locator
+forestry:imprinter, Imprinter
+forestry:cart.beehouse:0, Minecart with Bee House
+forestry:cart.beehouse:1, Minecart with Apiary
+forestry:frame_untreated, Untreated Frame
+forestry:frame_impregnated, Impregnated Frame
+forestry:frame_proven, Proven Frame
+forestry:honey_drop:0, Honey Drop
+forestry:pollen:0, Pollen Cluster
+forestry:pollen:1, Crystalline Pollen Cluster
+forestry:propolis:0, Propolis
+forestry:propolis:1, Sticky Propolis
+forestry:propolis:3, Silky Propolis
+forestry:honeydew, Honeydew
+forestry:royal_jelly, Royal Jelly
+forestry:wax_cast, Wax Cast
+forestry:bee_combs:0, Honey Comb
+forestry:bee_combs:2, Simmering Comb
+forestry:bee_combs:3, Stringy Comb
+forestry:bee_combs:4, Frozen Comb
+forestry:bee_combs:5, Dripping Comb
+forestry:bee_combs:6, Silky Comb
+forestry:bee_combs:7, Parched Comb
+forestry:bee_combs:15, Mossy Comb
+forestry:bee_combs:16, Mellow Comb
+forestry:apiarist_helmet, Apiarist's Hat
+forestry:apiarist_chest, Apiarist's Shirt
+forestry:apiarist_legs, Apiarist's Pants
+forestry:apiarist_boots, Apiarist's Shoes
+forestry:scoop, Scoop
+forestry:smoker, Bee Smoker
+forestry:apiary:0, Apiary
+forestry:bee_house:0, Bee House
+forestry:bee_chest:0, Apiarist's Chest
+forestry:beehives:0, Forest Hive
+forestry:beehives:1, Meadows Hive
+forestry:beehives:2, Modest Hive
+forestry:beehives:3, Tropical Hive
+forestry:beehives:4, Ender Hive
+forestry:beehives:5, Wintry Hive
+forestry:beehives:6, Marshy Hive
+forestry:candle:0, Unlit Candle
+forestry:stump:0, Candle Stump
+forestry:bee_combs_0:0, Honey Comb Block
+forestry:bee_combs_0:2, Simmering Comb Block
+forestry:bee_combs_0:3, Stringy Comb Block
+forestry:bee_combs_0:4, Frozen Comb Block
+forestry:bee_combs_0:5, Dripping Comb Block
+forestry:bee_combs_0:6, Silky Comb Block
+forestry:bee_combs_0:7, Parched Comb Block
+forestry:bee_combs_0:15, Mossy Comb Block
+forestry:bee_combs_1:0, Mellow Comb Block
+forestry:alveary.plain:0, Alveary
+forestry:alveary.swarmer:0, Alveary Swarmer
+forestry:alveary.fan:0, Alveary Fan
+forestry:alveary.heater:0, Alveary Heater
+forestry:alveary.hygro:0, Alveary Hygroregulator
+forestry:alveary.stabiliser:0, Alveary Stabiliser
+forestry:alveary.sieve:0, Alveary Sieve
+forestry:honeyed_slice, Honeyed Slice
+forestry:ambrosia, Ambrosia
+forestry:honey_pot, Honey Pot
+forestry:greenhouse:0, Greenhouse Block
+forestry:greenhouse:3, Greenhouse Energy Distributor
+forestry:greenhouse:4, Greenhouse Control
+forestry:greenhouse:5, Greenhouse Screen
+forestry:climatiser:0, Greenhouse Hygroregulator
+forestry:climatiser:1, Greenhouse Heater
+forestry:climatiser:2, Greenhouse Fan
+forestry:climatiser:3, Greenhouse Humidifier
+forestry:climatiser:4, Greenhouse Dehumidifier
+forestry:greenhouse_screen, Portable Greenhouse Screen
+forestry:camouflage_spray_can, Camouflage Spray Can
+forestry:stamps:0, Stamp (1n)
+forestry:stamps:1, Stamp (2n)
+forestry:stamps:2, Stamp (5n)
+forestry:stamps:3, Stamp (10n)
+forestry:stamps:4, Stamp (20n)
+forestry:stamps:5, Stamp (50n)
+forestry:stamps:6, Stamp (100n)
+forestry:letters, Letter
+forestry:catalogue, Catalogue
+forestry:mailbox:0, Mailbox
+forestry:trade_station:0, Trade Station
+forestry:stamp_collector:0, Stamp Collector
+forestry:fluid.bio.ethanol, Ethanol
+forestry:fluid.biomass, Biomass
+forestry:fluid.glass, Liquid Glass
+forestry:fluid.for.honey, Honey
+forestry:fluid.ice, Crushed Ice
+forestry:fluid.juice, Fruit Juice
+forestry:fluid.milk, Milk
+forestry:fluid.seed.oil, Seed Oil
+forestry:fluid.short.mead, Short Mead
+forestry:can, item.for.can.name
+forestry:capsule, item.for.capsule.name
+forestry:refractory, item.for.refractory.name
+forestry:crate, Crate
+forestry:apiarist_bag, Apiarist's Backpack
+forestry:lepidopterist_bag, Lepidopterist's Backpack
+forestry:miner_bag, Mining Backpack
+forestry:miner_bag_t2, Woven Mining Backpack
+forestry:digger_bag, Digging Backpack
+forestry:digger_bag_t2, Woven Digging Backpack
+forestry:forester_bag, Foresting Backpack
+forestry:forester_bag_t2, Woven Foresting Woven Backpack
+forestry:hunter_bag, Hunting Backpack
+forestry:hunter_bag_t2, Hunter's Woven Backpack
+forestry:adventurer_bag, Adventuring Backpack
+forestry:adventurer_bag_t2, Woven Adventuring Backpack
+forestry:builder_bag, Building Backpack
+forestry:builder_bag_t2, Woven Building Backpack
+forestry:engine_peat:0, Peat-fired Engine
+forestry:engine_biogas:0, Biogas Engine
+forestry:engine_clockwork:0, Clockwork Engine
+forestry:mushroom:0, tile.for.mushroom.name
+forestry:mushroom:1, tile.for.mushroom.name
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
 forestry:grafter, Grafter
 forestry:grafter_proven, Proven Grafter
 forestry:logs.0:0, Larch Wood
@@ -1695,181 +1867,9 @@ forestry:wood_pile_decorative:0, Decorative Wood Pile
 forestry:ash_block:0, Ash Block
 forestry:loam:0, Loam
 forestry:tree_chest:0, Arborist's Chest
-forestry:mushroom:0, tile.for.mushroom.name
-forestry:mushroom:1, tile.for.mushroom.name
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:engine_peat:0, Peat-fired Engine
-forestry:engine_biogas:0, Biogas Engine
-forestry:engine_clockwork:0, Clockwork Engine
-forestry:habitat_locator, Habitat Locator
-forestry:imprinter, Imprinter
-forestry:cart.beehouse:0, Minecart with Bee House
-forestry:cart.beehouse:1, Minecart with Apiary
-forestry:frame_untreated, Untreated Frame
-forestry:frame_impregnated, Impregnated Frame
-forestry:frame_proven, Proven Frame
-forestry:honey_drop:0, Honey Drop
-forestry:pollen:0, Pollen Cluster
-forestry:pollen:1, Crystalline Pollen Cluster
-forestry:propolis:0, Propolis
-forestry:propolis:1, Sticky Propolis
-forestry:propolis:3, Silky Propolis
-forestry:honeydew, Honeydew
-forestry:royal_jelly, Royal Jelly
-forestry:wax_cast, Wax Cast
-forestry:bee_combs:0, Honey Comb
-forestry:bee_combs:2, Simmering Comb
-forestry:bee_combs:3, Stringy Comb
-forestry:bee_combs:4, Frozen Comb
-forestry:bee_combs:5, Dripping Comb
-forestry:bee_combs:6, Silky Comb
-forestry:bee_combs:7, Parched Comb
-forestry:bee_combs:15, Mossy Comb
-forestry:bee_combs:16, Mellow Comb
-forestry:apiarist_helmet, Apiarist's Hat
-forestry:apiarist_chest, Apiarist's Shirt
-forestry:apiarist_legs, Apiarist's Pants
-forestry:apiarist_boots, Apiarist's Shoes
-forestry:scoop, Scoop
-forestry:smoker, Bee Smoker
-forestry:apiary:0, Apiary
-forestry:bee_house:0, Bee House
-forestry:bee_chest:0, Apiarist's Chest
-forestry:beehives:0, Forest Hive
-forestry:beehives:1, Meadows Hive
-forestry:beehives:2, Modest Hive
-forestry:beehives:3, Tropical Hive
-forestry:beehives:4, Ender Hive
-forestry:beehives:5, Wintry Hive
-forestry:beehives:6, Marshy Hive
-forestry:candle:0, Unlit Candle
-forestry:stump:0, Candle Stump
-forestry:bee_combs_0:0, Honey Comb Block
-forestry:bee_combs_0:2, Simmering Comb Block
-forestry:bee_combs_0:3, Stringy Comb Block
-forestry:bee_combs_0:4, Frozen Comb Block
-forestry:bee_combs_0:5, Dripping Comb Block
-forestry:bee_combs_0:6, Silky Comb Block
-forestry:bee_combs_0:7, Parched Comb Block
-forestry:bee_combs_0:15, Mossy Comb Block
-forestry:bee_combs_1:0, Mellow Comb Block
-forestry:alveary.plain:0, Alveary
-forestry:alveary.swarmer:0, Alveary Swarmer
-forestry:alveary.fan:0, Alveary Fan
-forestry:alveary.heater:0, Alveary Heater
-forestry:alveary.hygro:0, Alveary Hygroregulator
-forestry:alveary.stabiliser:0, Alveary Stabiliser
-forestry:alveary.sieve:0, Alveary Sieve
-forestry:stamps:0, Stamp (1n)
-forestry:stamps:1, Stamp (2n)
-forestry:stamps:2, Stamp (5n)
-forestry:stamps:3, Stamp (10n)
-forestry:stamps:4, Stamp (20n)
-forestry:stamps:5, Stamp (50n)
-forestry:stamps:6, Stamp (100n)
-forestry:letters, Letter
-forestry:catalogue, Catalogue
-forestry:mailbox:0, Mailbox
-forestry:trade_station:0, Trade Station
-forestry:stamp_collector:0, Stamp Collector
-forestry:greenhouse:0, Greenhouse Block
-forestry:greenhouse:3, Greenhouse Energy Distributor
-forestry:greenhouse:4, Greenhouse Control
-forestry:greenhouse:5, Greenhouse Screen
-forestry:climatiser:0, Greenhouse Hygroregulator
-forestry:climatiser:1, Greenhouse Heater
-forestry:climatiser:2, Greenhouse Fan
-forestry:climatiser:3, Greenhouse Humidifier
-forestry:climatiser:4, Greenhouse Dehumidifier
-forestry:greenhouse_screen, Portable Greenhouse Screen
-forestry:camouflage_spray_can, Camouflage Spray Can
-forestry:fluid.bio.ethanol, Ethanol
-forestry:fluid.biomass, Biomass
-forestry:fluid.glass, Liquid Glass
-forestry:fluid.for.honey, Honey
-forestry:fluid.ice, Crushed Ice
-forestry:fluid.juice, Fruit Juice
-forestry:fluid.milk, Milk
-forestry:fluid.seed.oil, Seed Oil
-forestry:fluid.short.mead, Short Mead
-forestry:can, item.for.can.name
-forestry:capsule, item.for.capsule.name
-forestry:refractory, item.for.refractory.name
 forestry:butterfly_chest:0, Lepidopterist's Chest
 forestry:cocoon:0, tile.for.cocoon.name
 forestry:cocoon.solid:0, tile.for.cocoon.solid.name
-forestry:crate, Crate
-forestry:apiarist_bag, Apiarist's Backpack
-forestry:lepidopterist_bag, Lepidopterist's Backpack
-forestry:miner_bag, Mining Backpack
-forestry:miner_bag_t2, Woven Mining Backpack
-forestry:digger_bag, Digging Backpack
-forestry:digger_bag_t2, Woven Digging Backpack
-forestry:forester_bag, Foresting Backpack
-forestry:forester_bag_t2, Woven Foresting Woven Backpack
-forestry:hunter_bag, Hunting Backpack
-forestry:hunter_bag_t2, Hunter's Woven Backpack
-forestry:adventurer_bag, Adventuring Backpack
-forestry:adventurer_bag_t2, Woven Adventuring Backpack
-forestry:builder_bag, Building Backpack
-forestry:builder_bag_t2, Woven Building Backpack
-forestry:honeyed_slice, Honeyed Slice
-forestry:ambrosia, Ambrosia
-forestry:honey_pot, Honey Pot
 forestry:bottler:0, Bottler
 forestry:carpenter:0, Carpenter
 forestry:centrifuge:0, Centrifuge
@@ -3509,6 +3509,15 @@ thermaldynamics:cover:0, Block of Copper Cover
 thermaldynamics:cover:0, Block of Tin Cover
 thermaldynamics:cover:0, Block of Bronze Cover
 thermaldynamics:cover:0, Ash Bricks Cover
+thermaldynamics:cover:0, Honey Comb Block Cover
+thermaldynamics:cover:0, Simmering Comb Block Cover
+thermaldynamics:cover:0, Stringy Comb Block Cover
+thermaldynamics:cover:0, Frozen Comb Block Cover
+thermaldynamics:cover:0, Dripping Comb Block Cover
+thermaldynamics:cover:0, Silky Comb Block Cover
+thermaldynamics:cover:0, Parched Comb Block Cover
+thermaldynamics:cover:0, Mossy Comb Block Cover
+thermaldynamics:cover:0, Mellow Comb Block Cover
 thermaldynamics:cover:0, Larch Wood Cover
 thermaldynamics:cover:0, Teak Wood Cover
 thermaldynamics:cover:0, Desert Acacia Wood Cover
@@ -3641,15 +3650,6 @@ thermaldynamics:cover:0, Block of Charcoal Cover
 thermaldynamics:cover:0, Wood Pile Cover
 thermaldynamics:cover:0, Decorative Wood Pile Cover
 thermaldynamics:cover:0, Loam Cover
-thermaldynamics:cover:0, Honey Comb Block Cover
-thermaldynamics:cover:0, Simmering Comb Block Cover
-thermaldynamics:cover:0, Stringy Comb Block Cover
-thermaldynamics:cover:0, Frozen Comb Block Cover
-thermaldynamics:cover:0, Dripping Comb Block Cover
-thermaldynamics:cover:0, Silky Comb Block Cover
-thermaldynamics:cover:0, Parched Comb Block Cover
-thermaldynamics:cover:0, Mossy Comb Block Cover
-thermaldynamics:cover:0, Mellow Comb Block Cover
 thermaldynamics:cover:0, Copper Ore Cover
 thermaldynamics:cover:0, Tin Ore Cover
 thermaldynamics:cover:0, Silver Ore Cover
@@ -5379,6 +5379,7 @@ ceramics:clay_bucket:0, Toluene Clay Bucket
 ceramics:clay_bucket:0, Methane Clay Bucket
 ceramics:clay_bucket:0, Epichlorohydrin Clay Bucket
 ceramics:clay_bucket:0, Chlorine Clay Bucket
+ceramics:clay_bucket:0, Soldering Alloy Clay Bucket
 ceramics:clay_bucket:0, Ethanol Clay Bucket
 ceramics:clay_bucket:0, Biomass Clay Bucket
 ceramics:clay_bucket:0, Liquid Glass Clay Bucket
@@ -6178,6 +6179,30 @@ ironchest:diamond_crystal_shulker_upgrade, Diamond to Crystal Shulker Box Upgrad
 ironchest:vanilla_iron_shulker_upgrade, Vanilla to Iron Shulker Box Upgrade
 ironchest:vanilla_copper_shulker_upgrade, Vanilla to Copper Shulker Box Upgrade
 ironchest:diamond_obsidian_shulker_upgrade, Diamond to Obsidian Shulker Box Upgrade
+pneumaticcraft:logistic_frame_active_provider, Logistic Active Provider Frame
+pneumaticcraft:logistic_frame_passive_provider, Logistic Passive Provider Frame
+pneumaticcraft:logistic_frame_storage, Logistic Storage Frame
+pneumaticcraft:logistic_frame_default_storage, Logistic Default Storage Frame
+pneumaticcraft:logistic_frame_requester, Logistic Requester Frame
+pneumaticcraft:heat_frame, Heat Frame
+pneumaticcraft:spawner_agitator, Spawner Agitator
+pneumaticcraft:crop_support, Crop Support
+pneumaticcraft:transfer_gadget, Transfer Gadget
+pneumaticcraft:safety_tube_module, Safety Tube Module
+pneumaticcraft:pressure_gauge_module, Pressure Gauge Tube Module
+pneumaticcraft:flow_detector_module, Flow Detector Tube Module
+pneumaticcraft:air_grate_module, Air Grate Tube Module
+pneumaticcraft:regulator_tube_module, Regulator Tube Module
+pneumaticcraft:charging_module, Charging Module
+pneumaticcraft:logistics_module, Logistics Module
+pneumaticcraft:fluid.oil, Oil
+pneumaticcraft:fluid.fuel, Gasoline
+pneumaticcraft:fluid.etchacid, Etching Acid
+pneumaticcraft:fluid.lpg, LPG
+pneumaticcraft:fluid.lubricant, Lubricant
+pneumaticcraft:fluid.kerosene, Kerosene
+pneumaticcraft:fluid.plastic, Plastic
+pneumaticcraft:fluid.diesel, Diesel
 pneumaticcraft:gps_tool, GPS Tool
 pneumaticcraft:ingot_iron_compressed, Compressed Iron Ingot
 pneumaticcraft:pressure_gauge, Pressure Gauge
@@ -6306,30 +6331,6 @@ pneumaticcraft:kerosene_lamp, Kerosene Lamp
 pneumaticcraft:sentry_turret, Sentry Turret
 pneumaticcraft:flux_compressor, Flux Compressor
 pneumaticcraft:pneumatic_dynamo, Pneumatic Dynamo
-pneumaticcraft:logistic_frame_active_provider, Logistic Active Provider Frame
-pneumaticcraft:logistic_frame_passive_provider, Logistic Passive Provider Frame
-pneumaticcraft:logistic_frame_storage, Logistic Storage Frame
-pneumaticcraft:logistic_frame_default_storage, Logistic Default Storage Frame
-pneumaticcraft:logistic_frame_requester, Logistic Requester Frame
-pneumaticcraft:heat_frame, Heat Frame
-pneumaticcraft:spawner_agitator, Spawner Agitator
-pneumaticcraft:crop_support, Crop Support
-pneumaticcraft:transfer_gadget, Transfer Gadget
-pneumaticcraft:fluid.lpg, LPG
-pneumaticcraft:fluid.etchacid, Etching Acid
-pneumaticcraft:fluid.fuel, Gasoline
-pneumaticcraft:fluid.kerosene, Kerosene
-pneumaticcraft:fluid.oil, Oil
-pneumaticcraft:fluid.diesel, Diesel
-pneumaticcraft:fluid.plastic, Plastic
-pneumaticcraft:fluid.lubricant, Lubricant
-pneumaticcraft:safety_tube_module, Safety Tube Module
-pneumaticcraft:pressure_gauge_module, Pressure Gauge Tube Module
-pneumaticcraft:flow_detector_module, Flow Detector Tube Module
-pneumaticcraft:air_grate_module, Air Grate Tube Module
-pneumaticcraft:regulator_tube_module, Regulator Tube Module
-pneumaticcraft:charging_module, Charging Module
-pneumaticcraft:logistics_module, Logistics Module
 jp.crafterkina.pipes:merchant_phone, Merchant phone
 jp.crafterkina.pipes:pipe, Pipe
 jp.crafterkina.pipes:processor_base, Processor board
@@ -6338,27 +6339,6 @@ jp.crafterkina.pipes:strategy_extraction, extraction.name
 jp.crafterkina.pipes:strategy_oneway, oneway.name
 scanner:scanner, Scanner
 scanner:battery, Battery
-storagedrawers:upgrade_template, Upgrade Template
-storagedrawers:upgrade_storage:0, Storage Upgrade (I)
-storagedrawers:upgrade_storage:1, Storage Upgrade (II)
-storagedrawers:upgrade_storage:2, Storage Upgrade (III)
-storagedrawers:upgrade_storage:3, Storage Upgrade (IV)
-storagedrawers:upgrade_storage:4, Storage Upgrade (V)
-storagedrawers:upgrade_one_stack, Storage Downgrade
-storagedrawers:upgrade_status:0, Status Upgrade (I)
-storagedrawers:upgrade_status:1, Status Upgrade (II)
-storagedrawers:upgrade_void, Void Upgrade
-storagedrawers:upgrade_conversion, Conversion Upgrade
-storagedrawers:upgrade_creative:0, Creative Storage Upgrade
-storagedrawers:upgrade_creative:1, Creative Vending Upgrade
-storagedrawers:upgrade_redstone:0, Redstone Upgrade
-storagedrawers:upgrade_redstone:1, Redstone Max Upgrade
-storagedrawers:upgrade_redstone:2, Redstone Min Upgrade
-storagedrawers:drawer_key, Drawer Key
-storagedrawers:shroud_key, Concealment Key
-storagedrawers:personal_key, Personal Key
-storagedrawers:quantify_key, Quantify Key
-storagedrawers:tape, Packing Tape
 storagedrawers:basicdrawers:0, Basic Drawer
 storagedrawers:basicdrawers:0, Basic Drawer
 storagedrawers:basicdrawers:0, Basic Drawer
@@ -6409,6 +6389,33 @@ storagedrawers:customdrawers:2, Framed Drawers 2x2
 storagedrawers:customdrawers:3, Framed Half Drawers 1x2
 storagedrawers:customdrawers:4, Framed Half Drawers 2x2
 storagedrawers:customtrim, Framed Trim
+storagedrawers:upgrade_template, Upgrade Template
+storagedrawers:upgrade_storage:0, Storage Upgrade (I)
+storagedrawers:upgrade_storage:1, Storage Upgrade (II)
+storagedrawers:upgrade_storage:2, Storage Upgrade (III)
+storagedrawers:upgrade_storage:3, Storage Upgrade (IV)
+storagedrawers:upgrade_storage:4, Storage Upgrade (V)
+storagedrawers:upgrade_one_stack, Storage Downgrade
+storagedrawers:upgrade_status:0, Status Upgrade (I)
+storagedrawers:upgrade_status:1, Status Upgrade (II)
+storagedrawers:upgrade_void, Void Upgrade
+storagedrawers:upgrade_conversion, Conversion Upgrade
+storagedrawers:upgrade_creative:0, Creative Storage Upgrade
+storagedrawers:upgrade_creative:1, Creative Vending Upgrade
+storagedrawers:upgrade_redstone:0, Redstone Upgrade
+storagedrawers:upgrade_redstone:1, Redstone Max Upgrade
+storagedrawers:upgrade_redstone:2, Redstone Min Upgrade
+storagedrawers:drawer_key, Drawer Key
+storagedrawers:shroud_key, Concealment Key
+storagedrawers:personal_key, Personal Key
+storagedrawers:quantify_key, Quantify Key
+storagedrawers:tape, Packing Tape
+torchmaster:mega_torch:0, Mega Torch
+torchmaster:mega_torch:1, Unlit Mega Torch
+torchmaster:terrain_lighter, Terrain Lighter
+torchmaster:dread_lamp, Dread Lamp
+torchmaster:feral_flare_lantern, Feral Flare Lantern
+torchmaster:frozen_pearl, Frozen Pearl
 waterstrainer:net:0, Net
 waterstrainer:net:1, Dense Net
 waterstrainer:worm, Worm
@@ -6748,6 +6755,15 @@ appliedenergistics2:facade:0, Cable Facade - Block of Copper
 appliedenergistics2:facade:0, Cable Facade - Block of Tin
 appliedenergistics2:facade:0, Cable Facade - Block of Bronze
 appliedenergistics2:facade:0, Cable Facade - Ash Bricks
+appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
+appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
+appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
+appliedenergistics2:facade:0, Cable Facade - Frozen Comb Block
+appliedenergistics2:facade:0, Cable Facade - Dripping Comb Block
+appliedenergistics2:facade:0, Cable Facade - Silky Comb Block
+appliedenergistics2:facade:0, Cable Facade - Parched Comb Block
+appliedenergistics2:facade:0, Cable Facade - Mossy Comb Block
+appliedenergistics2:facade:0, Cable Facade - Mellow Comb Block
 appliedenergistics2:facade:0, Cable Facade - Larch Wood
 appliedenergistics2:facade:0, Cable Facade - Teak Wood
 appliedenergistics2:facade:0, Cable Facade - Desert Acacia Wood
@@ -6881,15 +6897,6 @@ appliedenergistics2:facade:0, Cable Facade - Wood Pile
 appliedenergistics2:facade:0, Cable Facade - Decorative Wood Pile
 appliedenergistics2:facade:0, Cable Facade - Ash Block
 appliedenergistics2:facade:0, Cable Facade - Loam
-appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
-appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
-appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
-appliedenergistics2:facade:0, Cable Facade - Frozen Comb Block
-appliedenergistics2:facade:0, Cable Facade - Dripping Comb Block
-appliedenergistics2:facade:0, Cable Facade - Silky Comb Block
-appliedenergistics2:facade:0, Cable Facade - Parched Comb Block
-appliedenergistics2:facade:0, Cable Facade - Mossy Comb Block
-appliedenergistics2:facade:0, Cable Facade - Mellow Comb Block
 appliedenergistics2:facade:0, Cable Facade - Copper Ore
 appliedenergistics2:facade:0, Cable Facade - Tin Ore
 appliedenergistics2:facade:0, Cable Facade - Silver Ore
@@ -7764,6 +7771,15 @@ chiselsandbits:block_bit:0, Chiseled Bit - Block of Copper
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Tin
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Bronze
 chiselsandbits:block_bit:0, Chiseled Bit - Ash Bricks
+chiselsandbits:block_bit:0, Chiseled Bit - Honey Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Simmering Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Stringy Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Frozen Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Dripping Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Silky Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Parched Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Mossy Comb Block
+chiselsandbits:block_bit:0, Chiseled Bit - Mellow Comb Block
 chiselsandbits:block_bit:0, Chiseled Bit - Larch Wood Up/Down
 chiselsandbits:block_bit:0, Chiseled Bit - Teak Wood Up/Down
 chiselsandbits:block_bit:0, Chiseled Bit - Desert Acacia Wood Up/Down
@@ -7894,15 +7910,6 @@ chiselsandbits:block_bit:0, Chiseled Bit - Acacia Wood Planks (Fireproof)
 chiselsandbits:block_bit:0, Chiseled Bit - Dark Oak Wood Planks (Fireproof)
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Charcoal
 chiselsandbits:block_bit:0, Chiseled Bit - Loam
-chiselsandbits:block_bit:0, Chiseled Bit - Honey Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Simmering Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Stringy Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Frozen Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Dripping Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Silky Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Parched Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Mossy Comb Block
-chiselsandbits:block_bit:0, Chiseled Bit - Mellow Comb Block
 chiselsandbits:block_bit:0, Chiseled Bit - Copper Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Tin Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Silver Ore
@@ -8283,6 +8290,7 @@ chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit
+chiselsandbits:block_bit:0, Chiseled Bit
 chiselsandbits:block_bit:0, Chiseled Bit - Ethanol
 chiselsandbits:block_bit:0, Chiseled Bit - Biomass
 chiselsandbits:block_bit:0, Chiseled Bit - Liquid Glass
@@ -8454,6 +8462,7 @@ contenttweaker:rubber, Rubber
 contenttweaker:tungstensteel_io_unit, item.contenttweaker.tungstensteel_io_unit.name
 contenttweaker:iridium_nugget, item.contenttweaker.iridium_nugget.name
 contenttweaker:zinc_tiny_dust, item.contenttweaker.zinc_tiny_dust.name
+contenttweaker:polyethylene_casing, item.contenttweaker.polyethylene_casing.name
 contenttweaker:beryllium_dust, item.contenttweaker.beryllium_dust.name
 contenttweaker:silver_screw, item.contenttweaker.silver_screw.name
 contenttweaker:lithium_screw, item.contenttweaker.lithium_screw.name
@@ -8471,15 +8480,19 @@ contenttweaker:titanium_heat_conductor, item.contenttweaker.titanium_heat_conduc
 contenttweaker:cobalt_washed_ore, item.contenttweaker.cobalt_washed_ore.name
 contenttweaker:iron_dust, item.contenttweaker.iron_dust.name
 contenttweaker:soldering_alloy_rod, item.contenttweaker.soldering_alloy_rod.name
+contenttweaker:iron_casing, item.contenttweaker.iron_casing.name
 contenttweaker:steel_axe_head, item.contenttweaker.steel_axe_head.name
 contenttweaker:uranium235_crushed_ore, item.contenttweaker.uranium235_crushed_ore.name
 contenttweaker:steel_saw_blade, item.contenttweaker.steel_saw_blade.name
 contenttweaker:bronze_macerator_blade, item.contenttweaker.bronze_macerator_blade.name
 contenttweaker:uranium238_dust, item.contenttweaker.uranium238_dust.name
+contenttweaker:aluminium_cable, item.contenttweaker.aluminium_cable.name
 contenttweaker:antimony_screw, item.contenttweaker.antimony_screw.name
 contenttweaker:redstone_washed_ore, item.contenttweaker.redstone_washed_ore.name
 contenttweaker:nether_quartz_crushed_ore, item.contenttweaker.nether_quartz_crushed_ore.name
 contenttweaker:raw_rubber_tiny_dust, item.contenttweaker.raw_rubber_tiny_dust.name
+contenttweaker:cobalt_casing, item.contenttweaker.cobalt_casing.name
+contenttweaker:aluminium_casing, item.contenttweaker.aluminium_casing.name
 contenttweaker:aluminium_wire, item.contenttweaker.aluminium_wire.name
 contenttweaker:sulfur_tiny_dust, item.contenttweaker.sulfur_tiny_dust.name
 contenttweaker:titanium_macerator_blade, item.contenttweaker.titanium_macerator_blade.name
@@ -8499,15 +8512,19 @@ contenttweaker:cobalt_nugget, item.contenttweaker.cobalt_nugget.name
 contenttweaker:manganese_tiny_dust, item.contenttweaker.manganese_tiny_dust.name
 contenttweaker:boron_crushed_ore, item.contenttweaker.boron_crushed_ore.name
 contenttweaker:iron_pickaxe_head, item.contenttweaker.iron_pickaxe_head.name
+contenttweaker:tungstensteel_cable, item.contenttweaker.tungstensteel_cable.name
 contenttweaker:iron_nugget, item.contenttweaker.iron_nugget.name
 contenttweaker:iridium_dust, item.contenttweaker.iridium_dust.name
+contenttweaker:iridium_casing, item.contenttweaker.iridium_casing.name
 contenttweaker:ilmenite_impure_dust, item.contenttweaker.ilmenite_impure_dust.name
 contenttweaker:magnesium_washed_ore, item.contenttweaker.magnesium_washed_ore.name
 contenttweaker:galena_dust, item.contenttweaker.galena_dust.name
 contenttweaker:cobalt_impure_dust, item.contenttweaker.cobalt_impure_dust.name
+contenttweaker:tin_cable, item.contenttweaker.tin_cable.name
 contenttweaker:titanium_io_unit, item.contenttweaker.titanium_io_unit.name
 contenttweaker:platinum_rod, item.contenttweaker.platinum_rod.name
 contenttweaker:lead_tiny_dust, item.contenttweaker.lead_tiny_dust.name
+contenttweaker:titanium_cable, item.contenttweaker.titanium_cable.name
 contenttweaker:lead_impure_dust, item.contenttweaker.lead_impure_dust.name
 contenttweaker:soldering_alloy_ingot, item.contenttweaker.soldering_alloy_ingot.name
 contenttweaker:gold_rod, item.contenttweaker.gold_rod.name
@@ -8531,6 +8548,7 @@ contenttweaker:boron_tiny_dust, item.contenttweaker.boron_tiny_dust.name
 contenttweaker:platinum_nugget, item.contenttweaker.platinum_nugget.name
 contenttweaker:beryllium_tiny_dust, item.contenttweaker.beryllium_tiny_dust.name
 contenttweaker:bismuth_bronze_rod, item.contenttweaker.bismuth_bronze_rod.name
+contenttweaker:graphite_casing, item.contenttweaker.graphite_casing.name
 contenttweaker:galena_washed_ore, item.contenttweaker.galena_washed_ore.name
 contenttweaker:gelled_toluene, Gelled Toluene
 contenttweaker:titanium_catalyst_support, item.contenttweaker.titanium_catalyst_support.name
@@ -8538,6 +8556,7 @@ contenttweaker:aluminium_nugget, item.contenttweaker.aluminium_nugget.name
 contenttweaker:tungstensteel_ingot, item.contenttweaker.tungstensteel_ingot.name
 contenttweaker:ilmenite_washed_ore, item.contenttweaker.ilmenite_washed_ore.name
 contenttweaker:titanium_nugget, item.contenttweaker.titanium_nugget.name
+contenttweaker:platinum_casing, item.contenttweaker.platinum_casing.name
 contenttweaker:platinum_dust, item.contenttweaker.platinum_dust.name
 contenttweaker:iron_mortar, Iron Mortar
 contenttweaker:tungstensteel_heat_conductor, item.contenttweaker.tungstensteel_heat_conductor.name
@@ -8546,6 +8565,8 @@ contenttweaker:gold_impure_dust, item.contenttweaker.gold_impure_dust.name
 contenttweaker:lead_screw, item.contenttweaker.lead_screw.name
 contenttweaker:bronze_nugget, item.contenttweaker.bronze_nugget.name
 contenttweaker:aluminium_ingot, item.contenttweaker.aluminium_ingot.name
+contenttweaker:bronze_casing, item.contenttweaker.bronze_casing.name
+contenttweaker:bronze_cable, item.contenttweaker.bronze_cable.name
 contenttweaker:polyethylene_dust, item.contenttweaker.polyethylene_dust.name
 contenttweaker:salt_dust, item.contenttweaker.salt_dust.name
 contenttweaker:chrome_impure_dust, item.contenttweaker.chrome_impure_dust.name
@@ -8558,14 +8579,18 @@ contenttweaker:silver_washed_ore, item.contenttweaker.silver_washed_ore.name
 contenttweaker:aluminium_catalyst_support, item.contenttweaker.aluminium_catalyst_support.name
 contenttweaker:diamond_washed_ore, item.contenttweaker.diamond_washed_ore.name
 contenttweaker:bronze_screw, item.contenttweaker.bronze_screw.name
+contenttweaker:wrought_iron_casing, item.contenttweaker.wrought_iron_casing.name
 contenttweaker:flint_mortar, Flint Mortar
+contenttweaker:red_alloy_cable, item.contenttweaker.red_alloy_cable.name
 contenttweaker:stainless_steel_nugget, item.contenttweaker.stainless_steel_nugget.name
+contenttweaker:stainless_steel_casing, item.contenttweaker.stainless_steel_casing.name
 contenttweaker:tetrahedrite_impure_dust, item.contenttweaker.tetrahedrite_impure_dust.name
 contenttweaker:cobalt_rod, item.contenttweaker.cobalt_rod.name
 contenttweaker:bronze_gearbox, item.contenttweaker.bronze_gearbox.name
 contenttweaker:beryllium_crushed_ore, item.contenttweaker.beryllium_crushed_ore.name
 contenttweaker:beryllium_washed_ore, item.contenttweaker.beryllium_washed_ore.name
 contenttweaker:polyethylene_tiny_dust, item.contenttweaker.polyethylene_tiny_dust.name
+contenttweaker:titanium_casing, item.contenttweaker.titanium_casing.name
 contenttweaker:gold_tiny_dust, item.contenttweaker.gold_tiny_dust.name
 contenttweaker:titanium_ingot, item.contenttweaker.titanium_ingot.name
 contenttweaker:zinc_washed_ore, item.contenttweaker.zinc_washed_ore.name
@@ -8585,8 +8610,10 @@ contenttweaker:iridium_ingot, item.contenttweaker.iridium_ingot.name
 contenttweaker:copper_tiny_dust, item.contenttweaker.copper_tiny_dust.name
 contenttweaker:tungstensteel_nugget, item.contenttweaker.tungstensteel_nugget.name
 contenttweaker:bronze_rod, item.contenttweaker.bronze_rod.name
+contenttweaker:steel_casing, item.contenttweaker.steel_casing.name
 contenttweaker:tetrahedrite_washed_ore, item.contenttweaker.tetrahedrite_washed_ore.name
 contenttweaker:lignite_washed_ore, item.contenttweaker.lignite_washed_ore.name
+contenttweaker:nickel_casing, item.contenttweaker.nickel_casing.name
 contenttweaker:basic_circuit, Basic Circuit
 contenttweaker:magnesium_crushed_ore, item.contenttweaker.magnesium_crushed_ore.name
 contenttweaker:copper_ingot, item.contenttweaker.copper_ingot.name
@@ -8607,6 +8634,7 @@ contenttweaker:copper_washed_ore, item.contenttweaker.copper_washed_ore.name
 contenttweaker:steel_nugget, item.contenttweaker.steel_nugget.name
 contenttweaker:cobalt_plate, item.contenttweaker.cobalt_plate.name
 contenttweaker:stainless_steel_rod, item.contenttweaker.stainless_steel_rod.name
+contenttweaker:tungstensteel_casing, item.contenttweaker.tungstensteel_casing.name
 contenttweaker:pyrolusite_dust, item.contenttweaker.pyrolusite_dust.name
 contenttweaker:nickel_washed_ore, item.contenttweaker.nickel_washed_ore.name
 contenttweaker:lepidolite_crushed_ore, item.contenttweaker.lepidolite_crushed_ore.name
@@ -8632,6 +8660,7 @@ contenttweaker:titanium_rod, item.contenttweaker.titanium_rod.name
 contenttweaker:steel_catalyst_support, item.contenttweaker.steel_catalyst_support.name
 contenttweaker:flint_pickaxe_head, item.contenttweaker.flint_pickaxe_head.name
 contenttweaker:stainless_steel_plate, item.contenttweaker.stainless_steel_plate.name
+contenttweaker:silicon_casing, item.contenttweaker.silicon_casing.name
 contenttweaker:lead_crushed_ore, item.contenttweaker.lead_crushed_ore.name
 contenttweaker:salt_washed_ore, item.contenttweaker.salt_washed_ore.name
 contenttweaker:platinum_tiny_dust, item.contenttweaker.platinum_tiny_dust.name
@@ -8648,8 +8677,10 @@ contenttweaker:lapis_lazuli_crushed_ore, item.contenttweaker.lapis_lazuli_crushe
 contenttweaker:copper_screw, item.contenttweaker.copper_screw.name
 contenttweaker:silver_crushed_ore, item.contenttweaker.silver_crushed_ore.name
 contenttweaker:steel_hammer, Steel Hammer
+contenttweaker:pyure_tin_mortar, item.contenttweaker.pyure_tin_mortar.name
 contenttweaker:redstone_tiny_dust, item.contenttweaker.redstone_tiny_dust.name
 contenttweaker:silver_plate, item.contenttweaker.silver_plate.name
+contenttweaker:lithium_casing, item.contenttweaker.lithium_casing.name
 contenttweaker:lignite_dust, item.contenttweaker.lignite_dust.name
 contenttweaker:titanium_screw, item.contenttweaker.titanium_screw.name
 contenttweaker:wrought_iron_nugget, item.contenttweaker.wrought_iron_nugget.name
@@ -8662,6 +8693,7 @@ contenttweaker:steel_wrench, Steel Wrench
 contenttweaker:nickel_nugget, item.contenttweaker.nickel_nugget.name
 contenttweaker:lithium_ingot, item.contenttweaker.lithium_ingot.name
 contenttweaker:limonite_impure_dust, item.contenttweaker.limonite_impure_dust.name
+contenttweaker:carbon_tiny_dust, item.contenttweaker.carbon_tiny_dust.name
 contenttweaker:soldering_alloy_plate, item.contenttweaker.soldering_alloy_plate.name
 contenttweaker:nether_quartz_washed_ore, item.contenttweaker.nether_quartz_washed_ore.name
 contenttweaker:graphite_screw, item.contenttweaker.graphite_screw.name
@@ -8685,6 +8717,7 @@ contenttweaker:carbon_dust, item.contenttweaker.carbon_dust.name
 contenttweaker:chrome_crushed_ore, item.contenttweaker.chrome_crushed_ore.name
 contenttweaker:steel_mortar, Steel Mortar
 contenttweaker:salt_tiny_dust, item.contenttweaker.salt_tiny_dust.name
+contenttweaker:tin_wire, item.contenttweaker.tin_wire.name
 contenttweaker:iron_tiny_dust, item.contenttweaker.iron_tiny_dust.name
 contenttweaker:uranium235_impure_dust, item.contenttweaker.uranium235_impure_dust.name
 contenttweaker:lead_ingot, item.contenttweaker.lead_ingot.name
@@ -8693,6 +8726,7 @@ contenttweaker:lapis_lazuli_impure_dust, item.contenttweaker.lapis_lazuli_impure
 contenttweaker:uranium238_impure_dust, item.contenttweaker.uranium238_impure_dust.name
 contenttweaker:tin_nugget, item.contenttweaker.tin_nugget.name
 contenttweaker:tin_crushed_ore, item.contenttweaker.tin_crushed_ore.name
+contenttweaker:pyure_cobalt_mortar, item.contenttweaker.pyure_cobalt_mortar.name
 contenttweaker:iron_washed_ore, item.contenttweaker.iron_washed_ore.name
 contenttweaker:steel_pickaxe_head, item.contenttweaker.steel_pickaxe_head.name
 contenttweaker:platinum_screw, item.contenttweaker.platinum_screw.name
@@ -8710,7 +8744,6 @@ contenttweaker:uranium235_tiny_dust, item.contenttweaker.uranium235_tiny_dust.na
 contenttweaker:bismuth_bronze_ingot, item.contenttweaker.bismuth_bronze_ingot.name
 contenttweaker:silver_dust, item.contenttweaker.silver_dust.name
 contenttweaker:coal_washed_ore, item.contenttweaker.coal_washed_ore.name
-contenttweaker:steel_wire, item.contenttweaker.steel_wire.name
 contenttweaker:manganese_washed_ore, item.contenttweaker.manganese_washed_ore.name
 contenttweaker:emerald_washed_ore, item.contenttweaker.emerald_washed_ore.name
 contenttweaker:lepidolite_tiny_dust, item.contenttweaker.lepidolite_tiny_dust.name
@@ -8718,6 +8751,7 @@ contenttweaker:antimony_ingot, item.contenttweaker.antimony_ingot.name
 contenttweaker:lithium_rod, item.contenttweaker.lithium_rod.name
 contenttweaker:soldering_alloy_nugget, item.contenttweaker.soldering_alloy_nugget.name
 contenttweaker:antimony_tiny_dust, item.contenttweaker.antimony_tiny_dust.name
+contenttweaker:soldering_alloy_casing, item.contenttweaker.soldering_alloy_casing.name
 contenttweaker:steel_plate, item.contenttweaker.steel_plate.name
 contenttweaker:sulfur_dust, item.contenttweaker.sulfur_dust.name
 contenttweaker:bronze_io_unit, item.contenttweaker.bronze_io_unit.name
@@ -8729,6 +8763,7 @@ contenttweaker:ilmenite_crushed_ore, item.contenttweaker.ilmenite_crushed_ore.na
 contenttweaker:boron_impure_dust, item.contenttweaker.boron_impure_dust.name
 contenttweaker:sulfur_washed_ore, item.contenttweaker.sulfur_washed_ore.name
 contenttweaker:flint_file, Flint File
+contenttweaker:tin_casing, item.contenttweaker.tin_casing.name
 contenttweaker:nickel_plate, item.contenttweaker.nickel_plate.name
 contenttweaker:salt_impure_dust, item.contenttweaker.salt_impure_dust.name
 contenttweaker:titanium_electrode, item.contenttweaker.titanium_electrode.name
@@ -8754,6 +8789,7 @@ contenttweaker:stibnite_dust, item.contenttweaker.stibnite_dust.name
 contenttweaker:sulfur_crushed_ore, item.contenttweaker.sulfur_crushed_ore.name
 contenttweaker:copper_rod, item.contenttweaker.copper_rod.name
 contenttweaker:antimony_plate, item.contenttweaker.antimony_plate.name
+contenttweaker:magnesium_casing, item.contenttweaker.magnesium_casing.name
 contenttweaker:bauxite_impure_dust, item.contenttweaker.bauxite_impure_dust.name
 contenttweaker:magnesium_nugget, item.contenttweaker.magnesium_nugget.name
 contenttweaker:graphite_plate, item.contenttweaker.graphite_plate.name
@@ -8793,6 +8829,7 @@ contenttweaker:iron_crushed_ore, item.contenttweaker.iron_crushed_ore.name
 contenttweaker:bronze_pickaxe_head, item.contenttweaker.bronze_pickaxe_head.name
 contenttweaker:diamond_tiny_dust, item.contenttweaker.diamond_tiny_dust.name
 contenttweaker:pyrolusite_impure_dust, item.contenttweaker.pyrolusite_impure_dust.name
+contenttweaker:nand_chip, NAND Chip
 contenttweaker:steel_electrode, item.contenttweaker.steel_electrode.name
 contenttweaker:cobalt_crushed_ore, item.contenttweaker.cobalt_crushed_ore.name
 contenttweaker:stainless_steel_screw, item.contenttweaker.stainless_steel_screw.name
@@ -8801,6 +8838,7 @@ contenttweaker:antimony_rod, item.contenttweaker.antimony_rod.name
 contenttweaker:uranium238_tiny_dust, item.contenttweaker.uranium238_tiny_dust.name
 contenttweaker:zinc_impure_dust, item.contenttweaker.zinc_impure_dust.name
 contenttweaker:galena_crushed_ore, item.contenttweaker.galena_crushed_ore.name
+contenttweaker:copper_casing, item.contenttweaker.copper_casing.name
 contenttweaker:bronze_catalyst_support, item.contenttweaker.bronze_catalyst_support.name
 contenttweaker:titanium_plate, item.contenttweaker.titanium_plate.name
 contenttweaker:graphite_nugget, item.contenttweaker.graphite_nugget.name
@@ -8812,6 +8850,7 @@ contenttweaker:antimony_dust, item.contenttweaker.antimony_dust.name
 contenttweaker:lithium_dust, item.contenttweaker.lithium_dust.name
 contenttweaker:aluminium_io_unit, item.contenttweaker.aluminium_io_unit.name
 contenttweaker:iridium_tiny_dust, item.contenttweaker.iridium_tiny_dust.name
+contenttweaker:gold_casing, item.contenttweaker.gold_casing.name
 contenttweaker:nickel_dust, item.contenttweaker.nickel_dust.name
 contenttweaker:antimony_washed_ore, item.contenttweaker.antimony_washed_ore.name
 contenttweaker:polyethylene_screw, item.contenttweaker.polyethylene_screw.name
@@ -8819,6 +8858,7 @@ contenttweaker:flint_hammer, Flint Hammer
 contenttweaker:iron_axe_head, item.contenttweaker.iron_axe_head.name
 contenttweaker:manganese_dust, item.contenttweaker.manganese_dust.name
 contenttweaker:stibnite_impure_dust, item.contenttweaker.stibnite_impure_dust.name
+contenttweaker:silver_casing, item.contenttweaker.silver_casing.name
 contenttweaker:tungstensteel_electrode, item.contenttweaker.tungstensteel_electrode.name
 contenttweaker:gold_nugget, item.contenttweaker.gold_nugget.name
 contenttweaker:manganese_ingot, item.contenttweaker.manganese_ingot.name
@@ -8833,6 +8873,7 @@ contenttweaker:copper_impure_dust, item.contenttweaker.copper_impure_dust.name
 contenttweaker:graphite_rod, item.contenttweaker.graphite_rod.name
 contenttweaker:antimony_crushed_ore, item.contenttweaker.antimony_crushed_ore.name
 contenttweaker:gold_washed_ore, item.contenttweaker.gold_washed_ore.name
+contenttweaker:manganese_casing, item.contenttweaker.manganese_casing.name
 contenttweaker:lead_nugget, item.contenttweaker.lead_nugget.name
 contenttweaker:lignite_impure_dust, item.contenttweaker.lignite_impure_dust.name
 contenttweaker:bronze_file, Bronze File
@@ -8848,20 +8889,24 @@ contenttweaker:steel_screw, item.contenttweaker.steel_screw.name
 contenttweaker:antimony_nugget, item.contenttweaker.antimony_nugget.name
 contenttweaker:lithium_tiny_dust, item.contenttweaker.lithium_tiny_dust.name
 contenttweaker:bismuth_bronze_screw, item.contenttweaker.bismuth_bronze_screw.name
+contenttweaker:red_alloy_wire, item.contenttweaker.red_alloy_wire.name
 contenttweaker:wrought_iron_plate, item.contenttweaker.wrought_iron_plate.name
 contenttweaker:stibnite_washed_ore, item.contenttweaker.stibnite_washed_ore.name
 contenttweaker:iron_ingot, item.contenttweaker.iron_ingot.name
 contenttweaker:iron_saw, Iron Saw
+contenttweaker:lead_casing, item.contenttweaker.lead_casing.name
 contenttweaker:aluminium_rod, item.contenttweaker.aluminium_rod.name
 contenttweaker:stainless_steel_ingot, item.contenttweaker.stainless_steel_ingot.name
 contenttweaker:platinum_crushed_ore, item.contenttweaker.platinum_crushed_ore.name
 contenttweaker:flint_wrench, Flint Wrench
 contenttweaker:steel_saw, Steel Saw
 contenttweaker:silver_nugget, item.contenttweaker.silver_nugget.name
+contenttweaker:antimony_casing, item.contenttweaker.antimony_casing.name
 contenttweaker:manganese_nugget, item.contenttweaker.manganese_nugget.name
 contenttweaker:iron_hammer, Iron Hammer
 contenttweaker:thorium_tiny_dust, item.contenttweaker.thorium_tiny_dust.name
 contenttweaker:iron_wrench, Iron Wrench
+contenttweaker:bismuth_bronze_casing, item.contenttweaker.bismuth_bronze_casing.name
 contenttweaker:lithium_washed_ore, item.contenttweaker.lithium_washed_ore.name
 contenttweaker:uranium238_washed_ore, item.contenttweaker.uranium238_washed_ore.name
 contenttweaker:iridium_crushed_ore, item.contenttweaker.iridium_crushed_ore.name
@@ -9490,6 +9535,7 @@ foundry:fluidcontainer:0, Refractory Fluid Container
 foundry:fluidcontainer:0, Refractory Fluid Container
 foundry:fluidcontainer:0, Refractory Fluid Container
 foundry:fluidcontainer:0, Refractory Fluid Container
+foundry:fluidcontainer:0, Refractory Fluid Container
 foundry:componentblock:0, Refractory Casing (Standard)
 foundry:componentblock:1, Refractory Clay Block
 foundry:componentblock:2, Refractory Casing (Advanced)
@@ -9618,13 +9664,13 @@ magicbees:mysteriousmagnet:18, Mysterious Magnet
 magicbees:moondial, Jade Moon Dial
 magicbees:manasteelgrafter, Manasteel Grafter
 magicbees:manasteelscoop, Manasteel Scoop
-magicbees:frames.metabolic, Metabolic Frame
-magicbees:frames.necrotic, Necrotic Frame
-magicbees:frames.magic, Magic Frame
-magicbees:frames.temporal, Temporal Frame
 magicbees:frames.oblivion, Oblivion Frame
-magicbees:frames.gentle, Gentle Frame
 magicbees:frames.resilient, Resilient Frame
+magicbees:frames.gentle, Gentle Frame
+magicbees:frames.necrotic, Necrotic Frame
+magicbees:frames.metabolic, Metabolic Frame
+magicbees:frames.temporal, Temporal Frame
+magicbees:frames.magic, Magic Frame
 magicbees:hiveblock, tile.magicbees.hiveblock.name
 magicbees:effectjar, Bee Collector's Jar
 magicbees:enchanted_earth, Enchanted Earth
@@ -9932,13 +9978,6 @@ forestry:crated.minecraft.sapling.2, item.crated.minecraft.sapling.2.name
 forestry:crated.minecraft.sapling.3, item.crated.minecraft.sapling.3.name
 forestry:crated.minecraft.sapling.4, item.crated.minecraft.sapling.4.name
 forestry:crated.minecraft.sapling.5, item.crated.minecraft.sapling.5.name
-forestry:crated.forestry.fruits.0, item.crated.forestry.fruits.0.name
-forestry:crated.forestry.fruits.1, item.crated.forestry.fruits.1.name
-forestry:crated.forestry.fruits.2, item.crated.forestry.fruits.2.name
-forestry:crated.forestry.fruits.3, item.crated.forestry.fruits.3.name
-forestry:crated.forestry.fruits.4, item.crated.forestry.fruits.4.name
-forestry:crated.forestry.fruits.6, item.crated.forestry.fruits.6.name
-forestry:crated.forestry.fruits.5, item.crated.forestry.fruits.5.name
 forestry:crated.forestry.beeswax.0, item.crated.forestry.beeswax.0.name
 forestry:crated.forestry.pollen.0, item.crated.forestry.pollen.0.name
 forestry:crated.forestry.pollen.1, item.crated.forestry.pollen.1.name
@@ -9959,3 +9998,10 @@ forestry:crated.forestry.bee_combs.14, item.crated.forestry.bee_combs.14.name
 forestry:crated.forestry.bee_combs.15, item.crated.forestry.bee_combs.15.name
 forestry:crated.forestry.bee_combs.16, item.crated.forestry.bee_combs.16.name
 forestry:crated.forestry.refractory_wax.0, item.crated.forestry.refractory_wax.0.name
+forestry:crated.forestry.fruits.0, item.crated.forestry.fruits.0.name
+forestry:crated.forestry.fruits.1, item.crated.forestry.fruits.1.name
+forestry:crated.forestry.fruits.2, item.crated.forestry.fruits.2.name
+forestry:crated.forestry.fruits.3, item.crated.forestry.fruits.3.name
+forestry:crated.forestry.fruits.4, item.crated.forestry.fruits.4.name
+forestry:crated.forestry.fruits.6, item.crated.forestry.fruits.6.name
+forestry:crated.forestry.fruits.5, item.crated.forestry.fruits.5.name

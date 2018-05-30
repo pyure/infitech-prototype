@@ -78,10 +78,14 @@ var flint =  MaterialSystem.getMaterialBuilder().setName('Flint').setColor(8256)
 var polyethylene =  MaterialSystem.getMaterialBuilder().setName('Polyethylene').setColor(13158600).build();
 var raw_rubber =  MaterialSystem.getMaterialBuilder().setName('Raw Rubber').setColor(13420425).build();
 var lepidolite =  MaterialSystem.getMaterialBuilder().setName('Lepidolite').setColor(15741580).build();
+var red_alloy =  MaterialSystem.getMaterialBuilder().setName('Red Alloy').setColor(13107200).build();
 
 /*
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setPartType(MaterialSystem.getPartType("item")).build();
 */
+
+
+/* MaterialSystem.getPartBuildering.setName("this_thing").setPartType("ITEM").setHasOverlay(true); */
 
 
 var metal_list = [silicon, tin, soldering_alloy, antimony, aluminium, tungstensteel, titanium, steel, cobalt, stainless_steel, copper, bismuth_bronze, gold, iron, lead, lithium, magnesium, manganese, platinum, nickel, silver, bronze, iridium, graphite, wrought_iron, polyethylene] as Material[];
@@ -92,8 +96,9 @@ var machine_subcomponents_list = [bronze, steel, titanium, tungstensteel, alumin
 var gemstone_list = [diamond, coal, redstone, nether_quartz] as Material[];
 var tool_metal_list = [flint, bronze, iron, steel] as Material[];
 var dust_list = [raw_rubber, carbon, polyethylene] as Material[];
+var cable_list = [bronze, tin, red_alloy, titanium, tungstensteel, aluminium] as Material[];
 
-var part_names = ["nugget", "ingot", "plate", "rod", "screw"] as string[]; 
+var part_names = ["nugget", "ingot", "plate", "rod", "screw", "casing"] as string[]; 
 var gemstone_part_names = ["dust", "tiny_dust", "crushed_ore", "washed_ore"] as string[];
 var ore_part_names = ["crushed_ore", "dust", "tiny_dust", "washed_ore", "impure_dust"] as string[]; 
 var dust_part_names = ["dust", "tiny_dust"] as string[]; 
@@ -126,6 +131,7 @@ mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Pickaxe Head").setP
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Saw Blade").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Catalyst Support").setPartType(MaterialSystem.getPartType("item")).build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Impure Dust").setPartType(MaterialSystem.getPartType("item")).build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("Cable").setPartType(MaterialSystem.getPartType("item")).setHasOverlay(true).build();
 
 // Add "block" parts here
 var machineFrame = MaterialSystem.getPartBuilder().setName("machine_frame").setPartType(MaterialSystem.getPartType("storage")).build(); // "machine_frame" instead of "Machine Frame" due to a potential bug; reported to team.
@@ -164,12 +170,14 @@ for i, metal in machine_subcomponents_list {
    metal.registerPart("electrode");
    metal.registerPart("gearbox");
    metal.registerPart("heat_conductor");
-   metal.registerPart("wire");
    metal.registerPart("io_unit");
    metal.registerPart("catalyst_support");
 }
   
-
+for i, metal in cable_list {
+   metal.registerPart("cable");
+   metal.registerPart("wire");
+}
   
 for i, metal in metal_list {
     metal.registerParts(part_names);
