@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "contenttweaker:items/bronze_mortar"
+    "layer0": "contenttweaker:items/bronze_mortar",
+    "layer1": "contenttweaker:items/mortar_overlay"
   }
 }

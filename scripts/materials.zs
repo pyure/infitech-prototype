@@ -7,6 +7,16 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemDefinition;
 
 
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.PartDataPiece;
+import mods.contenttweaker.MaterialPart;
+import mods.contenttweaker.Color;
+import mods.contenttweaker.ResourceLocation;
+import mods.contenttweaker.MaterialPartColorSupplier;
+import mods.contenttweaker.MaterialPartLocalizedNameSupplier;
+
+
+
 // METALS
 var silicon = MaterialSystem.getMaterialBuilder().setName('Silicon').setColor(3947600).build();
 var tin = MaterialSystem.getMaterialBuilder().setName('Tin').setColor(14474460).build();
@@ -201,15 +211,39 @@ for i, metal in ore_list {
     }
 }
 
+/* This section allows us to define materials-parts that can include vanillafactory scripting */
+
+var craftingToolPartType = MaterialSystem.createPartType("crafting_tool", function(materialPart) {
+    var materialName = materialPart.getMaterial().getUnlocalizedName();
+    var partName = materialPart.getPart().getShortUnlocalizedName();
+    var itemName = materialName ~ "_" ~ partName;
+    print ("ITEN NAME:");
+    print (itemName);
+    
+    var tool = VanillaFactory.createItem(itemName);
+    tool.maxStackSize = 1;
+    tool.maxDamage = materialPart.getData().getIntValue("maxDamage", 256);
+    tool.creativeTab = <creativetab:misc>;
+
+    tool.itemGetContainerItem = function(item) {
+        return (item.damage + 1 < item.maxDamage) ? item.withDamage(item.damage + 1) : null;
+    };
+
+    tool.itemColorSupplier = MaterialPartColorSupplier.create(materialPart);
+    var locationName = "contenttweaker:items/" ~ materialPart.getPart().getShortUnlocalizedName();
+    print(locationName);
+    tool.textureLocation = ResourceLocation.create(locationName);
+    tool.localizedNameSupplier = MaterialPartLocalizedNameSupplier.create(materialPart);
+    tool.register();
+});
+
+var maxDamageDataPiece = MaterialSystem.createPartDataPiece("maxDamage", false);
+craftingToolPartType.setData([maxDamageDataPiece] as PartDataPiece[]);
+
 /*
+var mortar = MaterialSystem.getPartBuilder().setName("mortar").setPartType(craftingToolPartType).setHasOverlay(true).build();
 
-
-
-
-
-
-
-
-
-
+cobalt.registerPart(mortar);
+tin.registerPart(mortar);
+bronze.registerPart(mortar);
 */

@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "contenttweaker:items/iron_mortar"
+    "layer0": "contenttweaker:items/iron_mortar",
+    "layer1": "contenttweaker:items/mortar_overlay"
   }
 }

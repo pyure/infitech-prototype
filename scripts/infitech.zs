@@ -154,211 +154,46 @@ oreStickyResin.add(<contenttweaker:sticky_resin>);
 var oreFlint = <ore:ingotFlint>;  // name is a bit silly but makes it simpler to add dynamic recipes
 oreFlint.add(<minecraft:flint>);
 
-/* experimental method to produce meta tool recipes dynamically.
-val mortar_metal_items = {
-    "Flint" : <contenttweaker:flint_mortar>,
-    "Bronze" : <contenttweaker:bronze_mortar>,
-    "Iron" : <contenttweaker:iron_mortar>,
-    "Steel" : <contenttweaker:steel_mortar>
-}  as IItemStack[string];
-
-val mortar_metal_items2 = {
-    "Flint" : "flint",
-    "Bronze" : "bronze",
-    "Iron" : "iron",
-    "Steel" : "steel"
-}  as string[string];
-
-for upper_name, lower_name in mortar_metal_items2 {
-  var oreDictName = "ingot" + upper_name;
-  var output_item_name = lower_name + "_" + "mortar" ~ "\\b";
-  print("************" ~ output_item_name);
-  var item = itemUtils.getItemsByRegexRegistryName(output_item_name );
-  //print(item);
-  
-  
-  
-  recipes.remove(item);
-
-  recipes.addShaped(item * 1, [[null, oreDict[oreDictName], null], 
-    [<ore:stone>, oreDict[oreDictName], <ore:stone>], 
-    [<ore:stone>,<ore:stone>,<ore:stone>]]);
-  
-}
-*/
-
-/* Create oredictionaries for the GT-like tools.  Use meta 32767 to cover all "materials" for that tool */
-/* 32767 will register all meta of that item under that oredict (thanks Lord Plant/Shadows at discord: PackDev), alternative to anyDamage() that works with oredict */
-var mortar_flint = <contenttweaker:flint_mortar:32767>;  
-var mortar_bronze = <contenttweaker:bronze_mortar:32767>;
-var mortar_iron = <contenttweaker:iron_mortar:32767>;
-var mortar_steel = <contenttweaker:steel_mortar:32767>;
-var oreMortars = <ore:mortars>;
-oreMortars.add(mortar_flint);
-oreMortars.add(mortar_bronze);
-oreMortars.add(mortar_iron);
-oreMortars.add(mortar_steel);
-
-var saw_flint = <contenttweaker:flint_saw:32767>;  
-var saw_bronze = <contenttweaker:bronze_saw:32767>;
-var saw_iron = <contenttweaker:iron_saw:32767>;
-var saw_steel = <contenttweaker:steel_saw:32767>;
-var oreSaws = <ore:saws>;
-oreSaws.add(saw_flint);
-oreSaws.add(saw_bronze);
-oreSaws.add(saw_iron);
-oreSaws.add(saw_steel);
-
-var hammer_flint = <contenttweaker:flint_hammer:32767>;  
-var hammer_bronze = <contenttweaker:bronze_hammer:32767>;
-var hammer_iron = <contenttweaker:iron_hammer:32767>;
-var hammer_steel = <contenttweaker:steel_hammer:32767>;
-var oreHammers = <ore:hammers>;
-oreHammers.add(hammer_flint);
-oreHammers.add(hammer_bronze);
-oreHammers.add(hammer_iron);
-oreHammers.add(hammer_steel);
-
-var wrench_flint = <contenttweaker:flint_wrench:32767>;  
-var wrench_bronze = <contenttweaker:bronze_wrench:32767>;
-var wrench_iron = <contenttweaker:iron_wrench:32767>;
-var wrench_steel = <contenttweaker:steel_wrench:32767>;
-var oreWrenches = <ore:wrench>;
-oreWrenches.add(wrench_flint);
-oreWrenches.add(wrench_bronze);
-oreWrenches.add(wrench_iron);
-oreWrenches.add(wrench_steel);
-
-var file_flint = <contenttweaker:flint_file:32767>;  
-var file_bronze = <contenttweaker:bronze_file:32767>;
-var file_iron = <contenttweaker:iron_file:32767>;
-var file_steel = <contenttweaker:steel_file:32767>;
-var oreFiles = <ore:files>;
-oreFiles.add(file_flint);
-oreFiles.add(file_bronze);
-oreFiles.add(file_iron);
-oreFiles.add(file_steel);
-
-
-
-
+var oreSaw = <ore:craftingToolSaw>;
 
 // SAW + FORESTRY-LOG = PLANKS x4 (Forestry, Vanilla)
-recipes.addShapedMirrored(<forestry:planks.0:0>*4, [[oreSaws], [<forestry:logs.0:0>]]);
-recipes.addShapedMirrored(<forestry:planks.0:1>*4, [[oreSaws], [<forestry:logs.0:1>]]);
-recipes.addShapedMirrored(<forestry:planks.0:2>*4, [[oreSaws], [<forestry:logs.0:2>]]);
-recipes.addShapedMirrored(<forestry:planks.0:3>*4, [[oreSaws], [<forestry:logs.0:3>]]);
-recipes.addShapedMirrored(<forestry:planks.0:4>*4, [[oreSaws], [<forestry:logs.1:0>]]);
-recipes.addShapedMirrored(<forestry:planks.0:5>*4, [[oreSaws], [<forestry:logs.1:1>]]);
-recipes.addShapedMirrored(<forestry:planks.0:6>*4, [[oreSaws], [<forestry:logs.1:2>]]);
-recipes.addShapedMirrored(<forestry:planks.0:7>*4, [[oreSaws], [<forestry:logs.1:3>]]);
-recipes.addShapedMirrored(<forestry:planks.0:8>*4, [[oreSaws], [<forestry:logs.2:0>]]);
-recipes.addShapedMirrored(<forestry:planks.0:9>*4, [[oreSaws], [<forestry:logs.2:1>]]);
-recipes.addShapedMirrored(<forestry:planks.0:10>*4, [[oreSaws], [<forestry:logs.2:2>]]);
-recipes.addShapedMirrored(<forestry:planks.0:11>*4, [[oreSaws], [<forestry:logs.2:3>]]);
-recipes.addShapedMirrored(<forestry:planks.0:12>*4, [[oreSaws], [<forestry:logs.3:0>]]);
-recipes.addShapedMirrored(<forestry:planks.0:13>*4, [[oreSaws], [<forestry:logs.3:1>]]);
-recipes.addShapedMirrored(<forestry:planks.0:14>*4, [[oreSaws], [<forestry:logs.3:2>]]);
-recipes.addShapedMirrored(<forestry:planks.0:15>*4, [[oreSaws], [<forestry:logs.3:3>]]);
-recipes.addShapedMirrored(<forestry:planks.1:0>*4, [[oreSaws], [<forestry:logs.4:0>]]);
-recipes.addShapedMirrored(<forestry:planks.1:1>*4, [[oreSaws], [<forestry:logs.4:1>]]);
-recipes.addShapedMirrored(<forestry:planks.1:2>*4, [[oreSaws], [<forestry:logs.4:2>]]);
-recipes.addShapedMirrored(<forestry:planks.1:3>*4, [[oreSaws], [<forestry:logs.4:3>]]);
-recipes.addShapedMirrored(<forestry:planks.1:4>*4, [[oreSaws], [<forestry:logs.5:0>]]);
-recipes.addShapedMirrored(<forestry:planks.1:5>*4, [[oreSaws], [<forestry:logs.5:1>]]);
-recipes.addShapedMirrored(<forestry:planks.1:6>*4, [[oreSaws], [<forestry:logs.5:2>]]);
-recipes.addShapedMirrored(<forestry:planks.1:7>*4, [[oreSaws], [<forestry:logs.5:3>]]);
-recipes.addShapedMirrored(<forestry:planks.1:8>*4, [[oreSaws], [<forestry:logs.6:0>]]);
-recipes.addShapedMirrored(<forestry:planks.1:9>*4, [[oreSaws], [<forestry:logs.6:1>]]);
-recipes.addShapedMirrored(<forestry:planks.1:10>*4, [[oreSaws], [<forestry:logs.6:2>]]);
-recipes.addShapedMirrored(<forestry:planks.1:12>*4, [[oreSaws], [<forestry:logs.7:0>]]);
-recipes.addShapedMirrored(<minecraft:planks:0>*4, [[oreSaws], [<minecraft:log:0>]]);
-recipes.addShapedMirrored(<minecraft:planks:1>*4, [[oreSaws], [<minecraft:log:1>]]);
-recipes.addShapedMirrored(<minecraft:planks:1>*4, [[oreSaws], [<contenttweaker:dried_spruce_log>]]);
-recipes.addShapedMirrored(<minecraft:planks:2>*4, [[oreSaws], [<minecraft:log:2>]]);
-recipes.addShapedMirrored(<minecraft:planks:3>*4, [[oreSaws], [<minecraft:log:3>]]);
-recipes.addShapedMirrored(<minecraft:planks:4>*4, [[oreSaws], [<minecraft:log2:0>]]);
-recipes.addShapedMirrored(<minecraft:planks:5>*4, [[oreSaws], [<minecraft:log2:1>]]);
+recipes.addShapedMirrored(<forestry:planks.0:0>*4, [[oreSaw], [<forestry:logs.0:0>]]);
+recipes.addShapedMirrored(<forestry:planks.0:1>*4, [[oreSaw], [<forestry:logs.0:1>]]);
+recipes.addShapedMirrored(<forestry:planks.0:2>*4, [[oreSaw], [<forestry:logs.0:2>]]);
+recipes.addShapedMirrored(<forestry:planks.0:3>*4, [[oreSaw], [<forestry:logs.0:3>]]);
+recipes.addShapedMirrored(<forestry:planks.0:4>*4, [[oreSaw], [<forestry:logs.1:0>]]);
+recipes.addShapedMirrored(<forestry:planks.0:5>*4, [[oreSaw], [<forestry:logs.1:1>]]);
+recipes.addShapedMirrored(<forestry:planks.0:6>*4, [[oreSaw], [<forestry:logs.1:2>]]);
+recipes.addShapedMirrored(<forestry:planks.0:7>*4, [[oreSaw], [<forestry:logs.1:3>]]);
+recipes.addShapedMirrored(<forestry:planks.0:8>*4, [[oreSaw], [<forestry:logs.2:0>]]);
+recipes.addShapedMirrored(<forestry:planks.0:9>*4, [[oreSaw], [<forestry:logs.2:1>]]);
+recipes.addShapedMirrored(<forestry:planks.0:10>*4, [[oreSaw], [<forestry:logs.2:2>]]);
+recipes.addShapedMirrored(<forestry:planks.0:11>*4, [[oreSaw], [<forestry:logs.2:3>]]);
+recipes.addShapedMirrored(<forestry:planks.0:12>*4, [[oreSaw], [<forestry:logs.3:0>]]);
+recipes.addShapedMirrored(<forestry:planks.0:13>*4, [[oreSaw], [<forestry:logs.3:1>]]);
+recipes.addShapedMirrored(<forestry:planks.0:14>*4, [[oreSaw], [<forestry:logs.3:2>]]);
+recipes.addShapedMirrored(<forestry:planks.0:15>*4, [[oreSaw], [<forestry:logs.3:3>]]);
+recipes.addShapedMirrored(<forestry:planks.1:0>*4, [[oreSaw], [<forestry:logs.4:0>]]);
+recipes.addShapedMirrored(<forestry:planks.1:1>*4, [[oreSaw], [<forestry:logs.4:1>]]);
+recipes.addShapedMirrored(<forestry:planks.1:2>*4, [[oreSaw], [<forestry:logs.4:2>]]);
+recipes.addShapedMirrored(<forestry:planks.1:3>*4, [[oreSaw], [<forestry:logs.4:3>]]);
+recipes.addShapedMirrored(<forestry:planks.1:4>*4, [[oreSaw], [<forestry:logs.5:0>]]);
+recipes.addShapedMirrored(<forestry:planks.1:5>*4, [[oreSaw], [<forestry:logs.5:1>]]);
+recipes.addShapedMirrored(<forestry:planks.1:6>*4, [[oreSaw], [<forestry:logs.5:2>]]);
+recipes.addShapedMirrored(<forestry:planks.1:7>*4, [[oreSaw], [<forestry:logs.5:3>]]);
+recipes.addShapedMirrored(<forestry:planks.1:8>*4, [[oreSaw], [<forestry:logs.6:0>]]);
+recipes.addShapedMirrored(<forestry:planks.1:9>*4, [[oreSaw], [<forestry:logs.6:1>]]);
+recipes.addShapedMirrored(<forestry:planks.1:10>*4, [[oreSaw], [<forestry:logs.6:2>]]);
+recipes.addShapedMirrored(<forestry:planks.1:12>*4, [[oreSaw], [<forestry:logs.7:0>]]);
+recipes.addShapedMirrored(<minecraft:planks:0>*4, [[oreSaw], [<minecraft:log:0>]]);
+recipes.addShapedMirrored(<minecraft:planks:1>*4, [[oreSaw], [<minecraft:log:1>]]);
+recipes.addShapedMirrored(<minecraft:planks:1>*4, [[oreSaw], [<contenttweaker:dried_spruce_log>]]);
+recipes.addShapedMirrored(<minecraft:planks:2>*4, [[oreSaw], [<minecraft:log:2>]]);
+recipes.addShapedMirrored(<minecraft:planks:3>*4, [[oreSaw], [<minecraft:log:3>]]);
+recipes.addShapedMirrored(<minecraft:planks:4>*4, [[oreSaw], [<minecraft:log2:0>]]);
+recipes.addShapedMirrored(<minecraft:planks:5>*4, [[oreSaw], [<minecraft:log2:1>]]);
 
 // SAW + PLANK = STICK
-recipes.addShapedMirrored(<minecraft:stick>*4, [[oreSaws], [<ore:plankWood>]]);
-
-// BRONZE DUST
-var dustBronze = <thermalfoundation:material:99>;
-var blockBrick = <minecraft:brick_block>;
-
-recipes.remove(dustBronze * 4);
-recipes.addShapeless(dustBronze * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
-
-recipes.remove(<forestry:ingot_bronze> * 4);
+recipes.addShapedMirrored(<minecraft:stick>*4, [[oreSaw], [<ore:plankWood>]]);
 
 
-// GREGGY WIDGETS
-var bronzePlatedBrick = <contenttweaker:bronze_plated_brick>;
-
-recipes.addShaped(bronzePlatedBrick, [[<ore:plateBronze>, <ore:hammers>, <ore:plateBronze>], 
-  [<ore:plateBronze>, blockBrick, <ore:plateBronze>], 
-  [<ore:plateBronze>, oreWrenches, <ore:plateBronze>]]);
-
-val machine_metals = [
-    "Bronze",
-    "Steel",
-    "Titanium",
-    "Tungstensteel",
-    "Aluminium"
-] as string[];
-
-
-var counter = 0;
-
-for metal in machine_metals {
-  var new_machine_name = "machine_frame" ~ metal;
-  var machine_frame = oreDict[new_machine_name].firstItem;
-  
-  var rod_name = "rod" ~ metal;
-  var rod = oreDict[rod_name];
-  
-  var screw_name = "screw" ~ metal;
-  var screw = oreDict[screw_name];
-  
-  var plate_name = "plate" ~ metal;
-  var plate = oreDict[plate_name];
-  
-  var machine_structure = counter <= 1 ? <libvulpes:structuremachine> : <libvulpes:advstructuremachine> ;
-  var sheet = counter <= 1 ? <ore:plateWroughtIron> : <ore:platePolyethylene>;
-  
-  var rubber = <contenttweaker:rubber>;
-  
-  var wire_name = "wire" ~ metal;
-  var wire = oreDict[wire_name];
-  
-  recipes.addShaped(machine_frame, [[sheet, screw, sheet], 
-                          [rubber, machine_structure, rubber], 
-                          [wire, oreWrenches, wire]]);
-                          
-  counter = counter + 1;
-  
-}
-  
-  
-  
-
-
-/*
-events.onPlayerLoggedIn( function (event as crafttweaker.event.PlayerLoggedInEvent) {
-  print ("Greetings and salutations, " ~ event.player.name);
-});
-
-events.onPlayerCrafted (function (event as crafttweaker.event.PlayerCraftedEvent) {
-  print ("event".length);
-  print (event.player.name);
-  event.player.xp += 10;
-});
-
-events.onPlayerSmelted (function (event as crafttweaker.event.PlayerSmeltedEvent) {
-  print ("event".length);
-  print (event.player.name);
-  event.player.xp += 10;
-});
-
-*/  

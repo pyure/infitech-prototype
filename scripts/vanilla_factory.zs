@@ -264,7 +264,7 @@ val tool_metals = [
 val tool_types = [
     "saw",
     "hammer",
-    "mortar",
+    //"mortar",
     "wrench",
 	"file"
 ] as string[];
