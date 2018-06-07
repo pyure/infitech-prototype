@@ -39,3 +39,15 @@ var meta = [24, 25, 256, 257, 258, 259,260,261,262,263,264,288,289,290,291,292,2
 for id in meta {
 	recipes.remove(<thermalfoundation:material>.definition.makeStack(id));
 }
+
+// Removing plates that have GT couterpart
+recipes.remove(<thermalfoundation:material:32>);
+recipes.remove(<thermalfoundation:material:33>);
+recipes.remove(<thermalfoundation:material:320>);
+recipes.remove(<thermalfoundation:material:321>);
+recipes.remove(<thermalfoundation:material:322>);
+recipes.remove(<thermalfoundation:material:323>);
+recipes.remove(<thermalfoundation:material:324>);
+recipes.remove(<thermalfoundation:material:325>);
+recipes.remove(<thermalfoundation:material:326>);
+recipes.remove(<thermalfoundation:material:327>);

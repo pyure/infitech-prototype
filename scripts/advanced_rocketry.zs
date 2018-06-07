@@ -35,3 +35,12 @@ recipes.remove(<libvulpes:productrod:6>);
 recipes.remove(<libvulpes:productrod:7>);
 recipes.remove(<libvulpes:productrod:10>);
 
+// GT Style Plate crafting
+recipes.addShaped(<advancedrocketry:productplate>, [
+	[<ore:craftingToolHardHammer>],
+	[<ore:ingotTitaniumAluminide>],
+	[<ore:ingotTitaniumAluminide>]]);
+recipes.addShaped(<advancedrocketry:productplate:1>, [
+	[<ore:craftingToolHardHammer>],
+	[<ore:ingotTitaniumIridium>],
+	[<ore:ingotTitaniumIridium>]]);
