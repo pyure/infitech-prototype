@@ -31,3 +31,11 @@ recipes.remove(<thermalfoundation:tool.hoe_tin>);
 recipes.remove(<thermalfoundation:tool.hoe_silver>);
 recipes.remove(<thermalfoundation:tool.hoe_lead>);
 recipes.remove(<thermalfoundation:tool.hoe_aluminum>);
+
+// Removing gears that have GT counterpart
+
+var meta = [24, 25, 256, 257, 258, 259,260,261,262,263,264,288,289,290,291,292,293,294,295] as int[];
+
+for id in meta {
+	recipes.remove(<thermalfoundation:material>.definition.makeStack(id));
+}
