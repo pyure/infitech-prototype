@@ -1,0 +1,50 @@
+import loottweaker.vanilla.loot.LootTables;
+import loottweaker.vanilla.loot.LootTable;
+import loottweaker.vanilla.loot.LootPool;
+import loottweaker.vanilla.loot.Conditions;
+import loottweaker.vanilla.loot.Functions;
+
+// Remove nonGT tools from Loot
+val mineshaft = LootTables.getTable("minecraft:chests/abandoned_mineshaft");
+val endcity = LootTables.getTable("minecraft:chests/end_city_treasure");
+val igloo = LootTables.getTable("minecraft:chests/igloo_chest");
+val nether = LootTables.getTable("minecraft:chests/nether_bridge");
+val bonuschest = LootTables.getTable("minecraft:chests/spawn_bonus_chest");
+val sholdcorridor = LootTables.getTable("minecraft:chests/stronghold_corridor");
+val sholdcrossing = LootTables.getTable("minecraft:chests/stronghold_crossing");
+val sholdlibrary = LootTables.getTable("minecraft:chests/stronghold_library");
+val woodland = LootTables.getTable("minecraft:chests/woodland_mansion");
+val blacksmith = LootTables.getTable("minecraft:chests/village_blacksmith");
+
+val mineshaftMain = mineshaft.getPool("main");
+val endcityMain = endcity.getPool("main");
+val iglooMain = igloo.getPool("main");
+val netherMain = nether.getPool("main");
+val bonuschestMain = bonuschest.getPool("main");
+val bonuschestPool1 = bonuschest.getPool("pool1");
+val sholdcorridorMain = sholdcorridor.getPool("main");
+val sholdcrossingMain = sholdcrossing.getPool("main");
+val sholdlibraryMain = sholdlibrary.getPool("main");
+val woodlandMain = woodland.getPool("main");
+val blacksmithMain = blacksmith.getPool("main");
+
+mineshaftMain.removeEntry("minecraft:iron_pickaxe");
+mineshaft.removePool("forestry_factory_items");
+endcityMain.removeEntry("minecraft:diamond_sword");
+endcityMain.removeEntry("minecraft:diamond_shovel");
+endcityMain.removeEntry("minecraft:diamond_pickaxe");
+endcityMain.removeEntry("minecraft:iron_sword");
+endcityMain.removeEntry("minecraft:iron_pickaxe");
+endcityMain.removeEntry("minecraft:iron_shovel");
+iglooMain.removeEntry("minecraft:stone_axe");
+netherMain.removeEntry("minecraft:golden_sword");
+bonuschestMain.removeEntry("minecraft:stone_axe");
+bonuschestMain.removeEntry("minecraft:wooden_axe");
+bonuschestPool1.removeEntry("minecraft:stone_pickaxe");
+bonuschestPool1.removeEntry("minecraft:wooden_pickaxe");
+sholdcorridorMain.removeEntry("minecraft:iron_pickaxe");
+sholdcorridorMain.removeEntry("minecraft:iron_sword");
+sholdcrossingMain.removeEntry("minecraft:iron_pickaxe");
+woodlandMain.removeEntry("minecraft:diamond_hoe");
+blacksmithMain.removeEntry("minecraft:iron_pickaxe");
+blacksmithMain.removeEntry("minecraft:iron_sword");
