@@ -42,6 +42,7 @@ config/jei/worldSettings.cfg
 config/MouseTweaks.cfg
 config/InvTweaks.cfg
 minecraftinstance.json
+dumps/
 
 # Windows image file caches
 Thumbs.db
