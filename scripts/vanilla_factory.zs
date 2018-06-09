@@ -45,40 +45,6 @@ var gelled_toluene = VanillaFactory.createItem("gelled_toluene");
 gelled_toluene.maxStackSize = 64;
 gelled_toluene.register();
 
-/* TESTING STUFF THAT CAN BE DELETED */
-var test_pick = VanillaFactory.createItem("test_pick");
-test_pick.toolClass = "pickaxe";
-test_pick.maxDamage = 10;
-test_pick.maxStackSize = 1;
-test_pick.toolLevel = 3;
-test_pick.itemDestroySpeed = function(stack, block){
-  return 10.0 as float;
-};
-test_pick.itemDestroyedBlock = function(stack, world, blockState, pos, entity){
-  stack.damage(1, entity);
-  return true;
-};
-test_pick.register();
-/* /TESTING STUFF */
-
-
-var test_drill = VanillaFactory.createItem("test_drill");
-test_drill.toolClass = "pickaxe";
-test_drill.maxDamage = 10;
-test_drill.maxStackSize = 1;
-test_drill.toolLevel = 4;
-test_drill.itemDestroySpeed = function(stack, block){
-  return 20.0 as float;
-};
-test_drill.itemDestroyedBlock = function(stack, world, blockState, pos, entity){
-  stack.damage(1, entity);
-  stack.updateTag({Energy: 100});
-  
-  var mytag = stack.tag;
-  print(mytag);
-  return true;
-};
-test_drill.register();
 
 
 // FLUIDS
@@ -197,46 +163,11 @@ soldering_alloy.density = 100;
 soldering_alloy.viscosity = 100;
 soldering_alloy.register();
 
-
 var nand_chip = VanillaFactory.createItem("nand_chip");
 nand_chip.maxStackSize = 64;
 nand_chip.register();
 
 
-/*
-var mortar_flint = VanillaFactory.createItem("flint_mortar");
-mortar_flint.maxStackSize = 1;
-mortar_flint.maxDamage = 16;
-mortar_flint.register();
-
-var mortar_iron = VanillaFactory.createItem("iron_mortar");
-mortar_iron.maxStackSize = 1;
-mortar_iron.maxDamage = 64;
-mortar_iron.register();
-
-var mortar_bronze = VanillaFactory.createItem("bronze_mortar");
-mortar_bronze.maxStackSize = 1;
-mortar_bronze.maxDamage = 128;
-mortar_bronze.register();
-
-var mortar_steel = VanillaFactory.createItem("steel_mortar");
-mortar_steel.maxStackSize = 1;
-mortar_steel.maxDamage = 512;
-mortar_steel.register();
-
-val mortars = [
-    mortar_flint,
-    mortar_bronze,
-    mortar_iron,
-    mortar_steel
-] as Item[];
-
-for mortar in mortars {
-  mortar.itemGetContainerItem = function(item) {
-      return (item.damage + 1 < item.maxDamage) ? item.withDamage(item.damage + 1) : null;
-  };
-}
-*/
 
 var sticky_resin = VanillaFactory.createItem("sticky_resin");
 sticky_resin.maxStackSize = 64;

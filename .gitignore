@@ -41,6 +41,8 @@ config/splash.properties
 config/jei/worldSettings.cfg
 config/MouseTweaks.cfg
 config/InvTweaks.cfg
+config/AppliedEnergistics2/Facades.cfg
+config/AppliedEnergistics2/recipes/items.csv
 minecraftinstance.json
 
 # Windows image file caches
