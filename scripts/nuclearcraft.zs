@@ -32,3 +32,9 @@ recipes.remove(<nuclearcraft:shovel_boron>);
 recipes.remove(<nuclearcraft:shovel_tough>);
 recipes.remove(<nuclearcraft:shovel_hard_carbon>);
 recipes.remove(<nuclearcraft:shovel_boron_nitride>);
+
+// Spaxelhoe removal
+recipes.remove(<nuclearcraft:spaxelhoe_boron>);
+recipes.remove(<nuclearcraft:spaxelhoe_tough>);
+recipes.remove(<nuclearcraft:spaxelhoe_hard_carbon>);
+recipes.remove(<nuclearcraft:spaxelhoe_boron_nitride>);

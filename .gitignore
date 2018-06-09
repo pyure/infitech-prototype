@@ -87,4 +87,94 @@ $RECYCLE.BIN/
 .AppleDesktop
 Network Trash Folder
 Temporary Items
+=======
+# Liberally stolen from Infitech2.  Take that, Jason McCray.
+
+# Minecraft files
+asm/
+backups/
+blueprints/
+coremods/
+crash-reports/
+CustomDISkins/
+journeymap/
+liteconfig/
+logs/
+reports/
+resourcepacks/
+saves/
+screenshots/
+TCNodeTracker/
+texturepacks/
+1213309934
+GregTech.cfg
+GregTech.lang
+icon.png
+minetweaker.log
+nicknames.json
+OpenComputersMod*.*
+options.txt
+optionsof.txt
+usernamecache.json
+.curseclient
+crafttweaker.log
+local/
+BotaniaVars.dat
+realms_persistence.json
+scripts.zip
+usercache.json
+scripts.7z
+hs_err*.log
+minecraftinstance.json
+replay*.log
+config/splash.properties
+config/jei/worldSettings.cfg
+config/MouseTweaks.cfg
+config/InvTweaks.cfg
+minecraftinstance.json
+dumps/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
 .apdisk
+
