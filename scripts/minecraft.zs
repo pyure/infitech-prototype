@@ -25,3 +25,39 @@ recipes.remove(<minecraft:stone_axe>);
 recipes.remove(<minecraft:diamond_axe>);
 recipes.remove(<minecraft:golden_axe>);
 recipes.remove(<minecraft:iron_axe>);
+
+
+var charcoal = <minecraft:coal:1>;
+var tinyCharcoal = <cttinycoal:tiny_charcoal>;
+furnace.remove(charcoal, <ore:logWood>);
+
+furnace.addRecipe(tinyCharcoal, <ore:logWood>);
+
+
+
+
+//PISTONS
+recipes.remove(<minecraft:piston>);
+recipes.addShaped(<minecraft:piston>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+  [<ore:stoneCobble>, <ore:ingotIron>, <ore:stoneCobble>], 
+  [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
+
+recipes.addShaped(<minecraft:piston>*2, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+  [<ore:stoneCobble>, <ore:ingotSteel>, <ore:stoneCobble>], 
+  [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
+
+recipes.addShaped(<minecraft:piston>*4, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+  [<ore:stoneCobble>, <ore:ingotAluminium>, <ore:stoneCobble>], 
+  [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
+
+recipes.addShaped(<minecraft:piston>*8, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+  [<ore:stoneCobble>, <ore:ingotTitanium>, <ore:stoneCobble>], 
+  [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
+
+recipes.addShaped(<minecraft:piston>*16, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+  [<ore:stoneCobble>, <ore:ingotTungstenSteel>, <ore:stoneCobble>], 
+  [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
+
+recipes.addShaped(<minecraft:piston>*32, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+  [<ore:stoneCobble>, <ore:ingotNaquadah>, <ore:stoneCobble>], 
+  [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);

@@ -201,7 +201,7 @@ for i, metal in metal_list {
 
 for i, metal in ore_list {
     var ores = metal.registerParts(ore_types);
-    for i, ore in ores {
+    for j, ore in ores {
         var oreData = ore.getData();
         oreData.addDataValue("variants", "minecraft:stone,minecraft:end_stone,minecraft:netherrack");
         oreData.addDataValue("hardness", "3,3,3");
@@ -210,6 +210,7 @@ for i, metal in ore_list {
         oreData.addDataValue("harvestLevel", "1,1,1");
     }
 }
+
 
 /* This section allows us to define materials-parts that can include vanillafactory scripting */
 
