@@ -35,6 +35,7 @@ scripts.zip
 usercache.json
 scripts.7z
 hs_err*.log
+replay*.log
 minecraftinstance.json
 replay*.log
 config/splash.properties
