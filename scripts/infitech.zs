@@ -12,7 +12,8 @@ var flint = <minecraft:flint:0>;
 recipes.addShapeless(raw_rubber * 1, [bucket_latex]);
 
 furnace.addRecipe(rubber, raw_rubber);
-furnace.addRecipe(<contenttweaker:wrought_iron_nugget>, <ore:nuggetIron>);
+var nuggetWroughtIron = <gregtech:meta_item_1:9197>;
+furnace.addRecipe(nuggetWroughtIron, <ore:nuggetIron>);
 
 // VANILLA TNT
 recipes.remove(<minecraft:tnt> * 1);

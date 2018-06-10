@@ -1,0 +1,39 @@
+{
+  "weight": 55,
+  "density": 0.3,
+  "max_height": 50,
+  "min_height": 10,
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 260,
+          "value": "ore:bentonite"
+        },
+        {
+          "weight": 260,
+          "value": "ore:magnesite"
+        },
+		{
+          "weight": 260,
+          "value": "ore:olivine"
+        },
+		{
+          "weight": 90,
+          "value": "ore:glauconite"
+        },
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				} 
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "weight": 20,
+  "density": 0.5,
+  "max_height": 30,
+  "min_height": 20,
+  "surface_stone_material": "molybdenum",
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 280,
+          "value": "ore:wulfenite"
+        },
+        {
+          "weight": 280,
+          "value": "ore:molybdenite"
+        },
+		{
+          "weight": 140,
+          "value": "ore:powellite"
+        },
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				} 
+      ]
+    }
+  }
+}
