@@ -4,13 +4,10 @@
 	"max_height": 55,
 	"min_height": 5,
 	"surface_stone_material": "iron",
-
-    "generator": {
-      "type": "plate",
-      "length": 64,
-      "depth": 64,
-      "height": 2
-    },
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [16, 16]
+  },
 	"filler": {
 		"type": "simple",
 		"value": {
@@ -30,7 +27,11 @@
 				{
 					"weight": 10,
 					"value": "ore:malachite"
-				}
+				},
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				}        
 			]
 		}
 	}

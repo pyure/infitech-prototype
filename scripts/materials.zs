@@ -89,6 +89,7 @@ var polyethylene =  MaterialSystem.getMaterialBuilder().setName('Polyethylene').
 var raw_rubber =  MaterialSystem.getMaterialBuilder().setName('Raw Rubber').setColor(13420425).build();
 var lepidolite =  MaterialSystem.getMaterialBuilder().setName('Lepidolite').setColor(15741580).build();
 var red_alloy =  MaterialSystem.getMaterialBuilder().setName('Red Alloy').setColor(13107200).build();
+var compressed_wrought_iron = MaterialSystem.getMaterialBuilder().setName('Compressed Wrought Iron').setColor(13151460).build();
 
 /*
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setPartType(MaterialSystem.getPartType("item")).build();
@@ -98,7 +99,7 @@ mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setP
 /* MaterialSystem.getPartBuildering.setName("this_thing").setPartType("ITEM").setHasOverlay(true); */
 
 
-var metal_list = [silicon, tin, soldering_alloy, antimony, aluminium, tungstensteel, titanium, steel, cobalt, stainless_steel, copper, bismuth_bronze, gold, iron, lead, lithium, magnesium, manganese, platinum, nickel, silver, bronze, iridium, graphite, wrought_iron, polyethylene] as Material[];
+var metal_list = [compressed_wrought_iron] as Material[];
 var machine_frame_metals_list = [bronze, steel, titanium, tungstensteel, aluminium] as Material[];
 var turbine_rotor_metals_list = [steel] as Material[];
 var mortar_metals_list = [iron, copper, bronze, steel] as Material[];

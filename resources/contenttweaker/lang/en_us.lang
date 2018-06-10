@@ -30,6 +30,8 @@ item.contenttweaker.flint_mortar.name=Flint Mortar
 item.contenttweaker.iron_mortar.name=Iron Mortar
 item.contenttweaker.steel_mortar.name=Steel Mortar
 
+item.contenttweaker.fire_bow.name=Fire Bow
+
 item.contenttweaker.cluster_cobalt.name=Native Cobalt Cluster
 item.contenttweaker.cluster_platinum.name=Native Platinum Cluster
 item.contenttweaker.cluster_nickel.name=Native Nickel Cluster
