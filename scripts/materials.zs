@@ -115,7 +115,7 @@ var ore_part_names = ["crushed_ore", "dust", "tiny_dust", "washed_ore", "impure_
 var dust_part_names = ["dust", "tiny_dust"] as string[]; 
 
 // ORES
-var ore_list = [antimony, cobalt, pyrolusite, tetrahedrite, stibnite, graphite, lignite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, limonite, lepidolite] as Material[];
+var ore_list = [] as Material[];
 var ore_byproducts_list = [antimony, cobalt, magnesium, manganese, platinum, iridium, tin, gold, iron, silver, copper, lead, nickel, chrome, lapis, lithium, boron, uranium238, uranium235, thorium, zinc, aluminium, 
                       tetrahedrite, stibnite, graphite, lignite, limonite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, pyrolusite, emerald, sulfur, lepidolite] as Material[];
 //
