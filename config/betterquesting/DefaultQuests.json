@@ -3,7 +3,9 @@
   "questDatabase:9": {
     "0:10": {
       "questID:3": 0,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        9
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -13,19 +15,19 @@
           "repeattime:3": -1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:log",
+            "id:8": "thaumcraft:smelter_basic",
             "Count:3": 1,
             "Damage:2": 0,
-            "OreDict:8": "logWood"
+            "OreDict:8": ""
           },
           "globalshare:1": 0,
           "questlogic:8": "AND",
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "ismain:1": 1,
-          "name:8": "Getting vood",
-          "desc:8": "Jason wants you to get him some vood"
+          "ismain:1": 0,
+          "name:8": "Breaking the law",
+          "desc:8": "No Description"
         }
       },
       "tasks:9": {
@@ -33,40 +35,27 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
+          "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "minecraft:log",
-              "Count:3": 4,
-              "OreDict:8": "logWood",
+              "id:8": "thaumcraft:smelter_basic",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:alembic",
+              "Count:3": 3,
+              "OreDict:8": "",
               "Damage:3": 0
             }
           },
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "minecraft:stick",
-              "Count:3": 1,
-              "tag:10": {
-                "RepairCost:3": 0,
-                "display:10": {
-                  "Name:8": "Vood"
-                }
-              },
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        }
-      }
+      "rewards:9": {}
     },
     "1:10": {
       "questID:3": 1,
@@ -82,7 +71,7 @@
           "repeattime:3": -1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "thaumcraft:smelter_thaumium",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -92,71 +81,31 @@
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "ismain:1": 1,
-          "name:8": "Mother Earth\u0027s gifts",
-          "desc:8": "gib"
+          "ismain:1": 0,
+          "name:8": "Notorious rulebreaker",
+          "desc:8": "No Description"
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "ignoreNBT:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
           "index:3": 0,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "minecraft:wooden_hoe",
+              "id:8": "thaumcraft:smelter_thaumium",
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
             }
           },
-          "taskID:8": "bq_standard:crafting"
+          "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "minecraft:diamond_hoe",
-              "Count:3": 1,
-              "tag:10": {
-                "ench:9": {
-                  "0:10": {
-                    "lvl:2": 3,
-                    "id:2": 34
-                  },
-                  "1:10": {
-                    "lvl:2": 1,
-                    "id:2": 70
-                  }
-                }
-              },
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        },
-        "1:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 1,
-          "choices:9": {
-            "0:10": {
-              "id:8": "minecraft:pumpkin_seeds",
-              "Count:3": 10,
-              "OreDict:8": "",
-              "Damage:3": 0
-            },
-            "1:10": {
-              "id:8": "minecraft:melon_seeds",
-              "Count:3": 10,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        }
-      }
+      "rewards:9": {}
     },
     "2:10": {
       "questID:3": 2,
@@ -172,7 +121,7 @@
           "repeattime:3": -1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "thaumcraft:smelter_void",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -183,8 +132,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "Diggy diggy hole",
-          "desc:8": "Be a dwarf"
+          "name:8": "Magic over order",
+          "desc:8": "No Description"
         }
       },
       "tasks:9": {
@@ -194,19 +143,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "forestry:resources",
-              "Count:3": 15,
-              "OreDict:8": "oreCopper",
-              "Damage:3": 1
-            },
-            "1:10": {
-              "id:8": "forestry:resources",
-              "Count:3": 5,
-              "OreDict:8": "oreTin",
-              "Damage:3": 2
+              "id:8": "thaumcraft:smelter_void",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -217,7 +160,7 @@
     "3:10": {
       "questID:3": 3,
       "preRequisites:11": [
-        1
+        0
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -228,7 +171,7 @@
           "repeattime:3": -1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "thaumcraft:cluster",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -239,19 +182,105 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "Mixing",
-          "desc:8": "Your first mixtape"
+          "name:8": "Native",
+          "desc:8": "No Description"
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "ignoreNBT:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:cluster",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:cluster",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 1
+            },
+            "2:10": {
+              "id:8": "thaumcraft:cluster",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 2
+            },
+            "3:10": {
+              "id:8": "thaumcraft:cluster",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 3
+            },
+            "4:10": {
+              "id:8": "thaumcraft:cluster",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 4
+            },
+            "5:10": {
+              "id:8": "thaumcraft:cluster",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 5
+            },
+            "6:10": {
+              "id:8": "thaumcraft:cluster",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 6
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "4:10": {
+      "questID:3": 4,
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:metal_alchemical",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Alchemy 2.0",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "ignoreNBT:1": 0,
           "index:3": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "foundry:alloyfurnace",
-              "Count:3": 1,
+              "id:8": "thaumcraft:metal_alchemical",
+              "Count:3": 2,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -261,12 +290,9 @@
       },
       "rewards:9": {}
     },
-    "4:10": {
-      "questID:3": 4,
-      "preRequisites:11": [
-        3,
-        2
-      ],
+    "5:10": {
+      "questID:3": 5,
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -276,7 +302,7 @@
           "repeattime:3": -1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "thaumcraft:salis_mundus",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -286,95 +312,45 @@
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "ismain:1": 0,
-          "name:8": "Bronzing away",
-          "desc:8": "Bronze, bronze, bronze"
+          "ismain:1": 1,
+          "name:8": "Magics",
+          "desc:8": "No Description"
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "forestry:ingot_bronze",
-              "Count:3": 20,
+              "id:8": "thaumcraft:salis_mundus",
+              "Count:3": 4,
               "OreDict:8": "",
               "Damage:3": 0
             }
           },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
+          "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
             "0:10": {
-              "id:8": "forestry:ingot_bronze",
-              "Count:3": 44,
+              "id:8": "thaumcraft:arcane_workbench",
+              "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
             },
             "1:10": {
-              "id:8": "thermalfoundation:material",
-              "Count:3": 64,
+              "id:8": "thaumcraft:crucible",
+              "Count:3": 1,
               "OreDict:8": "",
-              "Damage:3": 161
-            }
-          }
-        }
-      }
-    },
-    "5:10": {
-      "questID:3": 5,
-      "preRequisites:11": [
-        4
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:nether_star",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "partysinglereward:1": 0,
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "ismain:1": 0,
-          "name:8": "*yawn*",
-          "desc:8": "it is late, ain\u0027t it?"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "foundry:componentblock",
-              "Count:3": 5,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:3": 0
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -385,7 +361,7 @@
     "6:10": {
       "questID:3": 6,
       "preRequisites:11": [
-        5
+        15
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -394,10 +370,9 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "thaumcraft:research_table",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -408,32 +383,60 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "gib lava",
-          "desc:8": "gib gib"
+          "name:8": "Research Time",
+          "desc:8": "No Description"
         }
       },
       "tasks:9": {
         "0:10": {
-          "autoConsume:1": 1,
-          "requiredFluids:9": {
+          "partialMatch:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "requiredItems:9": {
             "0:10": {
-              "FluidName:8": "lava",
-              "Amount:3": 1000
+              "id:8": "thaumcraft:table_wood",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:scribing_tools",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
             }
           },
-          "index:3": 0,
-          "consume:1": 1,
-          "taskID:8": "bq_standard:fluid"
+          "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:dye",
+              "Count:3": 10,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:research_table",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {}
     },
     "7:10": {
       "questID:3": 7,
-      "preRequisites:11": [
-        6,
-        5
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -505,55 +508,925 @@
           }
         }
       }
+    },
+    "8:10": {
+      "questID:3": 8,
+      "preRequisites:11": [
+        5
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:nitor_yellow",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "First alchemy",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:nitor_yellow",
+              "Count:3": 2,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "9:10": {
+      "questID:3": 9,
+      "preRequisites:11": [
+        8,
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:alumentum",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Magical fuel",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:alumentum",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 5,
+              "OreDict:8": "",
+              "Damage:3": 2
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "10:10": {
+      "questID:3": 10,
+      "preRequisites:11": [
+        8
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:quartz",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Doing things (in)efficiently",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:nugget",
+              "Count:3": 9,
+              "OreDict:8": "",
+              "Damage:3": 9
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:crystal_essence",
+              "Count:3": 1,
+              "tag:10": {
+                "Aspects:9": {
+                  "0:10": {
+                    "amount:3": 1,
+                    "key:8": "ordo"
+                  }
+                }
+              },
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:crystal_essence",
+              "Count:3": 1,
+              "tag:10": {
+                "Aspects:9": {
+                  "0:10": {
+                    "amount:3": 1,
+                    "key:8": "metallum"
+                  }
+                }
+              },
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "11:10": {
+      "questID:3": 11,
+      "preRequisites:11": [
+        4
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:essentia_output",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Bringing some convenience",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:essentia_output",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:essentia_input",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "12:10": {
+      "questID:3": 12,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:jar_normal",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Storing essentia",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:jar_normal",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:jar_void",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "2:10": {
+              "id:8": "thaumcraft:phial",
+              "Count:3": 16,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "13:10": {
+      "questID:3": 13,
+      "preRequisites:11": [
+        12
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:resonator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Moving essentia",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:tube_valve",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:tube_restrict",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "2:10": {
+              "id:8": "thaumcraft:tube_oneway",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "3:10": {
+              "id:8": "thaumcraft:tube_filter",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "4:10": {
+              "id:8": "thaumcraft:tube_buffer",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "5:10": {
+              "id:8": "thaumcraft:resonator",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "14:10": {
+      "questID:3": 14,
+      "preRequisites:11": [
+        0,
+        13
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:bellows",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Better be safe",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:bellows",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thaumcraft:smelter_vent",
+              "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "15:10": {
+      "questID:3": 15,
+      "preRequisites:11": [
+        5
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:thaumometer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Thaumo-counter",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:thaumometer",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "16:10": {
+      "questID:3": 16,
+      "preRequisites:11": [
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:goggles",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "The whole different world",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:goggles",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "17:10": {
+      "questID:3": 17,
+      "preRequisites:11": [
+        16
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": 400,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:mechanism_simple",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Magic for charity",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:mechanism_simple",
+              "Count:3": 10,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "18:10": {
+      "questID:3": 18,
+      "preRequisites:11": [
+        16,
+        17
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": 800,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:mechanism_complex",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "More magic for charity",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:mechanism_complex",
+              "Count:3": 5,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "19:10": {
+      "questID:3": 19,
+      "preRequisites:11": [
+        8
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thaumcraft:nitor_red",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "nitor"
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Colorfull lights",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:nitor_yellow",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "minecraft:dye",
+              "Count:3": 1,
+              "OreDict:8": "dye",
+              "Damage:3": 1
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thaumcraft:nitor_orange",
+              "Count:3": 1,
+              "OreDict:8": "nitor",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "20:10": {
+      "questID:3": 20,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Refresh BQ",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "hideCommand:1": 0,
+          "rewardID:8": "bq_standard:command",
+          "viaPlayer:1": 1,
+          "index:3": 0,
+          "command:8": "/bq_user refresh"
+        }
+      }
+    },
+    "21:10": {
+      "questID:3": 21,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "New Quest",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
     }
   },
   "questLines:9": {
     "0:10": {
       "quests:9": {
         "0:10": {
-          "size:3": 42,
-          "x:3": -126,
-          "y:3": 12,
+          "size:3": 24,
+          "x:3": -132,
+          "y:3": 138,
           "id:3": 0
         },
         "1:10": {
-          "size:3": 24,
-          "x:3": -72,
-          "y:3": 12,
+          "size:3": 18,
+          "x:3": -174,
+          "y:3": 150,
           "id:3": 1
         },
         "2:10": {
-          "size:3": 24,
-          "x:3": -12,
-          "y:3": 12,
+          "size:3": 18,
+          "x:3": -210,
+          "y:3": 162,
           "id:3": 2
         },
         "3:10": {
-          "size:3": 24,
-          "x:3": -12,
-          "y:3": 60,
+          "size:3": 18,
+          "x:3": -156,
+          "y:3": 180,
           "id:3": 3
         },
         "4:10": {
-          "size:3": 24,
-          "x:3": 54,
-          "y:3": 36,
+          "size:3": 18,
+          "x:3": -66,
+          "y:3": 132,
           "id:3": 4
         },
         "5:10": {
           "size:3": 24,
-          "x:3": 108,
+          "x:3": -150,
+          "y:3": 12,
+          "id:3": 5
+        },
+        "6:10": {
+          "size:3": 24,
+          "x:3": -54,
+          "y:3": 12,
+          "id:3": 6
+        },
+        "7:10": {
+          "size:3": 24,
+          "x:3": -144,
+          "y:3": 54,
+          "id:3": 8
+        },
+        "8:10": {
+          "size:3": 24,
+          "x:3": -138,
+          "y:3": 102,
+          "id:3": 9
+        },
+        "9:10": {
+          "size:3": 18,
+          "x:3": -192,
+          "y:3": 78,
+          "id:3": 10
+        },
+        "10:10": {
+          "size:3": 18,
+          "x:3": -18,
+          "y:3": 120,
+          "id:3": 11
+        },
+        "11:10": {
+          "size:3": 18,
+          "x:3": -96,
+          "y:3": 132,
+          "id:3": 12
+        },
+        "12:10": {
+          "size:3": 18,
+          "x:3": -90,
+          "y:3": 156,
+          "id:3": 13
+        },
+        "13:10": {
+          "size:3": 24,
+          "x:3": -114,
+          "y:3": 186,
+          "id:3": 14
+        },
+        "14:10": {
+          "size:3": 24,
+          "x:3": -102,
+          "y:3": 12,
+          "id:3": 15
+        },
+        "15:10": {
+          "size:3": 24,
+          "x:3": -6,
+          "y:3": 12,
+          "id:3": 16
+        },
+        "16:10": {
+          "size:3": 12,
+          "x:3": -18,
+          "y:3": 54,
+          "id:3": 17
+        },
+        "17:10": {
+          "size:3": 12,
+          "x:3": 12,
+          "y:3": 54,
+          "id:3": 18
+        },
+        "18:10": {
+          "size:3": 18,
+          "x:3": -108,
           "y:3": 72,
-          "id:3": 7
+          "id:3": 19
         }
       },
       "lineID:3": 0,
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Caveman",
+          "name:8": "Thaumcraft",
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Getting started"
+          "desc:8": "Delving into magic"
         }
       },
       "order:3": 0
@@ -562,24 +1435,24 @@
       "quests:9": {
         "0:10": {
           "size:3": 24,
-          "x:3": -138,
-          "y:3": 12,
-          "id:3": 5
+          "x:3": -102,
+          "y:3": 18,
+          "id:3": 20
         },
         "1:10": {
           "size:3": 24,
-          "x:3": -60,
-          "y:3": 54,
-          "id:3": 6
+          "x:3": -54,
+          "y:3": 18,
+          "id:3": 21
         }
       },
       "lineID:3": 1,
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Maybe smth less boring",
+          "name:8": "Issue questline",
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Or maybe even more boring"
+          "desc:8": "No Description"
         }
       },
       "order:3": 1
@@ -591,7 +1464,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_image:8": "infitech-prototype:textures/gui/main_title.png",
       "home_offset_x:3": -600,
