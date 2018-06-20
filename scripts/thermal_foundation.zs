@@ -1,5 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import mods.gregtech.recipe.RecipeMap;
 
 // These are covered by GT meta tools
 recipes.remove(<thermalfoundation:tool.pickaxe_copper>);
@@ -87,4 +88,47 @@ recipes.remove(<thermalfoundation:material:325>);
 recipes.remove(<thermalfoundation:material:326>);
 recipes.remove(<thermalfoundation:material:327>);
 
+
+// GT Style block crafting
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
+recipes.remove(<thermalfoundation:storage:8>);
+recipes.remove(<thermalfoundation:storage_alloy:5>);
+recipes.remove(<thermalfoundation:storage_alloy:6>);
+recipes.remove(<thermalfoundation:storage_alloy:7>);
+
+compressor.recipeBuilder()
+	.inputs(<ore:ingotMithril> * 9)
+	.outputs(<thermalfoundation:storage:8>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:ingotSignalum> * 9)
+	.outputs(<thermalfoundation:storage_alloy:5>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:ingotLumium> * 9)
+	.outputs(<thermalfoundation:storage_alloy:6>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:ingotEnderium> * 9)
+	.outputs(<thermalfoundation:storage_alloy:7>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+
+recipes.remove(<thermalfoundation:storage>);
+recipes.remove(<thermalfoundation:storage:1>);
+recipes.remove(<thermalfoundation:storage:2>);
+recipes.remove(<thermalfoundation:storage:3>);
+recipes.remove(<thermalfoundation:storage:4>);
+recipes.remove(<thermalfoundation:storage:5>);
+recipes.remove(<thermalfoundation:storage:6>);
+recipes.remove(<thermalfoundation:storage:7>);
+recipes.remove(<thermalfoundation:storage_alloy>);
+recipes.remove(<thermalfoundation:storage_alloy:1>);
+recipes.remove(<thermalfoundation:storage_alloy:2>);
+recipes.remove(<thermalfoundation:storage_alloy:3>);
+recipes.remove(<thermalfoundation:storage_alloy:4>);
 

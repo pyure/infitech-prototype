@@ -1,5 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import mods.gregtech.recipe.RecipeMap;
 
 // GT Style gear crafting
 recipes.remove(<advancedrocketry:productgear:0>);
@@ -44,3 +45,28 @@ recipes.addShaped(<advancedrocketry:productplate:1>, [
 	[<ore:craftingToolHardHammer>],
 	[<ore:ingotTitaniumIridium>],
 	[<ore:ingotTitaniumIridium>]]);
+
+// GT Style block crafting
+recipes.remove(<advancedrocketry:metal0:1>);
+recipes.remove(<advancedrocketry:metal0>);
+
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
+compressor.recipeBuilder()
+	.inputs(<ore:ingotTitaniumIridium> * 9)
+	.outputs(<advancedrocketry:metal0:1>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:ingotTitaniumAlumide> * 9)
+	.outputs(<advancedrocketry:metal0>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+
+recipes.remove(<libvulpes:metal0:9>);
+recipes.remove(<libvulpes:metal0:7>);
+recipes.remove(<libvulpes:metal0:6>);
+recipes.remove(<libvulpes:metal0:5>);
+recipes.remove(<libvulpes:metal0:4>);
+recipes.remove(<libvulpes:metal0:10>);
+
