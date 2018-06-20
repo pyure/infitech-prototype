@@ -2,7 +2,7 @@
 	"dependencies": "thermalfoundation",
 	"populate": {
 		"oil_sand_clathrate": {
-			"distribution": "uniform",
+			"distribution": "uniform", "enabled": false,
 			"generator": {
 				"block": "thermalfoundation:ore_fluid",
 				"material": [
@@ -30,7 +30,7 @@
 			"dimension": "all"
 		},
 		"oil_shale_clathrate": {
-			"distribution": "uniform",
+			"distribution": "uniform", "enabled": false,
 			"generator": {
 				"block": [
 					{
@@ -80,7 +80,7 @@
 			"dimension": "all"
 		},
 		"oil_sand": {
-			"distribution": "uniform",
+			"distribution": "uniform", "enabled": false,
 			"generator": {
 				"type": "geode",
 				"block": [
@@ -127,7 +127,7 @@
 			}
 		},
 		"oil_shale": {
-			"distribution": "uniform",
+			"distribution": "uniform", "enabled": false,
 			"generator": {
 				"type": "geode",
 				"block": [

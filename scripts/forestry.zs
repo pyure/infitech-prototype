@@ -29,3 +29,9 @@ recipes.removeShaped(<forestry:gear_tin>, [
 	[null, <ore:ingotTin>, null],
 	[<ore:ingotTin>, <ore:ingotCopper>, <ore:ingotTin>],
 	[null, <ore:ingotTin>, null]]);
+
+// WOOD PILES
+var woodPile = <forestry:wood_pile>;
+
+recipes.remove(woodPile);
+recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);

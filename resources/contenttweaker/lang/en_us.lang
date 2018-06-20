@@ -30,6 +30,25 @@ item.contenttweaker.flint_mortar.name=Flint Mortar
 item.contenttweaker.iron_mortar.name=Iron Mortar
 item.contenttweaker.steel_mortar.name=Steel Mortar
 
+item.contenttweaker.fire_bow.name=Fire Bow
+
+item.contenttweaker.cluster_cobalt.name=Native Cobalt Cluster
+item.contenttweaker.cluster_platinum.name=Native Platinum Cluster
+item.contenttweaker.cluster_nickel.name=Native Nickel Cluster
+item.contenttweaker.cluster_aluminium.name=Native Aluminium Cluster
+item.contenttweaker.cluster_antimony.name=Native Antimony Cluster
+item.contenttweaker.cluster_beryllium.name=Native Beryllium Cluster
+item.contenttweaker.cluster_cassiterite.name=Native Cassiterite Cluster
+item.contenttweaker.cluster_iridium.name=Native Iridium Cluster
+item.contenttweaker.cluster_lithium.name=Native Lithium Cluster
+item.contenttweaker.cluster_manganese.name=Native Manganese Cluster
+item.contenttweaker.cluster_molybdenum.name=Native Molybdenum Cluster
+item.contenttweaker.cluster_naquadah.name=Native Naquadah Cluster
+item.contenttweaker.cluster_neodymium.name=Native Neodymium Cluster
+item.contenttweaker.cluster_palladium.name=Native Palladium Cluster
+item.contenttweaker.cluster_thorium.name=Native Thorium Cluster
+item.contenttweaker.cluster_tungsten.name=Native Tungsten Cluster
+item.contenttweaker.cluster_uranium238.name=Native Uranium-238 Cluster
 
 item.contenttweaker.bronze_hammer.name=Bronze Hammer
 item.contenttweaker.flint_hammer.name=Flint Hammer

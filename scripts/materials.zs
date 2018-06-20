@@ -89,6 +89,7 @@ var polyethylene =  MaterialSystem.getMaterialBuilder().setName('Polyethylene').
 var raw_rubber =  MaterialSystem.getMaterialBuilder().setName('Raw Rubber').setColor(13420425).build();
 var lepidolite =  MaterialSystem.getMaterialBuilder().setName('Lepidolite').setColor(15741580).build();
 var red_alloy =  MaterialSystem.getMaterialBuilder().setName('Red Alloy').setColor(13107200).build();
+var compressed_wrought_iron = MaterialSystem.getMaterialBuilder().setName('Compressed Wrought Iron').setColor(13151460).build();
 
 /*
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setPartType(MaterialSystem.getPartType("item")).build();
@@ -98,7 +99,7 @@ mods.contenttweaker.MaterialSystem.getPartBuilder().setName("purified_ore").setP
 /* MaterialSystem.getPartBuildering.setName("this_thing").setPartType("ITEM").setHasOverlay(true); */
 
 
-var metal_list = [silicon, tin, soldering_alloy, antimony, aluminium, tungstensteel, titanium, steel, cobalt, stainless_steel, copper, bismuth_bronze, gold, iron, lead, lithium, magnesium, manganese, platinum, nickel, silver, bronze, iridium, graphite, wrought_iron, polyethylene] as Material[];
+var metal_list = [compressed_wrought_iron] as Material[];
 var machine_frame_metals_list = [bronze, steel, titanium, tungstensteel, aluminium] as Material[];
 var turbine_rotor_metals_list = [steel] as Material[];
 var mortar_metals_list = [iron, copper, bronze, steel] as Material[];
@@ -114,7 +115,7 @@ var ore_part_names = ["crushed_ore", "dust", "tiny_dust", "washed_ore", "impure_
 var dust_part_names = ["dust", "tiny_dust"] as string[]; 
 
 // ORES
-var ore_list = [antimony, cobalt, pyrolusite, tetrahedrite, stibnite, graphite, lignite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, limonite, lepidolite] as Material[];
+var ore_list = [] as Material[];
 var ore_byproducts_list = [antimony, cobalt, magnesium, manganese, platinum, iridium, tin, gold, iron, silver, copper, lead, nickel, chrome, lapis, lithium, boron, uranium238, uranium235, thorium, zinc, aluminium, 
                       tetrahedrite, stibnite, graphite, lignite, limonite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, pyrolusite, emerald, sulfur, lepidolite] as Material[];
 //
@@ -201,7 +202,7 @@ for i, metal in metal_list {
 
 for i, metal in ore_list {
     var ores = metal.registerParts(ore_types);
-    for i, ore in ores {
+    for j, ore in ores {
         var oreData = ore.getData();
         oreData.addDataValue("variants", "minecraft:stone,minecraft:end_stone,minecraft:netherrack");
         oreData.addDataValue("hardness", "3,3,3");
@@ -210,6 +211,7 @@ for i, metal in ore_list {
         oreData.addDataValue("harvestLevel", "1,1,1");
     }
 }
+
 
 /* This section allows us to define materials-parts that can include vanillafactory scripting */
 
