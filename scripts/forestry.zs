@@ -14,6 +14,22 @@ recipes.addShapeless(dustBronze * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dust
 
 recipes.remove(<forestry:ingot_bronze> * 4);
 
+// Gears
+recipes.removeShaped(<forestry:gear_bronze>, [
+	[null, <ore:ingotBronze>, null],
+	[<ore:ingotBronze>, <ore:ingotCopper>, <ore:ingotBronze>],
+	[null, <ore:ingotBronze>, null]]);
+
+recipes.removeShaped(<forestry:gear_copper>, [
+	[null, <ore:ingotCopper>, null],
+	[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
+	[null, <ore:ingotCopper>, null]]);
+
+recipes.removeShaped(<forestry:gear_tin>, [
+	[null, <ore:ingotTin>, null],
+	[<ore:ingotTin>, <ore:ingotCopper>, <ore:ingotTin>],
+	[null, <ore:ingotTin>, null]]);
+
 // WOOD PILES
 var woodPile = <forestry:wood_pile>;
 
