@@ -7,27 +7,22 @@ import crafttweaker.recipes.IRecipeAction;
 
 
 // These are covered by GT meta tools
-recipes.remove(<minecraft:stone_pickaxe>);
 recipes.remove(<minecraft:diamond_pickaxe>);
 recipes.remove(<minecraft:golden_pickaxe>);
 recipes.remove(<minecraft:iron_pickaxe>);
 
-recipes.remove(<minecraft:stone_shovel>);
 recipes.remove(<minecraft:diamond_shovel>);
 recipes.remove(<minecraft:golden_shovel>);
 recipes.remove(<minecraft:iron_shovel>);
 
-recipes.remove(<minecraft:stone_sword>);
 recipes.remove(<minecraft:diamond_sword>);
 recipes.remove(<minecraft:golden_sword>);
 recipes.remove(<minecraft:iron_sword>);
 
-recipes.remove(<minecraft:stone_axe>);
 recipes.remove(<minecraft:diamond_axe>);
 recipes.remove(<minecraft:golden_axe>);
 recipes.remove(<minecraft:iron_axe>);
 
-recipes.remove(<minecraft:stone_hoe>);
 recipes.remove(<minecraft:iron_hoe>);
 recipes.remove(<minecraft:diamond_hoe>);
 recipes.remove(<minecraft:golden_hoe>);
@@ -56,6 +51,9 @@ recipes.addShaped("fire_bow_recipe", fireBow,
   function(output, inputs, crafting) {
     return output.withDamage(inputs.myItem.damage);
 }, null);
+
+// Alternative Torch
+
 
 //PISTONS
 recipes.remove(<minecraft:piston>);
