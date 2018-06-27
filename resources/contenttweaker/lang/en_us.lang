@@ -25,8 +25,14 @@ item.contenttweaker.sticky_resin.name=Sticky Resin
 item.contenttweaker.tree_tap.name=Tree Tap
 item.contenttweaker.rubber.name=Rubber
 item.contenttweaker.raw_rubber.name=Raw Rubber
+
+// MOLDS
+item.contenttweaker.sword_blade_mold.name=Sword Blade Mold
+item.contenttweaker.axe_head_mold.name=Axe Head Mold
+item.contenttweaker.file_head_mold.name=File Head Mold
+item.contenttweaker.shovel_head_mold.name=Shovel Head Mold
 item.contenttweaker.pickaxe_head_mold.name=Pickaxe Head Mold
-item.contenttweaker.pickaxe_head_mold.name=Hammer Head Mold
+item.contenttweaker.hammer_head_mold.name=Hammer Head Mold
 
 item.contenttweaker.fire_bow.name=Fire Bow
 
