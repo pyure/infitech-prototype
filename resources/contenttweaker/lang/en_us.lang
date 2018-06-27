@@ -25,10 +25,14 @@ item.contenttweaker.sticky_resin.name=Sticky Resin
 item.contenttweaker.tree_tap.name=Tree Tap
 item.contenttweaker.rubber.name=Rubber
 item.contenttweaker.raw_rubber.name=Raw Rubber
-item.contenttweaker.bronze_mortar.name=Bronze Mortar
-item.contenttweaker.flint_mortar.name=Flint Mortar
-item.contenttweaker.iron_mortar.name=Iron Mortar
-item.contenttweaker.steel_mortar.name=Steel Mortar
+
+// MOLDS
+item.contenttweaker.sword_blade_mold.name=Sword Blade Mold
+item.contenttweaker.axe_head_mold.name=Axe Head Mold
+item.contenttweaker.file_head_mold.name=File Head Mold
+item.contenttweaker.shovel_head_mold.name=Shovel Head Mold
+item.contenttweaker.pickaxe_head_mold.name=Pickaxe Head Mold
+item.contenttweaker.hammer_head_mold.name=Hammer Head Mold
 
 item.contenttweaker.fire_bow.name=Fire Bow
 
@@ -84,23 +88,7 @@ fluid.fluid_latex=Latex
 fluid.fluid_distilled_water=Distilled Water
 fluid.fluid_placeholder_acid1=Placeholder Acid I
 fluid.fluid_placeholder_acid2=Placeholder Acid II
-fluid.hydrofluoric_acid=Hydrofluoric Acid
 fluid.fluorine=Fluorine
 fluid.uranium_hexafluoride=Uranium Hexafluoride
-fluid.sulfuric_gas=Sulfuric Gas
-fluid.sulfuric_naphtha=Sulfuric Naphtha
-fluid.sulfuric_light_fuel=Sulfuric Light Fuel
-fluid.sulfuric_heavy_fuel=Sulfuric Heavy Fuel
-fluid.heavy_oil=Heavy Oil
-fluid.cracked_light_fuel=Cracked Light Fuel
-fluid.cracked_heavy_fuel=Cracked Heavy Fuel
 fluid.fish_oil=Fish Oil
-fluid.heavy_fuel=Heavy Fuel
-fluid.hydrogen_sulfide=Hydrogen Sulfide
-fluid.light_fuel=Light Fuel
-fluid.natural_gas=Natural Gas
-fluid.refinery_gas=Refinery Gas
-fluid.toluene=Toluene
-fluid.methane=Methane
-fluid.epichlorohydrin=Epichlorohydrin
-fluid.chlorine=Chlorine
+fluid.fermented_biomass=Fermented Biomass

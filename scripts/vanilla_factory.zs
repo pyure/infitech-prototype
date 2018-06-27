@@ -84,90 +84,23 @@ uranium_hexafluoride.density = 100;
 uranium_hexafluoride.viscosity = 100;
 uranium_hexafluoride.register();
 
-var sulfuric_gas = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_gas", "16777215");
-sulfuric_gas.density = 100;
-sulfuric_gas.viscosity = 100;
-sulfuric_gas.register();
 
-var sulfuric_naphtha = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_naphtha", "16776910");
-sulfuric_naphtha.density = 100;
-sulfuric_naphtha.viscosity = 100;
-sulfuric_naphtha.register();
+var fermented_biomass = mods.contenttweaker.VanillaFactory.createFluid("fermented_biomass", "4478208");
+fermented_biomass.density = 100;
+fermented_biomass.viscosity = 100;
+fermented_biomass.register();
 
-var sulfuric_light_fuel = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_light_fuel", "16776100");
-sulfuric_light_fuel.density = 100;
-sulfuric_light_fuel.viscosity = 100;
-sulfuric_light_fuel.register();
+var ammonia = mods.contenttweaker.VanillaFactory.createFluid("ammonia", "4142208");
+ammonia.density = 100;
+ammonia.viscosity = 100;
+ammonia.register();
 
-var sulfuric_heavy_fuel = mods.contenttweaker.VanillaFactory.createFluid("sulfuric_heavy_fuel", "16776310");
-sulfuric_heavy_fuel.density = 100;
-sulfuric_heavy_fuel.viscosity = 100;
-sulfuric_heavy_fuel.register();
-
-var heavy_oil = mods.contenttweaker.VanillaFactory.createFluid("heavy_oil", "657930");
-heavy_oil.density = 100;
-heavy_oil.viscosity = 100;
-heavy_oil.register();
-
-var cracked_light_fuel = mods.contenttweaker.VanillaFactory.createFluid("cracked_light_fuel", "16776960");
-cracked_light_fuel.density = 100;
-cracked_light_fuel.viscosity = 100;
-cracked_light_fuel.register();
-
-var cracked_heavy_fuel = mods.contenttweaker.VanillaFactory.createFluid("cracked_heavy_fuel", "16776560");
-cracked_heavy_fuel.density = 100;
-cracked_heavy_fuel.viscosity = 100;
-cracked_heavy_fuel.register();
 
 var fish_oil = mods.contenttweaker.VanillaFactory.createFluid("fish_oil", "16761856");
 fish_oil.density = 100;
 fish_oil.viscosity = 100;
 fish_oil.register();
 
-var heavy_fuel = mods.contenttweaker.VanillaFactory.createFluid("heavy_fuel", "16776960");
-heavy_fuel.density = 100;
-heavy_fuel.viscosity = 100;
-heavy_fuel.register();
-
-var hydrogen_sulfide = mods.contenttweaker.VanillaFactory.createFluid("hydrogen_sulfide", "16777215");
-hydrogen_sulfide.density = 100;
-hydrogen_sulfide.viscosity = 100;
-hydrogen_sulfide.register();
-
-var light_fuel = mods.contenttweaker.VanillaFactory.createFluid("light_fuel", "16776999");
-light_fuel.density = 100;
-light_fuel.viscosity = 100;
-light_fuel.register();
-
-var natural_gas = mods.contenttweaker.VanillaFactory.createFluid("natural_gas", "16777215");
-natural_gas.density = 100;
-natural_gas.viscosity = 100;
-natural_gas.register();
-
-var refinery_gas = mods.contenttweaker.VanillaFactory.createFluid("refinery_gas", "16777215");
-refinery_gas.density = 100;
-refinery_gas.viscosity = 100;
-refinery_gas.register();
-
-var toluene = mods.contenttweaker.VanillaFactory.createFluid("toluene", "5250309");
-toluene.density = 100;
-toluene.viscosity = 100;
-toluene.register();
-
-var methane = mods.contenttweaker.VanillaFactory.createFluid("methane", "16777215");
-methane.density = 100;
-methane.viscosity = 100;
-methane.register();
-
-var epichlorohydrin = mods.contenttweaker.VanillaFactory.createFluid("epichlorohydrin", "5250309");
-epichlorohydrin.density = 100;
-epichlorohydrin.viscosity = 100;
-epichlorohydrin.register();
-
-var chlorine = mods.contenttweaker.VanillaFactory.createFluid("chlorine", "16777215");
-chlorine.density = 100;
-chlorine.viscosity = 100;
-chlorine.register();
 
 
 var sticky_resin = VanillaFactory.createItem("sticky_resin");
