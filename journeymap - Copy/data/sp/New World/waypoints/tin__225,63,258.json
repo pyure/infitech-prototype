@@ -1,0 +1,18 @@
+{
+  "id": "tin?_225,63,258",
+  "name": "tin?",
+  "icon": "waypoint-normal.png",
+  "x": 225,
+  "y": 63,
+  "z": 258,
+  "r": 166,
+  "g": 38,
+  "b": 159,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

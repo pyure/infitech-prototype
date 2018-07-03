@@ -1,0 +1,18 @@
+{
+  "id": "Sapphire_492,27,380",
+  "name": "Sapphire",
+  "icon": "waypoint-normal.png",
+  "x": 492,
+  "y": 27,
+  "z": 380,
+  "r": 175,
+  "g": 174,
+  "b": 23,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

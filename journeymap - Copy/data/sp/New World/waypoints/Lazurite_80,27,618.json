@@ -1,0 +1,18 @@
+{
+  "id": "Lazurite_80,27,618",
+  "name": "Lazurite",
+  "icon": "waypoint-normal.png",
+  "x": 80,
+  "y": 27,
+  "z": 618,
+  "r": 203,
+  "g": 76,
+  "b": 203,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

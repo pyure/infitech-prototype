@@ -1,0 +1,18 @@
+{
+  "id": "Pitchblende_216,27,630",
+  "name": "Pitchblende",
+  "icon": "waypoint-normal.png",
+  "x": 216,
+  "y": 27,
+  "z": 630,
+  "r": 173,
+  "g": 74,
+  "b": 40,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

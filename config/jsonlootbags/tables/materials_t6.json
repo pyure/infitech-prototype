@@ -1,0 +1,69 @@
+{
+    "pools": [
+        {
+            "rolls": {
+            "min": 1,
+            "max": 2
+        },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 30,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 30
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 10235
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 20,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 8,
+                                "max": 15
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 10032
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 20,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 30
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 10041
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

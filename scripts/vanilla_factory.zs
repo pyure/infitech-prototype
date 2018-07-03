@@ -9,29 +9,7 @@ import mods.contenttweaker.IItemDestroySpeed;
 import mods.contenttweaker.IItemDestroyedBlock;
 import crafttweaker.data.IData;
 
-// BLOCKS
-var bronzePlatedBrick = VanillaFactory.createBlock("bronze_plated_brick", <blockmaterial:Iron>);
-bronzePlatedBrick.setBlockHardness(5.0);
-bronzePlatedBrick.setBlockResistance(5.0);
-bronzePlatedBrick.setToolClass("pickaxe");
-bronzePlatedBrick.setToolLevel(2);
-bronzePlatedBrick.register();
 
-var driedSpruceLog = VanillaFactory.createBlock("dried_spruce_log", <blockmaterial:wood>);
-driedSpruceLog.setBlockHardness(2.0);
-driedSpruceLog.setBlockResistance(2.0);
-driedSpruceLog.setToolClass("axe");
-driedSpruceLog.setToolLevel(1);
-driedSpruceLog.register();
-
-// ITEMS
-var rubber = VanillaFactory.createItem("rubber");
-rubber.maxStackSize = 64;
-rubber.register();
-
-var raw_rubber = VanillaFactory.createItem("raw_rubber");
-raw_rubber.maxStackSize = 64;
-raw_rubber.register();
 
 
 var gelled_toluene = VanillaFactory.createItem("gelled_toluene");
@@ -95,19 +73,8 @@ ammonia.density = 100;
 ammonia.viscosity = 100;
 ammonia.register();
 
-
 var fish_oil = mods.contenttweaker.VanillaFactory.createFluid("fish_oil", "16761856");
 fish_oil.density = 100;
 fish_oil.viscosity = 100;
 fish_oil.register();
 
-
-
-var sticky_resin = VanillaFactory.createItem("sticky_resin");
-sticky_resin.maxStackSize = 64;
-sticky_resin.register();
-
-var tree_tap = VanillaFactory.createItem("tree_tap");
-tree_tap.maxStackSize = 1;
-tree_tap.maxDamage = 32;
-tree_tap.register();

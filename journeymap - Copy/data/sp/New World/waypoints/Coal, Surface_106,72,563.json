@@ -1,0 +1,18 @@
+{
+  "id": "Coal, Surface_106,72,563",
+  "name": "Coal, Surface",
+  "icon": "waypoint-normal.png",
+  "x": 106,
+  "y": 72,
+  "z": 563,
+  "r": 163,
+  "g": 153,
+  "b": 139,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

@@ -29,3 +29,4 @@ axe_head_mold.register();
 var shovel_head_mold = VanillaFactory.createItem("shovel_head_mold");
 shovel_head_mold.maxStackSize = 64;
 shovel_head_mold.register();
+

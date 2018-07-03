@@ -1,0 +1,18 @@
+{
+  "id": "Olivine_464,48,530",
+  "name": "Olivine",
+  "icon": "waypoint-normal.png",
+  "x": 464,
+  "y": 48,
+  "z": 530,
+  "r": 64,
+  "g": 84,
+  "b": 224,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

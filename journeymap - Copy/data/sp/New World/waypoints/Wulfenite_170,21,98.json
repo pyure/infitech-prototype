@@ -1,0 +1,18 @@
+{
+  "id": "Wulfenite_170,21,98",
+  "name": "Wulfenite",
+  "icon": "waypoint-normal.png",
+  "x": 170,
+  "y": 21,
+  "z": 98,
+  "r": 134,
+  "g": 26,
+  "b": 79,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

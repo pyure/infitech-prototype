@@ -1,11 +1,18 @@
 import crafttweaker.liquid.ILiquidStack;
 
+mods.foundry.Melting.clear();
+//mods.foundry.Casting.clear(); Casting doesn't clear yet.  https://github.com/Shadows-of-Fire/Foundry/issues/30
+
 var pickaxeHeadMold = <contenttweaker:pickaxe_head_mold>;
 var hammerHeadMold = <contenttweaker:hammer_head_mold>;
 var swordBladeMold = <contenttweaker:sword_blade_mold>;
 var fileHeadMold = <contenttweaker:file_head_mold>;
 var axeHeadMold = <contenttweaker:axe_head_mold>;
 var shovelHeadMold = <contenttweaker:shovel_head_mold>;
+var ingotMold = <foundry:mold>;
+var blockMold = <foundry:mold:4>;
+var nuggetMold = <foundry:mold:26>;
+
 
 mods.foundry.Casting.addMold(pickaxeHeadMold);
 mods.foundry.Casting.addMold(hammerHeadMold);
@@ -16,62 +23,62 @@ mods.foundry.Casting.addMold(shovelHeadMold);
 
 mods.foundry.MoldStation.addRecipe(pickaxeHeadMold, 6, 6, 
 [
-  4,4,4,4,4,4,
-  4,4,4,4,4,4,
-  4,4,3,3,4,4,
-  4,3,3,3,3,4,
-  4,3,4,4,3,4,
-  4,4,4,4,4,4
+  0,0,0,0,0,0,
+  0,0,0,0,0,0,
+  0,0,2,2,0,0,
+  0,2,2,2,2,0,
+  0,2,0,0,2,0,
+  0,0,0,0,0,0
 ]); 
 
 mods.foundry.MoldStation.addRecipe(hammerHeadMold, 6, 6, 
 [
-  4,4,4,4,4,4,
-  4,4,3,3,4,4,
-  4,4,3,3,1,4,
-  4,4,3,3,1,4,
-  4,4,3,3,4,4,
-  4,4,4,4,4,4
+  0,0,0,0,0,0,
+  0,0,2,2,0,0,
+  0,0,2,2,1,0,
+  0,0,2,2,1,0,
+  0,0,2,2,0,0,
+  0,0,0,0,0,0
 ]); 
 
 mods.foundry.MoldStation.addRecipe(swordBladeMold, 6, 6, 
 [
-  4,4,4,4,4,4,
-  4,4,4,2,4,4,
-  4,4,3,3,4,4,
-  4,4,3,3,4,4,
-  4,4,3,3,4,4,
-  4,4,4,4,4,4
+  0,0,0,0,0,0,
+  0,0,0,1,0,0,
+  0,0,2,2,0,0,
+  0,0,2,2,0,0,
+  0,0,2,2,0,0,
+  0,0,0,0,0,0
 ]);
  
 mods.foundry.MoldStation.addRecipe(fileHeadMold, 6, 6, 
 [
-  4,4,4,4,4,4,
-  4,4,2,2,4,4,
-  4,4,3,3,4,4,
-  4,4,3,3,4,4,
-  4,4,3,3,4,4,
-  4,4,4,4,4,4
+  0,0,0,0,0,0,
+  0,0,1,1,0,0,
+  0,0,2,2,0,0,
+  0,0,2,2,0,0,
+  0,0,2,2,0,0,
+  0,0,0,0,0,0
 ]);   
  
 mods.foundry.MoldStation.addRecipe(axeHeadMold, 6, 6, 
 [
-  4,4,4,4,4,4,
-  4,4,3,2,4,4,
-  4,3,3,2,4,4,
-  4,3,3,2,4,4,
-  4,4,3,2,4,4,
-  4,4,4,4,4,4
+  0,0,0,0,0,0,
+  0,0,2,1,0,0,
+  0,2,2,1,0,0,
+  0,2,2,1,0,0,
+  0,0,2,1,0,0,
+  0,0,0,0,0,0
 ]);   
  
 mods.foundry.MoldStation.addRecipe(shovelHeadMold, 6, 6, 
 [
-  4,4,4,4,4,4,
-  4,2,2,2,2,4,
-  4,3,3,3,3,4,
-  4,4,3,3,4,4,
-  4,4,4,4,4,4,
-  4,4,4,4,4,4
+  0,0,0,0,0,0,
+  0,1,1,1,1,0,
+  0,2,2,2,2,0,
+  0,0,2,2,0,0,
+  0,0,0,0,0,0,
+  0,0,0,0,0,0
 ]);   
 
 
@@ -93,15 +100,19 @@ val tool_array = [
   "WroughtIron" 
 ] as string[];
 
+val ingot_casting_array = [
+  "Cobalt"
+] as string[];
+
 
 val ingot_melting_map = {
   "Aluminium" : 2400,
   "Chrome" : 2400,
-  "Cobalt" : 1800,
-  "Gold" : 600,
+  "Cobalt" : 1650,
+  "Gold" : 800,
   "Iron" : 1400,
-  "Tin" : 500,
-  "Copper" : 600,
+  "Tin" : 800,
+  "Copper" : 800,
   "Lead" : 1300,
   "Nickel" : 1200,
   "Silver" : 700,
@@ -115,19 +126,23 @@ val ingot_melting_map = {
 
 
 val ore_melting_map = {
-  "Cobalt" : 1800,
-  "Gold" : 600,
+  "Cobalt" : 1650,
+  "Cobaltite" : 1650,  
+  "Gold" : 800,
   "Iron" : 1400,
-  "Tin" : 500,
-  "Copper" : 600,
+  "Tin" : 800,
+  "Cassiterite" : 800,
+  "Copper" : 800,
   "Lead" : 1300,
   "Nickel" : 1200,
-  "Silver" : 700,  
-  "BandedIron" : 1300,
-  "YellowLimonite" : 1300,
-  "BrownLimonite" : 1300,
-  "Tetrahedrite" : 1300,
-  "Malachite" : 1300
+  "Silver" : 800,  
+  "BandedIron" : 1450,
+  "YellowLimonite" : 1450,
+  "BrownLimonite" : 1450,
+  "Tetrahedrite" : 1500,
+  "Pyrite" : 1500,
+  "Chalcopyrite" : 1500,
+  "Malachite" : 1500
 } as int[string];
 
 
@@ -138,14 +153,18 @@ val metal_liquid_map = {
   "Carbon" : <liquid:carbon>,
   "Chrome" : <liquid:chrome>,
   "Cobalt" : <liquid:cobalt>,
+  "Cobaltite" : <liquid:cobalt>,
   "Gallium" : <liquid:gallium>,
   "Gold" : <liquid:gold>,
   "Iridium" : <liquid:iridium>,
   "Iron" : <liquid:iron>,
   "Tin" : <liquid:tin>,
+  "Cassiterite" : <liquid:tin>,
   "Copper" : <liquid:copper>,
   "YellowLimonite" : <liquid:iron>,
   "BrownLimonite" : <liquid:iron>,
+  "Chalcopyrite" : <liquid:copper>,
+  "Pyrite" : <liquid:iron>,
   "BandedIron" : <liquid:copper>,
   "Tetrahedrite" : <liquid:copper>,
   "Malachite" : <liquid:copper>,
@@ -191,7 +210,7 @@ val metal_liquid_map = {
   "DamascusSteel" : <liquid:damascus_steel>,
   "TungstenSteel" : <liquid:tungsten_steel>,
   "CobaltBrass" : <liquid:cobalt_brass>,
-  "IronMagnetic" : <liquid:iron_magnetic  >,
+  "IronMagnetic" : <liquid:iron_magnetic>,
   "SteelMagnetic" : <liquid:steel_magnetic>,
   "NeodymiumMagnetic" : <liquid:neodymium_magnetic>,
   "TungstenCarbide" : <liquid:tungsten_carbide>,
@@ -226,18 +245,33 @@ for name in tool_array {
 }
 
 // Replace all default melting recipes
-mods.foundry.Melting.clear();
+
 
 for name, melting_point in ore_melting_map {
   print("Melting dust, ore and crushed for " ~ name);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ore" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 192, oreDict["crushed" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
 }
 
 for name, melting_point in ingot_melting_map {
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ingot" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 16, oreDict["nugget" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 1296, oreDict["block" ~ name], melting_point);
 }
+
+for name in ingot_casting_array {
+  var ingot = oreDict["ingot" ~ name].firstItem;
+  var block = oreDict["block" ~ name].firstItem;
+  var nugget = oreDict["nugget" ~ name].firstItem;
+
+  
+  mods.foundry.Casting.addRecipe(ingot, metal_liquid_map[name] * 144, ingotMold); 
+  mods.foundry.Casting.addRecipe(block, metal_liquid_map[name] * 1296, blockMold);
+  mods.foundry.Casting.addRecipe(nugget, metal_liquid_map[name] * 16, nuggetMold); 
+}
+
 
 /* ====================================== MACHINES ============================================= */
 var rodCopper = <ore:stickCopper>;

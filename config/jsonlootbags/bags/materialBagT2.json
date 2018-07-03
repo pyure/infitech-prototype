@@ -1,0 +1,11 @@
+{
+  "loot-table": "jsonlootbags:materials_t2",
+  "name": "materialbagt2",
+  "human-name": "Bag of materials T2",
+  "texture": "jsonlootbags:bag",
+  "rarity": "Common",
+  "effect": false,
+  "colors": [
+    "#C07D44"
+  ]
+}

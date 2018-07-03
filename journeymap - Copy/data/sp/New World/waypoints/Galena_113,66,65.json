@@ -1,0 +1,18 @@
+{
+  "id": "Galena_113,66,65",
+  "name": "Galena",
+  "icon": "waypoint-normal.png",
+  "x": 113,
+  "y": 66,
+  "z": 65,
+  "r": 104,
+  "g": 116,
+  "b": 144,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

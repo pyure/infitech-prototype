@@ -104,7 +104,7 @@ var machine_frame_metals_list = [bronze, steel, titanium, tungstensteel, alumini
 var turbine_rotor_metals_list = [steel] as Material[];
 var mortar_metals_list = [iron, copper, bronze, steel] as Material[];
 var machine_subcomponents_list = [bronze, steel, titanium, tungstensteel, aluminium] as Material[];
-var gemstone_list = [diamond, coal, redstone, nether_quartz] as Material[];
+var gemstone_list = [] as Material[];
 var tool_metal_list = [flint, bronze, iron, steel] as Material[];
 var dust_list = [raw_rubber, carbon, polyethylene] as Material[];
 var cable_list = [bronze, tin, red_alloy, titanium, tungstensteel, aluminium] as Material[];
@@ -116,8 +116,7 @@ var dust_part_names = ["dust", "tiny_dust"] as string[];
 
 // ORES
 var ore_list = [] as Material[];
-var ore_byproducts_list = [antimony, cobalt, magnesium, manganese, platinum, iridium, tin, gold, iron, silver, copper, lead, nickel, chrome, lapis, lithium, boron, uranium238, uranium235, thorium, zinc, aluminium, 
-                      tetrahedrite, stibnite, graphite, lignite, limonite, salt, galena, bauxite, ilmenite, beryllium, pitchblende, pyrolusite, emerald, sulfur, lepidolite] as Material[];
+var ore_byproducts_list = [] as Material[];
 //
 var ore_types = ["ore"] as string[];
 

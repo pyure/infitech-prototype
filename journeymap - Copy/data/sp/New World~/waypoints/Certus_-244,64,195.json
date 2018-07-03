@@ -1,0 +1,18 @@
+{
+  "id": "Certus_-244,64,195",
+  "name": "Certus",
+  "icon": "waypoint-normal.png",
+  "x": -244,
+  "y": 64,
+  "z": 195,
+  "r": 96,
+  "g": 164,
+  "b": 93,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}
