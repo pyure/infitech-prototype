@@ -43,6 +43,8 @@ config/MouseTweaks.cfg
 config/InvTweaks.cfg
 config/AppliedEnergistics2/Facades.cfg
 config/AppliedEnergistics2/recipes/items.csv
+config/AppliedEnergistics2/CustomRecipes.cfg
+config/cd4017be/compiled.dat
 minecraftinstance.json
 
 # Windows image file caches
