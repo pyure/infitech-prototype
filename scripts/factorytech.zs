@@ -1,11 +1,8 @@
 import mods.factorytech.ChopSaw;
+import mods.factorytech.DrillGrinder;
 
-//ChopSaw.removeRecipe(<minecraft:planks> * 6);
-
-
-//for plank in <ore:plankWood>.items {
-//  ChopSaw.addRecipe(<minecraft:stick> * 2, plank, false);
-//}
+ChopSaw.removeRecipe(<minecraft:planks:*> * 6);
+ChopSaw.removeRecipe(<minecraft:stick> * 3);
 
 var iron_rod = <ore:stickIron>;
 var nickel_rod = <ore:stickNickel>;
@@ -56,3 +53,169 @@ recipes.addShaped(transport_roller * 4, [
 	[iron_rod, iron_rod, iron_rod],
 	[redstone, redstone, redstone],
 	[iron_rod, iron_rod, iron_rod]]);
+  
+  
+
+val material_array = [
+  "Aluminium",
+  "Chrome" ,
+  "Cobalt" ,
+  "Gold",
+  "Iron" ,
+  "TinAlloy" ,
+  "Lead",
+  "Nickel" ,
+  "Silver",
+  "Titanium",
+  "Brass" ,
+  "Bronze",
+  "Electrum" ,
+  "Invar",
+  "WroughtIron",
+  "Copper",
+  "Diamond",
+  "Apatite",
+  "Redstone",
+  "Emerald",
+  "Coal",
+  "Tin",
+  "Aluminum",
+  "Platinum",
+  "Iridium",
+  "Mithril",
+  "Osmium",
+  "Beryllium",
+  "Barite",
+  "Salt",
+  "Zinc",
+  "Scheelite",
+  "Chromite",
+  "Graphite",
+  "Tantalite",
+  "Lapis",
+  "Bauxite",
+  "Tanzanite",
+  "Cassiterite",
+  "Cinnabar",
+  "Sapphire",
+  "Topaz",
+  "GreenSapphire",
+  "Molybdenum",
+  "Bismuth",
+  "Spodumene",
+  "Garnierite",
+  "Monazite",
+  "YellowLimonite",
+  "Soapstone",
+  "Bentonite",
+  "Malachite",
+  "Galena",
+  "Pitchblende",
+  "Grossular",
+  "Olivine",
+  "Lithium",
+  "Tetrahedrite",
+  "Amethyst",
+  "Saltpeter",
+  "Vinteum",
+  "Opal",
+  "Magnesite",
+  "RockSalt",
+  "Lignite",
+  "Bastnasite",
+  "Ruby",
+  "Wulfenite",
+  "Neodymium",
+  "Calcite",
+  "Molybdenite",
+  "Cooperite",
+  "BandedIron",
+  "Lazurite",
+  "Stibnite",
+  "NetherQuartz",
+  "Pyrolusite",
+  "Phosphor",
+  "Palladium",
+  "Sodalite",
+  "Chalcopyrite",
+  "Lepidolite",
+  "BrownLimonite",
+  "Pentlandite",
+  "Cobaltite",
+  "Ilmenite",
+  "Tungstate",
+  "CertusQuartz",
+  "GarnetRed",
+  "Glauconite",
+  "Pyrope",
+  "Uraninite",
+  "Oilsands",
+  "Sphalerite",
+  "Spessartine",
+  "Powellite",
+  "Thorium",
+  "CassiteriteSand",
+  "Sulfur",
+  "Uranium235",
+  "Uranium",
+  "BlueTopaz",
+  "Phosphate",
+  "Pyrite",
+  "Jasper",
+  "NaquadahEnriched",
+  "Almandine",
+  "Magnetite",
+  "GarnetYellow",
+  "Naquadah",
+  "VanadiumMagnetite",
+  "Niobium",
+  "Quartzite",
+  "Talc"
+] as string[];
+
+// Remove the "ground" materials that ship with the mod
+var groundCopper = <factorytech:ore_dust:2>;
+var groundIron = <factorytech:ore_dust>;
+var groundGold = <factorytech:ore_dust:1>;
+var groundNickel = <factorytech:ore_dust:3>;
+
+DrillGrinder.removeRecipe(groundCopper);
+DrillGrinder.removeRecipe(groundIron);
+DrillGrinder.removeRecipe(groundGold);
+DrillGrinder.removeRecipe(groundNickel);
+  
+// Remove a ton of automatically generated ore->dust recipes
+for name in material_array {
+  var dustMaterial = oreDict["dust" ~ name];
+  DrillGrinder.removeRecipe(dustMaterial);
+ 
+  var smallCrushedPrefix = "smallCrushedOre";
+  var smallMaterialName = smallCrushedPrefix ~ name;
+  var oreName = "ore" ~ name;
+  
+  // Replace old recipes with ones that generate small crushed ores (from ContentTweaker)
+  if (oreDict has smallMaterialName) {
+    if (oreDict has oreName) {
+      var smallOutput = oreDict[smallMaterialName].firstItem;
+      var oreInput = oreDict[oreName];
+      
+      DrillGrinder.addRecipe(smallOutput * 5, oreInput, false);    
+    }
+  }
+}
+
+// Create the recipes to turn small crushed ores into crushed ores
+for name in material_array {
+  var smallMaterialName = "smallCrushedOre" ~ name;
+  var crushedOreName = "crushed" ~ name;
+  
+  if (oreDict has smallMaterialName) {
+    if (oreDict has crushedOreName) {
+      var smallCrushedOre = oreDict[smallMaterialName].firstItem;
+      var crushedOre = oreDict[crushedOreName].firstItem;
+      recipes.addShapeless(crushedOre * 1, [smallCrushedOre, smallCrushedOre, smallCrushedOre, smallCrushedOre]);
+    }
+  }
+}
+
+

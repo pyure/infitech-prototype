@@ -16,6 +16,17 @@ var gelled_toluene = VanillaFactory.createItem("gelled_toluene");
 gelled_toluene.maxStackSize = 64;
 gelled_toluene.register();
 
+var compressed_coal_ball = VanillaFactory.createItem("compressed_coal_ball");
+compressed_coal_ball.maxStackSize = 64;
+compressed_coal_ball.register();
+
+var coal_chunk = VanillaFactory.createItem("coal_chunk");
+coal_chunk.maxStackSize = 64;
+coal_chunk.register();
+
+var coal_ball = VanillaFactory.createItem("coal_ball");
+coal_ball.maxStackSize = 64;
+coal_ball.register();
 
 // Fire Bow
 var item = VanillaFactory.createItem("fire_bow");

@@ -147,4 +147,13 @@ recipes.addShapedMirrored(<minecraft:planks:5>*4, [[oreSaw], [<minecraft:log2:1>
 // SAW + PLANK = STICK
 recipes.addShapedMirrored(<minecraft:stick>*4, [[oreSaw], [<ore:plankWood>]]);
 
-
+// ALTERNATIVE CHEST RECIPES
+recipes.addShaped(<minecraft:chest>*2, [
+  [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
+  [<ore:logWood>, null, <ore:logWood>], 
+  [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
+  
+recipes.addShaped(<minecraft:chest>*2, [
+  [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
+  [<ore:logWood>, <ore:craftingToolSaw>, <ore:logWood>], 
+  [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
