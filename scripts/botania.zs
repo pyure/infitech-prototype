@@ -2,14 +2,20 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
+var blockDragonstone = <botania:storage:4>;
+var blockManadiamond = <botania:storage:3>;
+var blockElementium = <botania:storage:2>;
+var blockTerrasteel = <botania:storage:1>;
+var blockManasteel = <botania:storage>;
+
 // GT Style block crafting
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
-recipes.remove(<botania:storage:4>);
-recipes.remove(<botania:storage:3>);
-recipes.remove(<botania:storage:2>);
-recipes.remove(<botania:storage:1>);
-recipes.remove(<botania:storage>);
+recipes.remove(blockDragonstone);
+recipes.remove(blockManadiamond);
+recipes.remove(blockElementium);
+recipes.remove(blockTerrasteel);
+recipes.remove(blockManasteel);
 recipes.remove(<botania:quartztypedark>);
 recipes.remove(<botania:quartztypemana>);
 recipes.remove(<botania:quartztypeblaze>);
@@ -20,27 +26,27 @@ recipes.remove(<botania:quartztypesunny>);
 
 compressor.recipeBuilder()
 	.inputs(<ore:elvenDragonstone> * 9)
-	.outputs(<botania:storage:4>)
+	.outputs(blockDragonstone)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:manaDiamond> * 9)
-	.outputs(<botania:storage:3>)
+	.outputs(blockManadiamond)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotElvenElementium> * 9)
-	.outputs(<botania:storage:2>)
+	.outputs(blockElementium)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotTerrasteel> * 9)
-	.outputs(<botania:storage:1>)
+	.outputs(blockTerrasteel)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotManasteel> * 9)
-	.outputs(<botania:storage>)
+	.outputs(blockManasteel)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()

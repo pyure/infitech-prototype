@@ -47,26 +47,35 @@ recipes.addShaped(<advancedrocketry:productplate:1>, [
 	[<ore:ingotTitaniumIridium>]]);
 
 // GT Style block crafting
-recipes.remove(<advancedrocketry:metal0:1>);
-recipes.remove(<advancedrocketry:metal0>);
+var blockTitaniumIridium = <advancedrocketry:metal0:1>;
+var blockTitaniumAlumide = <advancedrocketry:metal0>;
+var blockAluminium = <libvulpes:metal0:9>;
+var blockTitanium = <libvulpes:metal0:7>;
+var blockSteel = <libvulpes:metal0:6>;
+var blockTin = <libvulpes:metal0:5>;
+var blockCopper = <libvulpes:metal0:4>;
+var blockIridium = <libvulpes:metal0:10>;
+
+recipes.remove(blockTitaniumIridium);
+recipes.remove(blockTitaniumAlumide);
 
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
 compressor.recipeBuilder()
 	.inputs(<ore:ingotTitaniumIridium> * 9)
-	.outputs(<advancedrocketry:metal0:1>)
+	.outputs(blockTitaniumIridium)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotTitaniumAlumide> * 9)
-	.outputs(<advancedrocketry:metal0>)
+	.outputs(blockTitaniumAlumide)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 
-recipes.remove(<libvulpes:metal0:9>);
-recipes.remove(<libvulpes:metal0:7>);
-recipes.remove(<libvulpes:metal0:6>);
-recipes.remove(<libvulpes:metal0:5>);
-recipes.remove(<libvulpes:metal0:4>);
-recipes.remove(<libvulpes:metal0:10>);
+recipes.remove(blockAluminium);
+recipes.remove(blockTitanium);
+recipes.remove(blockSteel);
+recipes.remove(blockTin);
+recipes.remove(blockCopper);
+recipes.remove(blockIridium);
 

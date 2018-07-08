@@ -40,15 +40,20 @@ recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <or
 // GT Style block crafting
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
-recipes.remove(<forestry:resource_storage>);
+var blockCopper = <forestry:resource_storage:1>;
+var blockTin = <forestry:resource_storage:2>;
+var blockBronze = <forestry:resource_storage:3>;
+var blockApatite = <forestry:resource_storage>;
+
+recipes.remove(blockApatite);
 
 compressor.recipeBuilder()
 	.inputs(<ore:gemApatite> * 9)
-	.outputs(<forestry:resource_storage>)
+	.outputs(blockApatite)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 
-recipes.remove(<forestry:resource_storage:1>);
-recipes.remove(<forestry:resource_storage:2>);
-recipes.remove(<forestry:resource_storage:3>);
+recipes.remove(blockCopper);
+recipes.remove(blockTin);
+recipes.remove(blockBronze);
 recipes.remove(<forestry:charcoal>);

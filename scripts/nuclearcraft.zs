@@ -43,9 +43,29 @@ recipes.remove(<nuclearcraft:spaxelhoe_boron_nitride>);
 // GT Style block crafting
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
-recipes.remove(<nuclearcraft:ingot_block:4>);
-recipes.remove(<nuclearcraft:ingot_block:5>);
-recipes.remove(<nuclearcraft:ingot_block:10>);
+var blockUranium = <nuclearcraft:ingot_block:4>;
+var blockBoron = <nuclearcraft:ingot_block:5>;
+var blockZirconium = <nuclearcraft:ingot_block:10>;
+var blockGraphite = <nuclearcraft:ingot_block:8>;
+var blockBeryllium = <nuclearcraft:ingot_block:9>;
+var blockCopper = <nuclearcraft:ingot_block>;
+var blockTin = <nuclearcraft:ingot_block:1>;
+var blockLead = <nuclearcraft:ingot_block:2>;
+var blockThorium = <nuclearcraft:ingot_block:3>;
+var blockLithium = <nuclearcraft:ingot_block:6>;
+var blockMagnesium = <nuclearcraft:ingot_block:7>;
+
+recipes.remove(blockUranium);
+recipes.remove(blockBoron);
+recipes.remove(blockZirconium);
+recipes.remove(blockGraphite);
+recipes.remove(blockBeryllium);
+recipes.remove(blockCopper);
+recipes.remove(blockTin);
+recipes.remove(blockLead);
+recipes.remove(blockThorium);
+recipes.remove(blockLithium);
+recipes.remove(blockMagnesium);
 recipes.remove(<nuclearcraft:block_depleted_curium>);
 recipes.remove(<nuclearcraft:block_depleted_americium>);
 recipes.remove(<nuclearcraft:block_depleted_plutonium>);
@@ -54,22 +74,20 @@ recipes.remove(<nuclearcraft:block_depleted_uranium>);
 recipes.remove(<nuclearcraft:block_depleted_thorium>);
 recipes.remove(<nuclearcraft:block_depleted_californium>);
 recipes.remove(<nuclearcraft:block_depleted_berkelium>);
-recipes.remove(<nuclearcraft:ingot_block:8>);
-recipes.remove(<nuclearcraft:ingot_block:9>);
 
 compressor.recipeBuilder()
 	.inputs(<ore:ingotUranium> * 9)
-	.outputs(<nuclearcraft:ingot_block:4>)
+	.outputs(blockUranium)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotBoron> * 9)
-	.outputs(<nuclearcraft:ingot_block:5>)
+	.outputs(blockBoron)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotZirconium> * 9)
-	.outputs(<nuclearcraft:ingot_block:10>)
+	.outputs(blockZirconium)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
@@ -114,18 +132,11 @@ compressor.recipeBuilder()
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotGraphite> * 9)
-	.outputs(<nuclearcraft:ingot_block:8>)
+	.outputs(blockGraphite)
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotBeryllium> * 9)
-	.outputs(<nuclearcraft:ingot_block:9>)
+	.outputs(blockBeryllium)
 	.duration(400).EUt(2)
 	.buildAndRegister();
-
-recipes.remove(<nuclearcraft:ingot_block>);
-recipes.remove(<nuclearcraft:ingot_block:1>);
-recipes.remove(<nuclearcraft:ingot_block:2>);
-recipes.remove(<nuclearcraft:ingot_block:3>);
-recipes.remove(<nuclearcraft:ingot_block:6>);
-recipes.remove(<nuclearcraft:ingot_block:7>);
