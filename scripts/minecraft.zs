@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.recipes.ICraftingRecipe;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.recipes.IRecipeAction;
+import mods.gregtech.recipe.RecipeMap;
 
 
 
@@ -80,3 +81,44 @@ recipes.addShaped(<minecraft:piston>*16, [[<ore:plankWood>, <ore:plankWood>, <or
 recipes.addShaped(<minecraft:piston>*32, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
   [<ore:stoneCobble>, <ore:ingotNaquadah>, <ore:stoneCobble>], 
   [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
+
+// GT Style block crafting
+recipes.remove(<minecraft:iron_block>);
+recipes.remove(<minecraft:gold_block>);
+recipes.remove(<minecraft:redstone_block>);
+recipes.remove(<minecraft:lapis_block>);
+recipes.remove(<minecraft:diamond_block>);
+recipes.remove(<minecraft:emerald_block>);
+
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
+compressor.recipeBuilder()
+	.inputs(<ore:ingotIron> * 9)
+	.outputs(<minecraft:iron_block>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:ingotGold> * 9)
+	.outputs(<minecraft:gold_block>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:dustRedstone> * 9)
+	.outputs(<minecraft:redstone_block>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:gemLapis> * 9)
+	.outputs(<minecraft:lapis_block>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:gemDiamond> * 9)
+	.outputs(<minecraft:diamond_block>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:gemEmerald> * 9)
+	.outputs(<minecraft:emerald_block>)
+	.duration(400).EUt(2)
+	.buildAndRegister();
