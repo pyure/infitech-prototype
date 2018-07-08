@@ -1,5 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import mods.gregtech.recipe.RecipeMap;
 
 // These are covered by GT meta tools
 recipes.remove(<forestry:bronze_pickaxe>);
@@ -35,3 +36,24 @@ var woodPile = <forestry:wood_pile>;
 
 recipes.remove(woodPile);
 recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
+
+// GT Style block crafting
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
+var blockCopper = <forestry:resource_storage:1>;
+var blockTin = <forestry:resource_storage:2>;
+var blockBronze = <forestry:resource_storage:3>;
+var blockApatite = <forestry:resource_storage>;
+
+recipes.remove(blockApatite);
+
+compressor.recipeBuilder()
+	.inputs(<ore:gemApatite> * 9)
+	.outputs(blockApatite)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+
+recipes.remove(blockCopper);
+recipes.remove(blockTin);
+recipes.remove(blockBronze);
+recipes.remove(<forestry:charcoal>);

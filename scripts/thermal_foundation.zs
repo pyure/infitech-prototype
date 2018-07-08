@@ -1,5 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import mods.gregtech.recipe.RecipeMap;
 
 // These are covered by GT meta tools
 recipes.remove(<thermalfoundation:tool.pickaxe_copper>);
@@ -86,5 +87,68 @@ recipes.remove(<thermalfoundation:material:324>);
 recipes.remove(<thermalfoundation:material:325>);
 recipes.remove(<thermalfoundation:material:326>);
 recipes.remove(<thermalfoundation:material:327>);
+
+
+// GT Style block crafting
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
+var blockCopper = <thermalfoundation:storage>;
+var blockTin = <thermalfoundation:storage:1>;
+var blockSilver = <thermalfoundation:storage:2>;
+var blockLead = <thermalfoundation:storage:3>;
+var blockAluminium = <thermalfoundation:storage:4>;
+var blockNickel = <thermalfoundation:storage:5>;
+var blockPlatinum = <thermalfoundation:storage:6>;
+var blockIridium = <thermalfoundation:storage:7>;
+var blockMithril = <thermalfoundation:storage:8>;
+var blockSteel = <thermalfoundation:storage_alloy>;
+var blockElectrum = <thermalfoundation:storage_alloy:1>;
+var blockInvar = <thermalfoundation:storage_alloy:2>;
+var blockBronze = <thermalfoundation:storage_alloy:3>;
+var blockConstantan = <thermalfoundation:storage_alloy:4>;
+var blockSignalum = <thermalfoundation:storage_alloy:5>;
+var blockLumium = <thermalfoundation:storage_alloy:6>;
+var blockEnderium = <thermalfoundation:storage_alloy:7>;
+
+recipes.remove(blockCopper);
+recipes.remove(blockTin);
+recipes.remove(blockSilver);
+recipes.remove(blockLead);
+recipes.remove(blockAluminium);
+recipes.remove(blockNickel);
+recipes.remove(blockPlatinum);
+recipes.remove(blockIridium);
+recipes.remove(blockMithril);
+recipes.remove(blockSteel);
+recipes.remove(blockElectrum);
+recipes.remove(blockInvar);
+recipes.remove(blockBronze);
+recipes.remove(blockConstantan);
+recipes.remove(blockSignalum);
+recipes.remove(blockLumium);
+recipes.remove(blockEnderium);
+
+compressor.recipeBuilder()
+	.inputs(<ore:ingotMithril> * 9)
+	.outputs(blockMithril)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:ingotSignalum> * 9)
+	.outputs(blockSignalum)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:ingotLumium> * 9)
+	.outputs(blockLumium)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:ingotEnderium> * 9)
+	.outputs(blockEnderium)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+
+
 
 
