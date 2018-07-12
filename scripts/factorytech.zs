@@ -1,11 +1,26 @@
 import mods.factorytech.ChopSaw;
+import mods.factorytech.DrillGrinder;
 
-//ChopSaw.removeRecipe(<minecraft:planks> * 6);
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import mods.gregtech.recipe.RecipeMap;
 
+// Removing block crafting recipes
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
-//for plank in <ore:plankWood>.items {
-//  ChopSaw.addRecipe(<minecraft:stick> * 2, plank, false);
-//}
+var blockCopper = <factorytech:oreblock>;
+var blockNickel = <factorytech:oreblock:1>;
+var blockCupronickel = <factorytech:oreblock:2>;
+var blockInvar = <factorytech:oreblock:3>;
+
+recipes.remove(blockCopper);
+recipes.remove(blockNickel);
+recipes.remove(blockCupronickel);
+recipes.remove(blockInvar);
+
+// Remove wood chopping recipes from chopper
+ChopSaw.removeRecipe(<minecraft:planks:*> * 6);
+ChopSaw.removeRecipe(<minecraft:stick> * 3);
 
 var iron_rod = <ore:stickIron>;
 var nickel_rod = <ore:stickNickel>;
@@ -56,3 +71,211 @@ recipes.addShaped(transport_roller * 4, [
 	[iron_rod, iron_rod, iron_rod],
 	[redstone, redstone, redstone],
 	[iron_rod, iron_rod, iron_rod]]);
+  
+  
+
+val material_array = [
+  "Aluminium",
+  "Chrome" ,
+  "Cobalt" ,
+  "Gold",
+  "Iron" ,
+  "TinAlloy" ,
+  "Lead",
+  "Nickel" ,
+  "Silver",
+  "Titanium",
+  "Brass" ,
+  "Bronze",
+  "Electrum" ,
+  "Invar",
+  "WroughtIron",
+  "Copper",
+  "Diamond",
+  "Apatite",
+  "Redstone",
+  "Emerald",
+  "Coal",
+  "Tin",
+  "Aluminum",
+  "Platinum",
+  "Iridium",
+  "Mithril",
+  "Osmium",
+  "Beryllium",
+  "Barite",
+  "Salt",
+  "Zinc",
+  "Scheelite",
+  "Chromite",
+  "Graphite",
+  "Tantalite",
+  "Lapis",
+  "Bauxite",
+  "Tanzanite",
+  "Cassiterite",
+  "Cinnabar",
+  "Sapphire",
+  "Topaz",
+  "GreenSapphire",
+  "Molybdenum",
+  "Bismuth",
+  "Spodumene",
+  "Garnierite",
+  "Monazite",
+  "YellowLimonite",
+  "Soapstone",
+  "Bentonite",
+  "Malachite",
+  "Galena",
+  "Pitchblende",
+  "Grossular",
+  "Olivine",
+  "Lithium",
+  "Tetrahedrite",
+  "Amethyst",
+  "Saltpeter",
+  "Vinteum",
+  "Opal",
+  "Magnesite",
+  "RockSalt",
+  "Lignite",
+  "Bastnasite",
+  "Ruby",
+  "Wulfenite",
+  "Neodymium",
+  "Calcite",
+  "Molybdenite",
+  "Cooperite",
+  "BandedIron",
+  "Lazurite",
+  "Stibnite",
+  "NetherQuartz",
+  "Pyrolusite",
+  "Phosphor",
+  "Palladium",
+  "Sodalite",
+  "Chalcopyrite",
+  "Lepidolite",
+  "BrownLimonite",
+  "Pentlandite",
+  "Cobaltite",
+  "Ilmenite",
+  "Tungstate",
+  "CertusQuartz",
+  "GarnetRed",
+  "Glauconite",
+  "Pyrope",
+  "Uraninite",
+  "Oilsands",
+  "Sphalerite",
+  "Spessartine",
+  "Powellite",
+  "Thorium",
+  "CassiteriteSand",
+  "Sulfur",
+  "Uranium235",
+  "Uranium",
+  "BlueTopaz",
+  "Phosphate",
+  "Pyrite",
+  "Jasper",
+  "NaquadahEnriched",
+  "Almandine",
+  "Magnetite",
+  "GarnetYellow",
+  "Naquadah",
+  "VanadiumMagnetite",
+  "Niobium",
+  "Quartzite",
+  "Talc"
+] as string[];
+
+// Remove the "ground" materials that ship with the mod
+var groundCopper = <factorytech:ore_dust:2>;
+var groundIron = <factorytech:ore_dust>;
+var groundGold = <factorytech:ore_dust:1>;
+var groundNickel = <factorytech:ore_dust:3>;
+
+DrillGrinder.removeRecipe(groundCopper);
+DrillGrinder.removeRecipe(groundIron);
+DrillGrinder.removeRecipe(groundGold);
+DrillGrinder.removeRecipe(groundNickel);
+  
+// Remove a ton of automatically generated ore->dust recipes
+for name in material_array {
+  var dustMaterial = oreDict["dust" ~ name];
+  DrillGrinder.removeRecipe(dustMaterial);
+ 
+  var smallCrushedPrefix = "smallCrushedOre";
+  var smallMaterialName = smallCrushedPrefix ~ name;
+  var oreName = "ore" ~ name;
+  
+  // Replace old recipes with ones that generate small crushed ores (from ContentTweaker)
+  if (oreDict has smallMaterialName) {
+    if (oreDict has oreName) {
+      var smallOutput = oreDict[smallMaterialName].firstItem;
+      var oreInput = oreDict[oreName];
+      
+      DrillGrinder.addRecipe(smallOutput * 5, oreInput, false);    
+    }
+  }
+}
+
+// Create the recipes to turn small crushed ores into crushed ores
+for name in material_array {
+  var smallMaterialName = "smallCrushedOre" ~ name;
+  var crushedOreName = "crushed" ~ name;
+  
+  if (oreDict has smallMaterialName) {
+    if (oreDict has crushedOreName) {
+      var smallCrushedOre = oreDict[smallMaterialName].firstItem;
+      var crushedOre = oreDict[crushedOreName].firstItem;
+      recipes.addShapeless(crushedOre * 1, [smallCrushedOre, smallCrushedOre, smallCrushedOre, smallCrushedOre]);
+    }
+  }
+}
+
+var magneticIronRod = <ore:stickIronMagnetic>;
+var steelRod = <ore:stickSteel>;
+var ironRod = <ore:stickIron>;
+var steelPlate = <ore:plateIron>;
+var hammer = <ore:craftingToolHammer>;
+
+
+
+// Pipe 
+// Reminder: GT pipes don't function as pipes yet.  Once they do, we may need to adjust for balance.
+recipes.remove(<factorytech:pipe> * 8);
+recipes.addShaped("infitech_ft_pipe", <factorytech:pipe> * 8, [
+  [<ore:plateBronze>, steelPlate, <ore:plateBronze>],
+  [null, wrench, null],
+  [<ore:plateBronze>, steelPlate, <ore:plateBronze>]]);
+
+// Extraction Pump
+recipes.remove(<factorytech:fluidpuller>);
+recipes.addShaped("infitech_extraction_pump", <factorytech:fluidpuller>, [
+  [null, wrench, magneticIronRod], 
+  [<factorytech:pipe>, <minecraft:piston>, steelRod], 
+  [null, hammer, magneticIronRod]]);
+
+// Transport Roller
+recipes.remove(<factorytech:conveyor> * 4);
+recipes.addShaped("infitech_transport_rollerinfitech_inserthatch", <factorytech:conveyor> * 6, [
+  [ironRod, magneticIronRod, steelRod], 
+  [<ore:dustRedstone>, wrench, <ore:dustRedstone>], 
+  [ironRod, magneticIronRod, steelRod]]);
+
+// Insertion Hatch
+recipes.remove(<factorytech:hatch> * 2);
+recipes.addShaped("infitech_inserthatch", <factorytech:hatch> * 2, [
+  [<minecraft:stone>, steelPlate, <minecraft:stone>], 
+  [wrench, <minecraft:hopper>, hammer], 
+  [<minecraft:stone>, steelPlate, <minecraft:stone>]]);
+
+// Auto Ejector
+recipes.remove(<factorytech:autopuller>);
+recipes.addShaped("infitech_autoejector", <factorytech:autopuller>, [
+  [null, wrench, <ore:plankWood>], 
+  [magneticIronRod, <minecraft:sticky_piston>, steelPlate], 
+  [null, hammer, <ore:plankWood>]]);

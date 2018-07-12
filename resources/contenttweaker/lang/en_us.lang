@@ -1,30 +1,6 @@
-contenttweaker.part.purified_ore=Purified %s Ore
-contenttweaker.part.tiny_dust=Tiny Pile of %s Dust
-contenttweaker.part.washed_ore=Washed %s Ore
-contenttweaker.part.ore_flake=%s Flakes
-contenttweaker.part.crushed_ore=Crushed %s Ore
-contenttweaker.part.industrial_turbine_rotor=Industrial %s Turbine Rotor
-contenttweaker.part.large_turbine_rotor=Large %s Turbine Rotor
-contenttweaker.part.standard_turbine_rotor=Standard %s Turbine Rotor
-contenttweaker.part.small_turbine_rotor=Small %s Turbine Rotor
-contenttweaker.part.machine_frame=%s Machine Frame
-contenttweaker.part.agitator=%s Agitator Unit
-contenttweaker.part.mortar=%s Mortar
-contenttweaker.part.macerator_blade=%s Macerator Blade
-contenttweaker.part.electrode=%s Electrode
-contenttweaker.part.gearbox=%s Gearbox
-contenttweaker.part.screw=%s Screw
-contenttweaker.part.heat_conductor=%s Heat Conductor
-contenttweaker.part.wire=%s Wire
-contenttweaker.part.cable=%s Cable
-contenttweaker.part.io_unit=%s IO Unit
-contenttweaker.part.catalyst_support=%s Catalyst Support
-contenttweaker.part.impure_dust=Impure %s Dust
 
-item.contenttweaker.sticky_resin.name=Sticky Resin
 item.contenttweaker.tree_tap.name=Tree Tap
-item.contenttweaker.rubber.name=Rubber
-item.contenttweaker.raw_rubber.name=Raw Rubber
+
 
 // MOLDS
 item.contenttweaker.sword_blade_mold.name=Sword Blade Mold
@@ -33,6 +9,8 @@ item.contenttweaker.file_head_mold.name=File Head Mold
 item.contenttweaker.shovel_head_mold.name=Shovel Head Mold
 item.contenttweaker.pickaxe_head_mold.name=Pickaxe Head Mold
 item.contenttweaker.hammer_head_mold.name=Hammer Head Mold
+
+contenttweaker.part.small_crushed_ore=Small Crushed %s Ore
 
 item.contenttweaker.fire_bow.name=Fire Bow
 
@@ -54,40 +32,15 @@ item.contenttweaker.cluster_thorium.name=Native Thorium Cluster
 item.contenttweaker.cluster_tungsten.name=Native Tungsten Cluster
 item.contenttweaker.cluster_uranium238.name=Native Uranium-238 Cluster
 
-item.contenttweaker.bronze_hammer.name=Bronze Hammer
-item.contenttweaker.flint_hammer.name=Flint Hammer
-item.contenttweaker.iron_hammer.name=Iron Hammer
-item.contenttweaker.steel_hammer.name=Steel Hammer
+item.contenttweaker.compressed_coal_ball.name=Compressed Coal Ball
+item.contenttweaker.coal_chunk.name=Coal Chunk
+item.contenttweaker.coal_ball.name=Coal Ball
 
-item.contenttweaker.bronze_wrench.name=Bronze Wrench
-item.contenttweaker.flint_wrench.name=Flint Wrench
-item.contenttweaker.iron_wrench.name=Iron Wrench
-item.contenttweaker.steel_wrench.name=Steel Wrench
-
-item.contenttweaker.bronze_saw.name=Bronze Saw
-item.contenttweaker.flint_saw.name=Flint Saw
-item.contenttweaker.iron_saw.name=Iron Saw
-item.contenttweaker.steel_saw.name=Steel Saw
-
-item.contenttweaker.bronze_file.name=Bronze File
-item.contenttweaker.flint_file.name=Flint File
-item.contenttweaker.iron_file.name=Iron File
-item.contenttweaker.steel_file.name=Steel File
-item.contenttweaker.nand_chip.name=NAND Chip
-
-tile.contenttweaker.bronze_plated_brick.name=Bronze Plated Brick
 tile.contenttweaker.dried_spruce_log.name=Dried Spruce Log
-
-item.contenttweaker.basic_circuit.name=Basic Circuit
-item.contenttweaker.basic_circuit_board.name=Basic Circuit Board
 item.contenttweaker.gelled_toluene.name=Gelled Toluene
 
 // FLUIDS
-fluid.soldering_alloy=Soldering Alloy
 fluid.fluid_latex=Latex
-fluid.fluid_distilled_water=Distilled Water
-fluid.fluid_placeholder_acid1=Placeholder Acid I
-fluid.fluid_placeholder_acid2=Placeholder Acid II
 fluid.fluorine=Fluorine
 fluid.uranium_hexafluoride=Uranium Hexafluoride
 fluid.fish_oil=Fish Oil

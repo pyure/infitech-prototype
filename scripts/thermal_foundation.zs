@@ -2,6 +2,10 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
+var hammer = <ore:craftingToolHammer>;
+var wrench = <ore:craftingToolWrench>;
+
+
 // These are covered by GT meta tools
 recipes.remove(<thermalfoundation:tool.pickaxe_copper>);
 recipes.remove(<thermalfoundation:tool.pickaxe_tin>);
@@ -149,6 +153,207 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
 
+
+  
+  
+var itemDuct = <thermaldynamics:duct_32>;
+var itemDuctOpaque =<thermaldynamics:duct_32:1>;
+var itemDuctImpulse = <thermaldynamics:duct_32:2>;
+var itemDuctImpulseOpaque = <thermaldynamics:duct_32:3>;
+var itemDuctSignalum = <thermaldynamics:duct_32:4>;
+var itemDuctSignalumOpaque = <thermaldynamics:duct_32:5>;
+var itemDuctSignalumImpulse = <thermaldynamics:duct_32:6>;
+var itemDuctSignalumImpulseOpaque = <thermaldynamics:duct_32:7>;
+
+var fluiduct = <thermaldynamics:duct_16>;
+var fluiductOpaque = <thermaldynamics:duct_16:1>;
+var fluiductHardened = <thermaldynamics:duct_16:2>;
+var fluiductHardenedOpaque = <thermaldynamics:duct_16:3>;
+
+// ItemDuct
+recipes.remove(itemDuct);
+recipes.addShaped("infitech_itemduct", itemDuct * 3, [
+  [<ore:ringAluminium>, <ore:blockGlassHardened>, <ore:ringAluminium>],
+  [null, wrench, null]]);
+  
+// ItemDuct from Opaque Itemduct
+recipes.addShapeless("infitech_itemduct_from_opaque", itemDuct * 6, [itemDuctOpaque, itemDuctOpaque, itemDuctOpaque, itemDuctOpaque, itemDuctOpaque, itemDuctOpaque, <ore:blockGlassHardened>]);
+  
+// ItemDuct Opaque 
+recipes.addShaped("infitech_opaqueduct", itemDuctOpaque * 3, [
+  [<ore:ringAluminium>, <ore:plateLead>, <ore:ringAluminium>],
+  [null, wrench, null]]);
+  
+// ItemDuct Opaque from Itemduct
+recipes.addShapeless("infitech_opaqueduct_from_duct", itemDuctOpaque * 6, [itemDuct, itemDuct, itemDuct, itemDuct, itemDuct, itemDuct, <ore:plateLead>]);
+
+// Impulse Itemduct
+recipes.remove(itemDuctImpulse);
+val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
+fluid_canner.recipeBuilder()
+	.inputs(itemDuct)
+  .fluidInputs(<liquid:glowstone> * 100)
+	.outputs(itemDuctImpulse)
+	.duration(260)
+  .EUt(24)
+	.buildAndRegister();
+
+// Impulse Itemduct Opaque
+recipes.remove(itemDuctImpulse);
+fluid_canner.recipeBuilder()
+	.inputs(itemDuctOpaque)
+  .fluidInputs(<liquid:glowstone> * 100)
+	.outputs(itemDuctImpulseOpaque)
+	.duration(260)
+  .EUt(24)
+	.buildAndRegister();  
+
+// Signalum Plated Impulse Itemduct
+fluid_canner.recipeBuilder()
+	.inputs(itemDuctSignalum)
+  .fluidInputs(<liquid:glowstone> * 100)
+	.outputs(itemDuctSignalumImpulse)
+	.duration(320)
+  .EUt(24)
+	.buildAndRegister();  
+
+// Signalum Plated Impulse Itemduct Opaque
+fluid_canner.recipeBuilder()
+	.inputs(itemDuctSignalumOpaque)
+  .fluidInputs(<liquid:glowstone> * 100)
+	.outputs(itemDuctSignalumImpulseOpaque)
+	.duration(320)
+  .EUt(24)
+	.buildAndRegister();    
+
+
+// Fluiduct
+recipes.remove(fluiduct);
+recipes.addShaped("infitech_fluiduct", fluiduct * 3, [
+  [<ore:ringAluminium>, <ore:blockGlass>, <ore:ringAluminium>],
+  [null, wrench, null]]);
+
+// Opaque Fluiduct
+recipes.remove(fluiductOpaque);
+recipes.addShaped("infitech_opaque_fluiduct", fluiductOpaque * 3, [
+  [<ore:ringAluminium>, <ore:dustStone>, <ore:ringAluminium>],
+  [null, wrench, null]]);
+
+// Hardened Fluiduct
+recipes.remove(fluiductHardened);
+recipes.addShaped("infitech_hardened_fluiduct", fluiductHardened * 3, [
+  [<ore:ringStainlessSteel>, <ore:blockGlassHardened>, <ore:ringStainlessSteel>],
+  [null, wrench, null]]);
+
+// Opaque Hardened Fluiduct
+recipes.remove(fluiductHardenedOpaque);
+recipes.addShaped("infitech_hardened_opaque_fluiduct", fluiductHardenedOpaque * 3, [
+  [<ore:ringStainlessSteel>, <ore:dustStone>, <ore:ringStainlessSteel>],
+  [null, wrench, null]]);
+  
+var advanced_circuit_part = <gregtech:meta_item_1:32715>;
+
+var servo = <thermaldynamics:servo>;
+var hardened_servo = <thermaldynamics:servo:1>;
+var reinforced_servo = <thermaldynamics:servo:2>;
+var signalum_servo = <thermaldynamics:servo:3>;
+var resonant_servo = <thermaldynamics:servo:4>;
+var lapotron_chip = <gregtech:meta_item_1:32714>;
+
+// Servo
+recipes.remove(servo);
+recipes.addShaped("infitech_servo", servo * 2, [
+  [<ore:boltIron>, <ore:blockGlass>, <ore:boltIron>], 
+  [<ore:boltIron>, <ore:circuitPrimitive>, <ore:boltIron>]]);
+  
+// Hardened Servo
+recipes.remove(hardened_servo);
+recipes.addShaped("infitech_hardened_servo", hardened_servo * 2, [
+  [<ore:boltSteel>, <ore:plateGlass>, <ore:boltSteel>], 
+  [<ore:boltSteel>, <ore:circuitPrimitive>, <ore:boltSteel>]]);
+
+// Reinforced Servo
+recipes.remove(reinforced_servo);
+recipes.addShaped("infitech_reinforced_servo", reinforced_servo * 2, [
+  [<ore:boltAluminium>, <ore:plateGlass>, <ore:boltAluminium>], 
+  [<ore:boltAluminium>, advanced_circuit_part, <ore:boltAluminium>]]);
+  
+// Signalum Servo. NOT BALANCED YET.  We don't have a proper means of gating Signalum.
+recipes.remove(signalum_servo);
+recipes.addShaped("infitech_signalum_servo", signalum_servo * 2, [
+  [<ore:boltSignalum>, <ore:plateGlass>, <ore:boltSignalum>], 
+  [<ore:boltSignalum>, advanced_circuit_part, <ore:boltSignalum>]]);
+  
+// Enderium Servo.  Temporary.  Need to add a GT Material for Enderium
+recipes.remove(resonant_servo);
+recipes.addShaped("infitech_resonant_servo", resonant_servo * 2, [
+  [<ore:boltStainlessSteel>, <ore:plateGlass>, <ore:boltStainlessSteel>], 
+  [<ore:ingotEnderium>, lapotron_chip, <ore:ingotEnderium>]]);
+
+var retriever = <thermaldynamics:retriever>;
+var hardened_retriever = <thermaldynamics:retriever:1>;
+var reinforced_retriever = <thermaldynamics:retriever:2>;
+var signalum_retriever = <thermaldynamics:retriever:3>;
+var resonant_retriever = <thermaldynamics:retriever:4>;
+  
+
+// Retriever
+recipes.remove(retriever);
+recipes.addShaped("infitech_retriever", retriever * 2, [
+  [<ore:boltSteel>, <ore:circuitPrimitive>, <ore:boltSteel>], 
+  [<ore:boltSteel>, <minecraft:ender_eye:*>, <ore:boltSteel>]]);
+
+// Hardened Retriever
+recipes.remove(hardened_retriever);
+recipes.addShaped("infitech_hardened_retriever", hardened_retriever * 2, [
+  [<ore:boltAluminium>, advanced_circuit_part, <ore:boltAluminium>], 
+  [<ore:boltAluminium>, <minecraft:ender_eye:*>, <ore:boltAluminium>]]);
+
+// Reinforced Retriever
+recipes.remove(reinforced_retriever);
+recipes.addShaped("infitech_reinforced_retriever", reinforced_retriever * 2, [
+  [<ore:boltStainlessSteel>, advanced_circuit_part, <ore:boltStainlessSteel>], 
+  [<ore:boltStainlessSteel>, <minecraft:ender_eye:*>, <ore:boltStainlessSteel>]]); 
+
+// Signalum Retriever
+recipes.remove(signalum_retriever);
+recipes.addShaped("infitech_signalum_retriever", signalum_retriever * 2, [
+  [<ore:boltTungsten>, lapotron_chip, <ore:boltTungsten>], 
+  [<ore:boltTungsten>, <minecraft:ender_eye:*>, <ore:boltTungsten>]]); 
+  
+// Resonant Retriever
+recipes.remove(resonant_retriever);
+recipes.addShaped("infitech_resonant_retriever", resonant_retriever * 2, [
+  [<ore:boltTungstenSteel>, lapotron_chip, <ore:boltTungstenSteel>], 
+  [<ore:boltTungstenSteel>, <minecraft:ender_eye:*>, <ore:boltTungstenSteel>]]);  
+  
+
+
+// COIN VARIABLES
+var coinIridium = <ore:coinIridium>.firstItem;
+var coinPlatinum = <ore:coinPlatinum>.firstItem;
+var coinGold = <ore:coinGold>.firstItem;
+var coinSilver = <ore:coinSilver>.firstItem;
+var coinConstantan = <ore:coinConstantan>.firstItem;
+var coinIron = <ore:coinIron>.firstItem;
+var coinCopper = <ore:coinCopper>.firstItem;
+
+// COIN TOOLTIPS
+<ore:coinIridium>.addTooltip(format.green("1 Iridium = 262,144 Copper"));
+<ore:coinPlatinum>.addTooltip(format.green("1 Platinum = 32,768 Copper"));
+<ore:coinGold>.addTooltip(format.green("1 Gold = 4,096 Copper"));
+<ore:coinSilver>.addTooltip(format.green("1 Silver = 512 Copper"));
+<ore:coinConstantan>.addTooltip(format.green("1 Constantan = 64 Copper"));
+<ore:coinIron>.addTooltip(format.green("1 Iron = 8 Copper"));
+<ore:coinCopper>.addTooltip(format.green("1 Copper = 1 Copper"));
+
+// COIN RECIPES
+recipes.addShapeless(coinIridium, [coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum]);
+recipes.addShapeless(coinPlatinum, [coinGold, coinGold, coinGold, coinGold, coinGold, coinGold, coinGold, coinGold]);
+recipes.addShapeless(coinGold, [coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver]);
+recipes.addShapeless(coinSilver, [coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan]);
+recipes.addShapeless(coinConstantan, [coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron]);
+recipes.addShapeless(coinIron, [coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper]);
 
 
 

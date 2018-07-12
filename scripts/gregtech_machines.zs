@@ -1,50 +1,141 @@
 import mods.gregtech.recipe.RecipeMap;
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 
-chemical_reactor.recipeBuilder()
-.inputs([<ore:crushedBrownLimonite> * 3, <gendustry:honey_comb:125> * 4])
-.fluidInputs([<liquid:water> * 1000 ])
-.outputs(<ore:crushedPurifiedBrownLimonite> * 4)
-.duration(60)
-.EUt(30)
-.buildAndRegister();
 
-/*
-
-
-
-val blast_furnace as RecipeMap = RecipeMap.getByName("blast_furnace");
-
-blast_furnace.recipeBuilder()
-          .inputs([<ore:ingotCompressedWroughtIron> * 1, <ore:charcoal> * 3])
-          .outputs(<ore:ingotIron>.firstItem * 1)
-          .duration(80)
-          .EUt(0)
-          .buildAndRegister();
-          
-val canner as RecipeMap = RecipeMap.getByName("canner");
-
-canner.recipeBuilder()
-    .inputs([<ore:foilGold>, <ore:dustCocoa> * 2])
-    .outputs([<metaitem:coin.chocolate> * 12])
-    .duration(40).EUt(30)
-    .buildAndRegister();
-*/
-
-/*  
-    
-val chemicalreactor as RecipeMap = RecipeMap.getByName("chemicalreactor");    
-    
-chemicalreactor.recipeBuilder()
-.inputs([<ore:foilGold>])
-.fluidInputs([<liquid:liquid.nitrogen_dioxide>, ])
-.fluidOutputs(<liquid:liquid.nitrogen_dioxide> * 400)
-.outputs(<ore:dustCocoa> * 2)
-.duration(950)
-.EUt(30)
-.buildAndRegister();
-*/
-
-
-
-
+var combUranium = <gendustry:honey_comb:138>;
+var combLignite = <gendustry:honey_comb:101>;
+var combLapis = <gendustry:honey_comb:115>;
+var combEmerald = <gendustry:honey_comb:120>;
+var combThaumium = <gendustry:honey_comb:110>;
+var combIron = <gendustry:honey_comb:125>;
+var combSlag = <gendustry:honey_comb:121>;
+var combManganese = <gendustry:honey_comb:132>;
+var combTitanium = <gendustry:honey_comb:133>;
+var combRuby = <gendustry:honey_comb:116>;
+var combSapphire = <gendustry:honey_comb:117>;
+var combCoal = <gendustry:honey_comb:102>;
+var combIridium = <gendustry:honey_comb:137>;
+var combMutagenCatalyst = <gendustry:honey_comb:141>;
+var combThaumiumShard = <gendustry:honey_comb:109>;
+var combLead = <gendustry:honey_comb:124>;
+var combSilver = <gendustry:honey_comb:129>;
+var combChrome = <gendustry:honey_comb:134>;
+var combZinc = <gendustry:honey_comb:128>;
+var combDiamond = <gendustry:honey_comb:118>;
+var combFluix = <gendustry:honey_comb:113>;
+var combStickyResin = <gendustry:honey_comb:103>;
+var combNaquadah = <gendustry:honey_comb:140>;
+var combGold = <gendustry:honey_comb:130>;
+var combTungsten = <gendustry:honey_comb:135>;
+var combCertus = <gendustry:honey_comb:112>;
+var combTin = <gendustry:honey_comb:123>;
+var combNickel = <gendustry:honey_comb:127>;
+var combOsmium = <gendustry:honey_comb:143>;
+var combOil = <gendustry:honey_comb:104>;
+var combRedstone = <gendustry:honey_comb:114>;
+var combPlutonium = <gendustry:honey_comb:139>;
+var combOlivine = <gendustry:honey_comb:119>;
+var combSteel = <gendustry:honey_comb:126>;
+var combPlatinum = <gendustry:honey_comb:136>;
+var combAluminium = <gendustry:honey_comb:131>;
+var combStone = <gendustry:honey_comb:111>;
+var combCopper = <gendustry:honey_comb:122>;
+chemical_reactor.recipeBuilder().inputs([<ore:crushedAlmandine> * 3,  combSapphire * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedAlmandine>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedAluminium> * 3,  combAluminium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedAluminium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedApatite> * 3,  combStone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedApatite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBandedIron> * 3,  combSteel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBandedIron>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBandedIron> * 3,  combIron * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBandedIron>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBarite> * 3,  combCertus * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBarite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBastnasite> * 3,  combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBastnasite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBauxite> * 3,  combAluminium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBauxite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBauxite> * 3,  combTitanium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBauxite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBauxite> * 3,  combTitanium * 4]).fluidInputs([<liquid:chlorine> * 1000 ]).outputs(<ore:crushedPurifiedBauxite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBentonite> * 3,  combOlivine * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBentonite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBeryllium> * 3,  combEmerald * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBeryllium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBrownLimonite> * 3,  combSteel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBrownLimonite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedBrownLimonite> * 3,  combIron * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBrownLimonite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedCalcite> * 3,  combLapis * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCalcite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedCassiterite> * 3,  combTin * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCassiterite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedCertusQuartz> * 3,  combCertus * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCertusQuartz>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedChalcopyrite> * 3,  combCopper * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedChalcopyrite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedChromite> * 3,  combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedChromite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedCinnabar> * 3,  combRedstone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCinnabar>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedCoal> * 3,  combCoal * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCoal>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedCobaltite> * 3,  combNickel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCobaltite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedCopper> * 3,  combCopper * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCopper>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedDiamond> * 3,  combDiamond * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedDiamond>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedEmerald> * 3,  combEmerald * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedEmerald>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedGalena> * 3,  combLead * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGalena>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedGalena> * 3,  combSilver * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGalena>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedGarnierite> * 3,  combNickel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGarnierite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedGlauconite> * 3,  combOlivine * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGlauconite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedGold> * 3,  combGold * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGold>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedGraphite> * 3,  combDiamond * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGraphite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedGreenSapphire> * 3,  combSapphire * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGreenSapphire>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedGrossular> * 3,  combManganese * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGrossular>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedIlmenite> * 3,  combTitanium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedIlmenite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedIridium> * 3,  combIridium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedIridium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedIridium> * 3,  combOsmium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedIridium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedIron> * 3,  combSteel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedIron>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedIron> * 3,  combIron * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedIron>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedLapis> * 3,  combLapis * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedLapis>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedLazurite> * 3,  combLapis * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedLazurite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedLead> * 3,  combLead * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedLead>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedLepidolite> * 3,  combSlag * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedLepidolite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedLignite> * 3,  combLignite * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedLignite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedLithium> * 3,  combTungsten * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedLithium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedMagnesite> * 3,  combOlivine * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedMagnesite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedMagnetite> * 3,  combSteel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedMagnetite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedMagnetite> * 3,  combIron * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedMagnetite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedMalachite> * 3,  combCopper * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedMalachite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedMolybdenite> * 3,  combSteel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedMolybdenite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedMolybdenum> * 3,  combSteel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedMolybdenum>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedMonazite> * 3,  combSlag * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedMonazite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedNaquadah> * 3,  combNaquadah * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedNaquadah>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedNaquadahEnriched> * 3,  combNaquadah * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedNaquadahEnriched>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedNeodymium> * 3,  combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedNeodymium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedNickel> * 3,  combNickel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedNickel>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedOlivine> * 3,  combOlivine * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedOlivine>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedOsmium> * 3,  combIridium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedOsmium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPalladium> * 3,  combPlatinum * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPalladium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPentlandite> * 3,  combNickel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPentlandite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPhosphate> * 3,  combStone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPhosphate>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPitchblende> * 3,  combUranium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPitchblende>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPlatinum> * 3,  combPlatinum * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPlatinum>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+// Plutonium??
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPowellite> * 3,  combNickel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPowellite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPyrite> * 3,  combCopper * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPyrite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPyrite> * 3,  combIron * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPyrite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPyrolusite> * 3,  combManganese * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPyrolusite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedPyrope> * 3,  combSapphire * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPyrope>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedQuartzite> * 3,  combCertus * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedQuartzite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 3,  combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 3,  combRedstone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 3,  combRuby * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRockSalt> * 3,  combSlag * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRockSalt>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRuby> * 3,  combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRuby>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRuby> * 3,  combRuby * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRuby>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSalt> * 3,  combSlag * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSalt>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSapphire> * 3,  combSapphire * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSapphire>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedScheelite> * 3,  combTungsten * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedScheelite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSilver> * 3,  combSilver * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSilver>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSoapstone> * 3,  combStone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSoapstone>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSodalite> * 3,  combLapis * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSodalite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSpessartine> * 3,  combManganese * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSpessartine>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSphalerite> * 3,  combZinc * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSphalerite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSpodumene> * 3,  combSlag * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSpodumene>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedStibnite> * 3,  combCopper * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedStibnite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedSulfur> * 3,  combZinc * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedSulfur>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedTalc> * 3,  combStone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedTalc>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedTantalite> * 3,  combManganese * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedTantalite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedTetrahedrite> * 3,  combCopper * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedTetrahedrite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedThorium> * 3,  combEmerald * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedThorium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedTin> * 3,  combTin * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedTin>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedTungstate> * 3,  combTungsten * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedTungstate>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedUraninite> * 3,  combUranium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedUraninite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedUranium> * 3,  combUranium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedUranium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedVanadiumMagnetite> * 3,  combIron * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedVanadiumMagnetite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedWulfenite> * 3,  combNickel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedWulfenite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedYellowLimonite> * 3,  combSteel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedYellowLimonite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedYellowLimonite> * 3,  combIron * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedYellowLimonite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedZinc> * 3,  combZinc * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedZinc>.firstItem * 4).duration(60).EUt(30).buildAndRegister();

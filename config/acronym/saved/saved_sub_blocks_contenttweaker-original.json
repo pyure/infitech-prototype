@@ -1,27 +1,12 @@
 {
   "savedSubBlockNames": {
     "0": {
-      "3": "tungstensteel_machine_frame",
-      "9": "steel_machine_frame",
-      "12": "tungstensteel_agitator",
-      "14": "aluminium_machine_frame"
+      "0": "compressed_wrought_iron_block"
     },
-    "1": {
-      "8": "titanium_machine_frame"
-    },
-    "2": {
-      "9": "titanium_agitator",
-      "12": "aluminium_agitator"
-    },
-    "3": {
-      "8": "bronze_agitator"
-    },
-    "4": {
-      "12": "steel_agitator",
-      "14": "bronze_machine_frame"
-    },
-    "5": {
-      "1": "compressed_wrought_iron_block"
-    }
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {}
   }
 }

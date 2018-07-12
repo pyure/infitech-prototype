@@ -1,0 +1,212 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gregtech:cable_tin",
+                    "weight": 24,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_2",
+                    "weight": 20,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 18071
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 15,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 32600
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 10,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 32610
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_2",
+                    "weight": 10,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 8
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 17184
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 5,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 32640
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 2,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 32650
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:machine",
+                    "weight": 2,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 501
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 4,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 32690
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 4,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 32680
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "gregtech:meta_item_1",
+                    "weight": 4,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 3
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 32630
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

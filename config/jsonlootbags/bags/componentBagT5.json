@@ -1,0 +1,11 @@
+{
+  "loot-table": "jsonlootbags:components/components_t5",
+  "name": "componentbagt5",
+  "human-name": "Bag of Components V",
+  "texture": "jsonlootbags:bag",
+  "rarity": "Epic",
+  "effect": true,
+  "colors": [
+    "#4648c3"
+  ]
+}

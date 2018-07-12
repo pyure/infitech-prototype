@@ -331,3 +331,7 @@ recipes.addShaped(caster, [
    [null, <foundry:mold>, null],
    [<ore:craftingToolWrench, refractoryCasingStandard, <ore:craftingToolHardHammer>],
    [<ore:gearWroughtIron>, brickFoundry, <ore:gearWroughtIron>]]);
+   
+
+// DISABLED BLOCKS/ITEMS
+scripts.functions.disableItem(<foundry:alloyfurnace>);

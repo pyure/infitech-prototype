@@ -1,0 +1,11 @@
+{
+  "loot-table": "jsonlootbags:coins/coins_t3",
+  "name": "coinbagt3",
+  "human-name": "Huge bag of coins",
+  "texture": "jsonlootbags:bag",
+  "rarity": "Uncommon",
+  "effect": false,
+  "colors": [
+    "#213c13"
+  ]
+}
