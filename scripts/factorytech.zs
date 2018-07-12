@@ -1,6 +1,24 @@
 import mods.factorytech.ChopSaw;
 import mods.factorytech.DrillGrinder;
 
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import mods.gregtech.recipe.RecipeMap;
+
+// Removing block crafting recipes
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
+var blockCopper = <factorytech:oreblock>;
+var blockNickel = <factorytech:oreblock:1>;
+var blockCupronickel = <factorytech:oreblock:2>;
+var blockInvar = <factorytech:oreblock:3>;
+
+recipes.remove(blockCopper);
+recipes.remove(blockNickel);
+recipes.remove(blockCupronickel);
+recipes.remove(blockInvar);
+
+// Remove wood chopping recipes from chopper
 ChopSaw.removeRecipe(<minecraft:planks:*> * 6);
 ChopSaw.removeRecipe(<minecraft:stick> * 3);
 
@@ -218,4 +236,46 @@ for name in material_array {
   }
 }
 
+var magneticIronRod = <ore:stickIronMagnetic>;
+var steelRod = <ore:stickSteel>;
+var ironRod = <ore:stickIron>;
+var steelPlate = <ore:plateIron>;
+var hammer = <ore:craftingToolHammer>;
 
+
+
+// Pipe 
+// Reminder: GT pipes don't function as pipes yet.  Once they do, we may need to adjust for balance.
+recipes.remove(<factorytech:pipe> * 8);
+recipes.addShaped("infitech_ft_pipe", <factorytech:pipe> * 8, [
+  [<ore:plateBronze>, steelPlate, <ore:plateBronze>],
+  [null, wrench, null],
+  [<ore:plateBronze>, steelPlate, <ore:plateBronze>]]);
+
+// Extraction Pump
+recipes.remove(<factorytech:fluidpuller>);
+recipes.addShaped("infitech_extraction_pump", <factorytech:fluidpuller>, [
+  [null, wrench, magneticIronRod], 
+  [<factorytech:pipe>, <minecraft:piston>, steelRod], 
+  [null, hammer, magneticIronRod]]);
+
+// Transport Roller
+recipes.remove(<factorytech:conveyor> * 4);
+recipes.addShaped("infitech_transport_rollerinfitech_inserthatch", <factorytech:conveyor> * 6, [
+  [ironRod, magneticIronRod, steelRod], 
+  [<ore:dustRedstone>, wrench, <ore:dustRedstone>], 
+  [ironRod, magneticIronRod, steelRod]]);
+
+// Insertion Hatch
+recipes.remove(<factorytech:hatch> * 2);
+recipes.addShaped("infitech_inserthatch", <factorytech:hatch> * 2, [
+  [<minecraft:stone>, steelPlate, <minecraft:stone>], 
+  [wrench, <minecraft:hopper>, hammer], 
+  [<minecraft:stone>, steelPlate, <minecraft:stone>]]);
+
+// Auto Ejector
+recipes.remove(<factorytech:autopuller>);
+recipes.addShaped("infitech_autoejector", <factorytech:autopuller>, [
+  [null, wrench, <ore:plankWood>], 
+  [magneticIronRod, <minecraft:sticky_piston>, steelPlate], 
+  [null, hammer, <ore:plankWood>]]);

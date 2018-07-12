@@ -1,0 +1,40 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "thermalfoundation:coin",
+                    "weight": 50,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 5,
+                                "max": 10
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_data",
+                            "data": 64
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "thermalfoundation:coin",
+                    "weight": 5,
+                    "functions": [
+                        
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
