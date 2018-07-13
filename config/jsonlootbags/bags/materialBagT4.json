@@ -1,7 +1,7 @@
 {
   "loot-table": "jsonlootbags:materials/materials_t4",
   "name": "materialbagt4",
-  "human-name": "Bag of materials IV",
+  "human-name": "Bag of Materials IV",
   "texture": "jsonlootbags:bag",
   "rarity": "Uncommon",
   "effect": false,

@@ -48,8 +48,6 @@ recipes.addShapeless(dustCoal , [<ore:mortars>, <ore:crushedOreCoal>]);
 recipes.addShapeless(dustCharCoal , [<ore:mortars>, <ore:crushedOreCharCoal>]);
 recipes.addShapeless(dustObsidian , [<ore:mortars>, <ore:crushedOreObsidian>]);
 
-// MORTAR + GRAVEL = FLINT
-recipes.addShapeless(<minecraft:flint> , [<minecraft:gravel>, <minecraft:gravel>, <minecraft:gravel>, <ore:mortars> ]);
 
 
 // HAMMER + INGOTS = PLATE // PYURE: MOVE TO HAMMERS_RECIPES.ZS

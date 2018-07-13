@@ -272,6 +272,12 @@ for name in ingot_casting_array {
   mods.foundry.Casting.addRecipe(nugget, metal_liquid_map[name] * 16, nuggetMold); 
 }
 
+// LAVA RECIPES
+mods.foundry.Melting.addRecipe(<liquid:lava> * 250, <ore:stoneSmooth>, 900);
+mods.foundry.Melting.addRecipe(<liquid:lava> * 250, <ore:stoneCobble>, 900);
+mods.foundry.Melting.addRecipe(<liquid:lava> * 500, <ore:stoneNetherrack>, 900);
+mods.foundry.Melting.addRecipe(<liquid:lava> * 750, <minecraft:magma>, 900);
+
 
 /* ====================================== MACHINES ============================================= */
 var rodCopper = <ore:stickCopper>;
