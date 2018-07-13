@@ -28,6 +28,10 @@ recipes.remove(<minecraft:iron_hoe>);
 recipes.remove(<minecraft:diamond_hoe>);
 recipes.remove(<minecraft:golden_hoe>);
 
+// FLINT
+recipes.remove(<minecraft:flint>);
+recipes.addShapeless(<minecraft:flint>, [<ore:gravel>, <ore:craftingToolMortar>]);
+recipes.addShapeless(<minecraft:flint>, [<ore:gravel>, <ore:gravel>, <ore:gravel>, <ore:gravel>]);
 
 // Nerf charcoal
 var charcoal = <minecraft:coal:1>;

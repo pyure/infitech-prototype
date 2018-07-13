@@ -1,7 +1,7 @@
 {
   "loot-table": "jsonlootbags:coins/coins_t2",
   "name": "coinbagt2",
-  "human-name": "Medium bag of coins",
+  "human-name": "Medium Bag Of Coins",
   "texture": "jsonlootbags:bag",
   "rarity": "Uncommon",
   "effect": false,
