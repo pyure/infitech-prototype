@@ -28,7 +28,7 @@ var bucketReturned = bucketWater.transformNew(function(item){
 
 
 
-recipes.addShapeless(dustSulur * 1, [bucketReturned, dustImpureSulfur]);
+recipes.addShapeless(dustSulfur * 1, [bucketReturned, dustImpureSulfur]);
 
 
 
