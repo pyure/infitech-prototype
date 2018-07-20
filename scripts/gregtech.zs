@@ -32,7 +32,7 @@ var bucketReturned = bucketWater.transformNew(function(item){
 
 
 
-recipes.addShapeless(dustSulur * 1, [bucketReturned, dustImpureSulfur]);
+recipes.addShapeless(dustSulfur * 1, [bucketReturned, dustImpureSulfur]);
 
 
 
@@ -100,6 +100,7 @@ asdf.recipeBuilder()
 
 */
 
+
 var resonating_ore = <deepresonance:resonating_ore>;
 var resonating_plate = <deepresonance:resonating_plate>;
 var resonating_plate_block = <deepresonance:resonating_block>;
@@ -126,4 +127,15 @@ cutting_saw.recipeBuilder()
 	.outputs(resonating_plate * 9)
 	.duration(420)
   .EUt(2)
+  .buildAndRegister();
+
+val recipeMap = RecipeMap.getByName("compressor");
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
+
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+chemical_reactor.recipeBuilder()
+	.fluidInputs([<liquid:copper> * 144, <liquid:redstone> * 288])
+	.fluidOutputs([<liquid:red_alloy> * 144])
+	.duration(100)
+	.EUt(512)
 	.buildAndRegister();
