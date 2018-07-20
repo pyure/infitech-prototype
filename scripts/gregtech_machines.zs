@@ -1,6 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
-
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 var combUranium = <gendustry:honey_comb:138>;
 var combLignite = <gendustry:honey_comb:101>;
@@ -139,3 +139,7 @@ chemical_reactor.recipeBuilder().inputs([<ore:crushedWulfenite> * 3,  combNickel
 chemical_reactor.recipeBuilder().inputs([<ore:crushedYellowLimonite> * 3,  combSteel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedYellowLimonite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedYellowLimonite> * 3,  combIron * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedYellowLimonite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedZinc> * 3,  combZinc * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedZinc>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+
+
+// Redstone dust -> Destabilized redstone
+fluid_extractor.recipeBuilder().inputs([<ore:dustRedstone> * 1]).fluidOutputs([<liquid:redstone> * 144 ]).duration(120).EUt(24).buildAndRegister();

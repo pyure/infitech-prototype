@@ -7,6 +7,10 @@ import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
 
 
+/* EXAMPLES */
+/* https://github.com/GregTechCE/GregTech/blob/d99dbaede94f2d622ad56ed05ead32fd85106b45/src/main/java/gregtech/api/recipes/RecipeMaps.java */
+
+
 // BRONZE
 var oreDustBronze = <ore:dustBronze>;
 var firstDust = oreDustBronze.firstItem;
@@ -95,3 +99,31 @@ asdf.recipeBuilder()
 	.buildAndRegister();
 
 */
+
+var resonating_ore = <deepresonance:resonating_ore>;
+var resonating_plate = <deepresonance:resonating_plate>;
+var resonating_plate_block = <deepresonance:resonating_block>;
+
+furnace.remove(<deepresonance:resonating_plate> * 8, <deepresonance:resonating_ore:0>);
+furnace.remove(<deepresonance:resonating_plate> * 8, <deepresonance:resonating_ore:1>);
+furnace.remove(<deepresonance:resonating_plate> * 8, <deepresonance:resonating_ore:2>);
+
+furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:0>);
+furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:1>);
+furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:2>);
+
+val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
+electrolyzer.recipeBuilder()
+	.inputs(resonating_ore)
+	.outputs(resonating_plate_block)
+	.duration(820)
+  .EUt(2)
+	.buildAndRegister();
+
+val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
+cutting_saw.recipeBuilder()
+	.inputs(resonating_plate_block)
+	.outputs(resonating_plate * 9)
+	.duration(420)
+  .EUt(2)
+	.buildAndRegister();
