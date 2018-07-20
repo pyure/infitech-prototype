@@ -95,3 +95,10 @@ asdf.recipeBuilder()
 	.buildAndRegister();
 
 */
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+chemical_reactor.recipeBuilder()
+	.fluidInputs([<liquid: copper> * 144, <liquid:redstone> * 288])
+	.fluidOutputs([<fluid:red_alloy> * 144])
+	.duration(100)
+	.EUt(512)
+	.buildAndRegister();
