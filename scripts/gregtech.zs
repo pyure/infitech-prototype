@@ -28,7 +28,7 @@ var bucketReturned = bucketWater.transformNew(function(item){
 
 
 
-recipes.addShapeless(dustSulur * 1, [bucketReturned, dustImpureSulfur]);
+recipes.addShapeless(dustSulfur * 1, [bucketReturned, dustImpureSulfur]);
 
 
 
@@ -95,3 +95,14 @@ asdf.recipeBuilder()
 	.buildAndRegister();
 
 */
+
+val recipeMap = RecipeMap.getByName("compressor");
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
+
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+chemical_reactor.recipeBuilder()
+	.fluidInputs([<liquid:copper> * 144, <liquid:redstone> * 288])
+	.fluidOutputs([<liquid:red_alloy> * 144])
+	.duration(100)
+	.EUt(512)
+	.buildAndRegister();
