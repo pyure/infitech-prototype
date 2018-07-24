@@ -15,6 +15,17 @@ PBFRecipeBuilder.start()
     .fuelAmount(2)
     .buildAndRegister();
 
+//Electric Blast Furnace
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
+blast_furnace.recipeBuilder()
+	.inputs(<ore:ingotCompressedWroughtIron> * 1)
+	.fluidInputs([<liquid:oxygen> * 500])
+	.outputs(<ore:ingotSteel>.firstItem * 1)
+	.property("temperature", 1000)
+	.duration(40)
+	.EUt(120)
+	.buildAndRegister();
+
 // BRONZE
 var oreDustBronze = <ore:dustBronze>;
 var firstDust = oreDustBronze.firstItem;
