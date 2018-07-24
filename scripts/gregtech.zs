@@ -38,7 +38,7 @@ for item in oreDustBronze.items {
 recipes.addShapeless(firstDust * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
 
 var bucketWater = <minecraft:water_bucket>;
-var dustSulur = <gregtech:meta_item_1:2065>;
+var dustSulfur = <gregtech:meta_item_1:2065>;
 var dustImpureSulfur = <ore:dustImpureSulfur>;
 
 var bucketReturned = bucketWater.transformNew(function(item){
