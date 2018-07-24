@@ -33,27 +33,10 @@ blast_furnace.recipeBuilder()
 // BRONZE
 var oreDustBronze = <ore:dustBronze>;
 var firstDust = oreDustBronze.firstItem;
-
-
 for item in oreDustBronze.items {
     recipes.remove(item * 4);
 }
-
 recipes.addShapeless(firstDust * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
-
-var bucketWater = <minecraft:water_bucket>;
-var dustSulfur = <gregtech:meta_item_1:2065>;
-var dustImpureSulfur = <ore:dustImpureSulfur>;
-
-var bucketReturned = bucketWater.transformNew(function(item){
-  return item;
-});
-
-
-
-recipes.addShapeless(dustSulfur * 1, [bucketReturned, dustImpureSulfur]);
-
-
 
 // Stick + Rubber => 3 Torches
 var rubber = <metaitem:rubber_drop>;
@@ -148,7 +131,6 @@ cutting_saw.recipeBuilder()
   .EUt(2)
   .buildAndRegister();
 
-val recipeMap = RecipeMap.getByName("compressor");
 compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
 
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
