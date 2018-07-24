@@ -5,7 +5,26 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
+import mods.gregtech.recipe.PBFRecipeBuilder;
 
+//Blast furnace
+PBFRecipeBuilder.start()
+    .input(<ore:ingotCompressedWroughtIron> * 1)
+    .output(<ore:ingotSteel>.firstItem * 1)
+    .duration(250)
+    .fuelAmount(2)
+    .buildAndRegister();
+
+//Electric Blast Furnace
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
+blast_furnace.recipeBuilder()
+	.inputs(<ore:ingotCompressedWroughtIron> * 1)
+	.fluidInputs([<liquid:oxygen> * 500])
+	.outputs(<ore:ingotSteel>.firstItem * 1)
+	.property("temperature", 1000)
+	.duration(40)
+	.EUt(120)
+	.buildAndRegister();
 
 /* EXAMPLES */
 /* https://github.com/GregTechCE/GregTech/blob/d99dbaede94f2d622ad56ed05ead32fd85106b45/src/main/java/gregtech/api/recipes/RecipeMaps.java */
@@ -23,7 +42,7 @@ for item in oreDustBronze.items {
 recipes.addShapeless(firstDust * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
 
 var bucketWater = <minecraft:water_bucket>;
-var dustSulur = <gregtech:meta_item_1:2065>;
+var dustSulfur = <gregtech:meta_item_1:2065>;
 var dustImpureSulfur = <ore:dustImpureSulfur>;
 
 var bucketReturned = bucketWater.transformNew(function(item){
