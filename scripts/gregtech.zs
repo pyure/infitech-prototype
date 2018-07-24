@@ -5,7 +5,15 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
+import mods.gregtech.recipe.PBFRecipeBuilder;
 
+//Blast furnace
+PBFRecipeBuilder.start()
+    .input(<ore:ingotCompressedWroughtIron> * 1)
+    .output(<ore:ingotSteel>.firstItem * 1)
+    .duration(250)
+    .fuelAmount(2)
+    .buildAndRegister();
 
 // BRONZE
 var oreDustBronze = <ore:dustBronze>;
