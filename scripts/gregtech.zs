@@ -26,30 +26,17 @@ blast_furnace.recipeBuilder()
 	.EUt(120)
 	.buildAndRegister();
 
+/* EXAMPLES */
+/* https://github.com/GregTechCE/GregTech/blob/d99dbaede94f2d622ad56ed05ead32fd85106b45/src/main/java/gregtech/api/recipes/RecipeMaps.java */
+
+
 // BRONZE
 var oreDustBronze = <ore:dustBronze>;
 var firstDust = oreDustBronze.firstItem;
-
-
 for item in oreDustBronze.items {
     recipes.remove(item * 4);
 }
-
 recipes.addShapeless(firstDust * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
-
-var bucketWater = <minecraft:water_bucket>;
-var dustSulur = <gregtech:meta_item_1:2065>;
-var dustImpureSulfur = <ore:dustImpureSulfur>;
-
-var bucketReturned = bucketWater.transformNew(function(item){
-  return item;
-});
-
-
-
-recipes.addShapeless(dustSulfur * 1, [bucketReturned, dustImpureSulfur]);
-
-
 
 // Stick + Rubber => 3 Torches
 var rubber = <metaitem:rubber_drop>;
@@ -100,7 +87,35 @@ compressor.recipeBuilder()
   .EUt(12)
 	.buildAndRegister();
 
-val recipeMap = RecipeMap.getByName("compressor");
+
+var resonating_ore = <deepresonance:resonating_ore>;
+var resonating_plate = <deepresonance:resonating_plate>;
+var resonating_plate_block = <deepresonance:resonating_block>;
+
+furnace.remove(<deepresonance:resonating_plate> * 8, <deepresonance:resonating_ore:0>);
+furnace.remove(<deepresonance:resonating_plate> * 8, <deepresonance:resonating_ore:1>);
+furnace.remove(<deepresonance:resonating_plate> * 8, <deepresonance:resonating_ore:2>);
+
+furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:0>);
+furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:1>);
+furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:2>);
+
+val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
+electrolyzer.recipeBuilder()
+	.inputs(resonating_ore)
+	.outputs(resonating_plate_block)
+	.duration(820)
+  .EUt(2)
+	.buildAndRegister();
+
+val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
+cutting_saw.recipeBuilder()
+	.inputs(resonating_plate_block)
+	.outputs(resonating_plate * 9)
+	.duration(420)
+  .EUt(2)
+  .buildAndRegister();
+
 compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
 
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
