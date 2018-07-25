@@ -99,21 +99,6 @@ compressor.recipeBuilder()
 	.duration(440)
   .EUt(12)
 	.buildAndRegister();
-  
-  
-// PRIMITIVE BLAST FURNACE
-/*
-val blastfurnace as PRIMITIVE_BLAST_FURNACE_RECIPES3 ;
-var asdf = blastfurnace.recipe();
-
-asdf.recipeBuilder()
-  .input(<ore:ingotCompressedWroughtIron>)
-	.output(<ore:ingotSteel>.firstItem)
-	.duration(300)
-  .fuelAmount(2400)
-	.buildAndRegister();
-
-*/
 
 val recipeMap = RecipeMap.getByName("compressor");
 compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
