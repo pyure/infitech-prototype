@@ -7,7 +7,7 @@ import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.PBFRecipeBuilder;
 
-//Blast furnace
+//Primitive Blast furnace
 PBFRecipeBuilder.start()
     .input(<ore:ingotCompressedWroughtIron> * 1)
     .output(<ore:ingotSteel>.firstItem * 1)
@@ -17,12 +17,43 @@ PBFRecipeBuilder.start()
 
 //Electric Blast Furnace
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
+blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
+blast_furnace.findRecipe(120, [<ore:ingotWroughtIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
+blast_furnace.findRecipe(120, [<ore:ingotPigIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
+
 blast_furnace.recipeBuilder()
 	.inputs(<ore:ingotCompressedWroughtIron> * 1)
 	.fluidInputs([<liquid:oxygen> * 500])
-	.outputs(<ore:ingotSteel>.firstItem * 1)
+	.outputs(<ore:ingotSteel>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 1)
 	.property("temperature", 1000)
-	.duration(40)
+	.duration(480)
+	.EUt(120)
+	.buildAndRegister();
+
+blast_furnace.recipeBuilder()
+	.inputs(<ore:ingotWroughtIron> * 1)
+	.fluidInputs([<liquid:oxygen> * 1000])
+	.outputs(<ore:ingotSteel>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
+	.property("temperature", 1000)
+	.duration(560)
+	.EUt(120)
+	.buildAndRegister();
+
+blast_furnace.recipeBuilder()
+	.inputs(<ore:ingotPigIron> * 1)
+	.fluidInputs([<liquid:oxygen> * 1000])
+	.outputs(<ore:ingotSteel>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
+	.property("temperature", 1000)
+	.duration(560)
+	.EUt(120)
+	.buildAndRegister();
+
+blast_furnace.recipeBuilder()
+	.inputs(<minecraft:iron_ingot> * 1)
+	.fluidInputs([<liquid:oxygen> * 1000])
+	.outputs(<ore:ingotSteel>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 3)
+	.property("temperature", 1000)
+	.duration(800)
 	.EUt(120)
 	.buildAndRegister();
 
