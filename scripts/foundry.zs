@@ -337,7 +337,21 @@ recipes.addShaped(caster, [
    [null, <foundry:mold>, null],
    [<ore:craftingToolWrench, refractoryCasingStandard, <ore:craftingToolHardHammer>],
    [<ore:gearWroughtIron>, brickFoundry, <ore:gearWroughtIron>]]);
-   
+
+//Basic melting crucible
+recipes.remove(<foundry:machine>);
+recipes.addShaped(<foundry:machine>, [
+	[brickFoundry, <foundry:bronzecauldron>, brickFoundry],
+	[<ore:plateBronze>, refractoryCasingBasic, <ore:plateBronze>],
+	[brickFoundry, <ore:craftingToolHardHammer>, brickFoundry]]);
+
+//Standard melting crucible
+recipes.remove(<foundry:machine:8>);
+recipes.addShaped(<foundry:machine:8>, [
+	[brickFoundry, <foundry:refractorytankstandard>, brickFoundry],
+	[<ore:plateIron>, refractoryCasingStandard, <ore:plateIron>],
+	[brickFoundry, <ore:craftingToolHardHammer>, brickFoundry]]);
 
 // DISABLED BLOCKS/ITEMS
 scripts.functions.disableItem(<foundry:alloyfurnace>);
+scripts.functions.disableItem(<foundry:machine:2>);//alloy mixer, allowing mixing up to 4 metals at once
