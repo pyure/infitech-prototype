@@ -103,7 +103,7 @@ var compressed_wrought_iron = MaterialSystem.getMaterialBuilder().setName('Compr
 var ore_byproducts_list = [Iridium,Bismuth,Lead,Gold,Copper,Silver,Zinc,Iron,Cobalt,Nickel,Platinum,Uranium,Uranium235,Beryllium,Naquadah,Coal,Neodymium,Sulfur,Aluminium,Quartzite,Pyrite,Salt,BandedIron,Sphalerite,Tin,Garnierite,Magnetite,Stibnite,Uraninite,Cassiterite,Cinnabar,Pentlandite,Phosphor,NetherQuartz,CertusQuartz,Phosphate,Pyrolusite,RockSalt,Molybdenite,Monazite,GreenSapphire,VanadiumMagnetite,Galena,Barite,Calcite,Ilmenite,Lignite,Chalcopyrite,Chromite,Cobaltite,Wulfenite,Scheelite,Tungstate,Saltpeter,Pitchblende,Powellite,Apatite,Magnesite,BrownLimonite,Tantalite,YellowLimonite,Talc,Bastnasite,Malachite,Tetrahedrite,Sodalite,Pyrope,Spodumene,Bauxite,Soapstone,Cooperite,Almandine,Grossular,Redstone,Spessartine,Lazurite,Lepidolite,Diamond,Glauconite] as Material[];
 
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_crushed_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallCrushedOre").build();
-var metal_list = [compressed_wrought_iron] as Material[];
+var metal_list = [] as Material[];
 var ore_part_names = ["small_crushed_ore"] as string[]; 
 var part_names = ["nugget", "ingot", "plate", "rod"] as string[]; 
 
