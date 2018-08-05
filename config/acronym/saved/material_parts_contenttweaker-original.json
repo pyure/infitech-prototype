@@ -23,7 +23,6 @@
     "almandine_small_crushed_ore": 601,
     "sphalerite_small_crushed_ore": 553,
     "calcite_small_crushed_ore": 574,
-    "compressed_wrought_iron_rod": 612,
     "cassiterite_small_crushed_ore": 559,
     "tin_small_crushed_ore": 554,
     "tantalite_small_crushed_ore": 589,
@@ -31,8 +30,6 @@
     "nickel_small_crushed_ore": 539,
     "lignite_small_crushed_ore": 576,
     "uraninite_small_crushed_ore": 558,
-    "compressed_wrought_iron_ingot": 610,
-    "compressed_wrought_iron_block": 614,
     "brown_limonite_small_crushed_ore": 588,
     "pyrite_small_crushed_ore": 550,
     "ilmenite_small_crushed_ore": 575,
@@ -63,7 +60,6 @@
     "chalcopyrite_small_crushed_ore": 577,
     "nether_quartz_small_crushed_ore": 563,
     "uranium_small_crushed_ore": 541,
-    "compressed_wrought_iron_nugget": 609,
     "diamond_small_crushed_ore": 607,
     "talc_small_crushed_ore": 591,
     "pitchblende_small_crushed_ore": 584,
@@ -81,7 +77,6 @@
     "uranium235_small_crushed_ore": 542,
     "tungstate_small_crushed_ore": 582,
     "scheelite_small_crushed_ore": 581,
-    "compressed_wrought_iron_plate": 611,
     "apatite_small_crushed_ore": 586,
     "neodymium_small_crushed_ore": 546
   }

@@ -24,7 +24,7 @@
       "enable": true
     },
     "flowers": {
-      "amountPerChunk": 0.2,
+      "amountPerChunk": 0.15,
       "enable": true,
       "generators": {}
     },
@@ -60,32 +60,6 @@
       "generationAttempts": 128,
       "amountPerChunk": 0.152,
       "enable": true
-    },
-    "shrubs": {
-      "with": {
-        "block": "biomesoplenty:plant_0",
-        "properties": {
-          "variant": "shrub"
-        }
-      },
-      "generationAttempts": 32,
-      "amountPerChunk": 0.1,
-      "enable": true
-    },
-    "stone_formations": {
-      "minHeight": 1,
-      "with": {
-        "block": "biomesoplenty:stone_formations",
-        "properties": {
-          "position": "stalagmite_small",
-          "variant": "stone_formation"
-        }
-      },
-      "generationAttempts": 32,
-      "amountPerChunk": 30.0,
-      "maxHeight": 7,
-      "enable": true,
-      "randomDirection": true
     },
     "amber": {
       "minHeight": 4,
