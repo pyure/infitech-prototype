@@ -648,7 +648,7 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "10:10": {
       "questID:3": 49,
@@ -774,7 +774,7 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "11:10": {
       "questID:3": 50,
@@ -898,7 +898,7 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "12:10": {
       "questID:3": 51,
@@ -931,7 +931,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "13:10": {
       "questID:3": 52,
@@ -964,7 +964,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "14:10": {
       "questID:3": 53,
@@ -997,7 +997,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "15:10": {
       "questID:3": 54,
@@ -1173,7 +1173,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "16:10": {
       "questID:3": 55,
@@ -1349,7 +1349,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "17:10": {
       "questID:3": 56,
@@ -1382,7 +1382,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "18:10": {
       "questID:3": 57,
@@ -1558,7 +1558,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "19:10": {
       "questID:3": 58,
@@ -1619,7 +1619,7 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "20:10": {
       "questID:3": 59,
@@ -1652,7 +1652,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "21:10": {
       "questID:3": 60,
@@ -1685,7 +1685,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "22:10": {
       "questID:3": 61,
@@ -1718,7 +1718,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "23:10": {
       "questID:3": 62,
@@ -1751,7 +1751,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "24:10": {
       "questID:3": 63,
@@ -1784,7 +1784,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "25:10": {
       "questID:3": 64,
@@ -1817,7 +1817,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "26:10": {
       "questID:3": 65,
@@ -1850,7 +1850,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "27:10": {
       "questID:3": 66,
@@ -1883,7 +1883,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "28:10": {
       "questID:3": 67,
@@ -1916,7 +1916,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "29:10": {
       "questID:3": 68,
@@ -1949,7 +1949,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "30:10": {
       "questID:3": 69,
@@ -1982,7 +1982,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "31:10": {
       "questID:3": 70,
@@ -2016,7 +2016,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "32:10": {
       "questID:3": 71,
@@ -2049,7 +2049,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "33:10": {
       "questID:3": 72,
@@ -2082,7 +2082,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "34:10": {
       "questID:3": 73,
@@ -2115,7 +2115,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "35:10": {
       "questID:3": 74,
@@ -2148,7 +2148,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "36:10": {
       "questID:3": 75,
@@ -2181,7 +2181,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "37:10": {
       "questID:3": 76,
@@ -2214,7 +2214,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "38:10": {
       "questID:3": 77,
@@ -2247,7 +2247,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "39:10": {
       "questID:3": 78,
@@ -2280,7 +2280,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "40:10": {
       "questID:3": 79,
@@ -2311,7 +2311,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "41:10": {
       "questID:3": 80,
@@ -2344,7 +2344,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "42:10": {
       "questID:3": 81,
@@ -2377,7 +2377,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "43:10": {
       "questID:3": 82,
@@ -2410,7 +2410,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "44:10": {
       "questID:3": 83,
@@ -2443,7 +2443,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "45:10": {
       "questID:3": 84,
@@ -2476,7 +2476,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "46:10": {
       "questID:3": 85,
@@ -2510,7 +2510,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "47:10": {
       "questID:3": 86,
@@ -2544,7 +2544,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "48:10": {
       "questID:3": 87,
@@ -2577,7 +2577,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "49:10": {
       "questID:3": 88,
@@ -2611,7 +2611,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "50:10": {
       "questID:3": 89,
@@ -2644,7 +2644,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "51:10": {
       "questID:3": 90,
@@ -2677,7 +2677,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "52:10": {
       "questID:3": 91,
@@ -2710,7 +2710,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "53:10": {
       "questID:3": 92,
@@ -2743,7 +2743,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "54:10": {
       "questID:3": 93,
@@ -2776,7 +2776,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "55:10": {
       "questID:3": 94,
@@ -2809,7 +2809,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "56:10": {
       "questID:3": 95,
@@ -2842,7 +2842,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "57:10": {
       "questID:3": 96,
@@ -2875,7 +2875,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "58:10": {
       "questID:3": 97,
@@ -2908,7 +2908,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "59:10": {
       "questID:3": 98,
@@ -2941,7 +2941,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "60:10": {
       "questID:3": 99,
@@ -2974,7 +2974,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "61:10": {
       "questID:3": 100,
@@ -3007,7 +3007,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "62:10": {
       "questID:3": 101,
@@ -3040,7 +3040,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "63:10": {
       "questID:3": 102,
@@ -3073,7 +3073,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "64:10": {
       "questID:3": 103,
@@ -3107,7 +3107,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "65:10": {
       "questID:3": 104,
@@ -3140,7 +3140,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "66:10": {
       "questID:3": 105,
@@ -3173,7 +3173,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "67:10": {
       "questID:3": 106,
@@ -3206,7 +3206,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "68:10": {
       "questID:3": 107,
@@ -3240,7 +3240,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "69:10": {
       "questID:3": 108,
@@ -3273,7 +3273,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "70:10": {
       "questID:3": 109,
@@ -3306,7 +3306,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     },
     "71:10": {
       "questID:3": 110,
@@ -3340,7 +3340,7 @@
         }
       },
       "tasks:9": {},
-      "rewards:9": {}
+       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
     }
   },
   "questLines:9": {
@@ -3722,10 +3722,10 @@
       "lineID:3": 0,
       "properties:10": {
         "betterquesting:10": {
-          "name:8": "Bronze age",
+          "name:8": "Bronze Age",
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "No Description (for now)"
+          "desc:8": "Its time to crawl out from under your rock from your cave, and discover the secrets of smelting."
         }
       },
       "order:3": 0
