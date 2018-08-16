@@ -33,3 +33,20 @@ PBFRecipeBuilder.start()
     .duration(4200)
     .fuelAmount(3)
     .buildAndRegister();
+
+//Changing PBF recipe
+var primitive_brick = <gregtech:metal_casing:1>;
+var pbf = <gregtech:machine:510>;
+var foundry_clay = <foundry:component:1>;
+
+recipes.remove(pbf);
+recipes.addShaped(pbf, [
+   [primitive_brick, <natura:netherrack_furnace>, primitive_brick],
+   [<minecraft:furnace>, <ore:craftingToolWrench>, <minecraft:furnace>],
+   [primitive_brick, <natura:netherrack_furnace>, primitive_brick]]);
+
+recipes.remove(primitive_brick);
+recipes.addShaped(primitive_brick, [
+   [<minecraft:brick>, <ore:craftingToolHardHammer>, <minecraft:brick>],
+   [<minecraft:netherbrick>, <minecraft:nether_brick>, <minecraft:netherbrick>],
+   [<minecraft:brick>, foundry_clay, <minecraft:brick>]]);

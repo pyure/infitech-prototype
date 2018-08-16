@@ -75,7 +75,8 @@ var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
-    
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
+
 recipes.addShaped(coal_ball, [
   [coal_dust, coal_dust, coal_dust],
   [coal_dust, flint, coal_dust],
@@ -139,7 +140,7 @@ cutting_saw.recipeBuilder()
   .EUt(2)
   .buildAndRegister();
 
-compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
+
 
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 chemical_reactor.recipeBuilder()
