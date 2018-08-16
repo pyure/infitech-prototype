@@ -155,8 +155,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "Ye Olde Return Policy (x5)",
-          "desc:8": "You can exchange unwanted lootbags for a (poor) return of coins."
+          "name:8": "Bulk Purchase Tier 1 Material Bags",
+          "desc:8": "For a discount, you can buy five bags of materials for 3 Iron Coins and 5 Copper Coins!"
         }
       },
       "tasks:9": {
@@ -225,8 +225,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "Ye Olde Return Policy (x5)",
-          "desc:8": "You can exchange unwanted lootbags for a (poor) return of coins."
+          "name:8": "Bulk Purchase Tier 2 Material Bags",
+          "desc:8": "For a discount, you can buy five bags of materials for 2 Constantan Coins and 2 Iron Coins!"
         }
       },
       "tasks:9": {
@@ -348,9 +348,9 @@
           "visibility:8": "HIDDEN",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "gregtech:meta_item_1",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 10018,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -412,9 +412,9 @@
           "visibility:8": "HIDDEN",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "projectred-core:resource_item",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 101,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -476,9 +476,9 @@
           "visibility:8": "HIDDEN",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "thermalfoundation:material",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 160,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -626,7 +626,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Getting wood",
-          "desc:8": "No Description"
+          "desc:8": "To get started you\u0027ll need some basic resources."
         }
       },
       "tasks:9": {
@@ -648,7 +648,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "10:10": {
       "questID:3": 49,
@@ -677,7 +690,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Flint tools",
-          "desc:8": "No Description"
+          "desc:8": "Flint tools are an immediate improvement on your wood and stone alternatives"
         }
       },
       "tasks:9": {
@@ -774,7 +787,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "11:10": {
       "questID:3": 50,
@@ -808,7 +834,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Easy flint",
-          "desc:8": "No Description"
+          "desc:8": "Mortars offer a more efficient means of producing Gravel, and are required for some Dust recipes later on."
         }
       },
       "tasks:9": {
@@ -898,7 +924,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "12:10": {
       "questID:3": 51,
@@ -927,7 +966,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "I\u0027m feeling croppy",
-          "desc:8": "No Description"
+          "desc:8": "Crop sticks will allow you to mutate crops and improve their yields considerably."
         }
       },
       "tasks:9": {
@@ -949,8 +988,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "tasks:9": {},
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "13:10": {
       "questID:3": 52,
@@ -979,7 +1030,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Food",
-          "desc:8": "No Description"
+          "desc:8": "A steady supply of food will be necessary to ensure your survival."
         }
       },
       "tasks:9": {
@@ -999,13 +1050,13 @@
             },
             "1:10": {
               "id:8": "minecraft:potato",
-              "Count:3": 4,
+              "Count:3": 2,
               "OreDict:8": "",
               "Damage:3": 0
             },
             "2:10": {
               "id:8": "minecraft:carrot",
-              "Count:3": 4,
+              "Count:3": 2,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -1013,8 +1064,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "tasks:9": {},
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "14:10": {
       "questID:3": 53,
@@ -1043,7 +1106,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Analyze",
-          "desc:8": "No Description"
+          "desc:8": "In order to determine the traits of your seeds you\u0027ll need a seed analyzer."
         }
       },
       "tasks:9": {
@@ -1065,7 +1128,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "15:10": {
       "questID:3": 54,
@@ -1237,7 +1313,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "BEEware",
-          "desc:8": "No Description"
+          "desc:8": "Bees will allow you to greatly increase your resource yields."
         }
       },
       "tasks:9": {
@@ -1551,7 +1627,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "16:10": {
       "questID:3": 55,
@@ -1723,7 +1812,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Gotta catch\u0027em all",
-          "desc:8": "No Description"
+          "desc:8": "Acquire more species for your breeding endeavours."
         }
       },
       "tasks:9": {
@@ -2037,7 +2126,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "17:10": {
       "questID:3": 56,
@@ -2066,7 +2168,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Beealyze",
-          "desc:8": "No Description"
+          "desc:8": "The forestry analyzer can scan bees and determine their exact traits."
         }
       },
       "tasks:9": {
@@ -2088,7 +2190,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "18:10": {
       "questID:3": 57,
@@ -2260,7 +2375,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Master apiarist",
-          "desc:8": "No Description"
+          "desc:8": "Imperial and Industrial Bees are key to accessing useful resource-generating bees."
         }
       },
       "tasks:9": {
@@ -2574,7 +2689,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "19:10": {
       "questID:3": 58,
@@ -2608,7 +2736,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Introduction to the shop",
-          "desc:8": "No Description"
+          "desc:8": "There are a number of useful tools at your disposal. For instance, a crowbar will allow you to open crates."
         }
       },
       "tasks:9": {
@@ -2635,7 +2763,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "20:10": {
       "questID:3": 59,
@@ -2664,7 +2805,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Ore variety",
-          "desc:8": "No Description"
+          "desc:8": "You\u0027ll need several varieties of ores in order to successfully progress to subsequent tiers."
         }
       },
       "tasks:9": {
@@ -2704,7 +2845,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "21:10": {
       "questID:3": 60,
@@ -2733,7 +2887,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "You get the irony?",
-          "desc:8": "No Description"
+          "desc:8": "Iron is necessary for any number of machines and tools. To get Iron, you\u0027ll first need to mine some Iron Ore."
         }
       },
       "tasks:9": {
@@ -2755,7 +2909,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]  
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "22:10": {
       "questID:3": 61,
@@ -2784,7 +2951,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "A light in the Darkness",
-          "desc:8": "No Description"
+          "desc:8": "There are a number of ways you can create torches."
         }
       },
       "tasks:9": {
@@ -2806,7 +2973,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "23:10": {
       "questID:3": 62,
@@ -2857,7 +3037,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "24:10": {
       "questID:3": 63,
@@ -2886,7 +3079,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Pile of c...harcoal",
-          "desc:8": "No Description"
+          "desc:8": "Since you cannot cook logs in a furnace to make charcoal, your best option may be a Charcoal Pit. Charcoal Pits are comprised of wood piles surrounded by solid blocks. Note that some solid blocks yield better results than others."
         }
       },
       "tasks:9": {
@@ -2925,7 +3118,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "25:10": {
       "questID:3": 64,
@@ -2954,7 +3160,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "All the charcoal",
-          "desc:8": "No Description"
+          "desc:8": "Demonstrate your mastery of Charcoal Pits. And get rewarded."
         }
       },
       "tasks:9": {
@@ -2976,7 +3182,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 2,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "26:10": {
       "questID:3": 65,
@@ -3005,7 +3224,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Grind that!",
-          "desc:8": "No Description"
+          "desc:8": "One option for increasing your ore yields is a FactoryTech grinder. It will require constant replenishing of parts, but requires no power input."
         }
       },
       "tasks:9": {
@@ -3027,7 +3246,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "27:10": {
       "questID:3": 66,
@@ -3056,7 +3288,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Crushed",
-          "desc:8": "No Description"
+          "desc:8": "The first step towards better ore resource yields is producing crushed ores."
         }
       },
       "tasks:9": {
@@ -3078,8 +3310,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
-
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "28:10": {
       "questID:3": 67,
@@ -3108,7 +3352,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Impure",
-          "desc:8": "No Description"
+          "desc:8": "Crushed ores can be processed further to get impure dusts.  With the right technology, impure dusts can be centrifuged for byproducts, some of which are rare."
         }
       },
       "tasks:9": {
@@ -3130,7 +3374,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "29:10": {
       "questID:3": 68,
@@ -3159,7 +3416,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Early purification",
-          "desc:8": "No Description"
+          "desc:8": "To fill cauldrons and move fluids around, you\u0027ll need a bucket."
         }
       },
       "tasks:9": {
@@ -3187,7 +3444,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "30:10": {
       "questID:3": 69,
@@ -3216,7 +3486,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Pyure",
-          "desc:8": "No Description"
+          "desc:8": "Impure dusts cannot be used in alloys. To cleanse the dusts, you can throw up to an entire stack of it onto a cauldron with water in it."
         }
       },
       "tasks:9": {
@@ -3238,7 +3508,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "31:10": {
       "questID:3": 70,
@@ -3268,7 +3551,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Introduction to fluid transportation",
-          "desc:8": "No Description"
+          "desc:8": "You\u0027ll need a considerable amount of clay to assemble your first fluid infastructure."
         }
       },
       "tasks:9": {
@@ -3290,8 +3573,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
-
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "32:10": {
       "questID:3": 71,
@@ -3320,7 +3615,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Clay barrels",
-          "desc:8": "No Description"
+          "desc:8": "Clay Barrels are a primitive means of storing liquids. To build them you\u0027ll need Unfired Clay Barrels.  Smelt the Unfired Clay Barrel to acquire a Clay Barrel, where you can store liquid. These can be combined in a larger structure for more storage capacity."
         }
       },
       "tasks:9": {
@@ -3356,7 +3651,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "33:10": {
       "questID:3": 72,
@@ -3385,7 +3693,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Usefull foes",
-          "desc:8": "No Description"
+          "desc:8": "Porcelain will require some Bone Meal."
         }
       },
       "tasks:9": {
@@ -3407,7 +3715,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "34:10": {
       "questID:3": 73,
@@ -3436,7 +3757,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Porcelain",
-          "desc:8": "No Description"
+          "desc:8": "Porcelain can be used to build Channels and Faucets, a primitive step above carting water around with buckets."
         }
       },
       "tasks:9": {
@@ -3458,7 +3779,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "35:10": {
       "questID:3": 74,
@@ -3487,7 +3821,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Easier cauldron filling",
-          "desc:8": "No Description"
+          "desc:8": "Channels and faucets are an early-game method to move fluids. You can set these up to transport water to, for example, near your Cauldron."
         }
       },
       "tasks:9": {
@@ -3515,7 +3849,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "36:10": {
       "questID:3": 75,
@@ -3544,7 +3891,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Right tool for the right job",
-          "desc:8": "No Description"
+          "desc:8": "There are several tools which you will need to process resources, assemble tools and build machines."
         }
       },
       "tasks:9": {
@@ -3630,7 +3977,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "37:10": {
       "questID:3": 76,
@@ -3659,7 +4019,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Wroar!",
-          "desc:8": "No Description"
+          "desc:8": "You can significantly increase the duration of iron by cooking it again (as nuggets) into wrought iron."
         }
       },
       "tasks:9": {
@@ -3681,7 +4041,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "38:10": {
       "questID:3": 77,
@@ -3710,7 +4083,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Boomstick",
-          "desc:8": "No Description"
+          "desc:8": "Need an explosion?  You can craft some early-game explosives if necessary."
         }
       },
       "tasks:9": {
@@ -3732,7 +4105,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "39:10": {
       "questID:3": 78,
@@ -3783,7 +4169,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "40:10": {
       "questID:3": 79,
@@ -3814,7 +4213,20 @@
         }
       },
       "tasks:9": {},
-       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "41:10": {
       "questID:3": 80,
@@ -3843,7 +4255,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "OSS tutorial",
-          "desc:8": "No Description"
+          "desc:8": "Show us that you can use the Object Submission Station"
         }
       },
       "tasks:9": {
@@ -3865,7 +4277,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "42:10": {
       "questID:3": 81,
@@ -3921,7 +4346,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Tooling up",
-          "desc:8": "No Description"
+          "desc:8": "With the wrought iron you\u0027ve acquired, you can greatly improve the durability of your tools."
         }
       },
       "tasks:9": {
@@ -4069,7 +4494,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "43:10": {
       "questID:3": 82,
@@ -4098,7 +4536,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "This game is so grindy",
-          "desc:8": "No Description"
+          "desc:8": "Break down your copper and tin ores."
         }
       },
       "tasks:9": {
@@ -4126,7 +4564,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "44:10": {
       "questID:3": 83,
@@ -4155,7 +4606,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Foundry introduction",
-          "desc:8": "No Description"
+          "desc:8": "You can improve your ore processing yields considerably with Foundry equipment."
         }
       },
       "tasks:9": {
@@ -4201,7 +4652,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "45:10": {
       "questID:3": 84,
@@ -4230,7 +4694,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Manual mixing",
-          "desc:8": "No Description"
+          "desc:8": "You do not have options to alloy Bronze very effectively at this point; you\u0027ll need to acquire some the inefficient way for now."
         }
       },
       "tasks:9": {
@@ -4252,7 +4716,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "46:10": {
       "questID:3": 85,
@@ -4282,7 +4759,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Intricate alloys",
-          "desc:8": "No Description"
+          "desc:8": "A modest improvement over Iron, you can improve you industry by smelting Bronze."
         }
       },
       "tasks:9": {
@@ -4304,7 +4781,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "47:10": {
       "questID:3": 86,
@@ -4334,7 +4824,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Early multiplication",
-          "desc:8": "No Description"
+          "desc:8": "It is possible to greatly increase your resource yields by combining some industries together. For instance, machines from FactoryTech and Foundry."
         }
       },
       "tasks:9": {
@@ -4356,7 +4846,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "48:10": {
       "questID:3": 87,
@@ -4385,11 +4888,24 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "So ironic",
-          "desc:8": "No Description"
+          "desc:8": "Smelt a goodly number of Iron Ingots. You will need them."
         }
       },
       "tasks:9": {},
-       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "49:10": {
       "questID:3": 88,
@@ -4419,7 +4935,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Explode me up before you go",
-          "desc:8": "No Description"
+          "desc:8": "Almost all Pneumaticraft machinery and items require some amount of Compressed Iron."
         }
       },
       "tasks:9": {
@@ -4441,7 +4957,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "50:10": {
       "questID:3": 89,
@@ -4470,7 +4999,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Working under pressure",
-          "desc:8": "No Description"
+          "desc:8": "The Pneumaticraft Compressor is necessary to generate the compressed air required by certain machines."
         }
       },
       "tasks:9": {
@@ -4492,7 +5021,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "51:10": {
       "questID:3": 90,
@@ -4521,7 +5063,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Thanks, Gaben!",
-          "desc:8": "No Description"
+          "desc:8": "The small coal boiler is the most basic method of creating steam. It is reasonably efficient, but does not output very much."
         }
       },
       "tasks:9": {
@@ -4543,7 +5085,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "52:10": {
       "questID:3": 91,
@@ -4572,7 +5127,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "First fluiducts",
-          "desc:8": "No Description"
+          "desc:8": "Fluiducts are a massive improvement over ceramic Channels for moving fluids."
         }
       },
       "tasks:9": {
@@ -4594,7 +5149,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "53:10": {
       "questID:3": 92,
@@ -4627,7 +5195,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Infi water I",
-          "desc:8": "No Description"
+          "desc:8": "An excellent way to generate infinite water is with Water Tanks. They will slowly yield water when water flows above them."
         }
       },
       "tasks:9": {
@@ -4649,7 +5217,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "54:10": {
       "questID:3": 93,
@@ -4678,7 +5259,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Infi water II",
-          "desc:8": "No Description"
+          "desc:8": "An alternative method of acquiring infinite water is the FactoryTech Water Collector. You need to put this device in the water and it will slowly, but surely collect water for you."
         }
       },
       "tasks:9": {
@@ -4700,7 +5281,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "55:10": {
       "questID:3": 94,
@@ -4729,7 +5323,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Solar powah",
-          "desc:8": "No Description"
+          "desc:8": "Solar Boilers can be used to generate small amounts of steam essentially for free, so long as the sun is shining. Don\u0027t forget to clean them every so often."
         }
       },
       "tasks:9": {
@@ -4751,7 +5345,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "56:10": {
       "questID:3": 95,
@@ -4780,7 +5387,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Compressor",
-          "desc:8": "No Description"
+          "desc:8": "Many materials and blocks can only be acquired with the user of something like the Compressor."
         }
       },
       "tasks:9": {
@@ -4802,7 +5409,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "57:10": {
       "questID:3": 96,
@@ -4831,7 +5451,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Macerator",
-          "desc:8": "No Description"
+          "desc:8": "The macerator is useful for \u0027mortaring\u0027 resources. Note that early versions (e.g. Steam) are NOT capable of duplicating ores!"
         }
       },
       "tasks:9": {
@@ -4853,7 +5473,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "58:10": {
       "questID:3": 97,
@@ -4882,7 +5515,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Extractor",
-          "desc:8": "No Description"
+          "desc:8": "The extractor is an efficient way of extracting resources from things like plantlife. This can save considerable time with, for instance, rubber."
         }
       },
       "tasks:9": {
@@ -4904,7 +5537,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "59:10": {
       "questID:3": 98,
@@ -4933,7 +5579,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Ewww! Sticky!",
-          "desc:8": "No Description"
+          "desc:8": "Rubber will be very important for progressing into the next age. It is most easily acquired by chopping down rubber trees."
         }
       },
       "tasks:9": {
@@ -4955,7 +5601,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "60:10": {
       "questID:3": 99,
@@ -4984,7 +5643,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "My precious!",
-          "desc:8": "No Description"
+          "desc:8": "Diamonds can be difficult to find. If necessary, you can make them by compressing coal."
         }
       },
       "tasks:9": {
@@ -5075,7 +5734,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "61:10": {
       "questID:3": 100,
@@ -5104,7 +5776,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Selling diamonds",
-          "desc:8": "No Description"
+          "desc:8": "You can generate income by selling Diamonds."
         }
       },
       "tasks:9": {
@@ -5126,7 +5798,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 2,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thermalfoundation:coin",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "62:10": {
       "questID:3": 101,
@@ -5155,7 +5846,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Pre-rubber",
-          "desc:8": "No Description"
+          "desc:8": "Get the raw ingredients you\u0027ll need to produce proper rubber."
         }
       },
       "tasks:9": {
@@ -5183,7 +5874,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "63:10": {
       "questID:3": 102,
@@ -5212,7 +5916,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Alloying 101",
-          "desc:8": "No Description"
+          "desc:8": "Many resources can only be generated in special machines. An alloy smelter is an efficient way to produce things like Bronze, but is also the only early way to acquire Rubber."
         }
       },
       "tasks:9": {
@@ -5234,7 +5938,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "64:10": {
       "questID:3": 103,
@@ -5264,7 +5981,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Bouncy",
-          "desc:8": "No Description"
+          "desc:8": "In order to build wires you are going to need to acquire rubber, and a lot of it."
         }
       },
       "tasks:9": {
@@ -5286,7 +6003,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "65:10": {
       "questID:3": 104,
@@ -5315,7 +6045,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Better steam storage",
-          "desc:8": "No Description"
+          "desc:8": "Generating steam \u0027on need\u0027 can be inefficient. Storing it can ensure you have what you need when you need it."
         }
       },
       "tasks:9": {
@@ -5343,7 +6073,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "66:10": {
       "questID:3": 105,
@@ -5372,7 +6115,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Selling bronze",
-          "desc:8": "No Description"
+          "desc:8": "You can generate income by selling Bronze."
         }
       },
       "tasks:9": {
@@ -5394,7 +6137,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "thermalfoundation:coin",
+              "Count:3": 5,
+              "OreDict:8": "",
+              "Damage:3": 64
+            }
+          }
+        }
+      }
     },
     "67:10": {
       "questID:3": 106,
@@ -5423,11 +6185,24 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Steam cooker",
-          "desc:8": "No Description"
+          "desc:8": "Improve your smelting efficiency by building a Steam Furnace."
         }
       },
       "tasks:9": {},
-       "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "68:10": {
       "questID:3": 107,
@@ -5457,7 +6232,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Malleable",
-          "desc:8": "No Description"
+          "desc:8": "Compressing wrought iron yields a result which is even easier to work into steel, if you\u0027re willing to build the infrastruture for it."
         }
       },
       "tasks:9": {
@@ -5479,7 +6254,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "69:10": {
       "questID:3": 108,
@@ -5508,7 +6296,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "To the Nether and back",
-          "desc:8": "No Description"
+          "desc:8": "At some point you will need to venture into this hellish landscape to acquire more unusual resources."
         }
       },
       "tasks:9": {
@@ -5542,7 +6330,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "70:10": {
       "questID:3": 109,
@@ -5571,7 +6372,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "PBF",
-          "desc:8": "No Description"
+          "desc:8": "To progress any further, you will need to produce a new metal: Steel. You will need a great deal of it."
         }
       },
       "tasks:9": {
@@ -5599,7 +6400,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     },
     "71:10": {
       "questID:3": 110,
@@ -5629,7 +6443,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Steel",
-          "desc:8": "No Description"
+          "desc:8": "Produce a humongous quantity of Steel. You will need every ounce of it."
         }
       },
       "tasks:9": {
@@ -5651,7 +6465,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards": [ { "rewards": [ { "id": "jsonlootbags:coinbagt1", "Count": 1, "OreDict": "", "Damage": 0 } ], "rewardID": "bq_standard:item", "index": 0 } ]
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -6116,7 +6943,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
-      "editmode:1": 1,
+      "editmode:1": 0,
       "hardcore:1": 0,
       "home_image:8": "betterquesting:textures/gui/default_title.png",
       "home_offset_x:3": -128,
