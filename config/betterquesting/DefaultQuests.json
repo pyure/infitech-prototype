@@ -13,7 +13,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 18,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt1",
@@ -77,7 +77,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 18,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt2",
@@ -141,7 +141,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 144000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt1",
@@ -211,7 +211,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 144000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt2",
@@ -281,7 +281,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 18,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt1",
@@ -345,7 +345,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -409,7 +409,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "projectred-core:resource_item",
@@ -473,7 +473,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 6400,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thermalfoundation:material",
@@ -537,7 +537,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 18,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt2",
@@ -675,7 +675,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:flint",
@@ -698,7 +698,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -814,7 +814,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_tool",
@@ -859,7 +859,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 1,
           "consume:1": 0,
           "requiredItems:9": {
@@ -951,7 +951,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "agricraft:crop_sticks",
@@ -1015,7 +1015,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:bread",
@@ -1091,7 +1091,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "agricraft:seed_analyzer",
@@ -1155,7 +1155,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:bee_princess_ge",
@@ -1654,7 +1654,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:bee_princess_ge",
@@ -2153,7 +2153,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:portable_alyzer",
@@ -2217,7 +2217,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:bee_princess_ge",
@@ -2716,7 +2716,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_tool",
@@ -2744,7 +2744,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2790,7 +2790,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:ore_copper_0",
@@ -2872,7 +2872,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:ore_iron_0",
@@ -2936,7 +2936,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:torch",
@@ -3000,7 +3000,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:fire_bow",
@@ -3064,7 +3064,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:coal",
@@ -3145,7 +3145,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 24000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:charcoal",
@@ -3209,7 +3209,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "factorytech:oredrill",
@@ -3273,7 +3273,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -3337,7 +3337,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -3401,7 +3401,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:cauldron",
@@ -3471,7 +3471,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -3536,7 +3536,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:clay_ball",
@@ -3600,7 +3600,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "ceramics:clay_barrel",
@@ -3678,7 +3678,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:dye",
@@ -3742,7 +3742,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "ceramics:unfired_clay",
@@ -3806,7 +3806,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "ceramics:channel",
@@ -3876,7 +3876,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:iron_pickaxe",
@@ -3899,7 +3899,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -4004,7 +4004,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4068,7 +4068,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4132,7 +4132,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "betterquesting:submit_station",
@@ -4194,7 +4194,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:nether_star",
@@ -4240,7 +4240,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:cobblestone",
@@ -4304,7 +4304,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_tool",
@@ -4354,7 +4354,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -4521,7 +4521,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4591,7 +4591,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "foundry:burnerheater",
@@ -4679,7 +4679,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4744,7 +4744,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4809,7 +4809,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:iron_small_crushed_ore",
@@ -4873,7 +4873,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:iron_ingot",
@@ -4920,7 +4920,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "pneumaticcraft:ingot_iron_compressed",
@@ -4984,7 +4984,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "pneumaticcraft:air_compressor",
@@ -5048,7 +5048,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5112,7 +5112,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thermaldynamics:duct_16",
@@ -5176,7 +5176,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "agricraft:water_tank",
@@ -5244,7 +5244,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "factorytech:watercollector",
@@ -5308,7 +5308,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5372,7 +5372,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5436,7 +5436,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5500,7 +5500,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5564,7 +5564,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -5628,7 +5628,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:diamond",
@@ -5761,7 +5761,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 48000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "chisel:diamond",
@@ -5831,7 +5831,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -5901,7 +5901,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5966,7 +5966,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -6030,7 +6030,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -6100,7 +6100,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 30000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:compressed_4",
@@ -6170,7 +6170,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -6217,7 +6217,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -6281,7 +6281,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:netherrack",
@@ -6357,7 +6357,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -6428,7 +6428,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
