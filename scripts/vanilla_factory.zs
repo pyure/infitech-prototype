@@ -42,6 +42,11 @@ item.register();
 
 
 // FLUIDS
+var uranium_hexafluoride = mods.contenttweaker.VanillaFactory.createFluid("uranium_hexafluoride", "2142779");
+uranium_hexafluoride.density = 100;
+uranium_hexafluoride.viscosity = 100;
+uranium_hexafluoride.register();
+
 var fermented_biomass = mods.contenttweaker.VanillaFactory.createFluid("fermented_biomass", "4478208");
 fermented_biomass.density = 100;
 fermented_biomass.viscosity = 100;
