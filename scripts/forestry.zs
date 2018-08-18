@@ -60,4 +60,9 @@ recipes.remove(<forestry:charcoal>);
 
 // Disable forestry scoop in lieue of GT version
 scripts.functions.disableItem(<forestry:scoop>);
-recipes.remove(<forestry:scoop>);
+
+// Smoker requires flint and steel
+
+var smoker = <forestry:smoker>;
+recipes.remove(smoker);
+recipes.addShaped("forestry_smoker", smoker, [[<ore:leather>, <ore:stickWood>, <ore:stickTin>], [<ore:leather>, <forestry:ash>, <ore:plateTin>], [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
