@@ -57,3 +57,7 @@ recipes.remove(blockCopper);
 recipes.remove(blockTin);
 recipes.remove(blockBronze);
 recipes.remove(<forestry:charcoal>);
+
+// Disable forestry scoop in lieue of GT version
+scripts.functions.disableItem(<forestry:scoop>);
+recipes.remove(<forestry:scoop>);
