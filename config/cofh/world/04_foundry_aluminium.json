@@ -2,6 +2,7 @@
 	"dependencies": "foundry",
 	"populate": {
 		"aluminium": {
+      "enabled": false,
 			"distribution": "uniform",
 			"generator": {
 				"block": {
@@ -9,9 +10,9 @@
 					"metadata": 4
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 6
+				"cluster-size": 0
 			},
-			"cluster-count": 3,
+			"cluster-count": 0,
 			"min-height": 20,
 			"max-height": 40,
 			"retrogen": "true",

@@ -3014,8 +3014,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "A bow the doesn\u0027t shoot",
-          "desc:8": "No Description"
+          "name:8": "A Bow that Doesn\u0027t Shoot",
+          "desc:8": "Imagine that, flint & steel actually requires steel.  To start fires, you may need to assemble a more primitive tool; winding a rope around a stick to spin it quickly may do the trick."
         }
       },
       "tasks:9": {
@@ -6863,7 +6863,7 @@
           "name:8": "Bronze Age",
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Its time to crawl out from under your rock from your cave, and discover the secrets of smelting."
+          "desc:8": "Emerge from your cave, brave the world, and discover the secrets of smelting."
         }
       },
       "order:3": 0
