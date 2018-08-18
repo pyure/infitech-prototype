@@ -1157,32 +1157,28 @@
           "repeattime:3": -1,
           "visibility:8": "CHAIN",
           "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "forestry:bee_princess_ge",
-            "Count:3": 1,
-            "tag:10": {
-              "MaxH:3": 20,
-              "Mate:10": {
-                "Chromosomes:9": {
-                  "0:10": {
-                    "UID1:8": "forestry.speciesMeadows",
-                    "UID0:8": "forestry.speciesMeadows"
+          "icon": {
+            "id": "forestry:bee_princess_ge",
+            "Count": 1,
+            "tag": {
+              "Mate": {
+                "Chromosomes": {
+                  "0": {
+                    "UID1": "forestry.speciesMeadows",
+                    "UID0": "forestry.speciesMeadows"
                   }
                 }
               },
-              "Health:3": 20,
-              "IsAnalyzed:1": 0,
-              "Genome:10": {
-                "Chromosomes:9": {
-                  "0:10": {
-                    "UID1:8": "forestry.speciesMeadows",
-                    "UID0:8": "forestry.speciesMeadows"
+              "Genome": {
+                "Chromosomes": {
+                  "0": {
+                    "UID1": "forestry.speciesMeadows",
+                    "UID0": "forestry.speciesMeadows"
                   }
                 }
               }
             },
-            "Damage:2": 0,
-            "OreDict:8": ""
+            "Damage:2": 0
           },
           "globalshare:1": 0,
           "questlogic:8": "AND",
@@ -1202,62 +1198,56 @@
           "ignoreNBT:1": 0,
           "index:3": 0,
           "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "forestry:bee_princess_ge",
-              "Count:3": 1,
-              "tag:10": {
-                "Mate:10": {
-                  "Chromosomes:9": {
-                    "0:10": {
-                      "UID1:8": "forestry.speciesMeadows",
-                      "UID0:8": "forestry.speciesMeadows"
+          "requiredItems": {
+            "0": {
+              "id": "forestry:bee_princess_ge",
+              "Count": 1,
+              "tag": {
+                "Mate": {
+                  "Chromosomes": {
+                    "0": {
+                      "UID1": "forestry.speciesMeadows",
+                      "UID0": "forestry.speciesMeadows"
                     }
                   }
                 },
-                "Health:3": 20,
-                "IsAnalyzed:1": 0,
-                "Genome:10": {
-                  "Chromosomes:9": {
-                    "0:10": {
-                      "UID1:8": "forestry.speciesMeadows",
-                      "UID0:8": "forestry.speciesMeadows"
+                "Genome": {
+                  "Chromosomes": {
+                    "0": {
+                      "UID1": "forestry.speciesMeadows",
+                      "UID0": "forestry.speciesMeadows"
                     }
                   }
                 }
               },
               "OreDict:8": "",
-              "Damage:3": 0
             },
-            "1:10": {
-              "id:8": "forestry:bee_drone_ge",
-              "Count:3": 1,
-              "tag:10": {
-                "MaxH:3": 20,
-                "Mate:10": {
-                  "Chromosomes:9": {
-                    "0:10": {
-                      "UID1:8": "forestry.speciesMeadows",
-                      "UID0:8": "forestry.speciesMeadows"
+            "1": {
+              "id": "forestry:bee_drone_ge",
+              "Count": 1,
+              "tag": {
+                "Mate": {
+                  "Chromosomes": {
+                    "0": {
+                      "UID1": "forestry.speciesMeadows",
+                      "UID0": "forestry.speciesMeadows"
                     }
                   }
                 },
-                "Health:3": 20,
-                "IsAnalyzed:1": 0,
-                "Genome:10": {
-                  "Chromosomes:9": {
-                    "0:10": {
-                      "UID1:8": "forestry.speciesMeadows",
-                      "UID0:8": "forestry.speciesMeadows"
+                "Genome": {
+                  "Chromosomes": {
+                    "0": {
+                      "UID1": "forestry.speciesMeadows",
+                      "UID0": "forestry.speciesMeadows"
                     }
                   }
                 }
               },
               "OreDict:8": "",
-              "Damage:3": 0
+
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
