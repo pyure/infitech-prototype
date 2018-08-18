@@ -335,7 +335,7 @@ recipes.addShaped(refractoryCasingStandard, [
 recipes.remove(caster);
 recipes.addShaped(caster, [
    [null, <foundry:mold>, null],
-   [<ore:craftingToolWrench, refractoryCasingStandard, <ore:craftingToolHardHammer>],
+   [<ore:craftingToolWrench>, refractoryCasingStandard, <ore:craftingToolHardHammer>],
    [<ore:gearWroughtIron>, brickFoundry, <ore:gearWroughtIron>]]);
 
 //Basic melting crucible
