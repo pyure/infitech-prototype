@@ -4,7 +4,7 @@
     "0:10": {
       "questID:3": 0,
       "preRequisites:11": [
-        58
+        60
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13,7 +13,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 18,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt1",
@@ -77,7 +77,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 18,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt2",
@@ -141,7 +141,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 144000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt1",
@@ -211,7 +211,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 144000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt2",
@@ -281,7 +281,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 18,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt1",
@@ -336,7 +336,7 @@
     "5:10": {
       "questID:3": 5,
       "preRequisites:11": [
-        58
+        60
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -345,7 +345,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -400,7 +400,7 @@
     "6:10": {
       "questID:3": 6,
       "preRequisites:11": [
-        58
+        60
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -409,12 +409,12 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "projectred-core:resource_item",
+            "id:8": "thermalfoundation:material",
             "Count:3": 1,
-            "Damage:2": 101,
+            "Damage:2": 129,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -473,7 +473,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 6400,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thermalfoundation:material",
@@ -537,7 +537,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 18,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "jsonlootbags:materialbagt2",
@@ -675,7 +675,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:flint",
@@ -698,7 +698,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -814,7 +814,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_tool",
@@ -859,7 +859,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 1,
           "consume:1": 0,
           "requiredItems:9": {
@@ -911,7 +911,7 @@
                 },
                 "CreatorLeast:4": -7919705284140259435
               },
-              "OreDict:8": "",
+              "OreDict:8": "craftingToolMortar",
               "Damage:3": 12
             },
             "1:10": {
@@ -951,7 +951,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "agricraft:crop_sticks",
@@ -1015,7 +1015,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:bread",
@@ -1091,7 +1091,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "agricraft:seed_analyzer",
@@ -1146,7 +1146,7 @@
     "15:10": {
       "questID:3": 54,
       "preRequisites:11": [
-        50
+        75
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1155,7 +1155,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:bee_princess_ge",
@@ -1313,7 +1313,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "BEEware",
-          "desc:8": "Bees will allow you to greatly increase your resource yields."
+          "desc:8": "Using a newly built scoop and a smoker find yourself some beehives and catch bees. Using smoker is optional, but without it bees will attack you on sight, potentially killing you.\n\nBees will allow you to greatly increase your resource yields."
         }
       },
       "tasks:9": {
@@ -1625,6 +1625,23 @@
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "forestry:smoker",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
@@ -1654,7 +1671,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:bee_princess_ge",
@@ -2153,7 +2170,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:portable_alyzer",
@@ -2217,7 +2234,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:bee_princess_ge",
@@ -2705,80 +2722,6 @@
       }
     },
     "19:10": {
-      "questID:3": 58,
-      "preRequisites:11": [
-        50
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:meta_tool",
-            "Count:3": 1,
-            "tag:10": {
-              "GT.ToolStats:10": {
-                "PrimaryMaterial:8": "darmstadtium"
-              }
-            },
-            "Damage:2": 10,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "partysinglereward:1": 0,
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "ismain:1": 0,
-          "name:8": "Introduction to the shop",
-          "desc:8": "There are a number of useful tools at your disposal. For instance, a crowbar will allow you to open crates."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:meta_tool",
-              "Count:3": 1,
-              "tag:10": {
-                "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "darmstadtium"
-                }
-              },
-              "OreDict:8": "craftingToolCrowbar",
-              "Damage:3": 10
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "jsonlootbags:coinbagt1",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        }
-      }
-    },
-    "20:10": {
       "questID:3": 59,
       "preRequisites:11": [
         50
@@ -2790,7 +2733,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:ore_copper_0",
@@ -2860,7 +2803,7 @@
         }
       }
     },
-    "21:10": {
+    "20:10": {
       "questID:3": 60,
       "preRequisites:11": [
         59
@@ -2872,7 +2815,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:ore_iron_0",
@@ -2924,7 +2867,7 @@
         }
       }
     },
-    "22:10": {
+    "21:10": {
       "questID:3": 61,
       "preRequisites:11": [
         50
@@ -2936,7 +2879,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:torch",
@@ -2988,7 +2931,7 @@
         }
       }
     },
-    "23:10": {
+    "22:10": {
       "questID:3": 62,
       "preRequisites:11": [
         61
@@ -3000,7 +2943,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:fire_bow",
@@ -3014,8 +2957,10 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
-          "name:8": "A bow the doesn\u0027t shoot",
-          "desc:8": "No Description"
+          "name:8": "A Bow that Doesn\u0027t Shoot",
+
+          "desc:8": "Imagine that, flint \u0026 steel actually requires steel.  To start fires, you may need to assemble a more primitive tool; winding a rope around a stick to spin it quickly may do the trick."
+
         }
       },
       "tasks:9": {
@@ -3052,7 +2997,7 @@
         }
       }
     },
-    "24:10": {
+    "23:10": {
       "questID:3": 63,
       "preRequisites:11": [
         62
@@ -3064,7 +3009,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:coal",
@@ -3133,7 +3078,7 @@
         }
       }
     },
-    "25:10": {
+    "24:10": {
       "questID:3": 64,
       "preRequisites:11": [
         63
@@ -3145,7 +3090,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 24000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "forestry:charcoal",
@@ -3197,7 +3142,7 @@
         }
       }
     },
-    "26:10": {
+    "25:10": {
       "questID:3": 65,
       "preRequisites:11": [
         59
@@ -3209,7 +3154,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "factorytech:oredrill",
@@ -3261,7 +3206,7 @@
         }
       }
     },
-    "27:10": {
+    "26:10": {
       "questID:3": 66,
       "preRequisites:11": [
         60
@@ -3273,7 +3218,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -3325,7 +3270,7 @@
         }
       }
     },
-    "28:10": {
+    "27:10": {
       "questID:3": 67,
       "preRequisites:11": [
         66
@@ -3337,7 +3282,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -3389,7 +3334,7 @@
         }
       }
     },
-    "29:10": {
+    "28:10": {
       "questID:3": 68,
       "preRequisites:11": [
         67
@@ -3401,7 +3346,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:cauldron",
@@ -3459,7 +3404,7 @@
         }
       }
     },
-    "30:10": {
+    "29:10": {
       "questID:3": 69,
       "preRequisites:11": [
         68
@@ -3471,7 +3416,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -3523,7 +3468,7 @@
         }
       }
     },
-    "31:10": {
+    "30:10": {
       "questID:3": 70,
       "preRequisites:11": [
         60,
@@ -3536,7 +3481,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:clay_ball",
@@ -3588,7 +3533,7 @@
         }
       }
     },
-    "32:10": {
+    "31:10": {
       "questID:3": 71,
       "preRequisites:11": [
         70
@@ -3600,7 +3545,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "ceramics:clay_barrel",
@@ -3666,7 +3611,7 @@
         }
       }
     },
-    "33:10": {
+    "32:10": {
       "questID:3": 72,
       "preRequisites:11": [
         70
@@ -3678,7 +3623,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:dye",
@@ -3730,7 +3675,7 @@
         }
       }
     },
-    "34:10": {
+    "33:10": {
       "questID:3": 73,
       "preRequisites:11": [
         72
@@ -3742,7 +3687,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "ceramics:unfired_clay",
@@ -3794,7 +3739,7 @@
         }
       }
     },
-    "35:10": {
+    "34:10": {
       "questID:3": 74,
       "preRequisites:11": [
         73
@@ -3806,7 +3751,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "ceramics:channel",
@@ -3864,7 +3809,7 @@
         }
       }
     },
-    "36:10": {
+    "35:10": {
       "questID:3": 75,
       "preRequisites:11": [
         60
@@ -3876,7 +3821,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:iron_pickaxe",
@@ -3899,7 +3844,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -3972,6 +3917,17 @@
               },
               "OreDict:8": "craftingToolScrewdriver",
               "Damage:3": 11
+            },
+            "6:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "darmstadtium"
+                }
+              },
+              "OreDict:8": "craftingToolScoop",
+              "Damage:3": 14
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -3992,7 +3948,7 @@
         }
       }
     },
-    "37:10": {
+    "36:10": {
       "questID:3": 76,
       "preRequisites:11": [
         69
@@ -4004,7 +3960,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4056,7 +4012,7 @@
         }
       }
     },
-    "38:10": {
+    "37:10": {
       "questID:3": 77,
       "preRequisites:11": [
         76
@@ -4068,7 +4024,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4120,7 +4076,7 @@
         }
       }
     },
-    "39:10": {
+    "38:10": {
       "questID:3": 78,
       "preRequisites:11": [
         74
@@ -4132,7 +4088,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "betterquesting:submit_station",
@@ -4184,7 +4140,7 @@
         }
       }
     },
-    "40:10": {
+    "39:10": {
       "questID:3": 79,
       "preRequisites:11": [],
       "properties:10": {
@@ -4194,7 +4150,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:nether_star",
@@ -4228,7 +4184,7 @@
         }
       }
     },
-    "41:10": {
+    "40:10": {
       "questID:3": 80,
       "preRequisites:11": [
         78
@@ -4240,7 +4196,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:cobblestone",
@@ -4292,7 +4248,7 @@
         }
       }
     },
-    "42:10": {
+    "41:10": {
       "questID:3": 81,
       "preRequisites:11": [
         76
@@ -4304,7 +4260,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_tool",
@@ -4354,7 +4310,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -4509,7 +4465,7 @@
         }
       }
     },
-    "43:10": {
+    "42:10": {
       "questID:3": 82,
       "preRequisites:11": [
         74
@@ -4521,7 +4477,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4579,7 +4535,7 @@
         }
       }
     },
-    "44:10": {
+    "43:10": {
       "questID:3": 83,
       "preRequisites:11": [
         74
@@ -4591,7 +4547,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "foundry:burnerheater",
@@ -4667,7 +4623,7 @@
         }
       }
     },
-    "45:10": {
+    "44:10": {
       "questID:3": 84,
       "preRequisites:11": [
         82
@@ -4679,7 +4635,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4731,7 +4687,7 @@
         }
       }
     },
-    "46:10": {
+    "45:10": {
       "questID:3": 85,
       "preRequisites:11": [
         83,
@@ -4744,7 +4700,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -4774,7 +4730,7 @@
             "0:10": {
               "id:8": "gregtech:meta_item_1",
               "Count:3": 10,
-              "OreDict:8": "",
+              "OreDict:8": "ingotBronze",
               "Damage:3": 10095
             }
           },
@@ -4796,7 +4752,7 @@
         }
       }
     },
-    "47:10": {
+    "46:10": {
       "questID:3": 86,
       "preRequisites:11": [
         83,
@@ -4809,7 +4765,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:iron_small_crushed_ore",
@@ -4861,7 +4817,7 @@
         }
       }
     },
-    "48:10": {
+    "47:10": {
       "questID:3": 87,
       "preRequisites:11": [
         86
@@ -4873,7 +4829,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:iron_ingot",
@@ -4907,7 +4863,7 @@
         }
       }
     },
-    "49:10": {
+    "48:10": {
       "questID:3": 88,
       "preRequisites:11": [
         77,
@@ -4920,7 +4876,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "pneumaticcraft:ingot_iron_compressed",
@@ -4972,7 +4928,7 @@
         }
       }
     },
-    "50:10": {
+    "49:10": {
       "questID:3": 89,
       "preRequisites:11": [
         88
@@ -4984,7 +4940,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "pneumaticcraft:air_compressor",
@@ -5036,7 +4992,7 @@
         }
       }
     },
-    "51:10": {
+    "50:10": {
       "questID:3": 90,
       "preRequisites:11": [
         85
@@ -5048,7 +5004,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5100,7 +5056,7 @@
         }
       }
     },
-    "52:10": {
+    "51:10": {
       "questID:3": 91,
       "preRequisites:11": [
         90
@@ -5112,7 +5068,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thermaldynamics:duct_16",
@@ -5164,7 +5120,7 @@
         }
       }
     },
-    "53:10": {
+    "52:10": {
       "questID:3": 92,
       "preRequisites:11": [
         91
@@ -5176,7 +5132,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "agricraft:water_tank",
@@ -5232,7 +5188,7 @@
         }
       }
     },
-    "54:10": {
+    "53:10": {
       "questID:3": 93,
       "preRequisites:11": [
         91
@@ -5244,7 +5200,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "factorytech:watercollector",
@@ -5296,7 +5252,7 @@
         }
       }
     },
-    "55:10": {
+    "54:10": {
       "questID:3": 94,
       "preRequisites:11": [
         91
@@ -5308,7 +5264,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5360,7 +5316,7 @@
         }
       }
     },
-    "56:10": {
+    "55:10": {
       "questID:3": 95,
       "preRequisites:11": [
         91
@@ -5372,7 +5328,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5424,7 +5380,7 @@
         }
       }
     },
-    "57:10": {
+    "56:10": {
       "questID:3": 96,
       "preRequisites:11": [
         95
@@ -5436,7 +5392,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5488,7 +5444,7 @@
         }
       }
     },
-    "58:10": {
+    "57:10": {
       "questID:3": 97,
       "preRequisites:11": [
         95
@@ -5500,7 +5456,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5552,7 +5508,7 @@
         }
       }
     },
-    "59:10": {
+    "58:10": {
       "questID:3": 98,
       "preRequisites:11": [
         97
@@ -5564,7 +5520,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -5616,7 +5572,7 @@
         }
       }
     },
-    "60:10": {
+    "59:10": {
       "questID:3": 99,
       "preRequisites:11": [
         95
@@ -5628,7 +5584,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:diamond",
@@ -5749,7 +5705,7 @@
         }
       }
     },
-    "61:10": {
+    "60:10": {
       "questID:3": 100,
       "preRequisites:11": [
         99
@@ -5761,7 +5717,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 48000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "chisel:diamond",
@@ -5819,7 +5775,7 @@
         }
       }
     },
-    "62:10": {
+    "61:10": {
       "questID:3": 101,
       "preRequisites:11": [
         98
@@ -5831,7 +5787,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -5889,7 +5845,7 @@
         }
       }
     },
-    "63:10": {
+    "62:10": {
       "questID:3": 102,
       "preRequisites:11": [
         97
@@ -5901,7 +5857,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -5953,7 +5909,7 @@
         }
       }
     },
-    "64:10": {
+    "63:10": {
       "questID:3": 103,
       "preRequisites:11": [
         102,
@@ -5966,7 +5922,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -6018,7 +5974,7 @@
         }
       }
     },
-    "65:10": {
+    "64:10": {
       "questID:3": 104,
       "preRequisites:11": [
         102
@@ -6030,7 +5986,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -6088,7 +6044,7 @@
         }
       }
     },
-    "66:10": {
+    "65:10": {
       "questID:3": 105,
       "preRequisites:11": [
         102
@@ -6100,7 +6056,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": 30000,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:compressed_4",
@@ -6158,7 +6114,7 @@
         }
       }
     },
-    "67:10": {
+    "66:10": {
       "questID:3": 106,
       "preRequisites:11": [
         104
@@ -6170,7 +6126,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -6204,7 +6160,7 @@
         }
       }
     },
-    "68:10": {
+    "67:10": {
       "questID:3": 107,
       "preRequisites:11": [
         89,
@@ -6217,7 +6173,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -6269,7 +6225,7 @@
         }
       }
     },
-    "69:10": {
+    "68:10": {
       "questID:3": 108,
       "preRequisites:11": [
         106
@@ -6281,7 +6237,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:netherrack",
@@ -6345,7 +6301,7 @@
         }
       }
     },
-    "70:10": {
+    "69:10": {
       "questID:3": 109,
       "preRequisites:11": [
         108
@@ -6357,7 +6313,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:machine",
@@ -6415,7 +6371,7 @@
         }
       }
     },
-    "71:10": {
+    "70:10": {
       "questID:3": 110,
       "preRequisites:11": [
         109,
@@ -6428,7 +6384,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:meta_item_1",
@@ -6522,335 +6478,329 @@
         },
         "6:10": {
           "size:3": 18,
-          "x:3": -36,
-          "y:3": 30,
+          "x:3": -6,
+          "y:3": 24,
           "id:3": 54
         },
         "7:10": {
           "size:3": 18,
-          "x:3": -12,
-          "y:3": 6,
+          "x:3": -6,
+          "y:3": -6,
           "id:3": 55
         },
         "8:10": {
           "size:3": 18,
           "x:3": 12,
-          "y:3": -12,
+          "y:3": -36,
           "id:3": 56
         },
         "9:10": {
           "size:3": 18,
-          "x:3": -24,
-          "y:3": -18,
+          "x:3": -30,
+          "y:3": -36,
           "id:3": 57
         },
         "10:10": {
-          "size:3": 18,
-          "x:3": -66,
-          "y:3": 12,
-          "id:3": 58
-        },
-        "11:10": {
           "size:3": 24,
           "x:3": -30,
           "y:3": 66,
           "id:3": 59
         },
-        "12:10": {
+        "11:10": {
           "size:3": 24,
           "x:3": 0,
           "y:3": 90,
           "id:3": 60
         },
-        "13:10": {
+        "12:10": {
           "size:3": 18,
           "x:3": -72,
           "y:3": 78,
           "id:3": 61
         },
-        "14:10": {
+        "13:10": {
           "size:3": 18,
           "x:3": -90,
           "y:3": 102,
           "id:3": 62
         },
-        "15:10": {
+        "14:10": {
           "size:3": 18,
           "x:3": -102,
           "y:3": 126,
           "id:3": 63
         },
-        "16:10": {
+        "15:10": {
           "size:3": 18,
           "x:3": -90,
           "y:3": 150,
           "id:3": 64
         },
-        "17:10": {
+        "16:10": {
           "size:3": 18,
           "x:3": -36,
           "y:3": 102,
           "id:3": 65
         },
-        "18:10": {
+        "17:10": {
           "size:3": 18,
           "x:3": 30,
           "y:3": 78,
           "id:3": 66
         },
-        "19:10": {
+        "18:10": {
           "size:3": 18,
           "x:3": 54,
           "y:3": 78,
           "id:3": 67
         },
-        "20:10": {
+        "19:10": {
           "size:3": 18,
           "x:3": 54,
           "y:3": 102,
           "id:3": 68
         },
-        "21:10": {
+        "20:10": {
           "size:3": 18,
           "x:3": 30,
           "y:3": 114,
           "id:3": 69
         },
-        "22:10": {
+        "21:10": {
           "size:3": 24,
           "x:3": -6,
           "y:3": 126,
           "id:3": 70
         },
-        "23:10": {
+        "22:10": {
           "size:3": 18,
           "x:3": -42,
           "y:3": 144,
           "id:3": 71
         },
-        "24:10": {
+        "23:10": {
           "size:3": 24,
           "x:3": -12,
           "y:3": 168,
           "id:3": 72
         },
-        "25:10": {
+        "24:10": {
           "size:3": 24,
           "x:3": -36,
           "y:3": 198,
           "id:3": 73
         },
-        "26:10": {
+        "25:10": {
           "size:3": 24,
           "x:3": -54,
           "y:3": 234,
           "id:3": 74
         },
-        "27:10": {
+        "26:10": {
           "size:3": 18,
           "x:3": 6,
           "y:3": 54,
           "id:3": 75
         },
-        "28:10": {
+        "27:10": {
           "size:3": 18,
           "x:3": 48,
           "y:3": 138,
           "id:3": 76
         },
-        "29:10": {
+        "28:10": {
           "size:3": 18,
           "x:3": 78,
           "y:3": 156,
           "id:3": 77
         },
-        "30:10": {
+        "29:10": {
           "size:3": 18,
           "x:3": -72,
           "y:3": 204,
           "id:3": 78
         },
-        "31:10": {
+        "30:10": {
           "size:3": 18,
           "x:3": -84,
           "y:3": 174,
           "id:3": 80
         },
-        "32:10": {
+        "31:10": {
           "size:3": 18,
           "x:3": 36,
           "y:3": 162,
           "id:3": 81
         },
-        "33:10": {
+        "32:10": {
           "size:3": 24,
           "x:3": -12,
           "y:3": 270,
           "id:3": 82
         },
-        "34:10": {
+        "33:10": {
           "size:3": 24,
           "x:3": 12,
           "y:3": 228,
           "id:3": 83
         },
-        "35:10": {
+        "34:10": {
           "size:3": 24,
           "x:3": 30,
           "y:3": 270,
           "id:3": 84
         },
-        "36:10": {
+        "35:10": {
           "size:3": 24,
           "x:3": 66,
           "y:3": 246,
           "id:3": 85
         },
-        "37:10": {
+        "36:10": {
           "size:3": 18,
           "x:3": 36,
           "y:3": 204,
           "id:3": 86
         },
-        "38:10": {
+        "37:10": {
           "size:3": 18,
           "x:3": 66,
           "y:3": 192,
           "id:3": 87
         },
-        "39:10": {
+        "38:10": {
           "size:3": 18,
           "x:3": 102,
           "y:3": 180,
           "id:3": 88
         },
-        "40:10": {
+        "39:10": {
           "size:3": 18,
           "x:3": 114,
           "y:3": 150,
           "id:3": 89
         },
-        "41:10": {
+        "40:10": {
           "size:3": 24,
           "x:3": 102,
           "y:3": 234,
           "id:3": 90
         },
-        "42:10": {
+        "41:10": {
           "size:3": 24,
           "x:3": 144,
           "y:3": 234,
           "id:3": 91
         },
-        "43:10": {
+        "42:10": {
           "size:3": 18,
           "x:3": 138,
           "y:3": 276,
           "id:3": 92
         },
-        "44:10": {
+        "43:10": {
           "size:3": 18,
           "x:3": 168,
           "y:3": 276,
           "id:3": 93
         },
-        "45:10": {
+        "44:10": {
           "size:3": 18,
           "x:3": 120,
           "y:3": 204,
           "id:3": 94
         },
-        "46:10": {
+        "45:10": {
           "size:3": 24,
           "x:3": 186,
           "y:3": 222,
           "id:3": 95
         },
-        "47:10": {
+        "46:10": {
           "size:3": 18,
           "x:3": 192,
           "y:3": 252,
           "id:3": 96
         },
-        "48:10": {
+        "47:10": {
           "size:3": 24,
           "x:3": 222,
           "y:3": 222,
           "id:3": 97
         },
-        "49:10": {
+        "48:10": {
           "size:3": 18,
           "x:3": 246,
           "y:3": 252,
           "id:3": 98
         },
-        "50:10": {
+        "49:10": {
           "size:3": 18,
           "x:3": 174,
           "y:3": 198,
           "id:3": 99
         },
-        "51:10": {
+        "50:10": {
           "size:3": 18,
           "x:3": 162,
           "y:3": 174,
           "id:3": 100
         },
-        "52:10": {
+        "51:10": {
           "size:3": 18,
           "x:3": 270,
           "y:3": 252,
           "id:3": 101
         },
-        "53:10": {
+        "52:10": {
           "size:3": 24,
           "x:3": 222,
           "y:3": 180,
           "id:3": 102
         },
-        "54:10": {
+        "53:10": {
           "size:3": 18,
           "x:3": 264,
           "y:3": 186,
           "id:3": 103
         },
-        "55:10": {
+        "54:10": {
           "size:3": 24,
           "x:3": 216,
           "y:3": 138,
           "id:3": 104
         },
-        "56:10": {
+        "55:10": {
           "size:3": 18,
           "x:3": 258,
           "y:3": 150,
           "id:3": 105
         },
-        "57:10": {
+        "56:10": {
           "size:3": 24,
           "x:3": 198,
           "y:3": 108,
           "id:3": 106
         },
-        "58:10": {
+        "57:10": {
           "size:3": 18,
           "x:3": 114,
           "y:3": 84,
           "id:3": 107
         },
-        "59:10": {
+        "58:10": {
           "size:3": 24,
           "x:3": 186,
           "y:3": 72,
           "id:3": 108
         },
-        "60:10": {
+        "59:10": {
           "size:3": 24,
           "x:3": 168,
           "y:3": 36,
           "id:3": 109
         },
-        "61:10": {
+        "60:10": {
           "size:3": 48,
           "x:3": 96,
           "y:3": 6,
@@ -6863,7 +6813,7 @@
           "name:8": "Bronze Age",
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Its time to crawl out from under your rock from your cave, and discover the secrets of smelting."
+          "desc:8": "Emerge from your cave, brave the world, and discover the secrets of smelting."
         }
       },
       "order:3": 0
