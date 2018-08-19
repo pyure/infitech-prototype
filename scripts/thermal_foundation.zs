@@ -355,5 +355,6 @@ recipes.addShapeless(coinSilver, [coinConstantan, coinConstantan, coinConstantan
 recipes.addShapeless(coinConstantan, [coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron]);
 recipes.addShapeless(coinIron, [coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper]);
 
-
+var dustConstantan = <thermalfoundation:material:100>;
+recipes.remove(dustConstantan);
 

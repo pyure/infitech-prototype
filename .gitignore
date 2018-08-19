@@ -45,6 +45,7 @@ config/AppliedEnergistics2/Facades.cfg
 config/AppliedEnergistics2/recipes/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/cd4017be/compiled.dat
+config/thaumicjei_itemstack_aspects.json
 minecraftinstance.json
 
 # Windows image file caches
