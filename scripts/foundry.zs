@@ -136,13 +136,16 @@ val ore_melting_map = {
   "Lead" : 1300,
   "Nickel" : 1200,
   "Silver" : 800,  
-  "BandedIron" : 1450,
+  "BandedIron" : 1450
+} as int[string];
+
+val impure_ore_melting_map = {
   "YellowLimonite" : 1450,
   "BrownLimonite" : 1450,
   "Tetrahedrite" : 1500,
   "Pyrite" : 1500,
   "Chalcopyrite" : 1500,
-  "Malachite" : 1500
+  "Malachite" : 1500  
 } as int[string];
 
 
@@ -165,7 +168,7 @@ val metal_liquid_map = {
   "BrownLimonite" : <liquid:iron>,
   "Chalcopyrite" : <liquid:copper>,
   "Pyrite" : <liquid:iron>,
-  "BandedIron" : <liquid:copper>,
+  "BandedIron" : <liquid:iron>,
   "Tetrahedrite" : <liquid:copper>,
   "Malachite" : <liquid:copper>,
   "Lead" : <liquid:lead>,
@@ -241,7 +244,6 @@ for name in tool_array {
   mods.foundry.Casting.addRecipe(swordBlade, metal_liquid_map[name] * 432, swordBladeMold); 
   mods.foundry.Casting.addRecipe(axeHead, metal_liquid_map[name] * 576, axeHeadMold); 
   mods.foundry.Casting.addRecipe(fileHead, metal_liquid_map[name] * 432, fileHeadMold); 
- 
 }
 
 // Replace all default melting recipes
@@ -252,6 +254,14 @@ for name, melting_point in ore_melting_map {
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ore" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 192, oreDict["crushed" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
+}
+
+for name, melting_point in impure_ore_melting_map {
+  print("Melting dust, ore and crushed for " ~ name);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ore" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 153, oreDict["crushed" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
 }
 
@@ -335,7 +345,7 @@ recipes.addShaped(refractoryCasingStandard, [
 recipes.remove(caster);
 recipes.addShaped(caster, [
    [null, <foundry:mold>, null],
-   [<ore:craftingToolWrench, refractoryCasingStandard, <ore:craftingToolHardHammer>],
+   [<ore:craftingToolWrench>, refractoryCasingStandard, <ore:craftingToolHardHammer>],
    [<ore:gearWroughtIron>, brickFoundry, <ore:gearWroughtIron>]]);
 
 //Basic melting crucible
