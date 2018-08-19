@@ -140,7 +140,7 @@ cutting_saw.recipeBuilder()
   .EUt(2)
   .buildAndRegister();
 
-
+var dynamite = <gregtech:meta_item_1:32629>;
 
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 chemical_reactor.recipeBuilder()
@@ -149,3 +149,17 @@ chemical_reactor.recipeBuilder()
 	.duration(100)
 	.EUt(512)
 	.buildAndRegister();
+
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:string> * 1, <ore:paper> * 1)
+	.fluidInputs([<liquid:toluene> * 36])
+	.outputs(dynamite * 1)
+	.duration(60)
+	.EUt(126)
+	.buildAndRegister();
+
+recipes.remove(dynamite);
+recipes.addShaped(dynamite, [
+  [null, <ore:string>, null],
+  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
+  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
