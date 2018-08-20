@@ -1166,68 +1166,7 @@
                 "Chromosomes:9": {
                   "0:10": {
                     "UID1:8": "forestry.speciesMeadows",
-                    "UID0:8": "forestry.speciesMeadows",
-                    "Slot:1": 0
-                  },
-                  "1:10": {
-                    "UID1:8": "forestry.speedSlowest",
-                    "UID0:8": "forestry.speedSlowest",
-                    "Slot:1": 1
-                  },
-                  "2:10": {
-                    "UID1:8": "forestry.lifespanShorter",
-                    "UID0:8": "forestry.lifespanShorter",
-                    "Slot:1": 2
-                  },
-                  "3:10": {
-                    "UID1:8": "forestry.fertilityNormal",
-                    "UID0:8": "forestry.fertilityNormal",
-                    "Slot:1": 3
-                  },
-                  "4:10": {
-                    "UID1:8": "forestry.toleranceNone",
-                    "UID0:8": "forestry.toleranceNone",
-                    "Slot:1": 4
-                  },
-                  "5:10": {
-                    "UID1:8": "forestry.boolFalse",
-                    "UID0:8": "forestry.boolFalse",
-                    "Slot:1": 5
-                  },
-                  "6:10": {
-                    "UID1:8": "forestry.toleranceNone",
-                    "UID0:8": "forestry.toleranceNone",
-                    "Slot:1": 6
-                  },
-                  "7:10": {
-                    "UID1:8": "forestry.boolFalse",
-                    "UID0:8": "forestry.boolFalse",
-                    "Slot:1": 7
-                  },
-                  "8:10": {
-                    "UID1:8": "forestry.boolFalse",
-                    "UID0:8": "forestry.boolFalse",
-                    "Slot:1": 8
-                  },
-                  "9:10": {
-                    "UID1:8": "forestry.flowersVanilla",
-                    "UID0:8": "forestry.flowersVanilla",
-                    "Slot:1": 9
-                  },
-                  "10:10": {
-                    "UID1:8": "forestry.floweringSlower",
-                    "UID0:8": "forestry.floweringSlower",
-                    "Slot:1": 10
-                  },
-                  "11:10": {
-                    "UID1:8": "forestry.territoryAverage",
-                    "UID0:8": "forestry.territoryAverage",
-                    "Slot:1": 11
-                  },
-                  "12:10": {
-                    "UID1:8": "forestry.effectNone",
-                    "UID0:8": "forestry.effectNone",
-                    "Slot:1": 12
+                    "UID0:8": "forestry.speciesMeadows"
                   }
                 }
               },
@@ -1237,68 +1176,7 @@
                 "Chromosomes:9": {
                   "0:10": {
                     "UID1:8": "forestry.speciesMeadows",
-                    "UID0:8": "forestry.speciesMeadows",
-                    "Slot:1": 0
-                  },
-                  "1:10": {
-                    "UID1:8": "forestry.speedSlowest",
-                    "UID0:8": "forestry.speedSlowest",
-                    "Slot:1": 1
-                  },
-                  "2:10": {
-                    "UID1:8": "forestry.lifespanShorter",
-                    "UID0:8": "forestry.lifespanShorter",
-                    "Slot:1": 2
-                  },
-                  "3:10": {
-                    "UID1:8": "forestry.fertilityNormal",
-                    "UID0:8": "forestry.fertilityNormal",
-                    "Slot:1": 3
-                  },
-                  "4:10": {
-                    "UID1:8": "forestry.toleranceNone",
-                    "UID0:8": "forestry.toleranceNone",
-                    "Slot:1": 4
-                  },
-                  "5:10": {
-                    "UID1:8": "forestry.boolFalse",
-                    "UID0:8": "forestry.boolFalse",
-                    "Slot:1": 5
-                  },
-                  "6:10": {
-                    "UID1:8": "forestry.toleranceNone",
-                    "UID0:8": "forestry.toleranceNone",
-                    "Slot:1": 6
-                  },
-                  "7:10": {
-                    "UID1:8": "forestry.boolFalse",
-                    "UID0:8": "forestry.boolFalse",
-                    "Slot:1": 7
-                  },
-                  "8:10": {
-                    "UID1:8": "forestry.boolFalse",
-                    "UID0:8": "forestry.boolFalse",
-                    "Slot:1": 8
-                  },
-                  "9:10": {
-                    "UID1:8": "forestry.flowersVanilla",
-                    "UID0:8": "forestry.flowersVanilla",
-                    "Slot:1": 9
-                  },
-                  "10:10": {
-                    "UID1:8": "forestry.floweringSlower",
-                    "UID0:8": "forestry.floweringSlower",
-                    "Slot:1": 10
-                  },
-                  "11:10": {
-                    "UID1:8": "forestry.territoryAverage",
-                    "UID0:8": "forestry.territoryAverage",
-                    "Slot:1": 11
-                  },
-                  "12:10": {
-                    "UID1:8": "forestry.effectNone",
-                    "UID0:8": "forestry.effectNone",
-                    "Slot:1": 12
+                    "UID0:8": "forestry.speciesMeadows"
                   }
                 }
               }
@@ -1313,7 +1191,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "BEEware",
-          "desc:8": "Using a newly built scoop and a smoker find yourself some beehives and catch bees. Using smoker is optional, but without it bees will attack you on sight, potentially killing you.\n\nBees will allow you to greatly increase your resource yields."
+          "desc:8": "Time to hunt for some hives.  Be careful: bees get annoyed when you loiter around their hives, and get VERY annoyed when you break them.  You should try using a Smoker on a hive before breaking it with a Scoop."
         }
       },
       "tasks:9": {
@@ -1329,73 +1207,11 @@
               "id:8": "forestry:bee_princess_ge",
               "Count:3": 1,
               "tag:10": {
-                "MaxH:3": 20,
                 "Mate:10": {
                   "Chromosomes:9": {
                     "0:10": {
                       "UID1:8": "forestry.speciesMeadows",
-                      "UID0:8": "forestry.speciesMeadows",
-                      "Slot:1": 0
-                    },
-                    "1:10": {
-                      "UID1:8": "forestry.speedSlowest",
-                      "UID0:8": "forestry.speedSlowest",
-                      "Slot:1": 1
-                    },
-                    "2:10": {
-                      "UID1:8": "forestry.lifespanShorter",
-                      "UID0:8": "forestry.lifespanShorter",
-                      "Slot:1": 2
-                    },
-                    "3:10": {
-                      "UID1:8": "forestry.fertilityNormal",
-                      "UID0:8": "forestry.fertilityNormal",
-                      "Slot:1": 3
-                    },
-                    "4:10": {
-                      "UID1:8": "forestry.toleranceNone",
-                      "UID0:8": "forestry.toleranceNone",
-                      "Slot:1": 4
-                    },
-                    "5:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 5
-                    },
-                    "6:10": {
-                      "UID1:8": "forestry.toleranceNone",
-                      "UID0:8": "forestry.toleranceNone",
-                      "Slot:1": 6
-                    },
-                    "7:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 7
-                    },
-                    "8:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 8
-                    },
-                    "9:10": {
-                      "UID1:8": "forestry.flowersVanilla",
-                      "UID0:8": "forestry.flowersVanilla",
-                      "Slot:1": 9
-                    },
-                    "10:10": {
-                      "UID1:8": "forestry.floweringSlower",
-                      "UID0:8": "forestry.floweringSlower",
-                      "Slot:1": 10
-                    },
-                    "11:10": {
-                      "UID1:8": "forestry.territoryAverage",
-                      "UID0:8": "forestry.territoryAverage",
-                      "Slot:1": 11
-                    },
-                    "12:10": {
-                      "UID1:8": "forestry.effectNone",
-                      "UID0:8": "forestry.effectNone",
-                      "Slot:1": 12
+                      "UID0:8": "forestry.speciesMeadows"
                     }
                   }
                 },
@@ -1405,68 +1221,7 @@
                   "Chromosomes:9": {
                     "0:10": {
                       "UID1:8": "forestry.speciesMeadows",
-                      "UID0:8": "forestry.speciesMeadows",
-                      "Slot:1": 0
-                    },
-                    "1:10": {
-                      "UID1:8": "forestry.speedSlowest",
-                      "UID0:8": "forestry.speedSlowest",
-                      "Slot:1": 1
-                    },
-                    "2:10": {
-                      "UID1:8": "forestry.lifespanShorter",
-                      "UID0:8": "forestry.lifespanShorter",
-                      "Slot:1": 2
-                    },
-                    "3:10": {
-                      "UID1:8": "forestry.fertilityNormal",
-                      "UID0:8": "forestry.fertilityNormal",
-                      "Slot:1": 3
-                    },
-                    "4:10": {
-                      "UID1:8": "forestry.toleranceNone",
-                      "UID0:8": "forestry.toleranceNone",
-                      "Slot:1": 4
-                    },
-                    "5:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 5
-                    },
-                    "6:10": {
-                      "UID1:8": "forestry.toleranceNone",
-                      "UID0:8": "forestry.toleranceNone",
-                      "Slot:1": 6
-                    },
-                    "7:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 7
-                    },
-                    "8:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 8
-                    },
-                    "9:10": {
-                      "UID1:8": "forestry.flowersVanilla",
-                      "UID0:8": "forestry.flowersVanilla",
-                      "Slot:1": 9
-                    },
-                    "10:10": {
-                      "UID1:8": "forestry.floweringSlower",
-                      "UID0:8": "forestry.floweringSlower",
-                      "Slot:1": 10
-                    },
-                    "11:10": {
-                      "UID1:8": "forestry.territoryAverage",
-                      "UID0:8": "forestry.territoryAverage",
-                      "Slot:1": 11
-                    },
-                    "12:10": {
-                      "UID1:8": "forestry.effectNone",
-                      "UID0:8": "forestry.effectNone",
-                      "Slot:1": 12
+                      "UID0:8": "forestry.speciesMeadows"
                     }
                   }
                 }
@@ -1483,68 +1238,7 @@
                   "Chromosomes:9": {
                     "0:10": {
                       "UID1:8": "forestry.speciesMeadows",
-                      "UID0:8": "forestry.speciesMeadows",
-                      "Slot:1": 0
-                    },
-                    "1:10": {
-                      "UID1:8": "forestry.speedSlowest",
-                      "UID0:8": "forestry.speedSlowest",
-                      "Slot:1": 1
-                    },
-                    "2:10": {
-                      "UID1:8": "forestry.lifespanShorter",
-                      "UID0:8": "forestry.lifespanShorter",
-                      "Slot:1": 2
-                    },
-                    "3:10": {
-                      "UID1:8": "forestry.fertilityNormal",
-                      "UID0:8": "forestry.fertilityNormal",
-                      "Slot:1": 3
-                    },
-                    "4:10": {
-                      "UID1:8": "forestry.toleranceNone",
-                      "UID0:8": "forestry.toleranceNone",
-                      "Slot:1": 4
-                    },
-                    "5:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 5
-                    },
-                    "6:10": {
-                      "UID1:8": "forestry.toleranceNone",
-                      "UID0:8": "forestry.toleranceNone",
-                      "Slot:1": 6
-                    },
-                    "7:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 7
-                    },
-                    "8:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 8
-                    },
-                    "9:10": {
-                      "UID1:8": "forestry.flowersVanilla",
-                      "UID0:8": "forestry.flowersVanilla",
-                      "Slot:1": 9
-                    },
-                    "10:10": {
-                      "UID1:8": "forestry.floweringSlower",
-                      "UID0:8": "forestry.floweringSlower",
-                      "Slot:1": 10
-                    },
-                    "11:10": {
-                      "UID1:8": "forestry.territoryAverage",
-                      "UID0:8": "forestry.territoryAverage",
-                      "Slot:1": 11
-                    },
-                    "12:10": {
-                      "UID1:8": "forestry.effectNone",
-                      "UID0:8": "forestry.effectNone",
-                      "Slot:1": 12
+                      "UID0:8": "forestry.speciesMeadows"
                     }
                   }
                 },
@@ -1554,68 +1248,7 @@
                   "Chromosomes:9": {
                     "0:10": {
                       "UID1:8": "forestry.speciesMeadows",
-                      "UID0:8": "forestry.speciesMeadows",
-                      "Slot:1": 0
-                    },
-                    "1:10": {
-                      "UID1:8": "forestry.speedSlowest",
-                      "UID0:8": "forestry.speedSlowest",
-                      "Slot:1": 1
-                    },
-                    "2:10": {
-                      "UID1:8": "forestry.lifespanShorter",
-                      "UID0:8": "forestry.lifespanShorter",
-                      "Slot:1": 2
-                    },
-                    "3:10": {
-                      "UID1:8": "forestry.fertilityNormal",
-                      "UID0:8": "forestry.fertilityNormal",
-                      "Slot:1": 3
-                    },
-                    "4:10": {
-                      "UID1:8": "forestry.toleranceNone",
-                      "UID0:8": "forestry.toleranceNone",
-                      "Slot:1": 4
-                    },
-                    "5:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 5
-                    },
-                    "6:10": {
-                      "UID1:8": "forestry.toleranceNone",
-                      "UID0:8": "forestry.toleranceNone",
-                      "Slot:1": 6
-                    },
-                    "7:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 7
-                    },
-                    "8:10": {
-                      "UID1:8": "forestry.boolFalse",
-                      "UID0:8": "forestry.boolFalse",
-                      "Slot:1": 8
-                    },
-                    "9:10": {
-                      "UID1:8": "forestry.flowersVanilla",
-                      "UID0:8": "forestry.flowersVanilla",
-                      "Slot:1": 9
-                    },
-                    "10:10": {
-                      "UID1:8": "forestry.floweringSlower",
-                      "UID0:8": "forestry.floweringSlower",
-                      "Slot:1": 10
-                    },
-                    "11:10": {
-                      "UID1:8": "forestry.territoryAverage",
-                      "UID0:8": "forestry.territoryAverage",
-                      "Slot:1": 11
-                    },
-                    "12:10": {
-                      "UID1:8": "forestry.effectNone",
-                      "UID0:8": "forestry.effectNone",
-                      "Slot:1": 12
+                      "UID0:8": "forestry.speciesMeadows"
                     }
                   }
                 }
