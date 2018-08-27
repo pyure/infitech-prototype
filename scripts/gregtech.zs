@@ -163,3 +163,12 @@ recipes.addShaped(dynamite, [
   [null, <ore:string>, null],
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
+  
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+centrifuge.recipeBuilder()
+	.inputs(<ore:turfMoon> * 1)
+	.outputs(<minecraft:gravel> * 1)
+	.fluidOutputs([<liquid:helium3> * 125])
+	.duration(320)
+	.EUt(30)
+	.buildAndRegister();
