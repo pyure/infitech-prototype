@@ -32,3 +32,11 @@ compressor.recipeBuilder()
 	.outputs(<appliedenergistics2:quartz_block>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
+  
+  
+  
+var meteoriteCompass = <appliedenergistics2:sky_compass>;
+var blockMeteorite = <appliedenergistics2:sky_stone_block>;
+
+recipes.remove(meteoriteCompass);
+recipes.addShaped(meteoriteCompass, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, blockMeteorite, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);

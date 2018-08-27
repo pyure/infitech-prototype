@@ -4450,7 +4450,7 @@
         }
       }
     },
-    "47:10": {
+    "47": {
       "questID:3": 87,
       "preRequisites:11": [
         86
@@ -4480,7 +4480,24 @@
           "desc:8": "Smelt a goodly number of Iron Ingots. You will need them."
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0": {
+              "id": "minecraft:iron_ingot",
+              "Count": 32,
+              "OreDict": "ingotIron"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {
         "0:10": {
           "rewardID:8": "bq_standard:item",
@@ -4976,7 +4993,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Compressor",
-          "desc:8": "Many materials and blocks can only be acquired with the user of something like the Compressor."
+          "desc:8": "Many materials and blocks can only be acquired by means of something like the Compressor."
         }
       },
       "tasks:9": {
