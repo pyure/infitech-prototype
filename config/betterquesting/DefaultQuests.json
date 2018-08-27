@@ -4552,7 +4552,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "minecraft:iron_ingot",
-              "Count:3": 10,
+              "Count:3": 30,
               "OreDict:8": "ingotIron",
               "Damage:3": 0
             }
@@ -5055,7 +5055,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Compressor",
-          "desc:8": "Many materials and blocks can only be acquired with the user of something like the Compressor."
+          "desc:8": "Many materials and blocks can only be acquired by means of something like the Compressor."
         }
       },
       "tasks:9": {
