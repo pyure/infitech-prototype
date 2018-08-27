@@ -157,3 +157,10 @@ recipes.addShaped(<minecraft:chest>*4, [
   [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
   [<ore:logWood>, <ore:craftingToolSaw>, <ore:logWood>], 
   [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
+  
+ //Logs to sticks
+recipes.addShapedMirrored(<minecraft:stick>*4, [[<ore:logWood>], [<ore:logWood>]]);
+recipes.addShapedMirrored(<minecraft:stick>*8, [[oreSaw], [<ore:logWood>], [<ore:logWood>]]);
+
+//Cotton to cotton seeds
+recipes.addShapeless(<natura:overworld_seeds:1>, [<natura:materials:3>, <natura:materials:3>]);
