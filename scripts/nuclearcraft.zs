@@ -151,21 +151,11 @@ scripts.functions.disableItem(<nuclearcraft:irradiator_idle>);
 scripts.functions.disableItem(<nuclearcraft:ingot_former_idle>);
 scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
 scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
-scripts.functions.disableItem(xxx);
-scripts.functions.disableItem(xxx);
-scripts.functions.disableItem(xxx);
-scripts.functions.disableItem(xxx);
-scripts.functions.disableItem(xxx);
-scripts.functions.disableItem(xxx);
-scripts.functions.disableItem(xxx);
+scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
+scripts.functions.disableItem(<nuclearcraft:centrifuge_idle>);
 
 
 
-<nuclearcraft:salt_mixer_idle>
-<nuclearcraft:crystallizer_idle>
-<nuclearcraft:dissolver_idle>
-<nuclearcraft:extractor_idle>
-<nuclearcraft:centrifuge_idle>
 
 
 
