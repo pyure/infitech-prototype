@@ -14,6 +14,7 @@ var blockMold = <foundry:mold:4>;
 var nuggetMold = <foundry:mold:26>;
 
 
+
 mods.foundry.Casting.addMold(pickaxeHeadMold);
 mods.foundry.Casting.addMold(hammerHeadMold);
 mods.foundry.Casting.addMold(swordBladeMold);
@@ -365,3 +366,4 @@ recipes.addShaped(<foundry:machine:8>, [
 // DISABLED BLOCKS/ITEMS
 scripts.functions.disableItem(<foundry:alloyfurnace>);
 scripts.functions.disableItem(<foundry:machine:2>);//alloy mixer, allowing mixing up to 4 metals at once
+scripts.functions.disableItem(<foundry:machine:9>);// alloying crucible; don't need it
