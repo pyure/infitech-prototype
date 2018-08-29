@@ -16,20 +16,24 @@ recipes.addShapeless(dustBronze * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dust
 recipes.remove(<forestry:ingot_bronze> * 4);
 
 // Gears
-recipes.removeShaped(<forestry:gear_bronze>, [
-	[null, <ore:ingotBronze>, null],
-	[<ore:ingotBronze>, <ore:ingotCopper>, <ore:ingotBronze>],
-	[null, <ore:ingotBronze>, null]]);
+recipes.remove(<forestry:gear_bronze>);
+recipes.addShaped(<ore:gearBronze>.firstItem, [
+  [<ore:stickBronze>, <ore:plateBronze>, <ore:stickBronze>], 
+  [<ore:plateBronze>, <ore:craftingToolScrewdriver>, <ore:plateBronze>], 
+  [<ore:stickBronze>, <ore:plateBronze>, <ore:stickBronze>]]);
 
-recipes.removeShaped(<forestry:gear_copper>, [
-	[null, <ore:ingotCopper>, null],
-	[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
-	[null, <ore:ingotCopper>, null]]);
+recipes.remove(<forestry:gear_copper>);
+recipes.addShaped(<ore:gearCopper>.firstItem, [
+  [<ore:stickCopper>, <ore:plateCopper>, <ore:stickCopper>], 
+  [<ore:plateCopper>, <ore:craftingToolScrewdriver>, <ore:plateCopper>], 
+  [<ore:stickCopper>, <ore:plateCopper>, <ore:stickCopper>]]);
+  
+recipes.remove(<forestry:gear_tin>);
+recipes.addShaped(<ore:gearTin>.firstItem, [
+  [<ore:stickTin>, <ore:plateTin>, <ore:stickTin>], 
+  [<ore:plateTin>, <ore:craftingToolScrewdriver>, <ore:plateTin>], 
+  [<ore:stickTin>, <ore:plateTin>, <ore:stickTin>]]);  
 
-recipes.removeShaped(<forestry:gear_tin>, [
-	[null, <ore:ingotTin>, null],
-	[<ore:ingotTin>, <ore:ingotCopper>, <ore:ingotTin>],
-	[null, <ore:ingotTin>, null]]);
 
 // WOOD PILES
 var woodPile = <forestry:wood_pile>;
