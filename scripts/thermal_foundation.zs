@@ -359,6 +359,23 @@ var dustConstantan = <thermalfoundation:material:100>;
 recipes.remove(dustConstantan);
 
 // Hammers require steel rods
+recipes.remove(<thermalfoundation:tool.hammer_wood>);
+recipes.remove(<thermalfoundation:tool.hammer_stone>);
+recipes.remove(<thermalfoundation:tool.hammer_iron>);
+recipes.remove(<thermalfoundation:tool.hammer_gold>);
+recipes.remove(<thermalfoundation:tool.hammer_diamond>);
+recipes.remove(<thermalfoundation:tool.hammer_copper>);
+recipes.remove(<thermalfoundation:tool.hammer_tin>);
+recipes.remove(<thermalfoundation:tool.hammer_silver>);
+recipes.remove(<thermalfoundation:tool.hammer_lead>);
+recipes.remove(<thermalfoundation:tool.hammer_aluminum>);
+recipes.remove(<thermalfoundation:tool.hammer_nickel>);
+recipes.remove(<thermalfoundation:tool.hammer_platinum>);
+recipes.remove(<thermalfoundation:tool.hammer_steel>);
+recipes.remove(<thermalfoundation:tool.hammer_electrum>);
+recipes.remove(<thermalfoundation:tool.hammer_invar>);
+recipes.remove(<thermalfoundation:tool.hammer_bronze>);
+recipes.remove(<thermalfoundation:tool.hammer_constantan>);
 recipes.addShaped("thermalfoundation_tool_hammer_wood", <thermalfoundation:tool.hammer_wood>, [[<ore:plateWood>, <ore:stickSteel>, <ore:plateWood>], [<ore:plateWood>, <ore:stickSteel>, <ore:plateWood>], [null, <ore:stickSteel>, null]]);
 recipes.addShaped("thermalfoundation_tool_hammer_stone", <thermalfoundation:tool.hammer_stone>, [[<ore:plateStone>, <ore:stickSteel>, <ore:plateStone>], [<ore:plateStone>, <ore:stickSteel>, <ore:plateStone>], [null, <ore:stickSteel>, null]]);
 recipes.addShaped("thermalfoundation_tool_hammer_iron", <thermalfoundation:tool.hammer_iron>, [[<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [null, <ore:stickSteel>, null]]);
