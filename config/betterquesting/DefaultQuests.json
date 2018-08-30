@@ -3563,22 +3563,10 @@
                   "HandleMaterial:8": "darmstadtium"
                 }
               },
-              "OreDict:8": "craftingToolSoftHammer",
-              "Damage:3": 7
-            },
-            "2:10": {
-              "id:8": "gregtech:meta_tool",
-              "Count:3": 1,
-              "tag:10": {
-                "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "darmstadtium",
-                  "HandleMaterial:8": "darmstadtium"
-                }
-              },
               "OreDict:8": "craftingToolFile",
               "Damage:3": 9
             },
-            "3:10": {
+            "2:10": {
               "id:8": "gregtech:meta_tool",
               "Count:3": 1,
               "tag:10": {
@@ -3589,7 +3577,7 @@
               "OreDict:8": "craftingToolWrench",
               "Damage:3": 8
             },
-            "4:10": {
+            "3:10": {
               "id:8": "gregtech:meta_tool",
               "Count:3": 1,
               "tag:10": {
@@ -3601,7 +3589,7 @@
               "OreDict:8": "craftingToolSaw",
               "Damage:3": 5
             },
-            "5:10": {
+            "4:10": {
               "id:8": "gregtech:meta_tool",
               "Count:3": 1,
               "tag:10": {
@@ -3612,7 +3600,7 @@
               "OreDict:8": "craftingToolScrewdriver",
               "Damage:3": 11
             },
-            "6:10": {
+            "5:10": {
               "id:8": "gregtech:meta_tool",
               "Count:3": 1,
               "tag:10": {
