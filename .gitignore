@@ -48,6 +48,7 @@ config/cd4017be/compiled.dat
 config/thaumicjei_itemstack_aspects.json
 config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
+config/agricraft/json/defaults/infitech/
 minecraftinstance.json
 
 # Windows image file caches
