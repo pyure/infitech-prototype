@@ -26,6 +26,8 @@ var iron_rod = <ore:stickIron>;
 var copper_rod = <ore:stickCopper>;
 var cupronickel_rod = <ore:stickCupronickel>;
 var invar_rod = <ore:stickInvar>;
+var copper_ann_rod = <ore:stickAnnealedCopper>;
+var steel_rod = <ore:stickSteel>;
 
 var cutting_blade = <factorytech:machinepart:30>;
 var lv_motor = <gregtech:meta_item_1:32600>;
@@ -35,7 +37,9 @@ var iron_plate = <ore:plateIron>;
 var small_copper_circuit_1 = <factorytech:machinepart:90>;
 var small_standard_battery = <factorytech:machinepart:140>;
 var advanced_motor = <factorytech:machinepart:60>;
+var gold_motor = <factorytech:machinepart:61>;
 var copper_wire = <ore:wireGtSingleCopper>;
+var gold_wire = <ore:wireGtSingleGold>;
 var transport_roller = <factorytech:conveyor>;
 var redstone = <ore:dustRedstone>;
 
@@ -61,18 +65,16 @@ recipes.addShaped(<factorytech:temperer>, [
 // ADvanced Motor
 recipes.remove(advanced_motor);
 recipes.addShaped(advanced_motor, [
-	[null, nickel_rod, null ],
+	[null, copper_rod, null],
 	[iron_rod, lv_motor, iron_rod],
 	[iron_rod, copper_wire, iron_rod]]);
-
-// Transport Rollers
-recipes.remove(transport_roller * 12);
-recipes.addShaped(transport_roller * 4, [
-	[iron_rod, iron_rod, iron_rod],
-	[redstone, redstone, redstone],
-	[iron_rod, iron_rod, iron_rod]]);
-  
-  
+	  
+//Gold wire motor
+recipes.remove(gold_motor);
+recipes.addShaped(gold_motor, [
+	[null, copper_ann_rod, null],
+	[steel_rod, lv_motor, steel_rod],
+	[steel_rod, gold_wire, steel_rod]]);
 
 val material_array = [
   "Aluminium",
