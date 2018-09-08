@@ -43,7 +43,7 @@ var redstone = <ore:dustRedstone>;
 recipes.remove(<factorytech:metalcutter>);
 recipes.addShaped(<factorytech:metalcutter>, [
 	[iron_rod, cutting_blade, iron_rod],
-	[nickel_rod, lv_motor, nickel_rod],
+	[copper_rod, lv_motor, copper_rod],
 	[stone, wrench, stone]]);
   
 recipes.remove(<factorytech:grindstone>);
