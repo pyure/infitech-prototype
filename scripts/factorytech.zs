@@ -23,7 +23,7 @@ ChopSaw.removeRecipe(<minecraft:planks:*> * 6);
 ChopSaw.removeRecipe(<minecraft:stick> * 3);
 
 var iron_rod = <ore:stickIron>;
-var nickel_rod = <ore:stickNickel>;
+var copper_rod = <ore:stickCopper>;
 var cupronickel_rod = <ore:stickCupronickel>;
 var invar_rod = <ore:stickInvar>;
 
