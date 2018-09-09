@@ -41,9 +41,9 @@ var foundry_clay = <foundry:component:1>;
 
 recipes.remove(pbf);
 recipes.addShaped(pbf, [
-   [primitive_brick, <natura:netherrack_furnace>, primitive_brick],
+   [primitive_brick, <minecraft:nether_brick>, primitive_brick],
    [<minecraft:furnace>, <ore:craftingToolWrench>, <minecraft:furnace>],
-   [primitive_brick, <natura:netherrack_furnace>, primitive_brick]]);
+   [primitive_brick, <minecraft:nether_brick>, primitive_brick]]);
 
 recipes.remove(primitive_brick);
 recipes.addShaped(primitive_brick, [
