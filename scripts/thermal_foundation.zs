@@ -330,13 +330,13 @@ recipes.addShaped("infitech_resonant_retriever", resonant_retriever * 2, [
 
 
 // COIN VARIABLES
-var coinIridium = <ore:coinIridium>.firstItem;
-var coinPlatinum = <ore:coinPlatinum>.firstItem;
-var coinGold = <ore:coinGold>.firstItem;
-var coinSilver = <ore:coinSilver>.firstItem;
-var coinConstantan = <ore:coinConstantan>.firstItem;
-var coinIron = <ore:coinIron>.firstItem;
-var coinCopper = <ore:coinCopper>.firstItem;
+var coinIridium = <thermalfoundation:coin:71>;
+var coinPlatinum = <thermalfoundation:coin:70>;
+var coinGold = <thermalfoundation:coin:1>;
+var coinSilver = <thermalfoundation:coin:66>;
+var coinConstantan = <thermalfoundation:coin:100>;
+var coinIron = <thermalfoundation:coin>;
+var coinCopper = <thermalfoundation:coin:64>;
 
 // COIN TOOLTIPS
 <ore:coinIridium>.addTooltip(format.green("1 Iridium = 262,144 Copper"));
@@ -354,6 +354,13 @@ recipes.addShapeless(coinGold, [coinSilver, coinSilver, coinSilver, coinSilver, 
 recipes.addShapeless(coinSilver, [coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan]);
 recipes.addShapeless(coinConstantan, [coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron]);
 recipes.addShapeless(coinIron, [coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper]);
+
+recipes.addShapeless(coinPlatinum * 8, [coinIridium]);
+recipes.addShapeless(coinGold * 8, [coinPlatinum]);
+recipes.addShapeless(coinSilver * 8, [coinGold]);
+recipes.addShapeless(coinConstantan * 8, [coinSilver]);
+recipes.addShapeless(coinIron * 8, [coinConstantan]);
+recipes.addShapeless(coinCopper * 8, [coinIron);
 
 var dustConstantan = <thermalfoundation:material:100>;
 recipes.remove(dustConstantan);
