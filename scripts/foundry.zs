@@ -1,7 +1,8 @@
 import crafttweaker.liquid.ILiquidStack;
 
 mods.foundry.Melting.clear();
-//mods.foundry.Casting.clear(); Casting doesn't clear yet.  https://github.com/Shadows-of-Fire/Foundry/issues/30
+mods.foundry.Casting.clearRecipes();
+mods.foundry.Casting.clearMolds(); //Casting doesn't clear yet. https://github.com/Shadows-of-Fire/Foundry/issues/30 Fixed.
 
 var pickaxeHeadMold = <contenttweaker:pickaxe_head_mold>;
 var hammerHeadMold = <contenttweaker:hammer_head_mold>;
@@ -12,6 +13,9 @@ var shovelHeadMold = <contenttweaker:shovel_head_mold>;
 var ingotMold = <foundry:mold>;
 var blockMold = <foundry:mold:4>;
 var nuggetMold = <foundry:mold:26>;
+var gearMold = <foundry:mold:2>;
+var rodMold = <foundry:mold:3>;
+var plateMold = <foundry:mold:1>;
 
 
 
@@ -21,6 +25,12 @@ mods.foundry.Casting.addMold(swordBladeMold);
 mods.foundry.Casting.addMold(fileHeadMold);
 mods.foundry.Casting.addMold(axeHeadMold);
 mods.foundry.Casting.addMold(shovelHeadMold);
+mods.foundry.Casting.addMold(gearMold);
+mods.foundry.Casting.addMold(ingotMold);
+mods.foundry.Casting.addMold(blockMold);
+mods.foundry.Casting.addMold(nuggetMold);
+mods.foundry.Casting.addMold(rodMold);
+mods.foundry.Casting.addMold(plateMold);
 
 mods.foundry.MoldStation.addRecipe(pickaxeHeadMold, 6, 6, 
 [
@@ -101,8 +111,39 @@ val tool_array = [
   "WroughtIron" 
 ] as string[];
 
-val ingot_casting_array = [
-  "Cobalt"
+val gear_array = [
+  "Aluminium",
+  "Chrome" ,
+  "Gold",
+  "Iron" ,
+  "TinAlloy" ,
+  "Lead",
+  "Silver",
+  "Titanium",
+  "Brass" ,
+  "Bronze",
+  "Electrum" ,
+  "Invar",
+  "WroughtIron"
+] as string[];
+
+val rod_array = [
+  "Aluminium",
+  "Chrome",
+  "Cobalt",
+  "Gold",
+  "Iron",
+  "Tin",
+  "TinAlloy",
+  "Copper",
+  "Lead",
+  "Silver",
+  "Titanium",
+  "Brass",
+  "Bronze",
+  "Electrum",
+  "Invar",
+  "WroughtIron"
 ] as string[];
 
 
@@ -113,6 +154,7 @@ val ingot_melting_map = {
   "Gold" : 800,
   "Iron" : 1400,
   "Tin" : 800,
+  "TinAlloy" : 1100,
   "Copper" : 800,
   "Lead" : 1300,
   "Nickel" : 1200,
@@ -279,15 +321,32 @@ for name, melting_point in ingot_melting_map {
   print("Done ingots for for " ~ name);
 }
 
-for name in ingot_casting_array {
+for name in ingot_melting_map {
   var ingot = oreDict["ingot" ~ name].firstItem;
   var block = oreDict["block" ~ name].firstItem;
   var nugget = oreDict["nugget" ~ name].firstItem;
-
+  var plate = oreDict["plate" ~ name].firstItem;
   
   mods.foundry.Casting.addRecipe(ingot, metal_liquid_map[name] * 144, ingotMold); 
   mods.foundry.Casting.addRecipe(block, metal_liquid_map[name] * 1296, blockMold);
-  mods.foundry.Casting.addRecipe(nugget, metal_liquid_map[name] * 16, nuggetMold); 
+  mods.foundry.Casting.addRecipe(nugget, metal_liquid_map[name] * 16, nuggetMold);
+  mods.foundry.Casting.addRecipe(plate, metal_liquid_map[name] * 216, plateMold);
+  mods.foundry.CastingTable.addBlockRecipe(block, metal_liquid_map[name] *1296);
+  mods.foundry.CastingTable.addIngotRecipe(ingot, metal_liquid_map[name] *144);
+  mods.foundry.CastingTable.addPlateRecipe(plate, metal_liquid_map[name] *216);
+}
+
+for name in gear_array {
+  var gear = oreDict["gear" ~ name].firstItem;
+  
+  mods.foundry.Casting.addRecipe(gear, metal_liquid_map[name] * 864, gearMold); 
+}
+
+for name in rod_array {
+  var rod = oreDict["stick" ~ name].firstItem;
+  
+  mods.foundry.Casting.addRecipe(rod, metal_liquid_map[name] * 144, rodMold);
+  mods.foundry.CastingTable.addRodRecipe(rod, metal_liquid_map[name] *144);
 }
 
 // LAVA RECIPES
@@ -374,3 +433,112 @@ recipes.addShaped(<foundry:machine:8>, [
 scripts.functions.disableItem(<foundry:alloyfurnace>);
 scripts.functions.disableItem(<foundry:machine:2>);//alloy mixer, allowing mixing up to 4 metals at once
 
+//Remove wrong recipes from Casting Tables
+
+val liquid_remove_plate = {
+"Steel" : <liquid:steel>,
+"ElectrumF" : <liquid:liquidelectrum>,
+"CupronickelF" : <liquid:liquidcupronickel>,
+"IronF" : <liquid:liquidiron>,
+"Gold" : <liquid:gold>,
+"SignalumF" : <liquid:liquidsignalum>,
+"Platinum" : <liquid:platinum>,
+"BrassF" : <liquid:liquidbrass>,
+"LumiumF" : <liquid:liquidlumium>,
+"LeadF" : <liquid:liquidlead>,
+"Signalum" : <liquid:signalum>,
+"GoldF" : <liquid:liquidgold>,
+"SteelF" : <liquid:liquidsteel>,
+"Tin" : <liquid:tin>,
+"Invar" : <liquid:invar>,
+"Copper" : <liquid:copper>,
+"Zinc" : <liquid:zinc>,
+"NickelF" : <liquid:liquidnickel>,
+"InvarF" : <liquid:liquidinvar>,
+"Nickel" : <liquid:nickel>,
+"Electrum" : <liquid:electrum>,
+"TinF" : <liquid:liquidtin>,
+"BronzeF" : <liquid:liquidbronze>,
+"Osmium" : <liquid:osmium>,
+"Brass" : <liquid:brass>,
+"CopperF" : <liquid:liquidcopper>,
+"Lead" : <liquid:lead>,
+"Bronze" : <liquid:bronze>,
+"ZincF" : <liquid:liquidzinc>,
+"EnderiumF" : <liquid:liquidenderium>,
+"AluminiumF" : <liquid:liquidaluminium>,
+"OsmiumF" : <liquid:liquidosmium>,
+"Aluminium" : <liquid:aluminium>,
+"Iron" : <liquid:iron>,
+"SilverF" : <liquid:liquidsilver>,
+"PlatinumF" : <liquid:liquidplatinum>
+} as ILiquidStack[string];
+
+val liquid_remove_block = {
+"IronF" : <liquid:liquidiron>,
+"BrassF" : <liquid:liquidbrass>,
+"LeadF" : <liquid:liquidlead>,
+"GoldF" : <liquid:liquidgold>,
+"TinF" : <liquid:liquidtin>,
+"BronzeF" : <liquid:liquidbronze>,
+"CopperF" : <liquid:liquidcopper>,
+"AluminiumF" : <liquid:liquidaluminium>,
+"SilverF" : <liquid:liquidsilver>,
+"PlatinumF" : <liquid:liquidplatinum>,
+"ElectrumF" : <liquid:liquidelectrum>,
+"CupronickelF" : <liquid:liquidcupronickel>,
+"SignalumF" : <liquid:liquidsignalum>,
+"LumiumF" : <liquid:liquidlumium>,
+"SteelF" : <liquid:liquidsteel>,
+"NickelF" : <liquid:liquidnickel>,
+"InvarF" : <liquid:liquidinvar>,
+"ZincF" : <liquid:liquidzinc>,
+"EnderiumF" : <liquid:liquidenderium>,
+"OsmiumF" : <liquid:liquidosmium>
+} as ILiquidStack[string];
+
+val liquid_remove_ingot = {
+"IronF" : <liquid:liquidiron>,
+"BrassF" : <liquid:liquidbrass>,
+"LeadF" : <liquid:liquidlead>,
+"GoldF" : <liquid:liquidgold>,
+"TinF" : <liquid:liquidtin>,
+"BronzeF" : <liquid:liquidbronze>,
+"CopperF" : <liquid:liquidcopper>,
+"AluminiumF" : <liquid:liquidaluminium>,
+"SilverF" : <liquid:liquidsilver>,
+"PlatinumF" : <liquid:liquidplatinum>,
+"ElectrumF" : <liquid:liquidelectrum>,
+"CupronickelF" : <liquid:liquidcupronickel>,
+"SignalumF" : <liquid:liquidsignalum>,
+"LumiumF" : <liquid:liquidlumium>,
+"SteelF" : <liquid:liquidsteel>,
+"NickelF" : <liquid:liquidnickel>,
+"InvarF" : <liquid:liquidinvar>,
+"ZincF" : <liquid:liquidzinc>,
+"EnderiumF" : <liquid:liquidenderium>,
+"OsmiumF" : <liquid:liquidosmium>,
+"ElementiumF" : <liquid:liquidelvenelementium>,
+"TerrasteelF" : <liquid:liquidterrasteel>,
+"ManasteelF" : <liquid:liquidmanasteel>
+} as ILiquidStack[string];
+
+val liquid_remove_rod = {
+"CupronickelF" : <liquid:liquidcupronickel>
+} as ILiquidStack[string];
+
+for name in liquid_remove_block {
+	mods.foundry.CastingTable.removeBlockRecipe(liquid_remove_block[name]);
+}
+
+for name in liquid_remove_ingot {
+	mods.foundry.CastingTable.removeIngotRecipe(liquid_remove_ingot[name]);
+}
+
+for name in liquid_remove_plate {
+	mods.foundry.CastingTable.removePlateRecipe(liquid_remove_plate[name]);
+}
+
+for name in liquid_remove_rod {
+	mods.foundry.CastingTable.removeRodRecipe(liquid_remove_rod[name]);
+}
