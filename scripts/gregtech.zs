@@ -172,3 +172,34 @@ centrifuge.recipeBuilder()
 	.duration(320)
 	.EUt(30)
 	.buildAndRegister();
+  
+  
+// Add oredicts to facilitate some questing
+var oreIronQuestOres = <ore:ironQuestOres>;  
+var oreCopperQuestOres = <ore:copperQuestOres>;  
+var oreTinQuestOres = <ore:tinQuestOres>;  
+var oreCoalQuestOres = <ore:coalQuestOres>;  
+
+oreTinQuestOres.add(<gregtech:ore_tin_0>);
+oreTinQuestOres.add(<gregtech:ore_cassiterite_0>);
+oreTinQuestOres.add(<gregtech:ore_cassiterite_sand_0>);
+
+oreIronQuestOres.add(<gregtech:ore_magnetite_0>);
+oreIronQuestOres.add(<gregtech:ore_pyrite_0>);
+oreIronQuestOres.add(<gregtech:ore_iron_0>);
+oreIronQuestOres.add(<gregtech:ore_yellow_limonite_0>);
+oreIronQuestOres.add(<gregtech:ore_banded_iron_0>);
+oreIronQuestOres.add(<gregtech:ore_brown_limonite_0>);
+
+oreCoalQuestOres.add(<gregtech:ore_coal_0>);
+oreCoalQuestOres.add(<gregtech:ore_lignite_0>);
+
+oreCopperQuestOres.add(<gregtech:ore_copper_0>);
+oreCopperQuestOres.add(<gregtech:ore_tetrahedrite_0>);
+oreCopperQuestOres.add(<gregtech:ore_malachite_0>);
+oreCopperQuestOres.add(<gregtech:ore_chalcopyrite_0>);
+
+
+
+
+
