@@ -3,7 +3,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemTransformer;
 import crafttweaker.item.IItemStack;
 import mods.contenttweaker.VanillaFactory;
-var bucket_latex = <forge:bucketfilled>.withTag({FluidName: "fluid_latex", Amount: 1000});
 
 var stick = <minecraft:stick>;
 var flint = <minecraft:flint:0>;
