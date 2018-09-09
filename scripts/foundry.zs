@@ -252,24 +252,31 @@ for name in tool_array {
 
 for name, melting_point in ore_melting_map {
   print("Melting dust, ore and crushed for " ~ name);
+  print("Melting point is " ~ melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ore" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 192, oreDict["crushed" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
+  print("Done " ~ name);
 }
 
 for name, melting_point in impure_ore_melting_map {
-  print("Melting dust, ore and crushed for " ~ name);
+  print("Melting impure dust, ore and crushed for " ~ name);
+  print("Melting point is " ~ melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ore" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 153, oreDict["crushed" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
+  print("Done impure " ~ name);
 }
 
 for name, melting_point in ingot_melting_map {
+  print("Melting ingot, nugget, block for " ~ name);
+  print("Melting point is " ~ melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ingot" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 16, oreDict["nugget" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 1296, oreDict["block" ~ name], melting_point);
+  print("Done ingots for for " ~ name);
 }
 
 for name in ingot_casting_array {
