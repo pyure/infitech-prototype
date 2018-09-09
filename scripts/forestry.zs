@@ -7,14 +7,6 @@ recipes.remove(<forestry:bronze_pickaxe>);
 recipes.remove(<forestry:bronze_shovel>);
 
 
-// BRONZE
-var dustBronze = <thermalfoundation:material:99>;
-
-recipes.remove(dustBronze * 4);
-recipes.addShapeless(dustBronze * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
-
-recipes.remove(<forestry:ingot_bronze> * 4);
-
 // Gears
 recipes.remove(<forestry:gear_bronze>);
 recipes.addShaped(<ore:gearBronze>.firstItem, [
