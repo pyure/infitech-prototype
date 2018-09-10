@@ -144,20 +144,55 @@ var dynamite = <gregtech:meta_item_1:32629>;
 
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 chemical_reactor.recipeBuilder()
-	.fluidInputs([<liquid:copper> * 144, <liquid:redstone> * 288])
-	.fluidOutputs([<liquid:red_alloy> * 144])
+	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
+	.fluidOutputs(<liquid:red_alloy> * 144)
 	.duration(100)
 	.EUt(512)
 	.buildAndRegister();
 
 chemical_reactor.recipeBuilder()
 	.inputs(<ore:string> * 1, <ore:paper> * 1)
-	.fluidInputs([<liquid:toluene> * 36])
+	.fluidInputs(<liquid:toluene> * 36)
 	.outputs(dynamite * 1)
 	.duration(60)
 	.EUt(126)
 	.buildAndRegister();
 
+chemical_reactor.recipeBuilder()		//Molten Enderium Base
+	.inputs(<ore:dustSilver> * 1, <ore:dustPlatinum> * 1)
+	.fluidInputs(<liquid:tin> * 288)
+	.fluidOutputs(<liquid:enderium_base> * 576)
+	.duration(100)
+	.EUt(300)
+	.buildAndRegister();
+
+chemical_reactor.recipeBuilder()		//Enderium Dust
+	.inputs(<ore:dustEnderPearl> * 1)
+	.fluidInputs(<liquid:enderium_base> * 144)
+	.outputs(<gregtech:meta_item_1:2702> * 1)
+	.duration(200)
+	.EUt(30)
+	.buildAndRegister();
+	
+chemical_reactor.recipeBuilder()		//Signalum Dust
+	.inputs(<ore:dustSilver> * 1)
+	.fluidInputs(<liquid:red_alloy> * 432)
+	.outputs(<gregtech:meta_item_1:2703> * 4)
+	.duration(300)
+	.EUt(30)
+	.buildAndRegister();
+
+	
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
+
+alloy_smelter.recipeBuilder()		//Blue Alloy
+	.inputs(<ore:dustSilver> * 1, <projectred-core:resource_item:104> * 1)
+	.outputs(<gregtech:meta_item_1:10704> * 1)
+	.duration(100)
+	.EUt(16)
+	.buildAndRegister();
+		
+	
 recipes.remove(dynamite);
 recipes.addShaped(dynamite, [
   [null, <ore:string>, null],
@@ -168,8 +203,15 @@ val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 centrifuge.recipeBuilder()
 	.inputs(<ore:turfMoon> * 1)
 	.outputs(<minecraft:gravel> * 1)
-	.fluidOutputs([<liquid:helium3> * 125])
+	.fluidOutputs(<liquid:helium3> * 125)
 	.duration(320)
+	.EUt(30)
+	.buildAndRegister();
+	
+centrifuge.recipeBuilder()		//Saltpeter
+	.inputs(<ore:sand> * 4)
+	.outputs(<gregtech:meta_item_1:2156> * 1)
+	.duration(400)
 	.EUt(30)
 	.buildAndRegister();
   
