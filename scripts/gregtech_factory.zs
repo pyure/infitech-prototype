@@ -1,53 +1,65 @@
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
 
-//materialId, materialName, color, iconSet, harvest level, components (optional)
-val materialSignalum = MaterialRegistry.createIngotMaterial(700, "signalum", 0xFFAA33, "dull", 2);
-materialSignalum.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
+//IDs 700-750 Ingot/Dust Material and 750 - 799 Fluid Materials
 
-val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(701, "compressed_wrought_iron", 0xC8B4B4, "dull", 2, null, 6.2, 510);
+//Ingot		createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature)
+val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(700, "compressed_wrought_iron", 0xC8B4B4, "dull", 2, null, 6.2, 510);
 materialCompressedWroughtIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
-val materialCompressedIron = MaterialRegistry.createIngotMaterial(702, "compressed_iron", 0xC8D4D4, "dull", 2, null, 6.0, 435);
+val materialCompressedIron = MaterialRegistry.createIngotMaterial(701, "compressed_iron", 0xC8D4D4, "dull", 2, null, 6.0, 435);
 materialCompressedIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
-//Fluids
-val fluidFishOil = MaterialRegistry.createFluidMaterial(703, "fish_oil", 0xffc400, "fluid", null);
-val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(704, "uranium_hexafluoride", 0x20b23b, "fluid", null);
-val fluidFermentedBiomass = MaterialRegistry.createFluidMaterial(705, "fermented_biomass", 0x607c47, "fluid", null);
+val materialEnderium = MaterialRegistry.createIngotMaterial(702, "enderium", 0x2E574F, "shiny", 3, null, 8.0, 256, 3000);
+materialEnderium.addFlags(["GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);
+
+val materialSignalum = MaterialRegistry.createIngotMaterial(703, "signalum", 0xFFAA33, "shiny", 2, null, 5.0, 128, 1000);
+materialSignalum.addFlags(["GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);
+
+val materialBlueAlloy = MaterialRegistry.createIngotMaterial(704, "blue_alloy", 0x427af4, "dull", 0);
+materialBlueAlloy.setCableProperties(512, 2, 2);
+
+
+
+//Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
+val fluidFishOil = MaterialRegistry.createFluidMaterial(750, "fish_oil", 0xffc400, "fluid");
+val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
+val fluidFermentedBiomass = MaterialRegistry.createFluidMaterial(752, "fermented_biomass", 0x607c47, "fluid");
+val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(753, "enderium_base", 0x4D756E , "fluid" );
+val fluidAmmonia = MaterialRegistry.createFluidMaterial(754, "ammonia", 0x3F3480 , "fluid" );
 
 //dyes_water
-val fluidWaterDyeBlack = MaterialRegistry.createFluidMaterial(706, "water_dye_black", 0x202020, "fluid", null);
-val fluidWaterDyeRed = MaterialRegistry.createFluidMaterial(707, "water_dye_red", 0xff0000, "fluid", null);
-val fluidWaterDyeGreen = MaterialRegistry.createFluidMaterial(708, "water_dye_green", 0x00ff00, "fluid", null);
-val fluidWaterDyeBrown = MaterialRegistry.createFluidMaterial(709, "water_dye_brown", 0x604000, "fluid", null);
-val fluidWaterDyeBlue = MaterialRegistry.createFluidMaterial(710, "water_dye_blue", 0x0000ff, "fluid", null);
-val fluidWaterDyePurple = MaterialRegistry.createFluidMaterial(711, "water_dye_purple", 0x800080, "fluid", null);
-val fluidWaterDyeCyan = MaterialRegistry.createFluidMaterial(712, "water_dye_cyan", 0x00ffff, "fluid", null);
-val fluidWaterDyeLightGray = MaterialRegistry.createFluidMaterial(713, "water_dye_lightgray", 0xc0c0c0, "fluid", null);
-val fluidWaterDyeGray = MaterialRegistry.createFluidMaterial(714, "water_dye_gray", 0x808080, "fluid", null);
-val fluidWaterDyePink = MaterialRegistry.createFluidMaterial(715, "water_dye_pink", 0xffc0c0, "fluid", null);
-val fluidWaterDyeLime = MaterialRegistry.createFluidMaterial(716, "water_dye_lime", 0x80ff80, "fluid", null);
-val fluidWaterDyeYellow = MaterialRegistry.createFluidMaterial(717, "water_dye_yellow", 0xffff00, "fluid", null);
-val fluidWaterDyeLightBlue = MaterialRegistry.createFluidMaterial(718, "water_dye_lightblue", 0x8080ff, "fluid", null);
-val fluidWaterDyeMagenta = MaterialRegistry.createFluidMaterial(719, "water_dye_magenta", 0xff00ff, "fluid", null);
-val fluidWaterDyeOrange = MaterialRegistry.createFluidMaterial(720, "water_dye_orange", 0xff8000, "fluid", null);
-val fluidWaterDyeWhite = MaterialRegistry.createFluidMaterial(721, "water_dye_white", 0xffffff, "fluid", null);
+val fluidWaterDyeBlack = MaterialRegistry.createFluidMaterial(768, "water_dye_black", 0x202020, "fluid", null);
+val fluidWaterDyeRed = MaterialRegistry.createFluidMaterial(769, "water_dye_red", 0xff0000, "fluid", null);
+val fluidWaterDyeGreen = MaterialRegistry.createFluidMaterial(770, "water_dye_green", 0x00ff00, "fluid", null);
+val fluidWaterDyeBrown = MaterialRegistry.createFluidMaterial(771, "water_dye_brown", 0x604000, "fluid", null);
+val fluidWaterDyeBlue = MaterialRegistry.createFluidMaterial(772, "water_dye_blue", 0x0000ff, "fluid", null);
+val fluidWaterDyePurple = MaterialRegistry.createFluidMaterial(773, "water_dye_purple", 0x800080, "fluid", null);
+val fluidWaterDyeCyan = MaterialRegistry.createFluidMaterial(774, "water_dye_cyan", 0x00ffff, "fluid", null);
+val fluidWaterDyeLightGray = MaterialRegistry.createFluidMaterial(775, "water_dye_lightgray", 0xc0c0c0, "fluid", null);
+val fluidWaterDyeGray = MaterialRegistry.createFluidMaterial(776, "water_dye_gray", 0x808080, "fluid", null);
+val fluidWaterDyePink = MaterialRegistry.createFluidMaterial(777, "water_dye_pink", 0xffc0c0, "fluid", null);
+val fluidWaterDyeLime = MaterialRegistry.createFluidMaterial(778, "water_dye_lime", 0x80ff80, "fluid", null);
+val fluidWaterDyeYellow = MaterialRegistry.createFluidMaterial(779, "water_dye_yellow", 0xffff00, "fluid", null);
+val fluidWaterDyeLightBlue = MaterialRegistry.createFluidMaterial(780, "water_dye_lightblue", 0x8080ff, "fluid", null);
+val fluidWaterDyeMagenta = MaterialRegistry.createFluidMaterial(781, "water_dye_magenta", 0xff00ff, "fluid", null);
+val fluidWaterDyeOrange = MaterialRegistry.createFluidMaterial(782, "water_dye_orange", 0xff8000, "fluid", null);
+val fluidWaterDyeWhite = MaterialRegistry.createFluidMaterial(783, "water_dye_white", 0xffffff, "fluid", null);
 
 //dyes_chemical
-val fluidChemiDyeBlack = MaterialRegistry.createFluidMaterial(722, "chemi_dye_black", 0x111111, "fluid", null);
-val fluidChemiDyeRed = MaterialRegistry.createFluidMaterial(723, "chemi_dye_red", 0xA30000, "fluid", null);
-val fluidChemiDyeGreen = MaterialRegistry.createFluidMaterial(724, "chemi_dye_green", 0x00CC00, "fluid", null);
-val fluidChemiDyeBrown = MaterialRegistry.createFluidMaterial(725, "chemi_dye_brown", 0x4D3300, "fluid", null);
-val fluidChemiDyeBlue = MaterialRegistry.createFluidMaterial(726, "chemi_dye_blue", 0x0000CC, "fluid", null);
-val fluidChemiDyePurple = MaterialRegistry.createFluidMaterial(727, "chemi_dye_purple", 0x660066, "fluid", null);
-val fluidChemiDyeCyan = MaterialRegistry.createFluidMaterial(728, "chemi_dye_cyan", 0x00CCCC, "fluid", null);
-val fluidChemiDyeLightGray = MaterialRegistry.createFluidMaterial(729, "chemi_dye_lightgray", 0x9A9A9A, "fluid", null);
-val fluidChemiDyeGray = MaterialRegistry.createFluidMaterial(730, "chemi_dye_gray", 0x666666, "fluid", null);
-val fluidChemiDyePink = MaterialRegistry.createFluidMaterial(731, "chemi_dye_pink", 0xCC9A9A, "fluid", null);
-val fluidChemiDyeLime = MaterialRegistry.createFluidMaterial(732, "chemi_dye_lime", 0x66CC66, "fluid", null);
-val fluidChemiDyeYellow = MaterialRegistry.createFluidMaterial(733, "chemi_dye_yellow", 0xA3A300, "fluid", null);
-val fluidChemiDyeLightBlue = MaterialRegistry.createFluidMaterial(734, "chemi_dye_lightblue", 0x6666CC, "fluid", null);
-val fluidChemiDyeMagenta = MaterialRegistry.createFluidMaterial(735, "chemi_dye_magenta", 0xCC00CC, "fluid", null);
-val fluidChemiDyeOrange = MaterialRegistry.createFluidMaterial(736, "chemi_dye_orange", 0xCC6600, "fluid", null);
-val fluidChemiDyeWhite = MaterialRegistry.createFluidMaterial(737, "chemi_dye_white", 0xffffff, "fluid", null);
+val fluidChemiDyeBlack = MaterialRegistry.createFluidMaterial(784, "chemi_dye_black", 0x111111, "fluid", null);
+val fluidChemiDyeRed = MaterialRegistry.createFluidMaterial(785, "chemi_dye_red", 0xA30000, "fluid", null);
+val fluidChemiDyeGreen = MaterialRegistry.createFluidMaterial(786, "chemi_dye_green", 0x00CC00, "fluid", null);
+val fluidChemiDyeBrown = MaterialRegistry.createFluidMaterial(787, "chemi_dye_brown", 0x4D3300, "fluid", null);
+val fluidChemiDyeBlue = MaterialRegistry.createFluidMaterial(788, "chemi_dye_blue", 0x0000CC, "fluid", null);
+val fluidChemiDyePurple = MaterialRegistry.createFluidMaterial(789, "chemi_dye_purple", 0x660066, "fluid", null);
+val fluidChemiDyeCyan = MaterialRegistry.createFluidMaterial(790, "chemi_dye_cyan", 0x00CCCC, "fluid", null);
+val fluidChemiDyeLightGray = MaterialRegistry.createFluidMaterial(791, "chemi_dye_lightgray", 0x9A9A9A, "fluid", null);
+val fluidChemiDyeGray = MaterialRegistry.createFluidMaterial(792, "chemi_dye_gray", 0x666666, "fluid", null);
+val fluidChemiDyePink = MaterialRegistry.createFluidMaterial(793, "chemi_dye_pink", 0xCC9A9A, "fluid", null);
+val fluidChemiDyeLime = MaterialRegistry.createFluidMaterial(794, "chemi_dye_lime", 0x66CC66, "fluid", null);
+val fluidChemiDyeYellow = MaterialRegistry.createFluidMaterial(795, "chemi_dye_yellow", 0xA3A300, "fluid", null);
+val fluidChemiDyeLightBlue = MaterialRegistry.createFluidMaterial(796, "chemi_dye_lightblue", 0x6666CC, "fluid", null);
+val fluidChemiDyeMagenta = MaterialRegistry.createFluidMaterial(797, "chemi_dye_magenta", 0xCC00CC, "fluid", null);
+val fluidChemiDyeOrange = MaterialRegistry.createFluidMaterial(798, "chemi_dye_orange", 0xCC6600, "fluid", null);
+val fluidChemiDyeWhite = MaterialRegistry.createFluidMaterial(799, "chemi_dye_white", 0xffffff, "fluid", null);

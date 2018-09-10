@@ -158,6 +158,41 @@ chemical_reactor.recipeBuilder()
 	.EUt(126)
 	.buildAndRegister();
 
+chemical_reactor.recipeBuilder()		//Molten Enderium Base
+	.inputs(<ore:dustSilver> * 1, <ore:dustPlatinum> * 1)
+	.fluidInputs(<liquid:tin> * 288)
+	.fluidOutputs(<liquid:enderium_base> * 576)
+	.duration(100)
+	.EUt(300)
+	.buildAndRegister();
+
+chemical_reactor.recipeBuilder()		//Enderium Dust
+	.inputs(<ore:dustEnderPearl> * 1)
+	.fluidInputs(<liquid:enderium_base> * 144)
+	.outputs(<gregtech:meta_item_1:2700> * 1)
+	.duration(200)
+	.EUt(30)
+	.buildAndRegister();
+	
+chemical_reactor.recipeBuilder()		//Signalum Dust
+	.inputs(<ore:dustSilver> * 1)
+	.fluidInputs(<liquid:red_alloy> * 432)
+	.outputs(<gregtech:meta_item_1:2701> * 4)
+	.duration(300)
+	.EUt(30)
+	.buildAndRegister();
+
+	
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
+
+alloy_smelter.recipeBuilder()		//Blue Alloy
+	.inputs(<ore:silverDust> * 1, <ore:ingotElectrotineAlloy> * 1)
+	.outputs(<gregtech:meta_item_1:10704> * 1)
+	.duration(100)
+	.EUt(16)
+	.buildAndRegister();
+	
+	
 recipes.remove(dynamite);
 recipes.addShaped(dynamite, [
   [null, <ore:string>, null],
@@ -170,6 +205,13 @@ centrifuge.recipeBuilder()
 	.outputs(<minecraft:gravel> * 1)
 	.fluidOutputs([<liquid:helium3> * 125])
 	.duration(320)
+	.EUt(30)
+	.buildAndRegister();
+	
+centrifuge.recipeBuilder()		//Saltpeter
+	.inputs(<ore:sand> * 4)
+	.outputs(<gregtech:meta_item_1:2156> * 1)
+	.duration(400)
 	.EUt(30)
 	.buildAndRegister();
   
