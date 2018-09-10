@@ -202,7 +202,7 @@ recipes.addShaped(dynamite, [
 val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 centrifuge.recipeBuilder()
 	.inputs(<ore:turfMoon> * 1)
-	.outputs([<minecraft:gravel> * 1])
+	.outputs(<minecraft:gravel> * 1)
 	.fluidOutputs(<liquid:helium3> * 125)
 	.duration(320)
 	.EUt(30)
