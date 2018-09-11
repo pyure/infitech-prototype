@@ -54,12 +54,12 @@ blast_furnace.recipeBuilder()
 
 
 // BRONZE
-var oreDustBronze = <ore:dustBronze>;
-var firstDust = oreDustBronze.firstItem;
-for item in oreDustBronze.items {
-    recipes.remove(item * 4);
-}
-recipes.addShapeless(firstDust * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+var dustBronze = <gregtech:meta_item_1:2095>;
+var dustBronzeTF = <thermalfoundation:material:99>;
+recipes.remove(dustBronze * 4);
+recipes.remove(dustBronzeTF * 4);
+recipes.addShapeless(dustBronze * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+
 
 // Stick + Rubber => 3 Torches
 var rubber = <metaitem:rubber_drop>;
