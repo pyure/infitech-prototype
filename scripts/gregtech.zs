@@ -200,16 +200,12 @@ recipes.addShaped(dynamite, [
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
   
 val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
-centrifuge.recipeBuilder()		//Moonturf
-    .inputs(<advancedrocketry:moonturf> * 1)
-    .outputs(<minecraft:gravel> * 1)
-    .fluidOutputs(<liquid:helium3> * 125)
-    .duration(320)
-    .EUt(30)
-    .buildAndRegister();
+var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
+turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
+turfMoonCentrifuge.add(<advancedrocketry:moonturf_dark>);
 
 centrifuge.recipeBuilder()		//Moonturf
-    .inputs(<advancedrocketry:moonturf_dark> * 1)
+    .inputs(<ore:turfMoonCentrifuge> * 1)
     .outputs(<minecraft:gravel> * 1)
     .fluidOutputs(<liquid:helium3> * 125)
     .duration(320)
