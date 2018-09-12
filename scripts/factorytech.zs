@@ -281,3 +281,21 @@ recipes.addShaped("infitech_autoejector", <factorytech:autopuller>, [
   [null, wrench, <ore:plankWood>], 
   [magneticIronRod, <minecraft:sticky_piston>, steelPlate], 
   [null, hammer, <ore:plankWood>]]);
+
+//Agitator recipes
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:1>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:2>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:3>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:4>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:5>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:6>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:7>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:8>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:9>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:10>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:11>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:12>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:13>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:14>);
+mods.factorytech.Agitator.removeRecipe(<minecraft:concrete:15>);
