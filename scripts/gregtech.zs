@@ -6,7 +6,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
 
-
 //Electric Blast Furnace
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -16,7 +15,7 @@ blast_furnace.findRecipe(120, [<ore:ingotPigIron>.firstItem * 1], [<liquid:oxyge
 blast_furnace.recipeBuilder()
 	.inputs(<ore:ingotCompressedWroughtIron> * 1)
 	.fluidInputs([<liquid:oxygen> * 500])
-	.outputs(<gregtech:meta_item_1:10184> * 1, <ore:dustSmallDarkAsh>.firstItem * 1)
+	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 1)
 	.property("temperature", 1000)
 	.duration(480)
 	.EUt(120)
@@ -25,7 +24,7 @@ blast_furnace.recipeBuilder()
 blast_furnace.recipeBuilder()
 	.inputs(<ore:ingotWroughtIron> * 1)
 	.fluidInputs([<liquid:oxygen> * 1000])
-	.outputs(<gregtech:meta_item_1:10184> * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
+	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
 	.property("temperature", 1000)
 	.duration(560)
 	.EUt(120)
@@ -34,7 +33,7 @@ blast_furnace.recipeBuilder()
 blast_furnace.recipeBuilder()
 	.inputs(<ore:ingotPigIron> * 1)
 	.fluidInputs([<liquid:oxygen> * 1000])
-	.outputs(<gregtech:meta_item_1:10184> * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
+	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
 	.property("temperature", 1000)
 	.duration(560)
 	.EUt(120)
@@ -43,7 +42,7 @@ blast_furnace.recipeBuilder()
 blast_furnace.recipeBuilder()
 	.inputs(<minecraft:iron_ingot> * 1)
 	.fluidInputs([<liquid:oxygen> * 1000])
-	.outputs(<gregtech:meta_item_1:10184> * 1, <ore:dustSmallDarkAsh>.firstItem * 3)
+	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 3)
 	.property("temperature", 1000)
 	.duration(800)
 	.EUt(120)
@@ -58,7 +57,7 @@ var dustBronze = <gregtech:meta_item_1:2095>;
 var dustBronzeTF = <thermalfoundation:material:99>;
 recipes.remove(dustBronze * 4);
 recipes.remove(dustBronzeTF * 4);
-recipes.addShapeless(dustBronze * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+recipes.addShapeless(<ore:dustBronzeGt>.firstItem * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
 
 
 // Stick + Rubber => 3 Torches
@@ -169,7 +168,7 @@ chemical_reactor.recipeBuilder()		//Molten Enderium Base
 chemical_reactor.recipeBuilder()		//Enderium Dust
 	.inputs(<ore:dustEnderPearl> * 1)
 	.fluidInputs(<liquid:enderium_base> * 144)
-	.outputs(<gregtech:meta_item_1:2702> * 1)
+	.outputs(<ore:dustEnderiumGt>.firstItem * 1)
 	.duration(200)
 	.EUt(30)
 	.buildAndRegister();
@@ -177,17 +176,18 @@ chemical_reactor.recipeBuilder()		//Enderium Dust
 chemical_reactor.recipeBuilder()		//Signalum Dust
 	.inputs(<ore:dustSilver> * 1)
 	.fluidInputs(<liquid:red_alloy> * 432)
-	.outputs(<gregtech:meta_item_1:2703> * 4)
+	.outputs(<ore:dustSignalumGt>.firstItem * 4)
 	.duration(300)
 	.EUt(30)
 	.buildAndRegister();
 
 	
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
+<ore:ingotElectrotineAlloy>.add(<projectred-core:resource_item:104>);	//Recipe works fine without this line, but wont show in JEI, idk why
 
 alloy_smelter.recipeBuilder()		//Blue Alloy
-	.inputs(<ore:dustSilver> * 1, <projectred-core:resource_item:104> * 1)
-	.outputs(<gregtech:meta_item_1:10704> * 1)
+	.inputs(<ore:dustSilver> * 1, <ore:ingotElectrotineAlloy> * 1)
+	.outputs(<ore:ingotBlueAlloy>.firstItem * 1)
 	.duration(100)
 	.EUt(16)
 	.buildAndRegister();
@@ -204,7 +204,7 @@ var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
 turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
 turfMoonCentrifuge.add(<advancedrocketry:moonturf_dark>);
 
-centrifuge.recipeBuilder()		//Moonturf
+centrifuge.recipeBuilder()
     .inputs(<ore:turfMoonCentrifuge> * 1)
     .outputs(<minecraft:gravel> * 1)
     .fluidOutputs(<liquid:helium3> * 125)
@@ -214,7 +214,7 @@ centrifuge.recipeBuilder()		//Moonturf
 	
 centrifuge.recipeBuilder()		//Saltpeter
 	.inputs(<ore:sand> * 4)
-	.outputs(<gregtech:meta_item_1:2156> * 1)
+	.outputs(<ore:dustSaltpeterGt>.firstItem * 1)
 	.duration(400)
 	.EUt(30)
 	.buildAndRegister();
@@ -245,7 +245,7 @@ oreCopperQuestOres.add(<gregtech:ore_tetrahedrite_0>);
 oreCopperQuestOres.add(<gregtech:ore_malachite_0>);
 oreCopperQuestOres.add(<gregtech:ore_chalcopyrite_0>);
 
-
-
-
-
+//Cement fun
+val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
+fluid_solidifier.findRecipe(4, [<metaitem:shape.mold.block>], [<liquid:concrete>* 144]).remove();
+fluid_solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:concrete> * 1296]).remove();
