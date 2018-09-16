@@ -164,7 +164,8 @@ val ingot_melting_map = {
   "Bronze" : 1100,
   "Electrum" : 1450,
   "Invar" : 1450,
-  "WroughtIron" : 1550
+  "WroughtIron" : 1550,
+  "Cupronickel" : 1100
 } as int[string];
 
 
@@ -542,3 +543,33 @@ for name in liquid_remove_plate {
 for name in liquid_remove_rod {
 	mods.foundry.CastingTable.removeRodRecipe(liquid_remove_rod[name]);
 }
+
+
+//Alloying Crucible
+
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidcopper>*9, <liquid:liquidtin>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidcopper>*9, <liquid:liquidzinc>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidiron>*6, <liquid:liquidnickel>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidgold>*3, <liquid:liquidsilver>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidcopper>*3, <liquid:liquidnickel>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*18, <liquid:liquidtin>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidcopper>*9, <liquid:tin>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*18, <liquid:tin>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*18, <liquid:liquidzinc>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidcopper>*9, <liquid:zinc>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*18, <liquid:zinc>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:iron>*12, <liquid:liquidnickel>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidiron>*6, <liquid:nickel>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:iron>*12, <liquid:nickel>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:gold>*6, <liquid:liquidsilver>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidgold>*3, <liquid:silver>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:gold>*6, <liquid:silver>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*6, <liquid:liquidnickel>*3);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidcopper>*3, <liquid:nickel>*6);
+mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*6, <liquid:nickel>*6);
+
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:bronze>*12, <liquid:copper>*9, <liquid:tin>*3);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:brass>*12, <liquid:copper>*9, <liquid:zinc>*3);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:electrum>*6, <liquid:gold>*3, <liquid:silver>*3);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:cupronickel>*6, <liquid:copper>*3, <liquid:nickel>*3);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:invar>*9, <liquid:iron>*6, <liquid:nickel>*3);
