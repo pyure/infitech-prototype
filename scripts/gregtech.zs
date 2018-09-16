@@ -247,7 +247,6 @@ oreCopperQuestOres.add(<gregtech:ore_chalcopyrite_0>);
 
 //Cement fun
 val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
-fluid_solidifier.findRecipe(4, [<metaitem:shape.mold.block>], [<liquid:concrete>* 144]).remove();
 fluid_solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:concrete> * 1296]).remove();
 
 fluid_solidifier.recipeBuilder()
