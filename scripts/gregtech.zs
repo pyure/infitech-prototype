@@ -249,3 +249,23 @@ oreCopperQuestOres.add(<gregtech:ore_chalcopyrite_0>);
 val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 fluid_solidifier.findRecipe(4, [<metaitem:shape.mold.block>], [<liquid:concrete>* 144]).remove();
 fluid_solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:concrete> * 1296]).remove();
+
+fluid_solidifier.recipeBuilder()
+	.notConsumable(<metaitem:shape.mold.block>)
+	.fluidInputs([<liquid:concrete> * 144])
+	.outputs(<minecraft:concrete> * 1)
+	.duration(75)
+	.EUt(4)
+	.buildAndRegister();
+
+val mixer as RecipeMap = RecipeMap.getByName("mixer");
+mixer.findRecipe(4, [<gregtech:concrete> * 1], [<liquid:water> * 144]).remove();
+mixer.recipeBuilder()
+	.inputs(<ore:sand> * 2, <ore:gravel> * 2)
+	.outputs(<minecraft:concrete_powder> * 1)
+	.duration(20)
+	.EUt(4)
+	.buildAndRegister();
+
+furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
+furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
