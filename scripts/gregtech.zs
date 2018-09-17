@@ -223,3 +223,4 @@ mixer.recipeBuilder()
 
 furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
+
