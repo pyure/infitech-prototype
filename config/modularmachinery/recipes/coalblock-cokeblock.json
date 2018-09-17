@@ -1,0 +1,23 @@
+{
+    "machine": "coke_oven",
+    "registryName": "coalblock-cokeblock",
+    "recipeTime": 16200,
+    "requirements": [
+    {
+        "type": "item",
+        "io-type": "input",
+        "item": "minecraft:coal_block"
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thermalfoundation:storage_resource@1"
+    },
+    {
+        "type": "fluid",
+        "io-type": "output",
+        "fluid": "creosote",
+        "amount": 4500
+    }
+    ]
+}
