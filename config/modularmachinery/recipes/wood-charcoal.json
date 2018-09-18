@@ -1,0 +1,23 @@
+{
+    "machine": "coke_oven",
+    "registryName": "wood-charcoal",
+    "recipeTime": 1800,
+    "requirements": [
+    {
+        "type": "item",
+        "io-type": "input",
+        "item": "ore:logWood"
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:coal@1"
+    },
+    {
+        "type": "fluid",
+        "io-type": "output",
+        "fluid": "creosote",
+        "amount": 250
+    }
+    ]
+}
