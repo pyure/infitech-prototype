@@ -230,13 +230,13 @@ fluid_canner.recipeBuilder()
 // Fluiduct
 recipes.remove(fluiduct);
 recipes.addShaped("infitech_fluiduct", fluiduct * 3, [
-  [<ore:ringAluminium>, <ore:blockGlass>, <ore:ringAluminium>],
+  [<ore:ringBronze>, <ore:blockGlass>, <ore:ringBronze>],
   [null, wrench, null]]);
 
 // Opaque Fluiduct
 recipes.remove(fluiductOpaque);
 recipes.addShaped("infitech_opaque_fluiduct", fluiductOpaque * 3, [
-  [<ore:ringAluminium>, <ore:dustStone>, <ore:ringAluminium>],
+  [<ore:ringBronze>, <ore:dustStone>, <ore:ringBronze>],
   [null, wrench, null]]);
 
 // Hardened Fluiduct

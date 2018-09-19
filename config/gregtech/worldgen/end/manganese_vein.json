@@ -15,21 +15,25 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 30,
+          "weight": 460,
           "value": "ore:grossular"
         },
         {
-          "weight": 30,
+          "weight": 460,
           "value": "ore:spessartine"
         },
 		{
-          "weight": 30,
+          "weight": 380,
           "value": "ore:pyrolusite"
         },
 		{
-          "weight": 10,
+          "weight": 150,
           "value": "ore:tantalite"
-        }
+        },
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				} 
       ]
     }
   }

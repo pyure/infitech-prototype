@@ -16,17 +16,21 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 60,
+          "weight": 360,
           "value": "ore:tetrahedrite"
         },
         {
-          "weight": 20,
+          "weight": 120,
           "value": "ore:copper"
         },
-		{
-          "weight": 20,
+        {
+          "weight": 120,
           "value": "ore:stibnite"
-        }
+        },
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				} 
       ]
     }
   }

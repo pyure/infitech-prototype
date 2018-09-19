@@ -15,21 +15,25 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 30,
+          "weight": 260,
           "value": "ore:bentonite"
         },
         {
-          "weight": 30,
+          "weight": 260,
           "value": "ore:magnesite"
         },
 		{
-          "weight": 30,
+          "weight": 260,
           "value": "ore:olivine"
         },
 		{
-          "weight": 10,
+          "weight": 90,
           "value": "ore:glauconite"
-        }
+        },
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				} 
       ]
     }
   }
