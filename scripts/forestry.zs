@@ -31,7 +31,7 @@ recipes.addShaped(<ore:gearTin>.firstItem, [
 var woodPile = <forestry:wood_pile>;
 
 recipes.remove(woodPile);
-recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
+recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
 
 // GT Style block crafting
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
