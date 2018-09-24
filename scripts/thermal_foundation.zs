@@ -231,6 +231,7 @@ fluid_canner.recipeBuilder()
 	.EUt(24)
 	.buildAndRegister();  
 
+/*
 // Signalum-Plated Itemduct
 recipes.remove(itemductSignalum);
 assembler.recipeBuilder()
@@ -271,6 +272,7 @@ fluid_canner.recipeBuilder()
 	.EUt(24)
 	.buildAndRegister();    
 
+*/
 
 // Fluiduct
 recipes.remove(fluiduct);
@@ -300,7 +302,7 @@ recipes.addShaped("infitech_hardened_opaque_fluiduct", fluiductHardenedOpaque * 
   [<ore:pipeSmallStainlessSteel>,<minecraft:quartz>,<ore:pipeSmallStainlessSteel>],
   [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>]]);
  
- 
+/* 
 // Signalum-Plated Fluiduct
 recipes.remove(fluiductSignalumPlated);
 assembler.recipeBuilder()
@@ -320,6 +322,8 @@ assembler.recipeBuilder()
 	.duration(300)
 	.EUt(24)
 	.buildAndRegister();
+
+*/
 
 // Super-Laminar Fluiduct
 recipes.remove(fluiductSuperLaminar);
@@ -353,6 +357,13 @@ recipes.remove(fluxductRedstoneEnergyEmpty);
 recipes.remove(fluxductSignalumEmpty);
 recipes.remove(fluxductResonantEmpty);
 recipes.remove(fluxductCryoStabilizedEmpty);
+
+recipes.remove(itemductSignalum);
+recipes.remove(itemductSignalumOpaque);
+recipes.remove(itemductSignalumImpulse);
+recipes.remove(itemductSignalumImpulseOpaque);
+recipes.remove(fluiductSignalumPlated);
+recipes.remove(fluiductSignalumPlatedOpaque);
 
 var advanced_circuit_part = <gregtech:meta_item_1:32715>;
 var servo = <thermaldynamics:servo>;
