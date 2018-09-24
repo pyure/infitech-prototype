@@ -28,7 +28,7 @@
   "aggressive": false,
   "spread_chance": 0.1,
   "spawn_chance": 0.0,
-  "grass_drop_chance": 0.0,
+  "grass_drop_chance": 0.001,
   "seed_drop_chance": 1.0,
   "seed_drop_bonus": 0.0,
   "products": {

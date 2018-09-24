@@ -48,4 +48,6 @@ material.blue_alloy=Blue Alloy
 material.enderium_base=Enderium Base
 material.ammonia=Ammonia
 
+// BLOCKS
+tile.contenttweaker.cokebrick.name=Coke Oven Brick
 
