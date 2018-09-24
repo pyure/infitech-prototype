@@ -191,7 +191,7 @@ var fluxductResonantEmpty = <thermaldynamics:duct_0:8>;
 var fluxductCryoStabilizedEmpty = <thermaldynamics:duct_0:9>;
 
 //Vacuum und Dense Itemducts
-for i in 0 to 8
+for i in 0 to 5
 {
 	recipes.addShapeless(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 1 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
 	recipes.addShapeless(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 2 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetSilver>, <ore:nuggetSilver>, <ore:nuggetSilver>]);
