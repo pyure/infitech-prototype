@@ -169,6 +169,10 @@ var fluiduct = <thermaldynamics:duct_16>;
 var fluiductOpaque = <thermaldynamics:duct_16:1>;
 var fluiductHardened = <thermaldynamics:duct_16:2>;
 var fluiductHardenedOpaque = <thermaldynamics:duct_16:3>;
+var fluiductSignalumPlated = <thermaldynamics:duct_16:4>;
+var fluiductSignalumPlatedOpaque = <thermaldynamics:duct_16:5>;
+var fluiductSuperLaminar = <thermaldynamics:duct_16:6>;
+var fluiductSuperLaminarOpaque = <thermaldynamics:duct_16:7>;
 
 // ItemDuct
 recipes.remove(itemDuct);
@@ -192,7 +196,7 @@ recipes.remove(itemDuctImpulse);
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
 fluid_canner.recipeBuilder()
 	.inputs(itemDuct)
-  .fluidInputs(<liquid:glowstone> * 100)
+  .fluidInputs(<liquid:glowstone> * 144)
 	.outputs(itemDuctImpulse)
 	.duration(260)
   .EUt(24)
@@ -202,7 +206,7 @@ fluid_canner.recipeBuilder()
 recipes.remove(itemDuctImpulse);
 fluid_canner.recipeBuilder()
 	.inputs(itemDuctOpaque)
-  .fluidInputs(<liquid:glowstone> * 100)
+  .fluidInputs(<liquid:glowstone> * 144)
 	.outputs(itemDuctImpulseOpaque)
 	.duration(260)
   .EUt(24)
@@ -230,29 +234,75 @@ fluid_canner.recipeBuilder()
 // Fluiduct
 recipes.remove(fluiduct);
 recipes.addShaped("infitech_fluiduct", fluiduct * 3, [
-  [<ore:ringAluminium>, <ore:blockGlass>, <ore:ringAluminium>],
-  [null, wrench, null]]);
+  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>],
+  [<ore:pipeSmallBronze>,<minecraft:quartz>,<ore:pipeSmallBronze>],
+  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>]]);
 
 // Opaque Fluiduct
 recipes.remove(fluiductOpaque);
 recipes.addShaped("infitech_opaque_fluiduct", fluiductOpaque * 3, [
-  [<ore:ringAluminium>, <ore:dustStone>, <ore:ringAluminium>],
-  [null, wrench, null]]);
+  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>],
+  [<ore:pipeSmallBronze>,<minecraft:quartz>,<ore:pipeSmallBronze>],
+  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>]]);
 
 // Hardened Fluiduct
 recipes.remove(fluiductHardened);
 recipes.addShaped("infitech_hardened_fluiduct", fluiductHardened * 3, [
-  [<ore:ringStainlessSteel>, <ore:blockGlassHardened>, <ore:ringStainlessSteel>],
-  [null, wrench, null]]);
+  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>],
+  [<ore:pipeSmallStainlessSteel>,<minecraft:quartz>,<ore:pipeSmallStainlessSteel>],
+  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>]]);
 
 // Opaque Hardened Fluiduct
 recipes.remove(fluiductHardenedOpaque);
 recipes.addShaped("infitech_hardened_opaque_fluiduct", fluiductHardenedOpaque * 3, [
-  [<ore:ringStainlessSteel>, <ore:dustStone>, <ore:ringStainlessSteel>],
-  [null, wrench, null]]);
+  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>],
+  [<ore:pipeSmallStainlessSteel>,<minecraft:quartz>,<ore:pipeSmallStainlessSteel>],
+  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>]]);
+ 
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+ 
+// Signalum-Plated Fluiduct
+recipes.remove(fluiductSignalumPlated);
+assembler.recipeBuilder()
+	.inputs(fluiductHardened * 3, <ore:wireGtSingleElectrum> * 2)
+	.fluidInputs(<liquid:signalum> * 144)
+	.outputs(fluiductSignalumPlated * 3)
+	.duration(300)
+	.EUt(24)
+	.buildAndRegister();
   
-var advanced_circuit_part = <gregtech:meta_item_1:32715>;
+// Opaque Signalum-Plated Fluiduct
+recipes.remove(fluiductSignalumPlatedOpaque);
+assembler.recipeBuilder()
+	.inputs(fluiductHardenedOpaque * 3, <ore:wireGtSingleElectrum> * 2)
+	.fluidInputs(<liquid:signalum> * 144)
+	.outputs(fluiductSignalumPlatedOpaque * 3)
+	.duration(300)
+	.EUt(24)
+	.buildAndRegister();
 
+// Super-Laminar Fluiduct
+recipes.remove(fluiductSuperLaminar);
+assembler.recipeBuilder()
+	.inputs(<ore:pipeSmallTungstenSteel> * 2, <ore:dustGlass> * 4, <minecraft:quartz> * 3)
+	.fluidInputs(<liquid:enderium> * 144)
+	.outputs(fluiductSuperLaminar * 3)
+	.duration(400)
+	.EUt(24)
+	.buildAndRegister();
+
+// Opaque Super-Laminar Fluiduct
+recipes.remove(fluiductSuperLaminarOpaque);
+assembler.recipeBuilder()
+	.inputs(<ore:pipeSmallTungstenSteel> * 2, <ore:dustGlass> * 4, <ore:dustStone> * 3)
+	.fluidInputs(<liquid:enderium> * 144)
+	.outputs(fluiductSuperLaminarOpaque * 3)
+	.duration(400)
+	.EUt(24)
+	.buildAndRegister();
+
+
+var advanced_circuit_part = <gregtech:meta_item_1:32715>;
 var servo = <thermaldynamics:servo>;
 var hardened_servo = <thermaldynamics:servo:1>;
 var reinforced_servo = <thermaldynamics:servo:2>;
