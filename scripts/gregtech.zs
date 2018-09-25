@@ -6,8 +6,19 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
 
-//Electric Blast Furnace
+//GT Machines
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
+val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
+val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
+val mixer as RecipeMap = RecipeMap.getByName("mixer");
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+
+//Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotWroughtIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotPigIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
@@ -73,7 +84,6 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
 compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
 
 recipes.addShaped(coal_ball, [
@@ -123,7 +133,6 @@ furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:
 furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:1>);
 furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:2>);
 
-val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
 electrolyzer.recipeBuilder()
 	.inputs(resonating_ore)
 	.outputs(resonating_plate_block)
@@ -131,7 +140,6 @@ electrolyzer.recipeBuilder()
   .EUt(2)
 	.buildAndRegister();
 
-val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
 cutting_saw.recipeBuilder()
 	.inputs(resonating_plate_block)
 	.outputs(resonating_plate * 9)
@@ -141,7 +149,6 @@ cutting_saw.recipeBuilder()
 
 var dynamite = <gregtech:meta_item_1:32629>;
 
-val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 chemical_reactor.recipeBuilder()
 	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
 	.fluidOutputs(<liquid:red_alloy> * 144)
@@ -181,8 +188,6 @@ chemical_reactor.recipeBuilder()		//Signalum Dust
 	.EUt(30)
 	.buildAndRegister();
 
-	
-val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 <ore:ingotElectrotineAlloy>.add(<projectred-core:resource_item:104>);	//Recipe works fine without this line, but wont show in JEI, idk why
 
 alloy_smelter.recipeBuilder()		//Blue Alloy
@@ -191,23 +196,20 @@ alloy_smelter.recipeBuilder()		//Blue Alloy
 	.duration(100)
 	.EUt(16)
 	.buildAndRegister();
-
+	
 alloy_smelter.recipeBuilder()		//Refactory Glass
 	.inputs(<minecraft:sand> * 1, <minecraft:clay_ball> * 1)
 	.outputs(<foundry:refractoryglass> * 1)
 	.duration(60)
 	.EUt(4)
-	.buildAndRegister();
-  
-
+	.buildAndRegister();	
 	
 recipes.remove(dynamite);
 recipes.addShaped(dynamite, [
   [null, <ore:string>, null],
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
-  
-val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+
 var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
 turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
 turfMoonCentrifuge.add(<advancedrocketry:moonturf_dark>);
@@ -254,7 +256,6 @@ oreCopperQuestOres.add(<gregtech:ore_malachite_0>);
 oreCopperQuestOres.add(<gregtech:ore_chalcopyrite_0>);
 
 //Cement fun
-val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 fluid_solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:concrete> * 1296]).remove();
 
 fluid_solidifier.recipeBuilder()
@@ -265,7 +266,6 @@ fluid_solidifier.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
-val mixer as RecipeMap = RecipeMap.getByName("mixer");
 mixer.findRecipe(4, [<gregtech:concrete> * 1], [<liquid:water> * 144]).remove();
 mixer.recipeBuilder()
 	.inputs(<ore:sand> * 2, <ore:gravel> * 2)
@@ -408,5 +408,10 @@ for name in material_array {
   }
 }
 
-
-
+//Glowstone
+fluid_extractor.recipeBuilder()
+	.inputs(<minecraft:glowstone_dust>)
+	.fluidOutputs(<fluid:glowstone> * 144)
+	.EUt(32)
+	.duration(80)
+	.buildAndRegister();
