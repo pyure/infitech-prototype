@@ -16,16 +16,20 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 280,
+          "weight": 240,
           "value": "ore:wulfenite"
         },
         {
-          "weight": 280,
+          "weight": 240,
           "value": "ore:molybdenite"
         },
-		{
-          "weight": 140,
+        {
+          "weight": 120,
           "value": "ore:powellite"
+        },
+        {
+          "weight": 40,
+          "value": "ore_dict:oreBoron"
         },
 				{
 					"weight": 1,
