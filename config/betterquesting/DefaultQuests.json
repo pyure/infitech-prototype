@@ -602,6 +602,144 @@
       }
     },
     "9:10": {
+      "questID:3": 9,
+      "preRequisites:11": [
+        50
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "prospectors:prospector_lowest",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Dowser",
+          "desc:8": "In your explorations you will find occasional rocks upon the surface of the world.  These rocks are indicators of ore veins in the vicinity.  More specifically:  If a nugget is present in a chunk, then an ore vein is also present in that chunk... or at least in the nearest chunks.  \n\nWhile these indicators are useful, you can narrow down the location (and type) of that vein with the use of a Dowsing Rod or Prospector.  Simply right-click the face of any block, and you will learn what is behind that rock to a depth dependent on the quality of the tool."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "prospectors:prospector_lowest",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
+    },
+    "10:10": {
+      "questID:3": 10,
+      "preRequisites:11": [
+        89
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "pneumaticcraft:pressure_tube",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Pressure Chamber",
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "pneumaticcraft:pressure_chamber_wall",
+              "Count:3": 23,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "1:10": {
+              "id:8": "pneumaticcraft:pressure_chamber_valve",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            },
+            "2:10": {
+              "id:8": "pneumaticcraft:pressure_chamber_interface",
+              "Count:3": 2,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
+    },
+    "11:10": {
       "questID:3": 47,
       "preRequisites:11": [],
       "properties:10": {
@@ -663,7 +801,7 @@
         }
       }
     },
-    "10:10": {
+    "12:10": {
       "questID:3": 49,
       "preRequisites:11": [
         47
@@ -802,7 +940,7 @@
         }
       }
     },
-    "11:10": {
+    "13:10": {
       "questID:3": 50,
       "preRequisites:11": [
         49
@@ -939,7 +1077,7 @@
         }
       }
     },
-    "12:10": {
+    "14:10": {
       "questID:3": 51,
       "preRequisites:11": [
         50
@@ -1003,7 +1141,7 @@
         }
       }
     },
-    "13:10": {
+    "15:10": {
       "questID:3": 52,
       "preRequisites:11": [
         51
@@ -1079,7 +1217,7 @@
         }
       }
     },
-    "14:10": {
+    "16:10": {
       "questID:3": 53,
       "preRequisites:11": [
         52
@@ -1143,7 +1281,7 @@
         }
       }
     },
-    "15:10": {
+    "17:10": {
       "questID:3": 54,
       "preRequisites:11": [
         75
@@ -1199,7 +1337,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -1292,7 +1430,7 @@
         }
       }
     },
-    "16:10": {
+    "18:10": {
       "questID:3": 55,
       "preRequisites:11": [
         54
@@ -1470,7 +1608,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -1791,7 +1929,7 @@
         }
       }
     },
-    "17:10": {
+    "19:10": {
       "questID:3": 56,
       "preRequisites:11": [
         55
@@ -1855,7 +1993,7 @@
         }
       }
     },
-    "18:10": {
+    "20:10": {
       "questID:3": 57,
       "preRequisites:11": [
         55
@@ -2033,7 +2171,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2354,10 +2492,10 @@
         }
       }
     },
-    "19:10": {
+    "21:10": {
       "questID:3": 59,
       "preRequisites:11": [
-        50
+        9
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2400,18 +2538,12 @@
               "Damage:3": 0
             },
             "1:10": {
-              "id:8": "gregtech:ore_coal_0",
-              "Count:3": 3,
-              "OreDict:8": "coalQuestOres",
-              "Damage:3": 0
-            },
-            "2:10": {
               "id:8": "gregtech:ore_pyrite_0",
               "Count:3": 3,
               "OreDict:8": "ironQuestOres",
               "Damage:3": 0
             },
-            "3:10": {
+            "2:10": {
               "id:8": "gregtech:ore_tin_0",
               "Count:3": 3,
               "OreDict:8": "tinQuestOres",
@@ -2436,7 +2568,7 @@
         }
       }
     },
-    "20:10": {
+    "22:10": {
       "questID:3": 60,
       "preRequisites:11": [
         59
@@ -2500,7 +2632,7 @@
         }
       }
     },
-    "21:10": {
+    "23:10": {
       "questID:3": 61,
       "preRequisites:11": [
         50
@@ -2564,7 +2696,7 @@
         }
       }
     },
-    "22:10": {
+    "24:10": {
       "questID:3": 62,
       "preRequisites:11": [
         61
@@ -2628,7 +2760,7 @@
         }
       }
     },
-    "23:10": {
+    "25:10": {
       "questID:3": 63,
       "preRequisites:11": [
         62
@@ -2709,7 +2841,7 @@
         }
       }
     },
-    "24:10": {
+    "26:10": {
       "questID:3": 64,
       "preRequisites:11": [
         63
@@ -2773,71 +2905,7 @@
         }
       }
     },
-    "25:10": {
-      "questID:3": 65,
-      "preRequisites:11": [
-        59
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "CHAIN",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "factorytech:oredrill",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "partysinglereward:1": 0,
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "ismain:1": 0,
-          "name:8": "Grind that!",
-          "desc:8": "One option for increasing your ore yields is a FactoryTech grinder. It will require constant replenishing of parts, but requires no power input."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "factorytech:oredrill",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "jsonlootbags:coinbagt1",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        }
-      }
-    },
-    "26:10": {
+    "27:10": {
       "questID:3": 66,
       "preRequisites:11": [
         60
@@ -2901,7 +2969,7 @@
         }
       }
     },
-    "27:10": {
+    "28:10": {
       "questID:3": 67,
       "preRequisites:11": [
         66
@@ -2965,7 +3033,7 @@
         }
       }
     },
-    "28:10": {
+    "29:10": {
       "questID:3": 68,
       "preRequisites:11": [
         67
@@ -3035,7 +3103,7 @@
         }
       }
     },
-    "29:10": {
+    "30:10": {
       "questID:3": 69,
       "preRequisites:11": [
         68
@@ -3099,7 +3167,7 @@
         }
       }
     },
-    "30:10": {
+    "31:10": {
       "questID:3": 70,
       "preRequisites:11": [
         60,
@@ -3164,7 +3232,7 @@
         }
       }
     },
-    "31:10": {
+    "32:10": {
       "questID:3": 71,
       "preRequisites:11": [
         70
@@ -3242,7 +3310,7 @@
         }
       }
     },
-    "32:10": {
+    "33:10": {
       "questID:3": 72,
       "preRequisites:11": [
         70
@@ -3306,7 +3374,7 @@
         }
       }
     },
-    "33:10": {
+    "34:10": {
       "questID:3": 73,
       "preRequisites:11": [
         72
@@ -3370,7 +3438,7 @@
         }
       }
     },
-    "34:10": {
+    "35:10": {
       "questID:3": 74,
       "preRequisites:11": [
         73
@@ -3440,7 +3508,7 @@
         }
       }
     },
-    "35:10": {
+    "36:10": {
       "questID:3": 75,
       "preRequisites:11": [
         60
@@ -3579,7 +3647,7 @@
         }
       }
     },
-    "36:10": {
+    "37:10": {
       "questID:3": 76,
       "preRequisites:11": [
         69
@@ -3643,7 +3711,7 @@
         }
       }
     },
-    "37:10": {
+    "38:10": {
       "questID:3": 77,
       "preRequisites:11": [
         76
@@ -3707,7 +3775,7 @@
         }
       }
     },
-    "38:10": {
+    "39:10": {
       "questID:3": 78,
       "preRequisites:11": [
         74
@@ -3771,7 +3839,7 @@
         }
       }
     },
-    "39:10": {
+    "40:10": {
       "questID:3": 79,
       "preRequisites:11": [],
       "properties:10": {
@@ -3815,7 +3883,7 @@
         }
       }
     },
-    "40:10": {
+    "41:10": {
       "questID:3": 80,
       "preRequisites:11": [
         78
@@ -3879,7 +3947,7 @@
         }
       }
     },
-    "41:10": {
+    "42:10": {
       "questID:3": 81,
       "preRequisites:11": [
         76
@@ -4096,7 +4164,7 @@
         }
       }
     },
-    "42:10": {
+    "43:10": {
       "questID:3": 82,
       "preRequisites:11": [
         74
@@ -4166,7 +4234,7 @@
         }
       }
     },
-    "43:10": {
+    "44:10": {
       "questID:3": 83,
       "preRequisites:11": [
         74
@@ -4254,7 +4322,7 @@
         }
       }
     },
-    "44:10": {
+    "45:10": {
       "questID:3": 84,
       "preRequisites:11": [
         82
@@ -4318,7 +4386,7 @@
         }
       }
     },
-    "45:10": {
+    "46:10": {
       "questID:3": 85,
       "preRequisites:11": [
         83,
@@ -4340,7 +4408,7 @@
             "OreDict:8": ""
           },
           "globalshare:1": 0,
-          "questlogic:8": "XNOR",
+          "questlogic:8": "OR",
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
@@ -4383,11 +4451,10 @@
         }
       }
     },
-    "46:10": {
+    "47:10": {
       "questID:3": 86,
       "preRequisites:11": [
-        83,
-        65
+        83
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4411,7 +4478,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Early multiplication",
-          "desc:8": "It is possible to greatly increase your resource yields by combining some industries together. For instance, machines from FactoryTech and Foundry."
+          "desc:8": "It is possible to greatly increase your resource yields by combining some industries together. For instance, machines from Integrated Dynamics and Foundry."
         }
       },
       "tasks:9": {
@@ -4448,7 +4515,7 @@
         }
       }
     },
-    "47:10": {
+    "48:10": {
       "questID:3": 87,
       "preRequisites:11": [
         86
@@ -4494,7 +4561,7 @@
         }
       }
     },
-    "48:10": {
+    "49:10": {
       "questID:3": 88,
       "preRequisites:11": [
         77,
@@ -4559,7 +4626,7 @@
         }
       }
     },
-    "49:10": {
+    "50:10": {
       "questID:3": 89,
       "preRequisites:11": [
         88
@@ -4623,7 +4690,7 @@
         }
       }
     },
-    "50:10": {
+    "51:10": {
       "questID:3": 90,
       "preRequisites:11": [
         85
@@ -4687,7 +4754,7 @@
         }
       }
     },
-    "51:10": {
+    "52:10": {
       "questID:3": 91,
       "preRequisites:11": [
         90
@@ -4713,8 +4780,8 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 1,
-          "name:8": "First fluiducts",
-          "desc:8": "Fluiducts are a massive improvement over ceramic Channels for moving fluids."
+          "name:8": "Little plumber\u0027s set",
+          "desc:8": "Bronze pipes are a massive improvement over ceramic Channels for moving fluids."
         }
       },
       "tasks:9": {
@@ -4727,10 +4794,10 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "thermaldynamics:duct_16",
-              "Count:3": 10,
+              "id:8": "gregtech:fluid_pipe_bronze",
+              "Count:3": 4,
               "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:3": 1
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -4751,7 +4818,7 @@
         }
       }
     },
-    "52:10": {
+    "53:10": {
       "questID:3": 92,
       "preRequisites:11": [
         91
@@ -4797,70 +4864,6 @@
             "0:10": {
               "id:8": "agricraft:water_tank",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "jsonlootbags:coinbagt1",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        }
-      }
-    },
-    "53:10": {
-      "questID:3": 93,
-      "preRequisites:11": [
-        91
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "CHAIN",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "factorytech:watercollector",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "partysinglereward:1": 0,
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "ismain:1": 0,
-          "name:8": "Infi water II",
-          "desc:8": "An alternative method of acquiring infinite water is the FactoryTech Water Collector. You need to put this device in the water and it will slowly, but surely collect water for you."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "factorytech:watercollector",
-              "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -5645,16 +5648,6 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 1,
-                "orig_id:8": "indlog:tank"
-              },
-              "OreDict:8": "",
-              "Damage:3": 1
-            },
-            "1:10": {
               "id:8": "gregtech:machine",
               "Count:3": 1,
               "OreDict:8": "",
@@ -5816,8 +5809,8 @@
     "67:10": {
       "questID:3": 107,
       "preRequisites:11": [
-        89,
-        109
+        109,
+        10
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6095,267 +6088,267 @@
       "quests:9": {
         "0:10": {
           "size:3": 24,
+          "x:3": -42,
+          "y:3": 36,
+          "id:3": 9
+        },
+        "1:10": {
+          "size:3": 18,
+          "x:3": 114,
+          "y:3": 114,
+          "id:3": 10
+        },
+        "2:10": {
+          "size:3": 24,
           "x:3": -150,
           "y:3": 6,
           "id:3": 47
         },
-        "1:10": {
+        "3:10": {
           "size:3": 24,
           "x:3": -114,
           "y:3": 24,
           "id:3": 49
         },
-        "2:10": {
+        "4:10": {
           "size:3": 24,
-          "x:3": -72,
-          "y:3": 48,
+          "x:3": -78,
+          "y:3": 30,
           "id:3": 50
         },
-        "3:10": {
+        "5:10": {
           "size:3": 18,
           "x:3": -102,
           "y:3": 60,
           "id:3": 51
         },
-        "4:10": {
+        "6:10": {
           "size:3": 18,
           "x:3": -126,
           "y:3": 66,
           "id:3": 52
         },
-        "5:10": {
+        "7:10": {
           "size:3": 18,
           "x:3": -150,
           "y:3": 90,
           "id:3": 53
         },
-        "6:10": {
+        "8:10": {
           "size:3": 18,
           "x:3": -6,
           "y:3": 24,
           "id:3": 54
         },
-        "7:10": {
+        "9:10": {
           "size:3": 18,
           "x:3": -6,
           "y:3": -6,
           "id:3": 55
         },
-        "8:10": {
+        "10:10": {
           "size:3": 18,
           "x:3": 12,
           "y:3": -36,
           "id:3": 56
         },
-        "9:10": {
+        "11:10": {
           "size:3": 18,
           "x:3": -30,
           "y:3": -36,
           "id:3": 57
         },
-        "10:10": {
+        "12:10": {
           "size:3": 24,
           "x:3": -30,
           "y:3": 66,
           "id:3": 59
         },
-        "11:10": {
+        "13:10": {
           "size:3": 24,
           "x:3": 0,
           "y:3": 90,
           "id:3": 60
         },
-        "12:10": {
+        "14:10": {
           "size:3": 18,
           "x:3": -72,
           "y:3": 78,
           "id:3": 61
         },
-        "13:10": {
+        "15:10": {
           "size:3": 18,
           "x:3": -90,
           "y:3": 102,
           "id:3": 62
         },
-        "14:10": {
+        "16:10": {
           "size:3": 18,
           "x:3": -102,
           "y:3": 126,
           "id:3": 63
         },
-        "15:10": {
+        "17:10": {
           "size:3": 18,
           "x:3": -90,
           "y:3": 150,
           "id:3": 64
         },
-        "16:10": {
-          "size:3": 18,
-          "x:3": -36,
-          "y:3": 102,
-          "id:3": 65
-        },
-        "17:10": {
+        "18:10": {
           "size:3": 18,
           "x:3": 30,
           "y:3": 78,
           "id:3": 66
         },
-        "18:10": {
+        "19:10": {
           "size:3": 18,
           "x:3": 54,
           "y:3": 78,
           "id:3": 67
         },
-        "19:10": {
+        "20:10": {
           "size:3": 18,
           "x:3": 54,
           "y:3": 102,
           "id:3": 68
         },
-        "20:10": {
+        "21:10": {
           "size:3": 18,
           "x:3": 30,
           "y:3": 114,
           "id:3": 69
         },
-        "21:10": {
+        "22:10": {
           "size:3": 24,
           "x:3": -6,
           "y:3": 126,
           "id:3": 70
         },
-        "22:10": {
+        "23:10": {
           "size:3": 18,
           "x:3": -42,
           "y:3": 144,
           "id:3": 71
         },
-        "23:10": {
+        "24:10": {
           "size:3": 24,
           "x:3": -12,
           "y:3": 168,
           "id:3": 72
         },
-        "24:10": {
+        "25:10": {
           "size:3": 24,
           "x:3": -36,
           "y:3": 198,
           "id:3": 73
         },
-        "25:10": {
+        "26:10": {
           "size:3": 24,
           "x:3": -54,
           "y:3": 234,
           "id:3": 74
         },
-        "26:10": {
+        "27:10": {
           "size:3": 18,
           "x:3": 6,
           "y:3": 54,
           "id:3": 75
         },
-        "27:10": {
+        "28:10": {
           "size:3": 18,
           "x:3": 48,
           "y:3": 138,
           "id:3": 76
         },
-        "28:10": {
+        "29:10": {
           "size:3": 18,
           "x:3": 78,
           "y:3": 156,
           "id:3": 77
         },
-        "29:10": {
+        "30:10": {
           "size:3": 18,
           "x:3": -72,
           "y:3": 204,
           "id:3": 78
         },
-        "30:10": {
+        "31:10": {
           "size:3": 18,
           "x:3": -84,
           "y:3": 174,
           "id:3": 80
         },
-        "31:10": {
+        "32:10": {
           "size:3": 18,
           "x:3": 36,
           "y:3": 162,
           "id:3": 81
         },
-        "32:10": {
+        "33:10": {
           "size:3": 24,
           "x:3": -12,
           "y:3": 270,
           "id:3": 82
         },
-        "33:10": {
+        "34:10": {
           "size:3": 24,
           "x:3": 12,
           "y:3": 228,
           "id:3": 83
         },
-        "34:10": {
+        "35:10": {
           "size:3": 24,
           "x:3": 30,
           "y:3": 270,
           "id:3": 84
         },
-        "35:10": {
+        "36:10": {
           "size:3": 24,
           "x:3": 66,
           "y:3": 246,
           "id:3": 85
         },
-        "36:10": {
+        "37:10": {
           "size:3": 18,
           "x:3": 36,
           "y:3": 204,
           "id:3": 86
         },
-        "37:10": {
+        "38:10": {
           "size:3": 18,
           "x:3": 66,
           "y:3": 192,
           "id:3": 87
         },
-        "38:10": {
+        "39:10": {
           "size:3": 18,
           "x:3": 102,
           "y:3": 180,
           "id:3": 88
         },
-        "39:10": {
+        "40:10": {
           "size:3": 18,
           "x:3": 114,
           "y:3": 150,
           "id:3": 89
         },
-        "40:10": {
+        "41:10": {
           "size:3": 24,
           "x:3": 102,
           "y:3": 234,
           "id:3": 90
         },
-        "41:10": {
+        "42:10": {
           "size:3": 24,
           "x:3": 144,
           "y:3": 234,
           "id:3": 91
         },
-        "42:10": {
+        "43:10": {
           "size:3": 18,
           "x:3": 138,
           "y:3": 276,
           "id:3": 92
-        },
-        "43:10": {
-          "size:3": 18,
-          "x:3": 168,
-          "y:3": 276,
-          "id:3": 93
         },
         "44:10": {
           "size:3": 18,

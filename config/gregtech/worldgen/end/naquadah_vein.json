@@ -16,13 +16,17 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 90,
+          "weight": 900,
           "value": "ore:naquadah"
         },
         {
-          "weight": 10,
+          "weight": 100,
           "value": "ore:naquadah_enriched"
-        }
+        },
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				} 
       ]
     }
   }

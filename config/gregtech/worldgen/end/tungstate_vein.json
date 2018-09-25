@@ -16,17 +16,21 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 60,
+          "weight": 900,
           "value": "ore:scheelite"
         },
         {
-          "weight": 20,
+          "weight": 300,
           "value": "ore:tungstate"
         },
-		{
-          "weight": 20,
+        {
+          "weight": 300,
           "value": "ore:lithium"
-        }
+        },
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				} 
       ]
     }
   }
