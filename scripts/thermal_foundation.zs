@@ -288,6 +288,7 @@ recipes.addShaped("infitech_opaque_fluiduct", fluiductOpaque * 3, [
   [<ore:pipeSmallBronze>,<minecraft:quartz>,<ore:pipeSmallBronze>],
   [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>]]);
 
+
 // Hardened Fluiduct
 recipes.remove(fluiductHardened);
 recipes.addShaped("infitech_hardened_fluiduct", fluiductHardened * 3, [
