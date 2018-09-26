@@ -16,17 +16,25 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 40,
+          "weight": 240,
           "value": "ore:wulfenite"
         },
         {
-          "weight": 40,
+          "weight": 240,
           "value": "ore:molybdenite"
         },
-		{
-          "weight": 20,
+        {
+          "weight": 120,
           "value": "ore:powellite"
-        }
+        },
+        {
+          "weight": 40,
+          "value": "ore_dict:oreBoron"
+        },
+				{
+					"weight": 1,
+					"value": "block:appliedenergistics2:sky_stone_block"
+				} 
       ]
     }
   }

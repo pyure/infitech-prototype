@@ -3,6 +3,7 @@ import crafttweaker.liquid.ILiquidStack;
 mods.foundry.Melting.clear();
 mods.foundry.Casting.clearRecipes();
 mods.foundry.Casting.clearMolds(); //Casting doesn't clear yet. https://github.com/Shadows-of-Fire/Foundry/issues/30 Fixed.
+mods.foundry.AlloyFurnace.clear();
 
 var pickaxeHeadMold = <contenttweaker:pickaxe_head_mold>;
 var hammerHeadMold = <contenttweaker:hammer_head_mold>;
