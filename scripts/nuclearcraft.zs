@@ -153,14 +153,17 @@ scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
 scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
 scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
 scripts.functions.disableItem(<nuclearcraft:centrifuge_idle>);
+scripts.functions.disableItem(<nuclearcraft:infuser_idle>);
 
-
-
-
-
-
-
-
-
-
-
+//Remove recipes from disabled machines
+mods.nuclearcraft.manufactory.removeAllRecipes();
+mods.nuclearcraft.alloy_furnace.removeAllRecipes();
+mods.nuclearcraft.melter.removeAllRecipes();
+mods.nuclearcraft.electrolyser.removeAllRecipes();
+mods.nuclearcraft.irradiator.removeAllRecipes();
+mods.nuclearcraft.ingot_former.removeAllRecipes();
+mods.nuclearcraft.pressurizer.removeAllRecipes();
+mods.nuclearcraft.chemical_reactor.removeAllRecipes();
+mods.nuclearcraft.extractor.removeAllRecipes();
+mods.nuclearcraft.centrifuge.removeAllRecipes();
+//mods.nuclearcraft.infuser.removeAllRecipes(); can add this after we moved recipes to chemical reactor
