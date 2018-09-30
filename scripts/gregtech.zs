@@ -415,3 +415,87 @@ fluid_extractor.recipeBuilder()
 	.EUt(32)
 	.duration(80)
 	.buildAndRegister();
+	
+//Basisc Electronic Circuit
+var basicCircuit = <ore:circuitBasic>.firstItem;
+recipes.addShaped(basicCircuit, [
+[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>],
+[<ore:circuitPrimitive>,<ore:plateSteel>,<ore:circuitPrimitive>],
+[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>]]);
+
+//NC Alloys
+var ferroBoron = <nuclearcraft:alloy:6>;
+var toughAlloy = <nuclearcraft:alloy:1>;
+var hardCarbon = <nuclearcraft:alloy:2>;
+var magnesiumDiboride = <nuclearcraft:alloy:3>;
+var lithiumManganeseDioxide = <nuclearcraft:alloy:4>;
+var dustManganeseOxide = <nuclearcraft:dust_oxide:2>;
+var dustManganeseDioxide = <nuclearcraft:dust_oxide:3>;
+var ingotManganeseOxide = <nuclearcraft:ingot_oxide:2>;
+var ingotManganeseDioxide = <nuclearcraft:ingot_oxide:3>;
+
+var ingotMagnesium = <gregtech:meta_item_1:10039>;
+
+recipes.remove(ferroBoron);
+recipes.remove(toughAlloy);
+recipes.remove(hardCarbon);
+recipes.remove(magnesiumDiboride);
+recipes.remove(lithiumManganeseDioxide);
+recipes.remove(dustManganeseOxide);
+recipes.remove(dustManganeseDioxide);
+recipes.remove(ingotManganeseOxide);
+recipes.remove(ingotManganeseDioxide);
+
+furnace.remove(ingotMagnesium, dustManganeseOxide);
+furnace.addRecipe(<ore:ingotManganeseOxide>.firstItem * 1, <ore:dustManganeseOxide>);
+
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotSteel> * 1, <ore:ingotBoron> * 1)
+	.outputs(<ore:ingotFerroboron>.firstItem * 2)
+	.duration(200)
+	.EUt(16)
+	.buildAndRegister();
+	
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotFerroboron> * 1, <ore:ingotLithium> * 1)
+	.outputs(<ore:ingotTough>.firstItem * 2)
+	.duration(300)
+	.EUt(16)
+	.buildAndRegister();
+
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotGraphite> * 2, <ore:dustDiamond> * 1)
+	.outputs(<ore:ingotHardCarbon>.firstItem * 2)
+	.duration(240)
+	.EUt(16)
+	.buildAndRegister();
+	
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotMagnesium> * 1, <ore:ingotBoron> * 2)
+	.outputs(<ore:ingotMagnesiumDiboride>.firstItem * 3)
+	.duration(200)
+	.EUt(16)
+	.buildAndRegister();
+	
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotLithium> * 1, <ore:ingotManganeseDioxide> * 1)
+	.outputs(<ore:ingotLithiumManganeseDioxide>.firstItem * 2)
+	.duration(10)
+	.EUt(16)
+	.buildAndRegister();
+	
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustManganese> * 1)
+	.fluidInputs(<liquid:oxygen> * 1000)
+	.outputs(<ore:dustManganeseOxide>.firstItem * 1)
+	.duration(200)
+	.EUt(30)
+	.buildAndRegister();
+
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustManganeseOxide> * 1)
+	.fluidInputs(<liquid:oxygen> * 1000)
+	.outputs(<ore:dustManganeseDioxide>.firstItem * 1)
+	.duration(200)
+	.EUt(30)
+	.buildAndRegister();
