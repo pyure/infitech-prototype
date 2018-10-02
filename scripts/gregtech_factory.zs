@@ -21,7 +21,7 @@ materialBlueAlloy.setCableProperties(512, 2, 2);
 
 
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
-val fluidFishOil = MaterialRegistry.createFluidMaterial(750, "fish_oil", 0xffc400, "fluid");
+//val fluidFishOil = MaterialRegistry.createFluidMaterial(750, "fish_oil", 0xffc400, "fluid");
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
 val fluidFermentedBiomass = MaterialRegistry.createFluidMaterial(752, "fermented_biomass", 0x607c47, "fluid");
 val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(753, "enderium_base", 0x4D756E , "fluid" );
