@@ -409,4 +409,85 @@ for name in material_array {
 }
 
 
+// Macerator: Gravel -> Flint
 
+val macerator as RecipeMap = RecipeMap.getByName("macerator");
+macerator.recipeBuilder()
+	.inputs([<minecraft:gravel> * 1])
+	.outputs(<minecraft:flint> * 1)
+	.duration(65)
+	.EUt(4)
+	.buildAndRegister();
+  
+macerator.recipeBuilder()
+	.inputs([<ore:sandstone> * 1])
+	.outputs(<ore:dustSmallNiter>.firstItem * 1)
+	.duration(85)
+	.EUt(4)
+	.buildAndRegister();  
+  
+// Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
+recipes.remove(<minecraft:paper> * 2);
+recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
+recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
+
+val custom_food_compost_map = {
+  /*
+  <ore:listAllbeefcooked> : 200,
+  <ore:listAllmeatraw> : 200,
+  <ore:foodBeefjerky> : 220,
+  <ore:foodSouthernstylebreakfast> : 4200,
+  <ore:foodMeatfeastpizza> : 4800,
+  <ore:foodThankfuldinner> : 4800,
+  <ore:foodKoreandinner> : 4800,
+  <ore:foodGourmetvenisonburger> : 4200*/
+} as int[IOreDictEntry];
+
+
+for mod in loadedMods {
+  for item in mod.items {
+    if (item.isFood() && item.getHealAmount() > 0) {
+      print("\t\t" ~ item.displayName);      
+      
+      val food_value = 100 * (item.getSaturationModifier() + item.getHealAmount());
+      
+      mixer.recipeBuilder()
+        .fluidInputs([<liquid:water> * food_value])
+        .inputs([item * 1])
+        .fluidOutputs([<liquid:liquid_compost> * food_value])
+        .duration(265)
+        .EUt(8)
+        .buildAndRegister();   
+    }          
+  }
+}
+
+for itemstack, fluidAmount in custom_food_compost_map {
+  mixer.recipeBuilder()
+    .fluidInputs([<liquid:water> * fluidAmount])
+    .inputs([itemstack * 1])
+    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
+    .duration(265)
+    .EUt(8)
+    .buildAndRegister();
+}
+
+val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
+fermenter.recipeBuilder()
+	.fluidInputs([<liquid:liquid_compost> * 100])
+	.fluidOutputs(<liquid:mouldy_compost> * 100)
+	.duration(45)
+	.EUt(4)
+	.buildAndRegister();
+
+var pulpedBiomass = <thermalfoundation:material:816>;
+centrifuge.recipeBuilder()
+  .fluidInputs([<liquid:mouldy_compost> * 100])
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .fluidOutputs(<liquid:methane> * 125)
+  .duration(45)
+  .EUt(12)
+  .buildAndRegister();
