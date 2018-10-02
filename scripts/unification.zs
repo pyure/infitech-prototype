@@ -757,6 +757,7 @@ for i in meta
 <gregtech:ore_spodumene_0>
 <gregtech:ore_scheelite_0>
 <gregtech:ore_emerald_0>
+<gregtech:ore_borax_0>
 */
 
 for i in meta
@@ -781,6 +782,12 @@ for i in meta
 {
 	var ore = <gregtech:ore_emerald_0>.definition.makeStack(i);
 	<ore:oreEmerald>.add(ore);	
+}
+
+for i in meta
+{
+	var ore = <gregtech:ore_borax_0>.definition.makeStack(i);
+	<ore:oreBorax>.add(ore);	
 }
 
 
