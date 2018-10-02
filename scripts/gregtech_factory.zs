@@ -20,7 +20,6 @@ val materialBlueAlloy = MaterialRegistry.createIngotMaterial(704, "blue_alloy", 
 materialBlueAlloy.setCableProperties(512, 2, 2);
 
 
-
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidFishOil = MaterialRegistry.createFluidMaterial(750, "fish_oil", 0xffc400, "fluid");
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
@@ -64,6 +63,9 @@ val fluidChemiDyeLightBlue = MaterialRegistry.createFluidMaterial(796, "chemi_dy
 val fluidChemiDyeMagenta = MaterialRegistry.createFluidMaterial(797, "chemi_dye_magenta", 0xCC00CC, "fluid", null);
 val fluidChemiDyeOrange = MaterialRegistry.createFluidMaterial(798, "chemi_dye_orange", 0xCC6600, "fluid", null);
 val fluidChemiDyeWhite = MaterialRegistry.createFluidMaterial(799, "chemi_dye_white", 0xffffff, "fluid", null);
-
 val fluidLiquidCompost = MaterialRegistry.createFluidMaterial(800, "liquid_compost", 0x405c47 , "fluid" );
 val fluidMouldyCompost = MaterialRegistry.createFluidMaterial(801, "mouldy_compost", 0x807c47 , "fluid" );
+
+//Tweaks to existing Materials
+<material:borax>.addFlags(["GENERATE_ORE"]);
+
