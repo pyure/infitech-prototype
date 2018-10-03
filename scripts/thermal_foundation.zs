@@ -497,23 +497,27 @@ recipes.remove(<thermalfoundation:tool.hammer_electrum>);
 recipes.remove(<thermalfoundation:tool.hammer_invar>);
 recipes.remove(<thermalfoundation:tool.hammer_bronze>);
 recipes.remove(<thermalfoundation:tool.hammer_constantan>);
-recipes.addShaped("thermalfoundation_tool_hammer_wood", <thermalfoundation:tool.hammer_wood>, [[<ore:plateWood>, <ore:stickSteel>, <ore:plateWood>], [<ore:plateWood>, <ore:stickSteel>, <ore:plateWood>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_stone", <thermalfoundation:tool.hammer_stone>, [[<ore:plateStone>, <ore:stickSteel>, <ore:plateStone>], [<ore:plateStone>, <ore:stickSteel>, <ore:plateStone>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_iron", <thermalfoundation:tool.hammer_iron>, [[<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_gold", <thermalfoundation:tool.hammer_gold>, [[<ore:plateGold>, <ore:stickSteel>, <ore:plateGold>], [<ore:plateGold>, <ore:stickSteel>, <ore:plateGold>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_diamond", <thermalfoundation:tool.hammer_diamond>, [[<ore:plateDiamond>, <ore:stickSteel>, <ore:plateDiamond>], [<ore:plateDiamond>, <ore:stickSteel>, <ore:plateDiamond>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_copper", <thermalfoundation:tool.hammer_copper>, [[<ore:plateCopper>, <ore:stickSteel>, <ore:plateCopper>], [<ore:plateCopper>, <ore:stickSteel>, <ore:plateCopper>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_tin", <thermalfoundation:tool.hammer_tin>, [[<ore:plateTin>, <ore:stickSteel>, <ore:plateTin>], [<ore:plateTin>, <ore:stickSteel>, <ore:plateTin>], [null, <ore:stickSteel>, null]]);
+
+// TIER I Hammers
+recipes.addShaped("thermalfoundation_tool_hammer_gold", <thermalfoundation:tool.hammer_gold>, [[<ore:plateGold>, <ore:stickWroughtIron>, <ore:plateGold>], [<ore:plateGold>, <ore:stickSteel>, <ore:plateGold>], [null, <ore:stickSteel>, null]]);
 recipes.addShaped("thermalfoundation_tool_hammer_silver", <thermalfoundation:tool.hammer_silver>, [[<ore:plateSilver>, <ore:stickSteel>, <ore:plateSilver>], [<ore:plateSilver>, <ore:stickSteel>, <ore:plateSilver>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_tin", <thermalfoundation:tool.hammer_tin>, [[<ore:plateTin>, <ore:stickSteel>, <ore:plateTin>], [<ore:plateTin>, <ore:stickSteel>, <ore:plateTin>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_copper", <thermalfoundation:tool.hammer_copper>, [[<ore:plateCopper>, <ore:stickSteel>, <ore:plateCopper>], [<ore:plateCopper>, <ore:stickSteel>, <ore:plateCopper>], [null, <ore:stickSteel>, null]]);
 recipes.addShaped("thermalfoundation_tool_hammer_lead", <thermalfoundation:tool.hammer_lead>, [[<ore:plateLead>, <ore:stickSteel>, <ore:plateLead>], [<ore:plateLead>, <ore:stickSteel>, <ore:plateLead>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_aluminum", <thermalfoundation:tool.hammer_aluminum>, [[<ore:plateAluminum>, <ore:stickSteel>, <ore:plateAluminum>], [<ore:plateAluminum>, <ore:stickSteel>, <ore:plateAluminum>], [null, <ore:stickSteel>, null]]);
 recipes.addShaped("thermalfoundation_tool_hammer_nickel", <thermalfoundation:tool.hammer_nickel>, [[<ore:plateNickel>, <ore:stickSteel>, <ore:plateNickel>], [<ore:plateNickel>, <ore:stickSteel>, <ore:plateNickel>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_platinum", <thermalfoundation:tool.hammer_platinum>, [[<ore:platePlatinum>, <ore:stickSteel>, <ore:platePlatinum>], [<ore:platePlatinum>, <ore:stickSteel>, <ore:platePlatinum>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_steel", <thermalfoundation:tool.hammer_steel>, [[<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>], [<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_electrum", <thermalfoundation:tool.hammer_electrum>, [[<ore:plateElectrum>, <ore:stickSteel>, <ore:plateElectrum>], [<ore:plateElectrum>, <ore:stickSteel>, <ore:plateElectrum>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_invar", <thermalfoundation:tool.hammer_invar>, [[<ore:plateInvar>, <ore:stickSteel>, <ore:plateInvar>], [<ore:plateInvar>, <ore:stickSteel>, <ore:plateInvar>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_bronze", <thermalfoundation:tool.hammer_bronze>, [[<ore:plateBronze>, <ore:stickSteel>, <ore:plateBronze>], [<ore:plateBronze>, <ore:stickSteel>, <ore:plateBronze>], [null, <ore:stickSteel>, null]]);
-recipes.addShaped("thermalfoundation_tool_hammer_constantan", <thermalfoundation:tool.hammer_constantan>, [[<ore:plateConstantan>, <ore:stickSteel>, <ore:plateConstantan>], [<ore:plateConstantan>, <ore:stickSteel>, <ore:plateConstantan>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_iron", <thermalfoundation:tool.hammer_iron>, [[<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [null, <ore:stickSteel>, null]]);
+
+// TIER II Hammers
+recipes.addShaped("thermalfoundation_tool_hammer_constantan", <thermalfoundation:tool.hammer_constantan>, [[<ore:plateConstantan>, <ore:stickStainlessSteel>, <ore:plateConstantan>], [<ore:plateConstantan>, <ore:stickStainlessSteel>, <ore:plateConstantan>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_bronze", <thermalfoundation:tool.hammer_bronze>, [[<ore:plateBronze>, <ore:stickStainlessSteel>, <ore:plateBronze>], [<ore:plateBronze>, <ore:stickStainlessSteel>, <ore:plateBronze>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_electrum", <thermalfoundation:tool.hammer_electrum>, [[<ore:plateElectrum>, <ore:stickStainlessSteel>, <ore:plateElectrum>], [<ore:plateElectrum>, <ore:stickStainlessSteel>, <ore:plateElectrum>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_invar", <thermalfoundation:tool.hammer_invar>, [[<ore:plateInvar>, <ore:stickStainlessSteel>, <ore:plateInvar>], [<ore:plateInvar>, <ore:stickStainlessSteel>, <ore:plateInvar>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_steel", <thermalfoundation:tool.hammer_steel>, [[<ore:plateSteel>, <ore:stickStainlessSteel>, <ore:plateSteel>], [<ore:plateSteel>, <ore:stickStainlessSteel>, <ore:plateSteel>], [null, <ore:stickStainlessSteel>, null]]);
+
+// TIER III Hammers
+recipes.addShaped("thermalfoundation_tool_hammer_diamond", <thermalfoundation:tool.hammer_diamond>, [[<ore:plateDiamond>, <ore:stickTungstenSteel>, <ore:plateDiamond>], [<ore:plateDiamond>, <ore:stickTungstenSteel>, <ore:plateDiamond>], [null, <ore:stickTungstenSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_platinum", <thermalfoundation:tool.hammer_platinum>, [[<ore:platePlatinum>, <ore:stickTungstenSteel>, <ore:platePlatinum>], [<ore:platePlatinum>, <ore:stickTungstenSteel>, <ore:platePlatinum>], [null, <ore:stickTungstenSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_aluminum", <thermalfoundation:tool.hammer_aluminum>, [[<ore:plateAluminum>, <ore:stickTungstenSteel>, <ore:plateAluminum>], [<ore:plateAluminum>, <ore:stickTungstenSteel>, <ore:plateAluminum>], [null, <ore:stickTungstenSteel>, null]]);
 
 //Gunpowder
 recipes.removeByRecipeName("thermalfoundation:gunpowder");

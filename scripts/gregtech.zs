@@ -17,6 +17,8 @@ val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val macerator as RecipeMap = RecipeMap.getByName("macerator");
+val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -463,6 +465,80 @@ alloy_smelter.recipeBuilder()
 	.EUt(16)
 	.buildAndRegister();
 
+// Macerator: Gravel -> Flint
+macerator.recipeBuilder()
+	.inputs([<minecraft:gravel> * 1])
+	.outputs(<minecraft:flint> * 1)
+	.duration(65)
+	.EUt(4)
+	.buildAndRegister();
+  
+  
+// Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
+recipes.remove(<minecraft:paper> * 2);
+recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
+recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
+
+val custom_food_compost_map = {
+  /*
+  <ore:listAllbeefcooked> : 200,
+  <ore:listAllmeatraw> : 200,
+  <ore:foodBeefjerky> : 220,
+  <ore:foodSouthernstylebreakfast> : 4200,
+  <ore:foodMeatfeastpizza> : 4800,
+  <ore:foodThankfuldinner> : 4800,
+  <ore:foodKoreandinner> : 4800,
+  <ore:foodGourmetvenisonburger> : 4200*/
+} as int[IOreDictEntry];
+
+
+for mod in loadedMods {
+  for item in mod.items {
+    if (item.isFood() && item.getHealAmount() > 0) {
+      print("\t\t" ~ item.displayName);      
+      
+      val food_value = 100 * (item.getSaturationModifier() + item.getHealAmount());
+      
+      mixer.recipeBuilder()
+        .fluidInputs([<liquid:water> * food_value])
+        .inputs([item * 1])
+        .fluidOutputs([<liquid:liquid_compost> * food_value])
+        .duration(265)
+        .EUt(8)
+        .buildAndRegister();   
+    }          
+  }
+}
+
+for itemstack, fluidAmount in custom_food_compost_map {
+  mixer.recipeBuilder()
+    .fluidInputs([<liquid:water> * fluidAmount])
+    .inputs([itemstack * 1])
+    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
+    .duration(265)
+    .EUt(8)
+    .buildAndRegister();
+}
+
+fermenter.recipeBuilder()
+	.fluidInputs([<liquid:liquid_compost> * 100])
+	.fluidOutputs(<liquid:mouldy_compost> * 100)
+	.duration(45)
+	.EUt(4)
+	.buildAndRegister();
+
+var pulpedBiomass = <thermalfoundation:material:816>;
+centrifuge.recipeBuilder()
+  .fluidInputs([<liquid:mouldy_compost> * 100])
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .fluidOutputs(<liquid:methane> * 125)
+  .duration(45)
+  .EUt(12)
+  .buildAndRegister();
+
 alloy_smelter.recipeBuilder()
 	.inputs(<ore:ingotGraphite> * 2, <ore:dustDiamond> * 1)
 	.outputs(<ore:ingotHardCarbon>.firstItem * 2)
@@ -499,3 +575,4 @@ chemical_reactor.recipeBuilder()
 	.duration(200)
 	.EUt(30)
 	.buildAndRegister();
+
