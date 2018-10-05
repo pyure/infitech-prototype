@@ -584,3 +584,20 @@ chemical_reactor.recipeBuilder()
 	.EUt(30)
 	.buildAndRegister();
 
+recipes.addShaped(<metaitem:component.resistor> *2, [
+  [null, <minecraft:paper>, null],
+  [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
+  [null, <minecraft:paper>, null]]);
+
+recipes.addShaped(<metaitem:component.resistor> *2, [
+  [null, <minecraft:paper>, null],
+  [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
+  [null, <minecraft:paper>, null]]);
+
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+assembler.recipeBuilder()
+  .inputs(<ore:wireFineCopper> * 4, <ore:dustCharcoal> * 1)
+  .outputs(<metaitem:component.resistor> * 8)
+  .duration(160)
+  .EUt(6)
+  .buildAndRegister();
