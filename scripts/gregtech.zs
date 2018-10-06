@@ -191,11 +191,18 @@ chemical_reactor.recipeBuilder()		//Signalum Dust
 	.EUt(30)
 	.buildAndRegister();
 
-<ore:ingotElectrotineAlloy>.add(<projectred-core:resource_item:104>);	//Recipe works fine without this line, but wont show in JEI, idk why
+chemical_reactor.recipeBuilder()    //Cobalt aluminate
+  	.inputs(<ore:dustCobaltOxide> * 1, <ore:dustAluminium> * 2)
+  	.fluidInputs(<liquid:oxygen> * 4000)
+  	.outputs(<ore:dustCobaltAluminate>.firstItem * 3)
+  	.duration(80)
+  	.EUt(120)
+  	.buildAndRegister();
 
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 alloy_smelter.recipeBuilder()		//Blue Alloy
-	.inputs(<ore:dustSilver> * 1, <ore:ingotElectrotineAlloy> * 1)
-	.outputs(<ore:ingotBlueAlloy>.firstItem * 1)
+	.inputs(<ore:dustSilver> * 1, <ore:dustCobaltAluminate> * 1)
+	.outputs(<ore:ingotBlueAlloy>.firstItem * 2)
 	.duration(100)
 	.EUt(16)
 	.buildAndRegister();
@@ -279,6 +286,7 @@ mixer.recipeBuilder()
 
 furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
+furnace.remove(<ore:ingotBlueAlloy>);
 
 val material_array = [
   "Aluminium",
@@ -577,6 +585,7 @@ chemical_reactor.recipeBuilder()
 	.EUt(30)
 	.buildAndRegister();
 
+
 //Magnetite Ore/Dust
 furnace.addRecipe(<minecraft:iron_nugget> * 3, <ore:dustMagnetite>);
 
@@ -591,3 +600,22 @@ mixer.recipeBuilder()
 	.duration(20)
 	.EUt(16)
 	.buildAndRegister();
+
+recipes.addShaped(<metaitem:component.resistor> *2, [
+  [null, <minecraft:paper>, null],
+  [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
+  [null, <minecraft:paper>, null]]);
+
+recipes.addShaped(<metaitem:component.resistor> *2, [
+  [null, <minecraft:paper>, null],
+  [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
+  [null, <minecraft:paper>, null]]);
+
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+assembler.recipeBuilder()
+  .inputs(<ore:wireFineCopper> * 4, <ore:dustCharcoal> * 1)
+  .outputs(<metaitem:component.resistor> * 8)
+  .duration(160)
+  .EUt(6)
+  .buildAndRegister();
+

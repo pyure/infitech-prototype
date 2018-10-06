@@ -1,13 +1,14 @@
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
 
-//IDs 700-750 Ingot/Dust Material and 750 - 799 Fluid Materials
+//IDs 700-750 Ingot/Dust Material and 751 - 799 Fluid Materials
 
 //Ingot		createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature)
-val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(700, "compressed_wrought_iron", 0xC8B4B4, "dull", 2, null, 6.2, 510);
+
+val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(700, "compressed_wrought_iron", 0xC8B4B4, "dull", 2, [<material:iron> * 1, <material:carbon> * 25], 6.2, 510);
 materialCompressedWroughtIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
-val materialCompressedIron = MaterialRegistry.createIngotMaterial(701, "compressed_iron", 0xC8D4D4, "dull", 2, null, 6.0, 435);
+val materialCompressedIron = MaterialRegistry.createIngotMaterial(701, "compressed_iron", 0xC8D4D4, "dull", 2, [<material:iron> * 1], 6.0, 435);
 materialCompressedIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
 val materialEnderium = MaterialRegistry.createIngotMaterial(702, "enderium", 0x2E574F, "shiny", 3, null, 8.0, 256, 3000);
@@ -16,16 +17,17 @@ materialEnderium.addFlags(["GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);
 val materialSignalum = MaterialRegistry.createIngotMaterial(703, "signalum", 0xFFAA33, "shiny", 2, null, 5.0, 128, 1000);
 materialSignalum.addFlags(["GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);
 
-val materialBlueAlloy = MaterialRegistry.createIngotMaterial(704, "blue_alloy", 0x427af4, "dull", 0);
-materialBlueAlloy.setCableProperties(512, 2, 2);
+val materialCobaltAluminate = MaterialRegistry.createDustMaterial(704, "cobalt_aluminate", 0x3c37bf, "dull", 0, [<material:cobalt> * 1, <material:aluminium> * 2, <material:oxygen> *4]);
+materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
 
+val materialBlueAlloy = MaterialRegistry.createIngotMaterial(705, "blue_alloy", 0x427af4, "dull", 0, [<material:cobalt_aluminate> * 1, <material:silver> * 1]);
+materialBlueAlloy.setCableProperties(512, 3, 1);
+materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
 
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
-//val fluidFishOil = MaterialRegistry.createFluidMaterial(750, "fish_oil", 0xffc400, "fluid");
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
-//val fluidFermentedBiomass = MaterialRegistry.createFluidMaterial(752, "fermented_biomass", 0x607c47, "fluid");
-val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(753, "enderium_base", 0x4D756E , "fluid" );
-//val fluidAmmonia = MaterialRegistry.createFluidMaterial(754, "ammonia", 0x3F3480 , "fluid" );
+val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(752, "enderium_base", 0x4D756E , "fluid" );
+
 
 
 //dyes_water
