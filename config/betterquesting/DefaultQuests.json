@@ -6837,7 +6837,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "CHAIN",
+          "visibility:8": "HIDDEN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "betterquesting:submit_station",
@@ -6945,7 +6945,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "CHAIN",
+          "visibility:8": "HIDDEN",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:cobblestone",
@@ -7595,7 +7595,25 @@
           "desc:8": "Smelt a goodly number of Iron Ingots. You will need them."
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 20,
+              "OreDict:8": "ingotIron",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {
         "0:10": {
           "rewardID:8": "bq_standard:item",
@@ -8864,7 +8882,8 @@
     "106:10": {
       "questID:3": 106,
       "preRequisites:11": [
-        104
+        104,
+        127
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10331,6 +10350,69 @@
           }
         }
       }
+    },
+    "127:10": {
+      "questID:3": 127,
+      "preRequisites:11": [
+        102
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "For (Fluids) Sake!",
+          "desc:8": "You are able to build a large structure capable of holding significant volumes of liquid.  This structure can be comprised of any solid blocks so long as the Valve has access to the internal space."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "ffs:block_fluid_valve",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -10662,8 +10744,8 @@
         },
         "54:10": {
           "size:3": 24,
-          "x:3": 216,
-          "y:3": 138,
+          "x:3": 180,
+          "y:3": 144,
           "id:3": 104
         },
         "55:10": {
@@ -10701,6 +10783,12 @@
           "x:3": 96,
           "y:3": 6,
           "id:3": 110
+        },
+        "61:10": {
+          "size:3": 24,
+          "x:3": 222,
+          "y:3": 138,
+          "id:3": 127
         }
       },
       "lineID:3": 0,
@@ -10837,7 +10925,7 @@
           "name:8": "InfiShop",
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "No Description"
+          "desc:8": "For every risk, there is a reward.  For every gain, there is a price."
         }
       },
       "order:3": 2
@@ -11127,7 +11215,7 @@
           "name:8": "Steel age",
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "No Description"
+          "desc:8": "Take tentative steps towards comprehending deeper principals than what mere eyesight can reveal."
         }
       },
       "order:3": 1
