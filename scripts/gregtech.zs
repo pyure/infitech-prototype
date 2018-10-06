@@ -199,7 +199,6 @@ chemical_reactor.recipeBuilder()    //Cobalt aluminate
   	.EUt(120)
   	.buildAndRegister();
 
-val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 alloy_smelter.recipeBuilder()		//Blue Alloy
 	.inputs(<ore:dustSilver> * 1, <ore:dustCobaltAluminate> * 1)
 	.outputs(<ore:ingotBlueAlloy>.firstItem * 2)
