@@ -6,8 +6,22 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
 
-//Electric Blast Furnace
+//GT Machines
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
+val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
+val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
+val mixer as RecipeMap = RecipeMap.getByName("mixer");
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val macerator as RecipeMap = RecipeMap.getByName("macerator");
+val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
+val packer as RecipeMap = RecipeMap.getByName("packer");
+
+//Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotWroughtIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotPigIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
@@ -73,7 +87,6 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
 compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
 
 recipes.addShaped(coal_ball, [
@@ -123,7 +136,6 @@ furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:
 furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:1>);
 furnace.remove(<deepresonance:resonating_plate> , <deepresonance:resonating_ore:2>);
 
-val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
 electrolyzer.recipeBuilder()
 	.inputs(resonating_ore)
 	.outputs(resonating_plate_block)
@@ -131,7 +143,6 @@ electrolyzer.recipeBuilder()
   .EUt(2)
 	.buildAndRegister();
 
-val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
 cutting_saw.recipeBuilder()
 	.inputs(resonating_plate_block)
 	.outputs(resonating_plate * 9)
@@ -141,7 +152,6 @@ cutting_saw.recipeBuilder()
 
 var dynamite = <gregtech:meta_item_1:32629>;
 
-val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 chemical_reactor.recipeBuilder()
 	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
 	.fluidOutputs(<liquid:red_alloy> * 144)
@@ -181,33 +191,34 @@ chemical_reactor.recipeBuilder()		//Signalum Dust
 	.EUt(30)
 	.buildAndRegister();
 
-	
-val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
-<ore:ingotElectrotineAlloy>.add(<projectred-core:resource_item:104>);	//Recipe works fine without this line, but wont show in JEI, idk why
+chemical_reactor.recipeBuilder()    //Cobalt aluminate
+  	.inputs(<ore:dustCobaltOxide> * 1, <ore:dustAluminium> * 2)
+  	.fluidInputs(<liquid:oxygen> * 4000)
+  	.outputs(<ore:dustCobaltAluminate>.firstItem * 3)
+  	.duration(80)
+  	.EUt(120)
+  	.buildAndRegister();
 
 alloy_smelter.recipeBuilder()		//Blue Alloy
-	.inputs(<ore:dustSilver> * 1, <ore:ingotElectrotineAlloy> * 1)
-	.outputs(<ore:ingotBlueAlloy>.firstItem * 1)
+	.inputs(<ore:dustSilver> * 1, <ore:dustCobaltAluminate> * 1)
+	.outputs(<ore:ingotBlueAlloy>.firstItem * 2)
 	.duration(100)
 	.EUt(16)
 	.buildAndRegister();
-
+	
 alloy_smelter.recipeBuilder()		//Refactory Glass
 	.inputs(<minecraft:sand> * 1, <minecraft:clay_ball> * 1)
 	.outputs(<foundry:refractoryglass> * 1)
 	.duration(60)
 	.EUt(4)
-	.buildAndRegister();
-  
-
+	.buildAndRegister();	
 	
 recipes.remove(dynamite);
 recipes.addShaped(dynamite, [
   [null, <ore:string>, null],
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
-  
-val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+
 var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
 turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
 turfMoonCentrifuge.add(<advancedrocketry:moonturf_dark>);
@@ -254,7 +265,6 @@ oreCopperQuestOres.add(<gregtech:ore_malachite_0>);
 oreCopperQuestOres.add(<gregtech:ore_chalcopyrite_0>);
 
 //Cement fun
-val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 fluid_solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:concrete> * 1296]).remove();
 
 fluid_solidifier.recipeBuilder()
@@ -265,7 +275,6 @@ fluid_solidifier.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
-val mixer as RecipeMap = RecipeMap.getByName("mixer");
 mixer.findRecipe(4, [<gregtech:concrete> * 1], [<liquid:water> * 144]).remove();
 mixer.recipeBuilder()
 	.inputs(<ore:sand> * 2, <ore:gravel> * 2)
@@ -276,6 +285,7 @@ mixer.recipeBuilder()
 
 furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
+furnace.remove(<ore:ingotBlueAlloy>);
 
 val material_array = [
   "Aluminium",
@@ -408,5 +418,203 @@ for name in material_array {
   }
 }
 
+//Glowstone
+fluid_extractor.recipeBuilder()
+	.inputs(<minecraft:glowstone_dust>)
+	.fluidOutputs(<fluid:glowstone> * 144)
+	.EUt(32)
+	.duration(80)
+	.buildAndRegister();
+	
+//Basisc Electronic Circuit
+var basicCircuit = <ore:circuitBasic>.firstItem;
+recipes.addShaped(basicCircuit, [
+[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>],
+[<ore:circuitPrimitive>,<ore:plateSteel>,<ore:circuitPrimitive>],
+[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>]]);
 
+//NC Alloys
+var ferroBoron = <nuclearcraft:alloy:6>;
+var toughAlloy = <nuclearcraft:alloy:1>;
+var hardCarbon = <nuclearcraft:alloy:2>;
+var magnesiumDiboride = <nuclearcraft:alloy:3>;
+var lithiumManganeseDioxide = <nuclearcraft:alloy:4>;
+var dustManganeseOxide = <nuclearcraft:dust_oxide:2>;
+var dustManganeseDioxide = <nuclearcraft:dust_oxide:3>;
+var ingotManganeseOxide = <nuclearcraft:ingot_oxide:2>;
+var ingotManganeseDioxide = <nuclearcraft:ingot_oxide:3>;
+
+var ingotMagnesium = <gregtech:meta_item_1:10039>;
+
+recipes.remove(ferroBoron);
+recipes.remove(toughAlloy);
+recipes.remove(hardCarbon);
+recipes.remove(magnesiumDiboride);
+recipes.remove(lithiumManganeseDioxide);
+recipes.remove(dustManganeseOxide);
+recipes.remove(dustManganeseDioxide);
+recipes.remove(ingotManganeseOxide);
+recipes.remove(ingotManganeseDioxide);
+
+furnace.remove(ingotMagnesium, dustManganeseOxide);
+furnace.addRecipe(<ore:ingotManganeseOxide>.firstItem * 1, <ore:dustManganeseOxide>);
+
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotSteel> * 1, <ore:ingotBoron> * 1)
+	.outputs(<ore:ingotFerroboron>.firstItem * 2)
+	.duration(200)
+	.EUt(16)
+	.buildAndRegister();
+	
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotFerroboron> * 1, <ore:ingotLithium> * 1)
+	.outputs(<ore:ingotTough>.firstItem * 2)
+	.duration(300)
+	.EUt(16)
+	.buildAndRegister();
+
+// Macerator: Gravel -> Flint
+macerator.recipeBuilder()
+	.inputs([<minecraft:gravel> * 1])
+	.outputs(<minecraft:flint> * 1)
+	.duration(65)
+	.EUt(4)
+	.buildAndRegister();
+  
+  
+// Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
+recipes.remove(<minecraft:paper> * 2);
+recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
+recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
+
+val custom_food_compost_map = {
+  /*
+  <ore:listAllbeefcooked> : 200,
+  <ore:listAllmeatraw> : 200,
+  <ore:foodBeefjerky> : 220,
+  <ore:foodSouthernstylebreakfast> : 4200,
+  <ore:foodMeatfeastpizza> : 4800,
+  <ore:foodThankfuldinner> : 4800,
+  <ore:foodKoreandinner> : 4800,
+  <ore:foodGourmetvenisonburger> : 4200*/
+} as int[IOreDictEntry];
+
+
+for mod in loadedMods {
+  for item in mod.items {
+    if (item.isFood() && item.getHealAmount() > 0) {
+      print("\t\t" ~ item.displayName);      
+      
+      val food_value = 100 * (item.getSaturationModifier() + item.getHealAmount());
+      
+      mixer.recipeBuilder()
+        .fluidInputs([<liquid:water> * food_value])
+        .inputs([item * 1])
+        .fluidOutputs([<liquid:liquid_compost> * food_value])
+        .duration(265)
+        .EUt(8)
+        .buildAndRegister();   
+    }          
+  }
+}
+
+for itemstack, fluidAmount in custom_food_compost_map {
+  mixer.recipeBuilder()
+    .fluidInputs([<liquid:water> * fluidAmount])
+    .inputs([itemstack * 1])
+    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
+    .duration(265)
+    .EUt(8)
+    .buildAndRegister();
+}
+
+fermenter.recipeBuilder()
+	.fluidInputs([<liquid:liquid_compost> * 100])
+	.fluidOutputs(<liquid:mouldy_compost> * 100)
+	.duration(45)
+	.EUt(4)
+	.buildAndRegister();
+
+var pulpedBiomass = <thermalfoundation:material:816>;
+centrifuge.recipeBuilder()
+  .fluidInputs([<liquid:mouldy_compost> * 100])
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200)
+  .fluidOutputs(<liquid:methane> * 125)
+  .duration(45)
+  .EUt(12)
+  .buildAndRegister();
+
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotGraphite> * 2, <ore:dustDiamond> * 1)
+	.outputs(<ore:ingotHardCarbon>.firstItem * 2)
+	.duration(240)
+	.EUt(16)
+	.buildAndRegister();
+	
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotMagnesium> * 1, <ore:ingotBoron> * 2)
+	.outputs(<ore:ingotMagnesiumDiboride>.firstItem * 3)
+	.duration(200)
+	.EUt(16)
+	.buildAndRegister();
+	
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:ingotLithium> * 1, <ore:ingotManganeseDioxide> * 1)
+	.outputs(<ore:ingotLithiumManganeseDioxide>.firstItem * 2)
+	.duration(10)
+	.EUt(16)
+	.buildAndRegister();
+	
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustManganese> * 1)
+	.fluidInputs(<liquid:oxygen> * 1000)
+	.outputs(<ore:dustManganeseOxide>.firstItem * 1)
+	.duration(200)
+	.EUt(30)
+	.buildAndRegister();
+
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustManganeseOxide> * 1)
+	.fluidInputs(<liquid:oxygen> * 1000)
+	.outputs(<ore:dustManganeseDioxide>.firstItem * 1)
+	.duration(200)
+	.EUt(30)
+	.buildAndRegister();
+
+
+//Magnetite Ore/Dust
+furnace.addRecipe(<minecraft:iron_nugget> * 3, <ore:dustMagnetite>);
+
+//PBF and Coke Oven Bricks
+var cokeOvenBrick = <gtadditions:ga_multiblock_casing>;
+recipes.remove(cokeOvenBrick);
+
+mixer.recipeBuilder()
+	.inputs(<ore:dustClay> * 4, <minecraft:sand> * 5)
+	.fluidInputs(<liquid:water> * 100)
+	.outputs(cokeOvenBrick * 1)
+	.duration(20)
+	.EUt(16)
+	.buildAndRegister();
+
+recipes.addShaped(<metaitem:component.resistor> *2, [
+  [null, <minecraft:paper>, null],
+  [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
+  [null, <minecraft:paper>, null]]);
+
+recipes.addShaped(<metaitem:component.resistor> *2, [
+  [null, <minecraft:paper>, null],
+  [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
+  [null, <minecraft:paper>, null]]);
+
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+assembler.recipeBuilder()
+  .inputs(<ore:wireFineCopper> * 4, <ore:dustCharcoal> * 1)
+  .outputs(<metaitem:component.resistor> * 8)
+  .duration(160)
+  .EUt(6)
+  .buildAndRegister();
 
