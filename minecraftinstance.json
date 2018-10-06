@@ -18,7 +18,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2018-10-06T02:35:37.1433409Z",
+  "lastPlayed": "2018-10-06T04:51:44.5806771Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -28,7 +28,7 @@
   "modpackOverrides": null,
   "isMemoryOverride": true,
   "allocatedMemory": 5689,
-  "guid": "78a43359-9c47-42ad-972f-66c778a4bde9",
+  "guid": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
   "gameTypeID": 432,
   "installPath": "C:\\Users\\Ted\\Documents\\Curse\\Minecraft\\Instances\\infitech-prototype\\",
   "name": "infitech-prototype",
@@ -62,6 +62,21 @@
       "queryTimestamp": "2018-10-06T01:33:57.4766657Z",
       "fileCount": 1,
       "fileSize": 20837
+    },
+    {
+      "folderName": "StandardExpansion-3.4.145.jar",
+      "fingerprint": 335835576,
+      "fileDateHash": 817641018,
+      "sectionID": 6,
+      "individualFingerprints": [
+        335835576
+      ],
+      "status": 1,
+      "timestamp": "2018-10-06T04:16:37.7000455Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.6030334Z",
+      "queryTimestamp": "2018-10-06T04:16:38.023823Z",
+      "fileCount": 1,
+      "fileSize": 394590
     },
     {
       "folderName": "FastWorkbench-1.12.2-1.5.1.jar",
@@ -111,15 +126,15 @@
     {
       "folderName": "gregtech-1.12.2-0.5.10.93.jar",
       "fingerprint": 1474229905,
-      "fileDateHash": 283195035,
+      "fileDateHash": 3087410572,
       "sectionID": 6,
       "individualFingerprints": [
         1474229905
       ],
       "status": 1,
-      "timestamp": "2018-10-06T01:33:56.1657584Z",
-      "lastWriteTimeUtc": "2018-10-06T01:33:55.9799513Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4766657Z",
+      "timestamp": "2018-10-06T04:16:37.4692831Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.7858442Z",
+      "queryTimestamp": "2018-10-06T04:16:38.023823Z",
       "fileCount": 1,
       "fileSize": 4282370
     },
@@ -231,15 +246,15 @@
     {
       "folderName": "ThermalDynamics-1.12.2-2.5.2.15-universal.jar",
       "fingerprint": 2214778317,
-      "fileDateHash": 3732933461,
+      "fileDateHash": 3099155454,
       "sectionID": 6,
       "individualFingerprints": [
         2214778317
       ],
       "status": 1,
-      "timestamp": "2018-10-02T23:15:40.3048527Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:26.7261103Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4796671Z",
+      "timestamp": "2018-10-06T04:16:37.7070376Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.6190163Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0258211Z",
       "fileCount": 1,
       "fileSize": 761802
     },
@@ -368,15 +383,15 @@
     {
       "folderName": "CoFHCore-1.12.2-4.6.0.21-universal.jar",
       "fingerprint": 1929563913,
-      "fileDateHash": 289549061,
+      "fileDateHash": 2516007468,
       "sectionID": 6,
       "individualFingerprints": [
         1929563913
       ],
       "status": 1,
-      "timestamp": "2018-10-02T23:15:40.207953Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:26.9059235Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4826597Z",
+      "timestamp": "2018-10-06T04:14:49.6150195Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.4791612Z",
+      "queryTimestamp": "2018-10-06T04:14:49.8238051Z",
       "fileCount": 1,
       "fileSize": 844098
     },
@@ -606,21 +621,6 @@
       "fileSize": 483745
     },
     {
-      "folderName": "StandardExpansion-3.4.143.jar",
-      "fingerprint": 1748851207,
-      "fileDateHash": 3624869500,
-      "sectionID": 6,
-      "individualFingerprints": [
-        1748851207
-      ],
-      "status": 1,
-      "timestamp": "2018-08-16T01:14:39.2178342Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:37.319798Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4856571Z",
-      "fileCount": 1,
-      "fileSize": 394666
-    },
-    {
       "folderName": "foamfix-0.10.0-1.12.2.jar",
       "fingerprint": 383312113,
       "fileDateHash": 2199882495,
@@ -634,6 +634,21 @@
       "queryTimestamp": "2018-10-06T01:33:57.4856571Z",
       "fileCount": 1,
       "fileSize": 201855
+    },
+    {
+      "folderName": "BetterQuesting-3.5.269.jar",
+      "fingerprint": 1563938730,
+      "fileDateHash": 321408476,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1563938730
+      ],
+      "status": 1,
+      "timestamp": "2018-10-06T04:14:49.590048Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.4631778Z",
+      "queryTimestamp": "2018-10-06T04:14:49.8287997Z",
+      "fileCount": 1,
+      "fileSize": 1314655
     },
     {
       "folderName": "valkyrielib-1.12.2-2.0.13a.jar",
@@ -668,15 +683,15 @@
     {
       "folderName": "NuclearCraft-2.11g--1.12.2.jar",
       "fingerprint": 1819420155,
-      "fileDateHash": 424010444,
+      "fileDateHash": 3254284615,
       "sectionID": 6,
       "individualFingerprints": [
         1819420155
       ],
       "status": 1,
-      "timestamp": "2018-10-02T23:15:40.261897Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:26.8379977Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4866555Z",
+      "timestamp": "2018-10-06T04:16:37.5212303Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.5910452Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0328138Z",
       "fileCount": 1,
       "fileSize": 6723587
     },
@@ -742,8 +757,8 @@
     },
     {
       "folderName": "New World",
-      "fingerprint": 3340038115,
-      "fileDateHash": 59585988,
+      "fingerprint": 2002205514,
+      "fileDateHash": 957377606,
       "sectionID": 17,
       "individualFingerprints": [
         116780641,
@@ -752,6 +767,8 @@
         190603168,
         202139462,
         224251200,
+        304449822,
+        352895994,
         379237970,
         380021271,
         411365828,
@@ -763,7 +780,7 @@
         489458212,
         489458212,
         493877642,
-        514384774,
+        671725015,
         682895157,
         711292784,
         718842791,
@@ -774,16 +791,19 @@
         758054953,
         758054953,
         758054953,
+        798851904,
         847213833,
+        859106818,
         907772214,
         919116506,
-        983893440,
+        919116506,
         1004728547,
         1126746853,
         1135267510,
-        1195864483,
-        1208764709,
+        1213483658,
         1254400901,
+        1254400901,
+        1256590086,
         1284106792,
         1301447553,
         1355555975,
@@ -793,92 +813,92 @@
         1355555975,
         1355555975,
         1384994978,
-        1400221769,
+        1392577031,
         1476128175,
         1489309702,
         1495119093,
         1552558494,
         1612031071,
+        1612530530,
         1634858347,
-        1673122508,
         1746462483,
-        1782938684,
-        1782938684,
-        1782938684,
-        1782938684,
-        1782938684,
         1803953797,
-        1860475914,
         2046462449,
-        2135623371,
+        2046462449,
         2163519468,
         2185909887,
+        2205488297,
         2205603756,
         2232626037,
         2291480439,
+        2334063985,
         2339888416,
         2367932625,
         2410198396,
+        2413260206,
         2429807935,
         2469111158,
         2612143574,
-        2616579610,
-        2652609603,
         2684344741,
         2868835232,
         2982068916,
         3010802170,
         3028428630,
+        3028428630,
         3045115177,
         3052982433,
-        3055013297,
-        3058590618,
-        3072164728,
+        3066600760,
         3088903839,
-        3117473490,
-        3170376143,
+        3118052471,
         3184781582,
         3200009093,
         3204318845,
         3218286159,
         3242365006,
+        3253645989,
         3383409723,
         3415911998,
         3548503103,
         3596606005,
-        3597491864,
         3718229347,
-        3744659306,
         3785098721,
+        3830214231,
         3858153104,
         3973001741,
+        3992819324,
         4105289849,
+        4163760964,
         4172228170,
         4183677585,
         4213863462,
+        4221840540,
+        4221840540,
+        4221840540,
+        4221840540,
+        4221840540,
         4233038451,
         4249719684,
         4272588933
       ],
       "status": 1,
-      "timestamp": "2018-10-06T02:04:36.8624727Z",
-      "lastWriteTimeUtc": "2018-10-06T02:03:09.0624684Z",
-      "queryTimestamp": "2018-10-06T02:04:38.1412242Z",
+      "timestamp": "2018-10-06T04:51:30.7892328Z",
+      "lastWriteTimeUtc": "2018-10-06T04:33:40.9749576Z",
+      "queryTimestamp": "2018-10-06T04:51:31.8812786Z",
       "fileCount": 23,
       "fileSize": 0
     },
     {
       "folderName": "RedstoneFlux-1.12-2.1.0.6-universal.jar",
       "fingerprint": 1941774686,
-      "fileDateHash": 1828884253,
+      "fileDateHash": 1127273969,
       "sectionID": 6,
       "individualFingerprints": [
         1941774686
       ],
       "status": 1,
-      "timestamp": "2018-10-02T23:15:40.3048527Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:26.7321043Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4876549Z",
+      "timestamp": "2018-10-06T04:16:37.6261212Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.5990372Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0338116Z",
       "fileCount": 1,
       "fileSize": 36278
     },
@@ -960,15 +980,15 @@
     {
       "folderName": "CodeChickenLib-1.12.2-3.2.2.353-universal.jar",
       "fingerprint": 1154181364,
-      "fileDateHash": 4228313552,
+      "fileDateHash": 1745996420,
       "sectionID": 6,
       "individualFingerprints": [
         1154181364
       ],
       "status": 1,
-      "timestamp": "2018-10-02T23:15:40.2039575Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:26.88994Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4896527Z",
+      "timestamp": "2018-10-06T04:14:49.6040325Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.5051345Z",
+      "queryTimestamp": "2018-10-06T04:14:49.8337935Z",
       "fileCount": 1,
       "fileSize": 700785
     },
@@ -1080,32 +1100,17 @@
     {
       "folderName": "appliedenergistics2-rv6-beta-1.jar",
       "fingerprint": 3832099788,
-      "fileDateHash": 683458974,
+      "fileDateHash": 3740732899,
       "sectionID": 6,
       "individualFingerprints": [
         3832099788
       ],
       "status": 1,
-      "timestamp": "2018-10-02T23:15:40.1719909Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:26.6941491Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4916496Z",
+      "timestamp": "2018-10-06T04:16:37.3753804Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.7019304Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0368097Z",
       "fileCount": 1,
       "fileSize": 4056738
-    },
-    {
-      "folderName": "BetterQuesting-3.5.253.jar",
-      "fingerprint": 2284318873,
-      "fileDateHash": 3721553563,
-      "sectionID": 6,
-      "individualFingerprints": [
-        2284318873
-      ],
-      "status": 1,
-      "timestamp": "2018-08-16T01:14:37.0810451Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:36.6375043Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4916496Z",
-      "fileCount": 1,
-      "fileSize": 1290575
     },
     {
       "folderName": "prospectors-1.0.2.jar",
@@ -1185,15 +1190,15 @@
     {
       "folderName": "journeymap-1.12.2-5.5.2.jar",
       "fingerprint": 4188726859,
-      "fileDateHash": 565582339,
+      "fileDateHash": 4010334280,
       "sectionID": 6,
       "individualFingerprints": [
         4188726859
       ],
       "status": 1,
-      "timestamp": "2018-09-27T00:19:25.4650516Z",
-      "lastWriteTimeUtc": "2018-09-27T00:19:25.1583706Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4926486Z",
+      "timestamp": "2018-10-06T04:16:37.5042475Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.8058227Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0378078Z",
       "fileCount": 1,
       "fileSize": 1822850
     },
@@ -1245,15 +1250,15 @@
     {
       "folderName": "CoFHWorld-1.12.2-1.3.0.6-universal.jar",
       "fingerprint": 2557865424,
-      "fileDateHash": 3165915587,
+      "fileDateHash": 3297198882,
       "sectionID": 6,
       "individualFingerprints": [
         2557865424
       ],
       "status": 1,
-      "timestamp": "2018-10-02T23:15:40.2129479Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:25.9229411Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4936476Z",
+      "timestamp": "2018-10-06T04:14:49.6200144Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.4911485Z",
+      "queryTimestamp": "2018-10-06T04:14:49.837789Z",
       "fileCount": 1,
       "fileSize": 531831
     },
@@ -1303,21 +1308,6 @@
       "fileSize": 301033
     },
     {
-      "folderName": "ThaumicInventoryScanning_1.12.2-2.0.10.jar",
-      "fingerprint": 1964344708,
-      "fileDateHash": 3215628732,
-      "sectionID": 6,
-      "individualFingerprints": [
-        1964344708
-      ],
-      "status": 1,
-      "timestamp": "2018-08-16T01:14:39.3467013Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:37.5036078Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4946479Z",
-      "fileCount": 1,
-      "fileSize": 17224
-    },
-    {
       "folderName": "BiblioCraft[v2.4.5][MC1.12.2].jar",
       "fingerprint": 1344933848,
       "fileDateHash": 3895098050,
@@ -1333,34 +1323,34 @@
       "fileSize": 5122856
     },
     {
+      "folderName": "ThaumicInventoryScanning_1.12.2-2.0.10.jar",
+      "fingerprint": 1964344708,
+      "fileDateHash": 3215628732,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1964344708
+      ],
+      "status": 1,
+      "timestamp": "2018-08-16T01:14:39.3467013Z",
+      "lastWriteTimeUtc": "2018-08-16T01:14:37.5036078Z",
+      "queryTimestamp": "2018-10-06T01:33:57.4946479Z",
+      "fileCount": 1,
+      "fileSize": 17224
+    },
+    {
       "folderName": "Zencessories-1.0.0.jar",
       "fingerprint": 2910799908,
-      "fileDateHash": 2314647212,
+      "fileDateHash": 78750992,
       "sectionID": 6,
       "individualFingerprints": [
         2910799908
       ],
       "status": 1,
-      "timestamp": "2018-10-06T02:04:36.8624727Z",
-      "lastWriteTimeUtc": "2018-10-06T01:33:55.9310007Z",
-      "queryTimestamp": "2018-10-06T02:04:38.1492151Z",
+      "timestamp": "2018-10-06T04:16:37.7360077Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.6589752Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0398068Z",
       "fileCount": 1,
       "fileSize": 15300
-    },
-    {
-      "folderName": "IntegratedDynamics-1.12.2-0.11.16.jar",
-      "fingerprint": 1489504482,
-      "fileDateHash": 3097924472,
-      "sectionID": 6,
-      "individualFingerprints": [
-        1489504482
-      ],
-      "status": 1,
-      "timestamp": "2018-09-04T23:42:39.8132923Z",
-      "lastWriteTimeUtc": "2018-09-04T23:42:39.7263837Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4946479Z",
-      "fileCount": 1,
-      "fileSize": 2776180
     },
     {
       "folderName": "diethopper-1.1.jar",
@@ -1378,6 +1368,36 @@
       "fileSize": 5222
     },
     {
+      "folderName": "IntegratedDynamics-1.12.2-0.11.16.jar",
+      "fingerprint": 1489504482,
+      "fileDateHash": 3097924472,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1489504482
+      ],
+      "status": 1,
+      "timestamp": "2018-09-04T23:42:39.8132923Z",
+      "lastWriteTimeUtc": "2018-09-04T23:42:39.7263837Z",
+      "queryTimestamp": "2018-10-06T01:33:57.4946479Z",
+      "fileCount": 1,
+      "fileSize": 2776180
+    },
+    {
+      "folderName": "ThermalFoundation-1.12.2-2.6.0.20-universal.jar",
+      "fingerprint": 2447267933,
+      "fileDateHash": 3515391488,
+      "sectionID": 6,
+      "individualFingerprints": [
+        2447267933
+      ],
+      "status": 1,
+      "timestamp": "2018-10-06T04:16:37.7160284Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.6579756Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0408055Z",
+      "fileCount": 1,
+      "fileSize": 2304960
+    },
+    {
       "folderName": "bdlib-1.14.3.10-mc1.12.2.jar",
       "fingerprint": 1646579383,
       "fileDateHash": 3779112945,
@@ -1391,21 +1411,6 @@
       "queryTimestamp": "2018-10-06T01:33:57.4956466Z",
       "fileCount": 1,
       "fileSize": 1962376
-    },
-    {
-      "folderName": "ThermalFoundation-1.12.2-2.6.0.20-universal.jar",
-      "fingerprint": 2447267933,
-      "fileDateHash": 1075409255,
-      "sectionID": 6,
-      "individualFingerprints": [
-        2447267933
-      ],
-      "status": 1,
-      "timestamp": "2018-10-02T23:15:40.3098476Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:26.7111259Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4966451Z",
-      "fileCount": 1,
-      "fileSize": 2304960
     },
     {
       "folderName": "AppleSkin-mc1.12-1.0.9.jar",
@@ -1438,21 +1443,6 @@
       "fileSize": 24213
     },
     {
-      "folderName": "environmentaltech-1.12.2-2.0.13a.jar",
-      "fingerprint": 3093140247,
-      "fileDateHash": 3952225081,
-      "sectionID": 6,
-      "individualFingerprints": [
-        3093140247
-      ],
-      "status": 1,
-      "timestamp": "2018-08-16T01:14:38.4216576Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:37.6884176Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4966451Z",
-      "fileCount": 1,
-      "fileSize": 965233
-    },
-    {
       "folderName": "MrTJPCore-1.12.2-2.1.3.35-universal.jar",
       "fingerprint": 915750787,
       "fileDateHash": 3583305072,
@@ -1466,6 +1456,21 @@
       "queryTimestamp": "2018-10-06T01:33:57.4976441Z",
       "fileCount": 1,
       "fileSize": 799809
+    },
+    {
+      "folderName": "environmentaltech-1.12.2-2.0.13a.jar",
+      "fingerprint": 3093140247,
+      "fileDateHash": 3952225081,
+      "sectionID": 6,
+      "individualFingerprints": [
+        3093140247
+      ],
+      "status": 1,
+      "timestamp": "2018-08-16T01:14:38.4216576Z",
+      "lastWriteTimeUtc": "2018-08-16T01:14:37.6884176Z",
+      "queryTimestamp": "2018-10-06T01:33:57.4966451Z",
+      "fileCount": 1,
+      "fileSize": 965233
     },
     {
       "folderName": "rftoolsctrl-1.12-1.9.1.jar",
@@ -1498,21 +1503,6 @@
       "fileSize": 1035863
     },
     {
-      "folderName": "Chisel-MC1.12.2-0.2.0.31.jar",
-      "fingerprint": 2656219104,
-      "fileDateHash": 2921109643,
-      "sectionID": 6,
-      "individualFingerprints": [
-        2656219104
-      ],
-      "status": 1,
-      "timestamp": "2018-08-16T01:14:37.2278928Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:36.932199Z",
-      "queryTimestamp": "2018-10-06T01:33:57.4976441Z",
-      "fileCount": 1,
-      "fileSize": 4294434
-    },
-    {
       "folderName": "ChestTransporter-1.12-2.8.7.jar",
       "fingerprint": 3701646388,
       "fileDateHash": 1664255450,
@@ -1526,6 +1516,21 @@
       "queryTimestamp": "2018-10-06T01:33:57.4976441Z",
       "fileCount": 1,
       "fileSize": 316691
+    },
+    {
+      "folderName": "Chisel-MC1.12.2-0.2.0.31.jar",
+      "fingerprint": 2656219104,
+      "fileDateHash": 2921109643,
+      "sectionID": 6,
+      "individualFingerprints": [
+        2656219104
+      ],
+      "status": 1,
+      "timestamp": "2018-08-16T01:14:37.2278928Z",
+      "lastWriteTimeUtc": "2018-08-16T01:14:36.932199Z",
+      "queryTimestamp": "2018-10-06T01:33:57.4976441Z",
+      "fileCount": 1,
+      "fileSize": 4294434
     },
     {
       "folderName": "topaddons-1.12.2-1.7.0.jar",
@@ -1650,15 +1655,15 @@
     {
       "folderName": "RealBench-1.12.2-1.3.3.jar",
       "fingerprint": 897892104,
-      "fileDateHash": 3364234314,
+      "fileDateHash": 1607571530,
       "sectionID": 6,
       "individualFingerprints": [
         897892104
       ],
       "status": 1,
-      "timestamp": "2018-10-06T01:33:56.2167056Z",
-      "lastWriteTimeUtc": "2018-10-06T01:33:55.9260061Z",
-      "queryTimestamp": "2018-10-06T01:33:57.5006412Z",
+      "timestamp": "2018-10-06T04:16:37.5691801Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.594042Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0438027Z",
       "fileCount": 1,
       "fileSize": 17104
     },
@@ -1740,15 +1745,15 @@
     {
       "folderName": "AdvancedRocketry-1.12.2-1.4.1-103-universal.jar",
       "fingerprint": 2257312405,
-      "fileDateHash": 1785184876,
+      "fileDateHash": 1777632938,
       "sectionID": 6,
       "individualFingerprints": [
         2257312405
       ],
       "status": 1,
-      "timestamp": "2018-10-06T01:33:56.0698585Z",
-      "lastWriteTimeUtc": "2018-10-06T01:33:55.8950394Z",
-      "queryTimestamp": "2018-10-06T01:33:57.50164Z",
+      "timestamp": "2018-10-06T04:14:49.5101291Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.4521898Z",
+      "queryTimestamp": "2018-10-06T04:14:49.8437827Z",
       "fileCount": 1,
       "fileSize": 12195201
     },
@@ -1845,15 +1850,15 @@
     {
       "folderName": "GregicAdditions-1.12.2-1.1.2.jar",
       "fingerprint": 3483283445,
-      "fileDateHash": 1964077569,
+      "fileDateHash": 719217956,
       "sectionID": 6,
       "individualFingerprints": [
         3483283445
       ],
       "status": 1,
-      "timestamp": "2018-10-06T01:33:56.1627616Z",
-      "lastWriteTimeUtc": "2018-10-06T01:33:55.9180141Z",
-      "queryTimestamp": "2018-10-06T01:33:57.502639Z",
+      "timestamp": "2018-10-06T04:16:37.4612914Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.5091292Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0467995Z",
       "fileCount": 1,
       "fileSize": 446330
     },
@@ -1950,15 +1955,15 @@
     {
       "folderName": "forestry_1.12.2-5.8.1.347.jar",
       "fingerprint": 1757167114,
-      "fileDateHash": 3822641060,
+      "fileDateHash": 3890761479,
       "sectionID": 6,
       "individualFingerprints": [
         1757167114
       ],
       "status": 1,
-      "timestamp": "2018-10-02T23:15:40.2169429Z",
-      "lastWriteTimeUtc": "2018-10-02T23:05:26.6352049Z",
-      "queryTimestamp": "2018-10-06T01:33:57.5046371Z",
+      "timestamp": "2018-10-06T04:16:37.4203333Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.7568729Z",
+      "queryTimestamp": "2018-10-06T04:16:38.0487973Z",
       "fileCount": 1,
       "fileSize": 5345867
     },
@@ -1995,21 +2000,21 @@
     {
       "folderName": "Carry+On+MC1.12.2+v1.10.jar",
       "fingerprint": 2067052308,
-      "fileDateHash": 1108773512,
+      "fileDateHash": 2570852090,
       "sectionID": 6,
       "individualFingerprints": [
         2067052308
       ],
       "status": 1,
-      "timestamp": "2018-10-06T01:33:56.1597657Z",
-      "lastWriteTimeUtc": "2018-10-06T01:33:55.9070264Z",
-      "queryTimestamp": "2018-10-06T01:33:57.5046371Z",
+      "timestamp": "2018-10-06T04:14:49.6010353Z",
+      "lastWriteTimeUtc": "2018-10-06T04:14:49.4651753Z",
+      "queryTimestamp": "2018-10-06T04:14:49.8467798Z",
       "fileCount": 1,
       "fileSize": 299592
     }
   ],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2018-10-06T02:04:38.4570893Z",
+  "lastPreviousMatchUpdate": "2018-10-06T04:51:32.1484889Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -2030,11 +2035,11 @@
     "LastSyncDate": "0001-01-01T00:00:00"
   },
   "preferenceShowAddOnInfo": true,
-  "installDate": "2018-10-06T01:33:55.7431959Z",
+  "installDate": "2018-10-06T04:14:29.4142361Z",
   "installedAddons": [
     {
       "addonID": 235279,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2535884,
         "fileName": "Chisel - MC1.12.2-0.2.0.31",
@@ -2098,7 +2103,7 @@
     },
     {
       "addonID": 267602,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2584026,
         "fileName": "CTM - MC1.12.2-0.3.2.18",
@@ -2149,7 +2154,7 @@
     },
     {
       "addonID": 293968,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2579348,
         "fileName": "CompactDrawers-1.12.2-1.0.3.86.jar",
@@ -2220,7 +2225,7 @@
     },
     {
       "addonID": 250617,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2546862,
         "fileName": "Ceramics v1.3.4 for 1.12.x",
@@ -2289,7 +2294,7 @@
     },
     {
       "addonID": 256717,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2576264,
         "fileName": "Clumps-3.1.1",
@@ -2341,7 +2346,7 @@
     },
     {
       "addonID": 248787,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2496585,
         "fileName": "AppleSkin-mc1.12-1.0.9.jar",
@@ -2405,7 +2410,7 @@
     },
     {
       "addonID": 220318,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2578530,
         "fileName": "BiomesOPlenty-1.12.2-7.0.1.2394-universal.jar",
@@ -2470,66 +2475,8 @@
       "installedTargets": null
     },
     {
-      "addonID": 238856,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2622513,
-        "fileName": "BetterQuesting-3.5.269.jar",
-        "fileNameOnDisk": "BetterQuesting-3.5.269.jar",
-        "fileDate": "2018-09-30T12:17:46.463",
-        "fileLength": 1314655,
-        "releaseType": 1,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2622/513/BetterQuesting-3.5.269.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 3306882900
-          },
-          {
-            "folderName": "betterquesting",
-            "fimgerprint": 2681139916
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 1239556746
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 2616773842
-          },
-          {
-            "folderName": "title.png",
-            "fimgerprint": 716088397
-          }
-        ],
-        "packageFingerprint": 1563938730,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-08-16T01:14:37.6844214Z",
-      "dateUpdated": "2018-10-06T02:04:44.3890665Z",
-      "dateLastUpdateAttempted": "2018-10-06T02:04:44.3890665Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 229876,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2483393,
         "fileName": "v1.4.8",
@@ -2583,7 +2530,7 @@
     },
     {
       "addonID": 78778,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2460961,
         "fileName": "ChestTransporter-1.12-2.8.7.jar",
@@ -2639,7 +2586,7 @@
     },
     {
       "addonID": 230497,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2450900,
         "fileName": "Chameleon-1.12-4.1.3.jar",
@@ -2695,7 +2642,7 @@
     },
     {
       "addonID": 227083,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2518667,
         "fileName": "Baubles-1.12-1.5.2.jar",
@@ -2761,7 +2708,7 @@
     },
     {
       "addonID": 237065,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2538285,
         "fileName": "ContentTweaker-1.12.2-4.5.0.jar",
@@ -2824,7 +2771,7 @@
     },
     {
       "addonID": 245453,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2591334,
         "fileName": "environmentaltech-1.12.2-2.0.13a.jar",
@@ -2895,7 +2842,7 @@
     },
     {
       "addonID": 285492,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2561622,
         "fileName": "ThaumicJEI-1.12.2-1.2.4-9.jar",
@@ -2958,7 +2905,7 @@
     },
     {
       "addonID": 228756,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2573525,
         "fileName": "ironchest-1.12.2-7.0.44.829.jar",
@@ -3016,7 +2963,7 @@
     },
     {
       "addonID": 256909,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2543229,
         "fileName": "Felling Version 1.4.0 for Minecraft 1.12.x",
@@ -3072,16 +3019,16 @@
     },
     {
       "addonID": 225635,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
-        "id": 2581277,
-        "fileName": "agricraft-2.12.0-1.12.0-a5.jar",
-        "fileNameOnDisk": "agricraft-2.12.0-1.12.0-a5.jar",
-        "fileDate": "2018-07-10T04:37:29.157",
-        "fileLength": 0,
+        "id": 2609648,
+        "fileName": "AgriCraft-2.12.0-1.12.0-a6.jar",
+        "fileNameOnDisk": "AgriCraft-2.12.0-1.12.0-a6.jar",
+        "fileDate": "2018-08-28T05:27:19.65",
+        "fileLength": 1357627,
         "releaseType": 3,
         "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2581/277/agricraft-2.12.0-1.12.0-a5.jar",
+        "downloadUrl": "https://files.forgecdn.net/files/2609/648/AgriCraft-2.12.0-1.12.0-a6.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -3094,43 +3041,43 @@
         "modules": [
           {
             "folderName": "META-INF",
-            "fimgerprint": 606648730
+            "fimgerprint": 2873294641
           },
           {
             "folderName": "com",
-            "fimgerprint": 2979545771
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 708176131
+            "fimgerprint": 860066720
           },
           {
             "folderName": "changelog.txt",
-            "fimgerprint": 1104346371
+            "fimgerprint": 2532123915
           },
           {
             "folderName": "json",
-            "fimgerprint": 2365444878
+            "fimgerprint": 3015261723
           },
           {
             "folderName": "mcmod.info",
-            "fimgerprint": 1912014717
+            "fimgerprint": 4147600206
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 3321895385
           },
           {
             "folderName": "org",
             "fimgerprint": 2521656737
           }
         ],
-        "packageFingerprint": 103632391,
+        "packageFingerprint": 718550955,
         "gameVersion": [
           "1.12.2"
         ],
         "installMetadata": null
       },
       "dateInstalled": "2018-08-16T01:14:40.1129358Z",
-      "dateUpdated": "2017-08-16T01:14:40.1129358Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2018-10-06T04:51:36.503011Z",
+      "dateLastUpdateAttempted": "2018-10-06T04:51:36.503011Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3143,7 +3090,7 @@
     },
     {
       "addonID": 248370,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2490058,
         "fileName": "JEI Bees 0.9.0.5 (MC 1.12.2)",
@@ -3208,7 +3155,7 @@
     },
     {
       "addonID": 244940,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2529476,
         "fileName": "MPUtils v1.5.4 (MC1.12)",
@@ -3266,7 +3213,7 @@
     },
     {
       "addonID": 246996,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2561983,
         "fileName": "base-1.12.2-3.7.2.jar",
@@ -3324,7 +3271,7 @@
     },
     {
       "addonID": 257573,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2531411,
         "fileName": "Xtones-1.12-1.0.8-11.jar",
@@ -3380,7 +3327,7 @@
     },
     {
       "addonID": 255232,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2593671,
         "fileName": "p455w0rdslib-1.12-2.0.32.jar",
@@ -3447,7 +3394,7 @@
     },
     {
       "addonID": 280506,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2544805,
         "fileName": "Modular Diversity-0.2hotfix.jar",
@@ -3512,7 +3459,7 @@
     },
     {
       "addonID": 220954,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2558895,
         "fileName": "modtweaker-4.0.12",
@@ -3573,7 +3520,7 @@
     },
     {
       "addonID": 230976,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2463272,
         "fileName": "FastLeafDecay-v14.jar",
@@ -3628,7 +3575,7 @@
     },
     {
       "addonID": 65764,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2566282,
         "fileName": "MagicBees-1.12.2-3.1.10.jar",
@@ -3687,7 +3634,7 @@
     },
     {
       "addonID": 239197,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2576160,
         "fileName": "CraftTweaker2-1.12-4.1.9",
@@ -3751,7 +3698,7 @@
     },
     {
       "addonID": 233071,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2562139,
         "fileName": "CraftingTweaks_1.12.2-8.1.9.jar",
@@ -3805,7 +3752,7 @@
     },
     {
       "addonID": 281849,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2561953,
         "fileName": "pneumaticcraft-repressurized-1.12.2-0.6.6-192.jar",
@@ -3876,7 +3823,7 @@
     },
     {
       "addonID": 255257,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2533126,
         "fileName": "LootTweaker-1.12.2-0.0.7.jar",
@@ -3939,7 +3886,7 @@
     },
     {
       "addonID": 247111,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2567271,
         "fileName": "topaddons-1.12.2-1.7.0.jar",
@@ -4010,7 +3957,7 @@
     },
     {
       "addonID": 69118,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2432272,
         "fileName": "Morpheus-1.12-3.3.2.jar",
@@ -4062,7 +4009,7 @@
     },
     {
       "addonID": 258426,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2600448,
         "fileName": "ForgeMultipart 1.12.2-2.5.0.71-universal",
@@ -4129,7 +4076,7 @@
     },
     {
       "addonID": 245480,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2591327,
         "fileName": "valkyrielib-1.12.2-2.0.13a.jar",
@@ -4187,7 +4134,7 @@
     },
     {
       "addonID": 238003,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2559089,
         "fileName": "ThaumicInventoryScanning_1.12.2-2.0.10.jar",
@@ -4246,7 +4193,7 @@
     },
     {
       "addonID": 280766,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2495115,
         "fileName": "cttinycoal-1.12.2-1.0.2.jar",
@@ -4300,7 +4247,7 @@
     },
     {
       "addonID": 70496,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2490042,
         "fileName": "BDLib 1.14.3.10 (MC 1.12.2)",
@@ -4356,7 +4303,7 @@
     },
     {
       "addonID": 223094,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2482481,
         "fileName": "Inventory Tweaks 1.63",
@@ -4426,7 +4373,7 @@
     },
     {
       "addonID": 233105,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2582232,
         "fileName": "McJtyLib - 1.12-3.0.3",
@@ -4489,7 +4436,7 @@
     },
     {
       "addonID": 260912,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2578671,
         "fileName": "XNet - 1.12-1.7.3",
@@ -4564,7 +4511,7 @@
     },
     {
       "addonID": 224641,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2581913,
         "fileName": "RFTools - 1.12-7.55",
@@ -4639,7 +4586,7 @@
     },
     {
       "addonID": 232683,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2459745,
         "fileName": "Fancy Fluid Storage-1.12-2.1.3.jar",
@@ -4700,7 +4647,7 @@
     },
     {
       "addonID": 223852,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2576611,
         "fileName": "StorageDrawers-1.12.2-5.3.7.jar",
@@ -4765,7 +4712,7 @@
     },
     {
       "addonID": 227391,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2510914,
         "fileName": "ElecCore-1.12.2-1.8.434.jar",
@@ -4819,7 +4766,7 @@
     },
     {
       "addonID": 277890,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2555574,
         "fileName": "WaterControlExtreme-1.0.2.jar",
@@ -4873,7 +4820,7 @@
     },
     {
       "addonID": 233398,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2578686,
         "fileName": "DeepResonance - 1.12-1.7.1",
@@ -4956,7 +4903,7 @@
     },
     {
       "addonID": 236978,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2519445,
         "fileName": "JsonLootBags-1.12.2-1.0.0.15.jar",
@@ -5019,7 +4966,7 @@
     },
     {
       "addonID": 231095,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2492712,
         "fileName": "chiselsandbits-14.9.jar",
@@ -5087,66 +5034,8 @@
       "installedTargets": null
     },
     {
-      "addonID": 238857,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2606083,
-        "fileName": "StandardExpansion-3.4.145.jar",
-        "fileNameOnDisk": "StandardExpansion-3.4.145.jar",
-        "fileDate": "2018-08-20T10:05:30.493",
-        "fileLength": 394590,
-        "releaseType": 1,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2606/83/StandardExpansion-3.4.145.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 1393342709
-          },
-          {
-            "folderName": "bq_standard",
-            "fimgerprint": 2530804741
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 2740310206
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 2212314776
-          },
-          {
-            "folderName": "title.png",
-            "fimgerprint": 2032662626
-          }
-        ],
-        "packageFingerprint": 335835576,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-08-16T01:14:40.1339148Z",
-      "dateUpdated": "2018-10-06T02:04:46.5129789Z",
-      "dateLastUpdateAttempted": "2018-10-06T02:04:46.5129789Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 253211,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2567171,
         "fileName": "MTLib-3.0.5",
@@ -5203,7 +5092,7 @@
     },
     {
       "addonID": 70492,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2516215,
         "fileName": "Gendustry 1.6.5.8 (MC 1.12.2)",
@@ -5292,7 +5181,7 @@
     },
     {
       "addonID": 250763,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2574700,
         "fileName": "RFToolsControl - 1.12-1.9.1",
@@ -5367,7 +5256,7 @@
     },
     {
       "addonID": 223815,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2551739,
         "fileName": "IGW-Mod-1.12.2-1.4.4-15-universal.jar",
@@ -5421,7 +5310,7 @@
     },
     {
       "addonID": 245211,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2569399,
         "fileName": "TheOneProbe - 1.12-1.4.23",
@@ -5491,91 +5380,8 @@
       "installedTargets": null
     },
     {
-      "addonID": 32274,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2498312,
-        "fileName": "journeymap-1.12.2-5.5.2",
-        "fileNameOnDisk": "journeymap-1.12.2-5.5.2.jar",
-        "fileDate": "2017-11-09T02:54:19.05",
-        "fileLength": 1822850,
-        "releaseType": 1,
-        "fileStatus": 1,
-        "downloadUrl": "https://files.forgecdn.net/files/2498/312/journeymap-1.12.2-5.5.2.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "addonId": 226005,
-            "type": 2
-          },
-          {
-            "addonId": 242519,
-            "type": 3
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 945679585
-          },
-          {
-            "folderName": "journeymap",
-            "fimgerprint": 2333079272
-          },
-          {
-            "folderName": "se",
-            "fimgerprint": 598335929
-          },
-          {
-            "folderName": "modinfo",
-            "fimgerprint": 2422089738
-          },
-          {
-            "folderName": "net",
-            "fimgerprint": 4125686778
-          },
-          {
-            "folderName": "ar",
-            "fimgerprint": 2590131427
-          },
-          {
-            "folderName": "license.txt",
-            "fimgerprint": 925425106
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 4000143834
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 3259256410
-          }
-        ],
-        "packageFingerprint": 4188726859,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-08-16T01:14:40.1359119Z",
-      "dateUpdated": "2018-09-25T01:09:42.7564763Z",
-      "dateLastUpdateAttempted": "2018-09-25T01:09:42.7564763Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 228832,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2544043,
         "fileName": "Guide-API-1.12-2.1.5-60.jar",
@@ -5631,7 +5437,7 @@
     },
     {
       "addonID": 236541,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2587285,
         "fileName": "LibVulpes 1.12.2-0.2.8-34-UNSTABLE build -34 for 1.12.2",
@@ -5685,7 +5491,7 @@
     },
     {
       "addonID": 224218,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2567196,
         "fileName": "compactmachines3-1.12.2-3.0.12-b215.jar",
@@ -5745,7 +5551,7 @@
     },
     {
       "addonID": 254268,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2560361,
         "fileName": "torchmaster_1.12.2-1.6.4.62.jar",
@@ -5803,7 +5609,7 @@
     },
     {
       "addonID": 270790,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2556553,
         "fileName": "ModularMachinery-1.12-1.9.2.jar",
@@ -5857,7 +5663,7 @@
     },
     {
       "addonID": 74924,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2550550,
         "fileName": "Mantle-1.12-1.3.2.24.jar",
@@ -5917,7 +5723,7 @@
     },
     {
       "addonID": 293536,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2559942,
         "fileName": "HotOrNot-1.12-1.0.jar",
@@ -5969,7 +5775,7 @@
     },
     {
       "addonID": 223569,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2531936,
         "fileName": "D3Core-1.12.2-1.3.2.71.jar",
@@ -6027,7 +5833,7 @@
     },
     {
       "addonID": 223622,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2494379,
         "fileName": "Advanced Generators 0.9.20.9 (MC 1.12.2)",
@@ -6100,7 +5906,7 @@
     },
     {
       "addonID": 60089,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2462627,
         "fileName": "[1.12.1] Mouse Tweaks 2.8",
@@ -6159,7 +5965,7 @@
     },
     {
       "addonID": 247695,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2540357,
         "fileName": "Translocators 1.12.2-2.5.0.70-universal",
@@ -6222,7 +6028,7 @@
     },
     {
       "addonID": 244559,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2591010,
         "fileName": "WirelessCraftingTerminal-1.12.2-3.9.67.jar",
@@ -6313,7 +6119,7 @@
     },
     {
       "addonID": 278385,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2482543,
         "fileName": "Diet Hoppers 1.1",
@@ -6371,7 +6177,7 @@
     },
     {
       "addonID": 251396,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2537265,
         "fileName": "infinitylib-1.12.0.jar",
@@ -6449,7 +6255,7 @@
     },
     {
       "addonID": 283644,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2575473,
         "fileName": "Placebo-1.12.2-1.4.0.jar",
@@ -6499,7 +6305,7 @@
     },
     {
       "addonID": 245174,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2594243,
         "fileName": "Ender Storage 1.12.2-2.4.5.135-universal",
@@ -6558,7 +6364,7 @@
     },
     {
       "addonID": 238551,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2524880,
         "fileName": "[1.12.2] Gravestone Mod  1.10.1",
@@ -6616,7 +6422,7 @@
     },
     {
       "addonID": 288885,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2579685,
         "fileName": "FastWorkbench-1.12.2-1.5.1.jar",
@@ -6666,7 +6472,7 @@
     },
     {
       "addonID": 258881,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2512758,
         "fileName": "FasterLadderClimbing-1.12-0.1-146.jar",
@@ -6718,7 +6524,7 @@
     },
     {
       "addonID": 299540,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2601816,
         "fileName": "FastFurnace-1.12.2-1.1.0.jar",
@@ -6768,7 +6574,7 @@
     },
     {
       "addonID": 231275,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2476271,
         "fileName": "Ding-1.12.1-1.0.1.jar",
@@ -6824,7 +6630,7 @@
     },
     {
       "addonID": 271740,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2574517,
         "fileName": "Toast Control-1.12.2-1.7.0.jar",
@@ -6887,7 +6693,7 @@
     },
     {
       "addonID": 278494,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2601349,
         "fileName": "FoamFix 0.10.0 (1.12.2)",
@@ -6949,7 +6755,7 @@
     },
     {
       "addonID": 223628,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2607849,
         "fileName": "Thaumcraft-1.12.2-6.1.BETA23.jar",
@@ -7036,7 +6842,7 @@
     },
     {
       "addonID": 254879,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2443623,
         "fileName": "StorageDrawersExtras-1.12-3.1.0.jar",
@@ -7101,7 +6907,7 @@
     },
     {
       "addonID": 247694,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2594245,
         "fileName": "Not Enough Items 1.12.2-2.4.1.238-universal",
@@ -7164,7 +6970,7 @@
     },
     {
       "addonID": 228027,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2574880,
         "fileName": "BiblioCraft v2.4.5",
@@ -7234,7 +7040,7 @@
     },
     {
       "addonID": 232650,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2606596,
         "fileName": "autooredictconv-1.12-1.0.1.jar",
@@ -7293,7 +7099,7 @@
     },
     {
       "addonID": 229595,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2502051,
         "fileName": "mdecore-1.12-1.0.jar",
@@ -7347,7 +7153,7 @@
     },
     {
       "addonID": 229045,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2572427,
         "fileName": "ProjectRed-1.12.2-4.9.1.92-integration.jar",
@@ -7406,7 +7212,7 @@
     },
     {
       "addonID": 229046,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2572426,
         "fileName": "ProjectRed-1.12.2-4.9.1.92-lighting.jar",
@@ -7465,7 +7271,7 @@
     },
     {
       "addonID": 247007,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2467504,
         "fileName": "CommonCapabilities-1.12-1.4.0.jar",
@@ -7526,7 +7332,7 @@
     },
     {
       "addonID": 228702,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2572423,
         "fileName": "ProjectRed-1.12.2-4.9.1.92-Base.jar",
@@ -7597,7 +7403,7 @@
     },
     {
       "addonID": 236307,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2605645,
         "fileName": "IntegratedDynamics-1.12.2-0.11.16.jar",
@@ -7672,7 +7478,7 @@
     },
     {
       "addonID": 229002,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2572409,
         "fileName": "MrTJPCore-1.12.2-2.1.3.35-universal.jar",
@@ -7735,7 +7541,7 @@
     },
     {
       "addonID": 230111,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2572424,
         "fileName": "ProjectRed-1.12.2-4.9.1.92-fabrication.jar",
@@ -7798,7 +7604,7 @@
     },
     {
       "addonID": 232758,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2605679,
         "fileName": "CyclopsCore-1.12.2-0.11.9.jar",
@@ -7856,7 +7662,7 @@
     },
     {
       "addonID": 221857,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2607341,
         "fileName": "Pam's HarvestCraft 1.12.2y.jar",
@@ -7918,7 +7724,7 @@
     },
     {
       "addonID": 283807,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2576907,
         "fileName": "Foundry-1.12.2-3.1.4.1.jar",
@@ -7981,7 +7787,7 @@
     },
     {
       "addonID": 238222,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2602311,
         "fileName": "jei_1.12.2-4.11.0.212.jar",
@@ -8039,7 +7845,7 @@
     },
     {
       "addonID": 275086,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2581578,
         "fileName": "prospectors-1.0.2.jar",
@@ -8093,7 +7899,7 @@
     },
     {
       "addonID": 238403,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2580273,
         "fileName": "Better Builder's Wands 0.12.0 [MC1.12; rev 251]",
@@ -8157,7 +7963,7 @@
     },
     {
       "addonID": 225643,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2611560,
         "fileName": "Botania r1.10-356.jar",
@@ -8232,7 +8038,7 @@
     },
     {
       "addonID": 237167,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2616652,
         "fileName": "FTBLib-5.3.0.51.jar",
@@ -8290,7 +8096,7 @@
     },
     {
       "addonID": 240630,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2603567,
         "fileName": "JustEnoughResources-1.12.2-0.8.10.50",
@@ -8353,7 +8159,7 @@
     },
     {
       "addonID": 253462,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2615958,
         "fileName": "StevesCarts-1.12.2-2.4.23.115.jar",
@@ -8418,7 +8224,7 @@
     },
     {
       "addonID": 237903,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2602070,
         "fileName": "RebornCore-1.12.2-3.10.0.332-universal.jar",
@@ -8486,7 +8292,7 @@
     },
     {
       "addonID": 268643,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2573789,
         "fileName": "Material Changer 1.0.3 - 1.12.2",
@@ -8540,7 +8346,7 @@
     },
     {
       "addonID": 237102,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2616656,
         "fileName": "FTBUtilities-5.3.0.50.jar",
@@ -8610,287 +8416,8 @@
       "installedTargets": null
     },
     {
-      "addonID": 274259,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2603316,
-        "fileName": "Carry On MC1.12.2 v1.10",
-        "fileNameOnDisk": "Carry+On+MC1.12.2+v1.10.jar",
-        "fileDate": "2018-08-14T22:08:08.647",
-        "fileLength": 299592,
-        "releaseType": 1,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2603/316/Carry On MC1.12.2 v1.10.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "addonId": 268655,
-            "type": 2
-          },
-          {
-            "addonId": 290240,
-            "type": 3
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 2625507614
-          },
-          {
-            "folderName": "tschipp",
-            "fimgerprint": 1754408685
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 3576226913
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 1183756800
-          }
-        ],
-        "packageFingerprint": 2067052308,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-09-28T01:26:36.5939756Z",
-      "dateUpdated": "2017-09-28T01:26:36.5939756Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": true,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 237414,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2505261,
-        "fileName": "RealBench 1.3.3",
-        "fileNameOnDisk": "RealBench-1.12.2-1.3.3.jar",
-        "fileDate": "2017-12-01T06:34:04.913",
-        "fileLength": 17104,
-        "releaseType": 1,
-        "fileStatus": 1,
-        "downloadUrl": "https://files.forgecdn.net/files/2505/261/RealBench-1.12.2-1.3.3.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 819222954
-          },
-          {
-            "folderName": "pw",
-            "fimgerprint": 1623605258
-          },
-          {
-            "folderName": "realbench_at.cfg",
-            "fimgerprint": 3307172781
-          }
-        ],
-        "packageFingerprint": 897892104,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-10-02T01:31:19.8829324Z",
-      "dateUpdated": "2018-10-02T01:31:19.8879273Z",
-      "dateLastUpdateAttempted": "2018-10-02T01:31:19.8879273Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 271384,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2623091,
-        "fileName": "CoFHWorld-1.12.2-1.3.0.6-universal.jar",
-        "fileNameOnDisk": "CoFHWorld-1.12.2-1.3.0.6-universal.jar",
-        "fileDate": "2018-10-01T21:05:46.827",
-        "fileLength": 531831,
-        "releaseType": 1,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2623/91/CoFHWorld-1.12.2-1.3.0.6-universal.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 711880633
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 2250746207
-          },
-          {
-            "folderName": "cofh",
-            "fimgerprint": 2077178615
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 684858891
-          }
-        ],
-        "packageFingerprint": 2557865424,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-10-02T23:15:40.7685257Z",
-      "dateUpdated": "2017-10-02T23:15:40.7685257Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 223794,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2619850,
-        "fileName": "appliedenergistics2-rv6-beta-1.jar",
-        "fileNameOnDisk": "appliedenergistics2-rv6-beta-1.jar",
-        "fileDate": "2018-09-22T18:44:13.7",
-        "fileLength": 4056738,
-        "releaseType": 2,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2619/850/appliedenergistics2-rv6-beta-1.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 1080824482
-          },
-          {
-            "folderName": "appeng",
-            "fimgerprint": 4087203552
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 4185686904
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 3287829704
-          },
-          {
-            "folderName": "pack.mcmeta",
-            "fimgerprint": 2679328301
-          }
-        ],
-        "packageFingerprint": 3832099788,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-10-02T23:15:40.7695257Z",
-      "dateUpdated": "2017-10-02T23:15:40.7695257Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 270789,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2623090,
-        "fileName": "RedstoneFlux-1.12-2.1.0.6-universal.jar",
-        "fileNameOnDisk": "RedstoneFlux-1.12-2.1.0.6-universal.jar",
-        "fileDate": "2018-10-01T21:03:10.957",
-        "fileLength": 36278,
-        "releaseType": 1,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2623/90/RedstoneFlux-1.12-2.1.0.6-universal.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 3330677913
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 3959296951
-          },
-          {
-            "folderName": "cofh",
-            "fimgerprint": 3768412000
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 2476364741
-          }
-        ],
-        "packageFingerprint": 1941774686,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-10-02T23:15:40.7695257Z",
-      "dateUpdated": "2017-10-02T23:15:40.7695257Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 69162,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2623092,
         "fileName": "CoFHCore-1.12.2-4.6.0.21-universal.jar",
@@ -8937,8 +8464,8 @@
         ],
         "installMetadata": null
       },
-      "dateInstalled": "2018-10-02T23:15:40.7705241Z",
-      "dateUpdated": "2017-10-02T23:15:40.7705241Z",
+      "dateInstalled": "2018-10-06T04:14:50.0595643Z",
+      "dateUpdated": "2017-10-06T04:14:50.0595643Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 3,
       "preferenceAutoInstallUpdates": false,
@@ -8949,11 +8476,69 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
+    },
+    {
+      "addonID": 238856,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2622513,
+        "fileName": "BetterQuesting-3.5.269.jar",
+        "fileNameOnDisk": "BetterQuesting-3.5.269.jar",
+        "fileDate": "2018-09-30T12:17:46.463",
+        "fileLength": 1314655,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2622/513/BetterQuesting-3.5.269.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 3306882900
+          },
+          {
+            "folderName": "betterquesting",
+            "fimgerprint": 2681139916
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 1239556746
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 2616773842
+          },
+          {
+            "folderName": "title.png",
+            "fimgerprint": 716088397
+          }
+        ],
+        "packageFingerprint": 1563938730,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:14:50.0605603Z",
+      "dateUpdated": "2017-10-06T04:14:50.0605603Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 242818,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2618630,
         "fileName": "CodeChicken Lib 1.12.2-3.2.2.353-universal",
@@ -8991,8 +8576,8 @@
         ],
         "installMetadata": null
       },
-      "dateInstalled": "2018-10-02T23:15:40.7705241Z",
-      "dateUpdated": "2017-10-02T23:15:40.7705241Z",
+      "dateInstalled": "2018-10-06T04:14:50.0605603Z",
+      "dateUpdated": "2017-10-06T04:14:50.0605603Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
@@ -9003,11 +8588,387 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
+    },
+    {
+      "addonID": 271384,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2623091,
+        "fileName": "CoFHWorld-1.12.2-1.3.0.6-universal.jar",
+        "fileNameOnDisk": "CoFHWorld-1.12.2-1.3.0.6-universal.jar",
+        "fileDate": "2018-10-01T21:05:46.827",
+        "fileLength": 531831,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2623/91/CoFHWorld-1.12.2-1.3.0.6-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 711880633
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 2250746207
+          },
+          {
+            "folderName": "cofh",
+            "fimgerprint": 2077178615
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 684858891
+          }
+        ],
+        "packageFingerprint": 2557865424,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:14:50.0605603Z",
+      "dateUpdated": "2017-10-06T04:14:50.0605603Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 236542,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2623048,
+        "fileName": "AdvancedRocketry 1.12.2-1.4.1-103-UNSTABLE build -103 for 1.12.2",
+        "fileNameOnDisk": "AdvancedRocketry-1.12.2-1.4.1-103-universal.jar",
+        "fileDate": "2018-10-01T19:00:46.833",
+        "fileLength": 12195201,
+        "releaseType": 3,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2623/48/AdvancedRocketry-1.12.2-1.4.1-103-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "addonId": 236541,
+            "type": 1
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 2831367890
+          },
+          {
+            "folderName": "zmaster587",
+            "fimgerprint": 1929688980
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 3574522594
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 1937053623
+          }
+        ],
+        "packageFingerprint": 2257312405,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:14:50.0615588Z",
+      "dateUpdated": "2017-10-06T04:14:50.0615588Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 3,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 274259,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2603316,
+        "fileName": "Carry On MC1.12.2 v1.10",
+        "fileNameOnDisk": "Carry+On+MC1.12.2+v1.10.jar",
+        "fileDate": "2018-08-14T22:08:08.647",
+        "fileLength": 299592,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2603/316/Carry On MC1.12.2 v1.10.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "addonId": 268655,
+            "type": 2
+          },
+          {
+            "addonId": 290240,
+            "type": 3
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 2625507614
+          },
+          {
+            "folderName": "tschipp",
+            "fimgerprint": 1754408685
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 3576226913
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 1183756800
+          }
+        ],
+        "packageFingerprint": 2067052308,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:14:50.0615588Z",
+      "dateUpdated": "2017-10-06T04:14:50.0615588Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 3,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": true,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 238857,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2606083,
+        "fileName": "StandardExpansion-3.4.145.jar",
+        "fileNameOnDisk": "StandardExpansion-3.4.145.jar",
+        "fileDate": "2018-08-20T10:05:30.493",
+        "fileLength": 394590,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2606/83/StandardExpansion-3.4.145.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 1393342709
+          },
+          {
+            "folderName": "bq_standard",
+            "fimgerprint": 2530804741
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 2740310206
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 2212314776
+          },
+          {
+            "folderName": "title.png",
+            "fimgerprint": 2032662626
+          }
+        ],
+        "packageFingerprint": 335835576,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:16:38.2288553Z",
+      "dateUpdated": "2017-10-06T04:16:38.2288553Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 293327,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2622669,
+        "fileName": "gregtech-1.12.2-0.5.10.93.jar",
+        "fileNameOnDisk": "gregtech-1.12.2-0.5.10.93.jar",
+        "fileDate": "2018-09-30T17:55:07.68",
+        "fileLength": 4282370,
+        "releaseType": 2,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2622/669/gregtech-1.12.2-0.5.10.93.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "addonId": 238222,
+            "type": 2
+          },
+          {
+            "addonId": 239197,
+            "type": 2
+          },
+          {
+            "addonId": 242818,
+            "type": 1
+          },
+          {
+            "addonId": 245211,
+            "type": 2
+          },
+          {
+            "addonId": 258426,
+            "type": 2
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 3383225976
+          },
+          {
+            "folderName": "gregtech",
+            "fimgerprint": 1722022957
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 655631881
+          },
+          {
+            "folderName": "pack.mcmeta",
+            "fimgerprint": 1998467922
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 381911956
+          }
+        ],
+        "packageFingerprint": 1474229905,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:16:38.2288553Z",
+      "dateUpdated": "2017-10-06T04:16:38.2288553Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 227443,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2623099,
+        "fileName": "ThermalDynamics-1.12.2-2.5.2.15-universal.jar",
+        "fileNameOnDisk": "ThermalDynamics-1.12.2-2.5.2.15-universal.jar",
+        "fileDate": "2018-10-01T21:09:29.083",
+        "fileLength": 761802,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2623/99/ThermalDynamics-1.12.2-2.5.2.15-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "addonId": 222880,
+            "type": 1
+          },
+          {
+            "addonId": 242818,
+            "type": 1
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 551500230
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 4266271120
+          },
+          {
+            "folderName": "cofh",
+            "fimgerprint": 1872485957
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 3177238029
+          }
+        ],
+        "packageFingerprint": 2214778317,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:16:38.2298541Z",
+      "dateUpdated": "2017-10-06T04:16:38.2298541Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 3,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 226254,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2616403,
         "fileName": "NuclearCraft-2.11g--1.12.2",
@@ -9078,8 +9039,8 @@
         ],
         "installMetadata": null
       },
-      "dateInstalled": "2018-10-02T23:15:40.7705241Z",
-      "dateUpdated": "2017-10-02T23:15:40.7705241Z",
+      "dateInstalled": "2018-10-06T04:16:38.2298541Z",
+      "dateUpdated": "2017-10-06T04:16:38.2298541Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 3,
       "preferenceAutoInstallUpdates": false,
@@ -9090,11 +9051,206 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
+    },
+    {
+      "addonID": 270789,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2623090,
+        "fileName": "RedstoneFlux-1.12-2.1.0.6-universal.jar",
+        "fileNameOnDisk": "RedstoneFlux-1.12-2.1.0.6-universal.jar",
+        "fileDate": "2018-10-01T21:03:10.957",
+        "fileLength": 36278,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2623/90/RedstoneFlux-1.12-2.1.0.6-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 3330677913
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 3959296951
+          },
+          {
+            "folderName": "cofh",
+            "fimgerprint": 3768412000
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 2476364741
+          }
+        ],
+        "packageFingerprint": 1941774686,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:16:38.2298541Z",
+      "dateUpdated": "2017-10-06T04:16:38.2298541Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 223794,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2619850,
+        "fileName": "appliedenergistics2-rv6-beta-1.jar",
+        "fileNameOnDisk": "appliedenergistics2-rv6-beta-1.jar",
+        "fileDate": "2018-09-22T18:44:13.7",
+        "fileLength": 4056738,
+        "releaseType": 2,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2619/850/appliedenergistics2-rv6-beta-1.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 1080824482
+          },
+          {
+            "folderName": "appeng",
+            "fimgerprint": 4087203552
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 4185686904
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 3287829704
+          },
+          {
+            "folderName": "pack.mcmeta",
+            "fimgerprint": 2679328301
+          }
+        ],
+        "packageFingerprint": 3832099788,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:16:38.2308534Z",
+      "dateUpdated": "2017-10-06T04:16:38.2308534Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 3,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 32274,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2498312,
+        "fileName": "journeymap-1.12.2-5.5.2",
+        "fileNameOnDisk": "journeymap-1.12.2-5.5.2.jar",
+        "fileDate": "2017-11-09T02:54:19.05",
+        "fileLength": 1822850,
+        "releaseType": 1,
+        "fileStatus": 1,
+        "downloadUrl": "https://files.forgecdn.net/files/2498/312/journeymap-1.12.2-5.5.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "addonId": 226005,
+            "type": 2
+          },
+          {
+            "addonId": 242519,
+            "type": 3
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 945679585
+          },
+          {
+            "folderName": "journeymap",
+            "fimgerprint": 2333079272
+          },
+          {
+            "folderName": "se",
+            "fimgerprint": 598335929
+          },
+          {
+            "folderName": "modinfo",
+            "fimgerprint": 2422089738
+          },
+          {
+            "folderName": "net",
+            "fimgerprint": 4125686778
+          },
+          {
+            "folderName": "ar",
+            "fimgerprint": 2590131427
+          },
+          {
+            "folderName": "license.txt",
+            "fimgerprint": 925425106
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 4000143834
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 3259256410
+          }
+        ],
+        "packageFingerprint": 4188726859,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:16:38.2308534Z",
+      "dateUpdated": "2017-10-06T04:16:38.2308534Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 222880,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2623095,
         "fileName": "ThermalFoundation-1.12.2-2.6.0.20-universal.jar",
@@ -9141,8 +9297,8 @@
         ],
         "installMetadata": null
       },
-      "dateInstalled": "2018-10-02T23:15:40.7715225Z",
-      "dateUpdated": "2017-10-02T23:15:40.7715225Z",
+      "dateInstalled": "2018-10-06T04:16:38.2318525Z",
+      "dateUpdated": "2017-10-06T04:16:38.2318525Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 3,
       "preferenceAutoInstallUpdates": false,
@@ -9153,29 +9309,79 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
-      "addonID": 227443,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "addonID": 237414,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
-        "id": 2623099,
-        "fileName": "ThermalDynamics-1.12.2-2.5.2.15-universal.jar",
-        "fileNameOnDisk": "ThermalDynamics-1.12.2-2.5.2.15-universal.jar",
-        "fileDate": "2018-10-01T21:09:29.083",
-        "fileLength": 761802,
+        "id": 2505261,
+        "fileName": "RealBench 1.3.3",
+        "fileNameOnDisk": "RealBench-1.12.2-1.3.3.jar",
+        "fileDate": "2017-12-01T06:34:04.913",
+        "fileLength": 17104,
+        "releaseType": 1,
+        "fileStatus": 1,
+        "downloadUrl": "https://files.forgecdn.net/files/2505/261/RealBench-1.12.2-1.3.3.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 819222954
+          },
+          {
+            "folderName": "pw",
+            "fimgerprint": 1623605258
+          },
+          {
+            "folderName": "realbench_at.cfg",
+            "fimgerprint": 3307172781
+          }
+        ],
+        "packageFingerprint": 897892104,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-10-06T04:16:38.2318525Z",
+      "dateUpdated": "2017-10-06T04:16:38.2318525Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 303642,
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
+      "installedFile": {
+        "id": 2623055,
+        "fileName": "GregicAdditions-1.12.2-1.1.2",
+        "fileNameOnDisk": "GregicAdditions-1.12.2-1.1.2.jar",
+        "fileDate": "2018-10-01T19:09:35.9",
+        "fileLength": 446330,
         "releaseType": 1,
         "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2623/99/ThermalDynamics-1.12.2-2.5.2.15-universal.jar",
+        "downloadUrl": "https://files.forgecdn.net/files/2623/55/GregicAdditions-1.12.2-1.1.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "addonId": 222880,
-            "type": 1
+            "addonId": 59751,
+            "type": 2
           },
           {
-            "addonId": 242818,
+            "addonId": 293327,
             "type": 1
           }
         ],
@@ -9183,31 +9389,39 @@
         "modules": [
           {
             "folderName": "META-INF",
-            "fimgerprint": 551500230
+            "fimgerprint": 3849607384
+          },
+          {
+            "folderName": "gregicadditions",
+            "fimgerprint": 2837922907
+          },
+          {
+            "folderName": "loaders",
+            "fimgerprint": 1170337315
           },
           {
             "folderName": "assets",
-            "fimgerprint": 4266271120
-          },
-          {
-            "folderName": "cofh",
-            "fimgerprint": 1872485957
+            "fimgerprint": 202408122
           },
           {
             "folderName": "mcmod.info",
-            "fimgerprint": 3177238029
+            "fimgerprint": 3174870362
+          },
+          {
+            "folderName": "pack.mcmeta",
+            "fimgerprint": 3273911401
           }
         ],
-        "packageFingerprint": 2214778317,
+        "packageFingerprint": 3483283445,
         "gameVersion": [
           "1.12.2"
         ],
         "installMetadata": null
       },
-      "dateInstalled": "2018-10-02T23:15:40.7715225Z",
-      "dateUpdated": "2017-10-02T23:15:40.7715225Z",
+      "dateInstalled": "2018-10-06T04:16:38.2328515Z",
+      "dateUpdated": "2017-10-06T04:16:38.2328515Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9216,11 +9430,11 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 59751,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
+      "gameInstanceID": "ae84fcea-bf5a-4ba2-8f2f-f24af408182b",
       "installedFile": {
         "id": 2621852,
         "fileName": "forestry_1.12.2-5.8.1.347.jar",
@@ -9270,8 +9484,8 @@
         ],
         "installMetadata": null
       },
-      "dateInstalled": "2018-10-02T23:15:40.7715225Z",
-      "dateUpdated": "2017-10-02T23:15:40.7715225Z",
+      "dateInstalled": "2018-10-06T04:16:38.2328515Z",
+      "dateUpdated": "2017-10-06T04:16:38.2328515Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 3,
       "preferenceAutoInstallUpdates": false,
@@ -9282,216 +9496,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 293327,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2622669,
-        "fileName": "gregtech-1.12.2-0.5.10.93.jar",
-        "fileNameOnDisk": "gregtech-1.12.2-0.5.10.93.jar",
-        "fileDate": "2018-09-30T17:55:07.68",
-        "fileLength": 4282370,
-        "releaseType": 2,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2622/669/gregtech-1.12.2-0.5.10.93.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "addonId": 238222,
-            "type": 2
-          },
-          {
-            "addonId": 239197,
-            "type": 2
-          },
-          {
-            "addonId": 242818,
-            "type": 1
-          },
-          {
-            "addonId": 245211,
-            "type": 2
-          },
-          {
-            "addonId": 258426,
-            "type": 2
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 3383225976
-          },
-          {
-            "folderName": "gregtech",
-            "fimgerprint": 1722022957
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 655631881
-          },
-          {
-            "folderName": "pack.mcmeta",
-            "fimgerprint": 1998467922
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 381911956
-          }
-        ],
-        "packageFingerprint": 1474229905,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-10-02T23:15:55.7828101Z",
-      "dateUpdated": "2018-10-02T23:15:55.7878068Z",
-      "dateLastUpdateAttempted": "2018-10-02T23:15:55.7878068Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 303642,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2623055,
-        "fileName": "GregicAdditions-1.12.2-1.1.2",
-        "fileNameOnDisk": "GregicAdditions-1.12.2-1.1.2.jar",
-        "fileDate": "2018-10-01T19:09:35.9",
-        "fileLength": 446330,
-        "releaseType": 1,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2623/55/GregicAdditions-1.12.2-1.1.2.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "addonId": 293327,
-            "type": 1
-          },
-          {
-            "addonId": 303643,
-            "type": 2
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 3849607384
-          },
-          {
-            "folderName": "gregicadditions",
-            "fimgerprint": 2837922907
-          },
-          {
-            "folderName": "loaders",
-            "fimgerprint": 1170337315
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 202408122
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 3174870362
-          },
-          {
-            "folderName": "pack.mcmeta",
-            "fimgerprint": 3273911401
-          }
-        ],
-        "packageFingerprint": 3483283445,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-10-02T23:15:56.0278043Z",
-      "dateUpdated": "2018-10-02T23:15:56.0298024Z",
-      "dateLastUpdateAttempted": "2018-10-02T23:15:56.0298024Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 236542,
-      "gameInstanceID": "78a43359-9c47-42ad-972f-66c778a4bde9",
-      "installedFile": {
-        "id": 2623048,
-        "fileName": "AdvancedRocketry 1.12.2-1.4.1-103-UNSTABLE build -103 for 1.12.2",
-        "fileNameOnDisk": "AdvancedRocketry-1.12.2-1.4.1-103-universal.jar",
-        "fileDate": "2018-10-01T19:00:46.833",
-        "fileLength": 12195201,
-        "releaseType": 3,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2623/48/AdvancedRocketry-1.12.2-1.4.1-103-universal.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "addonId": 236541,
-            "type": 1
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 2831367890
-          },
-          {
-            "folderName": "zmaster587",
-            "fimgerprint": 1929688980
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 3574522594
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 1937053623
-          }
-        ],
-        "packageFingerprint": 2257312405,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-10-03T00:02:16.8918708Z",
-      "dateUpdated": "2018-10-03T00:02:16.9068721Z",
-      "dateLastUpdateAttempted": "2018-10-03T00:02:16.9068721Z",
-      "status": 3,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     }
   ],
   "isMigrated": false,
