@@ -20,6 +20,7 @@ val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
 val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
 val packer as RecipeMap = RecipeMap.getByName("packer");
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -31,7 +32,7 @@ blast_furnace.recipeBuilder()
 	.fluidInputs([<liquid:oxygen> * 500])
 	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 1)
 	.property("temperature", 1000)
-	.duration(480)
+	.duration(360)
 	.EUt(120)
 	.buildAndRegister();
 
@@ -40,7 +41,7 @@ blast_furnace.recipeBuilder()
 	.fluidInputs([<liquid:oxygen> * 1000])
 	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
 	.property("temperature", 1000)
-	.duration(560)
+	.duration(600)
 	.EUt(120)
 	.buildAndRegister();
 
@@ -49,7 +50,7 @@ blast_furnace.recipeBuilder()
 	.fluidInputs([<liquid:oxygen> * 1000])
 	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
 	.property("temperature", 1000)
-	.duration(560)
+	.duration(600)
 	.EUt(120)
 	.buildAndRegister();
 
@@ -58,7 +59,7 @@ blast_furnace.recipeBuilder()
 	.fluidInputs([<liquid:oxygen> * 1000])
 	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 3)
 	.property("temperature", 1000)
-	.duration(800)
+	.duration(1000)
 	.EUt(120)
 	.buildAndRegister();
 
@@ -610,7 +611,6 @@ recipes.addShaped(<metaitem:component.resistor> *2, [
   [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
   [null, <minecraft:paper>, null]]);
 
-val assembler as RecipeMap = RecipeMap.getByName("assembler");
 assembler.recipeBuilder()
   .inputs(<ore:wireFineCopper> * 4, <ore:dustCharcoal> * 1)
   .outputs(<metaitem:component.resistor> * 8)
