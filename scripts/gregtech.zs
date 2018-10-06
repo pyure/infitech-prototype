@@ -19,6 +19,7 @@ val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
 val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
+val packer as RecipeMap = RecipeMap.getByName("packer");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -190,11 +191,17 @@ chemical_reactor.recipeBuilder()		//Signalum Dust
 	.EUt(30)
 	.buildAndRegister();
 
-<ore:ingotElectrotineAlloy>.add(<projectred-core:resource_item:104>);	//Recipe works fine without this line, but wont show in JEI, idk why
+chemical_reactor.recipeBuilder()    //Cobalt aluminate
+  	.inputs(<ore:dustCobaltOxide> * 1, <ore:dustAluminium> * 2)
+  	.fluidInputs(<liquid:oxygen> * 4000)
+  	.outputs(<ore:dustCobaltAluminate>.firstItem * 3)
+  	.duration(80)
+  	.EUt(120)
+  	.buildAndRegister();
 
 alloy_smelter.recipeBuilder()		//Blue Alloy
-	.inputs(<ore:dustSilver> * 1, <ore:ingotElectrotineAlloy> * 1)
-	.outputs(<ore:ingotBlueAlloy>.firstItem * 1)
+	.inputs(<ore:dustSilver> * 1, <ore:dustCobaltAluminate> * 1)
+	.outputs(<ore:ingotBlueAlloy>.firstItem * 2)
 	.duration(100)
 	.EUt(16)
 	.buildAndRegister();
@@ -278,6 +285,7 @@ mixer.recipeBuilder()
 
 furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
+furnace.remove(<ore:ingotBlueAlloy>);
 
 val material_array = [
   "Aluminium",
@@ -575,4 +583,38 @@ chemical_reactor.recipeBuilder()
 	.duration(200)
 	.EUt(30)
 	.buildAndRegister();
+
+
+//Magnetite Ore/Dust
+furnace.addRecipe(<minecraft:iron_nugget> * 3, <ore:dustMagnetite>);
+
+//PBF and Coke Oven Bricks
+var cokeOvenBrick = <gtadditions:ga_multiblock_casing>;
+recipes.remove(cokeOvenBrick);
+
+mixer.recipeBuilder()
+	.inputs(<ore:dustClay> * 4, <minecraft:sand> * 5)
+	.fluidInputs(<liquid:water> * 100)
+	.outputs(cokeOvenBrick * 1)
+	.duration(20)
+	.EUt(16)
+	.buildAndRegister();
+
+recipes.addShaped(<metaitem:component.resistor> *2, [
+  [null, <minecraft:paper>, null],
+  [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
+  [null, <minecraft:paper>, null]]);
+
+recipes.addShaped(<metaitem:component.resistor> *2, [
+  [null, <minecraft:paper>, null],
+  [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
+  [null, <minecraft:paper>, null]]);
+
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+assembler.recipeBuilder()
+  .inputs(<ore:wireFineCopper> * 4, <ore:dustCharcoal> * 1)
+  .outputs(<metaitem:component.resistor> * 8)
+  .duration(160)
+  .EUt(6)
+  .buildAndRegister();
 
