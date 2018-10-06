@@ -19,6 +19,7 @@ val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
 val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
+val packer as RecipeMap = RecipeMap.getByName("packer");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -584,6 +585,22 @@ chemical_reactor.recipeBuilder()
 	.EUt(30)
 	.buildAndRegister();
 
+
+//Magnetite Ore/Dust
+furnace.addRecipe(<minecraft:iron_nugget> * 3, <ore:dustMagnetite>);
+
+//PBF and Coke Oven Bricks
+var cokeOvenBrick = <gtadditions:ga_multiblock_casing>;
+recipes.remove(cokeOvenBrick);
+
+mixer.recipeBuilder()
+	.inputs(<ore:dustClay> * 4, <minecraft:sand> * 5)
+	.fluidInputs(<liquid:water> * 100)
+	.outputs(cokeOvenBrick * 1)
+	.duration(20)
+	.EUt(16)
+	.buildAndRegister();
+
 recipes.addShaped(<metaitem:component.resistor> *2, [
   [null, <minecraft:paper>, null],
   [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
@@ -601,3 +618,4 @@ assembler.recipeBuilder()
   .duration(160)
   .EUt(6)
   .buildAndRegister();
+
