@@ -351,13 +351,6 @@ for name in rod_array {
   mods.foundry.CastingTable.addRodRecipe(rod, metal_liquid_map[name] *144);
 }
 
-// LAVA RECIPES
-mods.foundry.Melting.addRecipe(<liquid:lava> * 250, <ore:stoneSmooth>, 900);
-mods.foundry.Melting.addRecipe(<liquid:lava> * 250, <ore:stoneCobble>, 900);
-mods.foundry.Melting.addRecipe(<liquid:lava> * 500, <ore:stoneNetherrack>, 900);
-mods.foundry.Melting.addRecipe(<liquid:lava> * 750, <minecraft:magma>, 900);
-
-
 /* ====================================== MACHINES ============================================= */
 var rodCopper = <ore:stickCopper>;
 var bricksPrimitive = (<gregtech:metal_casing:1>);
