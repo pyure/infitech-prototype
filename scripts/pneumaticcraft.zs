@@ -2,7 +2,7 @@ import mods.pneumaticcraft.pressurechamber;
 import mods.gregtech.recipe.RecipeMap;
 
 var ingotWroughtIron = <ore:ingotWroughtIron>.firstItem;
-var ingotCompressedWroughtIron = <gregtech:meta_item_1:10701>;
+var ingotCompressedWroughtIron = <ore:ingotCompressedWroughtIron>.firstItem;
 
 mods.pneumaticcraft.pressurechamber.addRecipe([ingotWroughtIron * 1], 2.0, [ingotCompressedWroughtIron]);
 
