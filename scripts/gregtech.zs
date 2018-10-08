@@ -601,19 +601,19 @@ mixer.recipeBuilder()
 	.EUt(16)
 	.buildAndRegister();
 
-recipes.addShaped(<metaitem:component.resistor> *2, [
+recipes.addShaped(<metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
   [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
   [null, <minecraft:paper>, null]]);
 
-recipes.addShaped(<metaitem:component.resistor> *2, [
+recipes.addShaped(<metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
   [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
   [null, <minecraft:paper>, null]]);
 
 assembler.recipeBuilder()
   .inputs(<ore:wireFineCopper> * 4, <ore:dustCharcoal> * 1)
-  .outputs(<metaitem:component.resistor> * 8)
+  .outputs(<metaitem:component.resistor> * 6)
   .duration(160)
   .EUt(6)
   .buildAndRegister();
