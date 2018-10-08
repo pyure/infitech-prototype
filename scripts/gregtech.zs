@@ -618,3 +618,16 @@ assembler.recipeBuilder()
   .EUt(6)
   .buildAndRegister();
 
+var hLeather = <harvestcraft:hardenedleatheritem>;
+recipes.remove(<toolbelt:belt>);
+recipes.remove(<toolbelt:pouch>);
+
+recipes.addShaped(<toolbelt:belt>, [
+[<ore:manaString>, hLeather, <ore:manaString>],
+[hLeather, null, hLeather],
+[hLeather, <ore:ringSteel>, hLeather]]);
+
+recipes.addShaped(<toolbelt:pouch>, [
+[<ore:wireFineBrass>, <minecraft:gold_nugget>, <ore:wireFineBrass>],
+[hLeather, null, hLeather],
+[<ore:wireFineBrass>, hLeather, <ore:wireFineBrass>]]);
