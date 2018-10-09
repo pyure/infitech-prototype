@@ -601,20 +601,33 @@ mixer.recipeBuilder()
 	.EUt(16)
 	.buildAndRegister();
 
-recipes.addShaped(<metaitem:component.resistor> *2, [
+recipes.addShaped(<metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
   [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
   [null, <minecraft:paper>, null]]);
 
-recipes.addShaped(<metaitem:component.resistor> *2, [
+recipes.addShaped(<metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
   [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
   [null, <minecraft:paper>, null]]);
 
 assembler.recipeBuilder()
   .inputs(<ore:wireFineCopper> * 4, <ore:dustCharcoal> * 1)
-  .outputs(<metaitem:component.resistor> * 8)
+  .outputs(<metaitem:component.resistor> * 6)
   .duration(160)
   .EUt(6)
   .buildAndRegister();
 
+var hLeather = <harvestcraft:hardenedleatheritem>;
+recipes.remove(<toolbelt:belt>);
+recipes.remove(<toolbelt:pouch>);
+
+recipes.addShaped(<toolbelt:belt>, [
+[<ore:manaString>, hLeather, <ore:manaString>],
+[hLeather, null, hLeather],
+[hLeather, <ore:ringSteel>, hLeather]]);
+
+recipes.addShaped(<toolbelt:pouch>, [
+[<ore:wireFineBrass>, <minecraft:gold_nugget>, <ore:wireFineBrass>],
+[hLeather, null, hLeather],
+[<ore:wireFineBrass>, hLeather, <ore:wireFineBrass>]]);
