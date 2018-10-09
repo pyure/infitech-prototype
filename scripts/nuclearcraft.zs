@@ -167,3 +167,14 @@ mods.nuclearcraft.chemical_reactor.removeAllRecipes();
 mods.nuclearcraft.extractor.removeAllRecipes();
 mods.nuclearcraft.centrifuge.removeAllRecipes();
 //mods.nuclearcraft.infuser.removeAllRecipes(); can add this after we moved recipes to chemical reactor
+
+//Basic plating implosion compressor recipe
+recipes.remove(<nuclearcraft:part>);
+val icompressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
+icompressor.recipeBuilder()
+	.inputs(<ore:ingotSteel> * 2, <ore:ingotCarbon> * 1)
+	.property("explosives", 1)
+	.outputs(<nuclearcraft:part> * 1)
+	.duration(20)
+	.EUt(32)
+	.buildAndRegister();
