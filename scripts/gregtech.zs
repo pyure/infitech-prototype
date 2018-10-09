@@ -213,6 +213,19 @@ alloy_smelter.recipeBuilder()		//Refactory Glass
 	.EUt(4)
 	.buildAndRegister();	
 	
+
+// Low-efficieny (high sanity) glass plate recipe
+alloy_smelter.recipeBuilder()		
+	.notConsumable(<metaitem:shape.mold.plate>)
+	.inputs(<ore:blockGlass> * 9)
+	.outputs(<ore:plateGlass>.firstItem * 1)
+	.duration(220)
+	.EUt(8)
+	.buildAndRegister();	
+  
+
+
+
 recipes.remove(dynamite);
 recipes.addShaped(dynamite, [
   [null, <ore:string>, null],
@@ -499,13 +512,13 @@ val custom_food_compost_map = {
   <ore:foodGourmetvenisonburger> : 4200*/
 } as int[IOreDictEntry];
 
-
+// Add compost for every food type
 for mod in loadedMods {
   for item in mod.items {
     if (item.isFood() && item.getHealAmount() > 0) {
       print("\t\t" ~ item.displayName);      
       
-      val food_value = 100 * (item.getSaturationModifier() + item.getHealAmount());
+      val food_value = 10 + (40 * (item.getSaturationModifier() + item.getHealAmount()));
       
       mixer.recipeBuilder()
         .fluidInputs([<liquid:water> * food_value])
@@ -542,7 +555,7 @@ centrifuge.recipeBuilder()
   .chancedOutput(pulpedBiomass, 2200)
   .chancedOutput(pulpedBiomass, 2200)
   .chancedOutput(pulpedBiomass, 2200)
-  .fluidOutputs(<liquid:methane> * 125)
+  .fluidOutputs(<liquid:methane> * 50)
   .duration(45)
   .EUt(12)
   .buildAndRegister();
@@ -583,6 +596,8 @@ chemical_reactor.recipeBuilder()
 	.duration(200)
 	.EUt(30)
 	.buildAndRegister();
+
+
 
 
 //Magnetite Ore/Dust
