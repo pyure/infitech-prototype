@@ -9,6 +9,7 @@ var wrench = <ore:craftingToolWrench>;
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 
 
 // These are covered by GT meta tools
@@ -562,3 +563,92 @@ recipes.addShaped("thermalfoundation_tool_hammer_aluminum", <thermalfoundation:t
 //Gunpowder
 recipes.removeByRecipeName("thermalfoundation:gunpowder");
 recipes.removeByRecipeName("thermalfoundation:gunpowder_1");
+
+//Pyrotheum
+var pyrotheum = <thermalfoundation:material:1024>;
+var petrotheum = <thermalfoundation:material:1027>;
+
+recipes.remove(petrotheum);
+
+var pyroArray = [
+<ore:ingotGold>,
+<ore:ingotIron>,
+<ore:ingotCopper>,
+<ore:ingotLead>,
+<ore:ingotNickel>,
+<ore:ingotPlatinum>,
+<ore:ingotSilver>,
+<ore:ingotTin>,
+<ore:ingotAluminum>,
+<ore:ingotIridium>,
+<ore:ingotMithril>,
+<ore:ingotThorium>,
+<ore:ingotUranium>,
+<ore:ingotBoron>,
+<ore:ingotLithium>,
+<ore:ingotMagnesium>,
+<ore:ingotTitanium>,
+<ore:ingotPalladium>,
+<ore:ingotNeodymium>,
+<ore:ingotNaquadahEnriched>,
+<ore:ingotBismuth>,
+<ore:ingotUranium235>,
+<ore:ingotOsmium>,
+<ore:ingotBeryllium>,
+<ore:ingotCobalt>,
+<ore:ingotNiobium>,
+<ore:ingotGraphite>,
+<ore:ingotAluminium>,
+<ore:ingotMolybdenum>,
+<ore:ingotZinc>,
+<ore:ingotNaquadah>] as IIngredient[];
+
+for i in pyroArray {
+	recipes.remove(i, pyrotheum);
+}
+
+//Upgrade and Conversion Kits
+var kit = [
+<thermalfoundation:upgrade>,
+<thermalfoundation:upgrade:1>,
+<thermalfoundation:upgrade:2>,
+<thermalfoundation:upgrade:3>,
+<thermalfoundation:upgrade:33>,
+<thermalfoundation:upgrade:34>,
+<thermalfoundation:upgrade:35>,
+<thermalfoundation:upgrade:256>] as IIngredient[];
+
+for i in kit {
+	mods.jei.JEI.removeAndHide(i);
+}
+
+//Hardened Glass
+var glassHardened = <thermalfoundation:glass:3>;
+recipes.remove(glassHardened);
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:dustGlass> * 1, <ore:dustObsidian> * 4)
+	.outputs(glassHardened * 2)
+	.duration(100)
+	.EUt(16)
+	.buildAndRegister();
+	
+var glassOutput = [<thermalfoundation:glass:0>, <thermalfoundation:glass:1>, <thermalfoundation:glass:2>, <thermalfoundation:glass:4>, <thermalfoundation:glass:5>, <thermalfoundation:glass:6>, <thermalfoundation:glass:7>, <thermalfoundation:glass:8>,
+<thermalfoundation:glass_alloy:0>, <thermalfoundation:glass_alloy:1>, <thermalfoundation:glass_alloy:2>, <thermalfoundation:glass_alloy:3>, <thermalfoundation:glass_alloy:4>, <thermalfoundation:glass_alloy:5>, <thermalfoundation:glass_alloy:6>, <thermalfoundation:glass_alloy:7>] as IItemStack[];
+
+var dustInput = [<ore:dustCopper>, <ore:dustTin>, <ore:dustSilver>, <ore:dustAluminium>, <ore:dustNickel>, <ore:dustPlatinum>, <ore:dustIridium>, <ore:dustMithril>, <ore:dustSteel>, <ore:dustElectrum>, <ore:dustInvar>, <ore:dustBronze>, <ore:dustConstantan>, <ore:dustSignalum>, <ore:dustLumium>, <ore:dustEnderium>] as IIngredient[];
+
+for i in glassOutput {
+	recipes.remove(i);
+}
+
+for i, item in glassOutput {
+	alloy_smelter.recipeBuilder()
+	.inputs([glassHardened * 2, dustInput[i] * 1])
+	.outputs([item*2])
+	.duration(80)
+	.EUt(16)
+	.buildAndRegister();
+}
+
+
+
