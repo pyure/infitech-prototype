@@ -67,6 +67,11 @@ var redstoneLogic = <rftools:logic_block>;
 var redstoneInvChecker = <rftools:invchecker_block>;
 var redstoneSensor = <rftools:sensor_block>;
 var redstoneWire = <rftools:wire_block>;
+var infusedEnderpearl = <rftools:infused_enderpearl>;
+var modularStorage = <rftools:modular_storage>;
+var screen = <rftools:screen>;
+var levelEmitter = <rftools:level_emitter>;
+var remoteStorage = <rftools:remote_storage>;
 
 var n_syringeIronGolem = syringe.withTag({mobName: "Iron Golem", level: 10, mobId: "minecraft:villager_golem"});
 var n_syringePolarBear = syringe.withTag({mobName: "Polar Bear", level: 10, mobId: "minecraft:polar_bear"});
@@ -125,6 +130,10 @@ var n_goldPickaxeEff3 = <minecraft:golden_pickaxe>.withTag({ench: [{lvl: 3 as sh
 var n_goldPickaxeEff5 = <minecraft:golden_pickaxe>.withTag({ench: [{lvl: 5 as short, id: 32 as short}]});
 var o_prismarine = <ore:gemPrismarine>;
 var o_netherQuartz = <ore:gemNetherQuartz>;
+var chest = <ore:chest>;
+var netherQuartz = <ore:gemNetherQuartz>;
+var enderPearl = <minecraft:ender_pearl>;
+var enderChest = <minecraft:ender_chest>;
 
 var n_enchantedBookEff1 = <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 32 as short}]});
 var n_enchantedBookEff3 = <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 32 as short}]});
@@ -185,6 +194,14 @@ var o_anyQuartz = <ore:craftingQuartz>;
 var batterySodiumLV = <metaitem:battery.re.lv.sodium>;
 var batterySodiumMV = <metaitem:battery.re.mv.sodium>;
 var emeraldLens = <ore:lensEmerald>;
+var o_smallSteelPipe = <ore:pipeSmallSteel>;
+var plateGlass = <ore:plateGlass>;
+var plateIron = <ore:plateIron>;
+var circuitBasic = <ore:circuitBasic>;
+var plateAluminium = <ore:plateAluminium>;
+var circuitAdvanced = <ore:circuitAdvanced>;
+var circuitData = <ore:circuitData>;
+var plateEnderium = <ore:plateEnderium>;
 // Tools
 var o_wrench = <ore:craftingToolWrench>;
 var o_hhammer = <ore:craftingToolHardHammer>;
@@ -221,10 +238,19 @@ chemical_reactor.recipeBuilder()
 	.EUt(30)
 	.buildAndRegister();
 
+recipes.remove(infusedEnderpearl);
+chemical_reactor.recipeBuilder()
+	.inputs([dimensionalShard * 8, o_enderPearl])
+	.fluidInputs([<liquid:radon> * 50])
+	.outputs(infusedEnderpearl)
+	.duration(100)
+	.EUt(30)
+	.buildAndRegister();	
+
 recipes.remove(syringe);
 recipes.addShaped(syringe, [
-	[o_tinySteelPipe, null, null],
-	[null, o_tinySteelPipe, null],
+	[o_smallSteelPipe, null, null],
+	[null, o_smallSteelPipe, null],
 	[null, null, o_bottle]]);
 
 recipes.remove(machineFrame);
@@ -541,3 +567,28 @@ recipes.addShaped(redstoneInvChecker, [
 	[null, o_primitiveCircuit, null],
 	[null, redstoneWire, null],
 	[null, comparator, null]]);
+
+recipes.remove(modularStorage);
+recipes.addShaped(modularStorage, [
+	[plateAluminium, chest, plateAluminium], 
+	[netherQuartz, machineFrame, netherQuartz], 
+	[plateAluminium, circuitAdvanced, plateAluminium]]);
+
+recipes.remove(remoteStorage);
+recipes.addShaped(remoteStorage, [
+	[plateEnderium, enderChest, plateEnderium], 
+	[netherQuartz, machineFrame, netherQuartz], 
+	[plateEnderium, circuitData, plateEnderium]]);
+
+recipes.remove(levelEmitter);
+recipes.addShaped(levelEmitter, [
+	[null, enderPearl, null],
+	[null, redstoneWire, null],
+	[null, comparator, null]]);
+
+recipes.remove(screen);
+recipes.addShaped(screen, [
+	[plateGlass, plateGlass, plateGlass],
+	[plateIron, machineBase, plateIron],
+	[circuitBasic, plateIron, circuitBasic]]);
+
