@@ -755,6 +755,9 @@ for block in <ore:blockUvarovite>.items {
 for block in <ore:blockPerlite>.items {
 	recipes.remove(block);
 }
+for block in <ore:blockCoal>.items {
+	recipes.remove(block);
+}
 
 compressor.recipeBuilder()
 	.inputs(<ore:ingotAluminium> * 9)
@@ -2238,5 +2241,10 @@ compressor.recipeBuilder()
 compressor.recipeBuilder()
 	.inputs(<ore:dustPerlite> * 9)
 	.outputs(<ore:blockPerlite>.firstItem)
+	.duration(400).EUt(2)
+	.buildAndRegister();
+compressor.recipeBuilder()
+	.inputs(<ore:coal> * 9)
+	.outputs(<ore:blockCoal>.firstItem)
 	.duration(400).EUt(2)
 	.buildAndRegister();

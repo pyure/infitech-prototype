@@ -3,7 +3,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemTransformer;
 import crafttweaker.item.IItemStack;
 import mods.contenttweaker.VanillaFactory;
-var bucket_latex = <forge:bucketfilled>.withTag({FluidName: "fluid_latex", Amount: 1000});
 
 var stick = <minecraft:stick>;
 var flint = <minecraft:flint:0>;
@@ -157,3 +156,7 @@ recipes.addShaped(<minecraft:chest>*4, [
   [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
   [<ore:logWood>, <ore:craftingToolSaw>, <ore:logWood>], 
   [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
+  
+ //Logs to sticks
+recipes.addShapedMirrored(<minecraft:stick>*4, [[<ore:logWood>], [<ore:logWood>]]);
+recipes.addShapedMirrored(<minecraft:stick>*8, [[oreSaw], [<ore:logWood>], [<ore:logWood>]]);

@@ -1,7 +1,7 @@
 {
   "canGenerateRivers": false,
-  "skyColor": 9477744,
-  "fogDensity": 0.3,
+  "skyColor": -1,
+  "fogDensity": 0.5,
   "hasBiomeEssence": true,
   "variationBelow": 1.0,
   "variationAbove": 5.0,
@@ -18,7 +18,7 @@
     "block": "biomesoplenty:dried_sand",
     "properties": {}
   },
-  "fogColor": 12106885,
+  "fogColor": 14409153,
   "canGenerateVillages": false,
   "canSpawnInBiome": false,
   "generators": {
@@ -75,21 +75,6 @@
           "snowy": "false"
         }
       }
-    },
-    "stone_formations": {
-      "minHeight": 1,
-      "with": {
-        "block": "biomesoplenty:stone_formations",
-        "properties": {
-          "position": "stalagmite_small",
-          "variant": "stone_formation"
-        }
-      },
-      "generationAttempts": 32,
-      "amountPerChunk": 30.0,
-      "maxHeight": 5,
-      "enable": true,
-      "randomDirection": true
     },
     "roots": {
       "with": {

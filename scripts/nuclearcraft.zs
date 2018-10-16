@@ -140,3 +140,41 @@ compressor.recipeBuilder()
 	.outputs(blockBeryllium)
 	.duration(400).EUt(2)
 	.buildAndRegister();
+  
+  
+
+scripts.functions.disableItem(<nuclearcraft:manufactory_idle>);
+scripts.functions.disableItem(<nuclearcraft:alloy_furnace_idle>);
+scripts.functions.disableItem(<nuclearcraft:melter_idle>);
+scripts.functions.disableItem(<nuclearcraft:electrolyser_idle>);
+scripts.functions.disableItem(<nuclearcraft:irradiator_idle>);
+scripts.functions.disableItem(<nuclearcraft:ingot_former_idle>);
+scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
+scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
+scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
+scripts.functions.disableItem(<nuclearcraft:centrifuge_idle>);
+scripts.functions.disableItem(<nuclearcraft:infuser_idle>);
+
+//Remove recipes from disabled machines
+mods.nuclearcraft.manufactory.removeAllRecipes();
+mods.nuclearcraft.alloy_furnace.removeAllRecipes();
+mods.nuclearcraft.melter.removeAllRecipes();
+mods.nuclearcraft.electrolyser.removeAllRecipes();
+mods.nuclearcraft.irradiator.removeAllRecipes();
+mods.nuclearcraft.ingot_former.removeAllRecipes();
+mods.nuclearcraft.pressurizer.removeAllRecipes();
+mods.nuclearcraft.chemical_reactor.removeAllRecipes();
+mods.nuclearcraft.extractor.removeAllRecipes();
+mods.nuclearcraft.centrifuge.removeAllRecipes();
+//mods.nuclearcraft.infuser.removeAllRecipes(); can add this after we moved recipes to chemical reactor
+
+//Basic plating implosion compressor recipe
+recipes.remove(<nuclearcraft:part>);
+val icompressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
+icompressor.recipeBuilder()
+	.inputs(<ore:ingotSteel> * 2, <ore:ingotCarbon> * 1)
+	.property("explosives", 1)
+	.outputs(<nuclearcraft:part> * 1)
+	.duration(20)
+	.EUt(32)
+	.buildAndRegister();

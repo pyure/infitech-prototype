@@ -5,6 +5,12 @@ import mods.gregtech.recipe.RecipeMap;
 var hammer = <ore:craftingToolHammer>;
 var wrench = <ore:craftingToolWrench>;
 
+//GT Machines
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
+
 
 // These are covered by GT meta tools
 recipes.remove(<thermalfoundation:tool.pickaxe_copper>);
@@ -94,7 +100,6 @@ recipes.remove(<thermalfoundation:material:327>);
 
 
 // GT Style block crafting
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
 var blockCopper = <thermalfoundation:storage>;
 var blockTin = <thermalfoundation:storage:1>;
@@ -156,139 +161,253 @@ compressor.recipeBuilder()
 
   
   
-var itemDuct = <thermaldynamics:duct_32>;
-var itemDuctOpaque =<thermaldynamics:duct_32:1>;
-var itemDuctImpulse = <thermaldynamics:duct_32:2>;
-var itemDuctImpulseOpaque = <thermaldynamics:duct_32:3>;
-var itemDuctSignalum = <thermaldynamics:duct_32:4>;
-var itemDuctSignalumOpaque = <thermaldynamics:duct_32:5>;
-var itemDuctSignalumImpulse = <thermaldynamics:duct_32:6>;
-var itemDuctSignalumImpulseOpaque = <thermaldynamics:duct_32:7>;
+var itemduct = <thermaldynamics:duct_32>;
+var itemductOpaque =<thermaldynamics:duct_32:1>;
+var itemductImpulse = <thermaldynamics:duct_32:2>;
+var itemductImpulseOpaque = <thermaldynamics:duct_32:3>;
+var itemductSignalum = <thermaldynamics:duct_32:4>;
+var itemductSignalumOpaque = <thermaldynamics:duct_32:5>;
+var itemductSignalumImpulse = <thermaldynamics:duct_32:6>;
+var itemductSignalumImpulseOpaque = <thermaldynamics:duct_32:7>;
 
 var fluiduct = <thermaldynamics:duct_16>;
 var fluiductOpaque = <thermaldynamics:duct_16:1>;
 var fluiductHardened = <thermaldynamics:duct_16:2>;
 var fluiductHardenedOpaque = <thermaldynamics:duct_16:3>;
+var fluiductSignalumPlated = <thermaldynamics:duct_16:4>;
+var fluiductSignalumPlatedOpaque = <thermaldynamics:duct_16:5>;
+var fluiductSuperLaminar = <thermaldynamics:duct_16:6>;
+var fluiductSuperLaminarOpaque = <thermaldynamics:duct_16:7>;
+
+var fluxductLeadstone = <thermaldynamics:duct_0>;
+var fluxductHardened = <thermaldynamics:duct_0:1>;
+var fluxductRedstoneEnergy = <thermaldynamics:duct_0:2>;
+var fluxductSignalum = <thermaldynamics:duct_0:3>;
+var fluxductResonant = <thermaldynamics:duct_0:4>;
+var fluxductCryoStabilized = <thermaldynamics:duct_0:5>;
+
+var fluxductRedstoneEnergyEmpty = <thermaldynamics:duct_0:6>;
+var fluxductSignalumEmpty = <thermaldynamics:duct_0:7>;
+var fluxductResonantEmpty = <thermaldynamics:duct_0:8>;
+var fluxductCryoStabilizedEmpty = <thermaldynamics:duct_0:9>;
+
+//Vacuum und Dense Itemducts
+for i in 0 to 5
+{
+	recipes.addShapeless(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 1 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
+	recipes.addShapeless(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 2 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetSilver>, <ore:nuggetSilver>, <ore:nuggetSilver>]);
+}
 
 // ItemDuct
-recipes.remove(itemDuct);
-recipes.addShaped("infitech_itemduct", itemDuct * 3, [
-  [<ore:ringAluminium>, <ore:blockGlassHardened>, <ore:ringAluminium>],
-  [null, wrench, null]]);
+recipes.remove(itemduct);
+recipes.addShaped("infitech_itemduct", itemduct * 3, [
+  [null,<ore:plateGlass>,null],
+  [<ore:pipeSmallSteel>,<minecraft:quartz>,<ore:pipeSmallSteel>],
+  [null,<ore:plateGlass>,null]]);
   
-// ItemDuct from Opaque Itemduct
-recipes.addShapeless("infitech_itemduct_from_opaque", itemDuct * 6, [itemDuctOpaque, itemDuctOpaque, itemDuctOpaque, itemDuctOpaque, itemDuctOpaque, itemDuctOpaque, <ore:blockGlassHardened>]);
+// ItemDuct Opaque
+recipes.remove(itemductOpaque);
+recipes.addShaped("infitech_opaqueduct", itemductOpaque * 3, [
+  [null,<ore:plateGlass>,null],
+  [<ore:pipeSmallSteel>,<ore:dustStone>,<ore:pipeSmallSteel>],
+  [null,<ore:plateGlass>,null]]);
   
-// ItemDuct Opaque 
-recipes.addShaped("infitech_opaqueduct", itemDuctOpaque * 3, [
-  [<ore:ringAluminium>, <ore:plateLead>, <ore:ringAluminium>],
-  [null, wrench, null]]);
-  
-// ItemDuct Opaque from Itemduct
-recipes.addShapeless("infitech_opaqueduct_from_duct", itemDuctOpaque * 6, [itemDuct, itemDuct, itemDuct, itemDuct, itemDuct, itemDuct, <ore:plateLead>]);
-
 // Impulse Itemduct
-recipes.remove(itemDuctImpulse);
-val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
+recipes.remove(itemductImpulse);
 fluid_canner.recipeBuilder()
-	.inputs(itemDuct)
-  .fluidInputs(<liquid:glowstone> * 100)
-	.outputs(itemDuctImpulse)
+	.inputs(itemduct)
+	.fluidInputs(<liquid:glowstone> * 144)
+	.outputs(itemductImpulse)
 	.duration(260)
-  .EUt(24)
+	.EUt(24)
 	.buildAndRegister();
 
 // Impulse Itemduct Opaque
-recipes.remove(itemDuctImpulse);
+recipes.remove(itemductImpulseOpaque);
 fluid_canner.recipeBuilder()
-	.inputs(itemDuctOpaque)
-  .fluidInputs(<liquid:glowstone> * 100)
-	.outputs(itemDuctImpulseOpaque)
+	.inputs(itemductOpaque)
+	.fluidInputs(<liquid:glowstone> * 144)
+	.outputs(itemductImpulseOpaque)
 	.duration(260)
-  .EUt(24)
+	.EUt(24)
 	.buildAndRegister();  
 
+/*
+// Signalum-Plated Itemduct
+recipes.remove(itemductSignalum);
+assembler.recipeBuilder()
+	.inputs(itemduct * 3, <ore:wireGtSingleElectrum> * 2)
+	.fluidInputs(<liquid:signalum> * 144)
+	.outputs(itemductSignalum * 3)
+	.duration(300)
+	.EUt(24)
+	.buildAndRegister();
+  
+// Opaque Signalum-Plated Itemduct
+recipes.remove(itemductSignalumOpaque);
+assembler.recipeBuilder()
+	.inputs(itemductOpaque * 3, <ore:wireGtSingleElectrum> * 2)
+	.fluidInputs(<liquid:signalum> * 144)
+	.outputs(itemductSignalumOpaque * 3)
+	.duration(300)
+	.EUt(24)
+	.buildAndRegister();
+
 // Signalum Plated Impulse Itemduct
+recipes.remove(itemductSignalumImpulse);
 fluid_canner.recipeBuilder()
-	.inputs(itemDuctSignalum)
-  .fluidInputs(<liquid:glowstone> * 100)
-	.outputs(itemDuctSignalumImpulse)
-	.duration(320)
-  .EUt(24)
+	.inputs(itemductSignalum)
+	.fluidInputs(<liquid:glowstone> * 144)
+	.outputs(itemductSignalumImpulse)
+	.duration(340)
+	.EUt(24)
 	.buildAndRegister();  
 
 // Signalum Plated Impulse Itemduct Opaque
+recipes.remove(itemductSignalumImpulseOpaque);
 fluid_canner.recipeBuilder()
-	.inputs(itemDuctSignalumOpaque)
-  .fluidInputs(<liquid:glowstone> * 100)
-	.outputs(itemDuctSignalumImpulseOpaque)
-	.duration(320)
-  .EUt(24)
+	.inputs(itemductSignalumOpaque)
+	.fluidInputs(<liquid:glowstone> * 144)
+	.outputs(itemductSignalumImpulseOpaque)
+	.duration(340)
+	.EUt(24)
 	.buildAndRegister();    
 
+*/
 
 // Fluiduct
 recipes.remove(fluiduct);
 recipes.addShaped("infitech_fluiduct", fluiduct * 3, [
-  [<ore:ringAluminium>, <ore:blockGlass>, <ore:ringAluminium>],
-  [null, wrench, null]]);
+  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>],
+  [<ore:pipeSmallBronze>,<minecraft:quartz>,<ore:pipeSmallBronze>],
+  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>]]);
 
 // Opaque Fluiduct
 recipes.remove(fluiductOpaque);
 recipes.addShaped("infitech_opaque_fluiduct", fluiductOpaque * 3, [
-  [<ore:ringAluminium>, <ore:dustStone>, <ore:ringAluminium>],
-  [null, wrench, null]]);
+  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>],
+  [<ore:pipeSmallBronze>,<minecraft:quartz>,<ore:pipeSmallBronze>],
+  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>]]);
+
 
 // Hardened Fluiduct
 recipes.remove(fluiductHardened);
 recipes.addShaped("infitech_hardened_fluiduct", fluiductHardened * 3, [
-  [<ore:ringStainlessSteel>, <ore:blockGlassHardened>, <ore:ringStainlessSteel>],
-  [null, wrench, null]]);
+  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>],
+  [<ore:pipeSmallStainlessSteel>,<minecraft:quartz>,<ore:pipeSmallStainlessSteel>],
+  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>]]);
 
 // Opaque Hardened Fluiduct
 recipes.remove(fluiductHardenedOpaque);
 recipes.addShaped("infitech_hardened_opaque_fluiduct", fluiductHardenedOpaque * 3, [
-  [<ore:ringStainlessSteel>, <ore:dustStone>, <ore:ringStainlessSteel>],
-  [null, wrench, null]]);
+  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>],
+  [<ore:pipeSmallStainlessSteel>,<minecraft:quartz>,<ore:pipeSmallStainlessSteel>],
+  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>]]);
+ 
+/* 
+// Signalum-Plated Fluiduct
+recipes.remove(fluiductSignalumPlated);
+assembler.recipeBuilder()
+	.inputs(fluiductHardened * 3, <ore:wireGtSingleElectrum> * 2)
+	.fluidInputs(<liquid:signalum> * 144)
+	.outputs(fluiductSignalumPlated * 3)
+	.duration(300)
+	.EUt(24)
+	.buildAndRegister();
   
-var advanced_circuit_part = <gregtech:meta_item_1:32715>;
+// Opaque Signalum-Plated Fluiduct
+recipes.remove(fluiductSignalumPlatedOpaque);
+assembler.recipeBuilder()
+	.inputs(fluiductHardenedOpaque * 3, <ore:wireGtSingleElectrum> * 2)
+	.fluidInputs(<liquid:signalum> * 144)
+	.outputs(fluiductSignalumPlatedOpaque * 3)
+	.duration(300)
+	.EUt(24)
+	.buildAndRegister();
+
+*/
+
+// Super-Laminar Fluiduct
+recipes.remove(fluiductSuperLaminar);
+assembler.recipeBuilder()
+	.inputs(<ore:pipeSmallTungstenSteel> * 2, <ore:dustGlass> * 4, <minecraft:quartz> * 3)
+	.fluidInputs(<liquid:enderium> * 144)
+	.outputs(fluiductSuperLaminar * 3)
+	.duration(400)
+	.EUt(24)
+	.buildAndRegister();
+
+// Opaque Super-Laminar Fluiduct
+recipes.remove(fluiductSuperLaminarOpaque);
+assembler.recipeBuilder()
+	.inputs(<ore:pipeSmallTungstenSteel> * 2, <ore:dustGlass> * 4, <ore:dustStone> * 3)
+	.fluidInputs(<liquid:enderium> * 144)
+	.outputs(fluiductSuperLaminarOpaque * 3)
+	.duration(400)
+	.EUt(24)
+	.buildAndRegister();
+
+//Remove Fluxduct
+recipes.remove(fluxductLeadstone);
+recipes.remove(fluxductHardened);
+recipes.remove(fluxductRedstoneEnergy);
+recipes.remove(fluxductSignalum);
+recipes.remove(fluxductResonant);
+recipes.remove(fluxductCryoStabilized);
+
+recipes.remove(fluxductRedstoneEnergyEmpty);
+recipes.remove(fluxductSignalumEmpty);
+recipes.remove(fluxductResonantEmpty);
+recipes.remove(fluxductCryoStabilizedEmpty);
+
+recipes.remove(itemductSignalum);
+recipes.remove(itemductSignalumOpaque);
+recipes.remove(itemductSignalumImpulse);
+recipes.remove(itemductSignalumImpulseOpaque);
+recipes.remove(fluiductSignalumPlated);
+recipes.remove(fluiductSignalumPlatedOpaque);
 
 var servo = <thermaldynamics:servo>;
 var hardened_servo = <thermaldynamics:servo:1>;
 var reinforced_servo = <thermaldynamics:servo:2>;
 var signalum_servo = <thermaldynamics:servo:3>;
 var resonant_servo = <thermaldynamics:servo:4>;
-var lapotron_chip = <gregtech:meta_item_1:32714>;
+
+var pump_lv = <gregtech:meta_item_1:32610>;
+var pump_mv = <gregtech:meta_item_1:32611>;
+var pump_hv = <gregtech:meta_item_1:32612>;
+var pump_ev = <gregtech:meta_item_1:32613>;
+var pump_iv = <gregtech:meta_item_1:32614>;
 
 // Servo
 recipes.remove(servo);
-recipes.addShaped("infitech_servo", servo * 2, [
-  [<ore:boltIron>, <ore:blockGlass>, <ore:boltIron>], 
-  [<ore:boltIron>, <ore:circuitPrimitive>, <ore:boltIron>]]);
+recipes.addShaped("infitech_servo", servo, [
+  [<minecraft:iron_nugget>, <minecraft:redstone>, <minecraft:iron_nugget>], 
+  [<minecraft:iron_ingot>, pump_lv, <minecraft:iron_ingot>]]);
   
 // Hardened Servo
 recipes.remove(hardened_servo);
-recipes.addShaped("infitech_hardened_servo", hardened_servo * 2, [
-  [<ore:boltSteel>, <ore:plateGlass>, <ore:boltSteel>], 
-  [<ore:boltSteel>, <ore:circuitPrimitive>, <ore:boltSteel>]]);
+recipes.addShaped("infitech_hardened_servo", hardened_servo, [
+  [<ore:nuggetInvar>, <minecraft:redstone>, <ore:nuggetInvar>], 
+  [<ore:ingotInvar>, pump_mv, <ore:ingotInvar>]]);
 
 // Reinforced Servo
 recipes.remove(reinforced_servo);
-recipes.addShaped("infitech_reinforced_servo", reinforced_servo * 2, [
-  [<ore:boltAluminium>, <ore:plateGlass>, <ore:boltAluminium>], 
-  [<ore:boltAluminium>, advanced_circuit_part, <ore:boltAluminium>]]);
+recipes.addShaped("infitech_reinforced_servo", reinforced_servo, [
+  [<ore:nuggetElectrum>, <minecraft:redstone>, <ore:nuggetElectrum>], 
+  [<ore:ingotElectrum>, pump_hv, <ore:ingotElectrum>]]);
   
-// Signalum Servo. NOT BALANCED YET.  We don't have a proper means of gating Signalum.
+// Signalum Servo.
 recipes.remove(signalum_servo);
-recipes.addShaped("infitech_signalum_servo", signalum_servo * 2, [
-  [<ore:boltSignalum>, <ore:plateGlass>, <ore:boltSignalum>], 
-  [<ore:boltSignalum>, advanced_circuit_part, <ore:boltSignalum>]]);
+recipes.addShaped("infitech_signalum_servo", signalum_servo, [
+  [<ore:nuggetSignalum>, <minecraft:redstone>, <ore:nuggetSignalum>], 
+  [<ore:ingotSignalum>, pump_ev, <ore:ingotSignalum>]]);
   
-// Enderium Servo.  Temporary.  Need to add a GT Material for Enderium
+// Enderium Servo
 recipes.remove(resonant_servo);
-recipes.addShaped("infitech_resonant_servo", resonant_servo * 2, [
-  [<ore:boltStainlessSteel>, <ore:plateGlass>, <ore:boltStainlessSteel>], 
-  [<ore:ingotEnderium>, lapotron_chip, <ore:ingotEnderium>]]);
+recipes.addShaped("infitech_resonant_servo", resonant_servo, [
+  [<ore:nuggetEnderium>, <minecraft:redstone>, <ore:nuggetEnderium>], 
+  [<ore:ingotEnderium>, pump_iv, <ore:ingotEnderium>]]);
 
 var retriever = <thermaldynamics:retriever>;
 var hardened_retriever = <thermaldynamics:retriever:1>;
@@ -299,44 +418,80 @@ var resonant_retriever = <thermaldynamics:retriever:4>;
 
 // Retriever
 recipes.remove(retriever);
-recipes.addShaped("infitech_retriever", retriever * 2, [
-  [<ore:boltSteel>, <ore:circuitPrimitive>, <ore:boltSteel>], 
-  [<ore:boltSteel>, <minecraft:ender_eye:*>, <ore:boltSteel>]]);
+recipes.addShaped("infitech_retriever", retriever, [
+  [<minecraft:iron_nugget>, pump_lv, <minecraft:iron_nugget>], 
+  [<minecraft:iron_ingot>, <minecraft:ender_eye:*>, <minecraft:iron_ingot>]]);
 
 // Hardened Retriever
 recipes.remove(hardened_retriever);
-recipes.addShaped("infitech_hardened_retriever", hardened_retriever * 2, [
-  [<ore:boltAluminium>, advanced_circuit_part, <ore:boltAluminium>], 
-  [<ore:boltAluminium>, <minecraft:ender_eye:*>, <ore:boltAluminium>]]);
+recipes.addShaped("infitech_hardened_retriever", hardened_retriever, [
+  [<ore:nuggetInvar>, pump_mv, <ore:nuggetInvar>], 
+  [<ore:ingotInvar>, <minecraft:ender_eye:*>, <ore:ingotInvar>]]);
 
 // Reinforced Retriever
 recipes.remove(reinforced_retriever);
-recipes.addShaped("infitech_reinforced_retriever", reinforced_retriever * 2, [
-  [<ore:boltStainlessSteel>, advanced_circuit_part, <ore:boltStainlessSteel>], 
-  [<ore:boltStainlessSteel>, <minecraft:ender_eye:*>, <ore:boltStainlessSteel>]]); 
+recipes.addShaped("infitech_reinforced_retriever", reinforced_retriever, [
+  [<ore:nuggetElectrum>, pump_hv, <ore:nuggetElectrum>], 
+  [<ore:ingotElectrum>, <minecraft:ender_eye:*>, <ore:ingotElectrum>]]); 
 
 // Signalum Retriever
 recipes.remove(signalum_retriever);
-recipes.addShaped("infitech_signalum_retriever", signalum_retriever * 2, [
-  [<ore:boltTungsten>, lapotron_chip, <ore:boltTungsten>], 
-  [<ore:boltTungsten>, <minecraft:ender_eye:*>, <ore:boltTungsten>]]); 
+recipes.addShaped("infitech_signalum_retriever", signalum_retriever, [
+  [<ore:nuggetSignalum>, pump_ev, <ore:nuggetSignalum>], 
+  [<ore:ingotSignalum>, <minecraft:ender_eye:*>, <ore:ingotSignalum>]]); 
   
 // Resonant Retriever
 recipes.remove(resonant_retriever);
-recipes.addShaped("infitech_resonant_retriever", resonant_retriever * 2, [
-  [<ore:boltTungstenSteel>, lapotron_chip, <ore:boltTungstenSteel>], 
-  [<ore:boltTungstenSteel>, <minecraft:ender_eye:*>, <ore:boltTungstenSteel>]]);  
+recipes.addShaped("infitech_resonant_retriever", resonant_retriever, [
+  [<ore:nuggetEnderium>, pump_iv, <ore:nuggetEnderium>], 
+  [<ore:ingotEnderium>, <minecraft:ender_eye:*>, <ore:ingotEnderium>]]);  
   
+var filter = <thermaldynamics:filter>;
+var hardened_filter = <thermaldynamics:filter:1>;
+var reinforced_filter = <thermaldynamics:filter:2>;
+var signalum_filter = <thermaldynamics:filter:3>;
+var resonant_filter = <thermaldynamics:filter:4>;
 
+var itemFilter = <gregtech:meta_item_1:32729>;
+
+// Filter
+recipes.remove(filter);
+recipes.addShaped("infitech_filter", filter, [
+  [<minecraft:iron_nugget>, <minecraft:paper>, <minecraft:iron_nugget>], 
+  [<minecraft:iron_ingot>, itemFilter, <minecraft:iron_ingot>]]);
+  
+// Hardened Filter
+recipes.remove(hardened_filter);
+recipes.addShaped("infitech_hardened_filter", hardened_filter, [
+  [<ore:nuggetInvar>, <minecraft:paper>, <ore:nuggetInvar>], 
+  [<ore:ingotInvar>, itemFilter, <ore:ingotInvar>]]);
+
+// Reinforced Filter
+recipes.remove(reinforced_filter);
+recipes.addShaped("infitech_reinforced_filter", reinforced_filter, [
+  [<ore:nuggetElectrum>, <minecraft:paper>, <ore:nuggetElectrum>], 
+  [<ore:ingotElectrum>, itemFilter, <ore:ingotElectrum>]]);
+  
+// Signalum Filter
+recipes.remove(signalum_filter);
+recipes.addShaped("infitech_signalum_filter", signalum_filter, [
+  [<ore:nuggetSignalum>, <minecraft:paper>, <ore:nuggetSignalum>], 
+  [<ore:ingotSignalum>, itemFilter, <ore:ingotSignalum>]]);
+  
+// Enderium Filter
+recipes.remove(resonant_filter);
+recipes.addShaped("infitech_resonant_filter", resonant_filter	, [
+  [<ore:nuggetEnderium>, <minecraft:paper>, <ore:nuggetEnderium>], 
+  [<ore:ingotEnderium>, itemFilter, <ore:ingotEnderium>]]);
 
 // COIN VARIABLES
-var coinIridium = <ore:coinIridium>.firstItem;
-var coinPlatinum = <ore:coinPlatinum>.firstItem;
-var coinGold = <ore:coinGold>.firstItem;
-var coinSilver = <ore:coinSilver>.firstItem;
-var coinConstantan = <ore:coinConstantan>.firstItem;
-var coinIron = <ore:coinIron>.firstItem;
-var coinCopper = <ore:coinCopper>.firstItem;
+var coinIridium = <thermalfoundation:coin:71>;
+var coinPlatinum = <thermalfoundation:coin:70>;
+var coinGold = <thermalfoundation:coin:1>;
+var coinSilver = <thermalfoundation:coin:66>;
+var coinConstantan = <thermalfoundation:coin:100>;
+var coinIron = <thermalfoundation:coin>;
+var coinCopper = <thermalfoundation:coin:64>;
 
 // COIN TOOLTIPS
 <ore:coinIridium>.addTooltip(format.green("1 Iridium = 262,144 Copper"));
@@ -354,6 +509,146 @@ recipes.addShapeless(coinGold, [coinSilver, coinSilver, coinSilver, coinSilver, 
 recipes.addShapeless(coinSilver, [coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan]);
 recipes.addShapeless(coinConstantan, [coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron]);
 recipes.addShapeless(coinIron, [coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper]);
+
+recipes.addShapeless(coinPlatinum * 8, [coinIridium]);
+recipes.addShapeless(coinGold * 8, [coinPlatinum]);
+recipes.addShapeless(coinSilver * 8, [coinGold]);
+recipes.addShapeless(coinConstantan * 8, [coinSilver]);
+recipes.addShapeless(coinIron * 8, [coinConstantan]);
+recipes.addShapeless(coinCopper * 8, [coinIron]);
+
+var dustConstantan = <thermalfoundation:material:100>;
+recipes.remove(dustConstantan);
+
+// Hammers require steel rods
+recipes.remove(<thermalfoundation:tool.hammer_wood>);
+recipes.remove(<thermalfoundation:tool.hammer_stone>);
+recipes.remove(<thermalfoundation:tool.hammer_iron>);
+recipes.remove(<thermalfoundation:tool.hammer_gold>);
+recipes.remove(<thermalfoundation:tool.hammer_diamond>);
+recipes.remove(<thermalfoundation:tool.hammer_copper>);
+recipes.remove(<thermalfoundation:tool.hammer_tin>);
+recipes.remove(<thermalfoundation:tool.hammer_silver>);
+recipes.remove(<thermalfoundation:tool.hammer_lead>);
+recipes.remove(<thermalfoundation:tool.hammer_aluminum>);
+recipes.remove(<thermalfoundation:tool.hammer_nickel>);
+recipes.remove(<thermalfoundation:tool.hammer_platinum>);
+recipes.remove(<thermalfoundation:tool.hammer_steel>);
+recipes.remove(<thermalfoundation:tool.hammer_electrum>);
+recipes.remove(<thermalfoundation:tool.hammer_invar>);
+recipes.remove(<thermalfoundation:tool.hammer_bronze>);
+recipes.remove(<thermalfoundation:tool.hammer_constantan>);
+
+// TIER I Hammers
+recipes.addShaped("thermalfoundation_tool_hammer_gold", <thermalfoundation:tool.hammer_gold>, [[<ore:plateGold>, <ore:stickWroughtIron>, <ore:plateGold>], [<ore:plateGold>, <ore:stickSteel>, <ore:plateGold>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_silver", <thermalfoundation:tool.hammer_silver>, [[<ore:plateSilver>, <ore:stickSteel>, <ore:plateSilver>], [<ore:plateSilver>, <ore:stickSteel>, <ore:plateSilver>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_tin", <thermalfoundation:tool.hammer_tin>, [[<ore:plateTin>, <ore:stickSteel>, <ore:plateTin>], [<ore:plateTin>, <ore:stickSteel>, <ore:plateTin>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_copper", <thermalfoundation:tool.hammer_copper>, [[<ore:plateCopper>, <ore:stickSteel>, <ore:plateCopper>], [<ore:plateCopper>, <ore:stickSteel>, <ore:plateCopper>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_lead", <thermalfoundation:tool.hammer_lead>, [[<ore:plateLead>, <ore:stickSteel>, <ore:plateLead>], [<ore:plateLead>, <ore:stickSteel>, <ore:plateLead>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_nickel", <thermalfoundation:tool.hammer_nickel>, [[<ore:plateNickel>, <ore:stickSteel>, <ore:plateNickel>], [<ore:plateNickel>, <ore:stickSteel>, <ore:plateNickel>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_iron", <thermalfoundation:tool.hammer_iron>, [[<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [null, <ore:stickSteel>, null]]);
+
+// TIER II Hammers
+recipes.addShaped("thermalfoundation_tool_hammer_constantan", <thermalfoundation:tool.hammer_constantan>, [[<ore:plateConstantan>, <ore:stickStainlessSteel>, <ore:plateConstantan>], [<ore:plateConstantan>, <ore:stickStainlessSteel>, <ore:plateConstantan>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_bronze", <thermalfoundation:tool.hammer_bronze>, [[<ore:plateBronze>, <ore:stickStainlessSteel>, <ore:plateBronze>], [<ore:plateBronze>, <ore:stickStainlessSteel>, <ore:plateBronze>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_electrum", <thermalfoundation:tool.hammer_electrum>, [[<ore:plateElectrum>, <ore:stickStainlessSteel>, <ore:plateElectrum>], [<ore:plateElectrum>, <ore:stickStainlessSteel>, <ore:plateElectrum>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_invar", <thermalfoundation:tool.hammer_invar>, [[<ore:plateInvar>, <ore:stickStainlessSteel>, <ore:plateInvar>], [<ore:plateInvar>, <ore:stickStainlessSteel>, <ore:plateInvar>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_steel", <thermalfoundation:tool.hammer_steel>, [[<ore:plateSteel>, <ore:stickStainlessSteel>, <ore:plateSteel>], [<ore:plateSteel>, <ore:stickStainlessSteel>, <ore:plateSteel>], [null, <ore:stickStainlessSteel>, null]]);
+
+// TIER III Hammers
+recipes.addShaped("thermalfoundation_tool_hammer_diamond", <thermalfoundation:tool.hammer_diamond>, [[<ore:plateDiamond>, <ore:stickTungstenSteel>, <ore:plateDiamond>], [<ore:plateDiamond>, <ore:stickTungstenSteel>, <ore:plateDiamond>], [null, <ore:stickTungstenSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_platinum", <thermalfoundation:tool.hammer_platinum>, [[<ore:platePlatinum>, <ore:stickTungstenSteel>, <ore:platePlatinum>], [<ore:platePlatinum>, <ore:stickTungstenSteel>, <ore:platePlatinum>], [null, <ore:stickTungstenSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_hammer_aluminum", <thermalfoundation:tool.hammer_aluminum>, [[<ore:plateAluminum>, <ore:stickTungstenSteel>, <ore:plateAluminum>], [<ore:plateAluminum>, <ore:stickTungstenSteel>, <ore:plateAluminum>], [null, <ore:stickTungstenSteel>, null]]);
+
+//Gunpowder
+recipes.removeByRecipeName("thermalfoundation:gunpowder");
+recipes.removeByRecipeName("thermalfoundation:gunpowder_1");
+
+//Pyrotheum
+var pyrotheum = <thermalfoundation:material:1024>;
+var petrotheum = <thermalfoundation:material:1027>;
+
+recipes.remove(petrotheum);
+
+var pyroArray = [
+<ore:ingotGold>,
+<ore:ingotIron>,
+<ore:ingotCopper>,
+<ore:ingotLead>,
+<ore:ingotNickel>,
+<ore:ingotPlatinum>,
+<ore:ingotSilver>,
+<ore:ingotTin>,
+<ore:ingotAluminum>,
+<ore:ingotIridium>,
+<ore:ingotMithril>,
+<ore:ingotThorium>,
+<ore:ingotUranium>,
+<ore:ingotBoron>,
+<ore:ingotLithium>,
+<ore:ingotMagnesium>,
+<ore:ingotTitanium>,
+<ore:ingotPalladium>,
+<ore:ingotNeodymium>,
+<ore:ingotNaquadahEnriched>,
+<ore:ingotBismuth>,
+<ore:ingotUranium235>,
+<ore:ingotOsmium>,
+<ore:ingotBeryllium>,
+<ore:ingotCobalt>,
+<ore:ingotNiobium>,
+<ore:ingotGraphite>,
+<ore:ingotAluminium>,
+<ore:ingotMolybdenum>,
+<ore:ingotZinc>,
+<ore:ingotNaquadah>] as IIngredient[];
+
+for i in pyroArray {
+	recipes.remove(i, pyrotheum);
+}
+
+//Upgrade and Conversion Kits
+var kit = [
+<thermalfoundation:upgrade>,
+<thermalfoundation:upgrade:1>,
+<thermalfoundation:upgrade:2>,
+<thermalfoundation:upgrade:3>,
+<thermalfoundation:upgrade:33>,
+<thermalfoundation:upgrade:34>,
+<thermalfoundation:upgrade:35>,
+<thermalfoundation:upgrade:256>] as IIngredient[];
+
+for i in kit {
+	mods.jei.JEI.removeAndHide(i);
+}
+
+//Hardened Glass
+var glassHardened = <thermalfoundation:glass:3>;
+recipes.remove(glassHardened);
+alloy_smelter.recipeBuilder()
+	.inputs(<ore:dustGlass> * 1, <ore:dustObsidian> * 4)
+	.outputs(glassHardened * 2)
+	.duration(100)
+	.EUt(16)
+	.buildAndRegister();
+	
+var glassOutput = [<thermalfoundation:glass:0>, <thermalfoundation:glass:1>, <thermalfoundation:glass:2>, <thermalfoundation:glass:4>, <thermalfoundation:glass:5>, <thermalfoundation:glass:6>, <thermalfoundation:glass:7>, <thermalfoundation:glass:8>,
+<thermalfoundation:glass_alloy:0>, <thermalfoundation:glass_alloy:1>, <thermalfoundation:glass_alloy:2>, <thermalfoundation:glass_alloy:3>, <thermalfoundation:glass_alloy:4>, <thermalfoundation:glass_alloy:5>, <thermalfoundation:glass_alloy:6>, <thermalfoundation:glass_alloy:7>] as IItemStack[];
+
+var dustInput = [<ore:dustCopper>, <ore:dustTin>, <ore:dustSilver>, <ore:dustAluminium>, <ore:dustNickel>, <ore:dustPlatinum>, <ore:dustIridium>, <ore:dustMithril>, <ore:dustSteel>, <ore:dustElectrum>, <ore:dustInvar>, <ore:dustBronze>, <ore:dustConstantan>, <ore:dustSignalum>, <ore:dustLumium>, <ore:dustEnderium>] as IIngredient[];
+
+for i in glassOutput {
+	recipes.remove(i);
+}
+
+for i, item in glassOutput {
+	alloy_smelter.recipeBuilder()
+	.inputs([glassHardened * 2, dustInput[i] * 1])
+	.outputs([item*2])
+	.duration(80)
+	.EUt(16)
+	.buildAndRegister();
+}
 
 
 

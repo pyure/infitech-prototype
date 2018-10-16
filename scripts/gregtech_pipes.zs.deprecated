@@ -1,0 +1,70 @@
+var pipeTinyCopper = <gregtech:fluid_pipe_copper:0>;
+var pipeTinyBronze = <gregtech:fluid_pipe_bronze:0>;
+var pipeTinySteel = <gregtech:fluid_pipe_steel:0>;
+var pipeTinyStainless_Steel = <gregtech:fluid_pipe_stainless_steel:0>;
+var pipeTinyPlastic = <gregtech:fluid_pipe_plastic:0>;
+var pipeTinyPolytetrafluoroethylene = <gregtech:fluid_pipe_polytetrafluoroethylene:0>;
+var pipeTinyTungstensteel = <gregtech:fluid_pipe_tungsten_steel:0>;
+var pipeTinyTitanium = <gregtech:fluid_pipe_titanium:0>;
+var pipeSmallCopper = <gregtech:fluid_pipe_copper:1>;
+var pipeSmallBronze = <gregtech:fluid_pipe_bronze:1>;
+var pipeSmallSteel = <gregtech:fluid_pipe_steel:1>;
+var pipeSmallStainless_Steel = <gregtech:fluid_pipe_stainless_steel:1>;
+var pipeSmallPlastic = <gregtech:fluid_pipe_plastic:1>;
+var pipeSmallPolytetrafluoroethylene = <gregtech:fluid_pipe_polytetrafluoroethylene:1>;
+var pipeSmallTungstensteel = <gregtech:fluid_pipe_tungsten_steel:1>;
+var pipeSmallTitanium = <gregtech:fluid_pipe_titanium:1>;
+var pipeMediumCopper = <gregtech:fluid_pipe_copper:2>;
+var pipeMediumBronze = <gregtech:fluid_pipe_bronze:2>;
+var pipeMediumSteel = <gregtech:fluid_pipe_steel:2>;
+var pipeMediumStainless_Steel = <gregtech:fluid_pipe_stainless_steel:2>;
+var pipeMediumPlastic = <gregtech:fluid_pipe_plastic:2>;
+var pipeMediumPolytetrafluoroethylene = <gregtech:fluid_pipe_polytetrafluoroethylene:2>;
+var pipeMediumTungstensteel = <gregtech:fluid_pipe_tungsten_steel:2>;
+var pipeMediumTitanium = <gregtech:fluid_pipe_titanium:2>;
+var pipeLargeCopper = <gregtech:fluid_pipe_copper:3>;
+var pipeLargeBronze = <gregtech:fluid_pipe_bronze:3>;
+var pipeLargeSteel = <gregtech:fluid_pipe_steel:3>;
+var pipeLargeStainless_Steel = <gregtech:fluid_pipe_stainless_steel:3>;
+var pipeLargePlastic = <gregtech:fluid_pipe_plastic:3>;
+var pipeLargePolytetrafluoroethylene = <gregtech:fluid_pipe_polytetrafluoroethylene:3>;
+var pipeLargeTungstensteel = <gregtech:fluid_pipe_tungsten_steel:3>;
+var pipeLargeTitanium = <gregtech:fluid_pipe_titanium:3>;
+var pipeHugeCopper = <gregtech:fluid_pipe_copper:4>;
+var pipeHugeBronze = <gregtech:fluid_pipe_bronze:4>;
+var pipeHugeSteel = <gregtech:fluid_pipe_steel:4>;
+var pipeHugeStainless_Steel = <gregtech:fluid_pipe_stainless_steel:4>;
+var pipeHugePlastic = <gregtech:fluid_pipe_plastic:4>;
+var pipeHugePolytetrafluoroethylene = <gregtech:fluid_pipe_polytetrafluoroethylene:4>;
+var pipeHugeTungstensteel = <gregtech:fluid_pipe_tungsten_steel:4>;
+var pipeHugeTitanium = <gregtech:fluid_pipe_titanium:4>;
+
+
+
+
+recipes.addShaped(pipeSmallCopper *6, [[<ore:plateCopper>, <ore:craftingToolWrench>, <ore:plateCopper>],[<ore:plateCopper>, null, <ore:plateCopper> ], [<ore:plateCopper>, <ore:craftingToolHardHammer>, <ore:plateCopper>]]);
+recipes.addShaped(pipeSmallBronze *6, [[<ore:plateBronze>, <ore:craftingToolWrench>, <ore:plateBronze>],[<ore:plateBronze>, null, <ore:plateBronze> ], [<ore:plateBronze>, <ore:craftingToolHardHammer>, <ore:plateBronze>]]);
+recipes.addShaped(pipeSmallSteel *6, [[<ore:plateSteel>, <ore:craftingToolWrench>, <ore:plateSteel>],[<ore:plateSteel>, null, <ore:plateSteel> ], [<ore:plateSteel>, <ore:craftingToolHardHammer>, <ore:plateSteel>]]);
+recipes.addShaped(pipeSmallStainless_Steel *6, [[<ore:plateStainless_Steel>, <ore:craftingToolWrench>, <ore:plateStainless_Steel>],[<ore:plateStainless_Steel>, null, <ore:plateStainless_Steel> ], [<ore:plateStainless_Steel>, <ore:craftingToolHardHammer>, <ore:plateStainless_Steel>]]);
+recipes.addShaped(pipeSmallPlastic *6, [[<ore:platePlastic>, <ore:craftingToolWrench>, <ore:platePlastic>],[<ore:platePlastic>, null, <ore:platePlastic> ], [<ore:platePlastic>, <ore:craftingToolHardHammer>, <ore:platePlastic>]]);
+recipes.addShaped(pipeSmallPolytetrafluoroethylene *6, [[<ore:platePolytetrafluoroethylene>, <ore:craftingToolWrench>, <ore:platePolytetrafluoroethylene>],[<ore:platePolytetrafluoroethylene>, null, <ore:platePolytetrafluoroethylene> ], [<ore:platePolytetrafluoroethylene>, <ore:craftingToolHardHammer>, <ore:platePolytetrafluoroethylene>]]);
+recipes.addShaped(pipeSmallTungstensteel *6, [[<ore:plateTungstensteel>, <ore:craftingToolWrench>, <ore:plateTungstensteel>],[<ore:plateTungstensteel>, null, <ore:plateTungstensteel> ], [<ore:plateTungstensteel>, <ore:craftingToolHardHammer>, <ore:plateTungstensteel>]]);
+recipes.addShaped(pipeSmallTitanium *6, [[<ore:plateTitanium>, <ore:craftingToolWrench>, <ore:plateTitanium>],[<ore:plateTitanium>, null, <ore:plateTitanium> ], [<ore:plateTitanium>, <ore:craftingToolHardHammer>, <ore:plateTitanium>]]);
+
+recipes.addShaped(pipeMediumCopper *2, [[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],[<ore:craftingToolWrench>, null, <ore:craftingToolHardHammer> ],[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]); 
+recipes.addShaped(pipeMediumBronze *2, [[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],[<ore:craftingToolWrench>, null, <ore:craftingToolHardHammer> ],[<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>]]); 
+recipes.addShaped(pipeMediumSteel *2, [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],[<ore:craftingToolWrench>, null, <ore:craftingToolHardHammer> ],[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]); 
+recipes.addShaped(pipeMediumStainless_Steel *2, [[<ore:plateStainless_Steel>, <ore:plateStainless_Steel>, <ore:plateStainless_Steel>],[<ore:craftingToolWrench>, null, <ore:craftingToolHardHammer> ],[<ore:plateStainless_Steel>, <ore:plateStainless_Steel>, <ore:plateStainless_Steel>]]); 
+recipes.addShaped(pipeMediumPlastic *2, [[<ore:platePlastic>, <ore:platePlastic>, <ore:platePlastic>],[<ore:craftingToolWrench>, null, <ore:craftingToolHardHammer> ],[<ore:platePlastic>, <ore:platePlastic>, <ore:platePlastic>]]); 
+recipes.addShaped(pipeMediumPolytetrafluoroethylene *2, [[<ore:platePolytetrafluoroethylene>, <ore:platePolytetrafluoroethylene>, <ore:platePolytetrafluoroethylene>],[<ore:craftingToolWrench>, null, <ore:craftingToolHardHammer> ],[<ore:platePolytetrafluoroethylene>, <ore:platePolytetrafluoroethylene>, <ore:platePolytetrafluoroethylene>]]); 
+recipes.addShaped(pipeMediumTungstensteel *2, [[<ore:plateTungstensteel>, <ore:plateTungstensteel>, <ore:plateTungstensteel>],[<ore:craftingToolWrench>, null, <ore:craftingToolHardHammer> ],[<ore:plateTungstensteel>, <ore:plateTungstensteel>, <ore:plateTungstensteel>]]); 
+recipes.addShaped(pipeMediumTitanium *2, [[<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>],[<ore:craftingToolWrench>, null, <ore:craftingToolHardHammer> ],[<ore:plateTitanium>, <ore:plateTitanium>, <ore:plateTitanium>]]); 
+
+recipes.addShaped(pipeLargeBronze *1, [[<ore:plateCopper>, <ore:craftingToolHardHammer>, <ore:plateCopper>],[<ore:plateCopper>, null, <ore:plateCopper> ],[<ore:plateCopper>, <ore:craftingToolWrench>, <ore:plateCopper>]]);
+recipes.addShaped(pipeLargeBronze *1, [[<ore:plateBronze>, <ore:craftingToolHardHammer>, <ore:plateBronze>],[<ore:plateBronze>, null, <ore:plateBronze> ],[<ore:plateBronze>, <ore:craftingToolWrench>, <ore:plateBronze>]]);
+recipes.addShaped(pipeLargeBronze *1, [[<ore:plateSteel>, <ore:craftingToolHardHammer>, <ore:plateSteel>],[<ore:plateSteel>, null, <ore:plateSteel> ],[<ore:plateSteel>, <ore:craftingToolWrench>, <ore:plateSteel>]]);
+recipes.addShaped(pipeLargeBronze *1, [[<ore:plateStainless_Steel>, <ore:craftingToolHardHammer>, <ore:plateStainless_Steel>],[<ore:plateStainless_Steel>, null, <ore:plateStainless_Steel> ],[<ore:plateStainless_Steel>, <ore:craftingToolWrench>, <ore:plateStainless_Steel>]]);
+recipes.addShaped(pipeLargeBronze *1, [[<ore:platePlastic>, <ore:craftingToolHardHammer>, <ore:platePlastic>],[<ore:platePlastic>, null, <ore:platePlastic> ],[<ore:platePlastic>, <ore:craftingToolWrench>, <ore:platePlastic>]]);
+recipes.addShaped(pipeLargeBronze *1, [[<ore:platePolytetrafluoroethylene>, <ore:craftingToolHardHammer>, <ore:platePolytetrafluoroethylene>],[<ore:platePolytetrafluoroethylene>, null, <ore:platePolytetrafluoroethylene> ],[<ore:platePolytetrafluoroethylene>, <ore:craftingToolWrench>, <ore:platePolytetrafluoroethylene>]]);
+recipes.addShaped(pipeLargeBronze *1, [[<ore:plateTungstensteel>, <ore:craftingToolHardHammer>, <ore:plateTungstensteel>],[<ore:plateTungstensteel>, null, <ore:plateTungstensteel> ],[<ore:plateTungstensteel>, <ore:craftingToolWrench>, <ore:plateTungstensteel>]]);
+recipes.addShaped(pipeLargeBronze *1, [[<ore:plateTitanium>, <ore:craftingToolHardHammer>, <ore:plateTitanium>],[<ore:plateTitanium>, null, <ore:plateTitanium> ],[<ore:plateTitanium>, <ore:craftingToolWrench>, <ore:plateTitanium>]]);

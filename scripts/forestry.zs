@@ -7,35 +7,31 @@ recipes.remove(<forestry:bronze_pickaxe>);
 recipes.remove(<forestry:bronze_shovel>);
 
 
-// BRONZE
-var dustBronze = <thermalfoundation:material:99>;
-
-recipes.remove(dustBronze * 4);
-recipes.addShapeless(dustBronze * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
-
-recipes.remove(<forestry:ingot_bronze> * 4);
-
 // Gears
-recipes.removeShaped(<forestry:gear_bronze>, [
-	[null, <ore:ingotBronze>, null],
-	[<ore:ingotBronze>, <ore:ingotCopper>, <ore:ingotBronze>],
-	[null, <ore:ingotBronze>, null]]);
+recipes.remove(<forestry:gear_bronze>);
+recipes.addShaped(<ore:gearBronze>.firstItem, [
+  [<ore:stickBronze>, <ore:plateBronze>, <ore:stickBronze>], 
+  [<ore:plateBronze>, <ore:craftingToolScrewdriver>, <ore:plateBronze>], 
+  [<ore:stickBronze>, <ore:plateBronze>, <ore:stickBronze>]]);
 
-recipes.removeShaped(<forestry:gear_copper>, [
-	[null, <ore:ingotCopper>, null],
-	[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
-	[null, <ore:ingotCopper>, null]]);
+recipes.remove(<forestry:gear_copper>);
+recipes.addShaped(<ore:gearCopper>.firstItem, [
+  [<ore:stickCopper>, <ore:plateCopper>, <ore:stickCopper>], 
+  [<ore:plateCopper>, <ore:craftingToolScrewdriver>, <ore:plateCopper>], 
+  [<ore:stickCopper>, <ore:plateCopper>, <ore:stickCopper>]]);
+  
+recipes.remove(<forestry:gear_tin>);
+recipes.addShaped(<ore:gearTin>.firstItem, [
+  [<ore:stickTin>, <ore:plateTin>, <ore:stickTin>], 
+  [<ore:plateTin>, <ore:craftingToolScrewdriver>, <ore:plateTin>], 
+  [<ore:stickTin>, <ore:plateTin>, <ore:stickTin>]]);  
 
-recipes.removeShaped(<forestry:gear_tin>, [
-	[null, <ore:ingotTin>, null],
-	[<ore:ingotTin>, <ore:ingotCopper>, <ore:ingotTin>],
-	[null, <ore:ingotTin>, null]]);
 
 // WOOD PILES
 var woodPile = <forestry:wood_pile>;
 
 recipes.remove(woodPile);
-recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
+recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
 
 // GT Style block crafting
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
@@ -57,3 +53,20 @@ recipes.remove(blockCopper);
 recipes.remove(blockTin);
 recipes.remove(blockBronze);
 recipes.remove(<forestry:charcoal>);
+
+// Disable forestry scoop in lieue of GT version
+scripts.functions.disableItem(<forestry:scoop>);
+
+// Smoker requires flint and steel
+
+var smoker = <forestry:smoker>;
+recipes.remove(smoker);
+recipes.addShaped("forestry_smoker", smoker, [[<ore:leather>, <ore:stickWood>, <ore:stickTin>], [<ore:leather>, <forestry:ash>, <ore:plateTin>], [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
+
+//Worktable
+var worktable = <forestry:worktable>;
+recipes.remove(worktable);
+recipes.addShaped("forestry_worktable", worktable, [
+[<ore:screwIron>, <minecraft:book>, <ore:screwIron>],
+[<ore:craftingToolSaw>, <minecraft:crafting_table>, <ore:craftingToolScrewdriver>],
+[<ore:screwIron>, <ore:chestWood>, <ore:screwIron>]]);

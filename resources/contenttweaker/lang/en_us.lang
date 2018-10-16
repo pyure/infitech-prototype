@@ -37,11 +37,17 @@ item.contenttweaker.coal_chunk.name=Coal Chunk
 item.contenttweaker.coal_ball.name=Coal Ball
 
 tile.contenttweaker.dried_spruce_log.name=Dried Spruce Log
-item.contenttweaker.gelled_toluene.name=Gelled Toluene
 
-// FLUIDS
-fluid.fluid_latex=Latex
-fluid.fluorine=Fluorine
-fluid.uranium_hexafluoride=Uranium Hexafluoride
-fluid.fish_oil=Fish Oil
-fluid.fermented_biomass=Fermented Biomass
+// MATERIALS
+material.uranium_hexafluoride=Uranium Hexafluoride
+material.fish_oil=Fish Oil
+material.fermented_biomass=Fermented Biomass
+material.enderium=Enderium
+material.signalum=Signalum
+material.blue_alloy=Blue Alloy
+material.enderium_base=Enderium Base
+material.ammonia=Ammonia
+
+// BLOCKS
+tile.contenttweaker.cokebrick.name=Coke Oven Brick
+
