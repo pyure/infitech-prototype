@@ -20,6 +20,7 @@ val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
 val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
 val packer as RecipeMap = RecipeMap.getByName("packer");
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -31,7 +32,7 @@ blast_furnace.recipeBuilder()
 	.fluidInputs([<liquid:oxygen> * 500])
 	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 1)
 	.property("temperature", 1000)
-	.duration(480)
+	.duration(360)
 	.EUt(120)
 	.buildAndRegister();
 
@@ -40,7 +41,7 @@ blast_furnace.recipeBuilder()
 	.fluidInputs([<liquid:oxygen> * 1000])
 	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
 	.property("temperature", 1000)
-	.duration(560)
+	.duration(600)
 	.EUt(120)
 	.buildAndRegister();
 
@@ -49,7 +50,7 @@ blast_furnace.recipeBuilder()
 	.fluidInputs([<liquid:oxygen> * 1000])
 	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
 	.property("temperature", 1000)
-	.duration(560)
+	.duration(600)
 	.EUt(120)
 	.buildAndRegister();
 
@@ -58,7 +59,7 @@ blast_furnace.recipeBuilder()
 	.fluidInputs([<liquid:oxygen> * 1000])
 	.outputs(<ore:ingotSteelGt>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 3)
 	.property("temperature", 1000)
-	.duration(800)
+	.duration(1000)
 	.EUt(120)
 	.buildAndRegister();
 
@@ -87,7 +88,7 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
+//compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
 
 recipes.addShaped(coal_ball, [
   [coal_dust, coal_dust, coal_dust],
@@ -150,8 +151,22 @@ cutting_saw.recipeBuilder()
   .EUt(2)
   .buildAndRegister();
 
-var dynamite = <gregtech:meta_item_1:32629>;
+var dynamite = <metaitem:dynamite>;
+recipes.remove(dynamite);
 
+recipes.addShaped(dynamite, [
+  [null, <ore:string>, null],
+  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
+  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
+  
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:string> * 1, <ore:paper> * 1)
+	.fluidInputs(<liquid:toluene> * 18)
+	.outputs(dynamite * 2)
+	.duration(30)
+	.EUt(126)
+	.buildAndRegister();
+  
 chemical_reactor.recipeBuilder()
 	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
 	.fluidOutputs(<liquid:red_alloy> * 144)
@@ -159,13 +174,6 @@ chemical_reactor.recipeBuilder()
 	.EUt(512)
 	.buildAndRegister();
 
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:string> * 1, <ore:paper> * 1)
-	.fluidInputs(<liquid:toluene> * 36)
-	.outputs(dynamite * 1)
-	.duration(60)
-	.EUt(126)
-	.buildAndRegister();
 
 chemical_reactor.recipeBuilder()		//Molten Enderium Base
 	.inputs(<ore:dustSilver> * 1, <ore:dustPlatinum> * 1)
@@ -213,11 +221,17 @@ alloy_smelter.recipeBuilder()		//Refactory Glass
 	.EUt(4)
 	.buildAndRegister();	
 	
-recipes.remove(dynamite);
-recipes.addShaped(dynamite, [
-  [null, <ore:string>, null],
-  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
-  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
+
+// Low-efficieny (high sanity) glass plate recipe
+alloy_smelter.recipeBuilder()		
+	.notConsumable(<metaitem:shape.mold.plate>)
+	.inputs(<ore:blockGlass> * 9)
+	.outputs(<ore:plateGlass>.firstItem * 1)
+	.duration(220)
+	.EUt(8)
+	.buildAndRegister();	
+  
+
 
 var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
 turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
@@ -499,13 +513,13 @@ val custom_food_compost_map = {
   <ore:foodGourmetvenisonburger> : 4200*/
 } as int[IOreDictEntry];
 
-
+// Add compost for every food type
 for mod in loadedMods {
   for item in mod.items {
     if (item.isFood() && item.getHealAmount() > 0) {
       print("\t\t" ~ item.displayName);      
       
-      val food_value = 100 * (item.getSaturationModifier() + item.getHealAmount());
+      val food_value = 10 + (40 * (item.getSaturationModifier() + item.getHealAmount()));
       
       mixer.recipeBuilder()
         .fluidInputs([<liquid:water> * food_value])
@@ -542,7 +556,7 @@ centrifuge.recipeBuilder()
   .chancedOutput(pulpedBiomass, 2200)
   .chancedOutput(pulpedBiomass, 2200)
   .chancedOutput(pulpedBiomass, 2200)
-  .fluidOutputs(<liquid:methane> * 125)
+  .fluidOutputs(<liquid:methane> * 50)
   .duration(45)
   .EUt(12)
   .buildAndRegister();
@@ -585,36 +599,52 @@ chemical_reactor.recipeBuilder()
 	.buildAndRegister();
 
 
+
+
 //Magnetite Ore/Dust
 furnace.addRecipe(<minecraft:iron_nugget> * 3, <ore:dustMagnetite>);
 
 //PBF and Coke Oven Bricks
-var cokeOvenBrick = <gtadditions:ga_multiblock_casing>;
-recipes.remove(cokeOvenBrick);
+var cokeOvenBrickUnfired = <gtadditions:ga_meta_item:32032>;
+recipes.remove(cokeOvenBrickUnfired);
 
 mixer.recipeBuilder()
 	.inputs(<ore:dustClay> * 4, <minecraft:sand> * 5)
-	.fluidInputs(<liquid:water> * 100)
-	.outputs(cokeOvenBrick * 1)
+	.fluidInputs(<liquid:water> * 500)
+	.outputs(cokeOvenBrickUnfired * 4)
 	.duration(20)
 	.EUt(16)
 	.buildAndRegister();
+	
+alloy_smelter.findRecipe(8, [<minecraft:sand> * 2, <minecraft:clay_ball> * 1], [null]).remove();
 
-recipes.addShaped(<metaitem:component.resistor> *2, [
+recipes.addShaped(<metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
   [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
   [null, <minecraft:paper>, null]]);
 
-recipes.addShaped(<metaitem:component.resistor> *2, [
+recipes.addShaped(<metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
   [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
   [null, <minecraft:paper>, null]]);
 
-val assembler as RecipeMap = RecipeMap.getByName("assembler");
 assembler.recipeBuilder()
   .inputs(<ore:wireFineCopper> * 4, <ore:dustCharcoal> * 1)
-  .outputs(<metaitem:component.resistor> * 8)
+  .outputs(<metaitem:component.resistor> * 6)
   .duration(160)
   .EUt(6)
   .buildAndRegister();
 
+var hLeather = <harvestcraft:hardenedleatheritem>;
+recipes.remove(<toolbelt:belt>);
+recipes.remove(<toolbelt:pouch>);
+
+recipes.addShaped(<toolbelt:belt>, [
+[<ore:manaString>, hLeather, <ore:manaString>],
+[hLeather, null, hLeather],
+[hLeather, <ore:ringSteel>, hLeather]]);
+
+recipes.addShaped(<toolbelt:pouch>, [
+[<ore:wireFineBrass>, <minecraft:gold_nugget>, <ore:wireFineBrass>],
+[hLeather, null, hLeather],
+[<ore:wireFineBrass>, hLeather, <ore:wireFineBrass>]]);
