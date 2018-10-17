@@ -605,16 +605,18 @@ chemical_reactor.recipeBuilder()
 furnace.addRecipe(<minecraft:iron_nugget> * 3, <ore:dustMagnetite>);
 
 //PBF and Coke Oven Bricks
-var cokeOvenBrick = <gtadditions:ga_multiblock_casing>;
-recipes.remove(cokeOvenBrick);
+var cokeOvenBrickUnfired = <gtadditions:ga_meta_item:32032>;
+recipes.remove(cokeOvenBrickUnfired);
 
 mixer.recipeBuilder()
 	.inputs(<ore:dustClay> * 4, <minecraft:sand> * 5)
-	.fluidInputs(<liquid:water> * 100)
-	.outputs(cokeOvenBrick * 1)
+	.fluidInputs(<liquid:water> * 500)
+	.outputs(cokeOvenBrickUnfired * 4)
 	.duration(20)
 	.EUt(16)
 	.buildAndRegister();
+	
+alloy_smelter.findRecipe(8, [<minecraft:sand> * 2, <minecraft:clay_ball> * 1], [null]).remove();
 
 recipes.addShaped(<metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
