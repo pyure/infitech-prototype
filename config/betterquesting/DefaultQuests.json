@@ -92,7 +92,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Buy a Tier 2 Materials Bag",
-          "desc:8": "You can purchase a bag of materials for an Iron Coin."
+          "desc:8": "You can purchase a bag of materials for 6 Iron Coins."
         }
       },
       "tasks:9": {
@@ -684,7 +684,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Pressure Chamber",
-          "desc:8": "No Description"
+          "desc:8": "You\u0027d think exposing iron to air doesn\u0027t help it, but as always the trick is to just try more of it. Now emulating the raw power of a creeper with only air is yours, your pressuring advances force the iron to bend to your wishes."
         }
       },
       "tasks:9": {
@@ -2121,7 +2121,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Large Bronze Boiler",
-          "desc:8": "No Description"
+          "desc:8": "The coal boilers you\u0027ve used thus far are very limited in output capacity and fuel types. These Large Boilers on the other hand can generate vast quantities of steam…if you\u0027re able to feed it."
         }
       },
       "tasks:9": {
@@ -2430,7 +2430,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Battery filling",
-          "desc:8": "Some particularly intricate containers require a canning machine to fill properly.  Similarly, some fluids can only be extracted via a specialized machine for that purpose."
+          "desc:8": "Some particularly intricate containers require a canning machine to fill properly."
         }
       },
       "tasks:9": {
@@ -2446,13 +2446,7 @@
               "id:8": "gregtech:machine",
               "Count:3": 1,
               "OreDict:8": "",
-              "Damage:3": 290
-            },
-            "1:10": {
-              "id:8": "gregtech:machine",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 300
+              "Damage:3": 140
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -3092,12 +3086,6 @@
               "id:8": "gregtech:machine",
               "Count:3": 1,
               "OreDict:8": "",
-              "Damage:3": 270
-            },
-            "2:10": {
-              "id:8": "gregtech:machine",
-              "Count:3": 1,
-              "OreDict:8": "",
               "Damage:3": 350
             }
           },
@@ -3228,7 +3216,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "gtadditions:ga_multiblock_casing",
-              "Count:3": 25,
+              "Count:3": 23,
               "OreDict:8": "",
               "Damage:3": 0
             },
@@ -3237,6 +3225,18 @@
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 2500
+            },
+            "2:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 2507
+            },
+            "3:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 2508
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -3650,7 +3650,7 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "name:8": "Volcanization",
-          "desc:8": "You will need a considerable number of annealed copper cables to progress into the next age.\n\nHint: You can make polyvinyl chloride from vinyl chloride with either oxygen or air (integrated circuit 0), which can be made of ethylene and chlorine. The easiest method of obtaining ethylene is steam cracking some kind of a fossil fuel and then distilling it.\n\nHint 2: Annealing copper means heating it in a very high temperature, by effectively tampering it. Try using an arc furnace for that"
+          "desc:8": "You will need a considerable number of copper cables to progress into the next age."
         }
       },
       "tasks:9": {
@@ -3676,10 +3676,10 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:meta_item_1",
-              "Count:3": 1,
+              "id:8": "gregtech:cable_copper",
+              "Count:3": 8,
               "OreDict:8": "",
-              "Damage:3": 1989
+              "Damage:3": 0
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -3693,8 +3693,8 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:cable_annealed_copper",
-              "Count:3": 1,
+              "id:8": "gregtech:cable_copper",
+              "Count:3": 8,
               "OreDict:8": "",
               "Damage:3": 5
             }
@@ -7679,7 +7679,7 @@
             "0:10": {
               "id:8": "pneumaticcraft:ingot_iron_compressed",
               "Count:3": 5,
-              "OreDict:8": "",
+              "OreDict:8": "ingotIronCompressed",
               "Damage:3": 0
             }
           },
@@ -8711,7 +8711,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Autocrafting made simple",
-          "desc:8": "No Description"
+          "desc:8": "All microcrafting and no playing makes Jack a dull boy. \n\nSupport a Jack in need, give him his very own worktable, capable of storing up to nine microcrafts to help all Jacks get to play."
         }
       },
       "tasks:9": {
@@ -8990,8 +8990,8 @@
             "0:10": {
               "id:8": "gregtech:meta_item_1",
               "Count:3": 5,
-              "OreDict:8": "",
-              "Damage:3": 10701
+              "OreDict:8": "ingotCompressedWroughtIron",
+              "Damage:3": 10700
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -9681,7 +9681,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Energy transformation",
-          "desc:8": "No Description"
+          "desc:8": "There are numerous forms of energy in this world.  While they are all powerful, they are not always necessarily compatible...without the right tools."
         }
       },
       "tasks:9": {
@@ -9750,7 +9750,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Buy a Tier 3 Materials Bag",
-          "desc:8": "No Description"
+          "desc:8": "You can purchase a bag of materials for some Constantan Coins."
         }
       },
       "tasks:9": {
@@ -9813,7 +9813,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Ye Olde Return Policy (x1)",
-          "desc:8": "No Description"
+          "desc:8": "You can exchange unwanted lootbags for a (poor) return of coins."
         }
       },
       "tasks:9": {
@@ -9842,7 +9842,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "thermalfoundation:coin",
-              "Count:3": 9,
+              "Count:3": 7,
               "OreDict:8": "",
               "Damage:3": 100
             }
@@ -9876,7 +9876,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Bulk Purchase Tier 3 Material Bags",
-          "desc:8": "No Description"
+          "desc:8": "For a discount, you can buy five bags of materials for 1 Silver Coin and 4 Constantan Coins!"
         }
       },
       "tasks:9": {
@@ -10203,7 +10203,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Ye Olde Return Policy (x1)",
-          "desc:8": "No Description"
+          "desc:8": "You can exchange unwanted lootbags for a (poor) return of coins."
         }
       },
       "tasks:9": {
@@ -10272,7 +10272,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Buy a Tier 1 Component Bag",
-          "desc:8": "No Description"
+          "desc:8": "You can purchase a bag of materials for some Constantan Coins."
         }
       },
       "tasks:9": {
@@ -10286,7 +10286,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "thermalfoundation:coin",
-              "Count:3": 7,
+              "Count:3": 3,
               "OreDict:8": "",
               "Damage:3": 100
             }
@@ -10335,7 +10335,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Bulk Purchase Tier 1 Component Bags",
-          "desc:8": "No Description"
+          "desc:8": "For a discount, you can buy five bags of components for 1 Silver Coin!"
         }
       },
       "tasks:9": {
@@ -10349,15 +10349,9 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "thermalfoundation:coin",
-              "Count:3": 2,
+              "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 66
-            },
-            "1:10": {
-              "id:8": "thermalfoundation:coin",
-              "Count:3": 5,
-              "OreDict:8": "",
-              "Damage:3": 100
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -10497,6 +10491,69 @@
             "0:10": {
               "id:8": "jsonlootbags:coinbagt1",
               "Count:3": 3,
+              "OreDict:8": "",
+              "Damage:3": 0
+            }
+          }
+        }
+      }
+    },
+    "129:10": {
+      "questID:3": 129,
+      "preRequisites:11": [
+        45
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:machine",
+            "Count:3": 1,
+            "Damage:2": 2196,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "name:8": "Drum(stick)",
+          "desc:8": "Tanks can be somewhat underwhelming.  For a more significant investment of time and resources you can assemble something with a bit more volume."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "OreDict:8": "",
+              "Damage:3": 2196
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "jsonlootbags:coinbagt1",
+              "Count:3": 4,
               "OreDict:8": "",
               "Damage:3": 0
             }
@@ -11303,6 +11360,12 @@
           "x:3": 18,
           "y:3": 90,
           "id:3": 128
+        },
+        "50:10": {
+          "size:3": 12,
+          "x:3": 48,
+          "y:3": 108,
+          "id:3": 129
         }
       },
       "lineID:3": 2,
