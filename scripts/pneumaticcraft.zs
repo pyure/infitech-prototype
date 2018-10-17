@@ -6,6 +6,11 @@ var ingotCompressedWroughtIron = <ore:ingotCompressedWroughtIron>.firstItem;
 
 mods.pneumaticcraft.pressurechamber.addRecipe([ingotWroughtIron * 1], 2.0, [ingotCompressedWroughtIron]);
 
+for pulp in <ore:dustWood>.items {
+	mods.pneumaticcraft.pressurechamber.addRecipe([pulp * 3], 1.5, [<minecraft:paper>]);
+}
+
+
 // GT Style block crafting
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 

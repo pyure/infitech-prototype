@@ -88,7 +88,7 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
+//compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
 
 recipes.addShaped(coal_ball, [
   [coal_dust, coal_dust, coal_dust],
@@ -151,8 +151,22 @@ cutting_saw.recipeBuilder()
   .EUt(2)
   .buildAndRegister();
 
-var dynamite = <gregtech:meta_item_1:32629>;
+var dynamite = <metaitem:dynamite>;
+recipes.remove(dynamite);
 
+recipes.addShaped(dynamite, [
+  [null, <ore:string>, null],
+  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
+  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
+  
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:string> * 1, <ore:paper> * 1)
+	.fluidInputs(<liquid:toluene> * 18)
+	.outputs(dynamite * 2)
+	.duration(30)
+	.EUt(126)
+	.buildAndRegister();
+  
 chemical_reactor.recipeBuilder()
 	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
 	.fluidOutputs(<liquid:red_alloy> * 144)
@@ -160,13 +174,6 @@ chemical_reactor.recipeBuilder()
 	.EUt(512)
 	.buildAndRegister();
 
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:string> * 1, <ore:paper> * 1)
-	.fluidInputs(<liquid:toluene> * 36)
-	.outputs(dynamite * 1)
-	.duration(60)
-	.EUt(126)
-	.buildAndRegister();
 
 chemical_reactor.recipeBuilder()		//Molten Enderium Base
 	.inputs(<ore:dustSilver> * 1, <ore:dustPlatinum> * 1)
@@ -225,13 +232,6 @@ alloy_smelter.recipeBuilder()
 	.buildAndRegister();	
   
 
-
-
-recipes.remove(dynamite);
-recipes.addShaped(dynamite, [
-  [null, <ore:string>, null],
-  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
-  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
 
 var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
 turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
