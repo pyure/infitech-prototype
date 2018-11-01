@@ -165,23 +165,32 @@ var o_plateTitanium = <ore:plateTitanium>;
 var o_plateWroughtIron = <ore:plateWroughtIron>;
 var o_plateObsidian = <ore:plateObsidian>;
 var o_rodBrass = <ore:stickBrass>;
-var o_primitiveCircuit = <ore:circuitPrimitive>;
 var o_basicCircuit = <ore:circuitBasic>;
 var o_goodCircuit = <ore:circuitGood>;
 var o_advCircuit = <ore:circuitAdvanced>;
 var o_eliteCircuit = <ore:circuitElite>;
 var o_masterCircuit = <ore:circuitMaster>;
+var mvRobotArm = <metaitem:robot.arm.mv>;
+var hvRobotArm = <metaitem:robot.arm.hv>;
 var lvEmitter = <metaitem:emitter.lv>;
 var mvEmitter = <metaitem:emitter.mv>;
+var hvEmitter = <metaitem:emitter.hv>;
 var evEmitter = <metaitem:emitter.ev>;
 var ivEmitter = <metaitem:emitter.iv>;
+var luvEmitter = <metaitem:emitter.luv>;
 var lvSensor = <metaitem:sensor.lv>;
+var mvSensor = <metaitem:sensor.mv>;
+var hvSensor = <metaitem:sensor.hv>;
 var evSensor = <metaitem:sensor.ev>;
 var ivSensor = <metaitem:sensor.iv>;
 var evFieldGenerator = <metaitem:field.generator.ev>;
 var ivFieldGenerator = <metaitem:field.generator.iv>;
 var lvMotor = <metaitem:motor.lv>;
+var mvMotor = <metaitem:motor.mv>;
+var hvMotor = <metaitem:motor.hv>;
 var lvConveyor = <metaitem:conveyor.lv>;
+var mvConveyor = <metaitem:conveyor.mv>;
+var hvConveyor = <metaitem:conveyor.hv>;
 var quantumEye = <metaitem:quantumeye>;
 var o_lapotron = <ore:batteryMaster>;
 var lapotronOrb = <metaitem:lapotronicorb>;
@@ -193,6 +202,7 @@ var o_quartzite = <ore:gemQuartzite>;
 var o_anyQuartz = <ore:craftingQuartz>;
 var batterySodiumLV = <metaitem:battery.re.lv.sodium>;
 var batterySodiumMV = <metaitem:battery.re.mv.sodium>;
+var batterySodiumHV = <metaitem:battery.re.hv.sodium>;
 var emeraldLens = <ore:lensEmerald>;
 var o_smallSteelPipe = <ore:pipeSmallSteel>;
 var plateGlass = <ore:plateGlass>;
@@ -263,28 +273,25 @@ recipes.addShaped(machineBase, [
 	[o_plateWroughtIron, o_hhammer, o_plateWroughtIron],
 	[slabStone, slabStone, slabStone]]);
 
-recipes.remove(coalGenerator);
-recipes.addShaped(coalGenerator, [
-	[o_polishedAndesite, o_polishedAndesite, o_polishedAndesite],
-	[o_polishedAndesite, o_coalBlock, o_polishedAndesite],
-	[o_furnace, machineFrame, o_furnace]]);
-
-
+scripts.functions.disableItem(coalGenerator);
+  
 recipes.remove(crafter1);
 recipes.remove(crafter2);
 recipes.remove(crafter3);
 recipes.addShaped(crafter1, [
-	[o_plateIron, craftingTable, o_plateIron],
-	[o_basicCircuit, machineFrame, o_basicCircuit],
-	[o_plateIron, craftingTable, o_plateIron]]);
+	[mvRobotArm, craftingTable, mvMotor],
+	[o_goodCircuit, machineFrame, o_goodCircuit],
+	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
+  
 recipes.addShaped(crafter2, [
-	[o_plateSteel, craftingTable, o_plateSteel],
+	[mvRobotArm, craftingTable, mvMotor],
 	[o_goodCircuit, crafter1, o_goodCircuit],
-	[o_plateSteel, craftingTable, o_plateSteel]]);
+	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
+  
 recipes.addShaped(crafter3, [
-	[o_plateStainlessSteel, craftingTable, o_plateStainlessSteel],
-	[o_advCircuit, crafter2, o_advCircuit],
-	[o_plateStainlessSteel, craftingTable, o_plateStainlessSteel]]);
+	[mvRobotArm, craftingTable, mvMotor],
+	[o_goodCircuit, crafter3, o_goodCircuit],
+	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
 
 
 recipes.remove(matterReceiver);
@@ -347,7 +354,7 @@ recipes.addShaped(mediumCell, [
 	[o_prismarine, machineFrame, o_prismarine],
 	[o_redstoneBlock, emerald, o_redstoneBlock]]);
 recipes.addShaped(advCell, [
-	[o_redstoneBlock, infusedDiamond, o_redstoneBlock],
+	[o_redstoneBlock, batterySodiumHV, o_redstoneBlock],
 	[infusedDiamond, mediumCell, infusedDiamond],
 	[o_redstoneBlock, infusedDiamond, o_redstoneBlock]]);
 recipes.addShaped(cellCard, [
@@ -371,7 +378,7 @@ recipes.addShaped(environmentalController, [
 	[infusedDiamond, machineFrame, infusedDiamond],
 	[o_plateTitanium, o_plateTitanium, o_plateTitanium]]);
 recipes.addShaped(booster, [
-	[mvEmitter, emeraldLens, mvEmitter],
+	[lvEmitter, emeraldLens, lvEmitter],
 	[dimensionalShard, machineFrame, dimensionalShard],
 	[o_plateStainlessSteel, o_plateStainlessSteel, o_plateStainlessSteel]]);
 
@@ -520,39 +527,39 @@ assembler.recipeBuilder()
 
 recipes.remove(redstoneReceiver);
 recipes.addShaped(redstoneReceiver, [
-	[null, evSensor, null],
+	[null, mvEmitter, null],
 	[null, redstoneWire, null],
 	[null, o_enderPearl, null]]);
 recipes.addShapeless(redstoneReceiver, [redstoneReceiver]);
 
 recipes.remove(redstoneTransmitter);
 recipes.addShaped(redstoneTransmitter, [
-	[null, evEmitter, null],
+	[null, mvEmitter, null],
 	[null, redstoneWire, null],
 	[null, o_enderPearl, null]]);
 recipes.addShapeless(redstoneTransmitter, [redstoneTransmitter]);
 
 recipes.remove(redstoneCounter);
 recipes.addShaped(redstoneCounter, [
-	[null, o_primitiveCircuit, null],
+	[null, <ore:circuitGAPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstone, null]]);
 
 recipes.remove(redstoneTimer);
 recipes.addShaped(redstoneTimer, [
-	[null, o_primitiveCircuit, null],
+	[null, <ore:circuitGAPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_goldNugget, null]]);
 
 recipes.remove(redstoneLogic);
 recipes.addShaped(redstoneLogic, [
-	[null, o_primitiveCircuit, null],
+	[null, <ore:circuitGAPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_anyQuartz, null]]);
 
 recipes.remove(redstoneSequencer);
 recipes.addShaped(redstoneSequencer, [
-	[null, o_primitiveCircuit, null],
+	[null, <ore:circuitGAPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstoneTorch, null]]);
 
@@ -564,7 +571,7 @@ recipes.addShaped(redstoneSensor, [
 
 recipes.remove(redstoneInvChecker);
 recipes.addShaped(redstoneInvChecker, [
-	[null, o_primitiveCircuit, null],
+	[null, <ore:circuitGAPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, comparator, null]]);
 
@@ -591,4 +598,75 @@ recipes.addShaped(screen, [
 	[plateGlass, plateGlass, plateGlass],
 	[plateIron, machineBase, plateIron],
 	[circuitBasic, plateIron, circuitBasic]]);
+
+recipes.remove(<rftools:builder>);
+recipes.addShaped("infitech3_rftools_builder", <rftools:builder>, [
+  [hvRobotArm, <minecraft:ender_pearl>, hvRobotArm], 
+  [hvSensor, <rftools:machine_frame>, hvSensor], 
+  [hvConveyor, o_wrench, hvConveyor]]);
+
+var shieldProjector1 = <rftools:shield_block1>;
+var shieldProjector2 = <rftools:shield_block2>;
+var shieldProjector3 = <rftools:shield_block3>;
+var shieldProjector4 = <rftools:shield_block4>;
+
+recipes.remove(shieldProjector1);
+recipes.addShaped("infitech3_rftools_shield_block1", shieldProjector1, [
+  [<minecraft:gold_ingot>, hvEmitter, <minecraft:gold_ingot>], 
+  [<minecraft:redstone>, <rftools:machine_frame>, <minecraft:redstone>], 
+  [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
+
+recipes.remove(shieldProjector2);
+recipes.addShaped("infitech3_rftools_shield_block2", shieldProjector2, [
+  [<minecraft:redstone_block>, evEmitter, <minecraft:redstone_block>], 
+  [<minecraft:obsidian>, <rftools:machine_frame>, <minecraft:obsidian>], 
+  [<minecraft:redstone_block>, <minecraft:obsidian>, <minecraft:redstone_block>]]);
+
+recipes.remove(shieldProjector3);  
+recipes.addShaped("infitech3_rftools_shield_block3", shieldProjector3, [
+  [<rftools:dimensional_shard>, ivEmitter, <rftools:dimensional_shard>], 
+  [<minecraft:obsidian>, <rftools:machine_frame>, <minecraft:obsidian>], 
+  [<rftools:dimensional_shard>, <minecraft:obsidian>, <rftools:dimensional_shard>]]);
+
+recipes.remove(shieldProjector4);  
+recipes.addShaped("infitech3_rftools_shield_block4", shieldProjector4, [
+  [<minecraft:nether_star>, luvEmitter, <rftools:dimensional_shard>], 
+  [<minecraft:obsidian>, <rftools:machine_frame>, <minecraft:obsidian>], 
+  [<rftools:dimensional_shard>, <minecraft:obsidian>, <minecraft:nether_star>]]);
+  
+recipes.remove(<rftools:spawner>);  
+recipes.addShaped("infitech3_rftools_spawner", <rftools:spawner>, [
+  [<minecraft:redstone>, mvEmitter, <minecraft:redstone>], 
+  [<minecraft:ender_pearl>, <rftools:machine_frame>, emeraldLens], 
+  [<minecraft:redstone>, mvEmitter, <minecraft:redstone>]]);
+  
+recipes.remove(<rftools:matter_beamer>);  
+recipes.addShaped("infitech3_rftools_matter_beamer", <rftools:matter_beamer>, [
+  [<minecraft:redstone_block>, lvEmitter, <minecraft:redstone_block>], 
+  [<minecraft:glowstone>, <rftools:machine_frame>, <minecraft:glowstone>], 
+  [<minecraft:redstone_block>, <minecraft:glowstone>, <minecraft:redstone_block>]]);
+  
+recipes.remove(<rftools:block_protector>);
+recipes.addShaped("infitech3_rftools_block_protector", <rftools:block_protector>, [
+  [hvEmitter, <rftools:shield_template_block>, hvEmitter], 
+  [<rftools:shield_template_block>, <rftools:machine_frame>, <rftools:shield_template_block>], 
+  [hvSensor, <rftools:shield_template_block>, hvSensor]]);
+  
+recipes.remove(<rftools:item_filter>);
+recipes.addShaped("infitech3_rftools_item_filter", <rftools:item_filter>, [
+  [<minecraft:paper>, <ore:chest>, <minecraft:paper>], 
+  [lvConveyor, <rftools:machine_base>, lvMotor], 
+  [<minecraft:paper>, <minecraft:redstone_torch>, <minecraft:paper>]]);
+
+recipes.remove(<rftools:endergenic>);
+recipes.addShaped("infitech3_rftools_endergenic_generator", <rftools:endergenic>, [
+  [<minecraft:diamond>, <minecraft:ender_pearl>, <minecraft:diamond>], 
+  [<minecraft:ender_pearl>, <rftools:machine_frame>, <minecraft:ender_pearl>], 
+  [<minecraft:diamond>, lvEmitter, <minecraft:diamond>]]);
+  
+recipes.remove(<rftools:storage_scanner>);
+recipes.addShaped("infitech3_rftools_storage_scanner", <rftools:storage_scanner>, [
+  [<minecraft:redstone_torch>, mvSensor, <minecraft:redstone_torch>], 
+  [<minecraft:gold_ingot>, <rftools:machine_frame>, <minecraft:gold_ingot>], 
+  [<minecraft:redstone_torch>, <minecraft:ender_pearl>, <minecraft:redstone_torch>]]);
 
