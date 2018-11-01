@@ -178,3 +178,8 @@ icompressor.recipeBuilder()
 	.duration(20)
 	.EUt(32)
 	.buildAndRegister();
+
+// ISOTOPE SEPERATOR
+// ISOTOPE SEPERATOR
+mods.nuclearcraft.isotope_separator.removeRecipeWithInput([<ore:dustUranium>]); // Disable processing U238 in isotope seperator  
+mods.nuclearcraft.isotope_separator.removeRecipeWithInput([<ore:dustUraniumOxide>]); // Disable processing U238-Ox in isotope seperator  

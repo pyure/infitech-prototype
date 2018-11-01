@@ -207,6 +207,61 @@ chemical_reactor.recipeBuilder()    //Cobalt aluminate
   	.EUt(120)
   	.buildAndRegister();
 
+// Oredict of nuclear fuels we can dissolve into UF6
+val oreFuels = <ore:fuelsRawUranium>;
+oreFuels.addAll(<ore:dustUranium>);
+oreFuels.addAll(<ore:dustUraniumOxide>);
+oreFuels.addAll(<ore:ingotUranium>);
+oreFuels.addAll(<ore:ingotUraniumOxide>);
+
+// UF6 (Uranium Hexafluoride)
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:fuelsRawUranium> * 1)
+	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 12000)
+	.duration(400)
+	.EUt(580)
+	.buildAndRegister();
+
+// Process UF6 to get U235 etc
+val tinyUranium235 = <nuclearcraft:uranium:6>;
+val tinyUranium238 = <nuclearcraft:uranium:10>;
+centrifuge.recipeBuilder()
+	.fluidInputs([<liquid:uranium_hexafluoride> * 100])
+  .chancedOutput(tinyUranium235 * 4, 1600)
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 30)  
+  .duration(65)
+  .EUt(524)
+  .buildAndRegister(); 
+
+// Add missing clump->fullsize uranium recipes
+val uranium235 = <nuclearcraft:uranium:4>;
+val uranium238 = <nuclearcraft:uranium:8>;
+val uranium238Oxidized = <nuclearcraft:uranium:9>;
+val uranium235Oxidized = <nuclearcraft:uranium:5>;
+recipes.addShapeless(uranium235, [tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235]);
+
+// Disable default Uranium238 -> TinyPlutonium + TinyUranium235
+centrifuge.findRecipe(320, [<ore:dustUranium>.firstItem * 1], null).remove();
+
+// Oxidized 238
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustUranium> * 1)
+	.fluidInputs([<liquid:oxygen> * 400])
+	.outputs([uranium238Oxidized * 1])
+	.duration(2)
+	.EUt(8100)
+	.buildAndRegister();
+  
+// Oxidized 235
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustUranium235> * 1)
+	.fluidInputs([<liquid:oxygen> * 400])
+	.outputs([uranium235Oxidized * 1])
+	.duration(2)
+	.EUt(8100)
+	.buildAndRegister();
+  
 alloy_smelter.recipeBuilder()		//Blue Alloy
 	.inputs(<ore:dustSilver> * 1, <ore:dustCobaltAluminate> * 1)
 	.outputs(<ore:ingotBlueAlloy>.firstItem * 2)
