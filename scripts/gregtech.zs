@@ -557,18 +557,38 @@ recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dus
 recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
 
 val custom_food_compost_map = {
-  /*
-  <ore:listAllbeefcooked> : 200,
-  <ore:listAllmeatraw> : 200,
-  <ore:foodBeefjerky> : 220,
-  <ore:foodSouthernstylebreakfast> : 4200,
-  <ore:foodMeatfeastpizza> : 4800,
-  <ore:foodThankfuldinner> : 4800,
-  <ore:foodKoreandinner> : 4800,
-  <ore:foodGourmetvenisonburger> : 4200*/
-} as int[IOreDictEntry];
+  <minecraft:bread> : 23,
+  <minecraft:cookie> : 23,
+  <minecraft:melon> : 23,
+  <minecraft:apple> : 45,
+  <minecraft:nether_wart> : 45,
+  <minecraft:brown_mushroom> : 45,
+  <minecraft:spider_eye> : 45,
+  <minecraft:potato> : 60,
+  <minecraft:pumpkin> : 90,
+  <minecraft:carrot> : 90,
+  <minecraft:cooked_beef> : 90,
+  <minecraft:cooked_fish> : 90,
+  <minecraft:cooked_chicken> : 90,
+  <minecraft:rotten_flesh> : 90,
+  <minecraft:cooked_porkchop> : 90,
+  <minecraft:cooked_rabbit> : 90,
+  <minecraft:cooked_mutton> : 90,
+  <minecraft:porkchop> : 90,
+  <minecraft:fish:0> : 120,
+  <minecraft:fish:1> : 120,
+  <minecraft:fish:2> : 120,
+  <minecraft:fish:3> : 120,
+  <minecraft:poisonous_potato> : 120,
+  <minecraft:chicken> : 120,
+  <minecraft:rabbit> : 120,
+  <minecraft:mutton> : 120,
+  <minecraft:beef> : 120,
+  <minecraft:cake> : 180
+} as int[IItemStack];
 
-// Add compost for every food type
+// Add compost for every food type.  ONLY WORKS WITH ZENCESSORIES which was not a valid curseforge mod at this time.
+/*
 for mod in loadedMods {
   for item in mod.items {
     if (item.isFood() && item.getHealAmount() > 0) {
@@ -586,6 +606,7 @@ for mod in loadedMods {
     }          
   }
 }
+*/
 
 for itemstack, fluidAmount in custom_food_compost_map {
   mixer.recipeBuilder()
