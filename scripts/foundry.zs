@@ -353,7 +353,7 @@ for name in rod_array {
 
 /* ====================================== MACHINES ============================================= */
 var rodCopper = <ore:stickCopper>;
-var bricksPrimitive = (<gregtech:metal_casing:1>);
+var bricks = (<minecraft:brick_block>);
 var screwBronze = (<gregtech:meta_item_1:17095>);
 var brickFoundry = (<foundry:component:2>);
 var screwWroughtIron = (<gregtech:meta_item_1:17197>);
@@ -373,7 +373,7 @@ recipes.remove(<foundry:burnerheater>);
 recipes.addShaped(<foundry:burnerheater>, [
    [rodCopper, <ore:plateCupronickel>, rodCopper],
    [null, refractoryCasingBasic, null],
-   [bricksPrimitive, <minecraft:furnace>, bricksPrimitive]]);
+   [bricks, <minecraft:furnace>, bricks]]);
 
 // REFRACTORY CASING BASIC
 recipes.remove(refractoryCasingBasic);
