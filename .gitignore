@@ -51,6 +51,7 @@ config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
 config/agricraft/json/defaults/infitech/
 minecraftinstance.json
+modularmachinery.7z
 
 # Windows image file caches
 Thumbs.db
