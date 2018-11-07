@@ -18,7 +18,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2018-11-06T01:29:32.7372767Z",
+  "lastPlayed": "2018-11-07T00:05:16.9759119Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -107,21 +107,6 @@
       "queryTimestamp": "2018-11-06T01:24:49.7462036Z",
       "fileCount": 1,
       "fileSize": 20837
-    },
-    {
-      "folderName": "GregicAdditions-1.12.2-1.2.1.jar",
-      "fingerprint": 529407142,
-      "fileDateHash": 3270429274,
-      "sectionID": 6,
-      "individualFingerprints": [
-        529407142
-      ],
-      "status": 1,
-      "timestamp": "2018-10-18T00:52:19.8354698Z",
-      "lastWriteTimeUtc": "2018-10-18T00:52:19.253072Z",
-      "queryTimestamp": "2018-11-06T01:24:49.7462036Z",
-      "fileCount": 1,
-      "fileSize": 493786
     },
     {
       "folderName": "NuclearCraft-2.12d--1.12.2.jar",
@@ -1503,21 +1488,6 @@
       "queryTimestamp": "2018-11-06T01:24:49.7661826Z",
       "fileCount": 1,
       "fileSize": 965233
-    },
-    {
-      "folderName": "gregtech-1.12.2-1.0.120.jar",
-      "fingerprint": 859696953,
-      "fileDateHash": 2864613563,
-      "sectionID": 6,
-      "individualFingerprints": [
-        859696953
-      ],
-      "status": 1,
-      "timestamp": "2018-11-01T22:13:00.7797762Z",
-      "lastWriteTimeUtc": "2018-11-01T22:12:46.1382123Z",
-      "queryTimestamp": "2018-11-06T01:24:49.7671819Z",
-      "fileCount": 1,
-      "fileSize": 4360205
     },
     {
       "folderName": "rftoolsctrl-1.12-1.9.1.jar",
@@ -7726,77 +7696,6 @@
       "dateUpdated": "2017-10-10T23:17:52.1007784Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 303642,
-      "gameInstanceID": "73626dac-82eb-4e99-97c2-4e36bf5447e2",
-      "installedFile": {
-        "id": 2628577,
-        "fileName": "GregicAdditions-1.12.2-1.2.1",
-        "fileNameOnDisk": "GregicAdditions-1.12.2-1.2.1.jar",
-        "fileDate": "2018-10-16T19:42:39.837",
-        "fileLength": 493786,
-        "releaseType": 1,
-        "fileStatus": 2,
-        "downloadUrl": "https://files.forgecdn.net/files/2628/577/GregicAdditions-1.12.2-1.2.1.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "addonId": 59751,
-            "type": 2
-          },
-          {
-            "addonId": 293327,
-            "type": 1
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "folderName": "META-INF",
-            "fimgerprint": 1324925706
-          },
-          {
-            "folderName": "gregicadditions",
-            "fimgerprint": 484845091
-          },
-          {
-            "folderName": "loaders",
-            "fimgerprint": 1170337315
-          },
-          {
-            "folderName": "assets",
-            "fimgerprint": 1515562134
-          },
-          {
-            "folderName": "mcmod.info",
-            "fimgerprint": 2212777355
-          },
-          {
-            "folderName": "pack.mcmeta",
-            "fimgerprint": 3273911401
-          }
-        ],
-        "packageFingerprint": 529407142,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "installMetadata": null
-      },
-      "dateInstalled": "2018-10-17T23:24:32.9728304Z",
-      "dateUpdated": "2017-10-17T23:24:32.9728304Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
