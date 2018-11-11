@@ -348,6 +348,7 @@ assembler.recipeBuilder()
 	.buildAndRegister();
 
 //Remove Fluxduct
+/* reinstate fluxducts
 recipes.remove(fluxductLeadstone);
 recipes.remove(fluxductHardened);
 recipes.remove(fluxductRedstoneEnergy);
@@ -366,6 +367,8 @@ recipes.remove(itemductSignalumImpulse);
 recipes.remove(itemductSignalumImpulseOpaque);
 recipes.remove(fluiductSignalumPlated);
 recipes.remove(fluiductSignalumPlatedOpaque);
+*/
+
 
 var servo = <thermaldynamics:servo>;
 var hardened_servo = <thermaldynamics:servo:1>;
