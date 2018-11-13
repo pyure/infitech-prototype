@@ -98,6 +98,22 @@ var Lepidolite =  MaterialSystem.getMaterialBuilder().setName('Lepidolite').setC
 var Diamond =  MaterialSystem.getMaterialBuilder().setName('Diamond').setColor( 0xC8FFFF).build();
 var Glauconite =  MaterialSystem.getMaterialBuilder().setName('Glauconite').setColor( 0x82B43C).build();
 
+// BEE MATERIALS
+var Emerald = MaterialSystem.getMaterialBuilder().setName('Emerald').setColor(0x248F24).build();
+var Fluix = MaterialSystem.getMaterialBuilder().setName('Fluix').setColor(0xA375FF).build();
+var Lapis = MaterialSystem.getMaterialBuilder().setName('Lapis').setColor(0x1947D1).build();
+var Manganese = MaterialSystem.getMaterialBuilder().setName('Manganese').setColor(0xD5D5D5).build();
+var Oil = MaterialSystem.getMaterialBuilder().setName('Oil').setColor(0x4C4C4C).build();
+var Olivine = MaterialSystem.getMaterialBuilder().setName('Olivine').setColor(0x248F24).build();
+var Osmium = MaterialSystem.getMaterialBuilder().setName('Osmium').setColor(0x1C46DB).build();
+var Plutonium = MaterialSystem.getMaterialBuilder().setName('Plutonium').setColor(0x335C33).build();
+var Ruby = MaterialSystem.getMaterialBuilder().setName('Ruby').setColor(0xE6005C).build();
+var Sapphire = MaterialSystem.getMaterialBuilder().setName('Sapphire').setColor(0x0033CC).build();
+var Slag = MaterialSystem.getMaterialBuilder().setName('Slag').setColor(0xD4D4D4).build();
+var Steel = MaterialSystem.getMaterialBuilder().setName('Steel').setColor(0x808080).build();
+var Stone = MaterialSystem.getMaterialBuilder().setName('Stone').setColor(0x808080).build();
+var Thaumium = MaterialSystem.getMaterialBuilder().setName('Thaumium').setColor(0x7A007A).build();
+var Thaumiumshard = MaterialSystem.getMaterialBuilder().setName('Thaumiumshard').setColor(0x9966FF).build();
 var compressed_wrought_iron = MaterialSystem.getMaterialBuilder().setName('Compressed Wrought Iron').setColor(13151460).build();
 
 var ore_byproducts_list = [Iridium,Bismuth,Lead,Gold,Copper,Silver,Zinc,Iron,Cobalt,Nickel,Platinum,Uranium,Uranium235,Beryllium,Naquadah,Coal,Neodymium,Sulfur,Aluminium,Quartzite,Pyrite,Salt,BandedIron,Sphalerite,Tin,Garnierite,Magnetite,Stibnite,Uraninite,Cassiterite,Cinnabar,Pentlandite,Phosphor,NetherQuartz,CertusQuartz,Phosphate,Pyrolusite,RockSalt,Molybdenite,Monazite,GreenSapphire,VanadiumMagnetite,Galena,Barite,Calcite,Ilmenite,Lignite,Chalcopyrite,Chromite,Cobaltite,Wulfenite,Scheelite,Tungstate,Saltpeter,Pitchblende,Powellite,Apatite,Magnesite,BrownLimonite,Tantalite,YellowLimonite,Talc,Bastnasite,Malachite,Tetrahedrite,Sodalite,Pyrope,Spodumene,Bauxite,Soapstone,Cooperite,Almandine,Grossular,Redstone,Spessartine,Lazurite,Lepidolite,Diamond,Glauconite] as Material[];
@@ -106,6 +122,15 @@ mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_crushed_ore")
 var metal_list = [] as Material[];
 var ore_part_names = ["small_crushed_ore"] as string[]; 
 var part_names = ["nugget", "ingot", "plate", "rod"] as string[]; 
+
+var comb_material_list = [Aluminium, CertusQuartz, Chromite, Coal, Copper, Diamond, Emerald, Gold, Iridium, Iron, Lead, Lignite, Naquadah, Nickel, Platinum, Redstone, Silver, Fluix, Lapis, Manganese, Oil, Olivine, Osmium, Plutonium, Ruby, Sapphire, Slag, Steel, Stone, Thaumium, Thaumiumshard, Tin] as Material[];
+
+
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("bee_comb").setPartType(MaterialSystem.getPartType("item")).setOreDictName("bee_comb").build();
+
+for i, comb_material in comb_material_list {
+    comb_material.registerPart("bee_comb");
+}
 
 for i, metal in ore_byproducts_list {
     metal.registerParts(ore_part_names);
