@@ -20,7 +20,7 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
+<Recipes useDefault="false">
 	<Recipe timeRequired="300" power ="200">
 		<input>
 			<oreDict>plateIron</oreDict>
@@ -81,7 +81,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productsheet 1 1</itemStack>
+			<itemStack>advancedrocketry:productsheet 3 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -167,11 +167,29 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
+			<oreDict>ingotPolyvinylChloride</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12989</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
 			<oreDict>ingotPolycaprolactam</oreDict>
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 1 12144</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotPolystyrene</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12956</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -235,6 +253,15 @@
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 1 12059</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotReinforcedEpoxyResin</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12991</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -324,7 +351,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productplate 1 1</itemStack>
+			<itemStack>advancedrocketry:productplate 3 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -361,6 +388,15 @@
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 1 12045</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotPolyphenyleneSulfide</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12934</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -522,7 +558,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productplate</itemStack>
+			<itemStack>advancedrocketry:productplate 3</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -568,6 +604,15 @@
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 1 12068</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotManganese</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12039</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -689,11 +734,29 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
+			<oreDict>ingotSiliconRubber</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12960</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
 			<oreDict>ingotMagnalium</oreDict>
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 1 12129</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotPlastic</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12141</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -770,6 +833,15 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
+			<oreDict>ingotIndiumGalliumPhosphide</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12924</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
 			<oreDict>ingotThaumium</oreDict>
 			<fluidStack>water 100</fluidStack>
 		</input>
@@ -802,6 +874,15 @@
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 1 12180</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotStyreneButadieneRubber</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12953</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -968,6 +1049,15 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
+			<oreDict>ingotGalliumArsenide</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12935</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
 			<oreDict>ingotRedSteel</oreDict>
 			<fluidStack>water 100</fluidStack>
 		</input>
@@ -1058,6 +1148,15 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
+			<oreDict>ingotNeutronium</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12972</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
 			<oreDict>ingotInvar</oreDict>
 			<fluidStack>water 100</fluidStack>
 		</input>
@@ -1081,6 +1180,15 @@
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 1 12133</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotNickelZincFerrite</oreDict>
+			<fluidStack>water 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 1 12921</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="100" power ="1">

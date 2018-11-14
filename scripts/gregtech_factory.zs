@@ -70,4 +70,4 @@ val fluidMouldyCompost = MaterialRegistry.createFluidMaterial(801, "mouldy_compo
 
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);
-
+<material:quartzite>.addFlags(["GENERATE_PLATE", "GENERATE_ROD",  "GENERATE_GEAR"]);
