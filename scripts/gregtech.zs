@@ -495,12 +495,6 @@ fluid_extractor.recipeBuilder()
 	.duration(80)
 	.buildAndRegister();
 	
-//Basisc Electronic Circuit
-var basicCircuit = <ore:circuitBasic>.firstItem;
-recipes.addShaped(basicCircuit, [
-[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>],
-[<ore:circuitPrimitive>,<ore:plateSteel>,<ore:circuitPrimitive>],
-[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>]]);
 
 //NC Alloys
 var ferroBoron = <nuclearcraft:alloy:6>;
