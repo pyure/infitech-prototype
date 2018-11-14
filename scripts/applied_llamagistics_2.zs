@@ -163,7 +163,6 @@ var pressSilicon = <appliedenergistics2:part:19>;
 var PureCertusQCrystal = <ore:crystalPureCertusQuartz>;
 var PureFluixCrystal = <appliedenergistics2:material:12>;
 var PureNetherQCrystal = <ore:crystalPureNetherQuartz>;
-var QuartzFiber = quartzFiber;
 var QuartzFixture = <appliedenergistics2:quartz_fixture>;
 var QuartzGlass = <appliedenergistics2:quartz_glass>;
 var Quartzite = <ore:gemQuartzite>;
@@ -310,7 +309,7 @@ scripts.functions.disableItem(inscriber);
 // --- Items ---
 
 // --- Quartz Fiber
-recipes.remove(QuartzFiber);
+recipes.remove(quartzFiber);
 
 // --- Fluix Glass Cable
 recipes.remove(FluixGlassCable);
@@ -692,7 +691,7 @@ recipes.addShaped(<appliedenergistics2:security_station>, [
 // --- Fluix Glass Cable
 recipes.addShaped(FluixGlassCable * 3, [
 [CertusRod, FluixDust, CertusRod],
-[QuartzFiber, QuartzFiber, QuartzFiber],
+[quartzFiber, quartzFiber, quartzFiber],
 [CertusRod, FluixDust, CertusRod]]);
 
 // --- Fluix Covered Cable
@@ -726,7 +725,7 @@ recipes.addShaped(FluixPearl, [
 
 // --- Wireless Receiver
 recipes.addShaped(WirelessReceiver, [
-[QuartzFiber, FluixPearl, QuartzFiber],
+[quartzFiber, FluixPearl, quartzFiber],
 [null, EnderRod, null],
 [CertusPlate, AdvCircuit, CertusPlate]]);
 
