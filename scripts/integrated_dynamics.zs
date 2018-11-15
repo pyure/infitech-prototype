@@ -11,3 +11,9 @@ recipes.addShaped("infitech3_drying_basin", <integrateddynamics:drying_basin>, [
 [<ore:plateIron>, null, <ore:plateIron>], 
 [<ore:stickAluminium>, null, <ore:stickAluminium>], 
 [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+
+// Squeezer.  Also probably too harsh.
+recipes.addShaped("it3_squeezer", <integrateddynamics:squeezer>, [
+  [<ore:stickIron>, <minecraft:heavy_weighted_pressure_plate>, <ore:stickIron>], 
+  [<ore:stickIron>, null, <ore:stickIron>], 
+  [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]]);
