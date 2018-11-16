@@ -24,6 +24,9 @@ val materialBlueAlloy = MaterialRegistry.createIngotMaterial(705, "blue_alloy", 
 materialBlueAlloy.setCableProperties(512, 3, 1);
 materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
 
+val materialThaumium = MaterialRegistry.createIngotMaterial(706, "thaumium", 0x7A007A, "shiny", 2, null, 7.6, 740);
+materialThaumium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
+
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
 val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(752, "enderium_base", 0x4D756E , "fluid" );
