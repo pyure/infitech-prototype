@@ -726,7 +726,7 @@ val controller_array = [
   <meta_tile_entity:primitive_blast_furnace.bronze>,
   <meta_tile_entity:vacuum_freezer>,
   <meta_tile_entity:implosion_compressor>,
-  <meta_tile_entity:multi_smelter>,
+  <meta_tile_entity:multi_furnace>,
   <meta_tile_entity:assembly_line>,
   <meta_tile_entity:fusion_reactor.luv>,
   <meta_tile_entity:fusion_reactor.zpm>,
