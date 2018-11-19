@@ -110,7 +110,10 @@ assembler.recipeBuilder()
   .EUt(2048)
   .buildAndRegister();  
   
-  
+// Disable the Coal Generator
+scripts.functions.disableItem(<libvulpes:coalgenerator>);
+
+
 // Disable the Arc Furnace  
 scripts.functions.disableItem(<advancedrocketry:arcfurnace>);
 
