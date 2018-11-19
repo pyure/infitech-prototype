@@ -730,7 +730,10 @@ val controller_array = [
   <meta_tile_entity:assembly_line>,
   <meta_tile_entity:fusion_reactor.luv>,
   <meta_tile_entity:fusion_reactor.zpm>,
-  <meta_tile_entity:fusion_reactor.uv>
+  <meta_tile_entity:fusion_reactor.uv>,
+  <meta_tile_entity:pyrolyse_oven>,
+  <meta_tile_entity:distillation_tower>,
+  <meta_tile_entity:distill_tower>
 ] as IItemStack[];
 
 for itemstack in controller_array {
