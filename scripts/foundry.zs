@@ -288,7 +288,7 @@ for name in tool_array {
   mods.foundry.Casting.addRecipe(shovelHead, metal_liquid_map[name] * 144, shovelHeadMold); 
   mods.foundry.Casting.addRecipe(swordBlade, metal_liquid_map[name] * 432, swordBladeMold); 
   mods.foundry.Casting.addRecipe(axeHead, metal_liquid_map[name] * 576, axeHeadMold); 
-  mods.foundry.Casting.addRecipe(fileHead, metal_liquid_map[name] * 432, fileHeadMold); 
+  mods.foundry.Casting.addRecipe(fileHead, metal_liquid_map[name] * 288, fileHeadMold); 
 }
 
 // Replace all default melting recipes
