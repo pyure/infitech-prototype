@@ -1,0 +1,1 @@
+recipes.removeByRecipeName("backpack:stick_iron");
