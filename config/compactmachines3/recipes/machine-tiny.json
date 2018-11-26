@@ -1,0 +1,42 @@
+{
+  "name": "compactmachines3:machine-tiny",
+  "target-item": "compactmachines3:machine",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 400,
+
+  "catalyst": "gregtech:meta_item_1",
+  "catalyst-meta":32670,
+
+  "input-types": {
+    "w": {
+      "id": "compactmachines3:wallbreakable",
+      "meta": 0
+    },
+    "b": {
+      "id": "gregtech:machine_casing",
+      "meta": 2
+    }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w"],
+      ["w","w","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","b","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","w","w"],
+      ["w","w","w"]
+    ]
+  ]
+
+}
