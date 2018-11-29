@@ -98,6 +98,6 @@ function gregArmor(dust as IIngredient, plate as IIngredient, ingot as IIngredie
 		gregArmorPiece(leggings, 7, dust, plate, ingot, molten);
 	}
 	if (!isNull(boots)) {
-		gregArmorPiece(boots, 6, dust, plate, ingot, molten);
+		gregArmorPiece(boots, 4, dust, plate, ingot, molten);
 	}
 }
