@@ -369,6 +369,45 @@ recipes.remove(fluiductSignalumPlated);
 recipes.remove(fluiductSignalumPlatedOpaque);
 */
 
+// Viaduct base
+recipes.remove(<thermaldynamics:duct_64:3>);
+assembler.recipeBuilder()
+	.inputs(<ore:stickLongStainlessSteel> * 2, <ore:ringBronze> * 4)
+	.fluidInputs(<liquid:glass> * 576)
+	.outputs(<thermaldynamics:duct_64:3> * 4)
+	.duration(80)
+	.EUt(130)
+	.buildAndRegister();
+
+// Normal viaduct
+recipes.remove(<thermaldynamics:duct_64>);
+fluid_canner.recipeBuilder()
+	.inputs(<thermaldynamics:duct_64:3> * 1)
+	.fluidInputs(<liquid:helium> * 200)
+	.outputs(<thermaldynamics:duct_64> * 1)
+	.duration(100)
+	.EUt(160)
+	.buildAndRegister();
+
+//Long range viaduct
+recipes.remove(<thermaldynamics:duct_64:1>);
+assembler.recipeBuilder()
+	.inputs(<thermaldynamics:duct_64> * 1, <ore:plateLead> * 4)
+	.fluidInputs(<liquid:borosilicate_glass> * 144)
+	.outputs(<thermaldynamics:duct_64:1> * 1)
+	.duration(40)
+	.EUt(130)
+	.buildAndRegister();
+
+//Long range linking viaduct
+recipes.remove(<thermaldynamics:duct_64:2>);
+assembler.recipeBuilder()
+	.inputs(<thermaldynamics:duct_64> * 1, <ore:gearEnderium> * 2)
+	.outputs(<thermaldynamics:duct_64:2> * 1)
+	.duration(250)
+	.EUt(180)
+	.buildAndRegister();
+	
 
 var servo = <thermaldynamics:servo>;
 var hardened_servo = <thermaldynamics:servo:1>;
