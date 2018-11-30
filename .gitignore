@@ -43,6 +43,7 @@ config/MouseTweaks.cfg
 config/InvTweaks.cfg
 config/AppliedEnergistics2/Facades.cfg
 config/AppliedEnergistics2/recipes/items.csv
+config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/cd4017be/compiled.dat
 config/thaumicjei_itemstack_aspects.json
@@ -50,6 +51,7 @@ config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
 config/agricraft/json/defaults/infitech/
 minecraftinstance.json
+modularmachinery.7z
 
 # Windows image file caches
 Thumbs.db

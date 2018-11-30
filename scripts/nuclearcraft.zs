@@ -178,3 +178,14 @@ icompressor.recipeBuilder()
 	.duration(20)
 	.EUt(32)
 	.buildAndRegister();
+
+// ISOTOPE SEPARATOR
+mods.nuclearcraft.isotope_separator.removeRecipeWithInput([<ore:dustUranium>]); // Disable processing U238 in isotope seperator  
+mods.nuclearcraft.isotope_separator.removeRecipeWithInput([<ore:dustUraniumOxide>]); // Disable processing U238-Ox in isotope seperator  
+
+var itemDuct = <thermaldynamics:duct_32>;
+recipes.remove(<nuclearcraft:bin>);
+recipes.addShaped("infitech3_tile.nuclearcraft.bin", <nuclearcraft:bin>, [
+  [<ore:plateSteel>, null, <ore:plateSteel>], 
+  [<ore:cableGTSingleCopper>, <ore:blockObsidian>, itemDuct], 
+  [<ore:plateSteel>, <ore:pipeSmallSteel>, <ore:plateSteel>]]);

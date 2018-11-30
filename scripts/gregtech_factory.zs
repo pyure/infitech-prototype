@@ -5,7 +5,7 @@ import mods.gregtech.material.MaterialRegistry;
 
 //Ingot		createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature)
 
-val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(700, "compressed_wrought_iron", 0xC8B4B4, "dull", 2, [<material:iron> * 1, <material:carbon> * 25], 6.2, 510);
+val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(700, "compressed_wrought_iron", 0xC8B4B4, "dull", 2, [<material:iron> * 1, <material:carbon> * 25], 6.8, 501);
 materialCompressedWroughtIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
 val materialCompressedIron = MaterialRegistry.createIngotMaterial(701, "compressed_iron", 0xC8D4D4, "dull", 2, [<material:iron> * 1], 6.0, 435);
@@ -23,6 +23,9 @@ materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
 val materialBlueAlloy = MaterialRegistry.createIngotMaterial(705, "blue_alloy", 0x427af4, "dull", 0, [<material:cobalt_aluminate> * 1, <material:silver> * 1]);
 materialBlueAlloy.setCableProperties(512, 3, 1);
 materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
+
+val materialThaumium = MaterialRegistry.createIngotMaterial(706, "thaumium", 0x7A007A, "shiny", 2, null, 7.6, 740);
+materialThaumium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
@@ -70,4 +73,4 @@ val fluidMouldyCompost = MaterialRegistry.createFluidMaterial(801, "mouldy_compo
 
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);
-
+<material:quartzite>.addFlags(["GENERATE_PLATE", "GENERATE_ROD",  "GENERATE_GEAR"]);

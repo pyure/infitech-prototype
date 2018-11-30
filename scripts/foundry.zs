@@ -288,7 +288,7 @@ for name in tool_array {
   mods.foundry.Casting.addRecipe(shovelHead, metal_liquid_map[name] * 144, shovelHeadMold); 
   mods.foundry.Casting.addRecipe(swordBlade, metal_liquid_map[name] * 432, swordBladeMold); 
   mods.foundry.Casting.addRecipe(axeHead, metal_liquid_map[name] * 576, axeHeadMold); 
-  mods.foundry.Casting.addRecipe(fileHead, metal_liquid_map[name] * 432, fileHeadMold); 
+  mods.foundry.Casting.addRecipe(fileHead, metal_liquid_map[name] * 288, fileHeadMold); 
 }
 
 // Replace all default melting recipes
@@ -298,8 +298,8 @@ for name, melting_point in ore_melting_map {
   print("Melting dust, ore and crushed for " ~ name);
   print("Melting point is " ~ melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ore" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 192, oreDict["crushed" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 288, oreDict["ore" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["crushed" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
   print("Done " ~ name);
 }
@@ -308,8 +308,8 @@ for name, melting_point in impure_ore_melting_map {
   print("Melting impure dust, ore and crushed for " ~ name);
   print("Melting point is " ~ melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["ore" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 153, oreDict["crushed" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 216, oreDict["ore" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["crushed" ~ name], melting_point);
   mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
   print("Done impure " ~ name);
 }
@@ -353,7 +353,7 @@ for name in rod_array {
 
 /* ====================================== MACHINES ============================================= */
 var rodCopper = <ore:stickCopper>;
-var bricksPrimitive = (<gregtech:metal_casing:1>);
+var bricks = (<minecraft:brick_block>);
 var screwBronze = (<gregtech:meta_item_1:17095>);
 var brickFoundry = (<foundry:component:2>);
 var screwWroughtIron = (<gregtech:meta_item_1:17197>);
@@ -373,7 +373,7 @@ recipes.remove(<foundry:burnerheater>);
 recipes.addShaped(<foundry:burnerheater>, [
    [rodCopper, <ore:plateCupronickel>, rodCopper],
    [null, refractoryCasingBasic, null],
-   [bricksPrimitive, <minecraft:furnace>, bricksPrimitive]]);
+   [bricks, <minecraft:furnace>, bricks]]);
 
 // REFRACTORY CASING BASIC
 recipes.remove(refractoryCasingBasic);

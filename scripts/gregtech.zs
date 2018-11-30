@@ -88,7 +88,7 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-//compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
+//compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
 
 recipes.addShaped(coal_ball, [
   [coal_dust, coal_dust, coal_dust],
@@ -151,8 +151,22 @@ cutting_saw.recipeBuilder()
   .EUt(2)
   .buildAndRegister();
 
-var dynamite = <gregtech:meta_item_1:32629>;
+var dynamite = <metaitem:dynamite>;
+recipes.remove(dynamite);
 
+recipes.addShaped(dynamite, [
+  [null, <ore:string>, null],
+  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
+  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
+  
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:string> * 1, <ore:paper> * 1)
+	.fluidInputs(<liquid:toluene> * 18)
+	.outputs(dynamite * 2)
+	.duration(30)
+	.EUt(126)
+	.buildAndRegister();
+  
 chemical_reactor.recipeBuilder()
 	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
 	.fluidOutputs(<liquid:red_alloy> * 144)
@@ -160,13 +174,6 @@ chemical_reactor.recipeBuilder()
 	.EUt(512)
 	.buildAndRegister();
 
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:string> * 1, <ore:paper> * 1)
-	.fluidInputs(<liquid:toluene> * 36)
-	.outputs(dynamite * 1)
-	.duration(60)
-	.EUt(126)
-	.buildAndRegister();
 
 chemical_reactor.recipeBuilder()		//Molten Enderium Base
 	.inputs(<ore:dustSilver> * 1, <ore:dustPlatinum> * 1)
@@ -200,6 +207,61 @@ chemical_reactor.recipeBuilder()    //Cobalt aluminate
   	.EUt(120)
   	.buildAndRegister();
 
+// Oredict of nuclear fuels we can dissolve into UF6
+val oreFuels = <ore:fuelsRawUranium>;
+oreFuels.addAll(<ore:dustUranium>);
+oreFuels.addAll(<ore:dustUraniumOxide>);
+oreFuels.addAll(<ore:ingotUranium>);
+oreFuels.addAll(<ore:ingotUraniumOxide>);
+
+// UF6 (Uranium Hexafluoride)
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:fuelsRawUranium> * 1)
+	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 12000)
+	.duration(400)
+	.EUt(580)
+	.buildAndRegister();
+
+// Process UF6 to get U235 etc
+val tinyUranium235 = <nuclearcraft:uranium:6>;
+val tinyUranium238 = <nuclearcraft:uranium:10>;
+centrifuge.recipeBuilder()
+	.fluidInputs([<liquid:uranium_hexafluoride> * 100])
+  .chancedOutput(tinyUranium235 * 4, 1600)
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 30)  
+  .duration(65)
+  .EUt(524)
+  .buildAndRegister(); 
+
+// Add missing clump->fullsize uranium recipes
+val uranium235 = <nuclearcraft:uranium:4>;
+val uranium238 = <nuclearcraft:uranium:8>;
+val uranium238Oxidized = <nuclearcraft:uranium:9>;
+val uranium235Oxidized = <nuclearcraft:uranium:5>;
+recipes.addShapeless(uranium235, [tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235]);
+
+// Disable default Uranium238 -> TinyPlutonium + TinyUranium235
+centrifuge.findRecipe(320, [<ore:dustUranium>.firstItem * 1], null).remove();
+
+// Oxidized 238
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustUranium> * 1)
+	.fluidInputs([<liquid:oxygen> * 400])
+	.outputs([uranium238Oxidized * 1])
+	.duration(2)
+	.EUt(8100)
+	.buildAndRegister();
+  
+// Oxidized 235
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustUranium235> * 1)
+	.fluidInputs([<liquid:oxygen> * 400])
+	.outputs([uranium235Oxidized * 1])
+	.duration(2)
+	.EUt(8100)
+	.buildAndRegister();
+  
 alloy_smelter.recipeBuilder()		//Blue Alloy
 	.inputs(<ore:dustSilver> * 1, <ore:dustCobaltAluminate> * 1)
 	.outputs(<ore:ingotBlueAlloy>.firstItem * 2)
@@ -214,11 +276,17 @@ alloy_smelter.recipeBuilder()		//Refactory Glass
 	.EUt(4)
 	.buildAndRegister();	
 	
-recipes.remove(dynamite);
-recipes.addShaped(dynamite, [
-  [null, <ore:string>, null],
-  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
-  [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
+
+// Low-efficieny (high sanity) glass plate recipe
+alloy_smelter.recipeBuilder()		
+	.notConsumable(<metaitem:shape.mold.plate>)
+	.inputs(<ore:blockGlass> * 9)
+	.outputs(<ore:plateGlass>.firstItem * 1)
+	.duration(220)
+	.EUt(8)
+	.buildAndRegister();	
+  
+
 
 var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
 turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
@@ -427,12 +495,6 @@ fluid_extractor.recipeBuilder()
 	.duration(80)
 	.buildAndRegister();
 	
-//Basisc Electronic Circuit
-var basicCircuit = <ore:circuitBasic>.firstItem;
-recipes.addShaped(basicCircuit, [
-[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>],
-[<ore:circuitPrimitive>,<ore:plateSteel>,<ore:circuitPrimitive>],
-[<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>,<ore:cableGtSingleRedAlloy>]]);
 
 //NC Alloys
 var ferroBoron = <nuclearcraft:alloy:6>;
@@ -489,24 +551,44 @@ recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dus
 recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
 
 val custom_food_compost_map = {
-  /*
-  <ore:listAllbeefcooked> : 200,
-  <ore:listAllmeatraw> : 200,
-  <ore:foodBeefjerky> : 220,
-  <ore:foodSouthernstylebreakfast> : 4200,
-  <ore:foodMeatfeastpizza> : 4800,
-  <ore:foodThankfuldinner> : 4800,
-  <ore:foodKoreandinner> : 4800,
-  <ore:foodGourmetvenisonburger> : 4200*/
-} as int[IOreDictEntry];
+  <minecraft:bread> : 23,
+  <minecraft:cookie> : 23,
+  <minecraft:melon> : 23,
+  <minecraft:apple> : 45,
+  <minecraft:nether_wart> : 45,
+  <minecraft:brown_mushroom> : 45,
+  <minecraft:spider_eye> : 45,
+  <minecraft:potato> : 60,
+  <minecraft:pumpkin> : 90,
+  <minecraft:carrot> : 90,
+  <minecraft:cooked_beef> : 90,
+  <minecraft:cooked_fish> : 90,
+  <minecraft:cooked_chicken> : 90,
+  <minecraft:rotten_flesh> : 90,
+  <minecraft:cooked_porkchop> : 90,
+  <minecraft:cooked_rabbit> : 90,
+  <minecraft:cooked_mutton> : 90,
+  <minecraft:porkchop> : 90,
+  <minecraft:fish:0> : 120,
+  <minecraft:fish:1> : 120,
+  <minecraft:fish:2> : 120,
+  <minecraft:fish:3> : 120,
+  <minecraft:poisonous_potato> : 120,
+  <minecraft:chicken> : 120,
+  <minecraft:rabbit> : 120,
+  <minecraft:mutton> : 120,
+  <minecraft:beef> : 120,
+  <minecraft:cake> : 180
+} as int[IItemStack];
 
-
+// Add compost for every food type.  ONLY WORKS WITH ZENCESSORIES which was not a valid curseforge mod at this time.
+/*
 for mod in loadedMods {
   for item in mod.items {
     if (item.isFood() && item.getHealAmount() > 0) {
       print("\t\t" ~ item.displayName);      
       
-      val food_value = 100 * (item.getSaturationModifier() + item.getHealAmount());
+      val food_value = 10 + (40 * (item.getSaturationModifier() + item.getHealAmount()));
       
       mixer.recipeBuilder()
         .fluidInputs([<liquid:water> * food_value])
@@ -518,6 +600,7 @@ for mod in loadedMods {
     }          
   }
 }
+*/
 
 for itemstack, fluidAmount in custom_food_compost_map {
   mixer.recipeBuilder()
@@ -543,7 +626,7 @@ centrifuge.recipeBuilder()
   .chancedOutput(pulpedBiomass, 2200)
   .chancedOutput(pulpedBiomass, 2200)
   .chancedOutput(pulpedBiomass, 2200)
-  .fluidOutputs(<liquid:methane> * 125)
+  .fluidOutputs(<liquid:methane> * 50)
   .duration(45)
   .EUt(12)
   .buildAndRegister();
@@ -584,6 +667,8 @@ chemical_reactor.recipeBuilder()
 	.duration(200)
 	.EUt(30)
 	.buildAndRegister();
+
+
 
 
 //Magnetite Ore/Dust
@@ -633,3 +718,24 @@ recipes.addShaped(<toolbelt:pouch>, [
 [<ore:wireFineBrass>, <minecraft:gold_nugget>, <ore:wireFineBrass>],
 [hLeather, null, hLeather],
 [<ore:wireFineBrass>, hLeather, <ore:wireFineBrass>]]);
+
+
+// Put a Tooltip for Controllers regarding Structure
+val controller_array = [
+  <meta_tile_entity:electric_blast_furnace>,
+  <meta_tile_entity:primitive_blast_furnace.bronze>,
+  <meta_tile_entity:vacuum_freezer>,
+  <meta_tile_entity:implosion_compressor>,
+  <meta_tile_entity:multi_furnace>,
+  <meta_tile_entity:assembly_line>,
+  <meta_tile_entity:fusion_reactor.luv>,
+  <meta_tile_entity:fusion_reactor.zpm>,
+  <meta_tile_entity:fusion_reactor.uv>,
+  <meta_tile_entity:pyrolyse_oven>,
+  <meta_tile_entity:distillation_tower>,
+  <meta_tile_entity:distill_tower>
+] as IItemStack[];
+
+for itemstack in controller_array {
+  itemstack.addTooltip(format.lightPurple("See JEI for Structure."));
+}

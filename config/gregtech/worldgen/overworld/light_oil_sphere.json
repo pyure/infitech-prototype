@@ -5,8 +5,8 @@
   "min_height": 10,
 
   "generator": {
-    "type": "sphere",
-    "radius": [7, 9]
+    "type": "ellipsoid",
+    "radius": [9, 12]
   },
   "filler": {
     "type": "simple",

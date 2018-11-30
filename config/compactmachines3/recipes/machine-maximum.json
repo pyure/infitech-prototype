@@ -1,0 +1,58 @@
+{
+  "name": "compactmachines3:machine-maximum",
+  "target-item": "compactmachines3:machine",
+  "target-meta": 5,
+  "target-count": 1,
+
+  "duration": 600,
+
+  "catalyst": "gregtech:meta_item_1",
+  "catalyst-meta":32671,
+
+  "input-types": {
+    "w": { "id": "compactmachines3:wallbreakable" },
+    "e": {
+      "id": "gregtech:machine_casing",
+      "meta": 7
+    }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","e","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"]
+    ]
+  ]
+}

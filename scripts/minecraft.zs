@@ -52,8 +52,10 @@ recipes.addShaped("fire_bow_recipe", fireBow,
   [null, bow.marked("myItem"), null], 
   [null, null, null]], 
   function(output, inputs, crafting) {
-    return output.withDamage(inputs.myItem.damage);
+    var damageToOutput = inputs.myItem.damage * output.maxDamage / inputs.myItem.maxDamage;
+    return output.withDamage(damageToOutput);
 }, null);
+
 
 // Alternative Torch
 

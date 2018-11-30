@@ -348,6 +348,7 @@ assembler.recipeBuilder()
 	.buildAndRegister();
 
 //Remove Fluxduct
+/* reinstate fluxducts
 recipes.remove(fluxductLeadstone);
 recipes.remove(fluxductHardened);
 recipes.remove(fluxductRedstoneEnergy);
@@ -366,6 +367,8 @@ recipes.remove(itemductSignalumImpulse);
 recipes.remove(itemductSignalumImpulseOpaque);
 recipes.remove(fluiductSignalumPlated);
 recipes.remove(fluiductSignalumPlatedOpaque);
+*/
+
 
 var servo = <thermaldynamics:servo>;
 var hardened_servo = <thermaldynamics:servo:1>;
@@ -559,6 +562,50 @@ recipes.addShaped("thermalfoundation_tool_hammer_steel", <thermalfoundation:tool
 recipes.addShaped("thermalfoundation_tool_hammer_diamond", <thermalfoundation:tool.hammer_diamond>, [[<ore:plateDiamond>, <ore:stickTungstenSteel>, <ore:plateDiamond>], [<ore:plateDiamond>, <ore:stickTungstenSteel>, <ore:plateDiamond>], [null, <ore:stickTungstenSteel>, null]]);
 recipes.addShaped("thermalfoundation_tool_hammer_platinum", <thermalfoundation:tool.hammer_platinum>, [[<ore:platePlatinum>, <ore:stickTungstenSteel>, <ore:platePlatinum>], [<ore:platePlatinum>, <ore:stickTungstenSteel>, <ore:platePlatinum>], [null, <ore:stickTungstenSteel>, null]]);
 recipes.addShaped("thermalfoundation_tool_hammer_aluminum", <thermalfoundation:tool.hammer_aluminum>, [[<ore:plateAluminum>, <ore:stickTungstenSteel>, <ore:plateAluminum>], [<ore:plateAluminum>, <ore:stickTungstenSteel>, <ore:plateAluminum>], [null, <ore:stickTungstenSteel>, null]]);
+
+
+// Excavators require steel rods
+recipes.remove(<thermalfoundation:tool.excavator_wood>);
+recipes.remove(<thermalfoundation:tool.excavator_stone>);
+recipes.remove(<thermalfoundation:tool.excavator_iron>);
+recipes.remove(<thermalfoundation:tool.excavator_gold>);
+recipes.remove(<thermalfoundation:tool.excavator_diamond>);
+recipes.remove(<thermalfoundation:tool.excavator_copper>);
+recipes.remove(<thermalfoundation:tool.excavator_tin>);
+recipes.remove(<thermalfoundation:tool.excavator_silver>);
+recipes.remove(<thermalfoundation:tool.excavator_lead>);
+recipes.remove(<thermalfoundation:tool.excavator_aluminum>);
+recipes.remove(<thermalfoundation:tool.excavator_nickel>);
+recipes.remove(<thermalfoundation:tool.excavator_platinum>);
+recipes.remove(<thermalfoundation:tool.excavator_steel>);
+recipes.remove(<thermalfoundation:tool.excavator_electrum>);
+recipes.remove(<thermalfoundation:tool.excavator_invar>);
+recipes.remove(<thermalfoundation:tool.excavator_bronze>);
+recipes.remove(<thermalfoundation:tool.excavator_constantan>);
+
+// TIER I excavators
+recipes.addShaped("thermalfoundation_tool_excavator_gold", <thermalfoundation:tool.excavator_gold>, [[null, <ore:plateGold>, null], [<ore:plateGold>, <ore:stickSteel>, <ore:plateGold>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_silver", <thermalfoundation:tool.excavator_silver>, [[null, <ore:plateSilver>, null], [<ore:plateSilver>, <ore:stickSteel>, <ore:plateSilver>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_tin", <thermalfoundation:tool.excavator_tin>, [[null, <ore:plateTin>, null], [<ore:plateTin>, <ore:stickSteel>, <ore:plateTin>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_copper", <thermalfoundation:tool.excavator_copper>, [[null, <ore:plateCopper>, null], [<ore:plateCopper>, <ore:stickSteel>, <ore:plateCopper>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_lead", <thermalfoundation:tool.excavator_lead>, [[null, <ore:plateLead>, null], [<ore:plateLead>, <ore:stickSteel>, <ore:plateLead>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_nickel", <thermalfoundation:tool.excavator_nickel>, [[null, <ore:plateNickel>, null], [<ore:plateNickel>, <ore:stickSteel>, <ore:plateNickel>], [null, <ore:stickSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_iron", <thermalfoundation:tool.excavator_iron>, [[null, <ore:plateIron>, null], [<ore:plateIron>, <ore:stickSteel>, <ore:plateIron>], [null, <ore:stickSteel>, null]]);
+
+
+// TIER II excavators
+recipes.addShaped("thermalfoundation_tool_excavator_constantan", <thermalfoundation:tool.excavator_constantan>, [[null, <ore:plateConstantan>, null], [<ore:plateConstantan>, <ore:stickStainlessSteel>, <ore:plateConstantan>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_bronze", <thermalfoundation:tool.excavator_bronze>, [[null, <ore:plateBronze>, null], [<ore:plateBronze>, <ore:stickStainlessSteel>, <ore:plateBronze>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_electrum", <thermalfoundation:tool.excavator_electrum>, [[null, <ore:plateElectrum>, null], [<ore:plateElectrum>, <ore:stickStainlessSteel>, <ore:plateElectrum>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_invar", <thermalfoundation:tool.excavator_invar>, [[null, <ore:plateInvar>, null], [<ore:plateInvar>, <ore:stickStainlessSteel>, <ore:plateInvar>], [null, <ore:stickStainlessSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_steel", <thermalfoundation:tool.excavator_steel>, [[null, <ore:plateSteel>, null], [<ore:plateSteel>, <ore:stickStainlessSteel>, <ore:plateSteel>], [null, <ore:stickStainlessSteel>, null]]);
+
+
+// TIER III excavators
+recipes.addShaped("thermalfoundation_tool_excavator_diamond", <thermalfoundation:tool.excavator_diamond>, [[null, <ore:plateDiamond>, null], [<ore:plateDiamond>, <ore:stickTungstenSteel>, <ore:plateDiamond>], [null, <ore:stickTungstenSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_platinum", <thermalfoundation:tool.excavator_platinum>, [[null, <ore:platePlatinum>, null], [<ore:platePlatinum>, <ore:stickTungstenSteel>, <ore:platePlatinum>], [null, <ore:stickTungstenSteel>, null]]);
+recipes.addShaped("thermalfoundation_tool_excavator_aluminum", <thermalfoundation:tool.excavator_aluminum>, [[null, <ore:plateAluminum>, null], [<ore:plateAluminum>, <ore:stickTungstenSteel>, <ore:plateAluminum>], [null, <ore:stickTungstenSteel>, null]]);
+
 
 //Gunpowder
 recipes.removeByRecipeName("thermalfoundation:gunpowder");
