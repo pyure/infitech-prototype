@@ -22,6 +22,11 @@ var coal_ball = VanillaFactory.createItem("coal_ball");
 coal_ball.maxStackSize = 64;
 coal_ball.register();
 
+var grindy_comb = VanillaFactory.createItem("grindy_comb");
+grindy_comb.maxStackSize = 64;
+grindy_comb.register();
+
+
 // Fire Bow
 var item = VanillaFactory.createItem("fire_bow");
 item.maxStackSize = 1;
