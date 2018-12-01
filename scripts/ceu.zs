@@ -52,52 +52,52 @@
 
 
 
-<meta_tile_entity:ceu.ulv.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.ulv.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.ulv.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.ulv.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.ulv.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.ulv.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.ulv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.ulv.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.lv.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.lv.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.lv.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.lv.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.lv.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.lv.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.lv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.lv.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.mv.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.mv.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.mv.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.mv.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.mv.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.mv.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.mv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.mv.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.hv.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.hv.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.hv.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.hv.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.hv.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.hv.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.hv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.hv.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.ev.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.ev.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.ev.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.ev.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.ev.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.ev.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.ev.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.ev.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.iv.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.iv.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.iv.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.iv.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.iv.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.iv.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.iv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.iv.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.luv.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.luv.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.luv.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.luv.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.luv.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.luv.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.luv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.luv.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.zpm.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.zpm.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.zpm.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.zpm.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.zpm.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.zpm.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.zpm.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.zpm.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.uv.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.uv.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.uv.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.uv.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.uv.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.uv.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.uv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.uv.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu.max.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.max.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.max.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu.max.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
+<meta_tile_entity:ceu.max.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.max.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.max.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
+<meta_tile_entity:ceu.max.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
