@@ -84,3 +84,4 @@ compressor.recipeBuilder()
 	.outputs(<botania:quartztypesunny>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
+  
