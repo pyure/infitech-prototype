@@ -369,6 +369,50 @@ recipes.remove(fluiductSignalumPlated);
 recipes.remove(fluiductSignalumPlatedOpaque);
 */
 
+var baseduct = <thermaldynamics:duct_64:3>;
+var normalviaduct = <thermaldynamics:duct_64>;
+var LRViaduct = <thermaldynamics:duct_64:1>;
+var LRVLinking = <thermaldynamics:duct_64:2>;
+
+// Viaduct base
+recipes.remove(baseduct);
+assembler.recipeBuilder()
+	.inputs(<ore:stickLongStainlessSteel> * 2, <ore:ringBronze> * 4)
+	.fluidInputs(<liquid:glass> * 576)
+	.outputs(baseduct * 4)
+	.duration(80)
+	.EUt(130)
+	.buildAndRegister();
+
+// Normal viaduct
+recipes.remove(normalviaduct);
+fluid_canner.recipeBuilder()
+	.inputs(baseduct * 1)
+	.fluidInputs(<liquid:helium> * 200)
+	.outputs(normalviaduct * 1)
+	.duration(100)
+	.EUt(160)
+	.buildAndRegister();
+
+//Long range viaduct
+recipes.remove(<thermaldynamics:duct_64:1>);
+assembler.recipeBuilder()
+	.inputs(normalviaduct * 1, <ore:plateLead> * 4)
+	.fluidInputs(<liquid:borosilicate_glass> * 144)
+	.outputs(LRViaduct * 1)
+	.duration(40)
+	.EUt(130)
+	.buildAndRegister();
+
+//Long range linking viaduct
+recipes.remove(<thermaldynamics:duct_64:2>);
+assembler.recipeBuilder()
+	.inputs(normalviaduct * 1, <ore:gearEnderium> * 2)
+	.outputs(LRVLinking * 1)
+	.duration(250)
+	.EUt(180)
+	.buildAndRegister();
+	
 
 var servo = <thermaldynamics:servo>;
 var hardened_servo = <thermaldynamics:servo:1>;
@@ -697,5 +741,30 @@ for i, item in glassOutput {
 	.buildAndRegister();
 }
 
-
-
+// Shears
+recipes.removeByRecipeName("thermalfoundation:tool.shears_copper");
+recipes.addShaped("it3_shears_copper", <thermalfoundation:tool.shears_copper>, [  [<ore:craftingToolFile>, <ore:plateCopper>, null], [<ore:plateCopper>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_tin");
+recipes.addShaped("it3_shears_tin", <thermalfoundation:tool.shears_tin>, [  [<ore:craftingToolFile>, <ore:plateTin>, null], [<ore:plateTin>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_silver");
+recipes.addShaped("it3_shears_silver", <thermalfoundation:tool.shears_silver>, [  [<ore:craftingToolFile>, <ore:plateSilver>, null], [<ore:plateSilver>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_lead");
+recipes.addShaped("it3_shears_lead", <thermalfoundation:tool.shears_lead>, [  [<ore:craftingToolFile>, <ore:plateLead>, null], [<ore:plateLead>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_aluminum");
+recipes.addShaped("it3_shears_aluminum", <thermalfoundation:tool.shears_aluminum>, [  [<ore:craftingToolFile>, <ore:plateAluminum>, null], [<ore:plateAluminum>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_nickel");
+recipes.addShaped("it3_shears_nickel", <thermalfoundation:tool.shears_nickel>, [  [<ore:craftingToolFile>, <ore:plateNickel>, null], [<ore:plateNickel>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_platinum");
+recipes.addShaped("it3_shears_platinum", <thermalfoundation:tool.shears_platinum>, [  [<ore:craftingToolFile>, <ore:platePlatinum>, null], [<ore:platePlatinum>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_steel");
+recipes.addShaped("it3_shears_steel", <thermalfoundation:tool.shears_steel>, [  [<ore:craftingToolFile>, <ore:plateSteel>, null], [<ore:plateSteel>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_electrum");
+recipes.addShaped("it3_shears_electrum", <thermalfoundation:tool.shears_electrum>, [  [<ore:craftingToolFile>, <ore:plateElectrum>, null], [<ore:plateElectrum>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_invar");
+recipes.addShaped("it3_shears_invar", <thermalfoundation:tool.shears_invar>, [  [<ore:craftingToolFile>, <ore:plateInvar>, null], [<ore:plateInvar>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_bronze");
+recipes.addShaped("it3_shears_bronze", <thermalfoundation:tool.shears_bronze>, [  [<ore:craftingToolFile>, <ore:plateBronze>, null], [<ore:plateBronze>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_constantan");
+recipes.addShaped("it3_shears_constantan", <thermalfoundation:tool.shears_constantan>, [  [<ore:craftingToolFile>, <ore:plateConstantan>, null], [<ore:plateConstantan>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.removeByRecipeName("thermalfoundation:tool.shears_gold");
+recipes.addShaped("it3_shears_gold", <thermalfoundation:tool.shears_gold>, [  [<ore:craftingToolFile>, <ore:plateGold>, null], [<ore:plateGold>, <ore:craftingToolHardHammer>, null], [null, null, null]]);

@@ -27,6 +27,7 @@ materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
 val materialThaumium = MaterialRegistry.createIngotMaterial(706, "thaumium", 0x7A007A, "shiny", 2, null, 7.6, 740);
 materialThaumium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
+
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
 val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(752, "enderium_base", 0x4D756E , "fluid" );
@@ -52,25 +53,30 @@ val fluidWaterDyeOrange = MaterialRegistry.createFluidMaterial(782, "water_dye_o
 val fluidWaterDyeWhite = MaterialRegistry.createFluidMaterial(783, "water_dye_white", 0xffffff, "fluid", null);
 
 //dyes_chemical
-val fluidChemiDyeBlack = MaterialRegistry.createFluidMaterial(784, "chemi_dye_black", 0x111111, "fluid", null);
-val fluidChemiDyeRed = MaterialRegistry.createFluidMaterial(785, "chemi_dye_red", 0xA30000, "fluid", null);
-val fluidChemiDyeGreen = MaterialRegistry.createFluidMaterial(786, "chemi_dye_green", 0x00CC00, "fluid", null);
-val fluidChemiDyeBrown = MaterialRegistry.createFluidMaterial(787, "chemi_dye_brown", 0x4D3300, "fluid", null);
-val fluidChemiDyeBlue = MaterialRegistry.createFluidMaterial(788, "chemi_dye_blue", 0x0000CC, "fluid", null);
-val fluidChemiDyePurple = MaterialRegistry.createFluidMaterial(789, "chemi_dye_purple", 0x660066, "fluid", null);
-val fluidChemiDyeCyan = MaterialRegistry.createFluidMaterial(790, "chemi_dye_cyan", 0x00CCCC, "fluid", null);
-val fluidChemiDyeLightGray = MaterialRegistry.createFluidMaterial(791, "chemi_dye_lightgray", 0x9A9A9A, "fluid", null);
-val fluidChemiDyeGray = MaterialRegistry.createFluidMaterial(792, "chemi_dye_gray", 0x666666, "fluid", null);
-val fluidChemiDyePink = MaterialRegistry.createFluidMaterial(793, "chemi_dye_pink", 0xCC9A9A, "fluid", null);
-val fluidChemiDyeLime = MaterialRegistry.createFluidMaterial(794, "chemi_dye_lime", 0x66CC66, "fluid", null);
-val fluidChemiDyeYellow = MaterialRegistry.createFluidMaterial(795, "chemi_dye_yellow", 0xA3A300, "fluid", null);
-val fluidChemiDyeLightBlue = MaterialRegistry.createFluidMaterial(796, "chemi_dye_lightblue", 0x6666CC, "fluid", null);
-val fluidChemiDyeMagenta = MaterialRegistry.createFluidMaterial(797, "chemi_dye_magenta", 0xCC00CC, "fluid", null);
-val fluidChemiDyeOrange = MaterialRegistry.createFluidMaterial(798, "chemi_dye_orange", 0xCC6600, "fluid", null);
-val fluidChemiDyeWhite = MaterialRegistry.createFluidMaterial(799, "chemi_dye_white", 0xffffff, "fluid", null);
-val fluidLiquidCompost = MaterialRegistry.createFluidMaterial(800, "liquid_compost", 0x405c47 , "fluid" );
-val fluidMouldyCompost = MaterialRegistry.createFluidMaterial(801, "mouldy_compost", 0x807c47 , "fluid" );
+MaterialRegistry.createFluidMaterial(784, "chemi_dye_black", 0x111111, "fluid", null);
+MaterialRegistry.createFluidMaterial(785, "chemi_dye_red", 0xA30000, "fluid", null);
+MaterialRegistry.createFluidMaterial(786, "chemi_dye_green", 0x00CC00, "fluid", null);
+MaterialRegistry.createFluidMaterial(787, "chemi_dye_brown", 0x4D3300, "fluid", null);
+MaterialRegistry.createFluidMaterial(788, "chemi_dye_blue", 0x0000CC, "fluid", null);
+MaterialRegistry.createFluidMaterial(789, "chemi_dye_purple", 0x660066, "fluid", null);
+MaterialRegistry.createFluidMaterial(790, "chemi_dye_cyan", 0x00CCCC, "fluid", null);
+MaterialRegistry.createFluidMaterial(791, "chemi_dye_lightgray", 0x9A9A9A, "fluid", null);
+MaterialRegistry.createFluidMaterial(792, "chemi_dye_gray", 0x666666, "fluid", null);
+MaterialRegistry.createFluidMaterial(793, "chemi_dye_pink", 0xCC9A9A, "fluid", null);
+MaterialRegistry.createFluidMaterial(794, "chemi_dye_lime", 0x66CC66, "fluid", null);
+MaterialRegistry.createFluidMaterial(795, "chemi_dye_yellow", 0xA3A300, "fluid", null);
+MaterialRegistry.createFluidMaterial(796, "chemi_dye_lightblue", 0x6666CC, "fluid", null);
+MaterialRegistry.createFluidMaterial(797, "chemi_dye_magenta", 0xCC00CC, "fluid", null);
+MaterialRegistry.createFluidMaterial(798, "chemi_dye_orange", 0xCC6600, "fluid", null);
+MaterialRegistry.createFluidMaterial(799, "chemi_dye_white", 0xffffff, "fluid", null);
+MaterialRegistry.createFluidMaterial(800, "liquid_compost", 0x405c47 , "fluid" );
+MaterialRegistry.createFluidMaterial(801, "mouldy_compost", 0x807c47 , "fluid" );
+MaterialRegistry.createFluidMaterial(802, "flint_grinding_solution", 0x443243 , "fluid" );
+MaterialRegistry.createFluidMaterial(803, "steel_grinding_solution", 0x818181 , "fluid" );
+MaterialRegistry.createFluidMaterial(804, "titanium_grinding_solution", 0xDDA1F1 , "fluid" );
+MaterialRegistry.createFluidMaterial(805, "tungstensteel_grinding_solution", 0x6565A1 , "fluid" );
 
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);
 <material:quartzite>.addFlags(["GENERATE_PLATE", "GENERATE_ROD",  "GENERATE_GEAR"]);
+
