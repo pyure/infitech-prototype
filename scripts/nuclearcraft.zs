@@ -194,3 +194,11 @@ var fuelLEU235 = <nuclearcraft:fuel_uranium:4>;
 var fuelHEU235 = <nuclearcraft:fuel_uranium:6>;
 recipes.addShapeless(fuelLEU235, [<ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
 recipes.addShapeless(fuelHEU235, [<ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
+
+// Allow GT Borax Dust to count as Boron oredict
+var ingotBoron = <nuclearcraft:ingot:5>;
+<ore:dustBoron>.addAll(<ore:dustBorax>);
+
+// Add dustBoron for boron ingots instead of NC Boron Dust
+furnace.remove(ingotBoron);
+furnace.addRecipe(ingotBoron, <ore:dustBoron>);
