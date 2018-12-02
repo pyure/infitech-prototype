@@ -189,3 +189,8 @@ recipes.addShaped("infitech3_tile.nuclearcraft.bin", <nuclearcraft:bin>, [
   [<ore:plateSteel>, null, <ore:plateSteel>], 
   [<ore:cableGTSingleCopper>, <ore:blockObsidian>, itemDuct], 
   [<ore:plateSteel>, <ore:pipeSmallSteel>, <ore:plateSteel>]]);
+  
+var fuelLEU235 = <nuclearcraft:fuel_uranium:4>;
+var fuelHEU235 = <nuclearcraft:fuel_uranium:6>;
+recipes.addShapeless(fuelLEU235, [<ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
+recipes.addShapeless(fuelHEU235, [<ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);

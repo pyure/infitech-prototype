@@ -18,7 +18,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2018-12-01T04:09:31.4466642Z",
+  "lastPlayed": "2018-12-02T00:54:10.3182776Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -257,6 +257,21 @@
       "queryTimestamp": "2018-11-30T23:41:50.198654Z",
       "fileCount": 23,
       "fileSize": 0
+    },
+    {
+      "folderName": "xnet-1.12-1.7.5.jar",
+      "fingerprint": 1541241717,
+      "fileDateHash": 1816478714,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1541241717
+      ],
+      "status": 1,
+      "timestamp": "2018-12-01T19:19:06.8826158Z",
+      "lastWriteTimeUtc": "2018-12-01T04:04:17.5093548Z",
+      "queryTimestamp": "2018-12-01T19:19:08.1946972Z",
+      "fileCount": 1,
+      "fileSize": 488706
     },
     {
       "folderName": "FastFurnace-1.12.2-1.1.0.jar",
@@ -730,21 +745,6 @@
       "fileSize": 13249
     },
     {
-      "folderName": "mcjtylib-1.12-3.0.3.jar",
-      "fingerprint": 1277240966,
-      "fileDateHash": 1739304047,
-      "sectionID": 6,
-      "individualFingerprints": [
-        1277240966
-      ],
-      "status": 1,
-      "timestamp": "2018-11-07T03:48:28.6138912Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:37.9161813Z",
-      "queryTimestamp": "2018-11-30T23:41:50.2056485Z",
-      "fileCount": 1,
-      "fileSize": 483745
-    },
-    {
       "folderName": "foamfix-0.10.0-1.12.2.jar",
       "fingerprint": 383312113,
       "fileDateHash": 2199882495,
@@ -866,17 +866,16 @@
     },
     {
       "folderName": "New World",
-      "fingerprint": 1891875398,
-      "fileDateHash": 4180578645,
+      "fingerprint": 2351402568,
+      "fileDateHash": 713607506,
       "sectionID": 17,
       "individualFingerprints": [
+        77774446,
         116780641,
         121222600,
         129134535,
-        141097542,
         202139462,
         224251200,
-        226982627,
         380021271,
         411365828,
         411365828,
@@ -887,13 +886,14 @@
         457791194,
         461128986,
         464731110,
-        478102722,
         489458212,
         489458212,
         489458212,
         493877642,
+        573068932,
+        613413726,
         682895157,
-        704106334,
+        687318135,
         718842791,
         758054953,
         758054953,
@@ -901,11 +901,15 @@
         758054953,
         758054953,
         758054953,
-        826248432,
+        797468910,
         847213833,
+        881356714,
         906116201,
         907772214,
         919116506,
+        963868092,
+        984909397,
+        1005783817,
         1071519609,
         1135267510,
         1254400901,
@@ -913,6 +917,7 @@
         1279409053,
         1284106792,
         1301447553,
+        1332318111,
         1355555975,
         1355555975,
         1355555975,
@@ -920,30 +925,27 @@
         1355555975,
         1355555975,
         1409837354,
-        1452970178,
         1453981708,
         1476128175,
         1478306258,
         1489309702,
         1552558494,
+        1554767565,
         1612031071,
         1634858347,
-        1656454197,
-        1762051209,
-        1775187959,
+        1648385312,
         1803953797,
         1957309148,
-        2009834932,
         2046462449,
         2046462449,
         2163519468,
         2185909887,
         2205603756,
-        2205707958,
-        2205707958,
-        2205707958,
-        2205707958,
-        2205707958,
+        2248889783,
+        2248889783,
+        2248889783,
+        2248889783,
+        2248889783,
         2291480439,
         2296921510,
         2339888416,
@@ -952,31 +954,29 @@
         2612143574,
         2696499226,
         2820563858,
+        2892438583,
         2897276902,
+        2971976672,
         2982068916,
         3028428630,
         3028428630,
         3052982433,
         3088903839,
         3184781582,
-        3194790061,
         3200009093,
+        3213130942,
         3218286159,
         3242365006,
-        3304239553,
+        3303011344,
         3307123306,
-        3356172927,
-        3378629838,
+        3362180216,
         3383409723,
         3415911998,
         3417575292,
-        3437001645,
         3543678447,
         3548503103,
         3558517983,
-        3568394621,
         3718229347,
-        3847588426,
         3858153104,
         3973001741,
         3979824269,
@@ -990,9 +990,9 @@
         4272588933
       ],
       "status": 1,
-      "timestamp": "2018-11-30T23:41:48.6075925Z",
-      "lastWriteTimeUtc": "2018-11-24T23:28:55.2675551Z",
-      "queryTimestamp": "2018-11-30T23:41:50.2086438Z",
+      "timestamp": "2018-12-01T19:19:06.8876101Z",
+      "lastWriteTimeUtc": "2018-12-01T04:14:31.7212183Z",
+      "queryTimestamp": "2018-12-01T19:19:08.2056851Z",
       "fileCount": 23,
       "fileSize": 0
     },
@@ -1954,6 +1954,21 @@
       "fileSize": 3096317
     },
     {
+      "folderName": "mcjtylib-1.12-3.0.7.jar",
+      "fingerprint": 1714576516,
+      "fileDateHash": 169666047,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1714576516
+      ],
+      "status": 1,
+      "timestamp": "2018-12-01T19:19:06.8356639Z",
+      "lastWriteTimeUtc": "2018-12-01T04:09:21.4934951Z",
+      "queryTimestamp": "2018-12-01T19:19:08.2206707Z",
+      "fileCount": 1,
+      "fileSize": 492317
+    },
+    {
       "folderName": "Ding-1.12.1-1.0.1.jar",
       "fingerprint": 3391190132,
       "fileDateHash": 1226348649,
@@ -2059,6 +2074,21 @@
       "fileSize": 61018
     },
     {
+      "folderName": "NuclearCraft-2.12f--1.12.2.jar",
+      "fingerprint": 1853242338,
+      "fileDateHash": 3225261658,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1853242338
+      ],
+      "status": 1,
+      "timestamp": "2018-12-01T19:19:06.8396603Z",
+      "lastWriteTimeUtc": "2018-12-01T00:03:21.6431205Z",
+      "queryTimestamp": "2018-12-01T19:19:08.2226685Z",
+      "fileCount": 1,
+      "fileSize": 6972755
+    },
+    {
       "folderName": "jei_1.12.2-4.13.1.220.jar",
       "fingerprint": 2812795741,
       "fileDateHash": 428408068,
@@ -2117,21 +2147,6 @@
       "queryTimestamp": "2018-11-30T23:41:50.2246275Z",
       "fileCount": 1,
       "fileSize": 2886817
-    },
-    {
-      "folderName": "xnet-1.12-1.7.3.jar",
-      "fingerprint": 3311669153,
-      "fileDateHash": 741185455,
-      "sectionID": 6,
-      "individualFingerprints": [
-        3311669153
-      ],
-      "status": 1,
-      "timestamp": "2018-08-16T01:14:39.6264113Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:38.11098Z",
-      "queryTimestamp": "2018-11-30T23:41:50.2256266Z",
-      "fileCount": 1,
-      "fileSize": 463284
     },
     {
       "folderName": "CarryOn MC1.12.2 v1.11.1.jar",
@@ -2195,7 +2210,7 @@
     }
   ],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2018-11-30T23:41:50.5497661Z",
+  "lastPreviousMatchUpdate": "2018-12-01T19:19:08.69318Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -9753,6 +9768,97 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 226254,
+      "gameInstanceID": "06b33c02-5ebc-41ad-afe3-a0ad88e16abb",
+      "installedFile": {
+        "id": 2633441,
+        "fileName": "NuclearCraft-2.12f--1.12.2",
+        "fileNameOnDisk": "NuclearCraft-2.12f--1.12.2.jar",
+        "fileDate": "2018-10-30T16:17:43.087",
+        "fileLength": 6972755,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2633/441/NuclearCraft-2.12f--1.12.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "addonId": 74072,
+            "type": 2
+          },
+          {
+            "addonId": 223008,
+            "type": 2
+          },
+          {
+            "addonId": 238222,
+            "type": 2
+          },
+          {
+            "addonId": 239197,
+            "type": 2
+          },
+          {
+            "addonId": 242638,
+            "type": 2
+          },
+          {
+            "addonId": 268560,
+            "type": 2
+          },
+          {
+            "addonId": 293327,
+            "type": 2
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 2824802681
+          },
+          {
+            "folderName": "nc",
+            "fimgerprint": 4105343046
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 621867633
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 2361088182
+          },
+          {
+            "folderName": "NC Splash Long.png",
+            "fimgerprint": 3717683899
+          },
+          {
+            "folderName": "pack.mcmeta",
+            "fimgerprint": 3130895940
+          }
+        ],
+        "packageFingerprint": 1853242338,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2018-12-01T19:19:08.6911828Z",
+      "dateUpdated": "2017-12-01T19:19:08.6911828Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     }
   ],
   "isMigrated": false,

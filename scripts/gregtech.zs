@@ -7,20 +7,21 @@ import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
 
 //GT Machines
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
-val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
-val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
-val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
-val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
-val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
-val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
-val mixer as RecipeMap = RecipeMap.getByName("mixer");
-val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
-val macerator as RecipeMap = RecipeMap.getByName("macerator");
-val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
-val packer as RecipeMap = RecipeMap.getByName("packer");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
+val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
+val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
+val macerator as RecipeMap = RecipeMap.getByName("macerator");
+val mixer as RecipeMap = RecipeMap.getByName("mixer");
+val packer as RecipeMap = RecipeMap.getByName("packer");
+val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -739,3 +740,42 @@ val controller_array = [
 for itemstack in controller_array {
   itemstack.addTooltip(format.lightPurple("See JEI for Structure."));
 }
+
+// Nerf U235 extraction - thermal centrifuge
+thermal_centrifuge.findRecipe(60, [<ore:crushedPurifiedUranium>.firstItem], null).remove();
+thermal_centrifuge.recipeBuilder()		
+	.inputs(<ore:crushedPurifiedUranium> * 1)
+	.outputs([<ore:crushedCentrifugedUranium>.firstItem *1, <ore:dustTinyUranium235>.firstItem * 1])
+	.duration(40)
+	.EUt(60)
+	.buildAndRegister();
+  
+// Nerf U235 extraction - macerator
+macerator.findRecipe(12, [<ore:crushedPurifiedUranium>.firstItem], null).remove();
+macerator.findRecipe(12, [<ore:crushedCentrifugedUraninite>.firstItem], null).remove();
+
+macerator.recipeBuilder()		
+	.inputs(<ore:crushedPurifiedUranium> * 1)
+	.outputs([<ore:dustPureUranium>.firstItem *1])
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 500)
+	.duration(40)
+	.EUt(18)
+	.buildAndRegister();
+
+macerator.recipeBuilder()		
+	.inputs(<ore:crushedCentrifugedUraninite> * 1)
+	.outputs([<ore:dustUraninite>.firstItem *1])
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+	.duration(40)
+	.EUt(12)
+	.buildAndRegister();  
+
+// Outright remove the centrifuge-238 recipe  
+centrifuge.findRecipe(5, [<ore:dustPureUranium>.firstItem], null).remove();
+centrifuge.recipeBuilder()		
+	.inputs(<ore:dustPureUranium> * 1)
+	.outputs([<ore:dustUranium>.firstItem *1])
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+	.duration(952)
+	.EUt(18)
+	.buildAndRegister();  
