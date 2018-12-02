@@ -209,37 +209,69 @@ chemical_reactor.recipeBuilder()    //Cobalt aluminate
   	.buildAndRegister();
 
 // Oredict of nuclear fuels we can dissolve into UF6
-val oreFuels = <ore:fuelsRawUranium>;
-oreFuels.addAll(<ore:dustUranium>);
-oreFuels.addAll(<ore:dustUraniumOxide>);
-oreFuels.addAll(<ore:ingotUranium>);
-oreFuels.addAll(<ore:ingotUraniumOxide>);
+val oreFuelRichUranium = <ore:fuelsDenseUranium>;
+val oreFuelMediumUranium = <ore:fuelsMediumUranium>;
+val oreFuelSparseUranium = <ore:fuelsSparseUranium>;
 
-// UF6 (Uranium Hexafluoride)
+oreFuelRichUranium.addAll(<ore:crushedCentrifugedUranium>);
+oreFuelRichUranium.addAll(<ore:crushedPurifiedUranium>);
+oreFuelRichUranium.addAll(<ore:crushedUranium>);
+
+oreFuelMediumUranium.addAll(<ore:crushedCentrifugedUraninite>);
+oreFuelMediumUranium.addAll(<ore:crushedPurifiedUraninite>);
+oreFuelMediumUranium.addAll(<ore:crushedUraninite>);
+
+oreFuelSparseUranium.addAll(<ore:crushedCentrifugedPitchblende>);
+oreFuelSparseUranium.addAll(<ore:crushedPurifiedPitchblende>);
+oreFuelSparseUranium.addAll(<ore:crushedPitchblende>);
+
+// UF6 (Uranium Hexafluoride from Uranium-rich ores)
 chemical_reactor.recipeBuilder()
-	.inputs(<ore:fuelsRawUranium> * 1)
+	.inputs(oreFuelRichUranium * 1)
 	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
-	.fluidOutputs(<liquid:uranium_hexafluoride> * 12000)
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 7000)
+	.duration(400)
+	.EUt(580)
+	.buildAndRegister();
+  
+// UF6 (Uranium Hexafluoride from Uranium-average ores)
+chemical_reactor.recipeBuilder()
+	.inputs(oreFuelMediumUranium * 1)
+	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 4000)
+	.duration(400)
+	.EUt(580)
+	.buildAndRegister();
+
+  // UF6 (Uranium Hexafluoride from Uranium-light ores)
+chemical_reactor.recipeBuilder()
+	.inputs(oreFuelSparseUranium * 1)
+	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 2000)
 	.duration(400)
 	.EUt(580)
 	.buildAndRegister();
 
 // Process UF6 to get U235 etc
+/* We do U238 *4 rather than tripling the % chance due to quirks in the overclock math.  Otherwise, say, 30% 
+   U238 translates into something close to 100% chance in the IV centrifuge while the U235 improves far less. */
 val tinyUranium235 = <nuclearcraft:uranium:6>;
 val tinyUranium238 = <nuclearcraft:uranium:10>;
+val uranium238 = <nuclearcraft:uranium:8>;
+val uranium235 = <nuclearcraft:uranium:4>;
+val uranium238Oxidized = <nuclearcraft:uranium:9>;
+val uranium235Oxidized = <nuclearcraft:uranium:5>;
+
 centrifuge.recipeBuilder()
-	.fluidInputs([<liquid:uranium_hexafluoride> * 100])
-  .chancedOutput(tinyUranium235 * 4, 1600)
-	.fluidOutputs(<liquid:uranium_hexafluoride> * 30)  
-  .duration(65)
-  .EUt(524)
+	.fluidInputs([<liquid:uranium_hexafluoride> * 220])
+  .chancedOutput(tinyUranium235 * 2, 500)
+  .chancedOutput(uranium238 * 1, 1150)
+  .duration(85)
+  .EUt(200)
   .buildAndRegister(); 
 
 // Add missing clump->fullsize uranium recipes
-val uranium235 = <nuclearcraft:uranium:4>;
-val uranium238 = <nuclearcraft:uranium:8>;
-val uranium238Oxidized = <nuclearcraft:uranium:9>;
-val uranium235Oxidized = <nuclearcraft:uranium:5>;
+
 recipes.addShapeless(uranium235, [tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235]);
 
 // Disable default Uranium238 -> TinyPlutonium + TinyUranium235
