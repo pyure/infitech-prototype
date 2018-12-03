@@ -427,6 +427,7 @@ recipes.addShaped(<foundry:machine:8>, [
 // DISABLED BLOCKS/ITEMS
 scripts.functions.disableItem(<foundry:alloyfurnace>);
 scripts.functions.disableItem(<foundry:machine:2>);//alloy mixer, allowing mixing up to 4 metals at once
+scripts.functions.disableItem(<foundry:cokeoven>);
 
 //Remove wrong recipes from Casting Tables
 
