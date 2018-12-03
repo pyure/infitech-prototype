@@ -828,3 +828,31 @@ alloy_smelter.recipeBuilder()
 	.duration(300)
 	.EUt(8)
 	.buildAndRegister(); 
+
+//Rubbers extruder recipes
+
+val rubberIngot = [ <ore:ingotRubber>, <ore:ingotStyreneButadieneRubber>, <ore:ingotPlastic>, <ore:ingotSiliconRubber>,  ] as IIngredient[];
+
+val rubberDust = [ <ore:dustRubber>, <ore:dustStyreneButadieneRubber>, <ore:dustPlastic>, <ore:dustSiliconRubber> ] as IIngredient[];
+
+val rubberPlate = [ <ore:plateRubber>, <ore:plateStyreneButadieneRubber>, <ore:platePlastic>, <ore:plateSiliconRubber> ] as IOreDictEntry[];
+
+for j, b in rubberIngot {
+    extruder.recipeBuilder()
+        .inputs(b * 1)
+        .notConsumable(<metaitem:shape.extruder.plate>)
+        .outputs(rubberPlate[j].firstItem * 1)
+        .duration(40)
+        .EUt(32)
+        .buildAndRegister();
+    }
+
+for j, b in rubberDust {
+    extruder.recipeBuilder()
+        .inputs(b * 1)
+        .notConsumable(<metaitem:shape.extruder.plate>)
+        .outputs(rubberPlate[j].firstItem * 1)
+        .duration(50)
+        .EUt(32)
+        .buildAndRegister();
+    }
