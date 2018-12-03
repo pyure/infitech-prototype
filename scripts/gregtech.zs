@@ -831,7 +831,7 @@ alloy_smelter.recipeBuilder()
 
 //Rubbers extruder recipes
 
-val rubberIngot = [ <ore:ingotRubber>, <ore:ingotStyreneButadieneRubber>, <ore:ingotPlastic>, <ore:ingotSiliconRubber>,  ] as IIngredient[];
+val rubberIngot = [ <ore:ingotRubber>, <ore:ingotStyreneButadieneRubber>, <ore:ingotPlastic>, <ore:ingotSiliconRubber>  ] as IIngredient[];
 
 val rubberDust = [ <ore:dustRubber>, <ore:dustStyreneButadieneRubber>, <ore:dustPlastic>, <ore:dustSiliconRubber> ] as IIngredient[];
 
