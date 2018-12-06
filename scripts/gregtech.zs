@@ -22,6 +22,7 @@ val macerator as RecipeMap = RecipeMap.getByName("macerator");
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val packer as RecipeMap = RecipeMap.getByName("packer");
 val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
+val extruder as RecipeMap = RecipeMap.getByName("extruder");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -313,13 +314,21 @@ alloy_smelter.recipeBuilder()		//Refactory Glass
 // Low-efficieny (high sanity) glass plate recipe
 alloy_smelter.recipeBuilder()		
 	.notConsumable(<metaitem:shape.mold.plate>)
-	.inputs(<ore:blockGlass> * 9)
+	.inputs(<ore:dustGlass> * 2)
 	.outputs(<ore:plateGlass>.firstItem * 1)
 	.duration(220)
 	.EUt(8)
 	.buildAndRegister();	
   
-
+//Extruder glass plate
+extruder.recipeBuilder()		
+	.notConsumable(<metaitem:shape.extruder.plate>)
+	.inputs(<ore:dustGlass> * 1)
+	.outputs(<ore:plateGlass>.firstItem * 1)
+	.duration(20)
+	.EUt(32)
+	.buildAndRegister();	
+  
 
 var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
 turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
@@ -811,3 +820,39 @@ centrifuge.recipeBuilder()
 	.duration(952)
 	.EUt(18)
 	.buildAndRegister();  
+
+// Low-efficieny (high sanity) rubber bar recipe
+alloy_smelter.recipeBuilder()		
+	.inputs(<ore:dustRawRubber> * 7, <ore:dustSulfur> * 3)
+	.outputs(<ore:ingotRubber>.firstItem * 1)
+	.duration(300)
+	.EUt(8)
+	.buildAndRegister(); 
+
+//Rubbers extruder recipes
+
+val rubberIngot = [ <ore:ingotRubber>, <ore:ingotStyreneButadieneRubber>, <ore:ingotPlastic>, <ore:ingotSiliconRubber>  ] as IIngredient[];
+
+val rubberDust = [ <ore:dustRubber>, <ore:dustStyreneButadieneRubber>, <ore:dustPlastic>, <ore:dustSiliconRubber> ] as IIngredient[];
+
+val rubberPlate = [ <ore:plateRubber>, <ore:plateStyreneButadieneRubber>, <ore:platePlastic>, <ore:plateSiliconRubber> ] as IOreDictEntry[];
+
+for j, b in rubberIngot {
+    extruder.recipeBuilder()
+        .inputs(b * 1)
+        .notConsumable(<metaitem:shape.extruder.plate>)
+        .outputs(rubberPlate[j].firstItem * 1)
+        .duration(40)
+        .EUt(32)
+        .buildAndRegister();
+    }
+
+for j, b in rubberDust {
+    extruder.recipeBuilder()
+        .inputs(b * 1)
+        .notConsumable(<metaitem:shape.extruder.plate>)
+        .outputs(rubberPlate[j].firstItem * 1)
+        .duration(50)
+        .EUt(32)
+        .buildAndRegister();
+    }
