@@ -43,11 +43,11 @@ gendustry.bees.species.Plutonium=Plutonium
 gendustry.bees.species.Osmium=Osmium
 gendustry.bees.species.Naquadah=Naquadah
 gendustry.bees.species.Metallic=Metallic
-gendustry.bees.species.SaggyAlumium=Saggy Aluminium
+gendustry.bees.species.Grindy=Grindy
 
-gendustry.honeycomb.mutagencatalyst.name=Mutagen
+gendustry.honeycomb.mutagencatalyst.name=Mutagen Comb
 gendustry.honeydrop.oildrop.name=Oil Drop
-gendustry.honeydrop.smallmutagencatalyst.name=Mutagen Catalyst
+gendustry.honeydrop.smallmutagencatalyst.name=Mutagen Catalyst Drop
 
 
 

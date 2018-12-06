@@ -42,7 +42,7 @@ var combPlatinum = <ore:combPlatinum>;
 var combAluminium = <ore:combAluminium>;
 var combStone = <ore:combStone>;
 var combCopper = <ore:combCopper>;
-var combGrindy = <ore:combGrindy>;
+var combGrindy = <contenttweaker:grindy_comb>;
 
 // Grinding Solutions
 chemical_reactor.recipeBuilder().inputs([<minecraft:flint> * 1, combGrindy * 16]).fluidInputs([<liquid:water> * 1000 ]).fluidOutputs([<liquid:flint_grinding_solution> * 1000]).duration(60).EUt(30).buildAndRegister();

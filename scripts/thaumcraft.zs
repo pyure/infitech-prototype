@@ -35,3 +35,9 @@ mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 
 
 mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer> * 10]);
+
+// Thauminomicon wants to see TC plates to satisfy some thauminomicon requirement apparently.  Hopefully this addresses the issue.
+var plateThaumiumGT = <gregtech:meta_item_1:12706>;
+var plateThaumiumTC = <thaumcraft:plate:2>;
+recipes.addShapeless(plateThaumiumGT, [plateThaumiumTC]);
+recipes.addShapeless(plateThaumiumTC, [plateThaumiumGT]);
