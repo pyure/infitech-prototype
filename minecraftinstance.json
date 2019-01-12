@@ -18,7 +18,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2019-01-09T22:51:42.3526496Z",
+  "lastPlayed": "2019-01-12T18:49:04.6289038Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -2009,21 +2009,6 @@
       "fileSize": 1886213
     },
     {
-      "folderName": "Ding-1.12.1-1.0.1.jar",
-      "fingerprint": 3391190132,
-      "fileDateHash": 1226348649,
-      "sectionID": 6,
-      "individualFingerprints": [
-        3391190132
-      ],
-      "status": 1,
-      "timestamp": "2018-08-27T23:37:04.8663083Z",
-      "lastWriteTimeUtc": "2018-08-27T23:37:04.5656182Z",
-      "queryTimestamp": "2019-01-09T22:03:36.990626Z",
-      "fileCount": 1,
-      "fileSize": 4711
-    },
-    {
       "folderName": "mcjtylib-1.12-3.0.7.jar",
       "fingerprint": 1714576516,
       "fileDateHash": 1794134078,
@@ -2037,6 +2022,21 @@
       "queryTimestamp": "2019-01-09T22:03:36.990626Z",
       "fileCount": 1,
       "fileSize": 492317
+    },
+    {
+      "folderName": "Ding-1.12.1-1.0.1.jar",
+      "fingerprint": 3391190132,
+      "fileDateHash": 1226348649,
+      "sectionID": 6,
+      "individualFingerprints": [
+        3391190132
+      ],
+      "status": 1,
+      "timestamp": "2018-08-27T23:37:04.8663083Z",
+      "lastWriteTimeUtc": "2018-08-27T23:37:04.5656182Z",
+      "queryTimestamp": "2019-01-09T22:03:36.990626Z",
+      "fileCount": 1,
+      "fileSize": 4711
     },
     {
       "folderName": "cttinycoal-1.12.2-1.0.2.jar",
@@ -2054,21 +2054,6 @@
       "fileSize": 11567
     },
     {
-      "folderName": "backpack-3.0.2-1.12.2.jar",
-      "fingerprint": 3066523573,
-      "fileDateHash": 1955953048,
-      "sectionID": 6,
-      "individualFingerprints": [
-        3066523573
-      ],
-      "status": 1,
-      "timestamp": "2018-10-28T17:00:40.2259862Z",
-      "lastWriteTimeUtc": "2018-10-24T02:18:31.6067803Z",
-      "queryTimestamp": "2019-01-09T22:03:36.9916247Z",
-      "fileCount": 1,
-      "fileSize": 236435
-    },
-    {
       "folderName": "FastLeafDecay-v14.jar",
       "fingerprint": 1940914729,
       "fileDateHash": 2930493309,
@@ -2084,19 +2069,19 @@
       "fileSize": 5200
     },
     {
-      "folderName": "AgriCraft-2.12.0-1.12.0-a6.jar",
-      "fingerprint": 718550955,
-      "fileDateHash": 681952099,
+      "folderName": "backpack-3.0.2-1.12.2.jar",
+      "fingerprint": 3066523573,
+      "fileDateHash": 1955953048,
       "sectionID": 6,
       "individualFingerprints": [
-        718550955
+        3066523573
       ],
       "status": 1,
-      "timestamp": "2018-11-07T03:48:28.2432758Z",
-      "lastWriteTimeUtc": "2018-10-24T02:18:31.5628258Z",
+      "timestamp": "2018-10-28T17:00:40.2259862Z",
+      "lastWriteTimeUtc": "2018-10-24T02:18:31.6067803Z",
       "queryTimestamp": "2019-01-09T22:03:36.9916247Z",
       "fileCount": 1,
-      "fileSize": 1357627
+      "fileSize": 236435
     },
     {
       "folderName": "CyclopsCore-1.12.2-0.11.9.jar",
@@ -2114,19 +2099,19 @@
       "fileSize": 823526
     },
     {
-      "folderName": "JustEnoughEnergistics-1.12.2-1.0.2.jar",
-      "fingerprint": 2484720332,
-      "fileDateHash": 119629358,
+      "folderName": "AgriCraft-2.12.0-1.12.0-a6.jar",
+      "fingerprint": 718550955,
+      "fileDateHash": 681952099,
       "sectionID": 6,
       "individualFingerprints": [
-        2484720332
+        718550955
       ],
       "status": 1,
-      "timestamp": "2019-01-09T22:51:35.8638719Z",
-      "lastWriteTimeUtc": "2019-01-09T22:51:18.3378189Z",
-      "queryTimestamp": "2019-01-09T22:51:36.2295923Z",
+      "timestamp": "2018-11-07T03:48:28.2432758Z",
+      "lastWriteTimeUtc": "2018-10-24T02:18:31.5628258Z",
+      "queryTimestamp": "2019-01-09T22:03:36.9916247Z",
       "fileCount": 1,
-      "fileSize": 19070
+      "fileSize": 1357627
     },
     {
       "folderName": "CompactDrawers-1.12.2-1.0.3.86.jar",
@@ -2142,6 +2127,21 @@
       "queryTimestamp": "2019-01-09T22:03:36.9926238Z",
       "fileCount": 1,
       "fileSize": 61018
+    },
+    {
+      "folderName": "JustEnoughEnergistics-1.12.2-1.0.2.jar",
+      "fingerprint": 2484720332,
+      "fileDateHash": 119629358,
+      "sectionID": 6,
+      "individualFingerprints": [
+        2484720332
+      ],
+      "status": 1,
+      "timestamp": "2019-01-09T22:51:35.8638719Z",
+      "lastWriteTimeUtc": "2019-01-09T22:51:18.3378189Z",
+      "queryTimestamp": "2019-01-09T22:51:36.2295923Z",
+      "fileCount": 1,
+      "fileSize": 19070
     },
     {
       "folderName": "NuclearCraft-2.12f--1.12.2.jar",
@@ -2189,21 +2189,6 @@
       "fileSize": 847552
     },
     {
-      "folderName": "appliedenergistics2-rv6-stable-6.jar",
-      "fingerprint": 3164930968,
-      "fileDateHash": 3443839553,
-      "sectionID": 6,
-      "individualFingerprints": [
-        3164930968
-      ],
-      "status": 1,
-      "timestamp": "2019-01-09T22:03:36.000538Z",
-      "lastWriteTimeUtc": "2019-01-09T21:55:10.8606445Z",
-      "queryTimestamp": "2019-01-09T22:03:36.9936228Z",
-      "fileCount": 1,
-      "fileSize": 4062132
-    },
-    {
       "folderName": "rftools-1.12-7.55.jar",
       "fingerprint": 2612700106,
       "fileDateHash": 1367025161,
@@ -2217,6 +2202,21 @@
       "queryTimestamp": "2019-01-09T22:03:36.9936228Z",
       "fileCount": 1,
       "fileSize": 2886817
+    },
+    {
+      "folderName": "appliedenergistics2-rv6-stable-6.jar",
+      "fingerprint": 3164930968,
+      "fileDateHash": 3443839553,
+      "sectionID": 6,
+      "individualFingerprints": [
+        3164930968
+      ],
+      "status": 1,
+      "timestamp": "2019-01-09T22:03:36.000538Z",
+      "lastWriteTimeUtc": "2019-01-09T21:55:10.8606445Z",
+      "queryTimestamp": "2019-01-09T22:03:36.9936228Z",
+      "fileCount": 1,
+      "fileSize": 4062132
     },
     {
       "folderName": "CarryOn MC1.12.2 v1.11.1.jar",
@@ -6545,7 +6545,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 238003,
@@ -9327,7 +9327,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 223094,
@@ -9397,7 +9397,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 238222,
@@ -9455,7 +9455,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 236542,
@@ -9514,7 +9514,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 238856,
@@ -9572,7 +9572,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 59751,
@@ -9638,7 +9638,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 283807,
@@ -9701,7 +9701,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 224218,
@@ -9761,7 +9761,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 255232,
@@ -9828,7 +9828,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 244559,
@@ -9915,7 +9915,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 303642,
@@ -9986,7 +9986,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 223794,
@@ -10044,7 +10044,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 293327,
@@ -10123,7 +10123,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 310812,
@@ -10190,7 +10190,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     }
   ],
   "isMigrated": false,
