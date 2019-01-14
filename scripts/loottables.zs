@@ -15,6 +15,8 @@ val sholdcrossing = LootTables.getTable("minecraft:chests/stronghold_crossing");
 val sholdlibrary = LootTables.getTable("minecraft:chests/stronghold_library");
 val woodland = LootTables.getTable("minecraft:chests/woodland_mansion");
 val blacksmith = LootTables.getTable("minecraft:chests/village_blacksmith");
+val naturalist = LootTables.getTable("forestry:chests/village_naturalist");
+val pneuma = LootTables.getTable("pneumaticcraft:inject/simple_dungeon_loot");
 
 val mineshaftMain = mineshaft.getPool("main");
 val endcityMain = endcity.getPool("main");
@@ -27,6 +29,9 @@ val sholdcrossingMain = sholdcrossing.getPool("main");
 val sholdlibraryMain = sholdlibrary.getPool("main");
 val woodlandMain = woodland.getPool("main");
 val blacksmithMain = blacksmith.getPool("main");
+val naturalistApi = naturalist.getPool("forestry_apiculture_items");
+val naturalistArb = naturalist.getPool("forestry_arboriculture_items");
+val pneumaChest = pneuma.getPool("main");
 
 mineshaftMain.removeEntry("minecraft:iron_pickaxe");
 mineshaft.removePool("forestry_factory_items");
@@ -48,3 +53,9 @@ sholdcrossingMain.removeEntry("minecraft:iron_pickaxe");
 woodlandMain.removeEntry("minecraft:diamond_hoe");
 blacksmithMain.removeEntry("minecraft:iron_pickaxe");
 blacksmithMain.removeEntry("minecraft:iron_sword");
+naturalistApi.removeEntry("forestry:scoop");
+naturalistApi.removeEntry("forestry:smoker");
+naturalistArb.removeEntry("forestry:grafter");
+blacksmithMain.removeEntry("nuclearcraft:plating");
+blacksmithMain.removeEntry("nuclearcraft:solenoids");
+pneumaChest.removeEntry("pneumaticcraft:spawner_agitator");
