@@ -203,7 +203,7 @@ chemical_reactor.recipeBuilder()		//Signalum Dust
 
 chemical_reactor.recipeBuilder()    //Cobalt aluminate
   	.inputs(<ore:dustCobaltOxide> * 1, <ore:dustAluminium> * 2)
-  	.fluidInputs(<liquid:oxygen> * 4000)
+  	.fluidInputs(<liquid:oxygen> * 3000)
   	.outputs(<ore:dustCobaltAluminate>.firstItem * 3)
   	.duration(80)
   	.EUt(120)
