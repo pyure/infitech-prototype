@@ -170,7 +170,7 @@ chemical_reactor.recipeBuilder()
 	.buildAndRegister();
   
 chemical_reactor.recipeBuilder()
-	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
+	.fluidInputs(<liquid:copper> * 48, <liquid:redstone> * 96)
 	.fluidOutputs(<liquid:red_alloy> * 144)
 	.duration(100)
 	.EUt(512)
