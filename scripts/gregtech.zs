@@ -170,7 +170,7 @@ chemical_reactor.recipeBuilder()
 	.buildAndRegister();
   
 chemical_reactor.recipeBuilder()
-	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
+	.fluidInputs(<liquid:copper> * 48, <liquid:redstone> * 96)
 	.fluidOutputs(<liquid:red_alloy> * 144)
 	.duration(100)
 	.EUt(512)
@@ -203,7 +203,7 @@ chemical_reactor.recipeBuilder()		//Signalum Dust
 
 chemical_reactor.recipeBuilder()    //Cobalt aluminate
   	.inputs(<ore:dustCobaltOxide> * 1, <ore:dustAluminium> * 2)
-  	.fluidInputs(<liquid:oxygen> * 4000)
+  	.fluidInputs(<liquid:oxygen> * 3000)
   	.outputs(<ore:dustCobaltAluminate>.firstItem * 3)
   	.duration(80)
   	.EUt(120)
