@@ -170,7 +170,7 @@ chemical_reactor.recipeBuilder()
 	.buildAndRegister();
   
 chemical_reactor.recipeBuilder()
-	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
+	.fluidInputs(<liquid:copper> * 48, <liquid:redstone> * 96)
 	.fluidOutputs(<liquid:red_alloy> * 144)
 	.duration(100)
 	.EUt(512)
@@ -203,7 +203,7 @@ chemical_reactor.recipeBuilder()		//Signalum Dust
 
 chemical_reactor.recipeBuilder()    //Cobalt aluminate
   	.inputs(<ore:dustCobaltOxide> * 1, <ore:dustAluminium> * 2)
-  	.fluidInputs(<liquid:oxygen> * 4000)
+  	.fluidInputs(<liquid:oxygen> * 3000)
   	.outputs(<ore:dustCobaltAluminate>.firstItem * 3)
   	.duration(80)
   	.EUt(120)
@@ -798,7 +798,7 @@ macerator.findRecipe(12, [<ore:crushedCentrifugedUraninite>.firstItem], null).re
 macerator.recipeBuilder()		
 	.inputs(<ore:crushedPurifiedUranium> * 1)
 	.outputs([<ore:dustPureUranium>.firstItem *1])
-  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 500)
+  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 500)
 	.duration(40)
 	.EUt(18)
 	.buildAndRegister();
@@ -806,7 +806,7 @@ macerator.recipeBuilder()
 macerator.recipeBuilder()		
 	.inputs(<ore:crushedCentrifugedUraninite> * 1)
 	.outputs([<ore:dustUraninite>.firstItem *1])
-  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
 	.duration(40)
 	.EUt(12)
 	.buildAndRegister();  
@@ -816,7 +816,7 @@ centrifuge.findRecipe(5, [<ore:dustPureUranium>.firstItem], null).remove();
 centrifuge.recipeBuilder()		
 	.inputs(<ore:dustPureUranium> * 1)
 	.outputs([<ore:dustUranium>.firstItem *1])
-  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
 	.duration(952)
 	.EUt(18)
 	.buildAndRegister();  
@@ -827,7 +827,16 @@ alloy_smelter.recipeBuilder()
 	.outputs(<ore:ingotRubber>.firstItem * 1)
 	.duration(300)
 	.EUt(8)
-	.buildAndRegister(); 
+	.buildAndRegister();
+	
+// Low-efficieny (high sanity) rubber plate recipe
+alloy_smelter.recipeBuilder()		
+	.inputs(<ore:ingotRubber> * 2)
+	.notConsumable(<metaitem:shape.mold.plate>)
+	.outputs(<ore:plateRubber>.firstItem * 1)
+	.duration(140)
+	.EUt(8)
+	.buildAndRegister();
 
 //Rubbers extruder recipes
 

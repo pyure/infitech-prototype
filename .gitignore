@@ -37,8 +37,10 @@ hs_err*.log
 replay*.log
 minecraftinstance.json
 replay*.log
+config/betterfps.json
 config/splash.properties
 config/jei/worldSettings.cfg
+config/InvTweaks/InvTweaks.cfg
 config/MouseTweaks.cfg
 config/InvTweaks.cfg
 config/AppliedEnergistics2/Facades.cfg
@@ -51,6 +53,7 @@ config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
 config/agricraft/json/defaults/infitech/
 config/agricraft/json/defaults/mod_botania/
+config/NEI/client.cfg
 minecraftinstance.json
 modularmachinery.7z
 
