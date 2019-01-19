@@ -70,3 +70,6 @@ recipes.addShaped("forestry_worktable", worktable, [
 [<ore:screwIron>, <minecraft:book>, <ore:screwIron>],
 [<ore:craftingToolSaw>, <minecraft:crafting_table>, <ore:craftingToolScrewdriver>],
 [<ore:screwIron>, <ore:chestWood>, <ore:screwIron>]]);
+
+//Remove bronze recipe
+recipes.removeByRecipeName("forestry:bronze_ingot");
