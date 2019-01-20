@@ -23,6 +23,7 @@ val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val packer as RecipeMap = RecipeMap.getByName("packer");
 val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 val extruder as RecipeMap = RecipeMap.getByName("extruder");
+val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -587,8 +588,8 @@ macerator.recipeBuilder()
 	.buildAndRegister();
 
 
-// Macerator: Sugarcane -> Chad
-macerator.recipeBuilder()
+// Forge Hammer: Sugarcane -> Chad
+forge_hammer.recipeBuilder()
 	.inputs([<ore:sugarcane> * 3])
 	.outputs(<ore:dustPaper> * 2)
 	.duration(105)
