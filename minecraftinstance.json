@@ -18,7 +18,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2019-01-19T02:32:19.6872492Z",
+  "lastPlayed": "2019-01-19T21:47:24.8792058Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -551,6 +551,21 @@
       "queryTimestamp": "2019-01-19T01:52:09.0952063Z",
       "fileCount": 1,
       "fileSize": 845761
+    },
+    {
+      "folderName": "reauth-3.6.0.jar",
+      "fingerprint": 1809264525,
+      "fileDateHash": 1141236768,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1809264525
+      ],
+      "status": 1,
+      "timestamp": "2019-01-19T21:37:46.8369813Z",
+      "lastWriteTimeUtc": "2019-01-19T21:37:31.0300348Z",
+      "queryTimestamp": "2019-01-19T21:37:47.0499277Z",
+      "fileCount": 1,
+      "fileSize": 30446
     },
     {
       "folderName": "ContentTweaker-1.12.2-4.5.0.jar",
@@ -10297,6 +10312,58 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 237701,
+      "gameInstanceID": "f1e8003f-322d-4ddd-87de-d96ea8a60aa1",
+      "installedFile": {
+        "id": 2560638,
+        "fileName": "ReAuth-3.6.0 1.12",
+        "fileNameOnDisk": "reauth-3.6.0.jar",
+        "fileDate": "2018-05-10T19:37:49.493",
+        "fileLength": 30446,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2560/638/reauth-3.6.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 1007001011
+          },
+          {
+            "folderName": "technicianlp",
+            "fimgerprint": 982598060
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 1933681648
+          }
+        ],
+        "packageFingerprint": 1809264525,
+        "gameVersion": [
+          "1.12.1",
+          "1.12",
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2019-01-19T21:37:47.3518931Z",
+      "dateUpdated": "2018-01-19T21:37:47.3518931Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     }
   ],
   "isMigrated": false,
