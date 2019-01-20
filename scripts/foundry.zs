@@ -180,8 +180,7 @@ val ore_melting_map = {
   "Copper" : 800,
   "Lead" : 1300,
   "Nickel" : 1200,
-  "Silver" : 800,  
-  "BandedIron" : 1450
+  "Silver" : 800
 } as int[string];
 
 val impure_ore_melting_map = {
@@ -190,7 +189,8 @@ val impure_ore_melting_map = {
   "Tetrahedrite" : 1500,
   "Pyrite" : 1500,
   "Chalcopyrite" : 1500,
-  "Malachite" : 1500  
+  "Malachite" : 1500,  
+  "BandedIron" : 1450
 } as int[string];
 
 
