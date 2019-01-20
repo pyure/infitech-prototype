@@ -585,7 +585,16 @@ macerator.recipeBuilder()
 	.duration(65)
 	.EUt(4)
 	.buildAndRegister();
-  
+
+
+// Macerator: Sugarcane -> Chad
+macerator.recipeBuilder()
+	.inputs([<ore:sugarcane> * 3])
+	.outputs(<ore:dustPaper> * 2)
+	.duration(105)
+	.EUt(4)
+	.buildAndRegister();
+
   
 // Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
 recipes.remove(<minecraft:paper> * 2);
