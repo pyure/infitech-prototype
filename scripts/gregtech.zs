@@ -591,7 +591,7 @@ macerator.recipeBuilder()
 // Forge Hammer: Sugarcane -> Chad
 forge_hammer.recipeBuilder()
 	.inputs([<ore:sugarcane> * 3])
-	.outputs(<ore:dustPaper> * 2)
+	.outputs(<ore:dustPaper>.firstItem * 2)
 	.duration(105)
 	.EUt(4)
 	.buildAndRegister();
