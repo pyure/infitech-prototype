@@ -56,7 +56,9 @@ config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
 config/agricraft/json/defaults/infitech/
 config/agricraft/json/defaults/mod_botania/
+config/jei/jei.cfg
 config/NEI/client.cfg
+
 minecraftinstance.json
 modularmachinery.7z
 
