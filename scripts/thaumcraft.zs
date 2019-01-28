@@ -38,3 +38,24 @@ var plateThaumiumGT = <gregtech:meta_item_1:12706>;
 var plateThaumiumTC = <thaumcraft:plate:2>;
 recipes.addShapeless(plateThaumiumGT, [plateThaumiumTC]);
 recipes.addShapeless(plateThaumiumTC, [plateThaumiumGT]);
+
+
+var sealBlank = <thaumcraft:seal>;
+var sealBlockBreaker = <thaumcraft:seal:12>;
+
+/* REMINDER for research names: You can type /thaumcraft research list, to get a list of all the names (it gets dumped to log)
+You can also open the thaumcraft .jar and look at the files in \assets\thaumcraft\research, which I found to be easier to search through */
+
+mods.thaumcraft.Infusion.removeRecipe(sealBlockBreaker);
+mods.thaumcraft.Infusion.registerRecipe(
+  "it3_seal_block_breaker", 
+  "SEALBREAK", 
+  sealBlockBreaker, 
+  1, 
+  [<aspect:instrumentum> * 10, <aspect:perditio> * 10, <aspect:humanus> * 10], 
+  sealBlank, 
+  [<ore:toolHeadShovelGold>, <ore:toolHeadAxeGold>, <ore:toolHeadPickaxeGold>]);
+  
+<thaumcraft:thaumonomicon>.addTooltip(format.aqua("Some recipes may be removed from this tome.  See JEI."));
+
+
