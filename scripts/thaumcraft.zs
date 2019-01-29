@@ -5,11 +5,13 @@ import crafttweaker.item.IItemStack;
 
 
 // These are covered by GT meta tools (or should be)
-recipes.remove(<thaumcraft:thaumium_axe>);
-recipes.remove(<thaumcraft:thaumium_pick>);
-recipes.remove(<thaumcraft:thaumium_sword>);
-recipes.remove(<thaumcraft:thaumium_shovel>);
-recipes.remove(<thaumcraft:thaumium_hoe>);
+// Set to 1 durability via MaterialChanger mod
+<thaumcraft:thaumium_axe>.addTooltip(format.red("For crafting only; otherwise useless."));
+<thaumcraft:thaumium_pick>.addTooltip(format.red("For crafting only; otherwise useless."));
+<thaumcraft:thaumium_sword>.addTooltip(format.red("For crafting only; otherwise useless."));
+<thaumcraft:thaumium_shovel>.addTooltip(format.red("For crafting only; otherwise useless."));
+<thaumcraft:thaumium_hoe>.addTooltip(format.red("For crafting only; otherwise useless."));
+
 
 // Removed Plates that have GT Counterpart
 recipes.remove(<thaumcraft:plate>);

@@ -58,6 +58,7 @@ config/agricraft/json/defaults/infitech/
 config/agricraft/json/defaults/mod_botania/
 config/jei/jei.cfg
 config/NEI/client.cfg
+config/ftbutilities.cfg
 
 minecraftinstance.json
 modularmachinery.7z
