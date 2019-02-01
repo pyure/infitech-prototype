@@ -23,6 +23,7 @@ val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val packer as RecipeMap = RecipeMap.getByName("packer");
 val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 val extruder as RecipeMap = RecipeMap.getByName("extruder");
+val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -585,7 +586,24 @@ macerator.recipeBuilder()
 	.duration(65)
 	.EUt(4)
 	.buildAndRegister();
+
+
+// Forge Hammer: Sugarcane -> Chad
+forge_hammer.recipeBuilder()
+	.inputs([<ore:sugarcane> * 3])
+	.outputs(<ore:dustPaper>.firstItem * 2)
+	.duration(105)
+	.EUt(4)
+	.buildAndRegister();
   
+// Forge Hammer: Gravel -> Sand
+forge_hammer.recipeBuilder()
+	.inputs([<ore:gravel>])
+	.outputs(<minecraft:sand>)
+	.duration(115)
+	.EUt(4)
+	.buildAndRegister();
+
   
 // Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
 recipes.remove(<minecraft:paper> * 2);
