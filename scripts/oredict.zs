@@ -27,4 +27,4 @@ dustBronzeGt.add(<gregtech:meta_item_1:2095>);
 dustEnderiumGt.add(<gregtech:meta_item_1:2702>);
 dustSignalumGt.add(<gregtech:meta_item_1:2703>);
 dustSaltpeterGt.add(<gregtech:meta_item_1:2156>);
-fuelCoke.add(<gregtech:meta_item_1:8997>);
+fuelCoke.add(<gregtech:meta_item_1:8997>);//this is the coke added by Gregic Additions. Up until now it was just "gemCoke" which disallowed it to be used in various machines. This exact script fixes this behavior.
