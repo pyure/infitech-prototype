@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "gregtech:cable_copper",
+                    "name": "gregtech:cable",
                     "weight": 24,
                     "functions": [
                         
@@ -18,7 +18,7 @@
                         },
                         {
                             "function": "minecraft:set_data",
-                            "data": 5
+                            "data": 5018
                         }
                     ]
                 },
