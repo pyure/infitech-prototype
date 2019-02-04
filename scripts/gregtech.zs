@@ -782,18 +782,25 @@ recipes.addShaped(<toolbelt:pouch>, [
 
 // Put a Tooltip for Controllers regarding Structure
 val controller_array = [
-  <meta_tile_entity:electric_blast_furnace>,
-  <meta_tile_entity:primitive_blast_furnace.bronze>,
-  <meta_tile_entity:vacuum_freezer>,
-  <meta_tile_entity:implosion_compressor>,
-  <meta_tile_entity:multi_furnace>,
-  <meta_tile_entity:assembly_line>,
-  <meta_tile_entity:fusion_reactor.luv>,
-  <meta_tile_entity:fusion_reactor.zpm>,
-  <meta_tile_entity:fusion_reactor.uv>,
-  <meta_tile_entity:pyrolyse_oven>,
-  <meta_tile_entity:distillation_tower>,
-  <meta_tile_entity:distill_tower>
+  <meta_tile_entity:gregtech:electric_blast_furnace>,
+  <meta_tile_entity:gregtech:primitive_blast_furnace.bronze>,
+  <meta_tile_entity:gregtech:vacuum_freezer>,
+  <meta_tile_entity:gregtech:implosion_compressor>,
+  <meta_tile_entity:gregtech:multi_furnace>,
+  <meta_tile_entity:gtadditions:assembly_line>,
+  <meta_tile_entity:gtadditions:fusion_reactor.luv>,
+  <meta_tile_entity:gtadditions:fusion_reactor.zpm>,
+  <meta_tile_entity:gtadditions:fusion_reactor.uv>,
+  <meta_tile_entity:gregtech:pyrolyse_oven>,
+  <meta_tile_entity:gregtech:distillation_tower>,
+  <meta_tile_entity:gtadditions:distill_tower>,
+  <meta_tile_entity:gregtech:large_turbine.steam>,
+  <meta_tile_entity:gregtech:large_turbine.plasma>,
+  <meta_tile_entity:gregtech:large_turbine.gas>,
+  <meta_tile_entity:gregtech:large_boiler.bronze>,
+  <meta_tile_entity:gregtech:large_boiler.steel>,
+  <meta_tile_entity:gregtech:large_boiler.titanium>,
+  <meta_tile_entity:gregtech:large_boiler.tungstensteel>
 ] as IItemStack[];
 
 for itemstack in controller_array {
