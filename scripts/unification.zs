@@ -20,7 +20,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //Ore Unification
 
-var meta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] as int[];
+var meta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as int[];
 
 /*
 <gregtech:ore_cooperite_0>
