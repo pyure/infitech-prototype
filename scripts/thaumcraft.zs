@@ -24,7 +24,7 @@ recipes.addShaped(<thaumcraft:plate:2>, [
 	[<ore:ingotThaumium>],
 	[<ore:ingotThaumium>]]);
 recipes.remove(<thaumcraft:plate:3>);
-recipes.addShaped(<thaumcraft:plate:2>, [
+recipes.addShaped(<thaumcraft:plate:3>, [
 	[<ore:craftingToolHardHammer>],
 	[<ore:ingotVoid>],
 	[<ore:ingotVoid>]]);
