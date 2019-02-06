@@ -15,16 +15,20 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 60,
+          "weight": 320,
           "value": "ore:bastnasite"
         },
         {
-          "weight": 20,
+          "weight": 120,
           "value": "ore:monazite"
         },
-		{
-          "weight": 20,
+        {
+          "weight": 90,
           "value": "ore:neodymium"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

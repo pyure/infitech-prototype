@@ -14,20 +14,24 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 25,
+          "weight": 160,
           "value": "ore:soapstone"
         },
         {
-          "weight": 25,
+          "weight": 160,
           "value": "ore:talc"
         },
-		{
-          "weight": 25,
+        {
+          "weight": 160,
           "value": "ore:glauconite"
         },
-		{
-          "weight": 25,
+        {
+          "weight": 160,
           "value": "ore:pentlandite"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

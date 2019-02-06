@@ -14,17 +14,21 @@
     "value": {
       "type": "weight_random",
       "values": [
-		{
-          "weight": 45,
+		    {
+          "weight": 1000,
           "value": "ore:platinum"
         },
-		{
-          "weight": 35,
+        {
+          "weight": 800,
           "value": "ore:palladium"
         },
-		{
-          "weight": 20,
+        {
+          "weight": 400,
           "value": "ore:iridium"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

@@ -14,7 +14,7 @@
     "value": {
       "type": "weight_random",
       "values": [
-		{
+		    {
           "weight": 30,
           "value": "ore:brown_limonite"
         },
@@ -22,13 +22,17 @@
           "weight": 30,
           "value": "ore:yellow_limonite"
         },
-		{
+        {
           "weight": 30,
           "value": "ore:banded_iron"
         },
-		{
+        {
           "weight": 10,
           "value": "ore:malachite"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

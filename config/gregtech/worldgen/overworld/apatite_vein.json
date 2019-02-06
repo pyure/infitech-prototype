@@ -14,12 +14,16 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 60,
+          "weight": 180,
           "value": "ore:apatite"
         },
         {
-          "weight": 40,
+          "weight": 120,
           "value": "ore:phosphor"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

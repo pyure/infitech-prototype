@@ -14,12 +14,16 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 25,
+          "weight": 75,
           "value": "ore:lignite"
         },
         {
-          "weight": 75,
+          "weight": 325,
           "value": "ore:coal"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

@@ -15,17 +15,21 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 50,
+          "weight": 450,
           "value": "ore:beryllium"
         },
         {
-          "weight": 30,
+          "weight": 180,
           "value": "ore:emerald"
         },
-		{
-          "weight": 20,
+        {
+          "weight": 120,
           "value": "ore:thorium"
-        }
+        },
+		{
+			"weight": 1,
+			"value": "block:appliedenergistics2:sky_stone_block"
+		} 
       ]
     }
   }

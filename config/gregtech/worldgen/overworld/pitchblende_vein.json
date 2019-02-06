@@ -15,16 +15,20 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 50,
+          "weight": 1000,
           "value": "ore:pitchblende"
         },
         {
-          "weight": 40,
+          "weight": 940,
           "value": "ore:uraninite"
         },
-		{
-          "weight": 10,
+        {
+          "weight": 200,
           "value": "ore:uranium"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

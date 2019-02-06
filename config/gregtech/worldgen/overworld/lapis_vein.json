@@ -14,20 +14,24 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 30,
+          "weight": 280,
           "value": "ore:lazurite"
         },
         {
-          "weight": 20,
+          "weight": 200,
           "value": "ore:sodalite"
         },
-		{
-          "weight": 35,
+        {
+          "weight": 200,
           "value": "ore:lapis"
         },
-		{
-          "weight": 15,
+        {
+          "weight": 100,
           "value": "ore:calcite"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

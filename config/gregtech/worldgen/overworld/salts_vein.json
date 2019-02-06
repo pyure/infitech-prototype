@@ -14,20 +14,24 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 40,
+          "weight": 120,
           "value": "ore:salt"
         },
         {
-          "weight": 35,
+          "weight": 90,
           "value": "ore:rock_salt"
         },
-		    {
-          "weight": 15,
+        {
+          "weight": 40,
           "value": "ore:lepidolite"
         },
-		    {
-          "weight": 10,
+        {
+          "weight": 30,
           "value": "ore:spodumene"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         },
         {
           "weight": 25,

@@ -15,16 +15,20 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 60,
+          "weight": 640,
           "value": "ore:graphite"
         },
         {
-          "weight": 20,
+          "weight": 140,
           "value": "ore:diamond"
         },
-		{
-          "weight": 20,
+        {
+          "weight": 300,
           "value": "ore:coal"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

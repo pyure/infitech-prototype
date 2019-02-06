@@ -14,16 +14,20 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 45,
+          "weight": 600,
           "value": "ore:quartzite"
         },
         {
-          "weight": 25,
+          "weight": 320,
           "value": "ore:barite"
         },
-		{
-          "weight": 30,
+        {
+          "weight": 400,
           "value": "ore:certus_quartz"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }

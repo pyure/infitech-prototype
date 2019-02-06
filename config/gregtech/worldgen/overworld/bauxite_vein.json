@@ -15,16 +15,20 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 60,
+          "weight": 320,
           "value": "ore:bauxite"
         },
         {
-          "weight": 30,
+          "weight": 160,
           "value": "ore:aluminium"
         },
-		{
-          "weight": 10,
+        {
+          "weight": 70,
           "value": "ore:ilmenite"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
         }
       ]
     }
