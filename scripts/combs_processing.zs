@@ -47,7 +47,7 @@ var combGrindy = <contenttweaker:grindy_comb>;
 // Grinding Solutions
 chemical_reactor.recipeBuilder().inputs([<minecraft:flint> * 1, combGrindy * 16]).fluidInputs([<liquid:water> * 1000 ]).fluidOutputs([<liquid:flint_grinding_solution> * 1000]).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:ingotSteel> * 1, combGrindy * 16]).fluidInputs([<liquid:water> * 1000 ]).fluidOutputs([<liquid:steel_grinding_solution> * 1000]).duration(60).EUt(30).buildAndRegister();
-chemical_reactor.recipeBuilder().inputs([<ore:ingotTitanium> * 1, combGrindy * 16]).fluidInputs([<liquid:water> * 1000 ]).fluidOutputs([<liquid:tungstensteel_grinding_solution> * 1000]).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:ingotTitanium> * 1, combGrindy * 16]).fluidInputs([<liquid:water> * 1000 ]).fluidOutputs([<liquid:titanium_grinding_solution> * 1000]).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:ingotTungstenSteel> * 1, combGrindy * 16]).fluidInputs([<liquid:water> * 1000 ]).fluidOutputs([<liquid:tungstensteel_grinding_solution> * 1000]).duration(60).EUt(30).buildAndRegister();
         
 // Aluminium

@@ -31,10 +31,10 @@
           "weight": 30,
           "value": "ore:copper"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }
