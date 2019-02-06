@@ -287,24 +287,26 @@ for name in tool_array {
 
 // Replace all default melting recipes
 
+var mbPerDust = 27;
+
 
 for name, melting_point in ore_melting_map {
   print("Melting dust, ore and crushed for " ~ name);
   print("Melting point is " ~ melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 288, oreDict["ore" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["crushed" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * mbPerDust, oreDict["dust" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * mbPerDust, oreDict["ore" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * mbPerDust, oreDict["crushed" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * mbPerDust, oreDict["oreGravel" ~ name], melting_point);
   print("Done " ~ name);
 }
 
 for name, melting_point in impure_ore_melting_map {
   print("Melting impure dust, ore and crushed for " ~ name);
   print("Melting point is " ~ melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["dust" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 216, oreDict["ore" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["crushed" ~ name], melting_point);
-  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * 144, oreDict["oreGravel" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * mbPerDust, oreDict["dust" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * mbPerDust, oreDict["ore" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * mbPerDust, oreDict["crushed" ~ name], melting_point);
+  mods.foundry.Melting.addRecipe(metal_liquid_map[name] * mbPerDust, oreDict["oreGravel" ~ name], melting_point);
   print("Done impure " ~ name);
 }
 
