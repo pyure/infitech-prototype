@@ -181,11 +181,6 @@ chemical_reactor.recipeBuilder().inputs([<ore:crushedTalc> * 1, combStone * 4]).
 chemical_reactor.recipeBuilder().inputs([<ore:crushedCassiterite> * 1, combTin * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCassiterite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedTin> * 1, combTin * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedTin>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 
-// Titanium
-chemical_reactor.recipeBuilder().inputs([<ore:crushedBauxite> * 1, combTitanium * 4]).fluidInputs([<liquid:chlorine> * 1000 ]).outputs(<ore:crushedPurifiedBauxite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
-chemical_reactor.recipeBuilder().inputs([<ore:crushedBauxite> * 1, combTitanium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBauxite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
-chemical_reactor.recipeBuilder().inputs([<ore:crushedIlmenite> * 1, combTitanium * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedIlmenite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
-
 
 // Tungsten
 chemical_reactor.recipeBuilder().inputs([<ore:crushedLithium> * 1, combTungsten * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedLithium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
