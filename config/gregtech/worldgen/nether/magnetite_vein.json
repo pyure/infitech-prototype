@@ -23,18 +23,18 @@
           "weight": 30,
           "value": "ore:iron"
         },
-		{
+        {
           "weight": 30,
           "value": "ore:vanadium_magnetite"
         },
-		{
+        {
           "weight": 20,
           "value": "ore:gold"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }

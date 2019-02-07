@@ -21,18 +21,18 @@
           "weight": 460,
           "value": "ore:spessartine"
         },
-		{
+        {
           "weight": 380,
           "value": "ore:pyrolusite"
         },
-		{
+        {
           "weight": 150,
           "value": "ore:tantalite"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }

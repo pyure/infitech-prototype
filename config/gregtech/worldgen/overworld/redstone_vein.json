@@ -21,14 +21,14 @@
           "weight": 120,
           "value": "ore:ruby"
         },
-		{
+        {
           "weight": 120,
           "value": "ore:cinnabar"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }

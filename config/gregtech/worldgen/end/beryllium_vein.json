@@ -4,7 +4,7 @@
   "max_height": 35,
   "min_height": 5,
   "surface_stone_material": "thorium",
-  "dimension_filter": ["provider_class:WorldProviderEnd"],
+  "dimension_filter": ["name:the_end"],
 
   "generator": {
     "type": "ellipsoid",
@@ -16,21 +16,17 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 450,
+          "weight": 50,
           "value": "ore:beryllium"
         },
         {
-          "weight": 180,
+          "weight": 30,
           "value": "ore:emerald"
         },
-        {
-          "weight": 120,
+		{
+          "weight": 20,
           "value": "ore:thorium"
-        },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        }
       ]
     }
   }

@@ -22,14 +22,14 @@
           "weight": 100,
           "value": "ore:silver"
         },
-		{
+        {
           "weight": 100,
           "value": "ore:lead"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }
