@@ -5,11 +5,13 @@ import crafttweaker.item.IItemStack;
 
 
 // These are covered by GT meta tools (or should be)
-recipes.remove(<thaumcraft:thaumium_axe>);
-recipes.remove(<thaumcraft:thaumium_pick>);
-recipes.remove(<thaumcraft:thaumium_sword>);
-recipes.remove(<thaumcraft:thaumium_shovel>);
-recipes.remove(<thaumcraft:thaumium_hoe>);
+// Set to 1 durability via MaterialChanger mod
+<thaumcraft:thaumium_axe>.addTooltip(format.red("For crafting only; otherwise useless."));
+<thaumcraft:thaumium_pick>.addTooltip(format.red("For crafting only; otherwise useless."));
+<thaumcraft:thaumium_sword>.addTooltip(format.red("For crafting only; otherwise useless."));
+<thaumcraft:thaumium_shovel>.addTooltip(format.red("For crafting only; otherwise useless."));
+<thaumcraft:thaumium_hoe>.addTooltip(format.red("For crafting only; otherwise useless."));
+
 
 // Removed Plates that have GT Counterpart
 recipes.remove(<thaumcraft:plate>);
@@ -22,7 +24,7 @@ recipes.addShaped(<thaumcraft:plate:2>, [
 	[<ore:ingotThaumium>],
 	[<ore:ingotThaumium>]]);
 recipes.remove(<thaumcraft:plate:3>);
-recipes.addShaped(<thaumcraft:plate:2>, [
+recipes.addShaped(<thaumcraft:plate:3>, [
 	[<ore:craftingToolHardHammer>],
 	[<ore:ingotVoid>],
 	[<ore:ingotVoid>]]);
@@ -38,3 +40,24 @@ var plateThaumiumGT = <gregtech:meta_item_1:12706>;
 var plateThaumiumTC = <thaumcraft:plate:2>;
 recipes.addShapeless(plateThaumiumGT, [plateThaumiumTC]);
 recipes.addShapeless(plateThaumiumTC, [plateThaumiumGT]);
+
+
+var sealBlank = <thaumcraft:seal>;
+var sealBlockBreaker = <thaumcraft:seal:12>;
+
+/* REMINDER for research names: You can type /thaumcraft research list, to get a list of all the names (it gets dumped to log)
+You can also open the thaumcraft .jar and look at the files in \assets\thaumcraft\research, which I found to be easier to search through */
+
+mods.thaumcraft.Infusion.removeRecipe(sealBlockBreaker);
+mods.thaumcraft.Infusion.registerRecipe(
+  "it3_seal_block_breaker", 
+  "SEALBREAK", 
+  sealBlockBreaker, 
+  1, 
+  [<aspect:instrumentum> * 10, <aspect:perditio> * 10, <aspect:humanus> * 10], 
+  sealBlank, 
+  [<ore:toolHeadShovelGold>, <ore:toolHeadAxeGold>, <ore:toolHeadPickaxeGold>]);
+  
+<thaumcraft:thaumonomicon>.addTooltip(format.aqua("Some recipes may be removed from this tome.  See JEI."));
+
+

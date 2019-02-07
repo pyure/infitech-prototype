@@ -185,9 +185,9 @@ var evSensor = <metaitem:sensor.ev>;
 var ivSensor = <metaitem:sensor.iv>;
 var evFieldGenerator = <metaitem:field.generator.ev>;
 var ivFieldGenerator = <metaitem:field.generator.iv>;
-var lvMotor = <metaitem:motor.lv>;
-var mvMotor = <metaitem:motor.mv>;
-var hvMotor = <metaitem:motor.hv>;
+var lvMotor = <metaitem:electric.motor.lv>;
+var mvMotor = <metaitem:electric.motor.mv>;
+var hvMotor = <metaitem:electric.motor.hv>;
 var lvConveyor = <metaitem:conveyor.lv>;
 var mvConveyor = <metaitem:conveyor.mv>;
 var hvConveyor = <metaitem:conveyor.hv>;
@@ -290,7 +290,7 @@ recipes.addShaped(crafter2, [
   
 recipes.addShaped(crafter3, [
 	[mvRobotArm, craftingTable, mvMotor],
-	[o_goodCircuit, crafter3, o_goodCircuit],
+	[o_goodCircuit, crafter2, o_goodCircuit],
 	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
 
 

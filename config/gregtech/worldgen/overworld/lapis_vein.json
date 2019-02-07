@@ -21,18 +21,18 @@
           "weight": 200,
           "value": "ore:sodalite"
         },
-		{
+        {
           "weight": 200,
           "value": "ore:lapis"
         },
-		{
+        {
           "weight": 100,
           "value": "ore:calcite"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }

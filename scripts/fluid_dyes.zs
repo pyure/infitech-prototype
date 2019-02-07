@@ -51,7 +51,7 @@ for j, b in itemDyes {
         .EUt(8)
         .buildAndRegister();
 
-    assembler.findRecipe(4,[gtDyes[j] * 1,<metaitem:spray.empty> * 1], null).remove();
+    assembler.findRecipe(8,[gtDyes[j] * 1,<metaitem:spray.empty> * 1], null).remove();
 
     // Wool colours are "backwards" (black is 15, white is 0), so this lets me refer to the wool for a given colour
     val woolDef = (<minecraft:wool>.definition as IItemDefinition).makeStack(15-j);

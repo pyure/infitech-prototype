@@ -11,7 +11,7 @@ import mods.gregtech.recipe.RecipeMap;
 recipes.remove(<compactmachines3:fieldprojector>);
 recipes.addShaped(<compactmachines3:fieldprojector> * 2, [
   [null, null, null],
-  [<gregtech:cable_nichrome:2>, <metaitem:field.generator.lv>, <gregtech:cable_nichrome:2>],
+  [<ore:cableGtDoubleNichrome>, <metaitem:field.generator.lv>, <ore:cableGtDoubleNichrome>],
   [<metaitem:emitter.hv>, <meta_tile_entity:hull.ev>, <metaitem:sensor.hv>]]);
 
  //Personal shrinking device
