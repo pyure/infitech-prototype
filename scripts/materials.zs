@@ -142,7 +142,7 @@ var ore_part_names = ["small_crushed_ore"] as string[];
 var part_names = ["nugget", "ingot", "plate", "rod"] as string[]; 
 
 var comb_material_list = [Aluminium, CertusQuartz, Chromite, Coal, Copper, Diamond, Emerald, Gold, Iridium, Iron, Lead, Lignite, Naquadah, Nickel, Platinum, Redstone, Silver, Fluix, Lapis, Manganese, 
-Oil, Olivine, Osmium, Plutonium, Ruby, Sapphire, Slag, Steel, Stone, Thaumium, Thaumiumshard, Tin, Metallic, Gemstone, Tungsten, Zinc, Uranium, Titanium] as Material[];
+Oil, Olivine, Osmium, Plutonium, Ruby, Sapphire, Slag, Steel, Stone, Thaumium, Tin, Metallic, Gemstone, Tungsten, Zinc, Uranium, Titanium] as Material[];
 
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_crushed_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallCrushedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_purified_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallPurifiedOre").build();
