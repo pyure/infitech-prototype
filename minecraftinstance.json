@@ -18,7 +18,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2019-02-07T01:18:13.8320788Z",
+  "lastPlayed": "2019-02-10T01:13:51.243397Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -2225,21 +2225,6 @@
       "fileSize": 1886213
     },
     {
-      "folderName": "mcjtylib-1.12-3.0.7.jar",
-      "fingerprint": 1714576516,
-      "fileDateHash": 1794134078,
-      "sectionID": 6,
-      "individualFingerprints": [
-        1714576516
-      ],
-      "status": 1,
-      "timestamp": "2018-12-02T16:06:35.3305Z",
-      "lastWriteTimeUtc": "2018-12-02T16:06:35.1906446Z",
-      "queryTimestamp": "2019-02-06T22:58:55.1627956Z",
-      "fileCount": 1,
-      "fileSize": 492317
-    },
-    {
       "folderName": "Ding-1.12.1-1.0.1.jar",
       "fingerprint": 3391190132,
       "fileDateHash": 1226348649,
@@ -2253,6 +2238,21 @@
       "queryTimestamp": "2019-02-06T22:58:55.1627956Z",
       "fileCount": 1,
       "fileSize": 4711
+    },
+    {
+      "folderName": "mcjtylib-1.12-3.0.7.jar",
+      "fingerprint": 1714576516,
+      "fileDateHash": 1794134078,
+      "sectionID": 6,
+      "individualFingerprints": [
+        1714576516
+      ],
+      "status": 1,
+      "timestamp": "2018-12-02T16:06:35.3305Z",
+      "lastWriteTimeUtc": "2018-12-02T16:06:35.1906446Z",
+      "queryTimestamp": "2019-02-06T22:58:55.1627956Z",
+      "fileCount": 1,
+      "fileSize": 492317
     },
     {
       "folderName": "cttinycoal-1.12.2-1.0.2.jar",
@@ -2285,21 +2285,6 @@
       "fileSize": 5200
     },
     {
-      "folderName": "CyclopsCore-1.12.2-0.11.9.jar",
-      "fingerprint": 3306698069,
-      "fileDateHash": 968701725,
-      "sectionID": 6,
-      "individualFingerprints": [
-        3306698069
-      ],
-      "status": 1,
-      "timestamp": "2018-09-04T23:42:39.8082974Z",
-      "lastWriteTimeUtc": "2018-09-04T23:42:39.7074043Z",
-      "queryTimestamp": "2019-02-06T22:58:55.1637947Z",
-      "fileCount": 1,
-      "fileSize": 823526
-    },
-    {
       "folderName": "AgriCraft-2.12.0-1.12.0-a6.jar",
       "fingerprint": 718550955,
       "fileDateHash": 681952099,
@@ -2315,19 +2300,19 @@
       "fileSize": 1357627
     },
     {
-      "folderName": "CompactDrawers-1.12.2-1.0.3.86.jar",
-      "fingerprint": 3627129813,
-      "fileDateHash": 1780694811,
+      "folderName": "CyclopsCore-1.12.2-0.11.9.jar",
+      "fingerprint": 3306698069,
+      "fileDateHash": 968701725,
       "sectionID": 6,
       "individualFingerprints": [
-        3627129813
+        3306698069
       ],
       "status": 1,
-      "timestamp": "2018-08-16T01:14:37.2668524Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:36.9811494Z",
+      "timestamp": "2018-09-04T23:42:39.8082974Z",
+      "lastWriteTimeUtc": "2018-09-04T23:42:39.7074043Z",
       "queryTimestamp": "2019-02-06T22:58:55.1637947Z",
       "fileCount": 1,
-      "fileSize": 61018
+      "fileSize": 823526
     },
     {
       "folderName": "JustEnoughEnergistics-1.12.2-1.0.2.jar",
@@ -2345,6 +2330,21 @@
       "fileSize": 19070
     },
     {
+      "folderName": "CompactDrawers-1.12.2-1.0.3.86.jar",
+      "fingerprint": 3627129813,
+      "fileDateHash": 1780694811,
+      "sectionID": 6,
+      "individualFingerprints": [
+        3627129813
+      ],
+      "status": 1,
+      "timestamp": "2018-08-16T01:14:37.2668524Z",
+      "lastWriteTimeUtc": "2018-08-16T01:14:36.9811494Z",
+      "queryTimestamp": "2019-02-06T22:58:55.1637947Z",
+      "fileCount": 1,
+      "fileSize": 61018
+    },
+    {
       "folderName": "BetterBuildersWands-1.12-0.12.0.251+d6c4d93.jar",
       "fingerprint": 1769691285,
       "fileDateHash": 1374606670,
@@ -2360,21 +2360,6 @@
       "fileSize": 76143
     },
     {
-      "folderName": "rftools-1.12-7.55.jar",
-      "fingerprint": 2612700106,
-      "fileDateHash": 1367025161,
-      "sectionID": 6,
-      "individualFingerprints": [
-        2612700106
-      ],
-      "status": 1,
-      "timestamp": "2018-08-16T01:14:39.180873Z",
-      "lastWriteTimeUtc": "2018-08-16T01:14:38.0580353Z",
-      "queryTimestamp": "2019-02-06T22:58:55.1647937Z",
-      "fileCount": 1,
-      "fileSize": 2886817
-    },
-    {
       "folderName": "appliedenergistics2-rv6-stable-6.jar",
       "fingerprint": 3164930968,
       "fileDateHash": 770728825,
@@ -2388,6 +2373,21 @@
       "queryTimestamp": "2019-02-06T22:58:55.1647937Z",
       "fileCount": 1,
       "fileSize": 4062132
+    },
+    {
+      "folderName": "rftools-1.12-7.55.jar",
+      "fingerprint": 2612700106,
+      "fileDateHash": 1367025161,
+      "sectionID": 6,
+      "individualFingerprints": [
+        2612700106
+      ],
+      "status": 1,
+      "timestamp": "2018-08-16T01:14:39.180873Z",
+      "lastWriteTimeUtc": "2018-08-16T01:14:38.0580353Z",
+      "queryTimestamp": "2019-02-06T22:58:55.1647937Z",
+      "fileCount": 1,
+      "fileSize": 2886817
     },
     {
       "folderName": "CarryOn MC1.12.2 v1.11.1.jar",
@@ -10209,7 +10209,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 293327,
@@ -10288,7 +10288,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 302293,
@@ -10355,7 +10355,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 270457,
@@ -10419,7 +10419,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     }
   ],
   "isMigrated": false,
