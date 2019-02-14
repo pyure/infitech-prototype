@@ -54,6 +54,4 @@ woodlandMain.removeEntry("minecraft:diamond_hoe");
 blacksmithMain.removeEntry("minecraft:iron_pickaxe");
 blacksmithMain.removeEntry("minecraft:iron_sword");
 naturalistApi.removeEntry("forestry:scoop");
-blacksmithMain.removeEntry("nuclearcraft:plating");
-blacksmithMain.removeEntry("nuclearcraft:solenoids");
 pneumaChest.removeEntry("pneumaticcraft:spawner_agitator");
