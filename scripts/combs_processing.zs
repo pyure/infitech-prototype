@@ -135,6 +135,10 @@ chemical_reactor.recipeBuilder().inputs([<ore:crushedPentlandite> * 1, combNicke
 chemical_reactor.recipeBuilder().inputs([<ore:crushedPowellite> * 1, combNickel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedPowellite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedWulfenite> * 1, combNickel * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedWulfenite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 
+// Oilsands
+chemical_reactor.recipeBuilder().inputs([<ore:crushedOilsands> * 1, combOil * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedOilsands>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+
+
 // Olivine
 chemical_reactor.recipeBuilder().inputs([<ore:crushedBentonite> * 1, combOlivine * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBentonite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedGlauconite> * 1, combOlivine * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedGlauconite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
