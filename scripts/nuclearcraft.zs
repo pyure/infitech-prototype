@@ -202,3 +202,13 @@ var ingotBoron = <nuclearcraft:ingot:5>;
 // Add dustBoron for boron ingots instead of NC Boron Dust
 furnace.remove(ingotBoron);
 furnace.addRecipe(ingotBoron, <ore:dustBoron>);
+
+var fusionCore = <nuclearcraft:fusion_core>;
+var machine_hull_luv = <gregtech:machine:506>;
+recipes.remove(fusionCore);
+recipes.addShaped("it3_tile.nuclearcraft.fusion_core", 
+  <nuclearcraft:fusion_core>, [
+    [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>], 
+    [machine_hull_luv, <ore:chassis>, machine_hull_luv], 
+    [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>]]);
+
