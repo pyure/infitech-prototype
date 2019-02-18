@@ -18,7 +18,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2019-02-18T01:47:11.5988614Z",
+  "lastPlayed": "2019-02-18T01:59:50.0417804Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -185,12 +185,11 @@
     },
     {
       "folderName": "New World--",
-      "fingerprint": 3299857639,
-      "fileDateHash": 2546611876,
+      "fingerprint": 1187898171,
+      "fileDateHash": 1678610078,
       "sectionID": 17,
       "individualFingerprints": [
         68732545,
-        132476779,
         162265038,
         224251200,
         224251200,
@@ -235,6 +234,7 @@
         1355555975,
         1355555975,
         1355555975,
+        1429910916,
         1540447798,
         1552558494,
         1686041301,
@@ -277,9 +277,9 @@
         4287276362
       ],
       "status": 1,
-      "timestamp": "2019-02-17T23:41:32.2877732Z",
+      "timestamp": "2019-02-18T01:52:36.7916862Z",
       "lastWriteTimeUtc": "2019-02-17T23:41:29.7352128Z",
-      "queryTimestamp": "2019-02-17T23:41:32.7323402Z",
+      "queryTimestamp": "2019-02-18T01:52:37.275012Z",
       "fileCount": 23,
       "fileSize": 0
     },
@@ -2320,6 +2320,21 @@
       "fileSize": 76143
     },
     {
+      "folderName": "Tips-1.12.2-1.0.7.jar",
+      "fingerprint": 2282999150,
+      "fileDateHash": 3185274314,
+      "sectionID": 6,
+      "individualFingerprints": [
+        2282999150
+      ],
+      "status": 1,
+      "timestamp": "2019-02-18T01:52:36.7906871Z",
+      "lastWriteTimeUtc": "2019-02-17T23:50:36.5298568Z",
+      "queryTimestamp": "2019-02-18T01:52:37.3155458Z",
+      "fileCount": 1,
+      "fileSize": 19209
+    },
+    {
       "folderName": "GregicAdditionsCompatibility-1.0.jar",
       "fingerprint": 3293710217,
       "fileDateHash": 3220180419,
@@ -2411,7 +2426,7 @@
     }
   ],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2019-02-17T23:41:33.1533458Z",
+  "lastPreviousMatchUpdate": "2019-02-18T01:52:37.7881877Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -10445,6 +10460,60 @@
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
       "isModified": true,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
+      "addonID": 306549,
+      "gameInstanceID": "81c4320e-4e82-4523-b20a-91e9998ff84d",
+      "installedFile": {
+        "id": 2675002,
+        "fileName": "Tips-1.12.2-1.0.7.jar",
+        "fileNameOnDisk": "Tips-1.12.2-1.0.7.jar",
+        "fileDate": "2019-02-15T22:01:11.243",
+        "fileLength": 19209,
+        "releaseType": 1,
+        "fileStatus": 2,
+        "downloadUrl": "https://files.forgecdn.net/files/2675/2/Tips-1.12.2-1.0.7.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "folderName": "META-INF",
+            "fimgerprint": 2593580898
+          },
+          {
+            "folderName": "assets",
+            "fimgerprint": 872532204
+          },
+          {
+            "folderName": "mcmod.info",
+            "fimgerprint": 103893675
+          },
+          {
+            "folderName": "net",
+            "fimgerprint": 2794455651
+          }
+        ],
+        "packageFingerprint": 2282999150,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "installMetadata": null
+      },
+      "dateInstalled": "2019-02-18T01:52:37.7871887Z",
+      "dateUpdated": "2018-02-18T01:52:37.7871887Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
