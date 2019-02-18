@@ -15,17 +15,17 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 320,
+          "weight": 300,
           "value": "ore:tin"
         },
         {
-          "weight": 80,
+          "weight": 100,
           "value": "ore:cassiterite"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }

@@ -1051,52 +1051,53 @@ recipes.addShaped(UStorageHousing, [
 
 // --- Storage Cell Component - 1K
 recipes.addShaped(StorageComponent1K, [
-[<metaitem:circuit.basic.regular>, FluixDust, <metaitem:circuit.basic.regular>],
-[FluixDust, LogiProc, FluixDust],
-[<metaitem:circuit.basic.regular>, FluixDust, <metaitem:circuit.basic.regular>]]);
+  [<ore:circuitGABasic>, FluixDust, <ore:circuitGABasic>],
+  [FluixDust, LogiProc, FluixDust],
+  [<ore:circuitGABasic>, FluixDust, <ore:circuitGABasic>]]);
 
 // --- Storage Cell Component - 4K
 recipes.addShaped(StorageComponent4K, [
-[<metaitem:circuit.basic>, StorageComponent1K, <metaitem:circuit.basic>],
-[StorageComponent1K, LogiProc, StorageComponent1K],
-[<metaitem:circuit.basic>, StorageComponent1K, <metaitem:circuit.basic>]]);
+  [<metaitem:plate.ram>, StorageComponent1K, <metaitem:plate.ram>],
+  [<ore:circuitGAGood>, LogiProc, <ore:LogiProc>],
+  [<metaitem:plate.ram>, StorageComponent1K, <metaitem:plate.ram>]]);
 
 // --- Storage Cell Component - 16K
 recipes.addShaped(StorageComponent16K, [
-[<metaitem:circuit.good.regular>, StorageComponent4K, <metaitem:circuit.good.regular>],
-[StorageComponent4K, CalcCirc, StorageComponent4K],
-[<metaitem:circuit.good.regular>, StorageComponent4K, <metaitem:circuit.good.regular>]]);
+  [<metaitem:plate.ram>, StorageComponent4K, <metaitem:plate.ram>],
+  [<ore:circuitGAAdvanced>, CalcCirc, <ore:circuitGAAdvanced>],
+  [<metaitem:plate.ram>, StorageComponent4K, <metaitem:plate.ram>]]);
 
 // --- Storage Cell Component - 64K
 recipes.addShaped(StorageComponent64K, [
-[<metaitem:circuit.advanced.regular>, StorageComponent16K, <metaitem:circuit.advanced.regular>],
-[StorageComponent16K, CalcCirc, StorageComponent16K],
-[<metaitem:circuit.advanced.regular>, StorageComponent16K, <metaitem:circuit.advanced.regular>]]);
+  [<metaitem:plate.ram>, StorageComponent16K, <metaitem:plate.ram>],
+  [<ore:circuitGAExtreme>, CalcCirc, <ore:circuitGAExtreme>],
+  [<metaitem:plate.ram>, StorageComponent16K, <metaitem:plate.ram>]]);
 
+  
 // --- Fluid Storage Cell Component - 1K
 recipes.addShaped(FluStorageComponent1K, [
-[<metaitem:circuit.basic.regular>, <metaitem:fluid_cell>, <metaitem:circuit.basic.regular>],
-[<metaitem:fluid_cell>, LogiProc, <metaitem:fluid_cell>],
-[<metaitem:circuit.basic.regular>, <metaitem:fluid_cell>, <metaitem:circuit.basic.regular>]]);
-
+  [<ore:circuitGABasic>, <metaitem:fluid_cell>, <ore:circuitGABasic>],
+  [<metaitem:fluid_cell>, LogiProc, <metaitem:fluid_cell>],
+  [<ore:circuitGABasic>, <metaitem:fluid_cell>, <ore:circuitGABasic>]]);
+  
 // --- Fluid Storage Cell Component - 4K
 recipes.addShaped(FluStorageComponent4K, [
-[<metaitem:circuit.basic>, FluStorageComponent1K, <metaitem:circuit.basic>],
-[FluStorageComponent1K, LogiProc, FluStorageComponent1K],
-[<metaitem:circuit.basic>, FluStorageComponent1K, <metaitem:circuit.basic>]]);
+  [<metaitem:plate.ram>, FluStorageComponent1K, <metaitem:plate.ram>],
+  [<ore:circuitGAGood>, LogiProc, <ore:circuitGAGood>],
+  [<metaitem:plate.ram>, FluStorageComponent1K, <metaitem:plate.ram>]]);  
 
 // --- Fluid Storage Cell Component - 16K
 recipes.addShaped(FluStorageComponent16K, [
-[<metaitem:circuit.good.regular>, FluStorageComponent4K, <metaitem:circuit.good.regular>],
-[FluStorageComponent4K, CalcCirc, FluStorageComponent4K],
-[<metaitem:circuit.good.regular>, FluStorageComponent4K, <metaitem:circuit.good.regular>]]);
+  [<metaitem:plate.ram>, FluStorageComponent4K, <metaitem:plate.ram>],
+  [<ore:circuitGAAdvanced>, LogiProc, <ore:circuitGAAdvanced>],
+  [<metaitem:plate.ram>, FluStorageComponent4K, <metaitem:plate.ram>]]);    
 
 // --- Fluid Storage Cell Component - 64K
 recipes.addShaped(FluStorageComponent64K, [
-[<metaitem:circuit.advanced.regular>, FluStorageComponent16K, <metaitem:circuit.advanced.regular>],
-[FluStorageComponent16K, CalcCirc, FluStorageComponent16K],
-[<metaitem:circuit.advanced.regular>, FluStorageComponent16K, <metaitem:circuit.advanced.regular>]]);
-
+  [<metaitem:plate.ram>, FluStorageComponent16K, <metaitem:plate.ram>],
+  [<ore:circuitGAExtreme>, CalcCirc, <ore:circuitGAExtreme>],
+  [<metaitem:plate.ram>, FluStorageComponent16K, <metaitem:plate.ram>]]);
+  
 // --- 2 Spatial Component
 recipes.addShaped(<appliedenergistics2:material:32>, [
 [<ore:plateGlowstone>, FluixPearl, <ore:plateGlowstone>],

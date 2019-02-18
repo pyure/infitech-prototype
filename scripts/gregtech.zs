@@ -7,20 +7,23 @@ import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
 
 //GT Machines
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
-val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
-val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
-val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
-val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
-val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
-val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
-val mixer as RecipeMap = RecipeMap.getByName("mixer");
-val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
-val macerator as RecipeMap = RecipeMap.getByName("macerator");
-val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
-val packer as RecipeMap = RecipeMap.getByName("packer");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
+val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
+val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
+val macerator as RecipeMap = RecipeMap.getByName("macerator");
+val mixer as RecipeMap = RecipeMap.getByName("mixer");
+val packer as RecipeMap = RecipeMap.getByName("packer");
+val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
+val extruder as RecipeMap = RecipeMap.getByName("extruder");
+val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -168,7 +171,7 @@ chemical_reactor.recipeBuilder()
 	.buildAndRegister();
   
 chemical_reactor.recipeBuilder()
-	.fluidInputs(<liquid:copper> * 144, <liquid:redstone> * 288)
+	.fluidInputs(<liquid:copper> * 48, <liquid:redstone> * 96)
 	.fluidOutputs(<liquid:red_alloy> * 144)
 	.duration(100)
 	.EUt(512)
@@ -201,44 +204,76 @@ chemical_reactor.recipeBuilder()		//Signalum Dust
 
 chemical_reactor.recipeBuilder()    //Cobalt aluminate
   	.inputs(<ore:dustCobaltOxide> * 1, <ore:dustAluminium> * 2)
-  	.fluidInputs(<liquid:oxygen> * 4000)
+  	.fluidInputs(<liquid:oxygen> * 3000)
   	.outputs(<ore:dustCobaltAluminate>.firstItem * 3)
   	.duration(80)
   	.EUt(120)
   	.buildAndRegister();
 
 // Oredict of nuclear fuels we can dissolve into UF6
-val oreFuels = <ore:fuelsRawUranium>;
-oreFuels.addAll(<ore:dustUranium>);
-oreFuels.addAll(<ore:dustUraniumOxide>);
-oreFuels.addAll(<ore:ingotUranium>);
-oreFuels.addAll(<ore:ingotUraniumOxide>);
+val oreFuelRichUranium = <ore:fuelsDenseUranium>;
+val oreFuelMediumUranium = <ore:fuelsMediumUranium>;
+val oreFuelSparseUranium = <ore:fuelsSparseUranium>;
 
-// UF6 (Uranium Hexafluoride)
+oreFuelRichUranium.addAll(<ore:crushedCentrifugedUranium>);
+oreFuelRichUranium.addAll(<ore:crushedPurifiedUranium>);
+oreFuelRichUranium.addAll(<ore:crushedUranium>);
+
+oreFuelMediumUranium.addAll(<ore:crushedCentrifugedUraninite>);
+oreFuelMediumUranium.addAll(<ore:crushedPurifiedUraninite>);
+oreFuelMediumUranium.addAll(<ore:crushedUraninite>);
+
+oreFuelSparseUranium.addAll(<ore:crushedCentrifugedPitchblende>);
+oreFuelSparseUranium.addAll(<ore:crushedPurifiedPitchblende>);
+oreFuelSparseUranium.addAll(<ore:crushedPitchblende>);
+
+// UF6 (Uranium Hexafluoride from Uranium-rich ores)
 chemical_reactor.recipeBuilder()
-	.inputs(<ore:fuelsRawUranium> * 1)
+	.inputs(oreFuelRichUranium * 1)
 	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
-	.fluidOutputs(<liquid:uranium_hexafluoride> * 12000)
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 7000)
+	.duration(400)
+	.EUt(580)
+	.buildAndRegister();
+  
+// UF6 (Uranium Hexafluoride from Uranium-average ores)
+chemical_reactor.recipeBuilder()
+	.inputs(oreFuelMediumUranium * 1)
+	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 4000)
+	.duration(400)
+	.EUt(580)
+	.buildAndRegister();
+
+  // UF6 (Uranium Hexafluoride from Uranium-light ores)
+chemical_reactor.recipeBuilder()
+	.inputs(oreFuelSparseUranium * 1)
+	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
+	.fluidOutputs(<liquid:uranium_hexafluoride> * 2000)
 	.duration(400)
 	.EUt(580)
 	.buildAndRegister();
 
 // Process UF6 to get U235 etc
+/* We do U238 *4 rather than tripling the % chance due to quirks in the overclock math.  Otherwise, say, 30% 
+   U238 translates into something close to 100% chance in the IV centrifuge while the U235 improves far less. */
 val tinyUranium235 = <nuclearcraft:uranium:6>;
 val tinyUranium238 = <nuclearcraft:uranium:10>;
+val uranium238 = <nuclearcraft:uranium:8>;
+val uranium235 = <nuclearcraft:uranium:4>;
+val uranium238Oxidized = <nuclearcraft:uranium:9>;
+val uranium235Oxidized = <nuclearcraft:uranium:5>;
+
 centrifuge.recipeBuilder()
-	.fluidInputs([<liquid:uranium_hexafluoride> * 100])
-  .chancedOutput(tinyUranium235 * 4, 1600)
-	.fluidOutputs(<liquid:uranium_hexafluoride> * 30)  
-  .duration(65)
-  .EUt(524)
+	.fluidInputs([<liquid:uranium_hexafluoride> * 220])
+  .chancedOutput(tinyUranium235 * 2, 500)
+  .chancedOutput(uranium238 * 1, 1150)
+  .duration(85)
+  .EUt(200)
   .buildAndRegister(); 
 
 // Add missing clump->fullsize uranium recipes
-val uranium235 = <nuclearcraft:uranium:4>;
-val uranium238 = <nuclearcraft:uranium:8>;
-val uranium238Oxidized = <nuclearcraft:uranium:9>;
-val uranium235Oxidized = <nuclearcraft:uranium:5>;
+
 recipes.addShapeless(uranium235, [tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235]);
 
 // Disable default Uranium238 -> TinyPlutonium + TinyUranium235
@@ -280,13 +315,21 @@ alloy_smelter.recipeBuilder()		//Refactory Glass
 // Low-efficieny (high sanity) glass plate recipe
 alloy_smelter.recipeBuilder()		
 	.notConsumable(<metaitem:shape.mold.plate>)
-	.inputs(<ore:blockGlass> * 9)
+	.inputs(<ore:dustGlass> * 2)
 	.outputs(<ore:plateGlass>.firstItem * 1)
 	.duration(220)
 	.EUt(8)
 	.buildAndRegister();	
   
-
+//Extruder glass plate
+extruder.recipeBuilder()		
+	.notConsumable(<metaitem:shape.extruder.plate>)
+	.inputs(<ore:dustGlass> * 1)
+	.outputs(<ore:plateGlass>.firstItem * 1)
+	.duration(20)
+	.EUt(32)
+	.buildAndRegister();	
+  
 
 var turfMoonCentrifuge = <ore:turfMoonCentrifuge>;
 turfMoonCentrifuge.add(<advancedrocketry:moonturf>);
@@ -543,7 +586,24 @@ macerator.recipeBuilder()
 	.duration(65)
 	.EUt(4)
 	.buildAndRegister();
+
+
+// Forge Hammer: Sugarcane -> Chad
+forge_hammer.recipeBuilder()
+	.inputs([<ore:sugarcane> * 3])
+	.outputs(<ore:dustPaper>.firstItem * 2)
+	.duration(105)
+	.EUt(4)
+	.buildAndRegister();
   
+// Forge Hammer: Gravel -> Sand
+forge_hammer.recipeBuilder()
+	.inputs([<ore:gravel>])
+	.outputs(<minecraft:sand>)
+	.duration(115)
+	.EUt(4)
+	.buildAndRegister();
+
   
 // Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
 recipes.remove(<minecraft:paper> * 2);
@@ -722,20 +782,111 @@ recipes.addShaped(<toolbelt:pouch>, [
 
 // Put a Tooltip for Controllers regarding Structure
 val controller_array = [
-  <meta_tile_entity:electric_blast_furnace>,
-  <meta_tile_entity:primitive_blast_furnace.bronze>,
-  <meta_tile_entity:vacuum_freezer>,
-  <meta_tile_entity:implosion_compressor>,
-  <meta_tile_entity:multi_furnace>,
-  <meta_tile_entity:assembly_line>,
-  <meta_tile_entity:fusion_reactor.luv>,
-  <meta_tile_entity:fusion_reactor.zpm>,
-  <meta_tile_entity:fusion_reactor.uv>,
-  <meta_tile_entity:pyrolyse_oven>,
-  <meta_tile_entity:distillation_tower>,
-  <meta_tile_entity:distill_tower>
+  <meta_tile_entity:gregtech:electric_blast_furnace>,
+  <meta_tile_entity:gregtech:primitive_blast_furnace.bronze>,
+  <meta_tile_entity:gregtech:vacuum_freezer>,
+  <meta_tile_entity:gregtech:implosion_compressor>,
+  <meta_tile_entity:gregtech:multi_furnace>,
+  <meta_tile_entity:gtadditions:assembly_line>,
+  <meta_tile_entity:gtadditions:fusion_reactor.luv>,
+  <meta_tile_entity:gtadditions:fusion_reactor.zpm>,
+  <meta_tile_entity:gtadditions:fusion_reactor.uv>,
+  <meta_tile_entity:gregtech:pyrolyse_oven>,
+  <meta_tile_entity:gregtech:distillation_tower>,
+  <meta_tile_entity:gtadditions:distill_tower>,
+  <meta_tile_entity:gregtech:large_turbine.steam>,
+  <meta_tile_entity:gregtech:large_turbine.plasma>,
+  <meta_tile_entity:gregtech:large_turbine.gas>,
+  <meta_tile_entity:gregtech:large_boiler.bronze>,
+  <meta_tile_entity:gregtech:large_boiler.steel>,
+  <meta_tile_entity:gregtech:large_boiler.titanium>,
+  <meta_tile_entity:gregtech:large_boiler.tungstensteel>
 ] as IItemStack[];
 
 for itemstack in controller_array {
   itemstack.addTooltip(format.lightPurple("See JEI for Structure."));
 }
+
+// Nerf U235 extraction - thermal centrifuge
+thermal_centrifuge.findRecipe(60, [<ore:crushedPurifiedUranium>.firstItem], null).remove();
+thermal_centrifuge.recipeBuilder()		
+	.inputs(<ore:crushedPurifiedUranium> * 1)
+	.outputs([<ore:crushedCentrifugedUranium>.firstItem *1, <ore:dustTinyUranium235>.firstItem * 1])
+	.duration(40)
+	.EUt(60)
+	.buildAndRegister();
+  
+// Nerf U235 extraction - macerator
+macerator.findRecipe(12, [<ore:crushedPurifiedUranium>.firstItem], null).remove();
+macerator.findRecipe(12, [<ore:crushedCentrifugedUraninite>.firstItem], null).remove();
+
+macerator.recipeBuilder()		
+	.inputs(<ore:crushedPurifiedUranium> * 1)
+	.outputs([<ore:dustPureUranium>.firstItem *1])
+  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 500)
+	.duration(40)
+	.EUt(18)
+	.buildAndRegister();
+
+macerator.recipeBuilder()		
+	.inputs(<ore:crushedCentrifugedUraninite> * 1)
+	.outputs([<ore:dustUraninite>.firstItem *1])
+  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+	.duration(40)
+	.EUt(12)
+	.buildAndRegister();  
+
+// Outright remove the centrifuge-238 recipe  
+centrifuge.findRecipe(5, [<ore:dustPureUranium>.firstItem], null).remove();
+centrifuge.recipeBuilder()		
+	.inputs(<ore:dustPureUranium> * 1)
+	.outputs([<ore:dustUranium>.firstItem *1])
+  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+	.duration(952)
+	.EUt(18)
+	.buildAndRegister();  
+
+// Low-efficieny (high sanity) rubber bar recipe
+alloy_smelter.recipeBuilder()		
+	.inputs(<ore:dustRawRubber> * 7, <ore:dustSulfur> * 3)
+	.outputs(<ore:ingotRubber>.firstItem * 1)
+	.duration(300)
+	.EUt(8)
+	.buildAndRegister();
+	
+// Low-efficieny (high sanity) rubber plate recipe
+alloy_smelter.recipeBuilder()		
+	.inputs(<ore:ingotRubber> * 2)
+	.notConsumable(<metaitem:shape.mold.plate>)
+	.outputs(<ore:plateRubber>.firstItem * 1)
+	.duration(140)
+	.EUt(8)
+	.buildAndRegister();
+
+//Rubbers extruder recipes
+
+val rubberIngot = [ <ore:ingotRubber>, <ore:ingotStyreneButadieneRubber>, <ore:ingotPlastic>, <ore:ingotSiliconRubber>  ] as IIngredient[];
+
+val rubberDust = [ <ore:dustRubber>, <ore:dustStyreneButadieneRubber>, <ore:dustPlastic>, <ore:dustSiliconRubber> ] as IIngredient[];
+
+val rubberPlate = [ <ore:plateRubber>, <ore:plateStyreneButadieneRubber>, <ore:platePlastic>, <ore:plateSiliconRubber> ] as IOreDictEntry[];
+
+for j, b in rubberIngot {
+    extruder.recipeBuilder()
+        .inputs(b * 1)
+        .notConsumable(<metaitem:shape.extruder.plate>)
+        .outputs(rubberPlate[j].firstItem * 1)
+        .duration(40)
+        .EUt(32)
+        .buildAndRegister();
+    }
+
+for j, b in rubberDust {
+    extruder.recipeBuilder()
+        .inputs(b * 1)
+        .notConsumable(<metaitem:shape.extruder.plate>)
+        .outputs(rubberPlate[j].firstItem * 1)
+        .duration(50)
+        .EUt(32)
+        .buildAndRegister();
+    }

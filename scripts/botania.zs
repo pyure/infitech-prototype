@@ -84,3 +84,17 @@ compressor.recipeBuilder()
 	.outputs(<botania:quartztypesunny>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
+  
+var ringMantle = <botania:miningring>;
+var gtPickaxeGold = <gregtech:meta_tool:1>.onlyWithTag({"GT.ToolStats": {PrimaryMaterial: "gold", HandleMaterial: "wood"}}).noReturn();
+
+recipes.remove(ringMantle);
+recipes.addShaped("it3_ringMantle", ringMantle, [
+  [<ore:runeEarthB>, <ore:ingotManasteel>, gtPickaxeGold], 
+  [<ore:ingotManasteel>, null, <ore:ingotManasteel>], 
+  [null, <ore:ingotManasteel>, null]]);
+
+// Remove Botania Blazeblock recipes since you can get an infinite resource loop.  We could probably un-remove one of the two recipesByName below safely.  
+recipes.removeByRecipeName("botania:blazeblock");
+recipes.removeByRecipeName("gregtech:block_compress_blaze");
+recipes.remove(<minecraft:blaze_rod> * 9);
