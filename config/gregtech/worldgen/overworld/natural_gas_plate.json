@@ -9,9 +9,9 @@
 
   "biome_modifier": {
     "type": "biome_dictionary",
-    "water": 10,
-    "hot": 10,
-    "sandy": 20
+    "WATER": 10,
+    "HOT": 10,
+    "SANDY": 20
   },
   "generator": {
     "type": "plate",
