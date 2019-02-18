@@ -11,8 +11,8 @@
   },
   "biome_modifier": {
     "type": "biome_dictionary",
-    "hot": 30,
-    "sandy": 50
+    "HOT": 30,
+    "SANDY": 50
   },
   "filler": {
     "type": "simple",

@@ -661,42 +661,17 @@ var petrotheum = <thermalfoundation:material:1027>;
 
 recipes.remove(petrotheum);
 
-var pyroArray = [
-<ore:ingotGold>,
-<ore:ingotIron>,
-<ore:ingotCopper>,
-<ore:ingotLead>,
-<ore:ingotNickel>,
-<ore:ingotPlatinum>,
-<ore:ingotSilver>,
-<ore:ingotTin>,
-<ore:ingotAluminum>,
-<ore:ingotIridium>,
-<ore:ingotMithril>,
-<ore:ingotThorium>,
-<ore:ingotUranium>,
-<ore:ingotBoron>,
-<ore:ingotLithium>,
-<ore:ingotMagnesium>,
-<ore:ingotTitanium>,
-<ore:ingotPalladium>,
-<ore:ingotNeodymium>,
-<ore:ingotNaquadahEnriched>,
-<ore:ingotBismuth>,
-<ore:ingotUranium235>,
-<ore:ingotOsmium>,
-<ore:ingotBeryllium>,
-<ore:ingotCobalt>,
-<ore:ingotNiobium>,
-<ore:ingotGraphite>,
-<ore:ingotAluminium>,
-<ore:ingotMolybdenum>,
-<ore:ingotZinc>,
-<ore:ingotNaquadah>] as IIngredient[];
+// REMOVE PYROTHEUM->INGOT RECIPES THAT ARE PROGRESSION BREAKING
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_41"); // Aluminium ingot from pyrotheum and ore
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_42"); // Aluminium ingot from pyrotheum and dust
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_43"); // Aluminium ingots from pyrotheum, petrotheum and dust
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_100"); // Osmium ingot from pyrotheum and ore
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_101"); // Osmium ingot from pyrotheum and dust
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_102"); // Osmium ingots from pyrotheum, petrotheum and dust
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_168"); // Naquadah ingot from pyrotheum and ore
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_169"); // Naquadah ingot from pyrotheum and dust
+recipes.removeByRecipeName("thermalfoundation:meta_item_1_170"); // Naquadah ingots from pyrotheum, petrotheum and dust
 
-for i in pyroArray {
-	recipes.remove(i, pyrotheum);
-}
 
 //Upgrade and Conversion Kits
 var kit = [
