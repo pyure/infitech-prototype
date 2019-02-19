@@ -75,41 +75,49 @@ recipes.addShaped(engineBiogas, [
 	[plateBronze, plateBronze, plateBronze],
 	[HHammer, blockGlass, wrench],
 	[gearBronze, frameBronze, gearBronze]]);
+
 scripts.functions.disableItem(engineClock);
+
 recipes.remove(enginePeat);
 recipes.addShaped(enginePeat, [
 	[plateCopper, plateCopper, plateCopper],
 	[HHammer, blockGlass, wrench],
 	[gearCopper, frameIron, gearCopper]]);
+
 recipes.remove(carpenter);
 recipes.addShaped(carpenter, [
 	[plateCopper, gtTank, plateCopper],
 	[robotArmLV, sturdyCasing, robotArmLV],
 	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
+
 recipes.remove(fermenter);
 recipes.addShaped(fermenter, [
 	[plateCopper, tinRotor, plateCopper],
 	[bcTank, sturdyCasing, bcTank],
 	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
+
 recipes.remove(moistener);
 recipes.addShaped(moistener, [
 	[plateCopper, gtTank, plateCopper],
 	[tinRotor, sturdyCasing, tinRotor],
 	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
+
 recipes.remove(rainMaker);
 recipes.addShaped(rainMaker, [
 	[plateCupronickel, sensorMV, plateCupronickel],
 	[electricPistonMV, hardenedCasing, electricPistonMV],
 	[gearGtSmallAluminium, emitterMV, gearGtSmallAluminium]]);
+
 recipes.remove(rainTank);
 recipes.addShaped(rainTank, [
 	[plateIron, ringIron, plateIron],
 	[plateIron, HHammer, plateIron],
 	[plateIron, cauldron, plateIron]]);
+
 recipes.remove(thermionicFabricator);
 Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtTank, steelScrew],
                                            [gaCoil, sturdyCasing, gaCoil],
-										  [steelScrew, electricMotorLV, steelScrew]], moltenRedstone * 1008, 300, worktable);
+								[steelScrew, electricMotorLV, steelScrew]], moltenRedstone * 1008, 300, worktable);
 
 recipes.remove(sturdyCasing);
 recipes.addShaped(sturdyCasing, [
