@@ -37,19 +37,31 @@ hs_err*.log
 replay*.log
 minecraftinstance.json
 replay*.log
+config/betterfps.json
 config/splash.properties
 config/jei/worldSettings.cfg
+config/InvTweaks/InvTweaks.cfg
 config/MouseTweaks.cfg
 config/InvTweaks.cfg
+config/agricraft/json/*
 config/AppliedEnergistics2/Facades.cfg
 config/AppliedEnergistics2/recipes/items.csv
+config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
+config/biomesoplenty/biomes/*
+config/buildcraft/detailed.properties
 config/cd4017be/compiled.dat
 config/thaumicjei_itemstack_aspects.json
 config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
 config/agricraft/json/defaults/infitech/
+config/agricraft/json/defaults/mod_botania/
+config/jei/jei.cfg
+config/NEI/client.cfg
+config/ftbutilities.cfg
+
 minecraftinstance.json
+modularmachinery.7z
 
 # Windows image file caches
 Thumbs.db

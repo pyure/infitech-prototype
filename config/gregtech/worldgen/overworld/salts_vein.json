@@ -18,21 +18,25 @@
           "value": "ore:salt"
         },
         {
-          "weight": 100,
+          "weight": 90,
           "value": "ore:rock_salt"
         },
-		{
+        {
           "weight": 40,
           "value": "ore:lepidolite"
         },
-		{
+        {
           "weight": 30,
           "value": "ore:spodumene"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        },
+        {
+          "weight": 25,
+          "value": "ore:borax"
+        }
       ]
     }
   }

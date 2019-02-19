@@ -16,21 +16,21 @@ for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
 PBFRecipeBuilder.start()
     .input(<ore:ingotCompressedWroughtIron> * 1)
     .output(<ore:ingotSteel>.firstItem * 1)
-    .duration(1600)
+    .duration(700)
     .fuelAmount(1)
     .buildAndRegister();
 
 PBFRecipeBuilder.start()
     .input(<ore:ingotWroughtIron> * 1)
     .output(<ore:ingotSteel>.firstItem * 1)
-    .duration(2800)
+    .duration(3000)
     .fuelAmount(2)
     .buildAndRegister();
 
 PBFRecipeBuilder.start()
     .input(<minecraft:iron_ingot> * 1)
     .output(<ore:ingotSteel>.firstItem * 1)
-    .duration(4200)
+    .duration(6000)
     .fuelAmount(3)
     .buildAndRegister();
 

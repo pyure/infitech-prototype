@@ -52,8 +52,10 @@ recipes.addShaped("fire_bow_recipe", fireBow,
   [null, bow.marked("myItem"), null], 
   [null, null, null]], 
   function(output, inputs, crafting) {
-    return output.withDamage(inputs.myItem.damage);
+    var damageToOutput = inputs.myItem.damage * output.maxDamage / inputs.myItem.maxDamage;
+    return output.withDamage(damageToOutput);
 }, null);
+
 
 // Alternative Torch
 
@@ -141,3 +143,12 @@ recipes.removeShapeless(<minecraft:concrete_powder:12>);
 recipes.removeShapeless(<minecraft:concrete_powder:13>);
 recipes.removeShapeless(<minecraft:concrete_powder:14>);
 recipes.removeShapeless(<minecraft:concrete_powder:15>);
+
+
+
+// Shears
+recipes.removeByRecipeName("minecraft:shears");
+recipes.addShaped("it3_shears", <minecraft:shears>, [
+  [<ore:craftingToolFile>, <ore:plateIron>, null],
+  [<ore:plateIron>, <ore:craftingToolHardHammer>, null],
+  [null, null, null]]);

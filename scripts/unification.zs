@@ -20,7 +20,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //Ore Unification
 
-var meta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] as int[];
+var meta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as int[];
 
 /*
 <gregtech:ore_cooperite_0>
@@ -757,6 +757,7 @@ for i in meta
 <gregtech:ore_spodumene_0>
 <gregtech:ore_scheelite_0>
 <gregtech:ore_emerald_0>
+<gregtech:ore_borax_0>
 */
 
 for i in meta
@@ -781,6 +782,12 @@ for i in meta
 {
 	var ore = <gregtech:ore_emerald_0>.definition.makeStack(i);
 	<ore:oreEmerald>.add(ore);	
+}
+
+for i in meta
+{
+	var ore = <gregtech:ore_borax_0>.definition.makeStack(i);
+	<ore:oreBorax>.add(ore);	
 }
 
 

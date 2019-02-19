@@ -20,7 +20,7 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
+<Recipes useDefault="false">
 	<Recipe timeRequired="300" power ="20">
 		<input>
 			<oreDict>ingotOsmiridium</oreDict>
@@ -71,14 +71,6 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
-			<oreDict>ingotSignalum</oreDict>
-		</input>
-		<output>
-			<itemStack>gregtech:meta_item_1 2 14700</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="300" power ="20">
-		<input>
 			<oreDict>ingotBlackBronze</oreDict>
 		</input>
 		<output>
@@ -119,6 +111,14 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
+			<oreDict>ingotPolyvinylChloride</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 2 14989</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
 			<oreDict>ingotUranium235</oreDict>
 		</input>
 		<output>
@@ -131,6 +131,14 @@
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 2 14183</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotSiliconRubber</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 2 14960</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -263,6 +271,14 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
+			<oreDict>ingotStyreneButadieneRubber</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 2 14953</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
 			<oreDict>ingotVanadiumSteel</oreDict>
 		</input>
 		<output>
@@ -314,7 +330,7 @@
 			<oreDict>ingotTitaniumIridium</oreDict>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productrod 2 1</itemStack>
+			<itemStack>advancedrocketry:productrod 4 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -339,6 +355,14 @@
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 2 14228</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotPolyphenyleneSulfide</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 2 14934</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -578,7 +602,7 @@
 			<oreDict>ingotTitaniumAluminide</oreDict>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productrod 2</itemStack>
+			<itemStack>advancedrocketry:productrod 4</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -607,6 +631,14 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
+			<oreDict>ingotNeutronium</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 2 14972</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
 			<oreDict>ingotInvar</oreDict>
 		</input>
 		<output>
@@ -627,6 +659,14 @@
 		</input>
 		<output>
 			<itemStack>gregtech:meta_item_1 2 14133</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power ="20">
+		<input>
+			<oreDict>ingotNickelZincFerrite</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_1 2 14921</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="100">

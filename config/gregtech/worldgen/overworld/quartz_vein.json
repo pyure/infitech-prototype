@@ -1,5 +1,5 @@
 {
-  "weight": 80,
+  "weight": 70,
   "density": 0.4,
   "max_height": 80,
   "min_height": 40,
@@ -25,10 +25,10 @@
           "weight": 400,
           "value": "ore:certus_quartz"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }

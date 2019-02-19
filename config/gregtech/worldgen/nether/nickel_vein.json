@@ -23,18 +23,18 @@
           "weight": 180,
           "value": "ore:nickel"
         },
-		{
+        {
           "weight": 180,
           "value": "ore:cobaltite"
         },
-		{
+        {
           "weight": 60,
           "value": "ore:pentlandite"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }

@@ -22,14 +22,14 @@
           "weight": 120,
           "value": "ore:monazite"
         },
-		{
+        {
           "weight": 90,
           "value": "ore:neodymium"
         },
-				{
-					"weight": 1,
-					"value": "block:appliedenergistics2:sky_stone_block"
-				} 
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
       ]
     }
   }

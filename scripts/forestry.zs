@@ -62,3 +62,14 @@ scripts.functions.disableItem(<forestry:scoop>);
 var smoker = <forestry:smoker>;
 recipes.remove(smoker);
 recipes.addShaped("forestry_smoker", smoker, [[<ore:leather>, <ore:stickWood>, <ore:stickTin>], [<ore:leather>, <forestry:ash>, <ore:plateTin>], [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
+
+//Worktable
+var worktable = <forestry:worktable>;
+recipes.remove(worktable);
+recipes.addShaped("forestry_worktable", worktable, [
+[<ore:screwIron>, <minecraft:book>, <ore:screwIron>],
+[<ore:craftingToolSaw>, <minecraft:crafting_table>, <ore:craftingToolScrewdriver>],
+[<ore:screwIron>, <ore:chestWood>, <ore:screwIron>]]);
+
+//Remove bronze recipe
+recipes.removeByRecipeName("forestry:bronze_ingot");

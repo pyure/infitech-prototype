@@ -153,14 +153,62 @@ scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
 scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
 scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
 scripts.functions.disableItem(<nuclearcraft:centrifuge_idle>);
+scripts.functions.disableItem(<nuclearcraft:infuser_idle>);
 
+//Remove recipes from disabled machines
+mods.nuclearcraft.manufactory.removeAllRecipes();
+mods.nuclearcraft.alloy_furnace.removeAllRecipes();
+mods.nuclearcraft.melter.removeAllRecipes();
+mods.nuclearcraft.electrolyser.removeAllRecipes();
+mods.nuclearcraft.irradiator.removeAllRecipes();
+mods.nuclearcraft.ingot_former.removeAllRecipes();
+mods.nuclearcraft.pressurizer.removeAllRecipes();
+mods.nuclearcraft.chemical_reactor.removeAllRecipes();
+mods.nuclearcraft.extractor.removeAllRecipes();
+mods.nuclearcraft.centrifuge.removeAllRecipes();
+//mods.nuclearcraft.infuser.removeAllRecipes(); can add this after we moved recipes to chemical reactor
 
+//Basic plating implosion compressor recipe
+recipes.remove(<nuclearcraft:part>);
+val icompressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
+icompressor.recipeBuilder()
+	.inputs(<ore:ingotSteel> * 2, <ore:ingotCarbon> * 1)
+	.property("explosives", 1)
+	.outputs(<nuclearcraft:part> * 1)
+	.duration(20)
+	.EUt(32)
+	.buildAndRegister();
 
+// ISOTOPE SEPARATOR
+mods.nuclearcraft.isotope_separator.removeRecipeWithInput([<ore:dustUranium>]); // Disable processing U238 in isotope seperator  
+mods.nuclearcraft.isotope_separator.removeRecipeWithInput([<ore:dustUraniumOxide>]); // Disable processing U238-Ox in isotope seperator  
 
+var itemDuct = <thermaldynamics:duct_32>;
+recipes.remove(<nuclearcraft:bin>);
+recipes.addShaped("infitech3_tile.nuclearcraft.bin", <nuclearcraft:bin>, [
+  [<ore:plateSteel>, null, <ore:plateSteel>], 
+  [<ore:cableGTSingleCopper>, <ore:blockObsidian>, itemDuct], 
+  [<ore:plateSteel>, <ore:pipeSmallSteel>, <ore:plateSteel>]]);
+  
+var fuelLEU235 = <nuclearcraft:fuel_uranium:4>;
+var fuelHEU235 = <nuclearcraft:fuel_uranium:6>;
+recipes.addShapeless(fuelLEU235, [<ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
+recipes.addShapeless(fuelHEU235, [<ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
 
+// Allow GT Borax Dust to count as Boron oredict
+var ingotBoron = <nuclearcraft:ingot:5>;
+<ore:dustBoron>.addAll(<ore:dustBorax>);
 
+// Add dustBoron for boron ingots instead of NC Boron Dust
+furnace.remove(ingotBoron);
+furnace.addRecipe(ingotBoron, <ore:dustBoron>);
 
-
-
-
+var fusionCore = <nuclearcraft:fusion_core>;
+var machine_hull_luv = <gregtech:machine:506>;
+recipes.remove(fusionCore);
+recipes.addShaped("it3_tile.nuclearcraft.fusion_core", 
+  <nuclearcraft:fusion_core>, [
+    [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>], 
+    [machine_hull_luv, <ore:chassis>, machine_hull_luv], 
+    [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>]]);
 
