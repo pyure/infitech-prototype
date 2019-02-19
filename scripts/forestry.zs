@@ -117,7 +117,7 @@ recipes.addShaped(rainTank, [
 recipes.remove(thermionicFabricator);
 Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtTank, steelScrew],
                                            [gaCoil, sturdyCasing, gaCoil],
-						[steelScrew, electricMotorLV, steelScrew]], moltenRedstone * 1008, 300, worktable);
+					[steelScrew, electricMotorLV, steelScrew]], moltenRedstone * 1008, 300, worktable);
 
 recipes.remove(sturdyCasing);
 recipes.addShaped(sturdyCasing, [
