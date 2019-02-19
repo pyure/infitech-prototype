@@ -640,3 +640,41 @@ chemical_bath.recipeBuilder().fluidInputs([<liquid:tungstensteel_grinding_soluti
 chemical_bath.recipeBuilder().fluidInputs([<liquid:tungstensteel_grinding_solution> * 25]).inputs([<ore:crushedVanadiumMagnetite>]).chancedOutput(<ore:crushedPurifiedMagnetite>.firstItem, 2000).outputs([<ore:dustTinyVanadium>.firstItem*16]).duration(75).EUt(130).buildAndRegister();
 chemical_bath.recipeBuilder().fluidInputs([<liquid:tungstensteel_grinding_solution> * 25]).inputs([<ore:crushedYellowLimonite>]).chancedOutput(<ore:crushedPurifiedNickel>.firstItem, 2000).outputs([<ore:dustTinyBrownLimonite>.firstItem*16,<ore:dustTinyBrownLimonite>.firstItem*16]).duration(75).EUt(130).buildAndRegister();
 chemical_bath.recipeBuilder().fluidInputs([<liquid:tungstensteel_grinding_solution> * 25]).inputs([<ore:crushedZinc>]).chancedOutput(<ore:crushedPurifiedTin>.firstItem, 2000).outputs([<ore:dustTinyGallium>.firstItem*16]).duration(75).EUt(130).buildAndRegister();
+
+
+// MUTAGEN
+//8 Mutagen Cats + 1000 Biomass Capsule -> 1 Mutagen
+//6 Mut Cats + 3000 Biomass + 7200 EU (24/t) -> 1 Mutagen (Autoclave)
+//5 Mut Cats + 4 Irradiated Comb + 2000 Biomass + 25200 EU (30/t) -> 1 Mutagen (Chemical Reactor)
+//8 Royal Jelly + 1 U238 -> 1 Mutagen Catalyst
+
+/*
+var mutagenCatalyst = <XXX>;
+var biomassCapsule = <YYY>;
+var combIrradiated = <ZZZ>;
+var combMutagen = <111>;
+var royalJelly = <222>;
+var U238 = <333>;
+
+recipes.addShaped(mutagenCatalyst, [
+  [royalJelly, royalJelly, royalJelly],
+  [royalJelly, <ore:dustUranium>, royalJelly],
+  [royalJelly, royalJelly, royalJelly]]);
+
+recipes.addShaped(mutagenCatalyst * 4, [
+  [royalJelly, royalJelly, royalJelly],
+  [royalJelly, <ore:dustUranium235>, royalJelly],
+  [royalJelly, royalJelly, royalJelly]]);
+
+recipes.addShaped(mutagenCatalyst * 5, [
+  [royalJelly, royalJelly, royalJelly],
+  [royalJelly, <ore:dustPlutonium>, royalJelly],
+  [royalJelly, royalJelly, royalJelly]]);
+
+recipes.addShaped(<ore:combMutagen>.firstItem, [
+  [mutagenCatalyst, mutagenCatalyst, mutagenCatalyst],
+  [mutagenCatalyst, biomassCapsule, mutagenCatalyst],
+  [mutagenCatalyst, mutagenCatalyst, mutagenCatalyst]]);
+  
+chemical_reactor.recipeBuilder().inputs([combIrradiated * 4, mutagenCatalyst * 5]).fluidInputs([<liquid:biomass> * 3000 ]).outputs([combMutagen * 1]).duration(220).EUt(30).buildAndRegister();
+*/
