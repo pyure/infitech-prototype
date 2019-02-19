@@ -122,6 +122,7 @@ var Thaumium = MaterialSystem.getMaterialBuilder().setName('Thaumium').setColor(
 var Thaumiumshard = MaterialSystem.getMaterialBuilder().setName('Thaumiumshard').setColor(0x9966FF).build();
 var Tungsten = MaterialSystem.getMaterialBuilder().setName('Tungsten').setColor(3289650).build();
 var Titanium = MaterialSystem.getMaterialBuilder().setName('Titanium').setColor(14459120).build();
+var Mutagen = MaterialSystem.getMaterialBuilder().setName('Mutagen').setColor(0xFFC100).build();
 
 
 var Metallic = MaterialSystem.getMaterialBuilder().setName('Metallic').setColor(0xB1A1B1).build();
@@ -136,17 +137,22 @@ GreenSapphire,VanadiumMagnetite,Galena,Barite,Calcite,Ilmenite,Lignite,Chalcopyr
 Tantalite,YellowLimonite,Talc,Bastnasite,Malachite,Tetrahedrite,Sodalite,Pyrope,Spodumene,Bauxite,Soapstone,Cooperite,Almandine,Grossular,Redstone,Spessartine,Lazurite,Lepidolite,Diamond,Glauconite,
 Rutile,Gallium,Calcium,Magnesium] as Material[];
 
-
-var metal_list = [] as Material[];
 var ore_part_names = ["small_crushed_ore"] as string[]; 
 var part_names = ["nugget", "ingot", "plate", "rod"] as string[]; 
 
 var comb_material_list = [Aluminium, CertusQuartz, Chromite, Coal, Copper, Diamond, Emerald, Gold, Iridium, Iron, Lead, Lignite, Naquadah, Nickel, Platinum, Redstone, Silver, Fluix, Lapis, Manganese, 
-Oil, Olivine, Osmium, Plutonium, Ruby, Sapphire, Slag, Steel, Stone, Thaumium, Tin, Metallic, Gemstone, Tungsten, Zinc, Uranium, Titanium] as Material[];
+Oil, Olivine, Osmium, Plutonium, Ruby, Sapphire, Slag, Steel, Stone, Thaumium, Tin, Metallic, Gemstone, Tungsten, Zinc, Uranium, Titanium, Mutagen] as Material[];
+var metal_list = [] as Material[];
+var honeydrop_material_list = [Mutagen] as Material[];
 
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_crushed_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallCrushedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_purified_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallPurifiedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("bee_comb").setPartType(MaterialSystem.getPartType("item")).setOreDictName("comb").build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("honey_drop").setPartType(MaterialSystem.getPartType("item")).setOreDictName("dropHoney").build();
+
+for i, honeydrop_material in honeydrop_material_list {
+    honeydrop_material.registerPart("honey_drop");
+}
 
 for i, comb_material in comb_material_list {
     comb_material.registerPart("bee_comb");
