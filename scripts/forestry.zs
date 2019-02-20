@@ -73,3 +73,25 @@ recipes.addShaped("forestry_worktable", worktable, [
 
 //Remove bronze recipe
 recipes.removeByRecipeName("forestry:bronze_ingot");
+
+
+//Charcoal pile
+var bricksBronze = <gregtech:metal_casing>;
+
+mods.forestry.CharcoalWall.removeWall(<minecraft:dirt>);
+mods.forestry.CharcoalWall.removeWall(<minecraft:clay>);
+mods.forestry.CharcoalWall.removeWall(<forestry:loam>);
+mods.forestry.CharcoalWall.removeWall(<minecraft:end_stone>);
+mods.forestry.CharcoalWall.removeWall(<minecraft:end_bricks>);
+mods.forestry.CharcoalWall.removeWall(<minecraft:gravel>);
+mods.forestry.CharcoalWall.removeWall(<minecraft:netherrack>);
+mods.forestry.CharcoalWall.removeWall(<forestry:ash_brick>);
+
+mods.forestry.CharcoalWall.addWall(<minecraft:dirt>, -5);
+mods.forestry.CharcoalWall.addWall(<minecraft:gravel>, -4);
+mods.forestry.CharcoalWall.addWall(<minecraft:netherrack>, -4);
+mods.forestry.CharcoalWall.addWall(<forestry:ash_brick>, -2);
+mods.forestry.CharcoalWall.addWall(<forestry:loam>, -2);
+mods.forestry.CharcoalWall.addWall(bricksBronze, 0);
+mods.forestry.CharcoalWall.addWall(<minecraft:end_bricks>, 1);
+mods.forestry.CharcoalWall.addWall(<advancedrocketry:blastbrick>, 3);
