@@ -92,6 +92,6 @@ mods.forestry.CharcoalWall.addWall(<minecraft:gravel>, -4);
 mods.forestry.CharcoalWall.addWall(<minecraft:netherrack>, -4);
 mods.forestry.CharcoalWall.addWall(<forestry:ash_brick>, -2);
 mods.forestry.CharcoalWall.addWall(<forestry:loam>, -2);
-mods.forestry.CharcoalWall.addWall(bricksBronze, 0);
-mods.forestry.CharcoalWall.addWall(<minecraft:end_bricks>, 1);
+mods.forestry.CharcoalWall.addWall(bricksBronze, 1);
+mods.forestry.CharcoalWall.addWall(<minecraft:end_bricks>, 0);
 mods.forestry.CharcoalWall.addWall(<advancedrocketry:blastbrick>, 3);
