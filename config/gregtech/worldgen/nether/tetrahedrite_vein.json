@@ -16,15 +16,15 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 360,
+          "weight": 60,
           "value": "ore:tetrahedrite"
         },
         {
-          "weight": 120,
+          "weight": 20,
           "value": "ore:copper"
         },
-        {
-          "weight": 120,
+		{
+          "weight": 20,
           "value": "ore:stibnite"
         },
         {

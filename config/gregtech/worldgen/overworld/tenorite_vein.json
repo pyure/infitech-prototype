@@ -1,13 +1,13 @@
 {
   "weight": 80,
-  "density": 0.4,
+  "density": 0.3,
   "max_height": 30,
   "min_height": 10,
   "surface_stone_material": "copper",
 
   "generator": {
     "type": "ellipsoid",
-    "radius": [17, 19]
+    "radius": [17, 18]
   },
   "filler": {
     "type": "simple",
@@ -15,20 +15,16 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 90,
-          "value": "ore:chalcopyrite"
+          "weight": 180,
+          "value": "ore:tenorite"
         },
         {
-          "weight": 90,
-          "value": "ore:iron"
-        },
-        {
-          "weight": 90,
-          "value": "ore:pyrite"
-        },
-        {
-          "weight": 30,
+          "weight": 60,
           "value": "ore:copper"
+        },
+        {
+          "weight": 60,
+          "value": "ore:cuprite"
         },
         {
           "weight": 1,
