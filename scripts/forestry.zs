@@ -76,7 +76,11 @@ recipes.addShaped(engineBiogas, [
 	[HHammer, blockGlass, wrench],
 	[gearBronze, frameBronze, gearBronze]]);
 
-scripts.functions.disableItem(engineClock);
+recipes.remove(engineClock);
+recipes.addShaped(engineClock, [
+	[plateCopper, plateCopper, plateCopper],
+	[HHammer, <ore:stickLongBronze>, wrench],
+	[gearCopper, frameIron, gearCopper]]);
 
 recipes.remove(enginePeat);
 recipes.addShaped(enginePeat, [
