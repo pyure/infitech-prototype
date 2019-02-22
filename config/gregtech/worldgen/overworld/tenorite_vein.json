@@ -1,0 +1,36 @@
+{
+  "weight": 80,
+  "density": 0.3,
+  "max_height": 30,
+  "min_height": 10,
+  "surface_stone_material": "copper",
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [17, 18]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 180,
+          "value": "ore:tenorite"
+        },
+        {
+          "weight": 60,
+          "value": "ore:copper"
+        },
+        {
+          "weight": 60,
+          "value": "ore:cuprite"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
+      ]
+    }
+  }
+}

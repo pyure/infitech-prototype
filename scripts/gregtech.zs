@@ -793,7 +793,6 @@ val controller_array = [
   <meta_tile_entity:gtadditions:fusion_reactor.uv>,
   <meta_tile_entity:gregtech:pyrolyse_oven>,
   <meta_tile_entity:gregtech:distillation_tower>,
-  <meta_tile_entity:gtadditions:distill_tower>,
   <meta_tile_entity:gregtech:large_turbine.steam>,
   <meta_tile_entity:gregtech:large_turbine.plasma>,
   <meta_tile_entity:gregtech:large_turbine.gas>,

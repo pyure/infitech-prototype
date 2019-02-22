@@ -17,7 +17,7 @@ var plateBronze = <ore:plateBronze>;
 var gearBronze = <ore:gearBronze>;
 var frameIron = <ore:frameGtIron>;
 var frameBronze = <ore:frameGtBronze>;
-var gtTank = <gregtech:bronze_tank>;
+var gtTank = <meta_tile_entity:gregtech:bronze_tank>;
 var robotArmLV = <metaitem:robot.arm.lv>;
 var sturdyCasing = <forestry:sturdy_machine>;
 var gearGtSmallSteel = <ore:gearSmallSteel>;
@@ -93,7 +93,7 @@ recipes.addShaped(carpenter, [
 recipes.remove(fermenter);
 recipes.addShaped(fermenter, [
 	[plateCopper, tinRotor, plateCopper],
-	[bcTank, sturdyCasing, bcTank],
+	[gtTank, sturdyCasing, gtTank],
 	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
 
 recipes.remove(moistener);
@@ -115,9 +115,7 @@ recipes.addShaped(rainTank, [
 	[plateIron, cauldron, plateIron]]);
 
 recipes.remove(thermionicFabricator);
-Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtTank, steelScrew],
-                                           [gaCoil, sturdyCasing, gaCoil],
-					[steelScrew, electricMotorLV, steelScrew]], moltenRedstone * 1008, 300, worktable);
+mods.forestry.Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtTank, steelScrew],[gaCoil, sturdyCasing, gaCoil],[steelScrew, electricMotorLV, steelScrew]], 300, moltenRedstone * 1008, worktable);
 
 recipes.remove(sturdyCasing);
 recipes.addShaped(sturdyCasing, [
@@ -131,12 +129,6 @@ assembler.recipeBuilder()
 	.duration(400)
 	.EUt(2)
 	.buildAndRegister();
-
-// WOOD PILES
-var woodPile = <forestry:wood_pile>;
-
-recipes.remove(woodPile);
-recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
 
 // GT Style block crafting
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
@@ -169,7 +161,6 @@ recipes.remove(smoker);
 recipes.addShaped("forestry_smoker", smoker, [[<ore:leather>, <ore:stickWood>, <ore:stickTin>], [<ore:leather>, <forestry:ash>, <ore:plateTin>], [<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]]);
 
 //Worktable
-var worktable = <forestry:worktable>;
 recipes.remove(worktable);
 recipes.addShaped("forestry_worktable", worktable, [
 [<ore:screwIron>, <minecraft:book>, <ore:screwIron>],
@@ -179,6 +170,11 @@ recipes.addShaped("forestry_worktable", worktable, [
 //Remove bronze recipe
 recipes.removeByRecipeName("forestry:bronze_ingot");
 
+// WOOD PILES
+var woodPile = <forestry:wood_pile>;
+
+recipes.remove(woodPile);
+recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
 
 //Charcoal pile
 var bricksBronze = <gregtech:metal_casing>;
