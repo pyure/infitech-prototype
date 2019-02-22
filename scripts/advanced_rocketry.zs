@@ -207,4 +207,10 @@ metal_bender.recipeBuilder()
   .outputs(plateTitaniumIridiumAlloy * 1)
   .duration(120)
   .EUt(42)
-  .buildAndRegister();     
+  .buildAndRegister();
+
+recipes.remove(<advancedrocketry:blastbrick>);
+recipes.addShaped(<advancedrocketry:blastbrick> *6, [
+  [<minecraft:magma_cream>, <minecraft:ghast_tear>, <forestry:refractory_wax>], 
+  [<minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>], 
+  [null, null, null]]);
