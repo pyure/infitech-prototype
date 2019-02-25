@@ -16,19 +16,19 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 90,
+          "weight": 30,
           "value": "ore:chalcopyrite"
         },
-        {
-          "weight": 90,
+		{
+          "weight": 30,
           "value": "ore:iron"
         },
-        {
-          "weight": 90,
+		{
+          "weight": 30,
           "value": "ore:pyrite"
         },
-        {
-          "weight": 30,
+		{
+          "weight": 10,
           "value": "ore:copper"
         },
         {

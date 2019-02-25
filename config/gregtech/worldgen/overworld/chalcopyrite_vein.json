@@ -1,0 +1,40 @@
+{
+  "weight": 80,
+  "density": 0.4,
+  "max_height": 40,
+  "min_height": 10,
+  "surface_stone_material": "copper",
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [17, 19]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 90,
+          "value": "ore:chalcopyrite"
+        },
+		{
+          "weight": 90,
+          "value": "ore:iron"
+        },
+		{
+          "weight": 90,
+          "value": "ore:pyrite"
+        },
+		{
+          "weight": 30,
+          "value": "ore:copper"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
+      ]
+    }
+  }
+}
