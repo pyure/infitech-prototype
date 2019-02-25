@@ -25,7 +25,7 @@ val materialBlueAlloy = MaterialRegistry.createIngotMaterial(705, "blue_alloy", 
 materialBlueAlloy.setCableProperties(512, 3, 1);
 materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
 
-val materialThaumium = MaterialRegistry.createIngotMaterial(706, "thaumium", 0x7A007A, "shiny", 2, null, 10.0, 8.0, 253);
+val materialThaumium = MaterialRegistry.createIngotMaterial(706, "thaumium", 0x7A007A, "shiny", 2, null, 10.0, 8.0, 315);
 materialThaumium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
 
