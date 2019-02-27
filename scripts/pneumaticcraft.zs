@@ -33,4 +33,4 @@ compressor.recipeBuilder()
 	.outputs(<pneumaticcraft:compressed_iron_block>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
-  
+

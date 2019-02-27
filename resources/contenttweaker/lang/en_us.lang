@@ -3,6 +3,7 @@ item.contenttweaker.tree_tap.name=Tree Tap
 
 contenttweaker.part.bee_comb=%s Comb
 contenttweaker.part.honey_drop=%s Drop
+contenttweaker.part.pollinated_ore=%s-Pollinated Ore
 
 // MOLDS
 item.contenttweaker.sword_blade_mold.name=Sword Blade Mold

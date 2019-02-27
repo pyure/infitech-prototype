@@ -144,11 +144,17 @@ var comb_material_list = [Aluminium, CertusQuartz, Chromite, Coal, Copper, Diamo
 Oil, Olivine, Osmium, Plutonium, Ruby, Sapphire, Slag, Steel, Stone, Thaumium, Tin, Metallic, Gemstone, Tungsten, Zinc, Uranium, Titanium, Mutagen] as Material[];
 var metal_list = [] as Material[];
 var honeydrop_material_list = [Mutagen] as Material[];
+var pollinated_material_list = [Gold, Lead, Tin] as Material[];
 
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_crushed_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallCrushedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_purified_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallPurifiedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("bee_comb").setPartType(MaterialSystem.getPartType("item")).setOreDictName("comb").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("honey_drop").setPartType(MaterialSystem.getPartType("item")).setOreDictName("dropHoney").build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("pollinated_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("pollinatedOre").build();
+
+for i, pollinated_material in pollinated_material_list {
+    pollinated_material.registerPart("pollinated_ore");
+}
 
 for i, honeydrop_material in honeydrop_material_list {
     honeydrop_material.registerPart("honey_drop");
