@@ -39,6 +39,7 @@ for j, b in iron_shulker_boxes {
 
 recipes.remove(<ironchest:vanilla_copper_shulker_upgrade>);
 recipes.remove(<ironchest:vanilla_iron_shulker_upgrade>);
+recipes.remove(<ironchest:copper_iron_shulker_upgrade>);
 recipes.remove(<ironchest:iron_gold_shulker_upgrade>);
 recipes.remove(<ironchest:copper_silver_shulker_upgrade>);
 recipes.remove(<ironchest:gold_diamond_shulker_upgrade>);
@@ -57,11 +58,11 @@ recipes.addShaped(<ironchest:vanilla_iron_shulker_upgrade>, [[materials[0], mate
 recipes.addShaped(<ironchest:copper_iron_shulker_upgrade>, [[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],[materials[0], materials[3], materials[0]], [materials[0], <ore:blockGlass>, materials[0]]]);
 recipes.addShaped(<ironchest:iron_gold_shulker_upgrade>, [[materials[1], materials[0], materials[1]],[materials[1], materials[1], materials[1]], [materials[1], materials[1], materials[1]]]);
 recipes.addShaped(<ironchest:gold_diamond_shulker_upgrade>, [[<ore:blockGlass>, materials[2], <ore:blockGlass>],[<ore:blockGlass>, materials[1], <ore:blockGlass>], [<ore:blockGlass>, materials[2], <ore:blockGlass>]]);
-recipes.addShaped(<ironchest:copper_silver_shulker_upgrade>, [[materials[4], materials[4], materials[4]],[materials[4], materials[3], materials[4]], [materials[4], materials[4], materials[4]]]);
+recipes.addShaped(<ironchest:copper_silver_shulker_upgrade>, [[materials[4], materials[3], materials[4]],[materials[4], materials[4], materials[4]], [materials[4], materials[4], materials[4]]]);
 recipes.addShaped(<ironchest:silver_gold_shulker_upgrade>, [[materials[1], materials[4], materials[1]],[<ore:blockGlass>, <ore:blockGlass> , <ore:blockGlass>], [materials[1], <ore:blockGlass>, materials[1]]]);
-recipes.addShaped(<ironchest:copper_silver_chest_upgrade>, [[materials[4], materials[3], materials[4]],[materials[4], materials[4], materials[4]], [materials[4], materials[4], materials[4]]]);
-recipes.addShaped(<ironchest:wood_copper_chest_upgrade>, [[materials[3], materials[3], materials[3]],[materials[3], <minecraft:planks>, materials[3]], [materials[3], materials[3], materials[3]]]);
-recipes.addShaped(<ironchest:wood_iron_chest_upgrade>, [[materials[0], materials[0], materials[0]],[materials[0], <minecraft:planks>, materials[0]], [materials[0], materials[0], materials[0]]]);
+recipes.addShaped(<ironchest:copper_silver_chest_upgrade>, [[materials[4], materials[4], materials[4]],[materials[4], materials[3], materials[4]], [materials[4], materials[4], materials[4]]]);
+recipes.addShaped(<ironchest:wood_copper_chest_upgrade>, [[materials[3], materials[3], materials[3]],[materials[3], <ore:plankWood>, materials[3]], [materials[3], materials[3], materials[3]]]);
+recipes.addShaped(<ironchest:wood_iron_chest_upgrade>, [[materials[0], materials[0], materials[0]],[materials[0], <ore:plankWood>, materials[0]], [materials[0], materials[0], materials[0]]]);
 recipes.addShaped(<ironchest:gold_diamond_chest_upgrade>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],[materials[2], materials[1], materials[2]], [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
 recipes.addShaped(<ironchest:silver_gold_chest_upgrade>, [[materials[1], <ore:blockGlass>, materials[1]],[<ore:blockGlass>, materials[4], <ore:blockGlass>], [materials[1], <ore:blockGlass>, materials[1]]]);
 recipes.addShaped(<ironchest:copper_iron_chest_upgrade>, [[materials[0], <ore:blockGlass>, materials[0]],[<ore:blockGlass>, materials[3], <ore:blockGlass>], [materials[0], <ore:blockGlass>, materials[0]]]);
