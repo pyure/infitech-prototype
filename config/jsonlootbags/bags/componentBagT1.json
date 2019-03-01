@@ -1,7 +1,7 @@
 {
   "loot-table": "jsonlootbags:components/components_t1",
   "name": "componentbagt1",
-  "human-name": "Bag of Components I",
+  "human-name": "Spare Components Bag (Tier 1)",
   "texture": "jsonlootbags:bag",
   "rarity": "Common",
   "effect": false,
