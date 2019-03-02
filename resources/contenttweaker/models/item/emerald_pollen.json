@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "contenttweaker:items/pollen"
+    "layer0": "contenttweaker:items/pollen.0",
+    "layer1": "contenttweaker:items/pollen.1"
   }
 }
