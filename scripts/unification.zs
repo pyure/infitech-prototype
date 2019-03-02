@@ -791,4 +791,8 @@ for i in meta
 }
 
 
-
+// Aluminium vs Aluminum
+<ore:ingotAluminium>.addAll(<ore:ingotAluminum>);
+<ore:oreAluminium>.addAll(<ore:oreAluminum>);
+<ore:blockAluminium>.addAll(<ore:blockAluminum>);
+<ore:plateAluminium>.addAll(<ore:plateAluminum>);
