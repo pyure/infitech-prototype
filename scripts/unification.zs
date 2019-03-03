@@ -796,3 +796,6 @@ for i in meta
 <ore:oreAluminium>.addAll(<ore:oreAluminum>);
 <ore:blockAluminium>.addAll(<ore:blockAluminum>);
 <ore:plateAluminium>.addAll(<ore:plateAluminum>);
+
+// Plates
+<ore:plateLead>.add(<railcraft:plate:4>);
