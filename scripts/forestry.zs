@@ -206,6 +206,40 @@ mods.forestry.CharcoalWall.addWall(<advancedrocketry:blastbrick>, 12);
 //Fluid extract honey drops
 fluid_extractor.recipeBuilder().inputs([<ore:dropHoney> * 1]).fluidOutputs([<liquid:for.honey> * 150 ]).duration(240).EUt(12).buildAndRegister();
 
+//Replace multi farm block recipes
+var foilCopper = <ore:foilCopper>;
+var tubeTin = <forestry:thermionic_tubes:1>;
+var conveyorLV = <metaitem:conveyor.module.lv>;
+var pumpLV = <metaitem:electric.pump.lv>;
+var farmBlock = <forestry:ffarm>;
+var gearFarm = <forestry:ffarm:2>;
+var hatchFarm = <forestry:ffarm:3>;
+var valveFarm = <forestry:ffarm:4>;
+var controlFarm = <forestry:ffarm:5>;
 
+val farmStoneVariants = [
+  <minecraft:stonebrick>, 
+  <minecraft:stonebrick:1>, 
+  <minecraft:stonebrick:2>, 
+  <minecraft:brick_block>, 
+  <minecraft:sandstone:2>, 
+  <minecraft:sandstone:1>, 
+  <minecraft:nether_brick>, 
+  <minecraft:stonebrick:3>, 
+  <minecraft:quartz_block>, 
+  <minecraft:quartz_block:1>, 
+  <minecraft:quartz_block:2>] as IItemStack[];
 
+for i in 0 to 10 {
+  recipes.remove(farmBlock.withTag({FarmBlock: i}));
+  recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: i}));
+  recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: i}));
+  recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: i}));
+  recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: i}));
   
+  mods.forestry.Carpenter.addRecipe(farmBlock.withTag({FarmBlock: i}), [[steelScrew, foilCopper, steelScrew],[foilCopper, tubeTin, foilCopper],[steelScrew, foilCopper, steelScrew]], 200, moltenRedstone * 144, farmStoneVariants[i]);
+  mods.forestry.Carpenter.addRecipe(gearFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel],[null, gearGtSmallSteel, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
+  mods.forestry.Carpenter.addRecipe(hatchFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[conveyorLV, electricMotorLV, conveyorLV],[null, <minecraft:hopper>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
+  mods.forestry.Carpenter.addRecipe(valveFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[pumpLV, electricMotorLV, pumpLV],[null, <ore:ringRubber>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
+  mods.forestry.Carpenter.addRecipe(controlFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[<ore:circuitGABasic>, electricMotorLV, <ore:circuitGABasic>],[null, <ore:cableGtSingleTin>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
+}
