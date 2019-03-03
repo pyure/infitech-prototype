@@ -99,7 +99,6 @@ val tool_array = [
   "Chrome" ,
   "Cobalt" ,
   "Iron" ,
-  "Silver",
   "Titanium",
   "Brass" ,
   "Bronze",
