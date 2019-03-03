@@ -127,7 +127,7 @@ recipes.addShaped(backpackTrack, [
 	[hardenedLeather, <minecraft:rail>, hardenedLeather],
 	[hardenedLeather, hardenedLeather, hardenedLeather]]);
 mods.forestry.Carpenter.removeRecipe(backpackTrackT2);
-mods.forestry.Carpenter.addRecipe(backpackTrackT2,         [[wovenSilk, wovenSilk, wovenSilk],[wovenSilk, wovenSilk, wovenSilk], [wovenSilk, wovenSilk, wovenSilk]], 600, <liquid:seedoil> * 5000, backpackTrack);
+mods.forestry.Carpenter.addRecipe(backpackTrackT2,         [[wovenSilk, wovenSilk, wovenSilk],[wovenSilk, wovenSilk, wovenSilk], [wovenSilk, wovenSilk, wovenSilk]], 600, <liquid:seed.oil> * 5000, backpackTrack);
 
 //mods.forestry.Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtTank, steelScrew],[gaCoil, sturdyCasing, gaCoil],[steelScrew, electricMotorLV, steelScrew]], 300, moltenRedstone * 1008, worktable);
 
@@ -141,7 +141,7 @@ recipes.addShaped(backpackIceman, [
 mods.forestry.Carpenter.removeRecipe(backpackIcemanT2);
 mods.forestry.Carpenter.addRecipe(backpackIcemanT2, [[wovenSilk, wovenSilk, wovenSilk],
                                        [wovenSilk, wovenSilk, wovenSilk],
-                                       [wovenSilk, wovenSilk, wovenSilk]], 600, <liquid:seedoil> * 5000, backpackIceman);
+                                       [wovenSilk, wovenSilk, wovenSilk]], 600, <liquid:seed.oil> * 5000, backpackIceman);
 recipes.remove(backpackApothecary);
 recipes.addShapeless(backpackApothecary, [backpackApothecary]);
 recipes.addShaped(backpackApothecary, [
@@ -151,7 +151,7 @@ recipes.addShaped(backpackApothecary, [
 mods.forestry.Carpenter.removeRecipe(backpackApothecaryT2);
 mods.forestry.Carpenter.addRecipe(backpackApothecaryT2, [[wovenSilk, wovenSilk, wovenSilk],
                                            [wovenSilk, wovenSilk, wovenSilk],
-                                           [wovenSilk, wovenSilk, wovenSilk]], 600, <liquid:seedoil> * 5000, backpackApothecary);
+                                           [wovenSilk, wovenSilk, wovenSilk]], 600, <liquid:seed.oil> * 5000, backpackApothecary);
 
 
 /* NOTES FROM PORTING FROM 1.7.10/INFITECH 2
