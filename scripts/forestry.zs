@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 var engineBiogas = <forestry:engine_biogas>;
 var engineClock = <forestry:engine_clockwork>;
@@ -200,3 +201,11 @@ mods.forestry.CharcoalWall.addWall(<forestry:loam>, 7);
 mods.forestry.CharcoalWall.addWall(<minecraft:end_bricks>, 9);
 mods.forestry.CharcoalWall.addWall(<gregtech:metal_casing>, 10);
 mods.forestry.CharcoalWall.addWall(<advancedrocketry:blastbrick>, 12);
+
+
+//Fluid extract honey drops
+fluid_extractor.recipeBuilder().inputs([<ore:dropHoney> * 1]).fluidOutputs([<liquid:fluid.for.honey> * 150 ]).duration(240).EUt(12).buildAndRegister();
+
+
+
+  
