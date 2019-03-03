@@ -204,7 +204,7 @@ mods.forestry.CharcoalWall.addWall(<advancedrocketry:blastbrick>, 12);
 
 
 //Fluid extract honey drops
-fluid_extractor.recipeBuilder().inputs([<ore:dropHoney> * 1]).fluidOutputs([<liquid:fluid.for.honey> * 150 ]).duration(240).EUt(12).buildAndRegister();
+fluid_extractor.recipeBuilder().inputs([<ore:dropHoney> * 1]).fluidOutputs([<liquid:for.honey> * 150 ]).duration(240).EUt(12).buildAndRegister();
 
 
 
