@@ -23,9 +23,6 @@ oreFlint.add(<minecraft:flint>);
 
 var oreSaw = <ore:craftingToolSaw>;
 
-// SAW + PLANK = STICK
-recipes.addShapedMirrored(<minecraft:stick>*4, [[oreSaw], [<ore:plankWood>]]);
-
 // ALTERNATIVE CHEST RECIPES
  recipes.addShaped(<minecraft:chest>*4, [
   [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
