@@ -656,21 +656,22 @@ recipes.removeByRecipeName("thermalfoundation:gunpowder");
 recipes.removeByRecipeName("thermalfoundation:gunpowder_1");
 
 //Pyrotheum
-var pyrotheum = <thermalfoundation:material:1024>;
 var petrotheum = <thermalfoundation:material:1027>;
-
 recipes.remove(petrotheum);
 
-// REMOVE PYROTHEUM->INGOT RECIPES THAT ARE PROGRESSION BREAKING
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_41"); // Aluminium ingot from pyrotheum and ore
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_42"); // Aluminium ingot from pyrotheum and dust
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_43"); // Aluminium ingots from pyrotheum, petrotheum and dust
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_100"); // Osmium ingot from pyrotheum and ore
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_101"); // Osmium ingot from pyrotheum and dust
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_102"); // Osmium ingots from pyrotheum, petrotheum and dust
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_168"); // Naquadah ingot from pyrotheum and ore
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_169"); // Naquadah ingot from pyrotheum and dust
-recipes.removeByRecipeName("thermalfoundation:meta_item_1_170"); // Naquadah ingots from pyrotheum, petrotheum and dust
+
+// Remove Pyrotheum/Alumium recipes
+recipes.removeShapeless(<gregtech:meta_item_1:10001>, [<ore:dustAluminium>, <ore:dustPyrotheum>]);
+recipes.removeShapeless(<gregtech:meta_item_1:10001>, [<ore:oreAluminium>, <ore:dustPyrotheum>]);
+
+// Remove Pyrotheum/Naquadah recipes
+recipes.removeShapeless(<gregtech:meta_item_1:10307>, [<ore:dustNaquadah>, <ore:dustPyrotheum>]);
+recipes.removeShapeless(<gregtech:meta_item_1:10307>, [<ore:oreNaquadah>, <ore:dustPyrotheum>]);
+
+// Remove Pyrotheum/Osmium recipes
+recipes.removeShapeless(<gregtech:meta_item_1:10047>, [<ore:dustOsmium>, <ore:dustPyrotheum>]);
+recipes.removeShapeless(<gregtech:meta_item_1:10047>, [<ore:oreOsmium>, <ore:dustPyrotheum>]);
+
 
 
 //Upgrade and Conversion Kits

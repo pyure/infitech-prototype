@@ -33,7 +33,6 @@ val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uraniu
 val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(752, "enderium_base", 0x4D756E , "fluid" );
 
 
-
 //dyes_water
 val fluidWaterDyeBlack = MaterialRegistry.createFluidMaterial(768, "water_dye_black", 0x202020, "fluid", null);
 val fluidWaterDyeRed = MaterialRegistry.createFluidMaterial(769, "water_dye_red", 0xff0000, "fluid", null);
@@ -75,6 +74,24 @@ MaterialRegistry.createFluidMaterial(802, "flint_grinding_solution", 0x443243 , 
 MaterialRegistry.createFluidMaterial(803, "steel_grinding_solution", 0x818181 , "fluid" );
 MaterialRegistry.createFluidMaterial(804, "titanium_grinding_solution", 0xDDA1F1 , "fluid" );
 MaterialRegistry.createFluidMaterial(805, "tungstensteel_grinding_solution", 0x6565A1 , "fluid" );
+
+
+//Liquified Pollen
+val liquidPollenLead = MaterialRegistry.createFluidMaterial(806, "liquid_pollen_lead", 0x8C648C, "fluid", null);
+val liquidPollenEmerald = MaterialRegistry.createFluidMaterial(807, "liquid_pollen_emerald", 0x248F24, "fluid", null);
+val liquidPollenAluminium = MaterialRegistry.createFluidMaterial(808, "liquid_pollen_aluminium", 0x80C8F0, "fluid", null);
+val liquidPollenRedstone = MaterialRegistry.createFluidMaterial(809, "liquid_pollen_redstone", 0xC80000, "fluid", null);
+val liquidPollenTin = MaterialRegistry.createFluidMaterial(810, "liquid_pollen_tin", 0xDCDCDC, "fluid", null);
+val liquidPollenNetherQuartz = MaterialRegistry.createFluidMaterial(811, "liquid_pollen_nether_quartz", 0xE6D2D2, "fluid", null);
+val liquidPollenPlatinum = MaterialRegistry.createFluidMaterial(812, "liquid_pollen_platinum", 0xFFFF99, "fluid", null);
+val liquidPollenCopper = MaterialRegistry.createFluidMaterial(813, "liquid_pollen_copper", 0xFF8000, "fluid", null);
+val liquidPollenDiamond = MaterialRegistry.createFluidMaterial(814, "liquid_pollen_diamond", 0xC8FFFF, "fluid", null);
+val liquidPollenGold = MaterialRegistry.createFluidMaterial(815, "liquid_pollen_gold", 0xFFFF00, "fluid", null);
+val liquidPollenLapis = MaterialRegistry.createFluidMaterial(816, "liquid_pollen_lapis", 0x1947D1, "fluid", null);
+val liquidPollenNickel = MaterialRegistry.createFluidMaterial(817, "liquid_pollen_nickel", 0xAAAAFF, "fluid", null);
+val liquidPollenIron = MaterialRegistry.createFluidMaterial(818, "liquid_pollen_iron", 0xAAAAAA, "fluid", null);
+val liquidPollenIridium = MaterialRegistry.createFluidMaterial(819, "liquid_pollen_iridium", 0xFFFFFF, "fluid", null);
+
 
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);

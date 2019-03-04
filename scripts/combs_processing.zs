@@ -1,8 +1,10 @@
 import mods.gregtech.recipe.RecipeMap;
+import crafttweaker.item.IItemStack;
+
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
-
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 
 var combUranium = <ore:combUranium>;
 var combLignite = <ore:combLignite>;
@@ -648,25 +650,23 @@ chemical_bath.recipeBuilder().fluidInputs([<liquid:tungstensteel_grinding_soluti
 //5 Mut Cats + 4 Irradiated Comb + 2000 Biomass + 25200 EU (30/t) -> 1 Mutagen (Chemical Reactor)
 //8 Royal Jelly + 1 U238 -> 1 Mutagen Catalyst
 
-/*
-var mutagenCatalyst = <XXX>;
-var biomassCapsule = <YYY>;
-var combIrradiated = <ZZZ>;
-var combMutagen = <111>;
-var royalJelly = <222>;
-var U238 = <333>;
 
-recipes.addShaped(mutagenCatalyst, [
+var mutagenCatalyst = <ore:dropHoneyMutagen>;
+var biomassCapsule = <forestry:capsule:1>.withTag({Fluid: {FluidName: "biomass", Amount: 1000}});
+var royalJelly = <ore:dropRoyalJelly>;
+
+
+recipes.addShaped(mutagenCatalyst.firstItem, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustUranium>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
 
-recipes.addShaped(mutagenCatalyst * 4, [
+recipes.addShaped(mutagenCatalyst.firstItem * 4, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustUranium235>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
 
-recipes.addShaped(mutagenCatalyst * 5, [
+recipes.addShaped(mutagenCatalyst.firstItem * 5, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustPlutonium>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
@@ -676,5 +676,202 @@ recipes.addShaped(<ore:combMutagen>.firstItem, [
   [mutagenCatalyst, biomassCapsule, mutagenCatalyst],
   [mutagenCatalyst, mutagenCatalyst, mutagenCatalyst]]);
   
-chemical_reactor.recipeBuilder().inputs([combIrradiated * 4, mutagenCatalyst * 5]).fluidInputs([<liquid:biomass> * 3000 ]).outputs([combMutagen * 1]).duration(220).EUt(30).buildAndRegister();
-*/
+
+
+
+//Moving all the forestry centrifuge recipes to the GT one
+
+var combHoney = <forestry:bee_combs>;
+var combSimmering = <forestry:bee_combs:2>;
+var combStringy = <forestry:bee_combs:3>;
+var combFrozen = <forestry:bee_combs:4>;
+var combDripping = <forestry:bee_combs:5>;
+var combSilky = <forestry:bee_combs:6>;
+var combParched = <forestry:bee_combs:7>;
+var combMossy = <forestry:bee_combs:15>;
+var combMellow = <forestry:bee_combs:16>;
+
+//Color combs
+var combBlack = <gendustry:honey_comb:10>;
+var combOrange = <gendustry:honey_comb:24>;
+var combWhite = <gendustry:honey_comb:25>;
+var combBlue = <gendustry:honey_comb:14>;
+var combLime = <gendustry:honey_comb:20>;
+var combYellow = <gendustry:honey_comb:21>;
+var combBrown = <gendustry:honey_comb:13>;
+var combLightGray = <gendustry:honey_comb:17>;
+var combLightBlue = <gendustry:honey_comb:22>;
+var combGreen = <gendustry:honey_comb:12>;
+var combGray = <gendustry:honey_comb:18>;
+var combCyan = <gendustry:honey_comb:16>;
+var combRed = <gendustry:honey_comb:11>;
+var combMagenta = <gendustry:honey_comb:23>;
+var combPink = <gendustry:honey_comb:19>;
+var combPurple = <gendustry:honey_comb:15>;
+
+var dropBlack = <gendustry:honey_drop:10>;
+var dropOrange = <gendustry:honey_drop:24>;
+var dropWhite = <gendustry:honey_drop:25>;
+var dropBlue = <gendustry:honey_drop:14>;
+var dropLime = <gendustry:honey_drop:20>;
+var dropYellow = <gendustry:honey_drop:21>;
+var dropBrown = <gendustry:honey_drop:13>;
+var dropLightGray = <gendustry:honey_drop:17>;
+var dropLightBlue = <gendustry:honey_drop:22>;
+var dropGreen = <gendustry:honey_drop:12>;
+var dropGray = <gendustry:honey_drop:18>;
+var dropCyan = <gendustry:honey_drop:16>;
+var dropRed = <gendustry:honey_drop:11>;
+var dropMagenta = <gendustry:honey_drop:23>;
+var dropPink = <gendustry:honey_drop:19>;
+var dropPurple = <gendustry:honey_drop:15>;
+
+mods.forestry.Centrifuge.removeRecipe(combHoney);
+mods.forestry.Centrifuge.removeRecipe(combSimmering);
+mods.forestry.Centrifuge.removeRecipe(combStringy);
+mods.forestry.Centrifuge.removeRecipe(combFrozen);
+mods.forestry.Centrifuge.removeRecipe(combDripping);
+mods.forestry.Centrifuge.removeRecipe(combSilky);
+mods.forestry.Centrifuge.removeRecipe(combParched);
+mods.forestry.Centrifuge.removeRecipe(combMossy);
+mods.forestry.Centrifuge.removeRecipe(combMellow);
+mods.forestry.Centrifuge.removeRecipe(combBlack);
+mods.forestry.Centrifuge.removeRecipe(combOrange);
+mods.forestry.Centrifuge.removeRecipe(combWhite);
+mods.forestry.Centrifuge.removeRecipe(combBlue);
+mods.forestry.Centrifuge.removeRecipe(combLime);
+mods.forestry.Centrifuge.removeRecipe(combYellow);
+mods.forestry.Centrifuge.removeRecipe(combBrown);
+mods.forestry.Centrifuge.removeRecipe(combLightGray);
+mods.forestry.Centrifuge.removeRecipe(combLightBlue);
+mods.forestry.Centrifuge.removeRecipe(combGreen);
+mods.forestry.Centrifuge.removeRecipe(combGray);
+mods.forestry.Centrifuge.removeRecipe(combCyan);
+mods.forestry.Centrifuge.removeRecipe(combRed);
+mods.forestry.Centrifuge.removeRecipe(combMagenta);
+mods.forestry.Centrifuge.removeRecipe(combPink);
+mods.forestry.Centrifuge.removeRecipe(combPurple);
+
+
+val beeDrops = [
+  dropBlack,
+  dropOrange,
+  dropWhite,
+  dropBlue,
+  dropLime,
+  dropYellow,
+  dropBrown,
+  dropLightGray,
+  dropLightBlue,
+  dropGreen,
+  dropGray,
+  dropCyan,
+  dropRed,
+  dropMagenta,
+  dropPink,
+  dropPurple] as IItemStack[];
+	
+val dyeCombs = [
+  combBlack,
+  combOrange,
+  combWhite,
+  combBlue,
+  combLime,
+  combYellow,
+  combBrown,
+  combLightGray,
+  combLightBlue,
+  combGreen,
+  combGray,
+  combCyan,
+  combRed,
+  combMagenta,
+  combPink,
+  combPurple] as IItemStack[];
+
+for j, item in dyeCombs {
+  centrifuge.recipeBuilder()
+    .inputs(dyeCombs[j] * 1)
+    .chancedOutput(beeDrops[j], 10000)
+    .chancedOutput(<forestry:beeswax>, 4000)
+    .chancedOutput(<forestry:honey_drop>, 2000)
+    .duration(100)
+    .EUt(32)
+    .buildAndRegister();
+}
+
+
+centrifuge.recipeBuilder()
+	.inputs(combHoney * 1)
+	.chancedOutput(<forestry:beeswax>, 10000)
+	.chancedOutput(<forestry:honey_drop>, 6000)
+	.duration(100)
+	.EUt(32)
+	.buildAndRegister();
+
+centrifuge.recipeBuilder()
+	.inputs(combSimmering * 1)
+	.chancedOutput(<forestry:refractory_wax>, 10000)
+	.chancedOutput(<forestry:phosphor>, 4000)
+	.duration(100)
+	.EUt(32)
+	.buildAndRegister();
+
+centrifuge.recipeBuilder()
+	.inputs(combStringy * 1)
+	.chancedOutput(<forestry:propolis>, 10000)
+	.chancedOutput(<forestry:honey_drop>, 2000)
+	.duration(100)
+	.EUt(32)
+	.buildAndRegister();
+
+centrifuge.recipeBuilder()
+	.inputs(combFrozen * 1)
+	.chancedOutput(<forestry:beeswax>, 5000)
+	.chancedOutput(<forestry:honey_drop>, 4000)
+	.chancedOutput(<minecraft:snowball>, 3000)
+	.chancedOutput(<forestry:pollen:1>, 950)
+	.duration(100)
+	.EUt(32)
+	.buildAndRegister();
+
+centrifuge.recipeBuilder()
+	.inputs(combDripping * 1)
+	.chancedOutput(<forestry:honeydew>, 10000)
+	.chancedOutput(<forestry:honey_drop>, 2000)
+	.duration(100)
+	.EUt(32)
+	.buildAndRegister();
+
+centrifuge.recipeBuilder()
+	.inputs(combSilky * 1)
+	.chancedOutput(<forestry:honey_drop>, 10000)
+	.chancedOutput(<forestry:propolis:3>, 6000)
+	.duration(100)
+	.EUt(32)
+	.buildAndRegister();
+
+centrifuge.recipeBuilder()
+	.inputs(combParched * 1)
+	.chancedOutput(<forestry:beeswax>, 10000)
+	.chancedOutput(<forestry:honey_drop>, 6000)
+	.duration(100)
+	.EUt(32)
+	.buildAndRegister();
+
+centrifuge.recipeBuilder()
+	.inputs(combMossy * 1)
+	.chancedOutput(<forestry:beeswax>, 10000)
+	.chancedOutput(<forestry:honey_drop>, 6000)
+	.duration(100)
+	.EUt(32)
+	.buildAndRegister();
+
+centrifuge.recipeBuilder()
+	.inputs(combMellow * 1)
+	.chancedOutput(<forestry:honeydew>, 4000)
+	.chancedOutput(<minecraft:quartz>, 1200)
+	.chancedOutput(<forestry:beeswax>, 2000)
+	.duration(300)
+	.EUt(120)
+	.buildAndRegister();
