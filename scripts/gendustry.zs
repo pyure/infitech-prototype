@@ -1,3 +1,5 @@
+import mods.gregtech.recipe.RecipeMap;
+import crafttweaker.item.IItemStack;
 
 var scooporator = <gendustry:industrial_scoop:100>.withTag({charge: 0});
 var modulePower = <gendustry:power_module>;
@@ -28,8 +30,11 @@ var replicator = <gendustry:replicator>;
 var mutatron = <gendustry:mutatron>;
 var sampler = <gendustry:sampler>;
 
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+
 //Recipes
 scripts.functions.disableItem(<gendustry:mutatron_advanced>);
+scripts.functions.disableItem(<gendustry:mutagen_producer>); // We cannot seem to manipulate its internal recipes properly in 1.12.2, and they don't show in JEI.
 
 //recipes.remove(scooporator);
 recipes.addShaped(scooporator, [
@@ -114,3 +119,11 @@ recipes.addShaped(sampler, [
 [gearAluminium, processorGenetics, gearAluminium],
 [beeReceptacle, hullMachineHV, <minecraft:diamond>],
 [gearAluminium, tankMutagen, gearAluminium]]);
+
+//Mutagen from Comb.  Can't seem to tweak the Gendustry machine itself properly in 1.12.2
+centrifuge.recipeBuilder()
+    .inputs(<ore:combMutagen> * 1)
+    .fluidOutputs(<liquid:mutagen> * 1337)
+    .duration(2240)
+    .EUt(182)
+    .buildAndRegister();

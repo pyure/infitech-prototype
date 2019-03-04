@@ -650,25 +650,23 @@ chemical_bath.recipeBuilder().fluidInputs([<liquid:tungstensteel_grinding_soluti
 //5 Mut Cats + 4 Irradiated Comb + 2000 Biomass + 25200 EU (30/t) -> 1 Mutagen (Chemical Reactor)
 //8 Royal Jelly + 1 U238 -> 1 Mutagen Catalyst
 
-/*
-var mutagenCatalyst = <XXX>;
-var biomassCapsule = <YYY>;
-var combIrradiated = <ZZZ>;
-var combMutagen = <111>;
-var royalJelly = <222>;
-var U238 = <333>;
 
-recipes.addShaped(mutagenCatalyst, [
+var mutagenCatalyst = <ore:dropHoneyMutagen>;
+var biomassCapsule = <forestry:capsule:1>.withTag({Fluid: {FluidName: "biomass", Amount: 1000}});
+var royalJelly = <ore:dropRoyalJelly>;
+
+
+recipes.addShaped(mutagenCatalyst.firstItem, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustUranium>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
 
-recipes.addShaped(mutagenCatalyst * 4, [
+recipes.addShaped(mutagenCatalyst.firstItem * 4, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustUranium235>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
 
-recipes.addShaped(mutagenCatalyst * 5, [
+recipes.addShaped(mutagenCatalyst.firstItem * 5, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustPlutonium>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
@@ -678,8 +676,7 @@ recipes.addShaped(<ore:combMutagen>.firstItem, [
   [mutagenCatalyst, biomassCapsule, mutagenCatalyst],
   [mutagenCatalyst, mutagenCatalyst, mutagenCatalyst]]);
   
-chemical_reactor.recipeBuilder().inputs([combIrradiated * 4, mutagenCatalyst * 5]).fluidInputs([<liquid:biomass> * 3000 ]).outputs([combMutagen * 1]).duration(220).EUt(30).buildAndRegister();
-*/
+
 
 
 //Moving all the forestry centrifuge recipes to the GT one
