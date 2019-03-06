@@ -328,3 +328,5 @@ mods.forestry.Carpenter.addRecipe(forestryCircuitT2, [[bronzeScrew, bronzeFoil, 
 mods.forestry.Carpenter.addRecipe(forestryCircuitT3, [[steelScrew, steelFoil, steelScrew],[<ore:circuitGAGood>, wireSteel, <ore:circuitGAGood>],[steelScrew, steelFoil, steelScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
 mods.forestry.Carpenter.addRecipe(forestryCircuitT4, [[electrumScrew, electrumFoil, electrumScrew],[<ore:circuitGAGood>, wireElectrum, <ore:circuitGAGood>],[electrumScrew, electrumFoil, electrumScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
 
+
+

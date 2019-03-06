@@ -647,14 +647,13 @@ chemical_bath.recipeBuilder().fluidInputs([<liquid:tungstensteel_grinding_soluti
 // MUTAGEN
 //8 Mutagen Cats + 1000 Biomass Capsule -> 1 Mutagen
 //6 Mut Cats + 3000 Biomass + 7200 EU (24/t) -> 1 Mutagen (Autoclave)
-//5 Mut Cats + 4 Irradiated Comb + 2000 Biomass + 25200 EU (30/t) -> 1 Mutagen (Chemical Reactor)
 //8 Royal Jelly + 1 U238 -> 1 Mutagen Catalyst
 
 
 var mutagenCatalyst = <ore:dropHoneyMutagen>;
 var biomassCapsule = <forestry:capsule:1>.withTag({Fluid: {FluidName: "biomass", Amount: 1000}});
 var royalJelly = <ore:dropRoyalJelly>;
-
+var combIrradiated = <forestry:bee_combs:9>;
 
 recipes.addShaped(mutagenCatalyst.firstItem, [
   [royalJelly, royalJelly, royalJelly],
@@ -677,6 +676,17 @@ recipes.addShaped(<ore:combMutagen>.firstItem, [
   [mutagenCatalyst, mutagenCatalyst, mutagenCatalyst]]);
   
 
+// Remove broken irradiated-comb recipe
+mods.forestry.Centrifuge.removeRecipe(combIrradiated);
+
+//4 Mut Cats + 2 Irradiated Comb + 2000 Biomass -> 1 Mutagen (Chemical Reactor)
+chemical_reactor.recipeBuilder()
+  .inputs([combIrradiated * 2, mutagenCatalyst * 4])
+  .fluidInputs([<liquid:biomass> * 2000 ])
+  .outputs(<ore:combMutagen>.firstItem * 1)
+  .duration(320)
+  .EUt(30)
+  .buildAndRegister();
 
 
 //Moving all the forestry centrifuge recipes to the GT one
@@ -875,3 +885,5 @@ centrifuge.recipeBuilder()
 	.duration(300)
 	.EUt(120)
 	.buildAndRegister();
+  
+  
