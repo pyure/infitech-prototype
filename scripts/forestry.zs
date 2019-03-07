@@ -37,7 +37,7 @@ var plateIron = <ore:plateIron>;
 var ringIron = <ore:ringIron>;
 var cauldron = <minecraft:cauldron>;
 var steelScrew = <ore:screwSteel>;
-var gaCoil = <metaitem:component.small.coil>;
+var gaCoil = <metaitem:component.small_coil>;
 var carpenter = <forestry:carpenter>;
 var fermenter = <forestry:fermenter>;
 var moistener = <forestry:moistener>;
@@ -263,7 +263,7 @@ for i in 0 to 10 {
   mods.forestry.Carpenter.addRecipe(gearFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel],[null, gearGtSmallSteel, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
   mods.forestry.Carpenter.addRecipe(hatchFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[conveyorLV, electricMotorLV, conveyorLV],[null, <minecraft:hopper>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
   mods.forestry.Carpenter.addRecipe(valveFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[pumpLV, electricMotorLV, pumpLV],[null, <ore:ringRubber>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
-  mods.forestry.Carpenter.addRecipe(controlFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[<ore:circuitGABasic>, electricMotorLV, <ore:circuitGABasic>],[null, <ore:cableGtSingleTin>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
+  mods.forestry.Carpenter.addRecipe(controlFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[<ore:circuitBasic>, electricMotorLV, <ore:circuitBasic>],[null, <ore:cableGtSingleTin>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
 }
 
 //Impregnated casing
@@ -323,10 +323,8 @@ mods.forestry.Carpenter.removeRecipe(forestryCircuitT2);
 mods.forestry.Carpenter.removeRecipe(forestryCircuitT3);
 mods.forestry.Carpenter.removeRecipe(forestryCircuitT4);
 
-mods.forestry.Carpenter.addRecipe(forestryCircuitT1, [[ironScrew, ironFoil, ironScrew],[<ore:circuitGABasic>, wireIron, <ore:circuitGABasic>],[ironScrew, ironFoil, ironScrew]], 300, moltenRedstone * 1152, <metaitem:board.phenolic>);
-mods.forestry.Carpenter.addRecipe(forestryCircuitT2, [[bronzeScrew, bronzeFoil, bronzeScrew],[<ore:circuitGABasic>, wireBronze, <ore:circuitGABasic>],[bronzeScrew, bronzeFoil, bronzeScrew]], 300, moltenRedstone * 1152, <metaitem:board.phenolic>);
-mods.forestry.Carpenter.addRecipe(forestryCircuitT3, [[steelScrew, steelFoil, steelScrew],[<ore:circuitGAGood>, wireSteel, <ore:circuitGAGood>],[steelScrew, steelFoil, steelScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
-mods.forestry.Carpenter.addRecipe(forestryCircuitT4, [[electrumScrew, electrumFoil, electrumScrew],[<ore:circuitGAGood>, wireElectrum, <ore:circuitGAGood>],[electrumScrew, electrumFoil, electrumScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
-
-
+mods.forestry.Carpenter.addRecipe(forestryCircuitT1, [[ironScrew, ironFoil, ironScrew],[<ore:circuitBasic>, wireIron, <ore:circuitBasic>],[ironScrew, ironFoil, ironScrew]], 300, moltenRedstone * 1152, <metaitem:board.phenolic>);
+mods.forestry.Carpenter.addRecipe(forestryCircuitT2, [[bronzeScrew, bronzeFoil, bronzeScrew],[<ore:circuitBasic>, wireBronze, <ore:circuitBasic>],[bronzeScrew, bronzeFoil, bronzeScrew]], 300, moltenRedstone * 1152, <metaitem:board.phenolic>);
+mods.forestry.Carpenter.addRecipe(forestryCircuitT3, [[steelScrew, steelFoil, steelScrew],[<ore:circuitGood>, wireSteel, <ore:circuitGood>],[steelScrew, steelFoil, steelScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
+mods.forestry.Carpenter.addRecipe(forestryCircuitT4, [[electrumScrew, electrumFoil, electrumScrew],[<ore:circuitGood>, wireElectrum, <ore:circuitGood>],[electrumScrew, electrumFoil, electrumScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
 

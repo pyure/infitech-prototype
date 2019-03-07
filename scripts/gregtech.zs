@@ -656,11 +656,9 @@ val controller_array = [
   <meta_tile_entity:gregtech:vacuum_freezer>,
   <meta_tile_entity:gregtech:implosion_compressor>,
   <meta_tile_entity:gregtech:multi_furnace>,
-  <meta_tile_entity:gtadditions:assembly_line>,
-  <meta_tile_entity:gtadditions:fusion_reactor.luv>,
-  <meta_tile_entity:gtadditions:fusion_reactor.zpm>,
-  <meta_tile_entity:gtadditions:fusion_reactor.uv>,
   <meta_tile_entity:gregtech:pyrolyse_oven>,
+  <meta_tile_entity:gregtech:cracker>,
+  <meta_tile_entity:gregtech:diesel_engine>,
   <meta_tile_entity:gregtech:distillation_tower>,
   <meta_tile_entity:gregtech:large_turbine.steam>,
   <meta_tile_entity:gregtech:large_turbine.plasma>,
@@ -668,7 +666,8 @@ val controller_array = [
   <meta_tile_entity:gregtech:large_boiler.bronze>,
   <meta_tile_entity:gregtech:large_boiler.steel>,
   <meta_tile_entity:gregtech:large_boiler.titanium>,
-  <meta_tile_entity:gregtech:large_boiler.tungstensteel>
+  <meta_tile_entity:gregtech:large_boiler.tungstensteel>,
+  <meta_tile_entity:gregtech:coke_oven>
 ] as IItemStack[];
 
 for itemstack in controller_array {
