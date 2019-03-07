@@ -399,137 +399,6 @@ furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
 furnace.remove(<ore:ingotBlueAlloy>);
 
-val material_array = [
-  "Aluminium",
-  "Chrome" ,
-  "Cobalt" ,
-  "Gold",
-  "Iron" ,
-  "TinAlloy" ,
-  "Lead",
-  "Nickel" ,
-  "Silver",
-  "Titanium",
-  "Brass" ,
-  "Bronze",
-  "Electrum" ,
-  "Invar",
-  "WroughtIron",
-  "Copper",
-  "Diamond",
-  "Apatite",
-  "Redstone",
-  "Emerald",
-  "Coal",
-  "Tin",
-  "Aluminum",
-  "Platinum",
-  "Iridium",
-  "Mithril",
-  "Osmium",
-  "Beryllium",
-  "Barite",
-  "Salt",
-  "Zinc",
-  "Scheelite",
-  "Chromite",
-  "Graphite",
-  "Tantalite",
-  "Lapis",
-  "Bauxite",
-  "Tanzanite",
-  "Cassiterite",
-  "Cinnabar",
-  "Sapphire",
-  "Topaz",
-  "GreenSapphire",
-  "Molybdenum",
-  "Bismuth",
-  "Spodumene",
-  "Garnierite",
-  "Monazite",
-  "YellowLimonite",
-  "Soapstone",
-  "Bentonite",
-  "Malachite",
-  "Galena",
-  "Pitchblende",
-  "Grossular",
-  "Olivine",
-  "Lithium",
-  "Tetrahedrite",
-  "Amethyst",
-  "Saltpeter",
-  "Vinteum",
-  "Opal",
-  "Magnesite",
-  "RockSalt",
-  "Lignite",
-  "Bastnasite",
-  "Ruby",
-  "Wulfenite",
-  "Neodymium",
-  "Calcite",
-  "Molybdenite",
-  "Cooperite",
-  "BandedIron",
-  "Lazurite",
-  "Stibnite",
-  "NetherQuartz",
-  "Pyrolusite",
-  "Phosphor",
-  "Palladium",
-  "Sodalite",
-  "Chalcopyrite",
-  "Lepidolite",
-  "BrownLimonite",
-  "Pentlandite",
-  "Cobaltite",
-  "Ilmenite",
-  "Tungstate",
-  "CertusQuartz",
-  "GarnetRed",
-  "Glauconite",
-  "Pyrope",
-  "Uraninite",
-  "Oilsands",
-  "Sphalerite",
-  "Spessartine",
-  "Powellite",
-  "Thorium",
-  "CassiteriteSand",
-  "Sulfur",
-  "Uranium235",
-  "Uranium",
-  "BlueTopaz",
-  "Phosphate",
-  "Pyrite",
-  "Jasper",
-  "NaquadahEnriched",
-  "Almandine",
-  "Magnetite",
-  "GarnetYellow",
-  "Naquadah",
-  "VanadiumMagnetite",
-  "Niobium",
-  "Quartzite",
-  "Talc"
-] as string[];
-
-// Create the recipes to turn small crushed ores into crushed ores
-for name in material_array {
-  var smallMaterialName = "smallCrushedOre" ~ name;
-  var crushedOreName = "crushed" ~ name;
-  
-  if (oreDict has smallMaterialName) {
-    if (oreDict has crushedOreName) {
-      var smallCrushedOre = oreDict[smallMaterialName].firstItem;
-      var crushedOre = oreDict[crushedOreName].firstItem;
-      recipes.addShapeless(crushedOre * 1, [smallCrushedOre, smallCrushedOre, smallCrushedOre, smallCrushedOre]);
-    }
-  }
-}
-
 //Glowstone
 fluid_extractor.recipeBuilder()
 	.inputs(<minecraft:glowstone_dust>)
@@ -735,13 +604,13 @@ chemical_reactor.recipeBuilder()
 furnace.addRecipe(<minecraft:iron_nugget> * 3, <ore:dustMagnetite>);
 
 //PBF and Coke Oven Bricks
-var cokeOvenBrickUnfired = <gtadditions:ga_meta_item:32032>;
+var cokeOvenBrickUnfired = <metaitem:compressed.clay>;
 recipes.remove(cokeOvenBrickUnfired);
 
 mixer.recipeBuilder()
 	.inputs(<ore:dustClay> * 4, <minecraft:sand> * 5)
 	.fluidInputs(<liquid:water> * 500)
-	.outputs(cokeOvenBrickUnfired * 4)
+	.outputs(cokeOvenBrickUnfired * 6)
 	.duration(20)
 	.EUt(16)
 	.buildAndRegister();
