@@ -193,8 +193,8 @@ var mvConveyor = <metaitem:conveyor.mv>;
 var hvConveyor = <metaitem:conveyor.hv>;
 var quantumEye = <metaitem:quantumeye>;
 var o_lapotron = <ore:batteryMaster>;
-var lapotronOrb = <metaitem:lapotronicorb>;
-var lapotronCluster = <metaitem:lapotronicorb2>;
+var lapotronOrb = <metaitem:energy.lapotronicorb>;
+var lapotronCluster = <metaitem:energy.lapotronicorb2>;
 var radon = <liquid:radon>;
 var o_steelGear = <ore:gearSteel>;
 var o_ironGear = <ore:gearIron>;
@@ -541,25 +541,25 @@ recipes.addShapeless(redstoneTransmitter, [redstoneTransmitter]);
 
 recipes.remove(redstoneCounter);
 recipes.addShaped(redstoneCounter, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstone, null]]);
 
 recipes.remove(redstoneTimer);
 recipes.addShaped(redstoneTimer, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_goldNugget, null]]);
 
 recipes.remove(redstoneLogic);
 recipes.addShaped(redstoneLogic, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_anyQuartz, null]]);
 
 recipes.remove(redstoneSequencer);
 recipes.addShaped(redstoneSequencer, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstoneTorch, null]]);
 
@@ -571,7 +571,7 @@ recipes.addShaped(redstoneSensor, [
 
 recipes.remove(redstoneInvChecker);
 recipes.addShaped(redstoneInvChecker, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, comparator, null]]);
 
