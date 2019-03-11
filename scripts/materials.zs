@@ -102,6 +102,15 @@ var Rutile = MaterialSystem.getMaterialBuilder().setName('Rutile').setColor(0xD4
 var Gallium = MaterialSystem.getMaterialBuilder().setName('Gallium').setColor(0xEEEEFF).build();
 var Calcium = MaterialSystem.getMaterialBuilder().setName('Calcium').setColor(0xDDDDAA).build();
 var Magnesium = MaterialSystem.getMaterialBuilder().setName('Magnesium').setColor(0xFFBBBB).build();
+var Bornite = MaterialSystem.getMaterialBuilder().setName('Bornite').setColor(0xC11800).build();
+var Tenorite = MaterialSystem.getMaterialBuilder().setName('Tenorite').setColor(0x606060).build();
+var Cuprite = MaterialSystem.getMaterialBuilder().setName('Cuprite').setColor(0x770000).build();
+var Chalcocite = MaterialSystem.getMaterialBuilder().setName('Chalcocite').setColor(0x353535).build();
+var Enargite = MaterialSystem.getMaterialBuilder().setName('Enargite').setColor(0xBBBBBB).build();
+var Tennantite = MaterialSystem.getMaterialBuilder().setName('Tennantite').setColor(0x909090).build();
+var Thorium = MaterialSystem.getMaterialBuilder().setName('Thorium').setColor(0x001E00).build();
+var Palladium = MaterialSystem.getMaterialBuilder().setName('Palladium').setColor(0xCED0DD).build();
+var Graphite = MaterialSystem.getMaterialBuilder().setName('Graphite').setColor(0x808080).build();
 
 
 // BEE MATERIALS
@@ -124,11 +133,13 @@ var Tungsten = MaterialSystem.getMaterialBuilder().setName('Tungsten').setColor(
 var Titanium = MaterialSystem.getMaterialBuilder().setName('Titanium').setColor(14459120).build();
 var Mutagen = MaterialSystem.getMaterialBuilder().setName('Mutagen').setColor(0xFFC100).build();
 
-
 var Metallic = MaterialSystem.getMaterialBuilder().setName('Metallic').setColor(0xB1A1B1).build();
 var Gemstone = MaterialSystem.getMaterialBuilder().setName('Gemstone').setColor(0xC1E1D1).build();
 
-
+var Cobblestone = MaterialSystem.getMaterialBuilder().setName('Cobblestone').setColor(0x828282).build();
+var Sandstone = MaterialSystem.getMaterialBuilder().setName('Sandstone').setColor(0xE4DEAA).build();
+var Clay = MaterialSystem.getMaterialBuilder().setName('Clay').setColor(0xC8C8DC).build();
+var Obsidian = MaterialSystem.getMaterialBuilder().setName('Obsidian').setColor(0x503264).build();
 
 
 var ore_byproducts_list = [Iridium,Bismuth,Lead,Gold,Copper,Silver,Zinc,Iron,Cobalt,Nickel,Platinum,Uranium,Uranium235,Beryllium,Naquadah,Coal,Neodymium,Sulfur,Aluminium,Quartzite,Pyrite,
@@ -144,11 +155,27 @@ var comb_material_list = [Aluminium, CertusQuartz, Chromite, Coal, Copper, Diamo
 Oil, Olivine, Osmium, Plutonium, Ruby, Sapphire, Slag, Steel, Stone, Thaumium, Tin, Metallic, Gemstone, Tungsten, Zinc, Uranium, Titanium, Mutagen] as Material[];
 var metal_list = [] as Material[];
 var honeydrop_material_list = [Mutagen] as Material[];
+var rod_material_list = [Cobblestone, Sandstone, Clay, Obsidian] as Material[];
+
+var pollinated_material_list = [Lead,Galena,Silver,Beryllium,Emerald,Thorium,Aluminium,Bauxite,Cinnabar,Redstone,Tin,Cassiterite,Quartzite,NetherQuartz,CertusQuartz,Barite,Platinum,Palladium,Copper,
+Stibnite,Chalcopyrite,Malachite,Tetrahedrite,Tenorite,Bornite,Cuprite,Chalcocite,Enargite,Tennantite,Diamond,Graphite,Gold,Lapis,Calcite,Sodalite,Lazurite,Nickel,Garnierite,Pentlandite,Cobaltite,Wulfenite,Powellite,
+Iron,Pyrite,BandedIron,Magnetite,VanadiumMagnetite,BrownLimonite,YellowLimonite,Iridium] as Material[];
+var pollen_material_list = [Lead,Emerald,Aluminium,Redstone,Tin,NetherQuartz,Platinum,Copper,Diamond,Gold,Lapis,Nickel,Iron,Iridium] as Material[];
 
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_crushed_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallCrushedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_purified_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallPurifiedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("bee_comb").setPartType(MaterialSystem.getPartType("item")).setOreDictName("comb").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("honey_drop").setPartType(MaterialSystem.getPartType("item")).setOreDictName("dropHoney").build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("pollinated_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("pollinatedOre").build();
+mods.contenttweaker.MaterialSystem.getPartBuilder().setName("pollen").setPartType(MaterialSystem.getPartType("item")).setOreDictName("pollen").build();
+
+for i, pollinated_material in pollinated_material_list {
+    pollinated_material.registerPart("pollinated_ore");
+}
+
+for i, pollen_material in pollen_material_list {
+    pollen_material.registerPart("pollen");
+}
 
 for i, honeydrop_material in honeydrop_material_list {
     honeydrop_material.registerPart("honey_drop");
@@ -160,6 +187,10 @@ for i, comb_material in comb_material_list {
 
 for i, metal in ore_byproducts_list {
     metal.registerParts(ore_part_names);
+}
+
+for i, material in rod_material_list {
+  material.registerPart("rod");
 }
 
 for i, metal in metal_list {

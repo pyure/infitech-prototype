@@ -10,7 +10,7 @@ import mods.appliedenergistics2.Inscriber;
 // --- Variables ---
 
 var AdvAssembler = <meta_tile_entity:assembler.mv>;
-var AdvCircuit = <ore:circuitGAAdvanced>;
+var AdvCircuit = <ore:circuitAdvanced>;
 var AdvElectrolyzer = <meta_tile_entity:electrolyzer.mv>;
 var AlCable = <ore:cableGtOctalAluminium>;
 var plateAluminum = <ore:plateAluminium>;
@@ -37,7 +37,8 @@ var CraftingTerminal = <appliedenergistics2:part:360>;
 var CraftingUnit = <appliedenergistics2:crafting_unit>;
 var CrystalAccelerator = <appliedenergistics2:quartz_growth_accelerator>;
 var DEnergyCell = <appliedenergistics2:dense_energy_cell>;
-var EFlow = <ore:circuitGAMaster>;
+var EFlow = <ore:circuitMaster>;
+var plateRAM = <metaitem:plate.random_access_memory>;
 var EnderEyePlate = <ore:plateEnderEye>;
 var EnderRod = <ore:stickEnderium>;
 var EnderPearl = <minecraft:ender_pearl>;
@@ -121,7 +122,7 @@ var GlassPlate = <ore:plateGlass>;
 var GlowstoneDust = <ore:dustGlowstone>;
 var GlowstoneGlass = <thaumcraft:amber_block>;
 var GlowstonePlate = <ore:plateGlowstone>;
-var GoodCircuit = <ore:circuitGAGood>;
+var GoodCircuit = <ore:circuitGood>;
 var HHammer = <ore:craftingToolHardHammer>;
 var HVMachineHull = <meta_tile_entity:hull.hv>;
 var Illuminated = <appliedenergistics2:part:180>;
@@ -145,7 +146,7 @@ var MEDrive = <appliedenergistics2:drive>;
 var MolecularAssembler = <appliedenergistics2:molecular_assembler>;
 var moltenChlorine = <liquid:chlorine>;
 var MSteelRod = <ore:stickSteelMagnetic>;
-var NANDChip = <ore:circuitGABasic>;
+var NANDChip = <ore:circuitBasic>;
 var NetherQuartzBlock = <minecraft:quartz_block>;
 var NQuartzPlate = <ore:plateNetherQuartz>;
 var NQuartzRod = <ore:stickNetherQuartz>;
@@ -607,7 +608,7 @@ recipes.addShaped(MEChest, [
 recipes.addShaped(MEDrive, [
 [TitaniumPlate, EngProc, TitaniumPlate], 
 [FluixGlassCable, MEChest, FluixGlassCable], 
-[TitaniumPlate, <metaitem:processor.nano>, TitaniumPlate]]);
+[TitaniumPlate, <ore:circuitAdcanced>, TitaniumPlate]]);
 
 // --- CraftingUnit
 recipes.addShaped(CraftingUnit, [
@@ -1051,52 +1052,52 @@ recipes.addShaped(UStorageHousing, [
 
 // --- Storage Cell Component - 1K
 recipes.addShaped(StorageComponent1K, [
-  [<ore:circuitGABasic>, FluixDust, <ore:circuitGABasic>],
+  [<ore:circuitBasic>, FluixDust, <ore:circuitBasic>],
   [FluixDust, LogiProc, FluixDust],
-  [<ore:circuitGABasic>, FluixDust, <ore:circuitGABasic>]]);
+  [<ore:circuitBasic>, FluixDust, <ore:circuitBasic>]]);
 
 // --- Storage Cell Component - 4K
 recipes.addShaped(StorageComponent4K, [
-  [<metaitem:plate.ram>, StorageComponent1K, <metaitem:plate.ram>],
-  [<ore:circuitGAGood>, LogiProc, <ore:LogiProc>],
-  [<metaitem:plate.ram>, StorageComponent1K, <metaitem:plate.ram>]]);
+  [plateRAM, StorageComponent1K, plateRAM],
+  [<ore:circuitGood>, LogiProc, <ore:LogiProc>],
+  [plateRAM, StorageComponent1K, plateRAM]]);
 
 // --- Storage Cell Component - 16K
 recipes.addShaped(StorageComponent16K, [
-  [<metaitem:plate.ram>, StorageComponent4K, <metaitem:plate.ram>],
-  [<ore:circuitGAAdvanced>, CalcCirc, <ore:circuitGAAdvanced>],
-  [<metaitem:plate.ram>, StorageComponent4K, <metaitem:plate.ram>]]);
+  [plateRAM, StorageComponent4K, plateRAM],
+  [<ore:circuitAdvanced>, CalcCirc, <ore:circuitAdvanced>],
+  [plateRAM, StorageComponent4K, plateRAM]]);
 
 // --- Storage Cell Component - 64K
 recipes.addShaped(StorageComponent64K, [
-  [<metaitem:plate.ram>, StorageComponent16K, <metaitem:plate.ram>],
-  [<ore:circuitGAExtreme>, CalcCirc, <ore:circuitGAExtreme>],
-  [<metaitem:plate.ram>, StorageComponent16K, <metaitem:plate.ram>]]);
+  [plateRAM, StorageComponent16K, plateRAM],
+  [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
+  [plateRAM, StorageComponent16K, plateRAM]]);
 
   
 // --- Fluid Storage Cell Component - 1K
 recipes.addShaped(FluStorageComponent1K, [
-  [<ore:circuitGABasic>, <metaitem:fluid_cell>, <ore:circuitGABasic>],
+  [<ore:circuitBasic>, <metaitem:fluid_cell>, <ore:circuitBasic>],
   [<metaitem:fluid_cell>, LogiProc, <metaitem:fluid_cell>],
-  [<ore:circuitGABasic>, <metaitem:fluid_cell>, <ore:circuitGABasic>]]);
+  [<ore:circuitBasic>, <metaitem:fluid_cell>, <ore:circuitBasic>]]);
   
 // --- Fluid Storage Cell Component - 4K
 recipes.addShaped(FluStorageComponent4K, [
-  [<metaitem:plate.ram>, FluStorageComponent1K, <metaitem:plate.ram>],
-  [<ore:circuitGAGood>, LogiProc, <ore:circuitGAGood>],
-  [<metaitem:plate.ram>, FluStorageComponent1K, <metaitem:plate.ram>]]);  
+  [plateRAM, FluStorageComponent1K, plateRAM],
+  [<ore:circuitGood>, LogiProc, <ore:circuitGood>],
+  [plateRAM, FluStorageComponent1K, plateRAM]]);  
 
 // --- Fluid Storage Cell Component - 16K
 recipes.addShaped(FluStorageComponent16K, [
-  [<metaitem:plate.ram>, FluStorageComponent4K, <metaitem:plate.ram>],
-  [<ore:circuitGAAdvanced>, LogiProc, <ore:circuitGAAdvanced>],
-  [<metaitem:plate.ram>, FluStorageComponent4K, <metaitem:plate.ram>]]);    
+  [plateRAM, FluStorageComponent4K, plateRAM],
+  [<ore:circuitAdvanced>, LogiProc, <ore:circuitAdvanced>],
+  [plateRAM, FluStorageComponent4K, plateRAM]]);    
 
 // --- Fluid Storage Cell Component - 64K
 recipes.addShaped(FluStorageComponent64K, [
-  [<metaitem:plate.ram>, FluStorageComponent16K, <metaitem:plate.ram>],
-  [<ore:circuitGAExtreme>, CalcCirc, <ore:circuitGAExtreme>],
-  [<metaitem:plate.ram>, FluStorageComponent16K, <metaitem:plate.ram>]]);
+  [plateRAM, FluStorageComponent16K, plateRAM],
+  [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
+  [plateRAM, FluStorageComponent16K, plateRAM]]);
   
 // --- 2 Spatial Component
 recipes.addShaped(<appliedenergistics2:material:32>, [

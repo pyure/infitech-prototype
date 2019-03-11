@@ -791,4 +791,11 @@ for i in meta
 }
 
 
+// Aluminium vs Aluminum
+<ore:ingotAluminium>.addAll(<ore:ingotAluminum>);
+<ore:oreAluminium>.addAll(<ore:oreAluminum>);
+<ore:blockAluminium>.addAll(<ore:blockAluminum>);
+<ore:plateAluminium>.addAll(<ore:plateAluminum>);
 
+// Plates
+<ore:plateLead>.add(<railcraft:plate:4>);

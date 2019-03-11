@@ -3,18 +3,19 @@ import mods.gregtech.material.MaterialRegistry;
 
 //IDs 700-750 Ingot/Dust Material and 751 - 799 Fluid Materials
 
-//Ingot		createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature)
+//Ingot		createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, float damageAttack @Optional int toolDurability, @Optional int blastFurnaceTemperature)
 
-val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(700, "compressed_wrought_iron", 0xC8B4B4, "dull", 2, [<material:iron> * 1, <material:carbon> * 25], 6.8, 710);
+
+val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(700, "compressed_wrought_iron", 0xC8B4B4, "dull", 2, [<material:iron> * 1, <material:carbon> * 25], 7.0, 7.0, 460);
 materialCompressedWroughtIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
-val materialCompressedIron = MaterialRegistry.createIngotMaterial(701, "compressed_iron", 0xC8D4D4, "dull", 2, [<material:iron> * 1], 6.0, 435);
+val materialCompressedIron = MaterialRegistry.createIngotMaterial(701, "compressed_iron", 0xC8D4D4, "dull", 2, [<material:iron> * 1], 6.0, 7.0, 435);
 materialCompressedIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
-val materialEnderium = MaterialRegistry.createIngotMaterial(702, "enderium", 0x2E574F, "shiny", 3, null, 8.0, 256, 3000);
+val materialEnderium = MaterialRegistry.createIngotMaterial(702, "enderium", 0x2E574F, "shiny", 3, null, 8.0, 7.0, 256, 3000);
 materialEnderium.addFlags(["GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);
 
-val materialSignalum = MaterialRegistry.createIngotMaterial(703, "signalum", 0xFFAA33, "shiny", 2, null, 5.0, 128, 1000);
+val materialSignalum = MaterialRegistry.createIngotMaterial(703, "signalum", 0xFFAA33, "shiny", 2, null, 5.0, 9.0, 128, 1000);
 materialSignalum.addFlags(["GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);
 
 val materialCobaltAluminate = MaterialRegistry.createDustMaterial(704, "cobalt_aluminate", 0x3c37bf, "dull", 0, [<material:cobalt> * 1, <material:aluminium> * 2, <material:oxygen> *4]);
@@ -24,14 +25,13 @@ val materialBlueAlloy = MaterialRegistry.createIngotMaterial(705, "blue_alloy", 
 materialBlueAlloy.setCableProperties(512, 3, 1);
 materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
 
-val materialThaumium = MaterialRegistry.createIngotMaterial(706, "thaumium", 0x7A007A, "shiny", 2, null, 7.6, 740);
+val materialThaumium = MaterialRegistry.createIngotMaterial(706, "thaumium", 0x7A007A, "shiny", 2, null, 10.0, 8.0, 315);
 materialThaumium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
 
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
 val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(752, "enderium_base", 0x4D756E , "fluid" );
-
 
 
 //dyes_water
@@ -75,6 +75,24 @@ MaterialRegistry.createFluidMaterial(802, "flint_grinding_solution", 0x443243 , 
 MaterialRegistry.createFluidMaterial(803, "steel_grinding_solution", 0x818181 , "fluid" );
 MaterialRegistry.createFluidMaterial(804, "titanium_grinding_solution", 0xDDA1F1 , "fluid" );
 MaterialRegistry.createFluidMaterial(805, "tungstensteel_grinding_solution", 0x6565A1 , "fluid" );
+
+
+//Liquified Pollen
+val liquidPollenLead = MaterialRegistry.createFluidMaterial(806, "liquid_pollen_lead", 0x8C648C, "fluid", null);
+val liquidPollenEmerald = MaterialRegistry.createFluidMaterial(807, "liquid_pollen_emerald", 0x248F24, "fluid", null);
+val liquidPollenAluminium = MaterialRegistry.createFluidMaterial(808, "liquid_pollen_aluminium", 0x80C8F0, "fluid", null);
+val liquidPollenRedstone = MaterialRegistry.createFluidMaterial(809, "liquid_pollen_redstone", 0xC80000, "fluid", null);
+val liquidPollenTin = MaterialRegistry.createFluidMaterial(810, "liquid_pollen_tin", 0xDCDCDC, "fluid", null);
+val liquidPollenNetherQuartz = MaterialRegistry.createFluidMaterial(811, "liquid_pollen_nether_quartz", 0xE6D2D2, "fluid", null);
+val liquidPollenPlatinum = MaterialRegistry.createFluidMaterial(812, "liquid_pollen_platinum", 0xFFFF99, "fluid", null);
+val liquidPollenCopper = MaterialRegistry.createFluidMaterial(813, "liquid_pollen_copper", 0xFF8000, "fluid", null);
+val liquidPollenDiamond = MaterialRegistry.createFluidMaterial(814, "liquid_pollen_diamond", 0xC8FFFF, "fluid", null);
+val liquidPollenGold = MaterialRegistry.createFluidMaterial(815, "liquid_pollen_gold", 0xFFFF00, "fluid", null);
+val liquidPollenLapis = MaterialRegistry.createFluidMaterial(816, "liquid_pollen_lapis", 0x1947D1, "fluid", null);
+val liquidPollenNickel = MaterialRegistry.createFluidMaterial(817, "liquid_pollen_nickel", 0xAAAAFF, "fluid", null);
+val liquidPollenIron = MaterialRegistry.createFluidMaterial(818, "liquid_pollen_iron", 0xAAAAAA, "fluid", null);
+val liquidPollenIridium = MaterialRegistry.createFluidMaterial(819, "liquid_pollen_iridium", 0xFFFFFF, "fluid", null);
+
 
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);
