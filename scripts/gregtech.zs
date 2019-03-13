@@ -715,7 +715,7 @@ centrifuge.recipeBuilder()
 
 // Low-efficieny (high sanity) rubber bar recipe
 alloy_smelter.recipeBuilder()		
-	.inputs(<ore:dustRawRubber> * 7, <ore:dustSulfur> * 3)
+	.inputs(<ore:dustRawRubber> * 8, <ore:dustSulfur> * 4)
 	.outputs(<ore:ingotRubber>.firstItem * 1)
 	.duration(300)
 	.EUt(8)
