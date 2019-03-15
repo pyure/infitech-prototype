@@ -8,13 +8,12 @@
   "generation_predicate": "any",
 
   "vein_populator": {
-    "type": "fluid_spring"
+    "type": "fluid_spring",
+    "chance": 0.40
   },
   "biome_modifier": {
     "type": "biome_dictionary",
-    "WATER": 10,
-    "HOT": 10,
-    "SANDY": 20
+    "sandy": 5
   },
   "generator": {
     "type": "sphere",
