@@ -66,6 +66,17 @@ blast_furnace.recipeBuilder()
 	.EUt(120)
 	.buildAndRegister();
 
+blast_furnace.recipeBuilder()
+	.inputs(<ore:oreCobaltite> * 1)
+	.fluidInputs([<liquid:oxygen> * 3000])
+	.outputs(<ore:dustCobaltOxide>.firstItem * 1, <ore:dustArsenicTrioxide>.firstItem * 1)
+  .fluidOutputs([<liquid:sulfur_dioxide> * 1000])
+	.property("temperature", 1200)
+	.duration(320)
+	.EUt(120)
+	.buildAndRegister();
+  
+  
 /* EXAMPLES */
 /* https://github.com/GregTechCE/GregTech/blob/d99dbaede94f2d622ad56ed05ead32fd85106b45/src/main/java/gregtech/api/recipes/RecipeMaps.java */
 
