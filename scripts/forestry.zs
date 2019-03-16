@@ -328,3 +328,5 @@ mods.forestry.Carpenter.addRecipe(forestryCircuitT2, [[bronzeScrew, bronzeFoil, 
 mods.forestry.Carpenter.addRecipe(forestryCircuitT3, [[steelScrew, steelFoil, steelScrew],[<ore:circuitGood>, wireSteel, <ore:circuitGood>],[steelScrew, steelFoil, steelScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
 mods.forestry.Carpenter.addRecipe(forestryCircuitT4, [[electrumScrew, electrumFoil, electrumScrew],[<ore:circuitGood>, wireElectrum, <ore:circuitGood>],[electrumScrew, electrumFoil, electrumScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
 
+// Wood pile tooltip
+<forestry:wood_pile>.addTooltip(format.darkRed("See JEI for different Wall options and their relative impacts."));
