@@ -768,3 +768,7 @@ for j, b in rubberDust {
         .EUt(32)
         .buildAndRegister();
     }
+
+// GT:CE's nerf-wood config doesn't work on GT wood.  Arch is too lazy to fix it his side.
+recipes.removeByRecipeName("gregtech:rubber_wood_planks");
+recipes.addShapeless(<minecraft:planks:3> * 2, [<gregtech:log>]);
