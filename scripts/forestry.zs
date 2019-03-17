@@ -7,13 +7,15 @@ val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
+var craftingToolSawEmptyTag = <ore:craftingToolSaw>.firstItem.withEmptyTag();
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
 
 var engineBiogas = <forestry:engine_biogas>;
 var engineClock = <forestry:engine_clockwork>;
 var enginePeat = <forestry:engine_peat>;
 var plateCopper = <ore:plateCopper>;
-var HHammer = <ore:craftingToolHardHammer>;
-var wrench = <ore:craftingToolWrench>;
 var blockGlass = <ore:blockGlass>;
 var gearCopper = <ore:gearCopper>;
 var piston = <ore:craftingPiston>;
@@ -93,38 +95,38 @@ recipes.remove(<forestry:bronze_shovel>);
 recipes.remove(<forestry:gear_bronze>);
 recipes.addShaped(<ore:gearBronze>.firstItem, [
   [<ore:stickBronze>, <ore:plateBronze>, <ore:stickBronze>], 
-  [<ore:plateBronze>, <ore:craftingToolScrewdriver>, <ore:plateBronze>], 
+  [<ore:plateBronze>, craftingToolScrewdriverEmptyTag, <ore:plateBronze>], 
   [<ore:stickBronze>, <ore:plateBronze>, <ore:stickBronze>]]);
 
 recipes.remove(<forestry:gear_copper>);
 recipes.addShaped(<ore:gearCopper>.firstItem, [
   [<ore:stickCopper>, <ore:plateCopper>, <ore:stickCopper>], 
-  [<ore:plateCopper>, <ore:craftingToolScrewdriver>, <ore:plateCopper>], 
+  [<ore:plateCopper>, craftingToolScrewdriverEmptyTag, <ore:plateCopper>], 
   [<ore:stickCopper>, <ore:plateCopper>, <ore:stickCopper>]]);
   
 recipes.remove(<forestry:gear_tin>);
 recipes.addShaped(<ore:gearTin>.firstItem, [
   [<ore:stickTin>, <ore:plateTin>, <ore:stickTin>], 
-  [<ore:plateTin>, <ore:craftingToolScrewdriver>, <ore:plateTin>], 
+  [<ore:plateTin>, craftingToolScrewdriverEmptyTag, <ore:plateTin>], 
   [<ore:stickTin>, <ore:plateTin>, <ore:stickTin>]]);  
 
 //MACHINES
 recipes.remove(engineBiogas);
 recipes.addShaped(engineBiogas, [
 	[plateBronze, plateBronze, plateBronze],
-	[HHammer, blockGlass, wrench],
+	[craftingToolHardHammerEmptyTag, blockGlass, craftingToolWrenchEmptyTag],
 	[gearBronze, frameBronze, gearBronze]]);
 
 recipes.remove(engineClock);
 recipes.addShaped(engineClock, [
 	[plateCopper, plateCopper, plateCopper],
-	[HHammer, <ore:stickLongBronze>, wrench],
+	[craftingToolHardHammerEmptyTag, <ore:stickLongBronze>, craftingToolWrenchEmptyTag],
 	[gearCopper, frameIron, gearCopper]]);
 
 recipes.remove(enginePeat);
 recipes.addShaped(enginePeat, [
 	[plateCopper, plateCopper, plateCopper],
-	[HHammer, blockGlass, wrench],
+	[craftingToolHardHammerEmptyTag, blockGlass, craftingToolWrenchEmptyTag],
 	[gearCopper, frameIron, gearCopper]]);
 
 recipes.remove(carpenter);
@@ -154,7 +156,7 @@ recipes.addShaped(rainMaker, [
 recipes.remove(rainTank);
 recipes.addShaped(rainTank, [
 	[plateIron, ringIron, plateIron],
-	[plateIron, HHammer, plateIron],
+	[plateIron, craftingToolHardHammerEmptyTag, plateIron],
 	[plateIron, cauldron, plateIron]]);
 
 recipes.remove(thermionicFabricator);
@@ -200,7 +202,7 @@ recipes.addShaped("forestry_smoker", smoker, [[<ore:leather>, <ore:stickWood>, <
 recipes.remove(worktable);
 recipes.addShaped("forestry_worktable", worktable, [
 [<ore:screwIron>, <minecraft:book>, <ore:screwIron>],
-[<ore:craftingToolSaw>, <minecraft:crafting_table>, <ore:craftingToolScrewdriver>],
+[craftingToolSawEmptyTag, <minecraft:crafting_table>, craftingToolScrewdriverEmptyTag],
 [<ore:screwIron>, <ore:chestWood>, <ore:screwIron>]]);
 
 //Remove bronze recipe
@@ -328,3 +330,5 @@ mods.forestry.Carpenter.addRecipe(forestryCircuitT2, [[bronzeScrew, bronzeFoil, 
 mods.forestry.Carpenter.addRecipe(forestryCircuitT3, [[steelScrew, steelFoil, steelScrew],[<ore:circuitGood>, wireSteel, <ore:circuitGood>],[steelScrew, steelFoil, steelScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
 mods.forestry.Carpenter.addRecipe(forestryCircuitT4, [[electrumScrew, electrumFoil, electrumScrew],[<ore:circuitGood>, wireElectrum, <ore:circuitGood>],[electrumScrew, electrumFoil, electrumScrew]], 300, moltenRedstone * 1152, <metaitem:board.plastic>);
 
+// Wood pile tooltip
+<forestry:wood_pile>.addTooltip(format.darkRed("See JEI for different Wall options and their relative impacts."));

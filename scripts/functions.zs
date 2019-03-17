@@ -6,6 +6,8 @@ import mods.gregtech.recipe.RecipeMap;
 
 #priority 90
 
+
+
 function disableItem(item as IItemStack){
   recipes.removeShapeless(item);
   recipes.removeShaped(item);
@@ -20,6 +22,8 @@ function disableItems(items as IItemStack[]){
 
 
 function gregArmorPiece(part as IItemStack, multiplier as int, dust as IIngredient, plate as IIngredient, ingot as IIngredient, molten as ILiquidStack) {
+  var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+
 	if (!isNull(dust)) {
 		RecipeMap.getByName("macerator").recipeBuilder()
 			.inputs(part)
@@ -30,7 +34,7 @@ function gregArmorPiece(part as IItemStack, multiplier as int, dust as IIngredie
 	}
 	if (!isNull(plate)) {
 		recipes.remove(part);
-		var toolHardHammer = <ore:craftingToolHardHammer>;
+		var toolHardHammer = craftingToolHardHammerEmptyTag;
 		if (multiplier == 5) {
 			recipes.addShaped(part,
 				[[plate, plate, plate],

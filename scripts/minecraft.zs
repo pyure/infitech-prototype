@@ -6,6 +6,8 @@ import crafttweaker.recipes.IRecipeAction;
 import mods.gregtech.recipe.RecipeMap;
 
 
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
 
 // These are covered by GT meta tools
 recipes.remove(<minecraft:diamond_pickaxe>);
@@ -149,6 +151,6 @@ recipes.removeShapeless(<minecraft:concrete_powder:15>);
 // Shears
 recipes.removeByRecipeName("minecraft:shears");
 recipes.addShaped("it3_shears", <minecraft:shears>, [
-  [<ore:craftingToolFile>, <ore:plateIron>, null],
-  [<ore:plateIron>, <ore:craftingToolHardHammer>, null],
+  [craftingToolFileEmptyTag, <ore:plateIron>, null],
+  [<ore:plateIron>, craftingToolHardHammerEmptyTag, null],
   [null, null, null]]);

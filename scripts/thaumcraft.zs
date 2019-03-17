@@ -12,6 +12,7 @@ import crafttweaker.item.IItemStack;
 <thaumcraft:thaumium_shovel>.addTooltip(format.red("For crafting only; otherwise useless."));
 <thaumcraft:thaumium_hoe>.addTooltip(format.red("For crafting only; otherwise useless."));
 
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
 
 // Removed Plates that have GT Counterpart
 recipes.remove(<thaumcraft:plate>);
@@ -20,12 +21,12 @@ recipes.remove(<thaumcraft:plate:1>);
 // GT style plate crafting
 recipes.remove(<thaumcraft:plate:2>);
 recipes.addShaped(<thaumcraft:plate:2>, [
-	[<ore:craftingToolHardHammer>],
+	[craftingToolHardHammerEmptyTag],
 	[<ore:ingotThaumium>],
 	[<ore:ingotThaumium>]]);
 recipes.remove(<thaumcraft:plate:3>);
 recipes.addShaped(<thaumcraft:plate:3>, [
-	[<ore:craftingToolHardHammer>],
+	[craftingToolHardHammerEmptyTag],
 	[<ore:ingotVoid>],
 	[<ore:ingotVoid>]]);
 

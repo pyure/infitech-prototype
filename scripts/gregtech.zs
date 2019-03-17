@@ -66,6 +66,17 @@ blast_furnace.recipeBuilder()
 	.EUt(120)
 	.buildAndRegister();
 
+blast_furnace.recipeBuilder()
+  .inputs(<ore:oreCobaltite> * 1)
+  .fluidInputs([<liquid:oxygen> * 3000])
+  .outputs(<ore:dustCobaltOxide>.firstItem * 1, <ore:dustArsenicTrioxide>.firstItem * 1)
+  .fluidOutputs([<liquid:sulfur_dioxide> * 1000])
+  .property("temperature", 1200)
+  .duration(320)
+  .EUt(120)
+  .buildAndRegister();
+
+  
 /* EXAMPLES */
 /* https://github.com/GregTechCE/GregTech/blob/d99dbaede94f2d622ad56ed05ead32fd85106b45/src/main/java/gregtech/api/recipes/RecipeMaps.java */
 
@@ -715,7 +726,7 @@ centrifuge.recipeBuilder()
 
 // Low-efficieny (high sanity) rubber bar recipe
 alloy_smelter.recipeBuilder()		
-	.inputs(<ore:dustRawRubber> * 7, <ore:dustSulfur> * 3)
+	.inputs(<ore:dustRawRubber> * 8, <ore:dustSulfur> * 4)
 	.outputs(<ore:ingotRubber>.firstItem * 1)
 	.duration(300)
 	.EUt(8)
@@ -757,3 +768,7 @@ for j, b in rubberDust {
         .EUt(32)
         .buildAndRegister();
     }
+
+// GT:CE's nerf-wood config doesn't work on GT wood.  Arch is too lazy to fix it his side.
+recipes.removeByRecipeName("gregtech:rubber_wood_planks");
+recipes.addShapeless(<minecraft:planks:3> * 2, [<gregtech:log>]);

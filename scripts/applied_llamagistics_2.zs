@@ -8,6 +8,11 @@ import mods.appliedenergistics2.Inscriber;
 
 
 // --- Variables ---
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
+var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammer>.firstItem.withEmptyTag();
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+var craftingToolKnifeEmptyTag = <ore:craftingToolKnife>.firstItem.withEmptyTag();
 
 var AdvAssembler = <meta_tile_entity:assembler.mv>;
 var AdvCircuit = <ore:circuitAdvanced>;
@@ -123,7 +128,7 @@ var GlowstoneDust = <ore:dustGlowstone>;
 var GlowstoneGlass = <thaumcraft:amber_block>;
 var GlowstonePlate = <ore:plateGlowstone>;
 var GoodCircuit = <ore:circuitGood>;
-var HHammer = <ore:craftingToolHardHammer>;
+
 var HVMachineHull = <meta_tile_entity:hull.hv>;
 var Illuminated = <appliedenergistics2:part:180>;
 var inscriber = <appliedenergistics2:inscriber>;
@@ -171,9 +176,6 @@ var QuartzitePlate = <ore:plateQuartzite>;
 var QuartziteRod = <ore:stickQuartzite>;
 var QuartziteScrew = <ore:gemQuartzite>;// change to boltQuartzite, when it's added
 var RubberPlate = <ore:plateRubber>;
-var Saw = <ore:craftingToolSaw>;
-var Screwdriver = <ore:craftingToolScrewdriver>;
-var SHammer = <ore:craftingToolSoftHammer>;
 var SiliconPlate = <ore:plateSilicon>;
 var SiliconRod = <ore:stickSilicon>;
 var StainlessPlate = <ore:plateStainlessSteel>;
@@ -734,28 +736,28 @@ recipes.addShaped(WirelessReceiver, [
 recipes.addShaped(Terminal, [
 [NQuartzRod, QuartziteScrew, NQuartzRod],
 [Illuminated, GoodCircuit, CertusPlate],
-[NQuartzRod, Screwdriver, NQuartzRod]]);
+[NQuartzRod, craftingToolScrewdriverEmptyTag, NQuartzRod]]);
 // - 
 recipes.addShaped(Terminal, [
-[NQuartzRod, Screwdriver, NQuartzRod],
+[NQuartzRod, craftingToolScrewdriverEmptyTag, NQuartzRod],
 [Illuminated, GoodCircuit, CertusPlate],
 [NQuartzRod, QuartziteScrew, NQuartzRod]]);
 
 // --- Crafting Terminal
 recipes.addShaped(CraftingTerminal, [
-[Screwdriver, Terminal, SHammer],
+[craftingToolScrewdriverEmptyTag, Terminal, craftingToolSoftHammerEmptyTag],
 [CertusScrew, craftingTable, CertusScrew],
 [NQuartzPlate, EngProc, NQuartzPlate]]);
 
 // --- Interface Terminal
 recipes.addShaped(InterfaceTerminal, [
-[Screwdriver, Terminal, SHammer],
+[craftingToolScrewdriverEmptyTag, Terminal, craftingToolSoftHammerEmptyTag],
 [CertusScrew, Interface, CertusScrew],
 [NQuartzPlate, EngProc, NQuartzPlate]]);
 
 // --- Pattern Terminal
 recipes.addShaped(PatternTerminal, [
-[Screwdriver, Terminal, SHammer],
+[craftingToolScrewdriverEmptyTag, Terminal, craftingToolSoftHammerEmptyTag],
 [CertusScrew, Pattern, CertusScrew],
 [NQuartzPlate, EngProc, NQuartzPlate]]);
 
@@ -983,10 +985,10 @@ recipes.addShapeless(<appliedenergistics2:part:463>, [<appliedenergistics2:part:
 recipes.addShaped(<appliedenergistics2:part:520>, [
 [ChQuartzRod, QuartziteScrew, ChQuartzRod],
 [Illuminated, GoodCircuit, NQuartzPlate],
-[ChQuartzRod, Screwdriver, ChQuartzRod]]);
+[ChQuartzRod, craftingToolScrewdriverEmptyTag, ChQuartzRod]]);
 // - 
 recipes.addShaped(<appliedenergistics2:part:520>, [
-[ChQuartzRod, Screwdriver, ChQuartzRod],
+[ChQuartzRod, craftingToolScrewdriverEmptyTag, ChQuartzRod],
 [Illuminated, GoodCircuit, NQuartzPlate],
 [ChQuartzRod, QuartziteScrew, ChQuartzRod]]);
 
@@ -1041,14 +1043,14 @@ recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_128_cubed>,
 
 // --- Universal Storage Housing
 recipes.addShaped(UStorageHousing, [
-[HHammer, CertusPlate, QuartziteScrew],
+[craftingToolHardHammerEmptyTag, CertusPlate, QuartziteScrew],
 [StainlessPlate, ClearPane, StainlessPlate],
-[QuartziteScrew, plateAluminum, Screwdriver]]);
+[QuartziteScrew, plateAluminum, craftingToolScrewdriverEmptyTag]]);
 // -
 recipes.addShaped(UStorageHousing, [
-[Screwdriver, CertusPlate, QuartziteScrew],
+[craftingToolScrewdriverEmptyTag, CertusPlate, QuartziteScrew],
 [StainlessPlate, ClearPane, StainlessPlate],
-[QuartziteScrew, plateAluminum, HHammer]]);
+[QuartziteScrew, plateAluminum, craftingToolHardHammerEmptyTag]]);
 
 // --- Storage Cell Component - 1K
 recipes.addShaped(StorageComponent1K, [

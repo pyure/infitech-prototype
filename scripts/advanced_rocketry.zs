@@ -13,18 +13,21 @@ val metal_bender = mods.gregtech.recipe.RecipeMap.getByName("metal_bender");
 var basicMachineStructure = <libvulpes:structuremachine>;
 var advancedMachineStructure = <libvulpes:advstructuremachine>;
 
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
 
 // GT Style gear crafting
 recipes.remove(<advancedrocketry:productgear:0>);
 recipes.addShaped(<advancedrocketry:productgear:0>, [
 	[<ore:stickTitaniumAluminide>, <ore:plateTitaniumAluminide>, <ore:stickTitaniumAluminide>],
-	[<ore:plateTitaniumAluminide>, <ore:craftingToolScrewdriver>, <ore:plateTitaniumAluminide>],
+	[<ore:plateTitaniumAluminide>, craftingToolScrewdriverEmptyTag, <ore:plateTitaniumAluminide>],
 	[<ore:stickTitaniumAluminide>, <ore:plateTitaniumAluminide>, <ore:stickTitaniumAluminide>]]);
 
 recipes.remove(<advancedrocketry:productgear:1>);
 recipes.addShaped(<advancedrocketry:productgear:1>, [
 	[<ore:stickTitaniumIridium>, <ore:plateTitaniumIridium>, <ore:stickTitaniumIridium>],
-	[<ore:plateTitaniumIridium>, <ore:craftingToolScrewdriver>, <ore:plateTitaniumIridium>],
+	[<ore:plateTitaniumIridium>, craftingToolScrewdriverEmptyTag, <ore:plateTitaniumIridium>],
 	[<ore:stickTitaniumIridium>, <ore:plateTitaniumIridium>, <ore:stickTitaniumIridium>]]);
 
 // Removing gears that have GT counterpart
@@ -34,11 +37,11 @@ recipes.remove(<libvulpes:productgear:7>);
 // GT Style Rod crafting
 recipes.remove(<advancedrocketry:productrod>);
 recipes.addShaped(<advancedrocketry:productrod>, [
-	[<ore:craftingToolFile>, null],
+	[craftingToolFileEmptyTag, null],
 	[null, <ore:ingotTitaniumAluminide>]]);
 recipes.remove(<advancedrocketry:productrod:1>);
 recipes.addShaped(<advancedrocketry:productrod:1>, [
-	[<ore:craftingToolFile>, null],
+	[craftingToolFileEmptyTag, null],
 	[null, <ore:ingotTitaniumIridium>]]);
 
 // Removing rods that have GT counterpart
@@ -50,11 +53,11 @@ recipes.remove(<libvulpes:productrod:10>);
 
 // GT Style Plate crafting
 recipes.addShaped(<advancedrocketry:productplate>, [
-	[<ore:craftingToolHardHammer>],
+	[craftingToolHardHammerEmptyTag],
 	[<ore:ingotTitaniumAluminide>],
 	[<ore:ingotTitaniumAluminide>]]);
 recipes.addShaped(<advancedrocketry:productplate:1>, [
-	[<ore:craftingToolHardHammer>],
+	[craftingToolHardHammerEmptyTag],
 	[<ore:ingotTitaniumIridium>],
 	[<ore:ingotTitaniumIridium>]]);
 

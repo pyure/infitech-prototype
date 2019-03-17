@@ -50,8 +50,8 @@ var pipeSandstoneKinesis = <buildcrafttransport:pipe_sandstone_power>;
 var stickWood = <ore:stickWood>;
 var stickCobblestone = <ore:stickCobblestone>;
 var sealant = <buildcrafttransport:waterproof>;
-var craftingToolHammer = <ore:craftingToolHardHammer>;
-var craftingToolSaw = <ore:craftingToolSaw>;
+var craftingToolHammer = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolSaw = <ore:craftingToolSaw>.firstItem.withEmptyTag();
 var stickStone = <ore:rodStone>; // Forge Microblocks, not GT
 var oreStickQuartz = <ore:stickQuartz>; // Shouldn't exist already
 oreStickQuartz.addAll(<ore:stickQuartzite>);

@@ -28,6 +28,11 @@ materialCobaltAluminate.addFlags(["DISABLE_DECOMPOSITION"]);
 val materialThaumium = MaterialRegistry.createIngotMaterial(706, "thaumium", 0x7A007A, "shiny", 2, null, 10.0, 8.0, 315);
 materialThaumium.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
+val materialCobaltOxide = MaterialRegistry.createDustMaterial(707, "cobalt_oxide", 3556352, "dull", 0, [<material:cobalt> * 1, <material:oxygen> * 1]);
+materialCobaltOxide.addFlags(["DISABLE_DECOMPOSITION"]);
+
+val materialArsenicTrioxide = MaterialRegistry.createDustMaterial(708, "arsenic_trioxide", 15856113, "dull", 0, [<material:arsenic> * 2, <material:oxygen> * 3]);
+materialArsenicTrioxide.addFlags(["DISABLE_DECOMPOSITION"]);
 
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
