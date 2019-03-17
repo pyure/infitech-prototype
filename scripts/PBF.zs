@@ -7,6 +7,9 @@ import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.PBFRecipeBuilder;
 import mods.gregtech.recipe.RecipeMaps;
 
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+
 //Remove recipes from PBF
 for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
     recipe.remove();
@@ -42,11 +45,11 @@ var foundry_clay = <foundry:component:1>;
 recipes.remove(pbf);
 recipes.addShaped(pbf, [
    [primitive_brick, <minecraft:nether_brick>, primitive_brick],
-   [<minecraft:furnace>, <ore:craftingToolWrench>, <minecraft:furnace>],
+   [<minecraft:furnace>, craftingToolWrenchEmptyTag, <minecraft:furnace>],
    [primitive_brick, <minecraft:nether_brick>, primitive_brick]]);
 
 recipes.remove(primitive_brick);
 recipes.addShaped(primitive_brick, [
-   [<minecraft:brick>, <ore:craftingToolHardHammer>, <minecraft:brick>],
+   [<minecraft:brick>, craftingToolHardHammerEmptyTag, <minecraft:brick>],
    [<minecraft:netherbrick>, <minecraft:nether_brick>, <minecraft:netherbrick>],
    [<minecraft:brick>, foundry_clay, <minecraft:brick>]]);
