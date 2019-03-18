@@ -18,7 +18,8 @@ var gearMold = <foundry:mold:2>;
 var rodMold = <foundry:mold:3>;
 var plateMold = <foundry:mold:1>;
 
-
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
 
 mods.foundry.Casting.addMold(pickaxeHeadMold);
 mods.foundry.Casting.addMold(hammerHeadMold);
@@ -99,7 +100,6 @@ val tool_array = [
   "Chrome" ,
   "Cobalt" ,
   "Iron" ,
-  "Silver",
   "Titanium",
   "Brass" ,
   "Bronze",
@@ -352,7 +352,7 @@ var caster = <foundry:machine:1>;
 recipes.remove(<foundry:bronzecauldron>);
 recipes.addShaped(<foundry:bronzecauldron>, [
    [<ore:plateBronze>, null, <ore:plateBronze>],
-   [<ore:plateBronze>, <ore:craftingToolHardHammer>, <ore:plateBronze>],
+   [<ore:plateBronze>, craftingToolHardHammerEmptyTag, <ore:plateBronze>],
    [<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>]]);
 
 // BURNER HEATER
@@ -366,7 +366,7 @@ recipes.addShaped(<foundry:burnerheater>, [
 recipes.remove(refractoryCasingBasic);
 recipes.addShaped(refractoryCasingBasic, [
    [screwBronze, brickFoundry, <ore:plateBronze>],
-   [brickFoundry, <ore:craftingToolHardHammer>, brickFoundry],
+   [brickFoundry, craftingToolHardHammerEmptyTag, brickFoundry],
    [<ore:plateBronze>, brickFoundry, screwBronze]]);
 
 // REFACTORY SPOUT
@@ -374,27 +374,27 @@ recipes.remove(<foundry:refractoryspout>);
 recipes.addShaped(<foundry:refractoryspout>, [
    [<ore:plateBronze>, <minecraft:lever>, null],
    [brickFoundry, brickFoundry, null],
-   [<ore:plateBronze>, <ore:craftingToolHardHammer>, null]]);
+   [<ore:plateBronze>, craftingToolHardHammerEmptyTag, null]]);
 
 // MOLD STATION
 recipes.remove(<foundry:moldstation>);
 recipes.addShaped(<foundry:moldstation>, [
    [brickFoundry, <minecraft:crafting_table>, brickFoundry],
    [brickFoundry, brickFoundry, brickFoundry],
-   [brickFoundry, <ore:craftingToolWrench>, brickFoundry]]);
+   [brickFoundry, craftingToolWrenchEmptyTag, brickFoundry]]);
 
 // REFRACTORY CASING STANDARD
 recipes.remove(refractoryCasingStandard);
 recipes.addShaped(refractoryCasingStandard, [
    [screwWroughtIron, brickFoundry, <ore:plateWroughtIron>],
-   [brickFoundry, <ore:craftingToolHardHammer>, brickFoundry],
+   [brickFoundry, craftingToolHardHammerEmptyTag, brickFoundry],
    [<ore:plateWroughtIron>, brickFoundry, screwWroughtIron]]);
 
 // CASTER   
 recipes.remove(caster);
 recipes.addShaped(caster, [
    [null, <foundry:mold>, null],
-   [<ore:craftingToolWrench>, refractoryCasingStandard, <ore:craftingToolHardHammer>],
+   [craftingToolWrenchEmptyTag, refractoryCasingStandard, craftingToolHardHammerEmptyTag],
    [<ore:gearWroughtIron>, brickFoundry, <ore:gearWroughtIron>]]);
 
 //Basic melting crucible
@@ -402,14 +402,14 @@ recipes.remove(<foundry:machine>);
 recipes.addShaped(<foundry:machine>, [
 	[brickFoundry, <foundry:bronzecauldron>, brickFoundry],
 	[<ore:plateBronze>, refractoryCasingBasic, <ore:plateBronze>],
-	[brickFoundry, <ore:craftingToolHardHammer>, brickFoundry]]);
+	[brickFoundry, craftingToolHardHammerEmptyTag, brickFoundry]]);
 
 //Standard melting crucible
 recipes.remove(<foundry:machine:8>);
 recipes.addShaped(<foundry:machine:8>, [
 	[brickFoundry, <foundry:refractorytankstandard>, brickFoundry],
 	[<ore:plateIron>, refractoryCasingStandard, <ore:plateIron>],
-	[brickFoundry, <ore:craftingToolHardHammer>, brickFoundry]]);
+	[brickFoundry, craftingToolHardHammerEmptyTag, brickFoundry]]);
 
 // DISABLED BLOCKS/ITEMS
 scripts.functions.disableItem(<foundry:alloyfurnace>);

@@ -2,8 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
-var hammer = <ore:craftingToolHammer>;
-var wrench = <ore:craftingToolWrench>;
 
 //GT Machines
 val assembler as RecipeMap = RecipeMap.getByName("assembler");

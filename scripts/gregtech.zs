@@ -66,6 +66,17 @@ blast_furnace.recipeBuilder()
 	.EUt(120)
 	.buildAndRegister();
 
+blast_furnace.recipeBuilder()
+  .inputs(<ore:oreCobaltite> * 1)
+  .fluidInputs([<liquid:oxygen> * 3000])
+  .outputs(<ore:dustCobaltOxide>.firstItem * 1, <ore:dustArsenicTrioxide>.firstItem * 1)
+  .fluidOutputs([<liquid:sulfur_dioxide> * 1000])
+  .property("temperature", 1200)
+  .duration(320)
+  .EUt(120)
+  .buildAndRegister();
+
+  
 /* EXAMPLES */
 /* https://github.com/GregTechCE/GregTech/blob/d99dbaede94f2d622ad56ed05ead32fd85106b45/src/main/java/gregtech/api/recipes/RecipeMaps.java */
 
@@ -399,137 +410,6 @@ furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
 furnace.remove(<ore:ingotBlueAlloy>);
 
-val material_array = [
-  "Aluminium",
-  "Chrome" ,
-  "Cobalt" ,
-  "Gold",
-  "Iron" ,
-  "TinAlloy" ,
-  "Lead",
-  "Nickel" ,
-  "Silver",
-  "Titanium",
-  "Brass" ,
-  "Bronze",
-  "Electrum" ,
-  "Invar",
-  "WroughtIron",
-  "Copper",
-  "Diamond",
-  "Apatite",
-  "Redstone",
-  "Emerald",
-  "Coal",
-  "Tin",
-  "Aluminum",
-  "Platinum",
-  "Iridium",
-  "Mithril",
-  "Osmium",
-  "Beryllium",
-  "Barite",
-  "Salt",
-  "Zinc",
-  "Scheelite",
-  "Chromite",
-  "Graphite",
-  "Tantalite",
-  "Lapis",
-  "Bauxite",
-  "Tanzanite",
-  "Cassiterite",
-  "Cinnabar",
-  "Sapphire",
-  "Topaz",
-  "GreenSapphire",
-  "Molybdenum",
-  "Bismuth",
-  "Spodumene",
-  "Garnierite",
-  "Monazite",
-  "YellowLimonite",
-  "Soapstone",
-  "Bentonite",
-  "Malachite",
-  "Galena",
-  "Pitchblende",
-  "Grossular",
-  "Olivine",
-  "Lithium",
-  "Tetrahedrite",
-  "Amethyst",
-  "Saltpeter",
-  "Vinteum",
-  "Opal",
-  "Magnesite",
-  "RockSalt",
-  "Lignite",
-  "Bastnasite",
-  "Ruby",
-  "Wulfenite",
-  "Neodymium",
-  "Calcite",
-  "Molybdenite",
-  "Cooperite",
-  "BandedIron",
-  "Lazurite",
-  "Stibnite",
-  "NetherQuartz",
-  "Pyrolusite",
-  "Phosphor",
-  "Palladium",
-  "Sodalite",
-  "Chalcopyrite",
-  "Lepidolite",
-  "BrownLimonite",
-  "Pentlandite",
-  "Cobaltite",
-  "Ilmenite",
-  "Tungstate",
-  "CertusQuartz",
-  "GarnetRed",
-  "Glauconite",
-  "Pyrope",
-  "Uraninite",
-  "Oilsands",
-  "Sphalerite",
-  "Spessartine",
-  "Powellite",
-  "Thorium",
-  "CassiteriteSand",
-  "Sulfur",
-  "Uranium235",
-  "Uranium",
-  "BlueTopaz",
-  "Phosphate",
-  "Pyrite",
-  "Jasper",
-  "NaquadahEnriched",
-  "Almandine",
-  "Magnetite",
-  "GarnetYellow",
-  "Naquadah",
-  "VanadiumMagnetite",
-  "Niobium",
-  "Quartzite",
-  "Talc"
-] as string[];
-
-// Create the recipes to turn small crushed ores into crushed ores
-for name in material_array {
-  var smallMaterialName = "smallCrushedOre" ~ name;
-  var crushedOreName = "crushed" ~ name;
-  
-  if (oreDict has smallMaterialName) {
-    if (oreDict has crushedOreName) {
-      var smallCrushedOre = oreDict[smallMaterialName].firstItem;
-      var crushedOre = oreDict[crushedOreName].firstItem;
-      recipes.addShapeless(crushedOre * 1, [smallCrushedOre, smallCrushedOre, smallCrushedOre, smallCrushedOre]);
-    }
-  }
-}
-
 //Glowstone
 fluid_extractor.recipeBuilder()
 	.inputs(<minecraft:glowstone_dust>)
@@ -735,13 +615,13 @@ chemical_reactor.recipeBuilder()
 furnace.addRecipe(<minecraft:iron_nugget> * 3, <ore:dustMagnetite>);
 
 //PBF and Coke Oven Bricks
-var cokeOvenBrickUnfired = <gtadditions:ga_meta_item:32032>;
+var cokeOvenBrickUnfired = <metaitem:compressed.clay>;
 recipes.remove(cokeOvenBrickUnfired);
 
 mixer.recipeBuilder()
 	.inputs(<ore:dustClay> * 4, <minecraft:sand> * 5)
 	.fluidInputs(<liquid:water> * 500)
-	.outputs(cokeOvenBrickUnfired * 4)
+	.outputs(cokeOvenBrickUnfired * 6)
 	.duration(20)
 	.EUt(16)
 	.buildAndRegister();
@@ -787,11 +667,9 @@ val controller_array = [
   <meta_tile_entity:gregtech:vacuum_freezer>,
   <meta_tile_entity:gregtech:implosion_compressor>,
   <meta_tile_entity:gregtech:multi_furnace>,
-  <meta_tile_entity:gtadditions:assembly_line>,
-  <meta_tile_entity:gtadditions:fusion_reactor.luv>,
-  <meta_tile_entity:gtadditions:fusion_reactor.zpm>,
-  <meta_tile_entity:gtadditions:fusion_reactor.uv>,
   <meta_tile_entity:gregtech:pyrolyse_oven>,
+  <meta_tile_entity:gregtech:cracker>,
+  <meta_tile_entity:gregtech:diesel_engine>,
   <meta_tile_entity:gregtech:distillation_tower>,
   <meta_tile_entity:gregtech:large_turbine.steam>,
   <meta_tile_entity:gregtech:large_turbine.plasma>,
@@ -799,7 +677,8 @@ val controller_array = [
   <meta_tile_entity:gregtech:large_boiler.bronze>,
   <meta_tile_entity:gregtech:large_boiler.steel>,
   <meta_tile_entity:gregtech:large_boiler.titanium>,
-  <meta_tile_entity:gregtech:large_boiler.tungstensteel>
+  <meta_tile_entity:gregtech:large_boiler.tungstensteel>,
+  <meta_tile_entity:gregtech:coke_oven>
 ] as IItemStack[];
 
 for itemstack in controller_array {
@@ -847,7 +726,7 @@ centrifuge.recipeBuilder()
 
 // Low-efficieny (high sanity) rubber bar recipe
 alloy_smelter.recipeBuilder()		
-	.inputs(<ore:dustRawRubber> * 7, <ore:dustSulfur> * 3)
+	.inputs(<ore:dustRawRubber> * 8, <ore:dustSulfur> * 4)
 	.outputs(<ore:ingotRubber>.firstItem * 1)
 	.duration(300)
 	.EUt(8)
@@ -889,3 +768,7 @@ for j, b in rubberDust {
         .EUt(32)
         .buildAndRegister();
     }
+
+// GT:CE's nerf-wood config doesn't work on GT wood.  Arch is too lazy to fix it his side.
+recipes.removeByRecipeName("gregtech:rubber_wood_planks");
+recipes.addShapeless(<minecraft:planks:3> * 2, [<gregtech:log>]);

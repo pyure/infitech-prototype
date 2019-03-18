@@ -133,11 +133,13 @@ var Tungsten = MaterialSystem.getMaterialBuilder().setName('Tungsten').setColor(
 var Titanium = MaterialSystem.getMaterialBuilder().setName('Titanium').setColor(14459120).build();
 var Mutagen = MaterialSystem.getMaterialBuilder().setName('Mutagen').setColor(0xFFC100).build();
 
-
 var Metallic = MaterialSystem.getMaterialBuilder().setName('Metallic').setColor(0xB1A1B1).build();
 var Gemstone = MaterialSystem.getMaterialBuilder().setName('Gemstone').setColor(0xC1E1D1).build();
 
-
+var Cobblestone = MaterialSystem.getMaterialBuilder().setName('Cobblestone').setColor(0x828282).build();
+var Sandstone = MaterialSystem.getMaterialBuilder().setName('Sandstone').setColor(0xE4DEAA).build();
+var Clay = MaterialSystem.getMaterialBuilder().setName('Clay').setColor(0xC8C8DC).build();
+var Obsidian = MaterialSystem.getMaterialBuilder().setName('Obsidian').setColor(0x503264).build();
 
 
 var ore_byproducts_list = [Iridium,Bismuth,Lead,Gold,Copper,Silver,Zinc,Iron,Cobalt,Nickel,Platinum,Uranium,Uranium235,Beryllium,Naquadah,Coal,Neodymium,Sulfur,Aluminium,Quartzite,Pyrite,
@@ -153,6 +155,8 @@ var comb_material_list = [Aluminium, CertusQuartz, Chromite, Coal, Copper, Diamo
 Oil, Olivine, Osmium, Plutonium, Ruby, Sapphire, Slag, Steel, Stone, Thaumium, Tin, Metallic, Gemstone, Tungsten, Zinc, Uranium, Titanium, Mutagen] as Material[];
 var metal_list = [] as Material[];
 var honeydrop_material_list = [Mutagen] as Material[];
+var rod_material_list = [Cobblestone, Sandstone, Clay, Obsidian] as Material[];
+
 var pollinated_material_list = [Lead,Galena,Silver,Beryllium,Emerald,Thorium,Aluminium,Bauxite,Cinnabar,Redstone,Tin,Cassiterite,Quartzite,NetherQuartz,CertusQuartz,Barite,Platinum,Palladium,Copper,
 Stibnite,Chalcopyrite,Malachite,Tetrahedrite,Tenorite,Bornite,Cuprite,Chalcocite,Enargite,Tennantite,Diamond,Graphite,Gold,Lapis,Calcite,Sodalite,Lazurite,Nickel,Garnierite,Pentlandite,Cobaltite,Wulfenite,Powellite,
 Iron,Pyrite,BandedIron,Magnetite,VanadiumMagnetite,BrownLimonite,YellowLimonite,Iridium] as Material[];
@@ -183,6 +187,10 @@ for i, comb_material in comb_material_list {
 
 for i, metal in ore_byproducts_list {
     metal.registerParts(ore_part_names);
+}
+
+for i, material in rod_material_list {
+  material.registerPart("rod");
 }
 
 for i, metal in metal_list {

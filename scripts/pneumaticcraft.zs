@@ -33,4 +33,15 @@ compressor.recipeBuilder()
 	.outputs(<pneumaticcraft:compressed_iron_block>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
+
   
+// Gregtech adds Compressed Iron with a different oredict name.
+var blockCompressedIron = <ore:blockCompressedIron>; // GT version.  Good name.
+var blockIronCompressed = <ore:blockIronCompressed>; // PC version.  Weird name.
+var ingotCompressedIron = <ore:ingotCompressedIron>; // GT version.  Good name.
+var ingotIronCompressed = <ore:ingotIronCompressed>; // PC version.  Weird name.
+
+blockCompressedIron.addAll(blockIronCompressed);
+blockIronCompressed.addAll(blockCompressedIron);
+ingotCompressedIron.addAll(ingotIronCompressed);
+ingotIronCompressed.addAll(ingotCompressedIron);

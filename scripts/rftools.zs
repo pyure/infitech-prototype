@@ -193,8 +193,8 @@ var mvConveyor = <metaitem:conveyor.mv>;
 var hvConveyor = <metaitem:conveyor.hv>;
 var quantumEye = <metaitem:quantumeye>;
 var o_lapotron = <ore:batteryMaster>;
-var lapotronOrb = <metaitem:lapotronicorb>;
-var lapotronCluster = <metaitem:lapotronicorb2>;
+var lapotronOrb = <metaitem:energy.lapotronicorb>;
+var lapotronCluster = <metaitem:energy.lapotronicorb2>;
 var radon = <liquid:radon>;
 var o_steelGear = <ore:gearSteel>;
 var o_ironGear = <ore:gearIron>;
@@ -213,8 +213,8 @@ var circuitAdvanced = <ore:circuitAdvanced>;
 var circuitData = <ore:circuitData>;
 var plateEnderium = <ore:plateEnderium>;
 // Tools
-var o_wrench = <ore:craftingToolWrench>;
-var o_hhammer = <ore:craftingToolHardHammer>;
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
 
 // Other
 var mvWire = <ore:wireGtSingleCopper>;
@@ -228,7 +228,7 @@ var o_skull = <ore:itemSkull>;
 //
 
 recipes.remove(smartWrench);
-recipes.addShaped(smartWrench, [[null, o_wrench], [o_lapis, null]]);
+recipes.addShaped(smartWrench, [[null, craftingToolWrenchEmptyTag], [o_lapis, null]]);
 
 recipes.remove(dimensionalShard);
 chemical_reactor.recipeBuilder()
@@ -270,7 +270,7 @@ recipes.addShaped(machineFrame, [
 
 recipes.remove(machineBase);
 recipes.addShaped(machineBase, [
-	[o_plateWroughtIron, o_hhammer, o_plateWroughtIron],
+	[o_plateWroughtIron, craftingToolHardHammerEmptyTag, o_plateWroughtIron],
 	[slabStone, slabStone, slabStone]]);
 
 scripts.functions.disableItem(coalGenerator);
@@ -515,7 +515,7 @@ recipes.addShaped(liquidMonitor, [
 
 recipes.remove(redstoneWire);
 recipes.addShaped(redstoneWire * 4, [
-	[null, o_hhammer, null],
+	[null, craftingToolHardHammerEmptyTag, null],
 	[o_redstone, o_redstone, o_redstone],
 	[slabStone, slabStone, slabStone]]);
 assembler.recipeBuilder()
@@ -541,25 +541,25 @@ recipes.addShapeless(redstoneTransmitter, [redstoneTransmitter]);
 
 recipes.remove(redstoneCounter);
 recipes.addShaped(redstoneCounter, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstone, null]]);
 
 recipes.remove(redstoneTimer);
 recipes.addShaped(redstoneTimer, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_goldNugget, null]]);
 
 recipes.remove(redstoneLogic);
 recipes.addShaped(redstoneLogic, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_anyQuartz, null]]);
 
 recipes.remove(redstoneSequencer);
 recipes.addShaped(redstoneSequencer, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstoneTorch, null]]);
 
@@ -571,7 +571,7 @@ recipes.addShaped(redstoneSensor, [
 
 recipes.remove(redstoneInvChecker);
 recipes.addShaped(redstoneInvChecker, [
-	[null, <ore:circuitGAPrimitive>, null],
+	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, comparator, null]]);
 
@@ -603,7 +603,7 @@ recipes.remove(<rftools:builder>);
 recipes.addShaped("infitech3_rftools_builder", <rftools:builder>, [
   [hvRobotArm, <minecraft:ender_pearl>, hvRobotArm], 
   [hvSensor, <rftools:machine_frame>, hvSensor], 
-  [hvConveyor, o_wrench, hvConveyor]]);
+  [hvConveyor, craftingToolWrenchEmptyTag, hvConveyor]]);
 
 var shieldProjector1 = <rftools:shield_block1>;
 var shieldProjector2 = <rftools:shield_block2>;
