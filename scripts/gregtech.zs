@@ -24,6 +24,9 @@ val packer as RecipeMap = RecipeMap.getByName("packer");
 val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 val extruder as RecipeMap = RecipeMap.getByName("extruder");
 val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
+val lathe as RecipeMap = RecipeMap.getByName("lathe");
+
+var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -772,3 +775,25 @@ for j, b in rubberDust {
 // GT:CE's nerf-wood config doesn't work on GT wood.  Arch is too lazy to fix it his side.
 recipes.removeByRecipeName("gregtech:rubber_wood_planks");
 recipes.addShapeless(<minecraft:planks:3> * 2, [<gregtech:log>]);
+
+//Stone Rods
+var rodStone = <microblockcbe:stone_rod>;
+
+recipes.remove(rodStone);
+
+recipes.addShaped(<ore:rodStone>.firstItem * 1,[
+[craftingToolFileEmptyTag,null,null],
+[null,<ore:stone>,null],
+[null,null,null]]);
+
+recipes.addShaped(<ore:rodCobblestone>.firstItem * 1,[
+[craftingToolFileEmptyTag,null,null],
+[null,<ore:cobblestone>,null],
+[null,null,null]]);
+
+lathe.recipeBuilder()
+	.inputs(<ore:stone> * 1)
+	.outputs(<ore:rodStone>.firstItem * 1)
+	.duration(200)
+	.EUt(24)
+	.buildAndRegister();
