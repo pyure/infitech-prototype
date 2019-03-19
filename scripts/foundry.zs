@@ -286,8 +286,8 @@ for name in tool_array {
 }
 
 // Replace all default melting recipes
-var mbPerPureOre = 240;
-var mbPerImpureOre = 192;
+var mbPerPureOre = 256;
+var mbPerImpureOre = 208;
 
 for name, melting_point in ore_melting_map {
   print("Melting dust, ore and crushed for " ~ name);
