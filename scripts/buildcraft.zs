@@ -101,6 +101,11 @@ assembler.recipeBuilder()
 
 // Quartz Pipes
 recipes.remove(pipeQuartz);
+recipes.addShaped(pipeQuartz * 6,[
+  [oreStickQuartz, craftingToolHammer, oreStickQuartz],
+  [oreStickQuartz, <minecraft:glass>, oreStickQuartz],
+  [oreStickQuartz, craftingToolSaw, oreStickQuartz]]);
+  
 assembler.recipeBuilder()
   .inputs(oreStickQuartz * 6)
   .property("circuit", 6)
@@ -123,6 +128,11 @@ assembler.recipeBuilder()
 
 // Gold Pipes
 recipes.remove(pipeGold);
+recipes.addShaped(pipeGold * 6,[
+  [<ore:stickGold>, craftingToolHammer, <ore:stickGold>],
+  [<ore:stickGold>, <minecraft:glass>, <ore:stickGold>],
+  [<ore:stickGold>, craftingToolSaw, <ore:stickGold>]]);
+  
 assembler.recipeBuilder()
   .inputs(<ore:stickGold> * 6)
   .property("circuit", 6)
