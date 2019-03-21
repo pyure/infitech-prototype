@@ -88,6 +88,7 @@ var wovenSilk = <forestry:crafting_material:3>;
 scripts.functions.disableItem(<railcraft:rock_crusher>);
 scripts.functions.disableItem(<railcraft:steam_oven>);
 scripts.functions.disableItem(<railcraft:coke_oven>); 
+scripts.functions.disableItem(<railcraft:blast_furnace>); 
 scripts.functions.disableItem(<railcraft:coke_oven_red>);
 
 # Recipe tweaks
