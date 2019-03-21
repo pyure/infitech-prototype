@@ -23,7 +23,7 @@ var plateBronze = <ore:plateBronze>;
 var gearBronze = <ore:gearBronze>;
 var frameIron = <ore:frameGtIron>;
 var frameBronze = <ore:frameGtBronze>;
-var gtTank = <meta_tile_entity:gregtech:bronze_tank>;
+var gtBronzeTank = <meta_tile_entity:gregtech:bronze_tank>;
 var robotArmLV = <metaitem:robot.arm.lv>;
 var sturdyCasing = <forestry:sturdy_machine>;
 var gearGtSmallSteel = <ore:gearSmallSteel>;
@@ -131,19 +131,19 @@ recipes.addShaped(enginePeat, [
 
 recipes.remove(carpenter);
 recipes.addShaped(carpenter, [
-	[plateCopper, gtTank, plateCopper],
-	[robotArmLV, sturdyCasing, robotArmLV],
-	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
+	[plateCopper, gtBronzeTank, plateCopper],
+	[gearGtSmallSteel, sturdyCasing, gearGtSmallSteel],
+	[plateCopper, gearGtSmallSteel, plateCopper]]);
 
 recipes.remove(fermenter);
 recipes.addShaped(fermenter, [
 	[plateCopper, tinRotor, plateCopper],
-	[gtTank, sturdyCasing, gtTank],
+	[gtBronzeTank, sturdyCasing, gtBronzeTank],
 	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
 
 recipes.remove(moistener);
 recipes.addShaped(moistener, [
-	[plateCopper, gtTank, plateCopper],
+	[plateCopper, gtBronzeTank, plateCopper],
 	[tinRotor, sturdyCasing, tinRotor],
 	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
 
@@ -160,7 +160,7 @@ recipes.addShaped(rainTank, [
 	[plateIron, cauldron, plateIron]]);
 
 recipes.remove(thermionicFabricator);
-mods.forestry.Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtTank, steelScrew],[gaCoil, sturdyCasing, gaCoil],[steelScrew, electricMotorLV, steelScrew]], 300, moltenRedstone * 1008, worktable);
+mods.forestry.Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtBronzeTank, steelScrew],[gaCoil, sturdyCasing, gaCoil],[steelScrew, electricMotorLV, steelScrew]], 300, moltenRedstone * 1008, worktable);
 
 recipes.remove(sturdyCasing);
 recipes.addShaped(sturdyCasing, [

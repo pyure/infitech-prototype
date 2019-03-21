@@ -18,7 +18,17 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:nuggetAluminium>.add(<thermalfoundation:material:196>);
 <ore:nuggetAluminium>.add(<libvulpes:productnugget:9>);
 
-//Ore Unification
+// Aluminium vs Aluminum
+<ore:ingotAluminium>.addAll(<ore:ingotAluminum>);
+<ore:oreAluminium>.addAll(<ore:oreAluminum>);
+<ore:blockAluminium>.addAll(<ore:blockAluminum>);
+<ore:plateAluminium>.addAll(<ore:plateAluminum>);
+
+// Plates
+<ore:plateLead>.add(<railcraft:plate:4>);
+
+
+/* ========== Ore Unification ========== */
 
 var meta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as int[];
 
@@ -758,6 +768,11 @@ for i in meta
 <gregtech:ore_scheelite_0>
 <gregtech:ore_emerald_0>
 <gregtech:ore_borax_0>
+<gregtech:ore_tenorite_0>
+<gregtech:ore_cuprite_0>
+<gregtech:ore_bornite_0>
+<gregtech:ore_chalcocite_0>
+<gregtech:ore_enargite_0>
 */
 
 for i in meta
@@ -790,12 +805,42 @@ for i in meta
 	<ore:oreBorax>.add(ore);	
 }
 
+for i in meta
+{
+	var ore = <gregtech:ore_tenorite_0>.definition.makeStack(i);
+	<ore:oreTenorite>.add(ore);	
+}
 
-// Aluminium vs Aluminum
-<ore:ingotAluminium>.addAll(<ore:ingotAluminum>);
-<ore:oreAluminium>.addAll(<ore:oreAluminum>);
-<ore:blockAluminium>.addAll(<ore:blockAluminum>);
-<ore:plateAluminium>.addAll(<ore:plateAluminum>);
+for i in meta
+{
+	var ore = <gregtech:ore_cuprite_0>.definition.makeStack(i);
+	<ore:oreCuprite>.add(ore);	
+}
 
-// Plates
-<ore:plateLead>.add(<railcraft:plate:4>);
+for i in meta
+{
+	var ore = <gregtech:ore_bornite_0>.definition.makeStack(i);
+	<ore:oreBornite>.add(ore);	
+}
+
+for i in meta
+{
+	var ore = <gregtech:ore_chalcocite_0>.definition.makeStack(i);
+	<ore:oreChalcocite>.add(ore);	
+}
+
+for i in meta
+{
+	var ore = <gregtech:ore_enargite_0>.definition.makeStack(i);
+	<ore:oreEnargite>.add(ore);	
+}
+
+/*
+<gregtech:ore_tennantite_0>
+*/
+
+for i in meta
+{
+	var ore = <gregtech:ore_tennantite_0>.definition.makeStack(i);
+	<ore:oreTennantite>.add(ore);	
+}
