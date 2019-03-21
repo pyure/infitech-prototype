@@ -119,6 +119,7 @@ val gear_array = [
   "Bronze",
   "Electrum" ,
   "Invar",
+  "Copper",
   "WroughtIron"
 ] as string[];
 
