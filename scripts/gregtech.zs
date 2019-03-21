@@ -797,3 +797,11 @@ lathe.recipeBuilder()
 	.duration(200)
 	.EUt(24)
 	.buildAndRegister();
+  
+var woodHammer = <gregtech:meta_tool:7>.withTag({"GT.ToolStats": {PrimaryMaterial: "wood", MaxDurability: 16, DigSpeed: 0.5 as float, AttackDamage: 0.5 as float, HarvestLevel: 1}});
+  
+
+recipes.addShaped(woodHammer * 1,[
+[<ore:plankWood>,<ore:plankWood>,null],
+[<ore:plankWood>,<ore:plankWood>,<ore:stickWood>],
+[<ore:plankWood>,<ore:plankWood>,null]]);  
