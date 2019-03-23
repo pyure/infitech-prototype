@@ -268,7 +268,9 @@ val metal_liquid_map = {
   "NaquadahEnriched" : <liquid:naquadah_enriched>,
   "Naquadria" : <liquid:naquadria>,
   "Tritanium" : <liquid:tritanium>,
-  "Duranium" : <liquid:duranium>
+  "Duranium" : <liquid:duranium,
+  "CompressedWroughtIron" : <liquid:compressed_wrought_iron>,
+  "WroughtIron" : <liquid:wrought_iron>
 } as ILiquidStack[string];
 
 
