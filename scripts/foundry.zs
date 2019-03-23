@@ -104,7 +104,8 @@ val tool_array = [
   "Brass" ,
   "Bronze",
   "Invar",
-  "WroughtIron" 
+  "WroughtIron",
+  "CompressedWroughtIron"
 ] as string[];
 
 val gear_array = [
@@ -161,6 +162,7 @@ val ingot_melting_map = {
   "Electrum" : 1450,
   "Invar" : 1450,
   "WroughtIron" : 1550,
+  "CompressedWroughtIron" : 1690,
   "Cupronickel" : 1100
 } as int[string];
 
