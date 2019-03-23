@@ -109,11 +109,6 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
-	.inputs(<ore:dustRedstone> * 9)
-	.outputs(<minecraft:redstone_block>)
-	.duration(400).EUt(2)
-	.buildAndRegister();
-compressor.recipeBuilder()
 	.inputs(<ore:gemLapis> * 9)
 	.outputs(<minecraft:lapis_block>)
 	.duration(400).EUt(2)
@@ -128,7 +123,13 @@ compressor.recipeBuilder()
 	.outputs(<minecraft:emerald_block>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
-
+compressor.recipeBuilder()
+	.inputs(<ore:plateRedstone> * 9)
+	.outputs(<minecraft:redstone_block>)
+	.duration(400).EUt(3)
+	.buildAndRegister();
+  
+  
 recipes.removeShapeless(<minecraft:concrete_powder>);
 recipes.removeShapeless(<minecraft:concrete_powder:1>);
 recipes.removeShapeless(<minecraft:concrete_powder:2>);
