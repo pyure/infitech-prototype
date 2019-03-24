@@ -332,3 +332,8 @@ mods.forestry.Carpenter.addRecipe(forestryCircuitT4, [[electrumScrew, electrumFo
 
 // Wood pile tooltip
 <forestry:wood_pile>.addTooltip(format.darkRed("See JEI for different Wall options and their relative impacts."));
+
+// Remove forestry glistering melon recipe due to gold exploit
+recipes.removeByRecipeName("forestry:honey_melon");
+
+
