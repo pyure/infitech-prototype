@@ -86,7 +86,7 @@ compressor.recipeBuilder()
 	.buildAndRegister();
   
 var ringMantle = <botania:miningring>;
-var gtPickaxeGold = <gregtech:meta_tool:1>.onlyWithTag({"GT.ToolStats": {PrimaryMaterial: "gold", HandleMaterial: "wood"}}).noReturn();
+var gtPickaxeGold = <gregtech:meta_tool:1>.onlyWithTag({"GT.ToolStats": {PrimaryMaterial: "diamond", HandleMaterial: "wood"}}).noReturn();
 
 recipes.remove(ringMantle);
 recipes.addShaped("it3_ringMantle", ringMantle, [
