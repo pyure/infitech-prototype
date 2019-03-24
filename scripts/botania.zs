@@ -84,13 +84,14 @@ compressor.recipeBuilder()
 	.outputs(<botania:quartztypesunny>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
-  
+
+// Change ring of the mantle recipe
 var ringMantle = <botania:miningring>;
-var gtPickaxeGold = <gregtech:meta_tool:1>.onlyWithTag({"GT.ToolStats": {PrimaryMaterial: "diamond", HandleMaterial: "wood"}}).noReturn();
+var gtPickaxeDiamond = <gregtech:meta_tool:1>.withTag({"GT.ToolStats": {PrimaryMaterial: "diamond"}});
 
 recipes.remove(ringMantle);
 recipes.addShaped("it3_ringMantle", ringMantle, [
-  [<ore:runeEarthB>, <ore:ingotManasteel>, gtPickaxeGold], 
+  [<ore:runeEarthB>, <ore:ingotManasteel>, gtPickaxeDiamond], 
   [<ore:ingotManasteel>, null, <ore:ingotManasteel>], 
   [null, <ore:ingotManasteel>, null]]);
 
