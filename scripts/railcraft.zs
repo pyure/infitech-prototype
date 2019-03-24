@@ -162,3 +162,5 @@ mods.forestry.Carpenter.addRecipe(backpackApothecaryT2, [[wovenSilk, wovenSilk, 
 * Allowed the redstone cart cuz I don't care
 * Engraving Bench doesn't seem to be a thing anymore
 */
+
+recipes.addShapeless(<railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIron>, <ore:rodIron>]);
