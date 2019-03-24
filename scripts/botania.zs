@@ -98,3 +98,10 @@ recipes.addShaped("it3_ringMantle", ringMantle, [
 recipes.removeByRecipeName("botania:blazeblock");
 recipes.removeByRecipeName("gregtech:block_compress_blaze");
 recipes.remove(<minecraft:blaze_rod> * 9);
+
+// Make terra shatterer require stainless steel
+recipes.removeByRecipeName("botania:terrapick");
+recipes.addShaped("it3_botania_terrapick", <botania:terrapick>, [
+  [<ore:ingotTerrasteel>, <botania:manatablet>, <ore:ingotTerrasteel>], 
+  [<ore:ingotTerrasteel>, <ore:stickStainlessSteel>, <ore:ingotTerrasteel>], 
+  [null, <ore:stickStainlessSteel>, null]]);
