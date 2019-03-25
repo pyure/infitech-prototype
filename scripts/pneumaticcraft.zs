@@ -23,6 +23,10 @@ for coal in <ore:oreCoal>.items {
 	mods.pneumaticcraft.pressurechamber.addRecipe([coal * 1], 1.5, [<minecraft:coal> * 3]);
 }
 
+// Coal ore into 3x Coal
+for redstone in <ore:oreRedstone>.items {
+	mods.pneumaticcraft.pressurechamber.addRecipe([redstone * 1], 1.5, [<minecraft:redstone> * 7]);
+}
 
 // GT Style block crafting
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
