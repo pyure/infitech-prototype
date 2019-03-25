@@ -163,7 +163,8 @@ val ingot_melting_map = {
   "Invar" : 1450,
   "WroughtIron" : 1550,
   "CompressedWroughtIron" : 1690,
-  "Cupronickel" : 1100
+  "Cupronickel" : 1100,
+  "RedAlloy" : 1200
 } as int[string];
 
 
@@ -270,7 +271,8 @@ val metal_liquid_map = {
   "Tritanium" : <liquid:tritanium>,
   "Duranium" : <liquid:duranium>,
   "CompressedWroughtIron" : <liquid:compressed_wrought_iron>,
-  "WroughtIron" : <liquid:wrought_iron>
+  "WroughtIron" : <liquid:wrought_iron>,
+  "RedAlloy" : <liquid:red_alloy>
 } as ILiquidStack[string];
 
 for name in tool_array {
