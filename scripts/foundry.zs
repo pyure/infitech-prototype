@@ -1,9 +1,12 @@
 import crafttweaker.liquid.ILiquidStack;
+import mods.gregtech.recipe.RecipeMap;
 
 mods.foundry.Melting.clear();
 mods.foundry.Casting.clearRecipes();
 mods.foundry.Casting.clearMolds(); //Casting doesn't clear yet. https://github.com/Shadows-of-Fire/Foundry/issues/30 Fixed.
 mods.foundry.AlloyFurnace.clear();
+
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 
 var pickaxeHeadMold = <contenttweaker:pickaxe_head_mold>;
 var hammerHeadMold = <contenttweaker:hammer_head_mold>;
@@ -561,3 +564,13 @@ mods.foundry.AlloyingCrucible.addRecipe(<liquid:brass>*12, <liquid:copper>*12, <
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:electrum>*6, <liquid:gold>*3, <liquid:silver>*3);
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:cupronickel>*6, <liquid:copper>*3, <liquid:nickel>*3);
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:invar>*9, <liquid:iron>*6, <liquid:nickel>*3);
+
+// Re-add recipe for Refractory Glass.  Same as from Foundry, except in the GT alloy Smelter instead of the Foundry version
+ 
+alloy_smelter.recipeBuilder()		
+	.inputs(<minecraft:sand> * 1, <minecraft:clay_ball> * 1)
+	.outputs(<foundry:refractoryglass> * 1)
+	.duration(80)
+	.EUt(8)
+	.buildAndRegister();
+	
