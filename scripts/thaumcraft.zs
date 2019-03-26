@@ -57,7 +57,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   1, 
   [<aspect:instrumentum> * 10, <aspect:perditio> * 10, <aspect:humanus> * 10], 
   sealBlank, 
-  [<ore:toolHeadShovelGold>, <ore:toolHeadAxeGold>, <ore:toolHeadPickaxeGold>]);
+  [<ore:toolHeadShovelDiamond>, <ore:toolHeadAxeDiamond>, <ore:toolHeadPickaxeDiamond>]);
   
 <thaumcraft:thaumonomicon>.addTooltip(format.aqua("Some recipes may be removed from this tome.  See JEI."));
 
