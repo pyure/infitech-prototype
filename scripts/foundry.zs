@@ -1,9 +1,12 @@
 import crafttweaker.liquid.ILiquidStack;
+import mods.gregtech.recipe.RecipeMap;
 
 mods.foundry.Melting.clear();
 mods.foundry.Casting.clearRecipes();
 mods.foundry.Casting.clearMolds(); //Casting doesn't clear yet. https://github.com/Shadows-of-Fire/Foundry/issues/30 Fixed.
 mods.foundry.AlloyFurnace.clear();
+
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 
 var pickaxeHeadMold = <contenttweaker:pickaxe_head_mold>;
 var hammerHeadMold = <contenttweaker:hammer_head_mold>;
@@ -104,7 +107,8 @@ val tool_array = [
   "Brass" ,
   "Bronze",
   "Invar",
-  "WroughtIron" 
+  "WroughtIron",
+  "CompressedWroughtIron"
 ] as string[];
 
 val gear_array = [
@@ -119,6 +123,7 @@ val gear_array = [
   "Bronze",
   "Electrum" ,
   "Invar",
+  "Copper",
   "WroughtIron"
 ] as string[];
 
@@ -160,7 +165,9 @@ val ingot_melting_map = {
   "Electrum" : 1450,
   "Invar" : 1450,
   "WroughtIron" : 1550,
-  "Cupronickel" : 1100
+  "CompressedWroughtIron" : 1690,
+  "Cupronickel" : 1100,
+  "RedAlloy" : 1200
 } as int[string];
 
 
@@ -265,9 +272,11 @@ val metal_liquid_map = {
   "NaquadahEnriched" : <liquid:naquadah_enriched>,
   "Naquadria" : <liquid:naquadria>,
   "Tritanium" : <liquid:tritanium>,
-  "Duranium" : <liquid:duranium>
+  "Duranium" : <liquid:duranium>,
+  "CompressedWroughtIron" : <liquid:compressed_wrought_iron>,
+  "WroughtIron" : <liquid:wrought_iron>,
+  "RedAlloy" : <liquid:red_alloy>
 } as ILiquidStack[string];
-
 
 for name in tool_array {
   var pickaxeHead = oreDict["toolHeadPickaxe" ~ name].firstItem;
@@ -550,8 +559,18 @@ mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*6, <liquid:liquidnick
 mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidcopper>*3, <liquid:nickel>*6);
 mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*6, <liquid:nickel>*6);
 
-mods.foundry.AlloyingCrucible.addRecipe(<liquid:bronze>*12, <liquid:copper>*9, <liquid:tin>*3);
-mods.foundry.AlloyingCrucible.addRecipe(<liquid:brass>*12, <liquid:copper>*9, <liquid:zinc>*3);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:bronze>*12, <liquid:copper>*12, <liquid:tin>*3);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:brass>*12, <liquid:copper>*12, <liquid:zinc>*3);
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:electrum>*6, <liquid:gold>*3, <liquid:silver>*3);
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:cupronickel>*6, <liquid:copper>*3, <liquid:nickel>*3);
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:invar>*9, <liquid:iron>*6, <liquid:nickel>*3);
+
+// Re-add recipe for Refractory Glass.  Same as from Foundry, except in the GT alloy Smelter instead of the Foundry version
+ 
+alloy_smelter.recipeBuilder()		
+	.inputs(<minecraft:sand> * 1, <minecraft:clay_ball> * 1)
+	.outputs(<foundry:refractoryglass> * 1)
+	.duration(80)
+	.EUt(8)
+	.buildAndRegister();
+	

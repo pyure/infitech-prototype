@@ -84,13 +84,14 @@ compressor.recipeBuilder()
 	.outputs(<botania:quartztypesunny>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
-  
+
+// Change ring of the mantle recipe
 var ringMantle = <botania:miningring>;
-var gtPickaxeGold = <gregtech:meta_tool:1>.onlyWithTag({"GT.ToolStats": {PrimaryMaterial: "gold", HandleMaterial: "wood"}}).noReturn();
+var gtPickaxeDiamond = <gregtech:meta_tool:1>.withTag({"GT.ToolStats": {PrimaryMaterial: "diamond"}});
 
 recipes.remove(ringMantle);
 recipes.addShaped("it3_ringMantle", ringMantle, [
-  [<ore:runeEarthB>, <ore:ingotManasteel>, gtPickaxeGold], 
+  [<ore:runeEarthB>, <ore:ingotManasteel>, gtPickaxeDiamond], 
   [<ore:ingotManasteel>, null, <ore:ingotManasteel>], 
   [null, <ore:ingotManasteel>, null]]);
 
@@ -98,3 +99,10 @@ recipes.addShaped("it3_ringMantle", ringMantle, [
 recipes.removeByRecipeName("botania:blazeblock");
 recipes.removeByRecipeName("gregtech:block_compress_blaze");
 recipes.remove(<minecraft:blaze_rod> * 9);
+
+// Make terra shatterer require stainless steel
+recipes.removeByRecipeName("botania:terrapick");
+recipes.addShaped("it3_botania_terrapick", <botania:terrapick>, [
+  [<ore:ingotTerrasteel>, <botania:manatablet>, <ore:ingotTerrasteel>], 
+  [<ore:ingotTerrasteel>, <ore:stickStainlessSteel>, <ore:ingotTerrasteel>], 
+  [null, <ore:stickStainlessSteel>, null]]);

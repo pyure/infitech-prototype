@@ -1249,6 +1249,7 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
 
-
+// Compass
 recipes.remove(meteoriteCompass);
 recipes.addShaped(meteoriteCompass, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, blockMeteorite, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
+recipes.addShaped(meteoriteCompass, [[null, <ore:ingotCompressedWroughtIron>, null], [<ore:ingotCompressedWroughtIron>, blockMeteorite, <ore:ingotCompressedWroughtIron>], [null, <ore:ingotCompressedWroughtIron>, null]]);

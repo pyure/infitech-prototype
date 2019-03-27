@@ -68,7 +68,7 @@ recipes.addShaped("it3_steel_turbine", <advgenerators:turbine_steel>, [
 recipes.remove(<advgenerators:turbine_gold>);
 recipes.addShaped("it3_gold_turbine", <advgenerators:turbine_gold>, [
   [<advgenerators:iron_frame:*>, <advgenerators:iron_tubing:*>, <advgenerators:iron_frame:*>], 
-  [<advgenerators:iron_wiring:*>, <advgenerators:turbine_rotor_steel:*>, <advgenerators:iron_wiring:*>], 
+  [<advgenerators:iron_wiring:*>, <advgenerators:turbine_rotor_gold:*>, <advgenerators:iron_wiring:*>], 
   [<advgenerators:iron_frame:*>, hv_machine_casing, <advgenerators:iron_frame:*>]]);
   
 // Bronze Turbine

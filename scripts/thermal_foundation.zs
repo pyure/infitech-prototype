@@ -160,7 +160,7 @@ compressor.recipeBuilder()
   
   
 var itemduct = <thermaldynamics:duct_32>;
-var itemductOpaque =<thermaldynamics:duct_32:1>;
+var itemductOpaque = <thermaldynamics:duct_32:1>;
 var itemductImpulse = <thermaldynamics:duct_32:2>;
 var itemductImpulseOpaque = <thermaldynamics:duct_32:3>;
 var itemductSignalum = <thermaldynamics:duct_32:4>;
@@ -188,6 +188,9 @@ var fluxductRedstoneEnergyEmpty = <thermaldynamics:duct_0:6>;
 var fluxductSignalumEmpty = <thermaldynamics:duct_0:7>;
 var fluxductResonantEmpty = <thermaldynamics:duct_0:8>;
 var fluxductCryoStabilizedEmpty = <thermaldynamics:duct_0:9>;
+var pipeSmallSteel = <ore:pipeSmallSteel>;
+var pipeSmallBronze = <ore:pipeSmallBronze>;
+var pipeSmallStainlessSteel = <ore:pipeSmallStainlessSteel>;
 
 //Vacuum und Dense Itemducts
 for i in 0 to 5
@@ -198,17 +201,11 @@ for i in 0 to 5
 
 // ItemDuct
 recipes.remove(itemduct);
-recipes.addShaped("infitech_itemduct", itemduct * 3, [
-  [null,<ore:plateGlass>,null],
-  [<ore:pipeSmallSteel>,<minecraft:quartz>,<ore:pipeSmallSteel>],
-  [null,<ore:plateGlass>,null]]);
+assembler.recipeBuilder().inputs(pipeSmallSteel * 2, <ore:plateGlass> * 2, <minecraft:quartz> * 2).fluidInputs(<liquid:redstone> * 36).outputs(itemduct * 2).duration(240).EUt(15).buildAndRegister();
   
 // ItemDuct Opaque
 recipes.remove(itemductOpaque);
-recipes.addShaped("infitech_opaqueduct", itemductOpaque * 3, [
-  [null,<ore:plateGlass>,null],
-  [<ore:pipeSmallSteel>,<ore:dustStone>,<ore:pipeSmallSteel>],
-  [null,<ore:plateGlass>,null]]);
+assembler.recipeBuilder().inputs(pipeSmallSteel * 2, <ore:plateGlass> * 2, <ore:dustStone> * 2).fluidInputs(<liquid:redstone> * 36).outputs(itemductOpaque * 2).duration(240).EUt(15).buildAndRegister();
   
 // Impulse Itemduct
 recipes.remove(itemductImpulse);
@@ -230,100 +227,26 @@ fluid_canner.recipeBuilder()
 	.EUt(24)
 	.buildAndRegister();  
 
-/*
-// Signalum-Plated Itemduct
-recipes.remove(itemductSignalum);
-assembler.recipeBuilder()
-	.inputs(itemduct * 3, <ore:wireGtSingleElectrum> * 2)
-	.fluidInputs(<liquid:signalum> * 144)
-	.outputs(itemductSignalum * 3)
-	.duration(300)
-	.EUt(24)
-	.buildAndRegister();
-  
-// Opaque Signalum-Plated Itemduct
-recipes.remove(itemductSignalumOpaque);
-assembler.recipeBuilder()
-	.inputs(itemductOpaque * 3, <ore:wireGtSingleElectrum> * 2)
-	.fluidInputs(<liquid:signalum> * 144)
-	.outputs(itemductSignalumOpaque * 3)
-	.duration(300)
-	.EUt(24)
-	.buildAndRegister();
-
-// Signalum Plated Impulse Itemduct
-recipes.remove(itemductSignalumImpulse);
-fluid_canner.recipeBuilder()
-	.inputs(itemductSignalum)
-	.fluidInputs(<liquid:glowstone> * 144)
-	.outputs(itemductSignalumImpulse)
-	.duration(340)
-	.EUt(24)
-	.buildAndRegister();  
-
-// Signalum Plated Impulse Itemduct Opaque
-recipes.remove(itemductSignalumImpulseOpaque);
-fluid_canner.recipeBuilder()
-	.inputs(itemductSignalumOpaque)
-	.fluidInputs(<liquid:glowstone> * 144)
-	.outputs(itemductSignalumImpulseOpaque)
-	.duration(340)
-	.EUt(24)
-	.buildAndRegister();    
-
-*/
-
 // Fluiduct
 recipes.remove(fluiduct);
-recipes.addShaped("infitech_fluiduct", fluiduct * 3, [
-  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>],
-  [<ore:pipeSmallBronze>,<minecraft:quartz>,<ore:pipeSmallBronze>],
-  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>]]);
+assembler.recipeBuilder().inputs(pipeSmallBronze * 2, <ore:dustGlass> * 2, <minecraft:quartz> * 2).fluidInputs(<liquid:redstone> * 36).outputs(fluiduct * 2).duration(240).EUt(15).buildAndRegister();
+  
+
 
 // Opaque Fluiduct
 recipes.remove(fluiductOpaque);
-recipes.addShaped("infitech_opaque_fluiduct", fluiductOpaque * 3, [
-  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>],
-  [<ore:pipeSmallBronze>,<minecraft:quartz>,<ore:pipeSmallBronze>],
-  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>]]);
-
+assembler.recipeBuilder().inputs(pipeSmallBronze * 2, <ore:dustGlass> * 2, <ore:dustStone> * 2).fluidInputs(<liquid:redstone> * 36).outputs(fluiductOpaque * 2).duration(240).EUt(15).buildAndRegister();
+ 
 
 // Hardened Fluiduct
 recipes.remove(fluiductHardened);
-recipes.addShaped("infitech_hardened_fluiduct", fluiductHardened * 3, [
-  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>],
-  [<ore:pipeSmallStainlessSteel>,<minecraft:quartz>,<ore:pipeSmallStainlessSteel>],
-  [<ore:dustGlass>,<minecraft:quartz>,<ore:dustGlass>]]);
+assembler.recipeBuilder().inputs(pipeSmallStainlessSteel * 2, <ore:dustGlass> * 2, <minecraft:quartz> * 2).fluidInputs(<liquid:redstone> * 36).outputs(fluiductHardened * 2).duration(240).EUt(15).buildAndRegister();
+ 
 
 // Opaque Hardened Fluiduct
 recipes.remove(fluiductHardenedOpaque);
-recipes.addShaped("infitech_hardened_opaque_fluiduct", fluiductHardenedOpaque * 3, [
-  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>],
-  [<ore:pipeSmallStainlessSteel>,<minecraft:quartz>,<ore:pipeSmallStainlessSteel>],
-  [<ore:dustGlass>,<ore:dustStone>,<ore:dustGlass>]]);
- 
-/* 
-// Signalum-Plated Fluiduct
-recipes.remove(fluiductSignalumPlated);
-assembler.recipeBuilder()
-	.inputs(fluiductHardened * 3, <ore:wireGtSingleElectrum> * 2)
-	.fluidInputs(<liquid:signalum> * 144)
-	.outputs(fluiductSignalumPlated * 3)
-	.duration(300)
-	.EUt(24)
-	.buildAndRegister();
-  
-// Opaque Signalum-Plated Fluiduct
-recipes.remove(fluiductSignalumPlatedOpaque);
-assembler.recipeBuilder()
-	.inputs(fluiductHardenedOpaque * 3, <ore:wireGtSingleElectrum> * 2)
-	.fluidInputs(<liquid:signalum> * 144)
-	.outputs(fluiductSignalumPlatedOpaque * 3)
-	.duration(300)
-	.EUt(24)
-	.buildAndRegister();
+assembler.recipeBuilder().inputs(pipeSmallStainlessSteel * 2, <ore:dustGlass> * 2, <ore:dustStone> * 2).fluidInputs(<liquid:redstone> * 36).outputs(fluiductHardenedOpaque * 2).duration(240).EUt(15).buildAndRegister();
 
-*/
 
 // Super-Laminar Fluiduct
 recipes.remove(fluiductSuperLaminar);
