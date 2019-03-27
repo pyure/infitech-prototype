@@ -493,6 +493,9 @@ recipes.remove(<minecraft:paper> * 2);
 recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
 recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
 
+
+/* Custom food composting, in case we decide we hate the compost-all-things-via-zencessories */
+/*
 val custom_food_compost_map = {
   <minecraft:bread> : 23,
   <minecraft:cookie> : 23,
@@ -524,8 +527,18 @@ val custom_food_compost_map = {
   <minecraft:cake> : 180
 } as int[IItemStack];
 
+for itemstack, fluidAmount in custom_food_compost_map {
+  mixer.recipeBuilder()
+    .fluidInputs([<liquid:water> * fluidAmount])
+    .inputs([itemstack * 1])
+    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
+    .duration(265)
+    .EUt(8)
+    .buildAndRegister();
+}
+*/
+
 // Add compost for every food type.  ONLY WORKS WITH ZENCESSORIES which was not a valid curseforge mod at this time.
-/*
 for mod in loadedMods {
   for item in mod.items {
     if (item.isFood() && item.getHealAmount() > 0) {
@@ -543,17 +556,9 @@ for mod in loadedMods {
     }          
   }
 }
-*/
 
-for itemstack, fluidAmount in custom_food_compost_map {
-  mixer.recipeBuilder()
-    .fluidInputs([<liquid:water> * fluidAmount])
-    .inputs([itemstack * 1])
-    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
-    .duration(265)
-    .EUt(8)
-    .buildAndRegister();
-}
+
+
 
 fermenter.recipeBuilder()
 	.fluidInputs([<liquid:liquid_compost> * 100])
