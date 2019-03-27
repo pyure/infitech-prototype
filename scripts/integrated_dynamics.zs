@@ -20,4 +20,4 @@ recipes.addShaped("it3_squeezer", <integrateddynamics:squeezer>, [
 
 // Gregify the plank output of menril logs
 recipes.removeShapeless(<integrateddynamics:menril_planks> * 4, [<integrateddynamics:menril_log>]);
-recipes.addShapeless("integrateddynamics:menril_planks", <integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
+recipes.addShapeless(<integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
