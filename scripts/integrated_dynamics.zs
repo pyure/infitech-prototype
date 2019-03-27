@@ -17,3 +17,7 @@ recipes.addShaped("it3_squeezer", <integrateddynamics:squeezer>, [
   [<ore:stickIron>, <minecraft:heavy_weighted_pressure_plate>, <ore:stickIron>], 
   [<ore:stickIron>, null, <ore:stickIron>], 
   [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]]);
+
+// Gregify the plank output of menril logs
+recipes.removeShapeless(<integrateddynamics:menril_planks> * 4, [<integrateddynamics:menril_log>]);
+recipes.addShapeless("integrateddynamics:menril_planks", <integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
