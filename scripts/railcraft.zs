@@ -1,5 +1,6 @@
 // --- Created by Jason McRay --- 
 import mods.gregtech.recipe.RecipeMap;
+import mods.pneumaticcraft.pressurechamber;
 
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
@@ -162,3 +163,8 @@ mods.forestry.Carpenter.addRecipe(backpackApothecaryT2, [[wovenSilk, wovenSilk, 
 * Allowed the redstone cart cuz I don't care
 * Engraving Bench doesn't seem to be a thing anymore
 */
+
+recipes.addShapeless(<railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIron>, <ore:rodIron>]);
+
+// Raw firestone.  Need more recipes
+mods.pneumaticcraft.pressurechamber.addRecipe([<railcraft:ore_magic> * 1], 4.5, [<railcraft:firestone_raw>]);

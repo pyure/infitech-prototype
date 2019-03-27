@@ -4,7 +4,7 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 
 recipes.remove(<portality:frame>);
 assembler.recipeBuilder()
-	.inputs(<ore:plateAluminium> * 4, <ore:plateQuartzite> *4)
+	.inputs(<ore:plateAluminium> * 8, <ore:plateQuartzite> *4)
 	.outputs(<portality:frame>)
 	.duration(490)
 	.EUt(250)
@@ -13,7 +13,7 @@ assembler.recipeBuilder()
   
 recipes.remove(<portality:controller>);
 assembler.recipeBuilder()
-	.inputs(<portality:frame> * 4, <ore:boltDiamond> * 4, <ore:blockQuartzite> * 1)
+	.inputs(<portality:frame> * 4, <ore:boltDiamond> * 12, <ore:blockQuartzite> * 1, <ore:circuitExtreme> * 1)
 	.outputs(<portality:controller>)
 	.duration(960)
 	.EUt(512)
