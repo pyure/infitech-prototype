@@ -558,7 +558,13 @@ for mod in loadedMods {
 }
 
 
-
+// Add single-use batteries to appropriate oredicts
+<ore:batteryLVAll>.add(<metaitem:battery.su.lv.mercury>);
+<ore:batteryLVAll>.add(<metaitem:battery.su.lv.sulfuricacid>);
+<ore:batteryMVAll>.add(<metaitem:battery.su.mv.mercury>);
+<ore:batteryMVAll>.add(<metaitem:battery.su.mv.sulfuricacid>);
+<ore:batteryHVAll>.add(<metaitem:battery.su.hv.mercury>);
+<ore:batteryHVAll>.add(<metaitem:battery.su.hv.sulfuricacid>);
 
 fermenter.recipeBuilder()
 	.fluidInputs([<liquid:liquid_compost> * 100])
