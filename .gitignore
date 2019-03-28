@@ -62,6 +62,7 @@ config/ftbutilities.cfg
 
 minecraftinstance.json
 modularmachinery.7z
+servers.dat
 
 # Windows image file caches
 Thumbs.db

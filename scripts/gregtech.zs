@@ -541,7 +541,7 @@ for itemstack, fluidAmount in custom_food_compost_map {
 // Add compost for every food type.  ONLY WORKS WITH ZENCESSORIES which was not a valid curseforge mod at this time.
 for mod in loadedMods {
   for item in mod.items {
-    if (item.isFood() && item.getHealAmount() > 0) {
+    if (item.getSaturationModifier() + item.getHealAmount() > 0) {  /* Try itemStack.getItem() instanceof ItemFood */
       print("\t\t" ~ item.displayName);      
       
       val food_value = 10 + (40 * (item.getSaturationModifier() + item.getHealAmount()));
