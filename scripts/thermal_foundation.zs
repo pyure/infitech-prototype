@@ -665,3 +665,16 @@ recipes.removeByRecipeName("thermalfoundation:tool.shears_constantan");
 recipes.addShaped("it3_shears_constantan", <thermalfoundation:tool.shears_constantan>, [  [<ore:craftingToolFile>, <ore:plateConstantan>, null], [<ore:plateConstantan>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_gold");
 recipes.addShaped("it3_shears_gold", <thermalfoundation:tool.shears_gold>, [  [<ore:craftingToolFile>, <ore:plateGold>, null], [<ore:plateGold>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+
+// Remove Phyto stuff
+recipes.remove(<thermalfoundation:fertilizer:0>);
+recipes.remove(<thermalfoundation:fertilizer:1>);
+recipes.remove(<thermalfoundation:fertilizer:2>);
+
+// Remove Aqua Chow stuff
+recipes.remove(<thermalfoundation:bait:0>);
+recipes.remove(<thermalfoundation:bait:1>);
+recipes.remove(<thermalfoundation:bait:2>);
+
+// Rich Slag
+recipes.remove(<thermalfoundation:material:865>);
