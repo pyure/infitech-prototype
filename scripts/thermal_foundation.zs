@@ -639,32 +639,35 @@ for i, item in glassOutput {
 }
 
 // Shears
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
+
 recipes.removeByRecipeName("thermalfoundation:tool.shears_copper");
-recipes.addShaped("it3_shears_copper", <thermalfoundation:tool.shears_copper>, [  [<ore:craftingToolFile>, <ore:plateCopper>, null], [<ore:plateCopper>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_copper", <thermalfoundation:tool.shears_copper>, [  [craftingToolFileEmptyTag, <ore:plateCopper>, null], [<ore:plateCopper>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_tin");
-recipes.addShaped("it3_shears_tin", <thermalfoundation:tool.shears_tin>, [  [<ore:craftingToolFile>, <ore:plateTin>, null], [<ore:plateTin>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_tin", <thermalfoundation:tool.shears_tin>, [  [craftingToolFileEmptyTag, <ore:plateTin>, null], [<ore:plateTin>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_silver");
-recipes.addShaped("it3_shears_silver", <thermalfoundation:tool.shears_silver>, [  [<ore:craftingToolFile>, <ore:plateSilver>, null], [<ore:plateSilver>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_silver", <thermalfoundation:tool.shears_silver>, [  [craftingToolFileEmptyTag, <ore:plateSilver>, null], [<ore:plateSilver>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_lead");
-recipes.addShaped("it3_shears_lead", <thermalfoundation:tool.shears_lead>, [  [<ore:craftingToolFile>, <ore:plateLead>, null], [<ore:plateLead>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_lead", <thermalfoundation:tool.shears_lead>, [  [craftingToolFileEmptyTag, <ore:plateLead>, null], [<ore:plateLead>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_aluminum");
-recipes.addShaped("it3_shears_aluminum", <thermalfoundation:tool.shears_aluminum>, [  [<ore:craftingToolFile>, <ore:plateAluminum>, null], [<ore:plateAluminum>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_aluminum", <thermalfoundation:tool.shears_aluminum>, [  [craftingToolFileEmptyTag, <ore:plateAluminum>, null], [<ore:plateAluminum>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_nickel");
-recipes.addShaped("it3_shears_nickel", <thermalfoundation:tool.shears_nickel>, [  [<ore:craftingToolFile>, <ore:plateNickel>, null], [<ore:plateNickel>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_nickel", <thermalfoundation:tool.shears_nickel>, [  [craftingToolFileEmptyTag, <ore:plateNickel>, null], [<ore:plateNickel>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_platinum");
-recipes.addShaped("it3_shears_platinum", <thermalfoundation:tool.shears_platinum>, [  [<ore:craftingToolFile>, <ore:platePlatinum>, null], [<ore:platePlatinum>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_platinum", <thermalfoundation:tool.shears_platinum>, [  [craftingToolFileEmptyTag, <ore:platePlatinum>, null], [<ore:platePlatinum>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_steel");
-recipes.addShaped("it3_shears_steel", <thermalfoundation:tool.shears_steel>, [  [<ore:craftingToolFile>, <ore:plateSteel>, null], [<ore:plateSteel>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_steel", <thermalfoundation:tool.shears_steel>, [  [craftingToolFileEmptyTag, <ore:plateSteel>, null], [<ore:plateSteel>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_electrum");
-recipes.addShaped("it3_shears_electrum", <thermalfoundation:tool.shears_electrum>, [  [<ore:craftingToolFile>, <ore:plateElectrum>, null], [<ore:plateElectrum>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_electrum", <thermalfoundation:tool.shears_electrum>, [  [craftingToolFileEmptyTag, <ore:plateElectrum>, null], [<ore:plateElectrum>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_invar");
-recipes.addShaped("it3_shears_invar", <thermalfoundation:tool.shears_invar>, [  [<ore:craftingToolFile>, <ore:plateInvar>, null], [<ore:plateInvar>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_invar", <thermalfoundation:tool.shears_invar>, [  [craftingToolFileEmptyTag, <ore:plateInvar>, null], [<ore:plateInvar>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_bronze");
-recipes.addShaped("it3_shears_bronze", <thermalfoundation:tool.shears_bronze>, [  [<ore:craftingToolFile>, <ore:plateBronze>, null], [<ore:plateBronze>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_bronze", <thermalfoundation:tool.shears_bronze>, [  [craftingToolFileEmptyTag, <ore:plateBronze>, null], [<ore:plateBronze>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_constantan");
-recipes.addShaped("it3_shears_constantan", <thermalfoundation:tool.shears_constantan>, [  [<ore:craftingToolFile>, <ore:plateConstantan>, null], [<ore:plateConstantan>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_constantan", <thermalfoundation:tool.shears_constantan>, [  [craftingToolFileEmptyTag, <ore:plateConstantan>, null], [<ore:plateConstantan>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 recipes.removeByRecipeName("thermalfoundation:tool.shears_gold");
-recipes.addShaped("it3_shears_gold", <thermalfoundation:tool.shears_gold>, [  [<ore:craftingToolFile>, <ore:plateGold>, null], [<ore:plateGold>, <ore:craftingToolHardHammer>, null], [null, null, null]]);
+recipes.addShaped("it3_shears_gold", <thermalfoundation:tool.shears_gold>, [  [craftingToolFileEmptyTag, <ore:plateGold>, null], [<ore:plateGold>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
 
 // Remove Phyto stuff
 recipes.remove(<thermalfoundation:fertilizer:0>);
