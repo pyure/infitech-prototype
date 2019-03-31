@@ -43,15 +43,6 @@
 <meta_tile_entity:ceu:cef.uv.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
 <meta_tile_entity:ceu:cef.uv.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
 
-<meta_tile_entity:ceu:cef.max.1>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu:cef.max.4>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu:cef.max.9>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-<meta_tile_entity:ceu:cef.max.16>.addTooltip(format.darkRed("4 FE -> 1 EU"));
-
-
-
-
-
 <meta_tile_entity:ceu:ceu.ulv.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 <meta_tile_entity:ceu:ceu.ulv.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 <meta_tile_entity:ceu:ceu.ulv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
@@ -97,7 +88,3 @@
 <meta_tile_entity:ceu:ceu.uv.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 <meta_tile_entity:ceu:ceu.uv.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
 
-<meta_tile_entity:ceu:ceu.max.1>.addTooltip(format.darkRed("1 EU -> 4 FE"));
-<meta_tile_entity:ceu:ceu.max.4>.addTooltip(format.darkRed("1 EU -> 4 FE"));
-<meta_tile_entity:ceu:ceu.max.9>.addTooltip(format.darkRed("1 EU -> 4 FE"));
-<meta_tile_entity:ceu:ceu.max.16>.addTooltip(format.darkRed("1 EU -> 4 FE"));
