@@ -49,3 +49,10 @@ assembler.recipeBuilder()
   .duration(360)
   .EUt(32)
   .buildAndRegister();
+
+// Gregged Pedestal
+recipes.remove(<deepresonance:pedestal>);
+recipes.addShaped("deepresonance:pedestal", <deepresonance:pedestal>, [
+  [<ore:plateIron>, <minecraft:dispenser>, <ore:plateIron>], 
+  [<ore:plateIron>, <deepresonance:machine_frame>, <ore:plateIron>], 
+  [<ore:plateIron>, <minecraft:comparator>, <ore:plateIron>]]);
