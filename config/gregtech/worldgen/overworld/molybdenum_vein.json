@@ -27,6 +27,10 @@
           "value": "ore:powellite"
         },
         {
+          "weight": 10,
+          "value": "block:deepresonance:resonating_ore"
+        },
+        {
           "weight": 1,
           "value": "block:appliedenergistics2:sky_stone_block"
         }
