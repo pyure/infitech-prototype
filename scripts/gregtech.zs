@@ -816,3 +816,11 @@ recipes.addShaped(woodHammer * 1,[
 [<ore:plankWood>,<ore:plankWood>,null],
 [<ore:plankWood>,<ore:plankWood>,<ore:stickWood>],
 [<ore:plankWood>,<ore:plankWood>,null]]);  
+
+var fertilizer = <forestry:fertilizer_compound>;
+
+// Fertilizer recipes
+chemical_reactor.recipeBuilder().inputs(<ore:sand> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 1).duration(35).EUt(14).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs(<ore:dirt> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 2).duration(35).EUt(14).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs(<ore:gemApatite> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 12).duration(35).EUt(14).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs(<ore:combApatite> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 8).duration(35).EUt(14).buildAndRegister();
