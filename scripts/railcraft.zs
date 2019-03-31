@@ -15,7 +15,7 @@ scripts.functions.disableItem(powered_metal_roller);
 
 # Aliases
 
-
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
 var backpackApothecary = <railcraft:backpack_apothecary_t1>;
 var backpackApothecaryT2 = <railcraft:backpack_apothecary_t1>;
 var backpackIceman = <railcraft:backpack_iceman_t1>;
@@ -168,3 +168,13 @@ recipes.addShapeless(<railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIro
 
 // Raw firestone.  Need more recipes
 mods.pneumaticcraft.pressurechamber.addRecipe([<railcraft:ore_magic> * 1], 4.5, [<railcraft:firestone_raw>]);
+
+// Steam Locomotive
+var locomotive = <railcraft:locomotive_steam_solid>.withTag({model: "railcraft:default"});
+var steam_boiler = <gregtech:machine:2>;
+
+recipes.removeByRecipeName("railcraft:locomotive_steam_solid#0$1");
+recipes.addShaped(locomotive, [
+  [<ore:plateIron>, <ore:plateIron>, steam_boiler], 
+  [<ore:plateIron>, <ore:plateIron>, steam_boiler], 
+  [craftingToolWrenchEmptyTag, <minecraft:minecart:*>, <minecraft:minecart:*>]]);
