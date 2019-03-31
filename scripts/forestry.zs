@@ -464,4 +464,6 @@ recipes.addShapeless(<forestry:planks.1:11> * 2, [<forestry:logs.6:3>]);
 recipes.removeShapeless(<forestry:planks.1:3> * 4, [<forestry:logs.4:3>]);
 recipes.addShapeless(<forestry:planks.1:3> * 2, [<forestry:logs.4:3>]);
 
+// Allow automation of Wood piles
+compressor.recipeBuilder().inputs(<ore:logWood> * 8).outputs(<forestry:wood_pile>).duration(50).EUt(3).buildAndRegister();
 
