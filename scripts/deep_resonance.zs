@@ -1,11 +1,15 @@
+import mods.gregtech.recipe.RecipeMap;
 
 var lvMachineCasing = <gregtech:machine_casing:1>;
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+var lensLime = <ore:craftingLensLime>;
+var resonatingPlate = <deepresonance:resonating_plate>;
 
 // Main Machine Frame for all DR machines
 recipes.remove(<deepresonance:machine_frame>);
 recipes.addShaped("infitech3_deepresonance_machine_frame", <deepresonance:machine_frame>, [
-  [<ore:plateIron>, <deepresonance:resonating_plate>, <ore:plateIron>], 
-  [<deepresonance:resonating_plate>, lvMachineCasing, <deepresonance:resonating_plate>], 
+  [<ore:plateIron>, resonatingPlate, <ore:plateIron>], 
+  [resonatingPlate, lvMachineCasing, resonatingPlate], 
   [<ore:plateIron>, <ore:circuitGABasic>, <ore:plateIron>]]);
 
 recipes.remove(<deepresonance:generator>);  
@@ -34,6 +38,14 @@ recipes.addShaped("infitech3_deepresonance_crystalizer", <deepresonance:crystali
 
 recipes.remove(<deepresonance:smelter>);
 recipes.addShaped("infitech3_deepresonance_smelter", <deepresonance:smelter>, [
-  [<deepresonance:resonating_plate>, <deepresonance:resonating_plate>, <deepresonance:resonating_plate>], 
+  [resonatingPlate, resonatingPlate, resonatingPlate], 
   [<minecraft:iron_ingot>, <deepresonance:machine_frame>, <minecraft:iron_ingot>], 
   [<minecraft:nether_brick>, <ore:circuitGABasic>, <minecraft:nether_brick>]]);
+
+// Gregged Lens recipe
+assembler.recipeBuilder()
+  .inputs(lensLime * 1, <ore:plateGlass> * 4, resonatingPlate * 4)
+  .outputs(<deepresonance:lens> * 1)
+  .duration(360)
+  .EUt(32)
+  .buildAndRegister();

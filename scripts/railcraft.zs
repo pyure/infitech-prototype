@@ -181,7 +181,7 @@ recipes.addShaped(locomotive, [
   [craftingToolWrenchEmptyTag, <minecraft:minecart:*>, <minecraft:minecart:*>]]);
   
 recipes.removeByRecipeName("railcraft:locomotive_electric#0$1");  
-recipes.addShaped("railcraft:locomotive_electric#0$1", <railcraft:locomotive_electric>.withTag({primaryColor: "yellow", secondaryColor: "black"}), [
+recipes.addShaped(<railcraft:locomotive_electric>.withTag({primaryColor: "yellow", secondaryColor: "black"}), [
   [<minecraft:redstone_lamp:*>, <ore:plateSteel>, craftingToolWrenchEmptyTag], 
   [mvMotor, <ore:blockChargeBatteryRechargeable>, mvMotor], 
   [<ore:blockSteel>, <minecraft:minecart:*>, <ore:blockSteel>]]);
