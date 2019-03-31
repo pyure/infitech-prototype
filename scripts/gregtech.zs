@@ -824,3 +824,9 @@ chemical_reactor.recipeBuilder().inputs(<ore:sand> * 1).fluidInputs(<liquid:liqu
 chemical_reactor.recipeBuilder().inputs(<ore:dirt> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 2).duration(35).EUt(14).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs(<ore:gemApatite> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 12).duration(35).EUt(14).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs(<ore:combApatite> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 8).duration(35).EUt(14).buildAndRegister();
+
+// Empty all the cells
+recipes.addShapeless(<metaitem:large_fluid_cell.tungstensteel>, [<metaitem:large_fluid_cell.tungstensteel>]);
+recipes.addShapeless(<metaitem:large_fluid_cell.steel>, [<metaitem:large_fluid_cell.steel>]);
+recipes.addShapeless(<metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
+
