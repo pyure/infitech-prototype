@@ -261,11 +261,11 @@ for i in 0 to 10 {
   recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: i}));
   recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: i}));
   
-  mods.forestry.Carpenter.addRecipe(farmBlock.withTag({FarmBlock: i}), [[steelScrew, foilCopper, steelScrew],[foilCopper, tubeTin, foilCopper],[steelScrew, foilCopper, steelScrew]], 200, moltenRedstone * 144, farmStoneVariants[i]);
+  mods.forestry.Carpenter.addRecipe(farmBlock.withTag({FarmBlock: i}), [[steelScrew, foilCopper, steelScrew],[foilCopper, tubeTin, foilCopper],[steelScrew, foilCopper, steelScrew]], 80, moltenRedstone * 144, farmStoneVariants[i]);
   mods.forestry.Carpenter.addRecipe(gearFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel],[null, gearGtSmallSteel, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
   mods.forestry.Carpenter.addRecipe(hatchFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[conveyorLV, electricMotorLV, conveyorLV],[null, <minecraft:hopper>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
   mods.forestry.Carpenter.addRecipe(valveFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[pumpLV, electricMotorLV, pumpLV],[null, <ore:ringRubber>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
-  mods.forestry.Carpenter.addRecipe(controlFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[<ore:circuitBasic>, electricMotorLV, <ore:circuitBasic>],[null, <ore:cableGtSingleTin>, null]], 200, moltenRedstone * 144, farmStoneVariants[i]);
+  mods.forestry.Carpenter.addRecipe(controlFarm.withTag({FarmBlock: i}), [[null, gearGtSmallSteel, null],[<ore:circuitBasic>, electricMotorLV, <ore:circuitBasic>],[null, <ore:cableGtSingleTin>, null]], 420, moltenRedstone * 144, farmStoneVariants[i]);
 }
 
 //Impregnated casing
