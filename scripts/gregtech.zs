@@ -385,10 +385,14 @@ oreIronQuestOres.add(<gregtech:ore_brown_limonite_0>);
 oreCoalQuestOres.add(<gregtech:ore_coal_0>);
 oreCoalQuestOres.add(<gregtech:ore_lignite_0>);
 
-oreCopperQuestOres.add(<gregtech:ore_copper_0>);
-oreCopperQuestOres.add(<gregtech:ore_tetrahedrite_0>);
-oreCopperQuestOres.add(<gregtech:ore_malachite_0>);
-oreCopperQuestOres.add(<gregtech:ore_chalcopyrite_0>);
+oreCopperQuestOres.addAll(<ore:oreCopper>);
+oreCopperQuestOres.addAll(<ore:oreTetrahedrite>);
+oreCopperQuestOres.addAll(<ore:oreMalachite>);
+oreCopperQuestOres.addAll(<ore:oreChalcopyrite>);
+oreCopperQuestOres.addAll(<ore:oreBornite>);
+oreCopperQuestOres.addAll(<ore:oreEnargite>);
+oreCopperQuestOres.addAll(<ore:oreChalcocite>);
+oreCopperQuestOres.addAll(<ore:oreCuprite>);
 
 //Cement fun
 fluid_solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:concrete> * 1296]).remove();
