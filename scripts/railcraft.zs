@@ -172,9 +172,16 @@ mods.pneumaticcraft.pressurechamber.addRecipe([<railcraft:ore_magic> * 1], 4.5, 
 // Steam Locomotive
 var locomotive = <railcraft:locomotive_steam_solid>.withTag({model: "railcraft:default"});
 var steam_boiler = <gregtech:machine:2>;
+var mvMotor = <metaitem:electric.motor.mv>;
 
 recipes.removeByRecipeName("railcraft:locomotive_steam_solid#0$1");
 recipes.addShaped(locomotive, [
   [<ore:plateIron>, <ore:plateIron>, steam_boiler], 
   [<ore:plateIron>, <ore:plateIron>, steam_boiler], 
   [craftingToolWrenchEmptyTag, <minecraft:minecart:*>, <minecraft:minecart:*>]]);
+  
+recipes.removeByRecipeName("railcraft:locomotive_electric#0$1");  
+recipes.addShaped("railcraft:locomotive_electric#0$1", <railcraft:locomotive_electric>.withTag({primaryColor: "yellow", secondaryColor: "black"}), [
+  [<minecraft:redstone_lamp:*>, <ore:plateSteel>, craftingToolWrenchEmptyTag], 
+  [mvMotor, <ore:blockChargeBatteryRechargeable>, mvMotor], 
+  [<ore:blockSteel>, <minecraft:minecart:*>, <ore:blockSteel>]]);
