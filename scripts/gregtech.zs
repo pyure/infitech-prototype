@@ -830,3 +830,6 @@ recipes.addShapeless(<metaitem:large_fluid_cell.tungstensteel>, [<metaitem:large
 recipes.addShapeless(<metaitem:large_fluid_cell.steel>, [<metaitem:large_fluid_cell.steel>]);
 recipes.addShapeless(<metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
 
+// Saw + Rubber Log -> 4 Planks
+recipes.addShaped(<minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
+
