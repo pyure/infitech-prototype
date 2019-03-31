@@ -5,6 +5,7 @@ import mods.pneumaticcraft.pressurechamber;
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 
 # Disable the metal rolling machines
 # Reminder: May need to disable one of the RC villagers in config if they end up spawning rolling machines (cuz I bet they do)
@@ -185,3 +186,16 @@ recipes.addShaped(<railcraft:locomotive_electric>.withTag({primaryColor: "yellow
   [<minecraft:redstone_lamp:*>, <ore:plateSteel>, craftingToolWrenchEmptyTag], 
   [mvMotor, <ore:blockChargeBatteryRechargeable>, mvMotor], 
   [<ore:blockSteel>, <minecraft:minecart:*>, <ore:blockSteel>]]);
+  
+// Melting RC Iron Tank Components
+furnace.addRecipe(<minecraft:iron_nugget> * 4, <railcraft:tank_iron_gauge:*>);
+furnace.addRecipe(<minecraft:iron_nugget> * 4, <railcraft:tank_iron_valve:*>);
+furnace.addRecipe(<minecraft:iron_nugget> * 4, <railcraft:tank_iron_wall:*>);
+
+// Melting RC Steel Tank Components
+blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_gauge:*> * 1).outputs(<ore:nuggetSteel>.firstItem * 4)
+	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
+blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_valve:*> * 1).outputs(<ore:nuggetSteel>.firstItem * 4)
+	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
+blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_wall:*> * 1).outputs(<ore:nuggetSteel>.firstItem * 4)
+	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
