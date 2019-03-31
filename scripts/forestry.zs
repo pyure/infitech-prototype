@@ -464,3 +464,4 @@ recipes.addShapeless(<forestry:planks.1:11> * 2, [<forestry:logs.6:3>]);
 recipes.removeShapeless(<forestry:planks.1:3> * 4, [<forestry:logs.4:3>]);
 recipes.addShapeless(<forestry:planks.1:3> * 2, [<forestry:logs.4:3>]);
 
+
