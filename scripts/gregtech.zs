@@ -837,3 +837,11 @@ recipes.addShapeless(<metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
 // Saw + Rubber Log -> 4 Planks
 recipes.addShaped(<minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
 
+// Cobble to Gravel Forge Hammer
+forge_hammer.recipeBuilder()		
+	.inputs(<ore:cobblestone> * 1)
+	.outputs(<ore:gravel>.firstItem * 1)
+	.duration(120)
+	.EUt(4)
+.buildAndRegister();
+
