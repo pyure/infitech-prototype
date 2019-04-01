@@ -52,6 +52,7 @@ recipes.addShaped(<compactmachines3:psd>, [
  assembler.recipeBuilder()
 	.inputs(<ore:circuitGood> * 1, <ore:wireFineRedAlloy> *1)
 	.outputs(<compactmachines3:redstonetunneltool> * 1)
+	.property("circuit", 1)
 	.duration(40)
 	.EUt(32)
 	.buildAndRegister();
