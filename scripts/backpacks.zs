@@ -16,25 +16,25 @@ var upgradeBlank = <improvedbackpacks:blank_upgrade>;
 
 recipes.addShaped(upgradeWood * 1, [
 [null,tannedLeather,null],
-[<ore:plateIron>,upgradeBlank,<ore:plateIron>],
+[<ore:plateWood>,upgradeBlank,<ore:plateWood>],
 [null,<ore:plateIron>,null]]);
 
 recipes.addShaped(upgradeStone * 1, [
 [null,tannedLeather,null],
-[<ore:plateSteel>,upgradeWood,<ore:plateSteel>],
+[<ore:plateStone>,upgradeWood,<ore:plateStone>],
 [null,<ore:plateSteel>,null]]);
 
 recipes.addShaped(upgradeIron * 1, [
 [null,tannedLeather,null],
-[<ore:plateAluminium>,upgradeStone,<ore:plateAluminium>],
+[<ore:plateIron>,upgradeStone,<ore:plateIron>],
 [null,<ore:plateAluminium>,null]]);
 
 recipes.addShaped(upgradeGold * 1, [
 [null,tannedLeather,null],
-[<ore:plateStainlessSteel>,upgradeIron,<ore:plateStainlessSteel>],
+[<ore:plateGold>,upgradeIron,<ore:plateGold>],
 [null,<ore:plateStainlessSteel>,null]]);
 
 recipes.addShaped(upgradeDiamond * 1, [
 [null,tannedLeather,null],
-[<ore:plateTitanium>,upgradeGold,<ore:plateTitanium>],
+[<ore:plateDiamond>,upgradeGold,<ore:plateDiamond>],
 [null,<ore:plateTitanium>,null]]);
