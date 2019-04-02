@@ -385,10 +385,14 @@ oreIronQuestOres.add(<gregtech:ore_brown_limonite_0>);
 oreCoalQuestOres.add(<gregtech:ore_coal_0>);
 oreCoalQuestOres.add(<gregtech:ore_lignite_0>);
 
-oreCopperQuestOres.add(<gregtech:ore_copper_0>);
-oreCopperQuestOres.add(<gregtech:ore_tetrahedrite_0>);
-oreCopperQuestOres.add(<gregtech:ore_malachite_0>);
-oreCopperQuestOres.add(<gregtech:ore_chalcopyrite_0>);
+oreCopperQuestOres.addAll(<ore:oreCopper>);
+oreCopperQuestOres.addAll(<ore:oreTetrahedrite>);
+oreCopperQuestOres.addAll(<ore:oreMalachite>);
+oreCopperQuestOres.addAll(<ore:oreChalcopyrite>);
+oreCopperQuestOres.addAll(<ore:oreBornite>);
+oreCopperQuestOres.addAll(<ore:oreEnargite>);
+oreCopperQuestOres.addAll(<ore:oreChalcocite>);
+oreCopperQuestOres.addAll(<ore:oreCuprite>);
 
 //Cement fun
 fluid_solidifier.findRecipe(8, [<metaitem:shape.mold.block>], [<liquid:concrete> * 1296]).remove();
@@ -493,6 +497,9 @@ recipes.remove(<minecraft:paper> * 2);
 recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
 recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
 
+
+/* Custom food composting, in case we decide we hate the compost-all-things-via-zencessories */
+/*
 val custom_food_compost_map = {
   <minecraft:bread> : 23,
   <minecraft:cookie> : 23,
@@ -524,11 +531,21 @@ val custom_food_compost_map = {
   <minecraft:cake> : 180
 } as int[IItemStack];
 
+for itemstack, fluidAmount in custom_food_compost_map {
+  mixer.recipeBuilder()
+    .fluidInputs([<liquid:water> * fluidAmount])
+    .inputs([itemstack * 1])
+    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
+    .duration(265)
+    .EUt(8)
+    .buildAndRegister();
+}
+*/
+
 // Add compost for every food type.  ONLY WORKS WITH ZENCESSORIES which was not a valid curseforge mod at this time.
-/*
 for mod in loadedMods {
   for item in mod.items {
-    if (item.isFood() && item.getHealAmount() > 0) {
+    if (item.getSaturationModifier() + item.getHealAmount() > 0) {  /* Try itemStack.getItem() instanceof ItemFood */
       print("\t\t" ~ item.displayName);      
       
       val food_value = 10 + (40 * (item.getSaturationModifier() + item.getHealAmount()));
@@ -543,17 +560,15 @@ for mod in loadedMods {
     }          
   }
 }
-*/
 
-for itemstack, fluidAmount in custom_food_compost_map {
-  mixer.recipeBuilder()
-    .fluidInputs([<liquid:water> * fluidAmount])
-    .inputs([itemstack * 1])
-    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
-    .duration(265)
-    .EUt(8)
-    .buildAndRegister();
-}
+
+// Add single-use batteries to appropriate oredicts
+<ore:batteryLVAll>.add(<metaitem:battery.su.lv.mercury>);
+<ore:batteryLVAll>.add(<metaitem:battery.su.lv.sulfuricacid>);
+<ore:batteryMVAll>.add(<metaitem:battery.su.mv.mercury>);
+<ore:batteryMVAll>.add(<metaitem:battery.su.mv.sulfuricacid>);
+<ore:batteryHVAll>.add(<metaitem:battery.su.hv.mercury>);
+<ore:batteryHVAll>.add(<metaitem:battery.su.hv.sulfuricacid>);
 
 fermenter.recipeBuilder()
 	.fluidInputs([<liquid:liquid_compost> * 100])
@@ -805,3 +820,28 @@ recipes.addShaped(woodHammer * 1,[
 [<ore:plankWood>,<ore:plankWood>,null],
 [<ore:plankWood>,<ore:plankWood>,<ore:stickWood>],
 [<ore:plankWood>,<ore:plankWood>,null]]);  
+
+var fertilizer = <forestry:fertilizer_compound>;
+
+// Fertilizer recipes
+chemical_reactor.recipeBuilder().inputs(<ore:sand> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 1).duration(35).EUt(14).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs(<ore:dirt> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 2).duration(35).EUt(14).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs(<ore:gemApatite> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 12).duration(35).EUt(14).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs(<ore:combApatite> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 8).duration(35).EUt(14).buildAndRegister();
+
+// Empty all the cells
+recipes.addShapeless(<metaitem:large_fluid_cell.tungstensteel>, [<metaitem:large_fluid_cell.tungstensteel>]);
+recipes.addShapeless(<metaitem:large_fluid_cell.steel>, [<metaitem:large_fluid_cell.steel>]);
+recipes.addShapeless(<metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
+
+// Saw + Rubber Log -> 4 Planks
+recipes.addShaped(<minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
+
+// Cobble to Gravel Forge Hammer
+forge_hammer.recipeBuilder()		
+	.inputs(<ore:cobblestone> * 1)
+	.outputs(<ore:gravel>.firstItem * 1)
+	.duration(120)
+	.EUt(4)
+.buildAndRegister();
+

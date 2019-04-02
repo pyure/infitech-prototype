@@ -13,7 +13,12 @@ recipes.addShaped("infitech3_drying_basin", <integrateddynamics:drying_basin>, [
 [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
 
 // Squeezer.  Also probably too harsh.
+recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped("it3_squeezer", <integrateddynamics:squeezer>, [
   [<ore:stickIron>, <minecraft:heavy_weighted_pressure_plate>, <ore:stickIron>], 
   [<ore:stickIron>, null, <ore:stickIron>], 
   [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]]);
+
+// Gregify the plank output of menril logs
+recipes.removeShapeless(<integrateddynamics:menril_planks> * 4, [<integrateddynamics:menril_log>]);
+recipes.addShapeless(<integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);

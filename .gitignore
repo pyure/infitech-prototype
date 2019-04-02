@@ -54,14 +54,14 @@ config/cd4017be/compiled.dat
 config/thaumicjei_itemstack_aspects.json
 config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
-config/agricraft/json/defaults/infitech/
-config/agricraft/json/defaults/mod_botania/
+config/agricraft/json/*
 config/jei/jei.cfg
 config/NEI/client.cfg
 config/ftbutilities.cfg
 
 minecraftinstance.json
 modularmachinery.7z
+servers.dat
 
 # Windows image file caches
 Thumbs.db

@@ -7,7 +7,7 @@ import mods.contenttweaker.VanillaFactory;
 var stick = <minecraft:stick>;
 var flint = <minecraft:flint:0>;
 
-
+var craftingToolSawEmptyTag = <ore:craftingToolSaw>.firstItem.withEmptyTag();
 
 var nuggetWroughtIron = <gregtech:meta_item_1:9197>;
 furnace.addRecipe(nuggetWroughtIron, <ore:nuggetIron>);
@@ -26,7 +26,7 @@ var oreSaw = <ore:craftingToolSaw>;
 // ALTERNATIVE CHEST RECIPES
  recipes.addShaped(<minecraft:chest>*4, [
   [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
-  [<ore:logWood>, <ore:craftingToolSaw>, <ore:logWood>], 
+  [<ore:logWood>, craftingToolSawEmptyTag, <ore:logWood>], 
   [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
   
  //Logs to sticks
