@@ -554,8 +554,8 @@ for mod in loadedMods {
         .fluidInputs([<liquid:water> * food_value])
         .inputs([item * 1])
         .fluidOutputs([<liquid:liquid_compost> * food_value])
-        .duration(265)
-        .EUt(8)
+        .duration(240)
+        .EUt(9)
         .buildAndRegister();   
     }          
   }
@@ -571,9 +571,9 @@ for mod in loadedMods {
 <ore:batteryHVAll>.add(<metaitem:battery.su.hv.sulfuricacid>);
 
 fermenter.recipeBuilder()
-	.fluidInputs([<liquid:liquid_compost> * 100])
-	.fluidOutputs(<liquid:mouldy_compost> * 100)
-	.duration(45)
+	.fluidInputs([<liquid:liquid_compost> * 3000])
+	.fluidOutputs(<liquid:mouldy_compost> * 2700)
+	.duration(2250)
 	.EUt(4)
 	.buildAndRegister();
 
@@ -584,7 +584,7 @@ centrifuge.recipeBuilder()
   .chancedOutput(pulpedBiomass, 2200)
   .chancedOutput(pulpedBiomass, 2200)
   .chancedOutput(pulpedBiomass, 2200)
-  .fluidOutputs(<liquid:methane> * 50)
+  .fluidOutputs(<liquid:methane> * 56)
   .duration(45)
   .EUt(12)
   .buildAndRegister();
