@@ -20,6 +20,10 @@ var nuggetMold = <foundry:mold:26>;
 var gearMold = <foundry:mold:2>;
 var rodMold = <foundry:mold:3>;
 var plateMold = <foundry:mold:1>;
+var gunBarrelMold = <foundry:mold:19>;
+var revolverDrumMold = <foundry:mold:20>;
+var revolverFrameMold = <foundry:mold:21>;
+
 
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
@@ -36,6 +40,15 @@ mods.foundry.Casting.addMold(blockMold);
 mods.foundry.Casting.addMold(nuggetMold);
 mods.foundry.Casting.addMold(rodMold);
 mods.foundry.Casting.addMold(plateMold);
+
+var gun_barrel = <foundry:component:3>;
+var revolver_drum = <foundry:component:4>;
+var revolver_frame = <foundry:component:5>;
+
+mods.foundry.Casting.addRecipe(gun_barrel, <liquid:compressed_wrought_iron> * 144, gunBarrelMold);
+mods.foundry.Casting.addRecipe(revolver_drum, <liquid:compressed_wrought_iron> * 144, revolverDrumMold);
+mods.foundry.Casting.addRecipe(revolver_frame, <liquid:compressed_wrought_iron> * 288, revolverFrameMold);
+
 
 mods.foundry.MoldStation.addRecipe(pickaxeHeadMold, 6, 6, 
 [
@@ -99,57 +112,40 @@ mods.foundry.MoldStation.addRecipe(shovelHeadMold, 6, 6,
 
 
 val tool_array = [
-  "Aluminium",
-  "Chrome" ,
   "Cobalt" ,
   "Iron" ,
-  "Titanium",
   "Brass" ,
   "Bronze",
-  "Invar",
   "WroughtIron",
   "CompressedWroughtIron"
 ] as string[];
 
 val gear_array = [
-  "Aluminium",
-  "Chrome" ,
   "Gold",
   "Iron" ,
   "Lead",
   "Silver",
-  "Titanium",
   "Brass" ,
   "Bronze",
-  "Electrum" ,
-  "Invar",
   "Copper",
   "WroughtIron"
 ] as string[];
 
 val rod_array = [
-  "Aluminium",
-  "Chrome",
-  "Cobalt",
   "Gold",
   "Iron",
-  "Tin",
-  "TinAlloy",
-  "Copper",
-  "Lead",
   "Silver",
-  "Titanium",
+  "Cobalt",
   "Brass",
   "Bronze",
-  "Electrum",
-  "Invar",
-  "WroughtIron"
+  "Copper",
+  "WroughtIron",
+  "Tin",
+  "Lead"
 ] as string[];
 
 
 val ingot_melting_map = {
-  "Aluminium" : 2400,
-  "Chrome" : 2400,
   "Cobalt" : 1650,
   "Gold" : 800,
   "Iron" : 1400,
@@ -159,14 +155,10 @@ val ingot_melting_map = {
   "Lead" : 1300,
   "Nickel" : 1200,
   "Silver" : 700,
-  "Titanium" : 3000,
   "Brass" : 1200,
   "Bronze" : 1100,
-  "Electrum" : 1450,
-  "Invar" : 1450,
   "WroughtIron" : 1550,
   "CompressedWroughtIron" : 1690,
-  "Cupronickel" : 1100,
   "RedAlloy" : 1200
 } as int[string];
 
@@ -196,16 +188,9 @@ val impure_ore_melting_map = {
 
 
 val metal_liquid_map = {
-  "Aluminium" : <liquid:aluminium>,
-  "Beryllium" : <liquid:beryllium>,
-  "Bismuth" : <liquid:bismuth>,
-  "Carbon" : <liquid:carbon>,
-  "Chrome" : <liquid:chrome>,
   "Cobalt" : <liquid:cobalt>,
   "Cobaltite" : <liquid:cobalt>,
-  "Gallium" : <liquid:gallium>,
   "Gold" : <liquid:gold>,
-  "Iridium" : <liquid:iridium>,
   "Iron" : <liquid:iron>,
   "Tin" : <liquid:tin>,
   "Cassiterite" : <liquid:tin>,
@@ -218,61 +203,12 @@ val metal_liquid_map = {
   "Tetrahedrite" : <liquid:copper>,
   "Malachite" : <liquid:copper>,
   "Lead" : <liquid:lead>,
-  "Manganese" : <liquid:manganese>,
-  "Molybdenum" : <liquid:molybdenum>,
-  "Neodymium" : <liquid:neodymium>,
-  "Darmstadtium" : <liquid:darmstadtium>,
   "Nickel" : <liquid:nickel>,
-  "Osmium" : <liquid:osmium>,
-  "Palladium" : <liquid:palladium>,
-  "Platinum" : <liquid:platinum>,
-  "Plutonium" : <liquid:plutonium>,
-  "Plutonium241" : <liquid:plutonium241>,
   "Silver" : <liquid:silver>,
-  "Thorium" : <liquid:thorium>,
-  "Titanium" : <liquid:titanium>,
-  "Tungsten" : <liquid:tungsten>,
-  "Uranium" : <liquid:uranium>,
-  "Uranium235" : <liquid:uranium235>,
   "Brass" : <liquid:brass>,
   "Bronze" : <liquid:bronze>,
-  "Cupronickel" : <liquid:cupronickel>,
-  "Electrum" : <liquid:electrum>,
-  "Invar" : <liquid:invar>,
-  "Kanthal" : <liquid:kanthal>,
-  "Magnalium" : <liquid:magnalium>,
-  "Nichrome" : <liquid:nichrome>,
-  "PigIron" : <liquid:pig_iron>,
-  "StainlessSteel" : <liquid:stainless_steel>,
-  "Steel" : <liquid:steel>,
   "TinAlloy" : <liquid:tin_alloy>,
-  "Ultimet" : <liquid:ultimet>,
   "WroughtIron" : <liquid:wrought_iron>,
-  "Osmiridium" : <liquid:osmiridium>,
-  "SterlingSilver" : <liquid:sterling_silver>,
-  "RoseGold" : <liquid:rose_gold>,
-  "BlackBronze" : <liquid:black_bronze>,
-  "BismuthBronze" : <liquid:bismuth_bronze>,
-  "BlackSteel" : <liquid:black_steel>,
-  "RedSteel" : <liquid:red_steel>,
-  "BlueSteel" : <liquid:blue_steel>,
-  "DamascusSteel" : <liquid:damascus_steel>,
-  "TungstenSteel" : <liquid:tungsten_steel>,
-  "CobaltBrass" : <liquid:cobalt_brass>,
-  "IronMagnetic" : <liquid:iron_magnetic>,
-  "SteelMagnetic" : <liquid:steel_magnetic>,
-  "NeodymiumMagnetic" : <liquid:neodymium_magnetic>,
-  "TungstenCarbide" : <liquid:tungsten_carbide>,
-  "VanadiumSteel" : <liquid:vanadium_steel>,
-  "Hssg" : <liquid:hssg>,
-  "Hsse" : <liquid:hsse>,
-  "Hsss" : <liquid:hsss>,
-  "Naquadah" : <liquid:naquadah>,
-  "NaquadahAlloy" : <liquid:naquadah_alloy>,
-  "NaquadahEnriched" : <liquid:naquadah_enriched>,
-  "Naquadria" : <liquid:naquadria>,
-  "Tritanium" : <liquid:tritanium>,
-  "Duranium" : <liquid:duranium>,
   "CompressedWroughtIron" : <liquid:compressed_wrought_iron>,
   "WroughtIron" : <liquid:wrought_iron>,
   "RedAlloy" : <liquid:red_alloy>

@@ -187,7 +187,7 @@ var itemDuct = <thermaldynamics:duct_32>;
 recipes.remove(<nuclearcraft:bin>);
 recipes.addShaped("infitech3_tile.nuclearcraft.bin", <nuclearcraft:bin>, [
   [<ore:plateSteel>, null, <ore:plateSteel>], 
-  [<ore:cableGTSingleCopper>, <ore:blockObsidian>, itemDuct], 
+  [<ore:cableGtSingleCopper>, <ore:blockObsidian>, itemDuct], 
   [<ore:plateSteel>, <ore:pipeSmallSteel>, <ore:plateSteel>]]);
   
 var fuelLEU235 = <nuclearcraft:fuel_uranium:4>;

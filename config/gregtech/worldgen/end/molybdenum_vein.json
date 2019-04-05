@@ -23,9 +23,13 @@
           "weight": 40,
           "value": "ore:molybdenite"
         },
-		{
+        {
           "weight": 20,
           "value": "ore:powellite"
+        },
+        {
+          "weight": 3,
+          "value": "block:deepresonance:resonating_ore"
         }
       ]
     }

@@ -54,7 +54,7 @@ config/cd4017be/compiled.dat
 config/thaumicjei_itemstack_aspects.json
 config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
-config/agricraft/json
+config/agricraft/json/*
 config/jei/jei.cfg
 config/NEI/client.cfg
 config/ftbutilities.cfg
