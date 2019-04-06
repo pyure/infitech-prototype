@@ -73,7 +73,7 @@ alloy_smelter.recipeBuilder().inputs([<ore:crushedCinnabar> * 1, pRedstone * pol
 forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreCinnabar> * 1).outputs(<ore:crushedPurifiedCinnabar>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
 recipes.addShapeless(<ore:crushedPurifiedCinnabar>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreCinnabar>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedRedstone> * 2, pRedstone * pollenIn]).outputs(<ore:pollinatedOreRedstone>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+alloy_smelter.recipeBuilder().inputs([<ore:crushedRedstone> * 1, pRedstone * pollenIn]).outputs(<ore:pollinatedOreRedstone>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
 forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreRedstone> * 1).outputs(<ore:crushedPurifiedRedstone>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
 recipes.addShapeless(<ore:crushedPurifiedRedstone>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreRedstone>]);
 
