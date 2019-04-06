@@ -61,4 +61,11 @@ mods.thaumcraft.Infusion.registerRecipe(
   
 <thaumcraft:thaumonomicon>.addTooltip(format.aqua("Some recipes may be removed from this tome.  See JEI."));
 
+// Tweak Vis Generator to be a bit later-game
+recipes.remove(<thaumcraft:vis_generator>);
+recipes.addShaped(<thaumcraft:vis_generator>, 
+  [[<ore:plankWood>, <metaitem:electric.motor.lv>, <ore:plankWood>], 
+  [<ore:stickThaumium>, <minecraft:piston>, <ore:stickThaumium>], 
+  [<ore:foilRedAlloy>, <thaumcraft:vis_resonator>, <ore:foilRedAlloy>]]);
+
 
