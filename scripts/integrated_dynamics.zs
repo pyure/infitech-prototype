@@ -1,3 +1,6 @@
+import mods.gregtech.recipe.RecipeMap;
+
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 var pulpedBiomass = <thermalfoundation:material:816>;
 // inputStack, inputFluid, outputStack, outputFluid, duration
@@ -13,6 +16,7 @@ recipes.addShaped("infitech3_drying_basin", <integrateddynamics:drying_basin>, [
 [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
 
 // Squeezer.  Also probably too harsh.
+recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped("it3_squeezer", <integrateddynamics:squeezer>, [
   [<ore:stickIron>, <minecraft:heavy_weighted_pressure_plate>, <ore:stickIron>], 
   [<ore:stickIron>, null, <ore:stickIron>], 
@@ -21,3 +25,22 @@ recipes.addShaped("it3_squeezer", <integrateddynamics:squeezer>, [
 // Gregify the plank output of menril logs
 recipes.removeShapeless(<integrateddynamics:menril_planks> * 4, [<integrateddynamics:menril_log>]);
 recipes.addShapeless(<integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
+
+// Gregify extraction of liquid menril from logs and planks.  We arbitrarily added a bonus berry output to log processing
+fluid_extractor.recipeBuilder()
+  .inputs([<integrateddynamics:menril_log> * 1])
+  .fluidOutputs([<liquid:menrilresin> * 1000 ])
+  .chancedOutput(<integrateddynamics:menril_berries>, 200)
+  .duration(180)
+  .EUt(5)
+  .buildAndRegister();
+
+fluid_extractor.recipeBuilder()
+  .inputs([<integrateddynamics:menril_planks> * 1])
+  .fluidOutputs([<liquid:menrilresin> * 250 ])
+  .duration(180)
+  .EUt(5)
+  .buildAndRegister();
+  
+
+

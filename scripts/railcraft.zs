@@ -5,6 +5,7 @@ import mods.pneumaticcraft.pressurechamber;
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 
 # Disable the metal rolling machines
 # Reminder: May need to disable one of the RC villagers in config if they end up spawning rolling machines (cuz I bet they do)
@@ -15,7 +16,7 @@ scripts.functions.disableItem(powered_metal_roller);
 
 # Aliases
 
-
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
 var backpackApothecary = <railcraft:backpack_apothecary_t1>;
 var backpackApothecaryT2 = <railcraft:backpack_apothecary_t1>;
 var backpackIceman = <railcraft:backpack_iceman_t1>;
@@ -168,3 +169,33 @@ recipes.addShapeless(<railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIro
 
 // Raw firestone.  Need more recipes
 mods.pneumaticcraft.pressurechamber.addRecipe([<railcraft:ore_magic> * 1], 4.5, [<railcraft:firestone_raw>]);
+
+// Steam Locomotive
+var locomotive = <railcraft:locomotive_steam_solid>.withTag({model: "railcraft:default"});
+var steam_boiler = <gregtech:machine:2>;
+var mvMotor = <metaitem:electric.motor.mv>;
+
+recipes.removeByRecipeName("railcraft:locomotive_steam_solid#0$1");
+recipes.addShaped(locomotive, [
+  [<ore:plateIron>, <ore:plateIron>, steam_boiler], 
+  [<ore:plateIron>, <ore:plateIron>, steam_boiler], 
+  [craftingToolWrenchEmptyTag, <minecraft:minecart:*>, <minecraft:minecart:*>]]);
+  
+recipes.removeByRecipeName("railcraft:locomotive_electric#0$1");  
+recipes.addShaped(<railcraft:locomotive_electric>.withTag({primaryColor: "yellow", secondaryColor: "black"}), [
+  [<minecraft:redstone_lamp:*>, <ore:plateSteel>, craftingToolWrenchEmptyTag], 
+  [mvMotor, <ore:blockChargeBatteryRechargeable>, mvMotor], 
+  [<ore:blockSteel>, <minecraft:minecart:*>, <ore:blockSteel>]]);
+  
+// Melting RC Iron Tank Components
+furnace.addRecipe(<minecraft:iron_nugget> * 4, <railcraft:tank_iron_gauge:*>);
+furnace.addRecipe(<minecraft:iron_nugget> * 4, <railcraft:tank_iron_valve:*>);
+furnace.addRecipe(<minecraft:iron_nugget> * 4, <railcraft:tank_iron_wall:*>);
+
+// Melting RC Steel Tank Components
+blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_gauge:*> * 1).outputs(<ore:nuggetSteel>.firstItem * 4)
+	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
+blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_valve:*> * 1).outputs(<ore:nuggetSteel>.firstItem * 4)
+	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
+blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_wall:*> * 1).outputs(<ore:nuggetSteel>.firstItem * 4)
+	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
