@@ -509,4 +509,12 @@ alloy_smelter.recipeBuilder()
 	.duration(80)
 	.EUt(8)
 	.buildAndRegister();
-	
+
+// Refractory Hopper
+alloy_smelter.recipeBuilder()		
+	.inputs(<minecraft:hopper> * 1, <foundry:refractoryspout> * 1)
+	.outputs(<foundry:refractoryhopper> * 1)
+	.duration(360)
+	.EUt(4)
+	.buildAndRegister();
+
