@@ -548,7 +548,7 @@ for mod in loadedMods {
     if (item.getSaturationModifier() + item.getHealAmount() > 0) {  /* Try itemStack.getItem() instanceof ItemFood */
       print("\t\t" ~ item.displayName);      
       
-      val food_value = 10 + (40 * (item.getSaturationModifier() + item.getHealAmount()));
+      val food_value = 20 + (30 * (item.getSaturationModifier() + item.getHealAmount()));
       
       mixer.recipeBuilder()
         .fluidInputs([<liquid:water> * food_value])
