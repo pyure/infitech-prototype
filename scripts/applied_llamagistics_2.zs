@@ -7,6 +7,8 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.appliedenergistics2.Inscriber;
 
 
+val macerator as RecipeMap = RecipeMap.getByName("macerator");
+
 // --- Variables ---
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
 var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
@@ -1253,3 +1255,13 @@ compressor.recipeBuilder()
 recipes.remove(meteoriteCompass);
 recipes.addShaped(meteoriteCompass, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, blockMeteorite, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
 recipes.addShaped(meteoriteCompass, [[null, <ore:ingotCompressedWroughtIron>, null], [<ore:ingotCompressedWroughtIron>, blockMeteorite, <ore:ingotCompressedWroughtIron>], [null, <ore:ingotCompressedWroughtIron>, null]]);
+
+// Macerator recipe for fluix crystal -> dust
+var fluix_dust = <appliedenergistics2:material:8>;
+
+macerator.recipeBuilder()
+	.inputs([<ore:crystalFluix> * 1])
+	.outputs(fluix_dust * 1)
+	.duration(65)
+	.EUt(14)
+	.buildAndRegister();
