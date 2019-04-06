@@ -67,7 +67,7 @@ chemical_reactor.recipeBuilder().inputs([<ore:crushedQuartzite> * 1, combCertus 
 chemical_reactor.recipeBuilder().inputs([<ore:crushedBastnasite> * 1, combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedBastnasite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedChromite> * 1, combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedChromite>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedNeodymium> * 1, combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedNeodymium>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
-chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 1, combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 1, combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 2).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedRuby> * 1, combChrome * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRuby>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 
 // Coal
@@ -152,10 +152,10 @@ chemical_reactor.recipeBuilder().inputs([<ore:crushedPlatinum> * 1, combPlatinum
 
 // Redstone
 chemical_reactor.recipeBuilder().inputs([<ore:crushedCinnabar> * 1, combRedstone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedCinnabar>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
-chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 1, combRedstone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 1, combRedstone * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 2).duration(60).EUt(30).buildAndRegister();
 
 // Ruby
-chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 1, combRuby * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedRedstone> * 1, combRuby * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRedstone>.firstItem * 2).duration(60).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedRuby> * 1, combRuby * 4]).fluidInputs([<liquid:water> * 1000 ]).outputs(<ore:crushedPurifiedRuby>.firstItem * 4).duration(60).EUt(30).buildAndRegister();
 
 // Sapphire
