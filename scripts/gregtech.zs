@@ -853,3 +853,14 @@ forge_hammer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
+//Fluid extractor recipe for nuts
+<ore:listAllnut>.add(<harvestcraft:hazelnutitem>);
+var pulpBiomass = <thermalfoundation:material:816>;
+
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:listAllnut> * 1)
+	.fluidOutputs(<liquid:seed.oil> * 65)
+	.chancedOutput(pulpBiomass * 1, 150)
+	.duration(80)
+	.EUt(8)
+	.buildAndRegister();
