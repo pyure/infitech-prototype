@@ -105,7 +105,7 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-//compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
 
 recipes.addShaped(coal_ball, [
   [coal_dust, coal_dust, coal_dust],
