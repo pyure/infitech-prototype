@@ -333,7 +333,18 @@ assembler.recipeBuilder()
 	.duration(250)
 	.EUt(180)
 	.buildAndRegister();
-	
+
+//Structuralduct
+recipes.remove(<thermaldynamics:duct_48>);
+var ductStructure = <thermaldynamics:duct_48>;
+
+assembler.recipeBuilder()
+	.inputs(<ore:frameGtIron> * 1, <ore:pipeSmallCopper> * 1, <ore:foilLead> * 2)
+	.fluidInputs(<liquid:concrete> * 144)
+	.outputs(ductStructure * 6)
+	.duration(120)
+	.EUt(16)
+	.buildAndRegister();
 
 var servo = <thermaldynamics:servo>;
 var hardened_servo = <thermaldynamics:servo:1>;
