@@ -851,15 +851,15 @@ forge_hammer.recipeBuilder()
 	.outputs(<ore:gravel>.firstItem * 1)
 	.duration(120)
 	.EUt(4)
-	.buildAndRegister();
+	.buildAndRegister();  
 
 //Fluid extractor recipe for nuts
-<ore:nutAny>.add(<harvestcraft:hazelnutitem>);
+<ore:listAllnut>.add(<harvestcraft:hazelnutitem>); // Pyure: reminder, Agrax didn't invent this shitty oredict name.  Came from Pam's.
 var pulpBiomass = <thermalfoundation:material:816>;
 
 fluid_extractor.recipeBuilder()
-	.inputs(<ore:nutAny> * 1)
-	.fluidOutputs(<liquid:seed.oil> * 65)
+	.inputs(<ore:listAllnut> * 1)
+	.fluidOutputs(<liquid:seed.oil> * 65) /* Probably too much seed oil.  At least some of these nuts grow just like any other seeds */
 	.chancedOutput(pulpBiomass * 1, 150)
 	.duration(80)
 	.EUt(8)
