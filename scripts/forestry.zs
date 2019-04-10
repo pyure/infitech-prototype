@@ -51,6 +51,16 @@ var worktable = <forestry:worktable>;
 var steelCasing = <gregtech:metal_casing:4>;
 var foilCopper = <ore:foilCopper>;
 var tubeTin = <forestry:thermionic_tubes:1>;
+var tubeCopper = <forestry:thermionic_tubes>;
+var tubeBronze = <forestry:thermionic_tubes:2>;
+var tubeGold = <forestry:thermionic_tubes:4>;
+var tubeDiamond = <forestry:thermionic_tubes:5>;
+var tubeObsidian = <forestry:thermionic_tubes:6>;
+var tubeBlaze = <forestry:thermionic_tubes:7>;
+var tubeEmerald = <forestry:thermionic_tubes:9>;
+var tubeApatine = <forestry:thermionic_tubes:10>;
+var tubeLapis = <forestry:thermionic_tubes:11>;
+var tubeEnder = <forestry:thermionic_tubes:12>;
 var conveyorLV = <metaitem:conveyor.module.lv>;
 var pumpLV = <metaitem:electric.pump.lv>;
 var farmBlock = <forestry:ffarm>;
@@ -175,8 +185,107 @@ assembler.recipeBuilder()
 	.EUt(2)
 	.buildAndRegister();
 
-// GT Style block crafting
+//Electron Tubes
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:1>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:2>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:4>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:5>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:6>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:7>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:9>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:10>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:11>);
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:12>);
 
+
+val forestryTubes = [tubeCopper, tubeTin, tubeBronze, tubeGold, tubeDiamond, tubeEmerald, tubeLapis] as IItemStack[];
+val rods = [ <ore:stickCopper>, <ore:stickTin>, <ore:stickBronze>, <ore:stickGold>, <ore:stickDiamond>, <ore:stickEmerald>, <ore:stickLapis>] as IIngredient[];
+val bolts = [ <ore:boltCopper>, <ore:boltTin>, <ore:boltBronze>, <ore:boltGold>, <ore:boltDiamond>, <ore:boltEmerald>, <ore:boltLapis>] as IIngredient[];
+
+for j, b in rods {
+assembler.recipeBuilder()
+	.inputs(b * 2, bolts[j] * 1, <ore:dustSmallRedstone> * 2)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 72])
+	.outputs(forestryTubes[j] * 1)
+	.duration(300)
+	.EUt(2)
+	.buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(b * 4, bolts[j] * 2, <ore:dustRedstone> * 1)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 144])
+	.outputs(forestryTubes[j] * 2)
+	.duration(450)
+	.EUt(2)
+	.buildAndRegister();
+}
+
+assembler.recipeBuilder()
+	.inputs(<ore:dustObsidian> * 2, <ore:dustSmallObsidian> * 2, <ore:dustSmallRedstone> * 2)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 72])
+	.outputs(tubeObsidian * 1)
+	.duration(300)
+	.EUt(2)
+	.buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:dustObsidian> * 5, <ore:dustRedstone> * 1)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 144])
+	.outputs(tubeObsidian * 2)
+	.duration(450)
+	.EUt(2)
+	.buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:dustBlaze> * 2, <ore:dustSmallBlaze> * 2, <ore:dustSmallRedstone> * 2)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 72])
+	.outputs(tubeBlaze * 1)
+	.duration(300)
+	.EUt(2)
+	.buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:dustBlaze> * 5, <ore:dustRedstone> * 1)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 144])
+	.outputs(tubeBlaze * 2)
+	.duration(450)
+	.EUt(2)
+	.buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:gemApatite> * 2, <ore:dustSmallApatite> * 2, <ore:dustSmallRedstone> * 2)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 72])
+	.outputs(tubeApatine * 1)
+	.duration(300)
+	.EUt(2)
+	.buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:gemApatite> * 5, <ore:dustRedstone> * 1)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 144])
+	.outputs(tubeApatine * 2)
+	.duration(450)
+	.EUt(2)
+	.buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:dustEndstone> * 2, <ore:dustSmallEndstone> * 2, <ore:dustEnderEye> * 1)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 72])
+	.outputs(tubeEnder * 1)
+	.duration(300)
+	.EUt(2)
+	.buildAndRegister();
+
+assembler.recipeBuilder()
+	.inputs(<ore:dustEndstone> * 5, <ore:dustEnderEye> * 2)
+	.fluidInputs([<liquid:glass> as ILiquidStack * 144])
+	.outputs(tubeEnder * 2)
+	.duration(450)
+	.EUt(2)
+	.buildAndRegister();
+
+// GT Style block crafting
 
 recipes.remove(blockApatite);
 

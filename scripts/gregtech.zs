@@ -105,7 +105,7 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-//compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
 
 recipes.addShaped(coal_ball, [
   [coal_dust, coal_dust, coal_dust],
@@ -837,11 +837,30 @@ recipes.addShapeless(<metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
 // Saw + Rubber Log -> 4 Planks
 recipes.addShaped(<minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
 
+cutting_saw.recipeBuilder()
+	.inputs(<gregtech:log> * 1)
+	.fluidInputs(<liquid:lubricant> * 1)
+	.outputs(<minecraft:planks:3> * 6, <ore:dustWood>.firstItem * 2)
+	.duration(200)
+	.EUt(8)
+	.buildAndRegister();
+
 // Cobble to Gravel Forge Hammer
 forge_hammer.recipeBuilder()		
 	.inputs(<ore:cobblestone> * 1)
 	.outputs(<ore:gravel>.firstItem * 1)
 	.duration(120)
 	.EUt(4)
-.buildAndRegister();
+	.buildAndRegister();
 
+//Fluid extractor recipe for nuts
+<ore:listAllnut>.add(<harvestcraft:hazelnutitem>);
+var pulpBiomass = <thermalfoundation:material:816>;
+
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:listAllnut> * 1)
+	.fluidOutputs(<liquid:seed.oil> * 65)
+	.chancedOutput(pulpBiomass * 1, 150)
+	.duration(80)
+	.EUt(8)
+	.buildAndRegister();
