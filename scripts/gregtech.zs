@@ -413,6 +413,14 @@ mixer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
+fluid_extractor.findRecipe(32, [<ore:blockConcrete>.firstItem * 1], null).remove();
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:blockConcrete> * 1)
+	.fluidOutputs([<liquid:concrete> * 144])
+	.duration(720)
+	.EUt(32)
+	.buildAndRegister();
+
 furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
 furnace.remove(<ore:ingotBlueAlloy>);
