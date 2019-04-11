@@ -483,14 +483,6 @@ forge_hammer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
   
-// Forge Hammer: Gravel -> Sand
-forge_hammer.recipeBuilder()
-	.inputs([<ore:gravel>])
-	.outputs(<minecraft:sand>)
-	.duration(115)
-	.EUt(4)
-	.buildAndRegister();
-
   
 // Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
 recipes.remove(<minecraft:paper> * 2);
@@ -844,14 +836,6 @@ cutting_saw.recipeBuilder()
 	.duration(200)
 	.EUt(8)
 	.buildAndRegister();
-
-// Cobble to Gravel Forge Hammer
-forge_hammer.recipeBuilder()		
-	.inputs(<ore:cobblestone> * 1)
-	.outputs(<ore:gravel>.firstItem * 1)
-	.duration(120)
-	.EUt(4)
-	.buildAndRegister();  
 
 //Fluid extractor recipe for nuts
 <ore:listAllnut>.add(<harvestcraft:hazelnutitem>); // Pyure: reminder, Agrax didn't invent this shitty oredict name.  Came from Pam's.
