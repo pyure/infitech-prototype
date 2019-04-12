@@ -105,7 +105,7 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-//compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
 
 recipes.addShaped(coal_ball, [
   [coal_dust, coal_dust, coal_dust],
@@ -413,6 +413,14 @@ mixer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
+fluid_extractor.findRecipe(32, [<ore:blockConcrete>.firstItem * 1], null).remove();
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:blockConcrete> * 1)
+	.fluidOutputs([<liquid:concrete> * 144])
+	.duration(720)
+	.EUt(32)
+	.buildAndRegister();
+
 furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
 furnace.remove(<ore:ingotBlueAlloy>);
@@ -483,84 +491,49 @@ forge_hammer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
   
-// Forge Hammer: Gravel -> Sand
-forge_hammer.recipeBuilder()
-	.inputs([<ore:gravel>])
-	.outputs(<minecraft:sand>)
-	.duration(115)
-	.EUt(4)
-	.buildAndRegister();
-
   
 // Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
 recipes.remove(<minecraft:paper> * 2);
 recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
 recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
 
+/* ************************* FOOD -> COMPOST **********************************/
 
-/* Custom food composting, in case we decide we hate the compost-all-things-via-zencessories */
-/*
-val custom_food_compost_map = {
-  <minecraft:bread> : 23,
-  <minecraft:cookie> : 23,
-  <minecraft:melon> : 23,
-  <minecraft:apple> : 45,
-  <minecraft:nether_wart> : 45,
-  <minecraft:brown_mushroom> : 45,
-  <minecraft:spider_eye> : 45,
-  <minecraft:potato> : 60,
-  <minecraft:pumpkin> : 90,
-  <minecraft:carrot> : 90,
-  <minecraft:cooked_beef> : 90,
-  <minecraft:cooked_fish> : 90,
-  <minecraft:cooked_chicken> : 90,
-  <minecraft:rotten_flesh> : 90,
-  <minecraft:cooked_porkchop> : 90,
-  <minecraft:cooked_rabbit> : 90,
-  <minecraft:cooked_mutton> : 90,
-  <minecraft:porkchop> : 90,
-  <minecraft:fish:0> : 120,
-  <minecraft:fish:1> : 120,
-  <minecraft:fish:2> : 120,
-  <minecraft:fish:3> : 120,
-  <minecraft:poisonous_potato> : 120,
-  <minecraft:chicken> : 120,
-  <minecraft:rabbit> : 120,
-  <minecraft:mutton> : 120,
-  <minecraft:beef> : 120,
-  <minecraft:cake> : 180
+// Custom entries. These override the automatic ones below. FYI: Items here do not need to qualify as "food". They'll still generate compost.
+val custom_compost_map = {
+ <harvestcraft:stockitem> : 20,
+ <integrateddynamics:menril_berries> : 70
 } as int[IItemStack];
 
-for itemstack, fluidAmount in custom_food_compost_map {
-  mixer.recipeBuilder()
-    .fluidInputs([<liquid:water> * fluidAmount])
-    .inputs([itemstack * 1])
-    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
-    .duration(265)
-    .EUt(8)
-    .buildAndRegister();
-}
-*/
-
-// Add compost for every food type.  ONLY WORKS WITH ZENCESSORIES which was not a valid curseforge mod at this time.
+// Automatically generated compost outputs for every food type.
 for mod in loadedMods {
-  for item in mod.items {
-    if (item.getSaturationModifier() + item.getHealAmount() > 0) {  /* Try itemStack.getItem() instanceof ItemFood */
-      print("\t\t" ~ item.displayName);      
-      
-      val food_value = 20 + (30 * (item.getSaturationModifier() + item.getHealAmount()));
-      
-      mixer.recipeBuilder()
-        .fluidInputs([<liquid:water> * food_value])
-        .inputs([item * 1])
-        .fluidOutputs([<liquid:liquid_compost> * food_value])
-        .duration(240)
-        .EUt(9)
-        .buildAndRegister();   
-    }          
-  }
+ for item in mod.items {
+   var food_value = 0; 
+
+   for itemstack, fluidamount in custom_compost_map {
+        if (itemstack.definition.name == item.definition.name) {
+         // If the item is in the custom entries above, use that provided value instead of automatically generating one.
+         print("\t\t CUST: " ~ item.displayName);    
+         food_value = fluidamount as int; // Even though the value is int, we need to typecast 
+      } else if (item.getSaturationModifier() + item.getHealAmount() > 0) {
+         print("\t\t AUTO: " ~ item.displayName); 
+         food_value = 20 + (30 * (item.getSaturationModifier() + item.getHealAmount()));      
+      }
+   }
+
+   if (food_value > 0) {
+     mixer.recipeBuilder()
+       .fluidInputs([<liquid:water> * food_value])
+       .inputs([item * 1])
+       .fluidOutputs([<liquid:liquid_compost> * food_value]) // pyure: switch back to compost
+       .duration(240)
+       .EUt(9)
+      .buildAndRegister(); 
+   }         
+ }
 }
 
+/* *****************************************************************************/
 
 // Add single-use batteries to appropriate oredicts
 <ore:batteryLVAll>.add(<metaitem:battery.su.lv.mercury>);
@@ -837,11 +810,22 @@ recipes.addShapeless(<metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
 // Saw + Rubber Log -> 4 Planks
 recipes.addShaped(<minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
 
-// Cobble to Gravel Forge Hammer
-forge_hammer.recipeBuilder()		
-	.inputs(<ore:cobblestone> * 1)
-	.outputs(<ore:gravel>.firstItem * 1)
-	.duration(120)
-	.EUt(4)
-.buildAndRegister();
+cutting_saw.recipeBuilder()
+	.inputs(<gregtech:log> * 1)
+	.fluidInputs(<liquid:lubricant> * 1)
+	.outputs(<minecraft:planks:3> * 6, <ore:dustWood>.firstItem * 2)
+	.duration(200)
+	.EUt(8)
+	.buildAndRegister();
 
+//Fluid extractor recipe for nuts
+<ore:listAllnut>.add(<harvestcraft:hazelnutitem>); // Pyure: reminder, Agrax didn't invent this shitty oredict name.  Came from Pam's.
+var pulpBiomass = <thermalfoundation:material:816>;
+
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:listAllnut> * 1)
+	.fluidOutputs(<liquid:seed.oil> * 65) /* Probably too much seed oil.  At least some of these nuts grow just like any other seeds */
+	.chancedOutput(pulpBiomass * 1, 150)
+	.duration(80)
+	.EUt(8)
+	.buildAndRegister();

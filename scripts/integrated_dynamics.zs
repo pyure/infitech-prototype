@@ -5,7 +5,7 @@ val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 var pulpedBiomass = <thermalfoundation:material:816>;
 // inputStack, inputFluid, outputStack, outputFluid, duration
 mods.integrateddynamics.DryingBasin.addRecipe(pulpedBiomass, null, <minecraft:dirt>, <liquid:methane> * 30, 620);
-mods.integrateddynamics.MechanicalDryingBasin.addRecipe(pulpedBiomass * 8, null, <minecraft:dirt>, <liquid:methane> * 240, 620);
+mods.integrateddynamics.MechanicalDryingBasin.addRecipe(pulpedBiomass * 1, null, <minecraft:dirt>, <liquid:methane> * 30, 70);
 
 
 // Drying Basin.  Possibly too harsh, if players need to use "Menril" early-game.

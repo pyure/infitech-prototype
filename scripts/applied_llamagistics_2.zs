@@ -158,7 +158,6 @@ var NetherQuartzBlock = <minecraft:quartz_block>;
 var NQuartzPlate = <ore:plateNetherQuartz>;
 var NQuartzRod = <ore:stickNetherQuartz>;
 var NQuartzScrew = <ore:boltNetherQuartz>;
-var ObsidianChest = <ironchest:iron_chest:6>;
 var Pattern = <appliedenergistics2:material:52>;
 var PatternTerminal = <appliedenergistics2:part:340>;
 var pistonSticky = <minecraft:sticky_piston>;
@@ -602,10 +601,11 @@ recipes.addShaped(DEnergyCell, [
 [EFlow, EngProc, EFlow],
 [EnergyCell, EVBatBuffer, EnergyCell]]);
 
+var bronzeChest = <gregtech:machine:802>;
 // --- ME Chest
 recipes.addShaped(MEChest, [
 [StainlessPlate, GoodCircuit, StainlessPlate],
-[FluixGlassCable, <ironchest:iron_chest:4>, FluixGlassCable],
+[FluixGlassCable, bronzeChest, FluixGlassCable],
 [StainlessPlate, GoodCircuit, StainlessPlate]]);
 
 // --- ME Drive

@@ -124,7 +124,7 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
-	.inputs(<ore:plateRedstone> * 9)
+	.inputs(<ore:dustRedstone> * 9)
 	.outputs(<minecraft:redstone_block>)
 	.duration(400).EUt(3)
 	.buildAndRegister();
