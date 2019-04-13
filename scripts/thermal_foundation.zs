@@ -8,6 +8,7 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
+val mixer as RecipeMap = RecipeMap.getByName("mixer");
 
 
 // These are covered by GT meta tools
@@ -692,3 +693,21 @@ recipes.remove(<thermalfoundation:bait:2>);
 
 // Rich Slag
 recipes.remove(<thermalfoundation:material:865>);
+
+// Clay recipe from regular slag
+var water_cell = <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "water", Amount: 1000}});
+var steel_water_cell = <gregtech:meta_item_1:32405>.withTag({Fluid: {FluidName: "water", Amount: 1000}});
+var tungstensteel_water_cell = <gregtech:meta_item_1:32406>.withTag({Fluid: {FluidName: "water", Amount: 1000}});
+
+recipes.addShapeless(<minecraft:clay_ball> * 4, [<ore:crystalSlag>, <ore:crystalSlag>, <minecraft:dirt>, water_cell]);
+recipes.addShapeless(<minecraft:clay_ball> * 4, [<ore:crystalSlag>, <ore:crystalSlag>, <minecraft:dirt>, steel_water_cell]);
+recipes.addShapeless(<minecraft:clay_ball> * 4, [<ore:crystalSlag>, <ore:crystalSlag>, <minecraft:dirt>, tungstensteel_water_cell]);
+
+// Mixer recipe for regular slag
+mixer.recipeBuilder()
+	.inputs(<ore:dirt> * 1, <ore:crystalSlag> * 2)
+  .fluidInputs([<liquid:water> * 1000])
+	.outputs(<minecraft:clay_ball> * 4)
+	.duration(45)
+	.EUt(2)
+	.buildAndRegister();
