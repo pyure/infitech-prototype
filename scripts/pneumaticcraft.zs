@@ -55,3 +55,32 @@ ingotCompressedIron.addAll(ingotIronCompressed);
 ingotIronCompressed.addAll(ingotCompressedIron);
 
 
+// Remove everything from refinery
+mods.pneumaticcraft.refinery.removeAllRecipes();
+
+// Add our oil recipes
+// Current setup is dumb.  Need to make 2-refineries and 3-refineries useful.
+//mods.pneumaticcraft.refinery.addRecipe(int minimumTemperature, ILiquidStack input, ILiquidStack[] outputs);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 7, <liquid:sulfuric_light_fuel> * 10, <liquid:sulfuric_naphtha> * 9, <liquid:sulfuric_gas> * 24]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 7, <liquid:sulfuric_light_fuel> * 10, <liquid:sulfuric_naphtha> * 9]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 7, <liquid:sulfuric_light_fuel> * 10]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25, <liquid:sulfuric_naphtha> * 6, <liquid:sulfuric_gas> * 6]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25, <liquid:sulfuric_naphtha> * 6]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 175, <liquid:sulfuric_light_fuel> * 22, <liquid:sulfuric_naphtha> * 4, <liquid:sulfuric_gas> * 60]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 175, <liquid:sulfuric_light_fuel> * 22, <liquid:sulfuric_naphtha> * 4]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 175, <liquid:sulfuric_light_fuel> * 22]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25, <liquid:sulfuric_naphtha> * 6, <liquid:sulfuric_gas> * 6]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25, <liquid:sulfuric_naphtha> * 6]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25]);
+
+// Remove everything from thermopneumaticprocessingplant
+mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
+
+// Add in some probably-dumb oil conversion recipes.  Note that the machine already used redstone to make silly conversions
+// mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(ILiquidStack liquidInput, IItemStack itemInput, double pressure, double temperature, ILiquidStack output);
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil_heavy> * 100, <minecraft:redstone>, 3.5, 473, <liquid:oil> * 70);
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil> * 100, <minecraft:redstone>, 3.0, 423, <liquid:oil_light> * 70);
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil_light> * 100, <minecraft:clay_ball>, 2.5, 373, <liquid:kerosene> * 70);
+
+
