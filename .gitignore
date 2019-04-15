@@ -39,7 +39,7 @@ minecraftinstance.json
 replay*.log
 config/betterfps.json
 config/splash.properties
-config/jei/worldSettings.cfg
+
 config/InvTweaks/InvTweaks.cfg
 config/MouseTweaks.cfg
 config/InvTweaks.cfg
@@ -56,6 +56,8 @@ config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
 config/agricraft/json/*
 config/jei/jei.cfg
+config/jei/bookmarks.ini
+config/jei/worldSettings.cfg
 config/NEI/client.cfg
 config/ftbutilities.cfg
 
