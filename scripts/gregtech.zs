@@ -24,7 +24,7 @@ val packer as RecipeMap = RecipeMap.getByName("packer");
 val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 val extruder as RecipeMap = RecipeMap.getByName("extruder");
 val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
-val lathe as RecipeMap = RecipeMap.getByName("lathe");
+val lathe as RecipeMap =
 
 var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
 
@@ -474,12 +474,12 @@ alloy_smelter.recipeBuilder()
 	.EUt(16)
 	.buildAndRegister();
 
-// Macerator: Gravel -> Flint
-macerator.recipeBuilder()
+// Forge Hammer: Gravel -> Flint
+forge_hammer.recipeBuilder()
 	.inputs([<minecraft:gravel> * 1])
 	.outputs(<minecraft:flint> * 1)
-	.duration(65)
-	.EUt(4)
+	.duration(45)
+	.EUt(5)
 	.buildAndRegister();
 
 
@@ -872,3 +872,26 @@ cpu,<ore:gemExquisiteSapphire>,<ore:stickSodalite>
 recipes.addShapeless(lapotron * 1, [
 cpu,<ore:gemExquisiteSapphire>,<ore:stickLazurite>
 ]);
+
+// Steel bullets
+var steel_bullet = <foundry:component:14>;
+var bullet_mold = <foundry:mold:16>;
+fluid_solidifier.recipeBuilder()
+	.notConsumable(bullet_mold)
+	.fluidInputs([<liquid:steel> * 36])
+	.outputs(steel_bullet * 1)
+	.duration(45)
+	.EUt(4)
+	.buildAndRegister();
+  
+// Steel pellets
+var steel_pellet = <foundry:component:15>;
+var pellet_mold = <foundry:mold:22>;
+fluid_solidifier.recipeBuilder()
+	.notConsumable(pellet_mold)
+	.fluidInputs([<liquid:steel> * 12])
+	.outputs(steel_pellet * 1)
+	.duration(35)
+	.EUt(4)
+	.buildAndRegister();
+

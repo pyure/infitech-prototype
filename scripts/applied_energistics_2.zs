@@ -8,6 +8,7 @@ import mods.appliedenergistics2.Inscriber;
 
 
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
+val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
 
 // --- Variables ---
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
@@ -1265,3 +1266,12 @@ macerator.recipeBuilder()
 	.duration(65)
 	.EUt(14)
 	.buildAndRegister();
+  
+// Charged Certus Quartz
+var charged_certus_quartz = <appliedenergistics2:material:1>;
+electrolyzer.recipeBuilder()
+	.inputs(<ore:gemCertusQuartz>)
+	.outputs(charged_certus_quartz)
+	.duration(520)
+  .EUt(82)
+	.buildAndRegister();  

@@ -23,7 +23,13 @@ var plateMold = <foundry:mold:1>;
 var gunBarrelMold = <foundry:mold:19>;
 var revolverDrumMold = <foundry:mold:20>;
 var revolverFrameMold = <foundry:mold:21>;
-
+var bullet_mold = <foundry:mold:16>;
+var hollow_point_mold = <foundry:mold:17>;
+var round_casing_mold = <foundry:mold:18>;
+var shell_casing_mold = <foundry:mold:23>;
+var pellet_mold = <foundry:mold:22>;
+var shotgun_pump_mold = <foundry:mold:24>;
+var shotgun_frame_mold = <foundry:mold:25>;
 
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
@@ -45,9 +51,35 @@ var gun_barrel = <foundry:component:3>;
 var revolver_drum = <foundry:component:4>;
 var revolver_frame = <foundry:component:5>;
 
+var shotgun_pump = <foundry:component:12>;
+var shotgun_frame = <foundry:component:13>;
+
+
+var bullet = <foundry:component:7>;
+var hollow_point_bullet = <foundry:component:8>;
+var jacketed_bullet = <foundry:component:9>;
+var round_casing = <foundry:component:6>;
+var shell_casing = <foundry:component:11>;
+var pellet = <foundry:component:10>;
+
+
+
+
 mods.foundry.Casting.addRecipe(gun_barrel, <liquid:compressed_wrought_iron> * 144, gunBarrelMold);
 mods.foundry.Casting.addRecipe(revolver_drum, <liquid:compressed_wrought_iron> * 144, revolverDrumMold);
 mods.foundry.Casting.addRecipe(revolver_frame, <liquid:compressed_wrought_iron> * 288, revolverFrameMold);
+
+mods.foundry.Casting.addRecipe(shotgun_pump, <liquid:compressed_wrought_iron> * 144, shotgun_pump_mold);
+mods.foundry.Casting.addRecipe(shotgun_frame, <liquid:compressed_wrought_iron> * 288, shotgun_frame_mold);
+
+mods.foundry.Casting.addRecipe(bullet, <liquid:lead> * 36, bullet_mold);
+mods.foundry.Casting.addRecipe(hollow_point_bullet, <liquid:lead> * 36, hollow_point_mold);
+mods.foundry.Casting.addRecipe(jacketed_bullet, <liquid:copper> * 12, bullet_mold, bullet);
+
+mods.foundry.Casting.addRecipe(round_casing, <liquid:brass> * 18, round_casing_mold);
+mods.foundry.Casting.addRecipe(shell_casing, <liquid:brass> * 36, shell_casing_mold);
+
+mods.foundry.Casting.addRecipe(pellet, <liquid:lead> * 12, pellet_mold);
 
 
 mods.foundry.MoldStation.addRecipe(pickaxeHeadMold, 6, 6, 
