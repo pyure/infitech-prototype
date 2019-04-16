@@ -24,7 +24,7 @@ val packer as RecipeMap = RecipeMap.getByName("packer");
 val thermal_centrifuge as RecipeMap = RecipeMap.getByName("thermal_centrifuge");
 val extruder as RecipeMap = RecipeMap.getByName("extruder");
 val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
-val lathe as RecipeMap =
+val lathe as RecipeMap = RecipeMap.getByName("lathe");
 
 var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
 
