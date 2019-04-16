@@ -25,11 +25,11 @@ var liquifier = <gendustry:liquifier>;
 var extractor = <gendustry:extractor>;
 var transposer = <gendustry:transposer>;
 var replicator = <gendustry:replicator>;
-var mutatron = <gendustry:mutatron>;
+var mutatron = <gendustry:mutatron_advanced>;
 var sampler = <gendustry:sampler>;
 
 //Recipes
-scripts.functions.disableItem(<gendustry:mutatron_advanced>);
+scripts.functions.disableItem(<gendustry:mutatron>);
 
 //recipes.remove(scooporator);
 recipes.addShaped(scooporator, [
