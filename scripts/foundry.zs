@@ -23,7 +23,8 @@ var plateMold = <foundry:mold:1>;
 var gunBarrelMold = <foundry:mold:19>;
 var revolverDrumMold = <foundry:mold:20>;
 var revolverFrameMold = <foundry:mold:21>;
-
+var bullet_mold = <foundry:mold:16>;
+var hollow_point_mold = <foundry:mold:17>;
 
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
@@ -45,10 +46,19 @@ var gun_barrel = <foundry:component:3>;
 var revolver_drum = <foundry:component:4>;
 var revolver_frame = <foundry:component:5>;
 
+
+var bullet = <foundry:component:7>;
+var hollow_point_bullet = <foundry:component:8>;
+var jacketed_bullet = <foundry:component:9>;
+//var steel_bullet = <foundry:component:14>;
+
 mods.foundry.Casting.addRecipe(gun_barrel, <liquid:compressed_wrought_iron> * 144, gunBarrelMold);
 mods.foundry.Casting.addRecipe(revolver_drum, <liquid:compressed_wrought_iron> * 144, revolverDrumMold);
 mods.foundry.Casting.addRecipe(revolver_frame, <liquid:compressed_wrought_iron> * 288, revolverFrameMold);
 
+mods.foundry.Casting.addRecipe(bullet, <liquid:lead> * 36, bullet_mold);
+mods.foundry.Casting.addRecipe(hollow_point_bullet, <liquid:lead> * 36, hollow_point_mold);
+mods.foundry.Casting.addRecipe(jacketed_bullet, <liquid:copper> * 12, bullet_mold, bullet);
 
 mods.foundry.MoldStation.addRecipe(pickaxeHeadMold, 6, 6, 
 [

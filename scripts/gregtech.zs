@@ -829,3 +829,14 @@ fluid_extractor.recipeBuilder()
 	.duration(80)
 	.EUt(8)
 	.buildAndRegister();
+
+// Steel bullets
+var steel_bullet = <foundry:component:14>;
+var bullet_mold = <foundry:mold:16>;
+fluid_solidifier.recipeBuilder()
+	.notConsumable(bullet_mold)
+	.fluidInputs([<liquid:steel> * 36])
+	.outputs(steel_bullet * 1)
+	.duration(45)
+	.EUt(4)
+	.buildAndRegister();
