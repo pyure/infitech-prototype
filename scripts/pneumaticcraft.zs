@@ -83,4 +83,7 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil_heavy> 
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil> * 100, <minecraft:redstone>, 3.0, 423, <liquid:oil_light> * 70);
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil_light> * 100, <minecraft:clay_ball>, 2.5, 373, <liquid:kerosene> * 70);
 
-
+// Heat Frame Cooling: Pulped Biomass -> Slime Ball
+var pulped_biomass = <thermalfoundation:material:816>;
+var slime_ball = <minecraft:slime_ball>;
+mods.pneumaticcraft.heatframecooling.addRecipe(pulped_biomass *4, slime_ball);
