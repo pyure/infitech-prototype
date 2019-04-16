@@ -829,3 +829,46 @@ fluid_extractor.recipeBuilder()
 	.duration(80)
 	.EUt(8)
 	.buildAndRegister();
+
+var lapotron = <metaitem:lapotron_crystal>;
+var lapis = <ore:plateLapis>;
+var sod = <ore:plateSodalite>;
+var laz = <ore:plateLazurite>;
+var cpu = <metaitem:plate.nano_central_processing_unit>;
+
+recipes.addShaped(lapotron * 1, [
+[lapis,<ore:circuitAdvanced>,lapis],
+[lapis,<ore:gemFlawlessSapphire>,lapis],
+[lapis,<ore:circuitAdvanced>,lapis]]);
+
+recipes.addShaped(lapotron * 1, [
+[sod,<ore:circuitAdvanced>,sod],
+[sod,<ore:gemFlawlessSapphire>,sod],
+[sod,<ore:circuitAdvanced>,sod]]);
+
+recipes.addShaped(lapotron * 1, [
+[sod,<ore:circuitAdvanced>,sod],
+[sod,<metaitem:energy_crystal>,sod],
+[sod,<ore:circuitAdvanced>,sod]]);
+
+recipes.addShaped(lapotron * 1, [
+[laz,<ore:circuitAdvanced>,laz],
+[laz,<ore:gemFlawlessSapphire>,laz],
+[laz,<ore:circuitAdvanced>,laz]]);
+
+recipes.addShaped(lapotron * 1, [
+[laz,<ore:circuitAdvanced>,laz],
+[laz,<metaitem:energy_crystal>,laz],
+[laz,<ore:circuitAdvanced>,laz]]);
+
+recipes.addShapeless(lapotron * 1, [
+cpu,<ore:gemExquisiteSapphire>,<ore:stickLapis>
+]);
+
+recipes.addShapeless(lapotron * 1, [
+cpu,<ore:gemExquisiteSapphire>,<ore:stickSodalite>
+]);
+
+recipes.addShapeless(lapotron * 1, [
+cpu,<ore:gemExquisiteSapphire>,<ore:stickLazurite>
+]);
