@@ -840,3 +840,14 @@ fluid_solidifier.recipeBuilder()
 	.duration(45)
 	.EUt(4)
 	.buildAndRegister();
+  
+// Steel pellets
+var steel_pellet = <foundry:component:15>;
+var pellet_mold = <foundry:mold:22>;
+fluid_solidifier.recipeBuilder()
+	.notConsumable(pellet_mold)
+	.fluidInputs([<liquid:steel> * 12])
+	.outputs(steel_pellet * 1)
+	.duration(35)
+	.EUt(4)
+	.buildAndRegister();
