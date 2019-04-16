@@ -474,12 +474,12 @@ alloy_smelter.recipeBuilder()
 	.EUt(16)
 	.buildAndRegister();
 
-// Macerator: Gravel -> Flint
-macerator.recipeBuilder()
+// Forge Hammer: Gravel -> Flint
+forge_hammer.recipeBuilder()
 	.inputs([<minecraft:gravel> * 1])
 	.outputs(<minecraft:flint> * 1)
-	.duration(65)
-	.EUt(4)
+	.duration(45)
+	.EUt(5)
 	.buildAndRegister();
 
 
