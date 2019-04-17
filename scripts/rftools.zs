@@ -527,7 +527,7 @@ assembler.recipeBuilder()
 
 recipes.remove(redstoneReceiver);
 recipes.addShaped(redstoneReceiver, [
-	[null, mvEmitter, null],
+	[null, mvSensor, null],
 	[null, redstoneWire, null],
 	[null, o_enderPearl, null]]);
 recipes.addShapeless(redstoneReceiver, [redstoneReceiver]);
