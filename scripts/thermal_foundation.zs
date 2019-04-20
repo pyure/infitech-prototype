@@ -711,3 +711,8 @@ mixer.recipeBuilder()
 	.duration(45)
 	.EUt(2)
 	.buildAndRegister();
+
+// Slag -> Dirt.  Archengius really wants this.  I don't care enough to refuse it.
+var pulpedBiomass = <thermalfoundation:material:816>;
+recipes.removeByRecipeName("thermalfoundation:block_dirt");
+recipes.addShapeless("it3_thermalfoundation_block_dirt", <minecraft:dirt> * 3, [pulpedBiomass, pulpedBiomass, <ore:crystalSlag>, <ore:crystalSlag>]);
