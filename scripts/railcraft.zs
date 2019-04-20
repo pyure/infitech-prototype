@@ -15,8 +15,9 @@ scripts.functions.disableItem(metal_roller);
 scripts.functions.disableItem(powered_metal_roller);
 
 # Aliases
-
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+
 var backpackApothecary = <railcraft:backpack_apothecary_t1>;
 var backpackApothecaryT2 = <railcraft:backpack_apothecary_t1>;
 var backpackIceman = <railcraft:backpack_iceman_t1>;
@@ -199,3 +200,29 @@ blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_valve:*> * 1).outputs
 	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
 blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_wall:*> * 1).outputs(<ore:nuggetSteel>.firstItem * 4)
 	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
+
+// Greg the Iron Tank recipes
+recipes.removeByRecipeName("railcraft:tank_iron_wall#0$2");
+recipes.addShaped(<railcraft:tank_iron_wall> * 4, [
+  [<ore:plateIron>, <ore:plateIron>, craftingToolWrenchEmptyTag], 
+  [<ore:plateIron>, <ore:plateIron>, craftingToolHardHammerEmptyTag], 
+  [null, null, null]]);
+
+recipes.removeByRecipeName("railcraft:tank_steel_wall#0$2");
+recipes.addShaped(<railcraft:tank_steel_wall> * 4, [
+  [<ore:plateSteel>, <ore:plateSteel>, craftingToolWrenchEmptyTag], 
+  [<ore:plateSteel>, <ore:plateSteel>, craftingToolHardHammerEmptyTag], 
+  [null, null, null]]);
+  
+recipes.removeByRecipeName("railcraft:tank_iron_valve#0$2");
+recipes.addShapeless(<railcraft:tank_iron_valve>, [<railcraft:tank_iron_wall>, <minecraft:lever>, <minecraft:iron_bars>]);
+
+recipes.removeByRecipeName("railcraft:tank_steel_valve#0$2");
+recipes.addShapeless(<railcraft:tank_steel_valve>, [<railcraft:tank_steel_wall>, <minecraft:lever>, <minecraft:iron_bars>]);
+
+recipes.removeByRecipeName("railcraft:tank_iron_gauge#0$2");
+recipes.addShaped(<railcraft:tank_iron_gauge>, [[<ore:paneGlass>, <railcraft:tank_iron_wall>, <ore:paneGlass>],[null, null, null],[null, null, null]]);
+
+recipes.removeByRecipeName("railcraft:tank_steel_gauge#0$2");
+recipes.addShaped(<railcraft:tank_steel_gauge>, [[<ore:paneGlass>, <railcraft:tank_steel_wall>, <ore:paneGlass>],[null, null, null],[null, null, null]]);
+
