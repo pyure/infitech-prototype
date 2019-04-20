@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 
 var pulpedBiomass = <thermalfoundation:material:816>;
 // inputStack, inputFluid, outputStack, outputFluid, duration
@@ -44,3 +45,11 @@ fluid_extractor.recipeBuilder()
   
 
 
+// Menril Blocks, GT Way
+fluid_solidifier.recipeBuilder()
+	.notConsumable(<metaitem:shape.mold.block>)
+	.fluidInputs([<liquid:menrilresin> * 1000])
+	.outputs(<integrateddynamics:crystalized_menril_block> * 1)
+	.duration(85)
+	.EUt(4)
+	.buildAndRegister();
