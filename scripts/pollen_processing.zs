@@ -23,8 +23,8 @@ var pNickel = <ore:pollenNickel>;
 var pIron = <ore:pollenIron>;
 var pIridium = <ore:pollenIridium>;
 
-val pollenIn = 4;
-val oreOut = 2;
+val pollenIn = 7;
+val oreOut = 3;
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
 
 
