@@ -61,14 +61,14 @@ oreStickQuartz.addAll(<ore:stickCertusQuartz>);
 
 // Wood Pipes
 recipes.remove(pipeWood);
-recipes.addShaped(pipeWood * 6, [
+recipes.addShaped("it3_buildcraft_pipe_wood", pipeWood * 6, [
   [stickWood, craftingToolHammer, stickWood],
   [stickWood, <minecraft:glass>, stickWood],
   [stickWood, craftingToolSaw, stickWood]]);
 
 // Cobblestone Pipes
 recipes.remove(pipeCobblestone);
-recipes.addShaped(pipeCobblestone * 6,[
+recipes.addShaped("it3_buildcraft_pipe_cobble", pipeCobblestone * 6,[
   [stickCobblestone, craftingToolHammer, stickCobblestone],
   [stickCobblestone, <minecraft:glass>, stickCobblestone],
   [stickCobblestone, craftingToolSaw, stickCobblestone]]);
@@ -84,7 +84,7 @@ assembler.recipeBuilder()
 
 // Stone Pipes
 recipes.remove(pipeStone);
-recipes.addShaped(pipeStone * 6,[
+recipes.addShaped("it3_buildcraft_pipe_stone", pipeStone * 6,[
   [stickStone, craftingToolHammer, stickStone],
   [stickStone, <minecraft:glass>, stickStone],
   [stickStone, craftingToolSaw, stickStone]]);
@@ -101,7 +101,7 @@ assembler.recipeBuilder()
 
 // Quartz Pipes
 recipes.remove(pipeQuartz);
-recipes.addShaped(pipeQuartz * 6,[
+recipes.addShaped("it3_buildcraft_pipe_quartz", pipeQuartz * 6,[
   [oreStickQuartz, craftingToolHammer, oreStickQuartz],
   [oreStickQuartz, <minecraft:glass>, oreStickQuartz],
   [oreStickQuartz, craftingToolSaw, oreStickQuartz]]);
@@ -128,7 +128,7 @@ assembler.recipeBuilder()
 
 // Gold Pipes
 recipes.remove(pipeGold);
-recipes.addShaped(pipeGold * 6,[
+recipes.addShaped("it3_buildcraft_pipe_gold", pipeGold * 6,[
   [<ore:stickGold>, craftingToolHammer, <ore:stickGold>],
   [<ore:stickGold>, <minecraft:glass>, <ore:stickGold>],
   [<ore:stickGold>, craftingToolSaw, <ore:stickGold>]]);

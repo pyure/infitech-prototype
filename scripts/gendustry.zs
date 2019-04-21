@@ -32,85 +32,85 @@ var sampler = <gendustry:sampler>;
 scripts.functions.disableItem(<gendustry:mutatron>);
 
 //recipes.remove(scooporator);
-recipes.addShaped(scooporator, [
+recipes.addShaped("it3_gendustry_scooporator", scooporator, [
 [null, null, scoop.noReturn()],
 [null, <minecraft:diamond>, null],
 [modulePower, null, null]]);
 
 //recipes.remove(frameUpgrade);
-recipes.addShaped(frameUpgrade, [
+recipes.addShaped("it3_gendustry_frame_upgrade", frameUpgrade, [
 [ingotAluminium, ingotGold, ingotAluminium],
 [blockRedstone, frameCobalt, blockRedstone],
 [ingotAluminium, ingotGold, ingotAluminium]]);
 
 //recipes.remove(modulePower);
-recipes.addShaped(modulePower, [
+recipes.addShaped("it3_gendustry_module_power", modulePower, [
 [gearAluminium, ingotGold, gearAluminium],
 [circuitBasic, blockRedstone, circuitBasic],
 [gearAluminium, ingotGold, gearAluminium]]);
 
 //recipes.remove(tankMutagen);
-recipes.addShaped(tankMutagen, [
+recipes.addShaped("it3_gendustry_tank_mutagen", tankMutagen, [
 [plateAluminium,glassPane, plateAluminium],
 [plateAluminium,glassPane, plateAluminium],
 [plateAluminium,glassPane, plateAluminium]]);
 
 //recipes.remove(beeReceptacle);	
-recipes.addShaped(beeReceptacle, [
+recipes.addShaped("it3_gendustry_bee_receptacle", beeReceptacle, [
 [ingotAluminium, ingotAluminium, ingotAluminium],
 [ingotAluminium, glassPane, ingotAluminium],
 [blockRedstone, pressurePlateLightWeighted, blockRedstone]]);
 
 //recipes.remove(mutagenProducer);
-recipes.addShaped(mutagenProducer, [
+recipes.addShaped("it3_gendustry_mut_producer", mutagenProducer, [
 [plateAluminium, pipeSmallBronze, plateAluminium],
 [modulePower, hullMachineHV, modulePower],
 [gearAluminium, tankMutagen, gearAluminium]]);
 
 //recipes.remove(apiaryIndustrial);	
-recipes.addShaped(apiaryIndustrial, [
+recipes.addShaped("it3_gendustry_indust_apiary", apiaryIndustrial, [
 [swarmer, processorGenetics, swarmer],
 [modulePower, hullMachineHV, modulePower],
 [gearAluminium, beeReceptacle, gearAluminium]]);
 	
 //recipes.remove(imprinter);
-recipes.addShaped(imprinter, [
+recipes.addShaped("it3_gendustry_imprinter", imprinter, [
 [gearAluminium, processorGenetics, gearAluminium],
 [beeReceptacle, hullMachineHV, beeReceptacle],
 [gearAluminium, modulePower, gearAluminium]]);
 	
 //recipes.remove(liquifier);
-recipes.addShaped(liquifier, [
+recipes.addShaped("it3_gendustry_liquifier", liquifier, [
 [gearAluminium, tankMutagen, gearAluminium],
 [ingotAluminium, hullMachineHV, gearAluminium],
 [gearAluminium, modulePower, gearAluminium]]);
 	
 //recipes.remove(extractor);
-recipes.addShaped(extractor, [
+recipes.addShaped("it3_gendustry_extractor", extractor, [
 [gearAluminium, tankMutagen, gearAluminium],
 [processorGenetics, hullMachineHV, processorGenetics],
 [gearAluminium, modulePower, gearAluminium]]);
 	
 //recipes.remove(transposer);
-recipes.addShaped(transposer, [
+recipes.addShaped("it3_gendustry_transposer", transposer, [
 [pipeSmallBronze, tankMutagen, pipeSmallBronze],
 [processorGenetics, hullMachineHV, processorGenetics],
 [gearAluminium, modulePower, gearAluminium]]);
 	
 //recipes.remove(replicator);
-recipes.addShaped(replicator, [
+recipes.addShaped("it3_gendustry_replicator", replicator, [
 [gearAluminium, processorGenetics, gearAluminium],
 [modulePower, hullMachineHV, modulePower],
 [gearAluminium, processorGenetics, gearAluminium]]);
 	
 //recipes.remove(mutatron);
-recipes.addShaped(mutatron, [
+recipes.addShaped("it3_gendustry_mutatron", mutatron, [
 [beeReceptacle, processorGenetics, gearAluminium],
 [modulePower, hullMachineHV, beeReceptacle],
 [beeReceptacle, tankMutagen, gearAluminium]]);
 
 //recipes.remove(sampler);
-recipes.addShaped(sampler, [
+recipes.addShaped("it3_gendustry_sampler", sampler, [
 [gearAluminium, processorGenetics, gearAluminium],
 [beeReceptacle, hullMachineHV, <minecraft:diamond>],
 [gearAluminium, tankMutagen, gearAluminium]]);

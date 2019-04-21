@@ -655,22 +655,22 @@ var biomassCapsule = <forestry:capsule:1>.withTag({Fluid: {FluidName: "biomass",
 var royalJelly = <ore:dropRoyalJelly>;
 var combIrradiated = <forestry:bee_combs:9>;
 
-recipes.addShaped(mutagenCatalyst.firstItem, [
+recipes.addShaped("it3_forestry_mutagen_cat", mutagenCatalyst.firstItem, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustUranium>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
 
-recipes.addShaped(mutagenCatalyst.firstItem * 4, [
+recipes.addShaped("it3_forestry_mutagen_cat2", mutagenCatalyst.firstItem * 4, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustUranium235>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
 
-recipes.addShaped(mutagenCatalyst.firstItem * 5, [
+recipes.addShaped("it3_forestry_mutagen_cat3", mutagenCatalyst.firstItem * 5, [
   [royalJelly, royalJelly, royalJelly],
   [royalJelly, <ore:dustPlutonium>, royalJelly],
   [royalJelly, royalJelly, royalJelly]]);
 
-recipes.addShaped(<ore:combMutagen>.firstItem, [
+recipes.addShaped("it3_forestry_mutagen_comb", <ore:combMutagen>.firstItem, [
   [mutagenCatalyst, mutagenCatalyst, mutagenCatalyst],
   [mutagenCatalyst, biomassCapsule, mutagenCatalyst],
   [mutagenCatalyst, mutagenCatalyst, mutagenCatalyst]]);

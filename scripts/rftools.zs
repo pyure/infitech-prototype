@@ -228,7 +228,7 @@ var o_skull = <ore:itemSkull>;
 //
 
 recipes.remove(smartWrench);
-recipes.addShaped(smartWrench, [[null, craftingToolWrenchEmptyTag], [o_lapis, null]]);
+recipes.addShaped("it3_rft_smart_wrench", smartWrench, [[null, craftingToolWrenchEmptyTag], [o_lapis, null]]);
 
 recipes.remove(dimensionalShard);
 chemical_reactor.recipeBuilder()
@@ -258,18 +258,18 @@ chemical_reactor.recipeBuilder()
 	.buildAndRegister();	
 
 recipes.remove(syringe);
-recipes.addShaped(syringe, [
+recipes.addShaped("it3_rft_syringe", syringe, [
 	[o_smallSteelPipe, null, null],
 	[null, o_smallSteelPipe, null],
 	[null, null, o_bottle]]);
 
 recipes.remove(machineFrame);
-recipes.addShaped(machineFrame, [
+recipes.addShaped("it3_rft_machine_frame", machineFrame, [
 	[o_plateWroughtIron, o_plateGold, o_plateWroughtIron],
 	[mvWire, lvMachineCasing, mvWire]]);
 
 recipes.remove(machineBase);
-recipes.addShaped(machineBase, [
+recipes.addShaped("it3_rft_machine_base", machineBase, [
 	[o_plateWroughtIron, craftingToolHardHammerEmptyTag, o_plateWroughtIron],
 	[slabStone, slabStone, slabStone]]);
 
@@ -278,17 +278,17 @@ scripts.functions.disableItem(coalGenerator);
 recipes.remove(crafter1);
 recipes.remove(crafter2);
 recipes.remove(crafter3);
-recipes.addShaped(crafter1, [
+recipes.addShaped("it3_rft_crafter1", crafter1, [
 	[mvRobotArm, craftingTable, mvMotor],
 	[o_goodCircuit, machineFrame, o_goodCircuit],
 	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
   
-recipes.addShaped(crafter2, [
+recipes.addShaped("it3_rft_crafter2", crafter2, [
 	[mvRobotArm, craftingTable, mvMotor],
 	[o_goodCircuit, crafter1, o_goodCircuit],
 	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
   
-recipes.addShaped(crafter3, [
+recipes.addShaped("it3_rft_crafter3", crafter3, [
 	[mvRobotArm, craftingTable, mvMotor],
 	[o_goodCircuit, crafter2, o_goodCircuit],
 	[<ore:plateAluminium>, craftingTable, <ore:plateAluminium>]]);
@@ -303,34 +303,34 @@ recipes.remove(simpleDialingDevice);
 recipes.remove(destinationAnalyzer);
 recipes.remove(matterBooster);
 
-recipes.addShaped(matterReceiver, [
+recipes.addShaped("it3_rft_matter_receiver", matterReceiver, [
 	[o_plateNaquadahAlloy, evFieldGenerator, o_plateNaquadahAlloy],
 	[evSensor, machineFrame, evSensor],
 	[o_eliteCircuit, evEmitter, o_eliteCircuit]]);
-recipes.addShaped(matterTransmitter, [
+recipes.addShaped("it3_rft_matter_transmitter", matterTransmitter, [
 	[o_plateNaquadahAlloy, evFieldGenerator, o_plateNaquadahAlloy],
 	[evEmitter, machineFrame, evEmitter],
 	[o_eliteCircuit, evSensor, o_eliteCircuit]]);
-recipes.addShaped(chargedPorter, [
+recipes.addShaped("it3_rft_charged_porter", chargedPorter, [
 	[o_plateNaquadahAlloy, o_lapotron, o_plateNaquadahAlloy],
 	[evFieldGenerator, infusedDiamond, evFieldGenerator],
 	[ivSensor, o_lapotron, ivEmitter]]);
-recipes.addShaped(advChargedPorter, [
+recipes.addShaped("it3_rft_adv_charged_porter", advChargedPorter, [
 	[o_masterCircuit, lapotronOrb, o_masterCircuit],
 	[ivFieldGenerator, chargedPorter, ivFieldGenerator],
 	[o_masterCircuit, lapotronOrb, o_masterCircuit]]);
-recipes.addShaped(dialingDevice, [
+recipes.addShaped("it3_rft_dialing_device", dialingDevice, [
 	[o_plateTitanium, evEmitter, o_plateTitanium],
 	[evSensor, machineFrame, evSensor],
 	[o_plateTitanium, o_masterCircuit, o_plateTitanium]]);
-recipes.addShaped(simpleDialingDevice, [
+recipes.addShaped("it3_rft_simple_dialing_device", simpleDialingDevice, [
 	[o_plateTitanium, evEmitter, o_plateTitanium],
 	[comparator, machineBase, o_eliteCircuit]]);
-recipes.addShaped(destinationAnalyzer, [
+recipes.addShaped("it3_rft_dest_analyzer", destinationAnalyzer, [
 	[o_plateTitanium, o_eliteCircuit, o_plateTitanium],
 	[o_eliteCircuit, machineFrame, o_eliteCircuit],
 	[o_plateTitanium, evSensor, o_plateTitanium]]);
-recipes.addShaped(matterBooster, [
+recipes.addShaped("it3_rft_matter_booster", matterBooster, [
 	[o_plateTitanium, ivFieldGenerator, o_plateTitanium],
 	[ivEmitter, machineFrame, ivEmitter],
 	[o_plateTitanium, lapotronOrb, o_plateTitanium]]);
@@ -341,30 +341,30 @@ recipes.remove(mediumCell);
 recipes.remove(advCell);
 recipes.remove(cellCard);
 
-recipes.addShaped(simpleCell, [
+recipes.addShaped("it3_rft_simple_cell", simpleCell, [
 	[o_redstoneBlock, batterySodiumLV, o_redstoneBlock],
 	[o_netherQuartz, machineFrame, o_netherQuartz],
 	[o_redstoneBlock, diamond, o_redstoneBlock]]);
-recipes.addShaped(mediumCell, [
+recipes.addShaped("it3_rft_med_cell", mediumCell, [
 	[o_redstone, batterySodiumMV, o_redstone],
 	[o_prismarine, simpleCell, o_prismarine],
 	[o_redstone, emerald, o_redstone]]);
-recipes.addShaped(mediumCell, [
+recipes.addShaped("it3_rft_med_cell2", mediumCell, [
 	[o_redstoneBlock, batterySodiumMV, o_redstoneBlock],
 	[o_prismarine, machineFrame, o_prismarine],
 	[o_redstoneBlock, emerald, o_redstoneBlock]]);
-recipes.addShaped(advCell, [
+recipes.addShaped("it3_rft_adv_cell", advCell, [
 	[o_redstoneBlock, batterySodiumHV, o_redstoneBlock],
 	[infusedDiamond, mediumCell, infusedDiamond],
 	[o_redstoneBlock, infusedDiamond, o_redstoneBlock]]);
-recipes.addShaped(cellCard, [
+recipes.addShaped("it3_rft_cell_card", cellCard, [
 	[o_quartzite, o_rodBrass, o_quartzite],
 	[o_rodBrass, o_basicCircuit, o_rodBrass],
 	[o_quartzite, o_rodBrass, o_quartzite]]);
 
 
 recipes.remove(elevator);
-recipes.addShaped(elevator, [
+recipes.addShaped("it3_rft_elevator", elevator, [
 	[o_ironGear, o_basicCircuit, o_ironGear],
 	[lvMotor, machineFrame, lvMotor],
 	[o_ironGear, o_basicCircuit, o_ironGear]]);
@@ -373,11 +373,11 @@ recipes.addShaped(elevator, [
 recipes.remove(environmentalController);
 recipes.remove(booster);
 
-recipes.addShaped(environmentalController, [
+recipes.addShaped("it3_rft_env_controller", environmentalController, [
 	[evEmitter, evFieldGenerator, evEmitter],
 	[infusedDiamond, machineFrame, infusedDiamond],
 	[o_plateTitanium, o_plateTitanium, o_plateTitanium]]);
-recipes.addShaped(booster, [
+recipes.addShaped("it3_rft_booster", booster, [
 	[lvEmitter, emeraldLens, lvEmitter],
 	[dimensionalShard, machineFrame, dimensionalShard],
 	[o_plateStainlessSteel, o_plateStainlessSteel, o_plateStainlessSteel]]);
@@ -405,116 +405,116 @@ recipes.remove(ecGlowing);
 recipes.remove(ecLuck);
 recipes.remove(ecNoTeleport);
 
-recipes.addShaped(ecRegeneration, [
+recipes.addShaped("it3_rft_ec_regeneration", ecRegeneration, [
 	[null, n_syringeIronGolem.giveBack(syringe), null],
 	[n_splashRegen.giveBack(<minecraft:glass_bottle>), o_plateGold, n_splashRegen.giveBack(<minecraft:glass_bottle>)],
 	[null, o_goodCircuit, null]]);
-recipes.addShaped(ecRegeneration3, [
+recipes.addShaped("it3_rft_ec_regen2", ecRegeneration3, [
 	[n_syringePolarBear.giveBack(syringe), n_syringeIronGolem.giveBack(syringe), n_syringePolarBear.giveBack(syringe)],
 	[n_splashRegen2.giveBack(<minecraft:glass_bottle>), ecRegeneration, n_splashRegen2.giveBack(<minecraft:glass_bottle>)],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecSpeed, [
+recipes.addShaped("it3_rft_ec_speed", ecSpeed, [
 	[null, n_syringeHorse.giveBack(syringe), null],
 	[n_splashSpeed.giveBack(<minecraft:glass_bottle>), o_plateGold, n_splashSpeed.giveBack(<minecraft:glass_bottle>)],
 	[null, o_goodCircuit, null]]);
-recipes.addShaped(ecSpeed3, [
+recipes.addShaped("it3_rft_ec_speed2", ecSpeed3, [
 	[n_syringeZombieHorse.giveBack(syringe), n_syringeHorse.giveBack(syringe), n_syringeZombieHorse.giveBack(syringe)],
 	[n_splashSpeed2.giveBack(<minecraft:glass_bottle>), ecSpeed, n_splashSpeed2.giveBack(<minecraft:glass_bottle>)],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecHaste, [
+recipes.addShaped("it3_rft_ec_haste", ecHaste, [
 	[null, n_goldPickaxeEff3, null],
 	[n_enchantedBookEff1, o_plateGold, n_enchantedBookEff1],
 	[null, o_goodCircuit, null]]);
-recipes.addShaped(ecHaste3, [
+recipes.addShaped("it3_rft_ec_haste2", ecHaste3, [
 	[n_syringeRabbit.giveBack(syringe), n_goldPickaxeEff5, n_syringeRabbit.giveBack(syringe)],
 	[n_enchantedBookEff3, ecHaste, n_enchantedBookEff3],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecSaturation, [
+recipes.addShaped("it3_rft_ec_sat", ecSaturation, [
 	[null, n_syringeZombie.giveBack(syringe), null],
 	[o_pizza, o_plateGold, o_pizza],
 	[null, o_goodCircuit, null]]);
-recipes.addShaped(ecSaturation3, [
+recipes.addShaped("it3_rft_ec_sat2", ecSaturation3, [
 	[n_syringeAngryZombie.giveBack(syringe), n_syringeZombie.giveBack(syringe), n_syringeAngryZombie.giveBack(syringe)],
 	[o_meatFeastPizza, ecSaturation, o_meatFeastPizza],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecFeatherFalling, [
+recipes.addShaped("it3_rft_feather_fall", ecFeatherFalling, [
 	[null, n_syringeChicken.giveBack(syringe), null],
 	[n_enchantedBookFF1, o_plateGold, n_enchantedBookFF1],
 	[null, o_goodCircuit, null]]);
-recipes.addShaped(ecFeatherFallingPlus, [
+recipes.addShaped("it3_rft_feath_fall_plus", ecFeatherFallingPlus, [
 	[n_syringeBat.giveBack(syringe), n_syringeChicken.giveBack(syringe), n_syringeBat.giveBack(syringe)],
 	[n_enchantedBookFF4, ecFeatherFalling, n_enchantedBookFF4],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecFlight, [
+recipes.addShaped("it3_rft_flight", ecFlight, [
 	[n_syringeBat.giveBack(syringe), n_syringeGhast.giveBack(syringe), n_syringeParrot.giveBack(syringe)],
 	[dragonBreath, o_plateGold, dragonBreath],
 	[n_syringeWasp.giveBack(syringe), o_eliteCircuit, n_syringeButterfly.giveBack(syringe)]]);
-recipes.addShaped(peaceEssence, [
+recipes.addShaped("it3_rft_peace", peaceEssence, [
 	[n_syringeIronGolem.giveBack(syringe), n_syringeSnowman.giveBack(syringe), n_syringeMooshroom.giveBack(syringe)],
 	[n_syringeWolf.giveBack(syringe), infusedDiamond, n_syringeOcelot.giveBack(syringe)],
 	[n_syringeDonkey.giveBack(syringe), n_syringeGuardian.giveBack(syringe), n_syringeBat.giveBack(syringe)]]);
-recipes.addShaped(ecPeaceful, [
+recipes.addShaped("it3_rft_peaceful", ecPeaceful, [
 	[null, peaceEssence, null],
 	[o_skull, o_plateGold, o_skull],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecWaterBreathing, [
+recipes.addShaped("it3_rft_water_breath", ecWaterBreathing, [
 	[null, n_syringeGuardian.giveBack(syringe), null],
 	[n_splashWaterBreathing.giveBack(<minecraft:glass_bottle>), o_plateGold, n_splashWaterBreathing.giveBack(<minecraft:glass_bottle>)],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecNightVision, [
+recipes.addShaped("it3_rft_night_vis", ecNightVision, [
 	[null, n_syringeWitch.giveBack(syringe), null],
 	[n_splashNightVision.giveBack(<minecraft:glass_bottle>), o_plateGold, n_splashNightVision.giveBack(<minecraft:glass_bottle>)],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecBlindness, [
+recipes.addShaped("it3_rft_blindness", ecBlindness, [
 	[null, n_syringeSquid.giveBack(syringe), null],
 	[n_splashNausea.giveBack(<minecraft:glass_bottle>), o_plateObsidian, n_splashNausea.giveBack(<minecraft:glass_bottle>)],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecWeakness, [
+recipes.addShaped("it3_rft_weak", ecWeakness, [
 	[null, n_syringeBat.giveBack(syringe), null],
 	[n_splashWeakness.giveBack(<minecraft:glass_bottle>), o_plateObsidian, n_splashWeakness.giveBack(<minecraft:glass_bottle>)],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecPoison, [
+recipes.addShaped("it3_rft_poison", ecPoison, [
 	[null, n_syringeCaveSpider.giveBack(syringe), null],
 	[n_splashPoison.giveBack(<minecraft:glass_bottle>), o_plateObsidian, n_splashPoison.giveBack(<minecraft:glass_bottle>)],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecSlowness, [
+recipes.addShaped("it3_rft_slow", ecSlowness, [
 	[null, n_syringeSlime.giveBack(syringe), null],
 	[n_splashSlowness.giveBack(<minecraft:glass_bottle>), o_plateObsidian, n_splashNightVision.giveBack(<minecraft:glass_bottle>)],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecGlowing, [
+recipes.addShaped("it3_rft_glow", ecGlowing, [
 	[spectralArrow, n_syringeBlaze, spectralArrow],
 	[spectralArrow, o_plateGold, spectralArrow],
 	[spectralArrow, o_goodCircuit, spectralArrow]]);
-recipes.addShaped(ecLuck, [
+recipes.addShaped("it3_rft_luck", ecLuck, [
 	[null, n_syringeShulker, null],
 	[n_enchantedBookLotS2, o_plateGold, n_enchantedBookLotS2],
 	[null, o_advCircuit, null]]);
-recipes.addShaped(ecNoTeleport, [
+recipes.addShaped("it3_rft_no_teleport", ecNoTeleport, [
 	[n_syringeEnderman, n_syringeEndermite, n_syringeEnderman],
 	[cobweb, o_plateObsidian, cobweb],
 	[null, o_advCircuit, null]]);
 
 recipes.remove(networkMonitor);
-recipes.addShaped(networkMonitor, [
+recipes.addShaped("it3_rft_network_mon", networkMonitor, [
 	[o_plateIron, lvSensor, o_plateIron],
 	[o_plateIron, o_redstone, o_plateIron],
 	[o_plateIron, o_plateIron, o_plateIron]]);
 
 recipes.remove(rfMonitor);
-recipes.addShaped(rfMonitor, [
+recipes.addShaped("it3_rft_rf_mon", rfMonitor, [
 	[null, lvSensor, null],
 	[o_redstone, machineFrame, o_redstone],
 	[null, o_basicCircuit, null]]);
 
 recipes.remove(liquidMonitor);
-recipes.addShaped(liquidMonitor, [
+recipes.addShaped("it3_rft_liquid_mon", liquidMonitor, [
 	[null, lvSensor, null],
 	[o_bucket, machineFrame, o_bucket],
 	[null, o_basicCircuit, null]]);
 
 
 recipes.remove(redstoneWire);
-recipes.addShaped(redstoneWire * 4, [
+recipes.addShaped("it3_rft_redstone_wire", redstoneWire * 4, [
 	[null, craftingToolHardHammerEmptyTag, null],
 	[o_redstone, o_redstone, o_redstone],
 	[slabStone, slabStone, slabStone]]);
@@ -526,75 +526,75 @@ assembler.recipeBuilder()
 	.buildAndRegister();
 
 recipes.remove(redstoneReceiver);
-recipes.addShaped(redstoneReceiver, [
+recipes.addShaped("it3_rft_redstone_receiver", redstoneReceiver, [
 	[null, mvSensor, null],
 	[null, redstoneWire, null],
 	[null, o_enderPearl, null]]);
-recipes.addShapeless(redstoneReceiver, [redstoneReceiver]);
+recipes.addShapeless("it3_rft_redstone_receiver2", redstoneReceiver, [redstoneReceiver]);
 
 recipes.remove(redstoneTransmitter);
-recipes.addShaped(redstoneTransmitter, [
+recipes.addShaped("it3_rft_redstone_transmitter", redstoneTransmitter, [
 	[null, mvEmitter, null],
 	[null, redstoneWire, null],
 	[null, o_enderPearl, null]]);
-recipes.addShapeless(redstoneTransmitter, [redstoneTransmitter]);
+recipes.addShapeless("it3_rft_redstone_transmitter2", redstoneTransmitter, [redstoneTransmitter]);
 
 recipes.remove(redstoneCounter);
-recipes.addShaped(redstoneCounter, [
+recipes.addShaped("it3_rft_rs_counter", redstoneCounter, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstone, null]]);
 
 recipes.remove(redstoneTimer);
-recipes.addShaped(redstoneTimer, [
+recipes.addShaped("it3_rft_rs_timer", redstoneTimer, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_goldNugget, null]]);
 
 recipes.remove(redstoneLogic);
-recipes.addShaped(redstoneLogic, [
+recipes.addShaped("it3_rft_rs_logic", redstoneLogic, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_anyQuartz, null]]);
 
 recipes.remove(redstoneSequencer);
-recipes.addShaped(redstoneSequencer, [
+recipes.addShaped("it3_rft_rs_sequencer", redstoneSequencer, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, o_redstoneTorch, null]]);
 
 recipes.remove(redstoneSensor);
-recipes.addShaped(redstoneSensor, [
+recipes.addShaped("it3_rft_rs_sensor", redstoneSensor, [
 	[null, lvSensor, null],
 	[null, redstoneWire, null],
 	[null, o_basicCircuit, null]]);
 
 recipes.remove(redstoneInvChecker);
-recipes.addShaped(redstoneInvChecker, [
+recipes.addShaped("it3_rft_inv_checker", redstoneInvChecker, [
 	[null, <ore:circuitPrimitive>, null],
 	[null, redstoneWire, null],
 	[null, comparator, null]]);
 
 recipes.remove(modularStorage);
-recipes.addShaped(modularStorage, [
+recipes.addShaped("it3_rft_mod_storage", modularStorage, [
 	[plateAluminium, chest, plateAluminium], 
 	[netherQuartz, machineFrame, netherQuartz], 
 	[plateAluminium, circuitAdvanced, plateAluminium]]);
 
 recipes.remove(remoteStorage);
-recipes.addShaped(remoteStorage, [
+recipes.addShaped("it3_rft_remote_storage", remoteStorage, [
 	[plateEnderium, enderChest, plateEnderium], 
 	[netherQuartz, machineFrame, netherQuartz], 
 	[plateEnderium, circuitData, plateEnderium]]);
 
 recipes.remove(levelEmitter);
-recipes.addShaped(levelEmitter, [
+recipes.addShaped("it3_rft_level_emitter", levelEmitter, [
 	[null, enderPearl, null],
 	[null, redstoneWire, null],
 	[null, comparator, null]]);
 
 recipes.remove(screen);
-recipes.addShaped(screen, [
+recipes.addShaped("it3_rft_screen", screen, [
 	[plateGlass, plateGlass, plateGlass],
 	[plateIron, machineBase, plateIron],
 	[circuitBasic, plateIron, circuitBasic]]);

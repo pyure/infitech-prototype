@@ -103,68 +103,68 @@ recipes.remove(<forestry:bronze_shovel>);
 
 // Gears
 recipes.remove(<forestry:gear_bronze>);
-recipes.addShaped(<ore:gearBronze>.firstItem, [
+recipes.addShaped("it3_forestry_gear_bronze", <ore:gearBronze>.firstItem, [
  [<ore:stickBronze>, <ore:plateBronze>, <ore:stickBronze>], 
  [<ore:plateBronze>, craftingToolScrewdriverEmptyTag, <ore:plateBronze>], 
  [<ore:stickBronze>, <ore:plateBronze>, <ore:stickBronze>]]);
 
 recipes.remove(<forestry:gear_copper>);
-recipes.addShaped(<ore:gearCopper>.firstItem, [
+recipes.addShaped("it3_forestry_gear_copper", <ore:gearCopper>.firstItem, [
  [<ore:stickCopper>, <ore:plateCopper>, <ore:stickCopper>], 
  [<ore:plateCopper>, craftingToolScrewdriverEmptyTag, <ore:plateCopper>], 
  [<ore:stickCopper>, <ore:plateCopper>, <ore:stickCopper>]]);
   
 recipes.remove(<forestry:gear_tin>);
-recipes.addShaped(<ore:gearTin>.firstItem, [
+recipes.addShaped("it3_forestry_gear_tin", <ore:gearTin>.firstItem, [
  [<ore:stickTin>, <ore:plateTin>, <ore:stickTin>], 
  [<ore:plateTin>, craftingToolScrewdriverEmptyTag, <ore:plateTin>], 
  [<ore:stickTin>, <ore:plateTin>, <ore:stickTin>]]);  
 
 //MACHINES
 recipes.remove(engineBiogas);
-recipes.addShaped(engineBiogas, [
+recipes.addShaped("it3_forestry_biogas_engine", engineBiogas, [
 	[plateBronze, plateBronze, plateBronze],
 	[craftingToolHardHammerEmptyTag, blockGlass, craftingToolWrenchEmptyTag],
 	[gearBronze, frameBronze, gearBronze]]);
 
 recipes.remove(engineClock);
-recipes.addShaped(engineClock, [
+recipes.addShaped("it3_forestry_clockwork", engineClock, [
 	[plateCopper, plateCopper, plateCopper],
 	[craftingToolHardHammerEmptyTag, <ore:stickLongBronze>, craftingToolWrenchEmptyTag],
 	[gearCopper, frameIron, gearCopper]]);
 
 recipes.remove(enginePeat);
-recipes.addShaped(enginePeat, [
+recipes.addShaped("it3_forestry_peat_eng", enginePeat, [
 	[plateCopper, plateCopper, plateCopper],
 	[craftingToolHardHammerEmptyTag, blockGlass, craftingToolWrenchEmptyTag],
 	[gearCopper, frameIron, gearCopper]]);
 
 recipes.remove(carpenter);
-recipes.addShaped(carpenter, [
+recipes.addShaped("it3_forestry_carpenter", carpenter, [
 	[plateCopper, gtBronzeTank, plateCopper],
 	[gearGtSmallSteel, sturdyCasing, gearGtSmallSteel],
 	[plateCopper, gearGtSmallSteel, plateCopper]]);
 
 recipes.remove(fermenter);
-recipes.addShaped(fermenter, [
+recipes.addShaped("it3_forestry_fermenter", fermenter, [
 	[plateCopper, tinRotor, plateCopper],
 	[gtBronzeTank, sturdyCasing, gtBronzeTank],
 	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
 
 recipes.remove(moistener);
-recipes.addShaped(moistener, [
+recipes.addShaped("it3_forestry_moistener", moistener, [
 	[plateCopper, gtBronzeTank, plateCopper],
 	[tinRotor, sturdyCasing, tinRotor],
 	[gearGtSmallSteel, electricMotorLV, gearGtSmallSteel]]);
 
 recipes.remove(rainMaker);
-recipes.addShaped(rainMaker, [
+recipes.addShaped("it3_forestry_rainmaker", rainMaker, [
 	[plateCupronickel, sensorMV, plateCupronickel],
 	[electricPistonMV, hardenedCasing, electricPistonMV],
 	[gearGtSmallAluminium, emitterMV, gearGtSmallAluminium]]);
 
 recipes.remove(rainTank);
-recipes.addShaped(rainTank, [
+recipes.addShaped("it3_forestry_raintank", rainTank, [
 	[plateIron, ringIron, plateIron],
 	[plateIron, craftingToolHardHammerEmptyTag, plateIron],
 	[plateIron, cauldron, plateIron]]);
@@ -173,7 +173,7 @@ recipes.remove(thermionicFabricator);
 mods.forestry.Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtBronzeTank, steelScrew],[gaCoil, sturdyCasing, gaCoil],[steelScrew, electricMotorLV, steelScrew]], 300, moltenRedstone * 1008, worktable);
 
 recipes.remove(sturdyCasing);
-recipes.addShaped(sturdyCasing, [
+recipes.addShaped("it3_forestry_sturdy_casing", sturdyCasing, [
 	[plateBronze, steelScrew, plateBronze],
 	[steelScrew, steelCasing, steelScrew],
 	[plateBronze, steelScrew, plateBronze]]);
@@ -321,7 +321,7 @@ recipes.removeByRecipeName("forestry:bronze_ingot");
 var woodPile = <forestry:wood_pile>;
 
 recipes.remove(woodPile);
-recipes.addShapeless(woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
+recipes.addShapeless("it3_forestry_woodpile", woodPile, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]);
 
 //Charcoal pile
 
@@ -447,131 +447,131 @@ recipes.removeByRecipeName("forestry:honey_melon");
 
 // Forestry 4 Planks -> 2 Planks
 recipes.removeShapeless(<forestry:planks.1:12> * 4, [<forestry:logs.7>]);
-recipes.addShapeless(<forestry:planks.1:12> * 2, [<forestry:logs.7>]);
+recipes.addShapeless("it3_forestry_planks", <forestry:planks.1:12> * 2, [<forestry:logs.7>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:4> * 4, [<forestry:logs.fireproof.5>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:4> * 2, [<forestry:logs.fireproof.5>]);
+recipes.addShapeless("it3_forestry_planks1", <forestry:planks.fireproof.1:4> * 2, [<forestry:logs.fireproof.5>]);
 recipes.removeShapeless(<forestry:planks.0:3> * 4, [<forestry:logs.0:3>]);
-recipes.addShapeless(<forestry:planks.0:3> * 2, [<forestry:logs.0:3>]);
+recipes.addShapeless("it3_forestry_planks2", <forestry:planks.0:3> * 2, [<forestry:logs.0:3>]);
 recipes.removeShapeless(<forestry:planks.0:13> * 4, [<forestry:logs.3:1>]);
-recipes.addShapeless(<forestry:planks.0:13> * 2, [<forestry:logs.3:1>]);
+recipes.addShapeless("it3_forestry_planks3", <forestry:planks.0:13> * 2, [<forestry:logs.3:1>]);
 recipes.removeShapeless(<forestry:planks.0:2> * 4, [<forestry:logs.0:2>]);
-recipes.addShapeless(<forestry:planks.0:2> * 2, [<forestry:logs.0:2>]);
+recipes.addShapeless("it3_forestry_planks4", <forestry:planks.0:2> * 2, [<forestry:logs.0:2>]);
 recipes.removeShapeless(<forestry:planks.0:5> * 4, [<forestry:logs.1:1>]);
-recipes.addShapeless(<forestry:planks.0:5> * 2, [<forestry:logs.1:1>]);
+recipes.addShapeless("it3_forestry_planks5", <forestry:planks.0:5> * 2, [<forestry:logs.1:1>]);
 recipes.removeShapeless(<forestry:planks.0:9> * 4, [<forestry:logs.2:1>]);
-recipes.addShapeless(<forestry:planks.0:9> * 2, [<forestry:logs.2:1>]);
+recipes.addShapeless("it3_forestry_planks6", <forestry:planks.0:9> * 2, [<forestry:logs.2:1>]);
 recipes.removeShapeless(<forestry:planks.vanilla.fireproof.0:4> * 4, [<forestry:logs.vanilla.fireproof.1>]);
-recipes.addShapeless(<forestry:planks.vanilla.fireproof.0:4> * 2, [<forestry:logs.vanilla.fireproof.1>]);
+recipes.addShapeless("it3_forestry_planks7", <forestry:planks.vanilla.fireproof.0:4> * 2, [<forestry:logs.vanilla.fireproof.1>]);
 recipes.removeShapeless(<forestry:planks.vanilla.fireproof.0:2> * 4, [<forestry:logs.vanilla.fireproof.0:2>]);
-recipes.addShapeless(<forestry:planks.vanilla.fireproof.0:2> * 2, [<forestry:logs.vanilla.fireproof.0:2>]);
+recipes.addShapeless("it3_forestry_planks8", <forestry:planks.vanilla.fireproof.0:2> * 2, [<forestry:logs.vanilla.fireproof.0:2>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:10> * 4, [<forestry:logs.fireproof.2:2>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:10> * 2, [<forestry:logs.fireproof.2:2>]);
+recipes.addShapeless("it3_forestry_planks9", <forestry:planks.fireproof.0:10> * 2, [<forestry:logs.fireproof.2:2>]);
 recipes.removeShapeless(<forestry:planks.1:9> * 4, [<forestry:logs.6:1>]);
-recipes.addShapeless(<forestry:planks.1:9> * 2, [<forestry:logs.6:1>]);
+recipes.addShapeless("it3_forestry_planks10", <forestry:planks.1:9> * 2, [<forestry:logs.6:1>]);
 recipes.removeShapeless(<forestry:planks.0:8> * 4, [<forestry:logs.2>]);
-recipes.addShapeless(<forestry:planks.0:8> * 2, [<forestry:logs.2>]);
+recipes.addShapeless("it3_forestry_planks11", <forestry:planks.0:8> * 2, [<forestry:logs.2>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:6> * 4, [<forestry:logs.fireproof.1:2>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:6> * 2, [<forestry:logs.fireproof.1:2>]);
+recipes.addShapeless("it3_forestry_planks12", <forestry:planks.fireproof.0:6> * 2, [<forestry:logs.fireproof.1:2>]);
 recipes.removeShapeless(<forestry:planks.0:6> * 4, [<forestry:logs.1:2>]);
-recipes.addShapeless(<forestry:planks.0:6> * 2, [<forestry:logs.1:2>]);
+recipes.addShapeless("it3_forestry_planks13", <forestry:planks.0:6> * 2, [<forestry:logs.1:2>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:12> * 4, [<forestry:logs.fireproof.3>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:12> * 2, [<forestry:logs.fireproof.3>]);
+recipes.addShapeless("it3_forestry_planks14", <forestry:planks.fireproof.0:12> * 2, [<forestry:logs.fireproof.3>]);
 recipes.removeShapeless(<forestry:planks.1:7> * 4, [<forestry:logs.5:3>]);
-recipes.addShapeless(<forestry:planks.1:7> * 2, [<forestry:logs.5:3>]);
+recipes.addShapeless("it3_forestry_planks15", <forestry:planks.1:7> * 2, [<forestry:logs.5:3>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:2> * 4, [<forestry:logs.fireproof.4:2>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:2> * 2, [<forestry:logs.fireproof.4:2>]);
+recipes.addShapeless("it3_forestry_planks16", <forestry:planks.fireproof.1:2> * 2, [<forestry:logs.fireproof.4:2>]);
 recipes.removeShapeless(<forestry:planks.0:1> * 4, [<forestry:logs.0:1>]);
-recipes.addShapeless(<forestry:planks.0:1> * 2, [<forestry:logs.0:1>]);
+recipes.addShapeless("it3_forestry_planks17", <forestry:planks.0:1> * 2, [<forestry:logs.0:1>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0> * 4, [<forestry:logs.fireproof.0>]);
-recipes.addShapeless(<forestry:planks.fireproof.0> * 2, [<forestry:logs.fireproof.0>]);
+recipes.addShapeless("it3_forestry_planks18", <forestry:planks.fireproof.0> * 2, [<forestry:logs.fireproof.0>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:11> * 4, [<forestry:logs.fireproof.2:3>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:11> * 2, [<forestry:logs.fireproof.2:3>]);
+recipes.addShapeless("it3_forestry_planks19", <forestry:planks.fireproof.0:11> * 2, [<forestry:logs.fireproof.2:3>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:1> * 4, [<forestry:logs.fireproof.4:1>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:1> * 2, [<forestry:logs.fireproof.4:1>]);
+recipes.addShapeless("it3_forestry_planks20", <forestry:planks.fireproof.1:1> * 2, [<forestry:logs.fireproof.4:1>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:11> * 4, [<forestry:logs.fireproof.6:3>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:11> * 2, [<forestry:logs.fireproof.6:3>]);
+recipes.addShapeless("it3_forestry_planks21", <forestry:planks.fireproof.1:11> * 2, [<forestry:logs.fireproof.6:3>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:14> * 4, [<forestry:logs.fireproof.3:2>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:14> * 2, [<forestry:logs.fireproof.3:2>]);
+recipes.addShapeless("it3_forestry_planks22", <forestry:planks.fireproof.0:14> * 2, [<forestry:logs.fireproof.3:2>]);
 recipes.removeShapeless(<forestry:planks.vanilla.fireproof.0:5> * 4, [<forestry:logs.vanilla.fireproof.1:1>]);
-recipes.addShapeless(<forestry:planks.vanilla.fireproof.0:5> * 2, [<forestry:logs.vanilla.fireproof.1:1>]);
+recipes.addShapeless("it3_forestry_planks23", <forestry:planks.vanilla.fireproof.0:5> * 2, [<forestry:logs.vanilla.fireproof.1:1>]);
 recipes.removeShapeless(<forestry:planks.0:14> * 4, [<forestry:logs.3:2>]);
-recipes.addShapeless(<forestry:planks.0:14> * 2, [<forestry:logs.3:2>]);
+recipes.addShapeless("it3_forestry_planks24", <forestry:planks.0:14> * 2, [<forestry:logs.3:2>]);
 recipes.removeShapeless(<forestry:planks.0:4> * 4, [<forestry:logs.1>]);
-recipes.addShapeless(<forestry:planks.0:4> * 2, [<forestry:logs.1>]);
+recipes.addShapeless("it3_forestry_planks25", <forestry:planks.0:4> * 2, [<forestry:logs.1>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:7> * 4, [<forestry:logs.fireproof.1:3>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:7> * 2, [<forestry:logs.fireproof.1:3>]);
+recipes.addShapeless("it3_forestry_planks26", <forestry:planks.fireproof.0:7> * 2, [<forestry:logs.fireproof.1:3>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:10> * 4, [<forestry:logs.fireproof.6:2>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:10> * 2, [<forestry:logs.fireproof.6:2>]);
+recipes.addShapeless("it3_forestry_planks27", <forestry:planks.fireproof.1:10> * 2, [<forestry:logs.fireproof.6:2>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:12> * 4, [<forestry:logs.fireproof.7>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:12> * 2, [<forestry:logs.fireproof.7>]);
+recipes.addShapeless("it3_forestry_planks28", <forestry:planks.fireproof.1:12> * 2, [<forestry:logs.fireproof.7>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:6> * 4, [<forestry:logs.fireproof.5:2>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:6> * 2, [<forestry:logs.fireproof.5:2>]);
+recipes.addShapeless("it3_forestry_planks29", <forestry:planks.fireproof.1:6> * 2, [<forestry:logs.fireproof.5:2>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:3> * 4, [<forestry:logs.fireproof.4:3>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:3> * 2, [<forestry:logs.fireproof.4:3>]);
+recipes.addShapeless("it3_forestry_planks30", <forestry:planks.fireproof.1:3> * 2, [<forestry:logs.fireproof.4:3>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:8> * 4, [<forestry:logs.fireproof.6>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:8> * 2, [<forestry:logs.fireproof.6>]);
+recipes.addShapeless("it3_forestry_planks31", <forestry:planks.fireproof.1:8> * 2, [<forestry:logs.fireproof.6>]);
 recipes.removeShapeless(<forestry:planks.vanilla.fireproof.0:1> * 4, [<forestry:logs.vanilla.fireproof.0:1>]);
-recipes.addShapeless(<forestry:planks.vanilla.fireproof.0:1> * 2, [<forestry:logs.vanilla.fireproof.0:1>]);
+recipes.addShapeless("it3_forestry_planks32", <forestry:planks.vanilla.fireproof.0:1> * 2, [<forestry:logs.vanilla.fireproof.0:1>]);
 recipes.removeShapeless(<forestry:planks.0:10> * 4, [<forestry:logs.2:2>]);
-recipes.addShapeless(<forestry:planks.0:10> * 2, [<forestry:logs.2:2>]);
+recipes.addShapeless("it3_forestry_planks33", <forestry:planks.0:10> * 2, [<forestry:logs.2:2>]);
 recipes.removeShapeless(<forestry:planks.1:6> * 4, [<forestry:logs.5:2>]);
-recipes.addShapeless(<forestry:planks.1:6> * 2, [<forestry:logs.5:2>]);
+recipes.addShapeless("it3_forestry_planks34", <forestry:planks.1:6> * 2, [<forestry:logs.5:2>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:1> * 4, [<forestry:logs.fireproof.0:1>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:1> * 2, [<forestry:logs.fireproof.0:1>]);
+recipes.addShapeless("it3_forestry_planks35", <forestry:planks.fireproof.0:1> * 2, [<forestry:logs.fireproof.0:1>]);
 recipes.removeShapeless(<forestry:planks.1:2> * 4, [<forestry:logs.4:2>]);
-recipes.addShapeless(<forestry:planks.1:2> * 2, [<forestry:logs.4:2>]);
+recipes.addShapeless("it3_forestry_planks36", <forestry:planks.1:2> * 2, [<forestry:logs.4:2>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:8> * 4, [<forestry:logs.fireproof.2>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:8> * 2, [<forestry:logs.fireproof.2>]);
+recipes.addShapeless("it3_forestry_planks37", <forestry:planks.fireproof.0:8> * 2, [<forestry:logs.fireproof.2>]);
 recipes.removeShapeless(<forestry:planks.1:10> * 4, [<forestry:logs.6:2>]);
-recipes.addShapeless(<forestry:planks.1:10> * 2, [<forestry:logs.6:2>]);
+recipes.addShapeless("it3_forestry_planks38", <forestry:planks.1:10> * 2, [<forestry:logs.6:2>]);
 recipes.removeShapeless(<forestry:planks.0:15> * 4, [<forestry:logs.3:3>]);
-recipes.addShapeless(<forestry:planks.0:15> * 2, [<forestry:logs.3:3>]);
+recipes.addShapeless("it3_forestry_planks39", <forestry:planks.0:15> * 2, [<forestry:logs.3:3>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:3> * 4, [<forestry:logs.fireproof.0:3>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:3> * 2, [<forestry:logs.fireproof.0:3>]);
+recipes.addShapeless("it3_forestry_planks40", <forestry:planks.fireproof.0:3> * 2, [<forestry:logs.fireproof.0:3>]);
 recipes.removeShapeless(<forestry:planks.1:4> * 4, [<forestry:logs.5>]);
-recipes.addShapeless(<forestry:planks.1:4> * 2, [<forestry:logs.5>]);
+recipes.addShapeless("it3_forestry_planks41", <forestry:planks.1:4> * 2, [<forestry:logs.5>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1> * 4, [<forestry:logs.fireproof.4>]);
-recipes.addShapeless(<forestry:planks.fireproof.1> * 2, [<forestry:logs.fireproof.4>]);
+recipes.addShapeless("it3_forestry_planks42", <forestry:planks.fireproof.1> * 2, [<forestry:logs.fireproof.4>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:9> * 4, [<forestry:logs.fireproof.6:1>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:9> * 2, [<forestry:logs.fireproof.6:1>]);
+recipes.addShapeless("it3_forestry_planks43", <forestry:planks.fireproof.1:9> * 2, [<forestry:logs.fireproof.6:1>]);
 recipes.removeShapeless(<forestry:planks.vanilla.fireproof.0:3> * 4, [<forestry:logs.vanilla.fireproof.0:3>]);
-recipes.addShapeless(<forestry:planks.vanilla.fireproof.0:3> * 2, [<forestry:logs.vanilla.fireproof.0:3>]);
+recipes.addShapeless("it3_forestry_planks44", <forestry:planks.vanilla.fireproof.0:3> * 2, [<forestry:logs.vanilla.fireproof.0:3>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:4> * 4, [<forestry:logs.fireproof.1>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:4> * 2, [<forestry:logs.fireproof.1>]);
+recipes.addShapeless("it3_forestry_planks45", <forestry:planks.fireproof.0:4> * 2, [<forestry:logs.fireproof.1>]);
 recipes.removeShapeless(<forestry:planks.1:8> * 4, [<forestry:logs.6>]);
-recipes.addShapeless(<forestry:planks.1:8> * 2, [<forestry:logs.6>]);
+recipes.addShapeless("it3_forestry_planks46", <forestry:planks.1:8> * 2, [<forestry:logs.6>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:15> * 4, [<forestry:logs.fireproof.3:3>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:15> * 2, [<forestry:logs.fireproof.3:3>]);
+recipes.addShapeless("it3_forestry_planks47", <forestry:planks.fireproof.0:15> * 2, [<forestry:logs.fireproof.3:3>]);
 recipes.removeShapeless(<forestry:planks.1:5> * 4, [<forestry:logs.5:1>]);
-recipes.addShapeless(<forestry:planks.1:5> * 2, [<forestry:logs.5:1>]);
+recipes.addShapeless("it3_forestry_planks48", <forestry:planks.1:5> * 2, [<forestry:logs.5:1>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:13> * 4, [<forestry:logs.fireproof.3:1>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:13> * 2, [<forestry:logs.fireproof.3:1>]);
+recipes.addShapeless("it3_forestry_planks49", <forestry:planks.fireproof.0:13> * 2, [<forestry:logs.fireproof.3:1>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:5> * 4, [<forestry:logs.fireproof.1:1>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:5> * 2, [<forestry:logs.fireproof.1:1>]);
+recipes.addShapeless("it3_forestry_planks50", <forestry:planks.fireproof.0:5> * 2, [<forestry:logs.fireproof.1:1>]);
 recipes.removeShapeless(<forestry:planks.fireproof.0:9> * 4, [<forestry:logs.fireproof.2:1>]);
-recipes.addShapeless(<forestry:planks.fireproof.0:9> * 2, [<forestry:logs.fireproof.2:1>]);
+recipes.addShapeless("it3_forestry_planks51", <forestry:planks.fireproof.0:9> * 2, [<forestry:logs.fireproof.2:1>]);
 recipes.removeShapeless(<forestry:planks.vanilla.fireproof.0> * 4, [<forestry:logs.vanilla.fireproof.0>]);
-recipes.addShapeless(<forestry:planks.vanilla.fireproof.0> * 2, [<forestry:logs.vanilla.fireproof.0>]);
+recipes.addShapeless("it3_forestry_planks52", <forestry:planks.vanilla.fireproof.0> * 2, [<forestry:logs.vanilla.fireproof.0>]);
 recipes.removeShapeless(<forestry:planks.1:1> * 4, [<forestry:logs.4:1>]);
-recipes.addShapeless(<forestry:planks.1:1> * 2, [<forestry:logs.4:1>]);
+recipes.addShapeless("it3_forestry_planks53", <forestry:planks.1:1> * 2, [<forestry:logs.4:1>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:5> * 4, [<forestry:logs.fireproof.5:1>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:5> * 2, [<forestry:logs.fireproof.5:1>]);
+recipes.addShapeless("it3_forestry_planks54", <forestry:planks.fireproof.1:5> * 2, [<forestry:logs.fireproof.5:1>]);
 recipes.removeShapeless(<forestry:planks.fireproof.1:7> * 4, [<forestry:logs.fireproof.5:3>]);
-recipes.addShapeless(<forestry:planks.fireproof.1:7> * 2, [<forestry:logs.fireproof.5:3>]);
+recipes.addShapeless("it3_forestry_planks55", <forestry:planks.fireproof.1:7> * 2, [<forestry:logs.fireproof.5:3>]);
 recipes.removeShapeless(<forestry:planks.0:12> * 4, [<forestry:logs.3>]);
-recipes.addShapeless(<forestry:planks.0:12> * 2, [<forestry:logs.3>]);
+recipes.addShapeless("it3_forestry_planks56", <forestry:planks.0:12> * 2, [<forestry:logs.3>]);
 recipes.removeShapeless(<forestry:planks.0> * 4, [<forestry:logs.0>]);
-recipes.addShapeless(<forestry:planks.0> * 2, [<forestry:logs.0>]);
+recipes.addShapeless("it3_forestry_planks57", <forestry:planks.0> * 2, [<forestry:logs.0>]);
 recipes.removeShapeless(<forestry:planks.0:11> * 4, [<forestry:logs.2:3>]);
-recipes.addShapeless(<forestry:planks.0:11> * 2, [<forestry:logs.2:3>]);
+recipes.addShapeless("it3_forestry_planks58", <forestry:planks.0:11> * 2, [<forestry:logs.2:3>]);
 recipes.removeShapeless(<forestry:planks.1> * 4, [<forestry:logs.4>]);
-recipes.addShapeless(<forestry:planks.1> * 2, [<forestry:logs.4>]);
+recipes.addShapeless("it3_forestry_planks59", <forestry:planks.1> * 2, [<forestry:logs.4>]);
 recipes.removeShapeless(<forestry:planks.0:7> * 4, [<forestry:logs.1:3>]);
-recipes.addShapeless(<forestry:planks.0:7> * 2, [<forestry:logs.1:3>]);
+recipes.addShapeless("it3_forestry_planks60", <forestry:planks.0:7> * 2, [<forestry:logs.1:3>]);
 recipes.removeShapeless(<forestry:planks.1:11> * 4, [<forestry:logs.6:3>]);
-recipes.addShapeless(<forestry:planks.1:11> * 2, [<forestry:logs.6:3>]);
+recipes.addShapeless("it3_forestry_planks61", <forestry:planks.1:11> * 2, [<forestry:logs.6:3>]);
 recipes.removeShapeless(<forestry:planks.1:3> * 4, [<forestry:logs.4:3>]);
-recipes.addShapeless(<forestry:planks.1:3> * 2, [<forestry:logs.4:3>]);
+recipes.addShapeless("it3_forestry_planks62", <forestry:planks.1:3> * 2, [<forestry:logs.4:3>]);
 
 // Allow automation of Wood piles
 // Requested by user.  Deprecated by any auto-crafting mechanism

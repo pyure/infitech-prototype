@@ -3,10 +3,10 @@ import crafttweaker.item.IItemDefinition;
 import mods.gregtech.recipe.RecipeMap;
 
 recipes.remove(<libvulpes:structuremachine> * 16);
-recipes.addShaped(<libvulpes:structuremachine> * 2, [[<ore:rodIron>, <ore:plateIron>, <ore:rodIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:rodIron>, <ore:plateIron>, <ore:rodIron>]]);
+recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, [[<ore:rodIron>, <ore:plateIron>, <ore:rodIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:rodIron>, <ore:plateIron>, <ore:rodIron>]]);
 
 recipes.remove(<libvulpes:advstructuremachine> * 16);
-recipes.addShaped(<libvulpes:advstructuremachine> * 2, [[<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>],[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], [<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>]]);
+recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, [[<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>],[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], [<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>]]);
 
 // These are covered by GT meta tools
 recipes.remove(<nuclearcraft:pickaxe_boron>);
@@ -198,8 +198,8 @@ recipes.addShaped("infitech3_tile.nuclearcraft.bin", <nuclearcraft:bin>, [
   
 var fuelLEU235 = <nuclearcraft:fuel_uranium:4>;
 var fuelHEU235 = <nuclearcraft:fuel_uranium:6>;
-recipes.addShapeless(fuelLEU235, [<ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
-recipes.addShapeless(fuelHEU235, [<ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
+recipes.addShapeless("it3_nc_leu235", fuelLEU235, [<ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
+recipes.addShapeless("it3_nc_heu235", fuelHEU235, [<ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
 
 // Allow GT Borax Dust to count as Boron oredict
 var ingotBoron = <nuclearcraft:ingot:5>;

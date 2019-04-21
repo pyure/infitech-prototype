@@ -585,108 +585,108 @@ recipes.remove(FluStorageComponent64K);
 // --- Blocks ---
 
 // --- ME Controller
-recipes.addShaped(MEController, [
+recipes.addShaped("it3_ae2_controller", MEController, [
 [TitaniumPlate, AdvCircuit, TitaniumPlate],
 [EngProc, FluixBlock, EngProc],
 [TitaniumPlate, AdvCircuit, TitaniumPlate]]);
 
 // --- Energy Cell
-recipes.addShaped(EnergyCell, [
+recipes.addShaped("it3_ae2_energy_cell", EnergyCell, [
 [CertusRod, FluixDust, CertusRod],
 [AdvCircuit, FluixBlock, AdvCircuit],
 [CertusRod, AlCable, CertusRod]]);
 
 // --- Dense Energy Cell
-recipes.addShaped(DEnergyCell, [
+recipes.addShaped("it3_ae2_dense_energy_cell", DEnergyCell, [
 [EnergyCell, EnergyCell, EnergyCell],
 [EFlow, EngProc, EFlow],
 [EnergyCell, EVBatBuffer, EnergyCell]]);
 
 var bronzeChest = <gregtech:machine:802>;
 // --- ME Chest
-recipes.addShaped(MEChest, [
+recipes.addShaped("it3_ae2_chest", MEChest, [
 [StainlessPlate, GoodCircuit, StainlessPlate],
 [FluixGlassCable, bronzeChest, FluixGlassCable],
 [StainlessPlate, GoodCircuit, StainlessPlate]]);
 
 // --- ME Drive
-recipes.addShaped(MEDrive, [
+recipes.addShaped("it3_ae2_drive", MEDrive, [
 [TitaniumPlate, EngProc, TitaniumPlate], 
 [FluixGlassCable, MEChest, FluixGlassCable], 
 [TitaniumPlate, <ore:circuitAdcanced>, TitaniumPlate]]);
 
 // --- CraftingUnit
-recipes.addShaped(CraftingUnit, [
+recipes.addShaped("it3_ae2_crafting_unit", CraftingUnit, [
 [plateAluminum, LogiProc, plateAluminum],
 [BasicCircuit, EngProc, BasicCircuit],
 [plateAluminum, CalcCirc, plateAluminum]]);
 
 // --- CoCraftingUnit
-recipes.addShapeless(CoCraftingUnit, [CraftingUnit, CalcCirc, LogiProc, EngProc]);
+recipes.addShapeless("it3_ae2_cocrafting_unit", CoCraftingUnit, [CraftingUnit, CalcCirc, LogiProc, EngProc]);
 
 // --- Molecular Assembler
-recipes.addShaped(MolecularAssembler, [
+recipes.addShaped("it3_ae2_assembler", MolecularAssembler, [
 [TitaniumPlate, ClearGlass, TitaniumPlate],
 [AnnihilationCore, AdvAssembler, FormationCore],
 [TitaniumPlate, ClearGlass, TitaniumPlate]]);
 
 // --- ME Quantum Ring
-recipes.addShaped(<appliedenergistics2:quantum_ring>, [
+recipes.addShaped("it3_ae2_q_ring", <appliedenergistics2:quantum_ring>, [
 [TitaniumPlate, LogiProc, TitaniumPlate],
 [EngProc, <appliedenergistics2:dense_energy_cell>, FluixGlassCable],
 [TitaniumPlate, LogiProc, TitaniumPlate]]);
 
 // --- ME Quantum Link Chamber
-recipes.addShaped(<appliedenergistics2:quantum_link>, [
+recipes.addShaped("it3_ae2_q_link", <appliedenergistics2:quantum_link>, [
 [TitaniumPlate, FluixPearl, TitaniumPlate],
 [FluixPearl, <ore:gemFluix>, FluixPearl],
 [TitaniumPlate, FluixPearl, TitaniumPlate]]);
   
 // --- Spatial Pylon
-recipes.addShaped(<appliedenergistics2:spatial_pylon>, [
+recipes.addShaped("it3_ae2_s_pylon", <appliedenergistics2:spatial_pylon>, [
 [TitaniumPlate, FluixGlassCable, TitaniumPlate],
 [FluixDust, FluixCrystal, FluixDust],
 [TitaniumPlate, FluixGlassCable, TitaniumPlate]]);
   
 // --- Spatial IO Port
-recipes.addShaped(<appliedenergistics2:spatial_io_port>, [
+recipes.addShaped("it3_ae2_s_io_port", <appliedenergistics2:spatial_io_port>, [
 [TitaniumPlate, GlassPlate, TitaniumPlate],
 [FluixGlassCable, <appliedenergistics2:io_port>, FluixGlassCable],
 [TitaniumPlate, EngProc, TitaniumPlate]]);
 
 // --- ME Interface
-recipes.addShaped(<appliedenergistics2:interface>, [
+recipes.addShaped("it3_ae2_interface", <appliedenergistics2:interface>, [
 [plateAluminum, GlassPlate, plateAluminum],
 [FormationCore, <meta_tile_entity:machine_casing.medium_voltage>, AnnihilationCore],
 [plateAluminum, GlassPlate, plateAluminum]]);
-recipes.addShapeless(<appliedenergistics2:interface>, [Interface]);
+recipes.addShapeless("it3_ae2_interface_2", <appliedenergistics2:interface>, [Interface]);
 
 // --- Cell Workbench
-recipes.addShaped(<appliedenergistics2:cell_workbench>, [
+recipes.addShaped("it3_ae2_cell_workbench", <appliedenergistics2:cell_workbench>, [
 [<minecraft:wool>, <rftools:screen>, <minecraft:wool>],
 [plateAluminum, CalcCirc, plateAluminum],
 [plateAluminum, plateAluminum, plateAluminum]]);
 
 // --- ME IO Port
-recipes.addShaped(<appliedenergistics2:io_port>, [
+recipes.addShaped("it3_ae2_io_port", <appliedenergistics2:io_port>, [
 [GlassPlate, GlassPlate, GlassPlate],
 [MEDrive, FluixGlassCable, MEDrive],
 [plateAluminum, LogiProc, plateAluminum]]);
 
 // --- Matter Condenser
-recipes.addShaped(<appliedenergistics2:condenser>, [
+recipes.addShaped("it3_ae2_matter_condensor", <appliedenergistics2:condenser>, [
 [plateAluminum, <metaitem:electric.piston.mv>, plateAluminum],
 [<metaitem:electric.piston.mv>, <meta_tile_entity:hull.hv>, <metaitem:electric.piston.mv>],
 [plateAluminum, <metaitem:electric.piston.mv>, plateAluminum]]);
   
 // --- Enegery Acceptor
-recipes.addShaped(<appliedenergistics2:energy_acceptor>, [
+recipes.addShaped("it3_ae2_energy_acceptor", <appliedenergistics2:energy_acceptor>, [
 [plateAluminum, GlassPlate, plateAluminum],
 [GlassPlate, FluixCrystal, GlassPlate],
 [plateAluminum, GlassPlate, plateAluminum]]);
 
 // --- ME Security Terminal
-recipes.addShaped(<appliedenergistics2:security_station>, [
+recipes.addShaped("it3_ae2_security_station", <appliedenergistics2:security_station>, [
 [plateAluminum, MEChest, plateAluminum],
 [FluixGlassCable, StorageComponent16K, FluixGlassCable],
 [plateAluminum, EngProc, plateAluminum]]);
@@ -695,302 +695,303 @@ recipes.addShaped(<appliedenergistics2:security_station>, [
 
 
 // --- Fluix Glass Cable
-recipes.addShaped(FluixGlassCable * 3, [
+recipes.addShaped("it3_ae2_fluix_glass_cable", FluixGlassCable * 3, [
 [CertusRod, FluixDust, CertusRod],
 [quartzFiber, quartzFiber, quartzFiber],
 [CertusRod, FluixDust, CertusRod]]);
 
 // --- Fluix Covered Cable
-recipes.addShaped(FluixCoveredC * 3, [
+recipes.addShaped("it3_ae2_fluix_covered", FluixCoveredC * 3, [
 [RubberPlate, RubberPlate, RubberPlate],
 [FluixGlassCable, FluixGlassCable, FluixGlassCable],
 [RubberPlate, RubberPlate, RubberPlate]]);
 
 // --- Annihilation Core
-recipes.addShaped(AnnihilationCore, [
+recipes.addShaped("it3_ae2_annihil_core", AnnihilationCore, [
 [NQuartzRod, LogiProc, NQuartzRod],
 [LogiProc, PureFluixCrystal, LogiProc],
 [NQuartzRod, LogiProc, NQuartzRod]]);
 
 // --- Formation Core
-recipes.addShaped(FormationCore, [
+recipes.addShaped("it3_ae2_form_core", FormationCore, [
 [CertusRod, LogiProc, CertusRod],
 [LogiProc, PureFluixCrystal, LogiProc],
 [CertusRod, LogiProc, CertusRod]]);
 
 // --- Fluix Pearl
-recipes.addShaped(FluixPearl, [
+recipes.addShaped("it3_ae2_fluix_pearl", FluixPearl, [
 [PureFluixCrystal, EnderEyePlate, PureFluixCrystal],
 [EnderEyePlate, EnderPearl, EnderEyePlate],
 [PureFluixCrystal, EnderEyePlate, PureFluixCrystal]]);
 // - 
-recipes.addShaped(FluixPearl, [
+recipes.addShaped("it3_ae2_fluix_pearl_2", FluixPearl, [
 [FluixCrystal, EnderEyePlate, FluixCrystal],
 [EnderEyePlate, EnderPearl, EnderEyePlate],
 [FluixCrystal, EnderEyePlate, FluixCrystal]]);
 
 // --- Wireless Receiver
-recipes.addShaped(WirelessReceiver, [
+recipes.addShaped("it3_ae2_wireless_receiver", WirelessReceiver, [
 [quartzFiber, FluixPearl, quartzFiber],
 [null, EnderRod, null],
 [CertusPlate, AdvCircuit, CertusPlate]]);
 
 // --- Terminal
-recipes.addShaped(Terminal, [
+recipes.addShaped("it3_ae2_terminal", Terminal, [
 [NQuartzRod, QuartziteScrew, NQuartzRod],
 [Illuminated, GoodCircuit, CertusPlate],
 [NQuartzRod, craftingToolScrewdriverEmptyTag, NQuartzRod]]);
 // - 
-recipes.addShaped(Terminal, [
+recipes.addShaped("it3_ae2_terminal_2", Terminal, [
 [NQuartzRod, craftingToolScrewdriverEmptyTag, NQuartzRod],
 [Illuminated, GoodCircuit, CertusPlate],
 [NQuartzRod, QuartziteScrew, NQuartzRod]]);
 
 // --- Crafting Terminal
-recipes.addShaped(CraftingTerminal, [
+recipes.addShaped("it3_ae2_craft_terminal", CraftingTerminal, [
 [craftingToolScrewdriverEmptyTag, Terminal, craftingToolSoftHammerEmptyTag],
 [CertusScrew, craftingTable, CertusScrew],
 [NQuartzPlate, EngProc, NQuartzPlate]]);
 
 // --- Interface Terminal
-recipes.addShaped(InterfaceTerminal, [
+recipes.addShaped("it3_ae2_interface_terminal", InterfaceTerminal, [
 [craftingToolScrewdriverEmptyTag, Terminal, craftingToolSoftHammerEmptyTag],
 [CertusScrew, Interface, CertusScrew],
 [NQuartzPlate, EngProc, NQuartzPlate]]);
 
 // --- Pattern Terminal
-recipes.addShaped(PatternTerminal, [
+recipes.addShaped("it3_ae2_pattern_terminal", PatternTerminal, [
 [craftingToolScrewdriverEmptyTag, Terminal, craftingToolSoftHammerEmptyTag],
 [CertusScrew, Pattern, CertusScrew],
 [NQuartzPlate, EngProc, NQuartzPlate]]);
 
 // --- Wireless Terminal
-recipes.addShaped(WirelessTerminal, [
+recipes.addShaped("it3_ae2_wireless_terminal", WirelessTerminal, [
 [WirelessReceiver, Terminal, WirelessReceiver],
 [NQuartzPlate, EngProc, NQuartzPlate],
 [NQuartzPlate, DEnergyCell, NQuartzPlate]]);
 
 // --- Wireless Crafting Terminal
-recipes.addShaped(WirelessCraftingTerminal, [
+recipes.addShaped("it3_ae2_wireless_craft_terminal", WirelessCraftingTerminal, [
 [WirelessReceiver, CraftingTerminal, WirelessReceiver],
 [NQuartzPlate, Singularity, NQuartzPlate],
 [NQuartzPlate, DEnergyCell, NQuartzPlate]]);
 
 // --- Vibrant Quartz Glass
-recipes.addShaped(VibrantQGlass, [
+recipes.addShaped("it3_ae2_vib_q_glass", VibrantQGlass, [
 [GlowstoneDust, GlowstonePlate, GlowstoneDust],
 [GlowstonePlate, QuartzGlass, GlowstonePlate],
 [GlowstoneDust, GlowstonePlate, GlowstoneDust]]);
 // -
-recipes.addShaped(VibrantQGlass, [
+recipes.addShaped("it3_ae2_vib_q_glass_2", VibrantQGlass, [
 [CertusRod, FluixDust, CertusRod],
 [FluixDust, GlowstoneGlass, FluixDust],
 [CertusRod, FluixDust, CertusRod]]);
 
 // --- Charged Quartz Fixture
-recipes.addShapeless(QuartzFixture, [CertusQuartz, stickAluminum]);
+recipes.addShapeless("it3_ae2_quartz_fixture", QuartzFixture, [CertusQuartz, stickAluminum]);
 
 // --- Light Detecting Fixture
-recipes.addShapeless(LightDetector, [ChCertusQuartz, IronRod]);
+recipes.addShapeless("it3_ae2_lightdetector", LightDetector, [ChCertusQuartz, IronRod]);
 
 // --- Advanced Card
-recipes.addShaped(<appliedenergistics2:material:28>, [
+recipes.addShaped("it3_ae2_advanced_card", <appliedenergistics2:material:28>, [
 [<ore:platePlatinum>, plateAluminum, null],
 [<ore:plateRedAlloy>, CalcCirc, plateAluminum],
 [<ore:platePlatinum>, plateAluminum, null]]);
 
 // --- Basic Card
-recipes.addShaped(<appliedenergistics2:material:25>, [
+recipes.addShaped("it3_ae2_basic_card", <appliedenergistics2:material:25>, [
 [<ore:plateGold>, plateAluminum, null],
 [<ore:plateRedAlloy>, CalcCirc, plateAluminum],
 [<ore:plateGold>, plateAluminum, null]]);
 
 // --- Blank Pattern
-recipes.addShaped(Pattern, [
+recipes.addShaped("it3_ae2_pattern", Pattern, [
 [<appliedenergistics2:quartz_glass>, <ore:plateGlowstone>, <appliedenergistics2:quartz_glass>],
 [<ore:plateGlowstone>, <ore:itemCertusQuartz>, <ore:plateGlowstone>],
 [plateAluminum, plateAluminum, plateAluminum]]);
 
 
 // --- Capacity Card
-recipes.addShapeless(<appliedenergistics2:material:27>, [<appliedenergistics2:material:25>, <appliedenergistics2:material:35>, <appliedenergistics2:material:35>, ChCertusQuartz]);
+recipes.addShapeless("it3_ae2_capac_card", <appliedenergistics2:material:27>, [<appliedenergistics2:material:25>, <appliedenergistics2:material:35>, <appliedenergistics2:material:35>, ChCertusQuartz]);
 
 // --- Crafting Card
-recipes.addShapeless(<appliedenergistics2:material:53>, [<appliedenergistics2:material:25>, <appliedenergistics2:material:35>, <appliedenergistics2:material:35>, <ore:craftingWorkBench>]);
+recipes.addShapeless("it3_ae2_craft_card", <appliedenergistics2:material:53>, [<appliedenergistics2:material:25>, <appliedenergistics2:material:35>, <appliedenergistics2:material:35>, <ore:craftingWorkBench>]);
 
 // --- Redstone Card
-recipes.addShapeless(<appliedenergistics2:material:26>, [<appliedenergistics2:material:25>, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcCirc]);
+recipes.addShapeless("it3_ae2_redstone_card", <appliedenergistics2:material:26>, [<appliedenergistics2:material:25>, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcCirc]);
 
 // --- Fuzzy Card
-recipes.addShapeless(<appliedenergistics2:material:29>, [<appliedenergistics2:material:28>, EngProc, LogiProc, CalcCirc]);
+recipes.addShapeless("it3_ae2_fuzzy_card", <appliedenergistics2:material:29>, [<appliedenergistics2:material:28>, EngProc, LogiProc, CalcCirc]);
 
 // --- Inverter Card
-recipes.addShapeless(<appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, inverter, inverter, CalcCirc]);
+recipes.addShapeless("it3_ae2_inverter_card", <appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, inverter, inverter, CalcCirc]);
 
 // --- Acceleration Card
-recipes.addShapeless(<appliedenergistics2:material:30>, [<appliedenergistics2:material:28>, EngProc, LogiProc, FluixCrystal]);
+recipes.addShapeless("it3_ae2_accell_card", <appliedenergistics2:material:30>, [<appliedenergistics2:material:28>, EngProc, LogiProc, FluixCrystal]);
 
 // --- Magnet Card
-recipes.addShapeless(<wct:magnet_card>, [<appliedenergistics2:material:28>, EngProc, LogiProc, <botania:lens:10>]);
+recipes.addShapeless("it3_ae2_magnet_card", <wct:magnet_card>, [<appliedenergistics2:material:28>, EngProc, LogiProc, <botania:lens:10>]);
 
 // --- Wireless Booster
-recipes.addShaped(<appliedenergistics2:material:42>, [
+recipes.addShaped("it3_ae2_wireless_booster", <appliedenergistics2:material:42>, [
 [FluixDust, <ore:gemCertusQuartz>, <ore:plateEnderPearl>],
 [plateAluminum, plateAluminum, plateAluminum],
 [null, null, null]]);
 
 // --- ME Annihilation Plane
-recipes.addShaped(<appliedenergistics2:part:300>, [
+recipes.addShaped("it3_ae2_annih_plane", <appliedenergistics2:part:300>, [
 [FluixDust, FluixDust, FluixDust],
 [plateAluminum, <appliedenergistics2:material:44>, plateAluminum],
 [null, null, null]]);
 
 // --- Cable Anchor
-recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotIron>]);
+recipes.addShapeless("it3_ae2_anchor_0", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotIron>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotCopper>]);
+recipes.addShapeless("it3_ae2_anchor_1", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotCopper>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotBronze>]);
+recipes.addShapeless("it3_ae2_anchor_2", <appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotBronze>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotTin>]);
+recipes.addShapeless("it3_ae2_anchor_3", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotTin>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotIron>]);
+recipes.addShapeless("it3_ae2_anchor_4", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotIron>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 4, [<ore:craftingToolKnife>, <ore:ingotSteel>]);
+recipes.addShapeless("it3_ae2_anchor_5", <appliedenergistics2:part:120> * 4, [<ore:craftingToolKnife>, <ore:ingotSteel>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 4, [<ore:craftingToolKnife>, <ore:ingotAluminium>]);
+recipes.addShapeless("it3_ae2_anchor_6", <appliedenergistics2:part:120> * 4, [<ore:craftingToolKnife>, <ore:ingotAluminium>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotLead>]);
+recipes.addShapeless("it3_ae2_anchor_7", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotLead>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotNickel>]);
+recipes.addShapeless("it3_ae2_anchor_8", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotNickel>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotSilver>]);
+recipes.addShapeless("it3_ae2_anchor_9", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotSilver>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotBrass>]);
+recipes.addShapeless("it3_ae2_anchor_10", <appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotBrass>]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotInvar>]);
+recipes.addShapeless("it3_ae2_anchor_11", <appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotInvar>]);
 
 // --- ME Export Bus
-recipes.addShaped(<appliedenergistics2:part:260>, [
+recipes.addShaped("it3_ae2_export_bus", <appliedenergistics2:part:260>, [
 [plateAluminum, <appliedenergistics2:material:43>, plateAluminum],
 [null, <minecraft:piston>, null],
 [null, null, null]]);
 
 // --- ME Formation Plane
-recipes.addShaped(<appliedenergistics2:part:320>, [
+recipes.addShaped("it3_ae2_form_plane", <appliedenergistics2:part:320>, [
 [FluixDust, FluixDust, FluixDust],
 [plateAluminum, <appliedenergistics2:material:43>, plateAluminum],
 [null, null, null]]);
 
 // --- ME Import Bus
-recipes.addShaped(<appliedenergistics2:part:240>, [
+recipes.addShaped("it3_ae2_import_bus", <appliedenergistics2:part:240>, [
 [null, <appliedenergistics2:material:44>, null],
 [plateAluminum, <minecraft:sticky_piston>, plateAluminum],
 [null, null, null]]);
 
 // --- P2P Tunnel - ME
-recipes.addShaped(<appliedenergistics2:part:460>, [
+recipes.addShaped("it3_ae2_p2p_me", <appliedenergistics2:part:460>, [
 [null, plateAluminum, null],
 [plateAluminum, EngProc, plateAluminum],
 [FluixCrystal, FluixCrystal, FluixCrystal]]);
 
 // --- Illuminated Panel
-recipes.addShaped(<appliedenergistics2:part:180>, [
+recipes.addShaped("it3_ae2_illum_panel", <appliedenergistics2:part:180>, [
 [null, <ore:plateGlowstone>, null],
 [plateAluminum, <ore:plateRedAlloy>, <rftools:screen>],
 [null, <ore:plateGlowstone>, null]]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:180>, [<appliedenergistics2:part:200>]);
+recipes.addShapeless("it3_ae2_illum_panel_2", <appliedenergistics2:part:180>, [<appliedenergistics2:part:200>]);
 
 // --- ME Toggle Bus
-recipes.addShaped(<appliedenergistics2:part:80>, [
+recipes.addShaped("it3_ae2_toggle_bus", <appliedenergistics2:part:80>, [
 [null, <ore:plateRedAlloy>, null],
 [FluixGlassCable, <minecraft:lever>, FluixGlassCable],
 [null, <ore:plateRedAlloy>, null]]);
 // -
-recipes.addShapeless(<appliedenergistics2:part:100>, [<appliedenergistics2:part:80>]);
+recipes.addShapeless("it3_ae2_inverted_toggle", <appliedenergistics2:part:100>, [<appliedenergistics2:part:80>]);
 
 // --- ME Inverted Toggle Bus
-recipes.addShapeless(<appliedenergistics2:part:80>, [<appliedenergistics2:part:100>]);
- 
+recipes.addShapeless("it3_ae2_inverted_toggle2", <appliedenergistics2:part:80>, [<appliedenergistics2:part:100>]);
+// PYURE: REMINDER, ONE OF THESE TOGGLE BUS RECIPES LOOKS KINDA WRONG
+
 // --- Quartz Wrench
-recipes.addShaped(<appliedenergistics2:certus_quartz_wrench>, [
+recipes.addShaped("it3_ae2_quartz_wrench", <appliedenergistics2:certus_quartz_wrench>, [
 [gemCertusQuartz, <ore:craftingToolWrench>, gemCertusQuartz],
 [gemCertusQuartz, gemCertusQuartz, gemCertusQuartz],
 [null, gemCertusQuartz, null]]);
 
 // --- Nether Quartz Wrench
-recipes.addShaped(<appliedenergistics2:nether_quartz_wrench>, [
+recipes.addShaped("it3_ae2_neth_quartz_wrench", <appliedenergistics2:nether_quartz_wrench>, [
 [<ore:gemQuartz>, <ore:craftingToolWrench>, <ore:gemQuartz>],
 [<ore:gemQuartz>, <ore:gemQuartz>, <ore:gemQuartz>],
 [null, <ore:gemQuartz>, null]]);
 
 // --- Matter Cannon
-recipes.addShaped(<appliedenergistics2:matter_cannon>, [
+recipes.addShaped("it3_ae2_amtter_cannon", <appliedenergistics2:matter_cannon>, [
 [plateAluminum, plateAluminum, <appliedenergistics2:material:43>],
 [<appliedenergistics2:material:38>, <appliedenergistics2:dense_energy_cell>, null],
 [plateAluminum, null, null]]);
 
 // --- Memory Card
-recipes.addShaped(<appliedenergistics2:memory_card>, [
+recipes.addShaped("it3_ae2_mem_card", <appliedenergistics2:memory_card>, [
 [CalcCirc, plateAluminum, plateAluminum],
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],
 [null, null, null]]);
 
-// --- Charged Stuff
-recipes.addShaped(<appliedenergistics2:charged_staff>, [
+// --- Charged Staff
+recipes.addShaped("it3_ae2_charged_staff", <appliedenergistics2:charged_staff>, [
 [ChCertusQuartz, ChCertusQuartz, null],
 [ChCertusQuartz, stickNeoMag, null],
 [null, null, <ore:stickThaumium>]]);
 
 // --- Entropy Manipulator
-recipes.addShaped(<appliedenergistics2:entropy_manipulator>, [
+recipes.addShaped("it3_ae2_entropy_manip", <appliedenergistics2:entropy_manipulator>, [
 [FluixCrystal, LogiProc, null],
 [EngProc, <appliedenergistics2:energy_cell>, null],
 [null, null, <ore:stickThaumium>]]);
 
 // --- Color Applicator
-recipes.addShaped(<appliedenergistics2:color_applicator>, [
+recipes.addShaped("it3_ae2_color_applic", <appliedenergistics2:color_applicator>, [
 [<ore:wireGtSingleAluminium>, <appliedenergistics2:material:43>, <ore:wireGtSingleAluminium>],
 [<appliedenergistics2:material:36>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:36>],
 [null, <ore:stickSteel>, null]]);
 
 // --- Biometric Card
-recipes.addShaped(<appliedenergistics2:biometric_card>, [
+recipes.addShaped("it3_ae2_biometric_card", <appliedenergistics2:biometric_card>, [
 [EngProc, plateAluminum, plateAluminum],
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],[null, null, null]]);
 
 // --- ME Fluid Storage Bus
-recipes.addShapeless(<appliedenergistics2:part:221>, [<appliedenergistics2:part:220>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_storage_bus", <appliedenergistics2:part:221>, [<appliedenergistics2:part:220>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Import Bus
-recipes.addShapeless(<appliedenergistics2:part:241>, [<appliedenergistics2:part:240>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_import_bus", <appliedenergistics2:part:241>, [<appliedenergistics2:part:240>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Export Bus
-recipes.addShapeless(<appliedenergistics2:part:261>, [<appliedenergistics2:part:260>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_export_bus", <appliedenergistics2:part:261>, [<appliedenergistics2:part:260>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Level Emmiter
-recipes.addShapeless(<appliedenergistics2:part:281>, [<appliedenergistics2:part:280>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_level_emitter", <appliedenergistics2:part:281>, [<appliedenergistics2:part:280>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Annihilation Plane
-recipes.addShapeless(<appliedenergistics2:part:302>, [<appliedenergistics2:part:300>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_annih_plane", <appliedenergistics2:part:302>, [<appliedenergistics2:part:300>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Formation
-recipes.addShapeless(<appliedenergistics2:part:321>, [<appliedenergistics2:part:320>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_form_plane", <appliedenergistics2:part:321>, [<appliedenergistics2:part:320>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Fluid Interface
-recipes.addShapeless(<appliedenergistics2:part:441>, [<appliedenergistics2:part:440>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_interface", <appliedenergistics2:part:441>, [<appliedenergistics2:part:440>, <minecraft:water_bucket>]);
 
 // --- ME Fluid P2P Channel - Fluid
-recipes.addShapeless(<appliedenergistics2:part:463>, [<appliedenergistics2:part:460>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_p2p", <appliedenergistics2:part:463>, [<appliedenergistics2:part:460>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Terminal
-recipes.addShaped(<appliedenergistics2:part:520>, [
+recipes.addShaped("it3_ae2_fluid_terminal", <appliedenergistics2:part:520>, [
 [ChQuartzRod, QuartziteScrew, ChQuartzRod],
 [Illuminated, GoodCircuit, NQuartzPlate],
 [ChQuartzRod, craftingToolScrewdriverEmptyTag, ChQuartzRod]]);
 // - 
-recipes.addShaped(<appliedenergistics2:part:520>, [
+recipes.addShaped("it3_ae2_fluid_terminal_2", <appliedenergistics2:part:520>, [
 [ChQuartzRod, craftingToolScrewdriverEmptyTag, ChQuartzRod],
 [Illuminated, GoodCircuit, NQuartzPlate],
 [ChQuartzRod, QuartziteScrew, ChQuartzRod]]);
@@ -998,126 +999,126 @@ recipes.addShaped(<appliedenergistics2:part:520>, [
 // --- Cells ---
 
 // --- View Cell
-recipes.addShapeless(<appliedenergistics2:view_cell>, [UStorageHousing, <ore:gemCertusQuartz>]);
+recipes.addShapeless("it3_ae2_view_cell", <appliedenergistics2:view_cell>, [UStorageHousing, <ore:gemCertusQuartz>]);
 
 // --- 1K ME Storage Cell
-recipes.addShapeless(Storage1K, 
+recipes.addShapeless("it3_ae2_1k_me_cell", Storage1K, 
 [UStorageHousing, StorageComponent1K]);
 
 // --- 4K ME Storage Cell
-recipes.addShapeless(Storage4K, 
+recipes.addShapeless("it3_ae2_4k_me_cell", Storage4K, 
 [UStorageHousing, StorageComponent4K]);
  
 // --- 16K ME Storage Cell 
-recipes.addShapeless(Storage16K, 
+recipes.addShapeless("it3_ae2_16k_me_cell", Storage16K, 
 [UStorageHousing, StorageComponent16K]);
 
 // --- 64K ME Storage Cell
-recipes.addShapeless(Storage64K, 
+recipes.addShapeless("it3_ae2_64k_me_cell", Storage64K, 
 [UStorageHousing, StorageComponent64K]);
 
 // --- 1K ME Fluid Storage Cell
-recipes.addShapeless(FluStorage1K, 
+recipes.addShapeless("it3_ae2_1k_fluid_cell", FluStorage1K, 
 [UStorageHousing, FluStorageComponent1K]);
 
 // --- 4K ME Fluid Storage Cell
-recipes.addShapeless(FluStorage4K, 
+recipes.addShapeless("it3_ae2_4k_fluid_cell", FluStorage4K, 
 [UStorageHousing, FluStorageComponent4K]);
 
 // --- 16K ME Fluid Storage Cell
-recipes.addShapeless(FluStorage16K, 
+recipes.addShapeless("it3_ae2_16k_fluid_cell", FluStorage16K, 
 [UStorageHousing, FluStorageComponent16K]);
 
 // --- 64K ME Fluid Storage Cell
-recipes.addShapeless(FluStorage64K, 
+recipes.addShapeless("it3_ae2_64k_fluid_cell", FluStorage64K, 
 [UStorageHousing, FluStorageComponent64K]);
 
 // --- 2 Spatial Storage Cell
-recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_2_cubed>, 
+recipes.addShapeless("it3_ae2_2_spatial_cell", <appliedenergistics2:spatial_storage_cell_2_cubed>, 
 [UStorageHousing, <appliedenergistics2:material:32>]);
 
 // --- 16 Spatial Storage Cell
-recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_16_cubed>, 
+recipes.addShapeless("it3_ae2_16_spatial_cell", <appliedenergistics2:spatial_storage_cell_16_cubed>, 
 [UStorageHousing, <appliedenergistics2:material:33>]);
 
 // --- 128 Spatial Storage Cell
-recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_128_cubed>, 
+recipes.addShapeless("it3_ae2_128_spatial_cell", <appliedenergistics2:spatial_storage_cell_128_cubed>, 
 [UStorageHousing, <appliedenergistics2:material:34>]);
 
 // --- Universal Storage Housing
-recipes.addShaped(UStorageHousing, [
+recipes.addShaped("it3_ae2_univ_storage_housing", UStorageHousing, [
 [craftingToolHardHammerEmptyTag, CertusPlate, QuartziteScrew],
 [StainlessPlate, ClearPane, StainlessPlate],
 [QuartziteScrew, plateAluminum, craftingToolScrewdriverEmptyTag]]);
 // -
-recipes.addShaped(UStorageHousing, [
+recipes.addShaped("it3_ae2_univ_storage_housing_2", UStorageHousing, [
 [craftingToolScrewdriverEmptyTag, CertusPlate, QuartziteScrew],
 [StainlessPlate, ClearPane, StainlessPlate],
 [QuartziteScrew, plateAluminum, craftingToolHardHammerEmptyTag]]);
 
 // --- Storage Cell Component - 1K
-recipes.addShaped(StorageComponent1K, [
+recipes.addShaped("it3_ae2_1k_cell_component", StorageComponent1K, [
   [<ore:circuitBasic>, FluixDust, <ore:circuitBasic>],
   [FluixDust, LogiProc, FluixDust],
   [<ore:circuitBasic>, FluixDust, <ore:circuitBasic>]]);
 
 // --- Storage Cell Component - 4K
-recipes.addShaped(StorageComponent4K, [
+recipes.addShaped("it3_ae2_4k_cell_component", StorageComponent4K, [
   [plateRAM, StorageComponent1K, plateRAM],
   [<ore:circuitGood>, LogiProc, <ore:LogiProc>],
   [plateRAM, StorageComponent1K, plateRAM]]);
 
 // --- Storage Cell Component - 16K
-recipes.addShaped(StorageComponent16K, [
+recipes.addShaped("it3_ae2_16k_cell_component", StorageComponent16K, [
   [plateRAM, StorageComponent4K, plateRAM],
   [<ore:circuitAdvanced>, CalcCirc, <ore:circuitAdvanced>],
   [plateRAM, StorageComponent4K, plateRAM]]);
 
 // --- Storage Cell Component - 64K
-recipes.addShaped(StorageComponent64K, [
+recipes.addShaped("it3_ae2_64k_cell_component", StorageComponent64K, [
   [plateRAM, StorageComponent16K, plateRAM],
   [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
   [plateRAM, StorageComponent16K, plateRAM]]);
 
   
 // --- Fluid Storage Cell Component - 1K
-recipes.addShaped(FluStorageComponent1K, [
+recipes.addShaped("it3_ae2_1k_fluid_component", FluStorageComponent1K, [
   [<ore:circuitBasic>, <metaitem:fluid_cell>, <ore:circuitBasic>],
   [<metaitem:fluid_cell>, LogiProc, <metaitem:fluid_cell>],
   [<ore:circuitBasic>, <metaitem:fluid_cell>, <ore:circuitBasic>]]);
   
 // --- Fluid Storage Cell Component - 4K
-recipes.addShaped(FluStorageComponent4K, [
+recipes.addShaped("it3_ae2_4k_fluid_component", FluStorageComponent4K, [
   [plateRAM, FluStorageComponent1K, plateRAM],
   [<ore:circuitGood>, LogiProc, <ore:circuitGood>],
   [plateRAM, FluStorageComponent1K, plateRAM]]);  
 
 // --- Fluid Storage Cell Component - 16K
-recipes.addShaped(FluStorageComponent16K, [
+recipes.addShaped("it3_ae2_16k_fluid_component", FluStorageComponent16K, [
   [plateRAM, FluStorageComponent4K, plateRAM],
   [<ore:circuitAdvanced>, LogiProc, <ore:circuitAdvanced>],
   [plateRAM, FluStorageComponent4K, plateRAM]]);    
 
 // --- Fluid Storage Cell Component - 64K
-recipes.addShaped(FluStorageComponent64K, [
+recipes.addShaped("it3_ae2_64k_fluid_component", FluStorageComponent64K, [
   [plateRAM, FluStorageComponent16K, plateRAM],
   [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
   [plateRAM, FluStorageComponent16K, plateRAM]]);
   
 // --- 2 Spatial Component
-recipes.addShaped(<appliedenergistics2:material:32>, [
+recipes.addShaped("it3_ae2_2_spatial_component", <appliedenergistics2:material:32>, [
 [<ore:plateGlowstone>, FluixPearl, <ore:plateGlowstone>],
 [FluixPearl, EngProc, FluixPearl],
 [<ore:plateGlowstone>, FluixPearl, <ore:plateGlowstone>]]);
 
 // --- 16 Spatial Component
-recipes.addShaped(<appliedenergistics2:material:33>, [
+recipes.addShaped("it3_ae2_16_spatial_component", <appliedenergistics2:material:33>, [
 [<ore:plateEnderPearl>, <appliedenergistics2:material:32>, <ore:plateEnderPearl>],
 [<appliedenergistics2:material:32>, EngProc, <appliedenergistics2:material:32>],
 [<ore:plateEnderPearl>, <appliedenergistics2:material:32>, <ore:plateEnderPearl>]]);
 
 // --- 128 Spatial Component
-recipes.addShaped(<appliedenergistics2:material:34>, [
+recipes.addShaped("it3_ae2_128_spatial_component", <appliedenergistics2:material:34>, [
 [<ore:plateEnderEye>, <appliedenergistics2:material:33>, <ore:plateEnderEye>],
 [<appliedenergistics2:material:33>, EngProc, <appliedenergistics2:material:33>],
 [<ore:plateEnderEye>, <appliedenergistics2:material:33>, <ore:plateEnderEye>]]);
@@ -1254,8 +1255,8 @@ compressor.recipeBuilder()
 
 // Compass
 recipes.remove(meteoriteCompass);
-recipes.addShaped(meteoriteCompass, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, blockMeteorite, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
-recipes.addShaped(meteoriteCompass, [[null, <ore:ingotCompressedWroughtIron>, null], [<ore:ingotCompressedWroughtIron>, blockMeteorite, <ore:ingotCompressedWroughtIron>], [null, <ore:ingotCompressedWroughtIron>, null]]);
+recipes.addShaped("it3_ae2_meteor_compass", meteoriteCompass, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, blockMeteorite, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
+recipes.addShaped("it3_ae2_meteor_compass_2", meteoriteCompass, [[null, <ore:ingotCompressedWroughtIron>, null], [<ore:ingotCompressedWroughtIron>, blockMeteorite, <ore:ingotCompressedWroughtIron>], [null, <ore:ingotCompressedWroughtIron>, null]]);
 
 // Macerator recipe for fluix crystal -> dust
 var fluix_dust = <appliedenergistics2:material:8>;

@@ -20,12 +20,12 @@ recipes.remove(<thaumcraft:plate:1>);
 
 // GT style plate crafting
 recipes.remove(<thaumcraft:plate:2>);
-recipes.addShaped(<thaumcraft:plate:2>, [
+recipes.addShaped("it3_tc_plate", <thaumcraft:plate:2>, [
 	[craftingToolHardHammerEmptyTag],
 	[<ore:ingotThaumium>],
 	[<ore:ingotThaumium>]]);
 recipes.remove(<thaumcraft:plate:3>);
-recipes.addShaped(<thaumcraft:plate:3>, [
+recipes.addShaped("it3_tc_plate2", <thaumcraft:plate:3>, [
 	[craftingToolHardHammerEmptyTag],
 	[<ore:ingotVoid>],
 	[<ore:ingotVoid>]]);
@@ -39,8 +39,8 @@ mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 // Thauminomicon wants to see TC plates to satisfy some thauminomicon requirement apparently.  Hopefully this addresses the issue.
 var plateThaumiumGT = <gregtech:meta_item_1:12706>;
 var plateThaumiumTC = <thaumcraft:plate:2>;
-recipes.addShapeless(plateThaumiumGT, [plateThaumiumTC]);
-recipes.addShapeless(plateThaumiumTC, [plateThaumiumGT]);
+recipes.addShapeless("it3_tc_plate3", plateThaumiumGT, [plateThaumiumTC]);
+recipes.addShapeless("it3_tc_plate4", plateThaumiumTC, [plateThaumiumGT]);
 
 
 var sealBlank = <thaumcraft:seal>;
@@ -63,7 +63,7 @@ mods.thaumcraft.Infusion.registerRecipe(
 
 // Tweak Vis Generator to be a bit later-game
 recipes.remove(<thaumcraft:vis_generator>);
-recipes.addShaped(<thaumcraft:vis_generator>, 
+recipes.addShaped("it3_tc_vis_generator", <thaumcraft:vis_generator>, 
   [[<ore:plankWood>, <metaitem:electric.motor.lv>, <ore:plankWood>], 
   [<ore:stickThaumium>, <minecraft:piston>, <ore:stickThaumium>], 
   [<ore:foilRedAlloy>, <thaumcraft:vis_resonator>, <ore:foilRedAlloy>]]);

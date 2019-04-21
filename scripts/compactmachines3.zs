@@ -9,14 +9,14 @@ import mods.gregtech.recipe.RecipeMap;
 
 //Field projector
 recipes.remove(<compactmachines3:fieldprojector>);
-recipes.addShaped(<compactmachines3:fieldprojector> * 2, [
+recipes.addShaped("it3_cm3_field_proj",  <compactmachines3:fieldprojector> * 2, [
   [null, null, null],
   [<ore:cableGtDoubleNichrome>, <metaitem:field.generator.lv>, <ore:cableGtDoubleNichrome>],
   [<metaitem:emitter.hv>, <meta_tile_entity:hull.ev>, <metaitem:sensor.hv>]]);
 
  //Personal shrinking device
 recipes.remove(<compactmachines3:psd>);
-recipes.addShaped(<compactmachines3:psd>, [
+recipes.addShaped("it3_cm3_personal_shrink", <compactmachines3:psd>, [
   [<metaitem:sensor.hv>, <rftools:screen>, <metaitem:emitter.hv>],
   [<ore:plateAluminium>, <ore:circuitExtreme>, <ore:plateAluminium>],
   [<ore:boltStainlessSteel>, <metaitem:field.generator.mv>, <ore:boltStainlessSteel>]]);

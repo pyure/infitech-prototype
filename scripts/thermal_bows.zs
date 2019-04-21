@@ -17,5 +17,6 @@ for i, b in bows {
     var def = b.definition as IItemDefinition;
     var bow = def.makeStack(0);
     recipes.remove(bow);
-    recipes.addShaped(bow, [ [null, materials[i], <ore:string>], [<ore:stickWood>, null, <ore:string>], [null, materials[i], <ore:string>]]);
+    var script_name = "it3_td_bow_" ~ i;
+    recipes.addShaped(script_name, bow, [ [null, materials[i], <ore:string>], [<ore:stickWood>, null, <ore:string>], [null, materials[i], <ore:string>]]);
 }
