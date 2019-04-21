@@ -226,3 +226,6 @@ recipes.addShaped(<railcraft:tank_iron_gauge>, [[<ore:paneGlass>, <railcraft:tan
 recipes.removeByRecipeName("railcraft:tank_steel_gauge#0$2");
 recipes.addShaped(<railcraft:tank_steel_gauge>, [[<ore:paneGlass>, <railcraft:tank_steel_wall>, <ore:paneGlass>],[null, null, null],[null, null, null]]);
 
+// Iron Tank Tooltips
+<railcraft:tank_iron_wall>.addTooltip(format.lightRed("Keep in one chunk!!"));
+<railcraft:tank_steel_wall>.addTooltip(format.lightRed("Keep in one chunk!!"));
