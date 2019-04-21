@@ -154,6 +154,12 @@ scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
 scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
 scripts.functions.disableItem(<nuclearcraft:centrifuge_idle>);
 scripts.functions.disableItem(<nuclearcraft:infuser_idle>);
+scripts.functions.disableItem(<nuclearcraft:helium_collector>);
+scripts.functions.disableItem(<nuclearcraft:helium_collector_compact>);
+scripts.functions.disableItem(<nuclearcraft:helium_collector_dense>);
+scripts.functions.disableItem(<nuclearcraft:nitrogen_collector>);
+scripts.functions.disableItem(<nuclearcraft:nitrogen_collector_compact>);
+scripts.functions.disableItem(<nuclearcraft:nitrogen_collector_dense>);
 
 //Remove recipes from disabled machines
 mods.nuclearcraft.manufactory.removeAllRecipes();
@@ -211,4 +217,3 @@ recipes.addShaped("it3_tile.nuclearcraft.fusion_core",
     [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>], 
     [machine_hull_luv, <ore:chassis>, machine_hull_luv], 
     [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>]]);
-
