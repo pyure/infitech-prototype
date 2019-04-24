@@ -15,8 +15,9 @@ scripts.functions.disableItem(metal_roller);
 scripts.functions.disableItem(powered_metal_roller);
 
 # Aliases
-
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+
 var backpackApothecary = <railcraft:backpack_apothecary_t1>;
 var backpackApothecaryT2 = <railcraft:backpack_apothecary_t1>;
 var backpackIceman = <railcraft:backpack_iceman_t1>;
@@ -94,38 +95,38 @@ scripts.functions.disableItem(<railcraft:blast_furnace>);
 scripts.functions.disableItem(<railcraft:coke_oven_red>);
 
 # Recipe tweaks
-recipes.addShapeless(railWooden * 3, [ingotIron, stickWood]);
+recipes.addShapeless("it3_rc_wood_rail", railWooden * 3, [ingotIron, stickWood]);
 
 recipes.remove(fireboxSolid);
-recipes.addShaped(fireboxSolid, [
+recipes.addShaped("it3_rc_firebox", fireboxSolid, [
 	[brickAbyssal, brickAbyssal, brickAbyssal],
 	[brickAbyssal, fireCharge, brickAbyssal],
 	[brickAbyssal, furnaceSteam, brickAbyssal]]);
 recipes.remove(fireboxLiquid);
-recipes.addShaped(fireboxLiquid, [
+recipes.addShaped("it3_rc_firebox_liq", fireboxLiquid, [
 	[plateSteel, bucket, plateSteel],
 	[ironBars, fireCharge, ironBars],
 	[plateSteel, furnaceHighPressure, plateSteel]]);
 
 recipes.remove(forceTrackEmitter);
-recipes.addShaped(forceTrackEmitter, [
+recipes.addShaped("it3_rc_force_track_emit", forceTrackEmitter, [
     [plateTinAlloy, ingotCopper, plateTinAlloy],
     [ingotCopper, emitterLV, ingotCopper],
     [plateTinAlloy, ingotCopper, plateTinAlloy]]);
 recipes.remove(fluxTransformer);
-recipes.addShaped(fluxTransformer * 2, [
+recipes.addShaped("it3_rc_flux_trans", fluxTransformer * 2, [
     [plateCopper, ingotGold, plateCopper],
     [ingotGold, blockRedstone, ingotGold],
     [plateCopper, ingotGold, plateCopper]]);
-recipes.addShaped(wireSupportFrame * 6, [
+recipes.addShaped("it3_rc_wire_supp_frame", wireSupportFrame * 6, [
 	[plateIron, plateIron, plateIron],
 	[rebar, null, rebar],
 	[rebar, rebar, rebar]]);
   
 // --- Backs ---
 recipes.remove(backpackTrack);
-recipes.addShapeless(backpackTrack, [backpackTrack]);
-recipes.addShaped(backpackTrack, [
+recipes.addShapeless("it3_rc_backpack_track", backpackTrack, [backpackTrack]);
+recipes.addShaped("it3_rc_backpacktrack2", backpackTrack, [
 	[materialCloth, <minecraft:rail>, materialCloth],
 	[hardenedLeather, <minecraft:rail>, hardenedLeather],
 	[hardenedLeather, hardenedLeather, hardenedLeather]]);
@@ -136,8 +137,8 @@ mods.forestry.Carpenter.addRecipe(backpackTrackT2,         [[wovenSilk, wovenSil
 
                                       
 recipes.remove(backpackIceman);
-recipes.addShapeless(backpackIceman, [backpackIceman]);
-recipes.addShaped(backpackIceman, [
+recipes.addShapeless("it3_rc_backpack_iceman", backpackIceman, [backpackIceman]);
+recipes.addShaped("it3_rc_backpack_iceman2", backpackIceman, [
 	[materialCloth, <minecraft:snow>, materialCloth],
 	[hardenedLeather, <minecraft:snow>, hardenedLeather],
 	[hardenedLeather, hardenedLeather, hardenedLeather]]);
@@ -146,8 +147,8 @@ mods.forestry.Carpenter.addRecipe(backpackIcemanT2, [[wovenSilk, wovenSilk, wove
                                        [wovenSilk, wovenSilk, wovenSilk],
                                        [wovenSilk, wovenSilk, wovenSilk]], 600, <liquid:seed.oil> * 5000, backpackIceman);
 recipes.remove(backpackApothecary);
-recipes.addShapeless(backpackApothecary, [backpackApothecary]);
-recipes.addShaped(backpackApothecary, [
+recipes.addShapeless("it3_rc_backpack_apoth", backpackApothecary, [backpackApothecary]);
+recipes.addShaped("it3_rc_backpack_apoth2", backpackApothecary, [
 	[materialCloth, <ore:potionHealing>, materialCloth],
 	[hardenedLeather, <ore:potionHealing>, hardenedLeather],
 	[hardenedLeather, hardenedLeather, hardenedLeather]]);
@@ -165,7 +166,7 @@ mods.forestry.Carpenter.addRecipe(backpackApothecaryT2, [[wovenSilk, wovenSilk, 
 * Engraving Bench doesn't seem to be a thing anymore
 */
 
-recipes.addShapeless(<railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIron>, <ore:rodIron>]);
+recipes.addShapeless("it3_rc_track_parts", <railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIron>, <ore:rodIron>]);
 
 // Raw firestone.  Need more recipes
 mods.pneumaticcraft.pressurechamber.addRecipe([<railcraft:ore_magic> * 1], 4.5, [<railcraft:firestone_raw>]);
@@ -176,13 +177,13 @@ var steam_boiler = <gregtech:machine:2>;
 var mvMotor = <metaitem:electric.motor.mv>;
 
 recipes.removeByRecipeName("railcraft:locomotive_steam_solid#0$1");
-recipes.addShaped(locomotive, [
+recipes.addShaped("it3_rc_locomotive", locomotive, [
   [<ore:plateIron>, <ore:plateIron>, steam_boiler], 
   [<ore:plateIron>, <ore:plateIron>, steam_boiler], 
   [craftingToolWrenchEmptyTag, <minecraft:minecart:*>, <minecraft:minecart:*>]]);
   
 recipes.removeByRecipeName("railcraft:locomotive_electric#0$1");  
-recipes.addShaped(<railcraft:locomotive_electric>.withTag({primaryColor: "yellow", secondaryColor: "black"}), [
+recipes.addShaped("it3_rc_electric_loc", <railcraft:locomotive_electric>.withTag({primaryColor: "yellow", secondaryColor: "black"}), [
   [<minecraft:redstone_lamp:*>, <ore:plateSteel>, craftingToolWrenchEmptyTag], 
   [mvMotor, <ore:blockChargeBatteryRechargeable>, mvMotor], 
   [<ore:blockSteel>, <minecraft:minecart:*>, <ore:blockSteel>]]);
@@ -199,3 +200,32 @@ blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_valve:*> * 1).outputs
 	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
 blast_furnace.recipeBuilder().inputs(<railcraft:tank_steel_wall:*> * 1).outputs(<ore:nuggetSteel>.firstItem * 4)
 	.property("temperature", 1000).duration(120).EUt(120).buildAndRegister();
+
+// Greg the Iron Tank recipes
+recipes.removeByRecipeName("railcraft:tank_iron_wall#0$2");
+recipes.addShaped("it3_rc_iron_tank_wall", <railcraft:tank_iron_wall> * 4, [
+  [<ore:plateIron>, <ore:plateIron>, craftingToolWrenchEmptyTag], 
+  [<ore:plateIron>, <ore:plateIron>, craftingToolHardHammerEmptyTag], 
+  [null, null, null]]);
+
+recipes.removeByRecipeName("railcraft:tank_steel_wall#0$2");
+recipes.addShaped("it3_rc_steel_tank_wall", <railcraft:tank_steel_wall> * 4, [
+  [<ore:plateSteel>, <ore:plateSteel>, craftingToolWrenchEmptyTag], 
+  [<ore:plateSteel>, <ore:plateSteel>, craftingToolHardHammerEmptyTag], 
+  [null, null, null]]);
+  
+recipes.removeByRecipeName("railcraft:tank_iron_valve#0$2");
+recipes.addShapeless("it3_rc_iron_tank_valve", <railcraft:tank_iron_valve>, [<railcraft:tank_iron_wall>, <minecraft:lever>, <minecraft:iron_bars>]);
+
+recipes.removeByRecipeName("railcraft:tank_steel_valve#0$2");
+recipes.addShapeless("it3_rc_steel_tank_valve", <railcraft:tank_steel_valve>, [<railcraft:tank_steel_wall>, <minecraft:lever>, <minecraft:iron_bars>]);
+
+recipes.removeByRecipeName("railcraft:tank_iron_gauge#0$2");
+recipes.addShaped("it3_rc_iron_tank_gauge", <railcraft:tank_iron_gauge>, [[<ore:paneGlass>, <railcraft:tank_iron_wall>, <ore:paneGlass>],[null, null, null],[null, null, null]]);
+
+recipes.removeByRecipeName("railcraft:tank_steel_gauge#0$2");
+recipes.addShaped("it3_rc_steel_tank_gauge", <railcraft:tank_steel_gauge>, [[<ore:paneGlass>, <railcraft:tank_steel_wall>, <ore:paneGlass>],[null, null, null],[null, null, null]]);
+
+// Iron Tank Tooltips
+<railcraft:tank_iron_wall>.addTooltip(format.darkRed("Keep in one chunk!!"));
+<railcraft:tank_steel_wall>.addTooltip(format.darkRed("Keep in one chunk!!"));

@@ -24,11 +24,11 @@ oreFlint.add(<minecraft:flint>);
 var oreSaw = <ore:craftingToolSaw>;
 
 // ALTERNATIVE CHEST RECIPES
- recipes.addShaped(<minecraft:chest>*4, [
+ recipes.addShaped("it3_it_chests", <minecraft:chest>*4, [
   [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
   [<ore:logWood>, craftingToolSawEmptyTag, <ore:logWood>], 
   [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
   
  //Logs to sticks
-recipes.addShapedMirrored(<minecraft:stick>*4, [[<ore:logWood>], [<ore:logWood>]]);
-recipes.addShapedMirrored(<minecraft:stick>*8, [[oreSaw], [<ore:logWood>], [<ore:logWood>]]);
+recipes.addShapedMirrored("it3_logs_to_sticks", <minecraft:stick>*4, [[<ore:logWood>], [<ore:logWood>]]);
+recipes.addShapedMirrored("it3_saw_logs_to_sticks", <minecraft:stick>*8, [[oreSaw], [<ore:logWood>], [<ore:logWood>]]);

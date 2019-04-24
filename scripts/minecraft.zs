@@ -31,7 +31,7 @@ recipes.remove(<minecraft:diamond_hoe>);
 recipes.remove(<minecraft:golden_hoe>);
 
 // FLINT
-recipes.addShapeless(<minecraft:flint>, [<ore:gravel>, <ore:gravel>, <ore:gravel>, <ore:gravel>]);
+recipes.addShapeless("it3_vanilla_flint", <minecraft:flint>, [<ore:gravel>, <ore:gravel>, <ore:gravel>, <ore:gravel>]);
 
 // Nerf charcoal
 var charcoal = <minecraft:coal:1>;
@@ -42,14 +42,14 @@ furnace.addRecipe(tinyCharcoal, <ore:logWood>);
 
 // Alternative Flint and Steel recipe
 var flintAndSteel = <minecraft:flint_and_steel>;
-recipes.addShaped(flintAndSteel.withDamage(62), [[null, null, null], 
+recipes.addShaped("it3_vanilla_flintnsteel", flintAndSteel.withDamage(62), [[null, null, null], 
   [<ore:ingotWroughtIron>, null, null], 
   [null, <ore:ingotFlint>, null]]);
 
 var fireBow = <contenttweaker:fire_bow>;
 var bow =  <minecraft:bow:*>;
 
-recipes.addShaped("fire_bow_recipe", fireBow, 
+recipes.addShaped("it3_vanilla_firebow", fireBow, 
   [[null, <ore:stickWood>, null],
   [null, bow.marked("myItem"), null], 
   [null, null, null]], 
@@ -64,27 +64,27 @@ recipes.addShaped("fire_bow_recipe", fireBow,
 
 //PISTONS
 recipes.remove(<minecraft:piston>);
-recipes.addShaped(<minecraft:piston>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+recipes.addShaped("it3_vanilla_piston", <minecraft:piston>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
   [<ore:stoneCobble>, <ore:ingotIron>, <ore:stoneCobble>], 
   [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
 
-recipes.addShaped(<minecraft:piston>*2, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+recipes.addShaped("it3_vanilla_piston2", <minecraft:piston>*2, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
   [<ore:stoneCobble>, <ore:ingotSteel>, <ore:stoneCobble>], 
   [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
 
-recipes.addShaped(<minecraft:piston>*4, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+recipes.addShaped("it3_vanilla_piston3", <minecraft:piston>*4, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
   [<ore:stoneCobble>, <ore:ingotAluminium>, <ore:stoneCobble>], 
   [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
 
-recipes.addShaped(<minecraft:piston>*8, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+recipes.addShaped("it3_vanilla_piston4", <minecraft:piston>*8, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
   [<ore:stoneCobble>, <ore:ingotTitanium>, <ore:stoneCobble>], 
   [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
 
-recipes.addShaped(<minecraft:piston>*16, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+recipes.addShaped("it3_vanilla_piston5", <minecraft:piston>*16, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
   [<ore:stoneCobble>, <ore:ingotTungstenSteel>, <ore:stoneCobble>], 
   [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
 
-recipes.addShaped(<minecraft:piston>*32, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+recipes.addShaped("it3_vanilla_piston6", <minecraft:piston>*32, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
   [<ore:stoneCobble>, <ore:ingotNaquadah>, <ore:stoneCobble>], 
   [<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]]);
 
@@ -124,7 +124,7 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
-	.inputs(<ore:plateRedstone> * 9)
+	.inputs(<ore:dustRedstone> * 9)
 	.outputs(<minecraft:redstone_block>)
 	.duration(400).EUt(3)
 	.buildAndRegister();

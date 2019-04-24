@@ -89,12 +89,12 @@ var dustBronze = <gregtech:meta_item_1:2095>;
 var dustBronzeTF = <thermalfoundation:material:99>;
 recipes.remove(dustBronze * 4);
 recipes.remove(dustBronzeTF * 4);
-recipes.addShapeless(<ore:dustBronzeGt>.firstItem * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
+recipes.addShapeless("it3_gt_bronze_dust", <ore:dustBronzeGt>.firstItem * 3, [<ore:dustTin>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
 
 
 // Stick + Rubber => 3 Torches
 var rubber = <metaitem:rubber_drop>;
-recipes.addShaped(<minecraft:torch> * 3, [[null, rubber, null], [null, <ore:stickWood>, null], [null, null, null]]);
+recipes.addShaped("it3_gt_torch", <minecraft:torch> * 3, [[null, rubber, null], [null, <ore:stickWood>, null], [null, null, null]]);
 
 
 // DIAMONDS FROM COAL
@@ -105,24 +105,24 @@ var coal_ball = <contenttweaker:coal_ball>;
 var coal_dust = <ore:dustCoal>;
 var flint = <minecraft:flint>;
 
-//compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove(); // Removed by Gregic Additions already I think
 
-recipes.addShaped(coal_ball, [
+recipes.addShaped("it3_gt_coal_ball", coal_ball, [
   [coal_dust, coal_dust, coal_dust],
   [coal_dust, flint, coal_dust],
   [coal_dust, coal_dust, coal_dust]]);
   
-recipes.addShaped(coal_chunk, [
+recipes.addShaped("it3_gt_coal_chunk", coal_chunk, [
   [compressed_coal_ball, compressed_coal_ball, compressed_coal_ball],
   [compressed_coal_ball, <minecraft:obsidian>, compressed_coal_ball],
   [compressed_coal_ball, compressed_coal_ball, compressed_coal_ball]]);
      
-recipes.addShaped(coal_chunk, [
+recipes.addShaped("it3_gt_coal_chunk2", coal_chunk, [
   [compressed_coal_ball, compressed_coal_ball, compressed_coal_ball],
   [compressed_coal_ball, <minecraft:brick_block>, compressed_coal_ball],
   [compressed_coal_ball, compressed_coal_ball, compressed_coal_ball]]);
     
-recipes.addShaped(coal_chunk, [
+recipes.addShaped("it3_gt_coal_chunk3", coal_chunk, [
   [compressed_coal_ball, compressed_coal_ball, compressed_coal_ball],
   [compressed_coal_ball, <ore:blockIron>, compressed_coal_ball],
   [compressed_coal_ball, compressed_coal_ball, compressed_coal_ball]]);
@@ -171,7 +171,7 @@ cutting_saw.recipeBuilder()
 var dynamite = <metaitem:dynamite>;
 recipes.remove(dynamite);
 
-recipes.addShaped(dynamite, [
+recipes.addShaped("it3_gt_dynamite", dynamite, [
   [null, <ore:string>, null],
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>],
   [<ore:paper>, <ore:dustGunpowder>, <ore:paper>]]);
@@ -288,7 +288,7 @@ centrifuge.recipeBuilder()
 
 // Add missing clump->fullsize uranium recipes
 
-recipes.addShapeless(uranium235, [tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235]);
+recipes.addShapeless("it3_gt_uranium235", uranium235, [tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235, tinyUranium235]);
 
 // Disable default Uranium238 -> TinyPlutonium + TinyUranium235
 centrifuge.findRecipe(320, [<ore:dustUranium>.firstItem * 1], null).remove();
@@ -413,6 +413,14 @@ mixer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
+fluid_extractor.findRecipe(32, [<ore:blockConcrete>.firstItem * 1], null).remove();
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:blockConcrete> * 1)
+	.fluidOutputs([<liquid:concrete> * 144])
+	.duration(720)
+	.EUt(32)
+	.buildAndRegister();
+
 furnace.remove(<gregtech:concrete:1>, <gregtech:concrete>);
 furnace.remove(<gregtech:concrete:3>, <gregtech:concrete:2>);
 furnace.remove(<ore:ingotBlueAlloy>);
@@ -466,12 +474,12 @@ alloy_smelter.recipeBuilder()
 	.EUt(16)
 	.buildAndRegister();
 
-// Macerator: Gravel -> Flint
-macerator.recipeBuilder()
+// Forge Hammer: Gravel -> Flint
+forge_hammer.recipeBuilder()
 	.inputs([<minecraft:gravel> * 1])
 	.outputs(<minecraft:flint> * 1)
-	.duration(65)
-	.EUt(4)
+	.duration(45)
+	.EUt(5)
 	.buildAndRegister();
 
 
@@ -483,84 +491,49 @@ forge_hammer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
   
-// Forge Hammer: Gravel -> Sand
-forge_hammer.recipeBuilder()
-	.inputs([<ore:gravel>])
-	.outputs(<minecraft:sand>)
-	.duration(115)
-	.EUt(4)
-	.buildAndRegister();
-
   
 // Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
 recipes.remove(<minecraft:paper> * 2);
 recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
 recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
 
+/* ************************* FOOD -> COMPOST **********************************/
 
-/* Custom food composting, in case we decide we hate the compost-all-things-via-zencessories */
-/*
-val custom_food_compost_map = {
-  <minecraft:bread> : 23,
-  <minecraft:cookie> : 23,
-  <minecraft:melon> : 23,
-  <minecraft:apple> : 45,
-  <minecraft:nether_wart> : 45,
-  <minecraft:brown_mushroom> : 45,
-  <minecraft:spider_eye> : 45,
-  <minecraft:potato> : 60,
-  <minecraft:pumpkin> : 90,
-  <minecraft:carrot> : 90,
-  <minecraft:cooked_beef> : 90,
-  <minecraft:cooked_fish> : 90,
-  <minecraft:cooked_chicken> : 90,
-  <minecraft:rotten_flesh> : 90,
-  <minecraft:cooked_porkchop> : 90,
-  <minecraft:cooked_rabbit> : 90,
-  <minecraft:cooked_mutton> : 90,
-  <minecraft:porkchop> : 90,
-  <minecraft:fish:0> : 120,
-  <minecraft:fish:1> : 120,
-  <minecraft:fish:2> : 120,
-  <minecraft:fish:3> : 120,
-  <minecraft:poisonous_potato> : 120,
-  <minecraft:chicken> : 120,
-  <minecraft:rabbit> : 120,
-  <minecraft:mutton> : 120,
-  <minecraft:beef> : 120,
-  <minecraft:cake> : 180
+// Custom entries. These override the automatic ones below. FYI: Items here do not need to qualify as "food". They'll still generate compost.
+val custom_compost_map = {
+ <harvestcraft:stockitem> : 20,
+ <integrateddynamics:menril_berries> : 70
 } as int[IItemStack];
 
-for itemstack, fluidAmount in custom_food_compost_map {
-  mixer.recipeBuilder()
-    .fluidInputs([<liquid:water> * fluidAmount])
-    .inputs([itemstack * 1])
-    .fluidOutputs([<liquid:liquid_compost> * fluidAmount])
-    .duration(265)
-    .EUt(8)
-    .buildAndRegister();
-}
-*/
-
-// Add compost for every food type.  ONLY WORKS WITH ZENCESSORIES which was not a valid curseforge mod at this time.
+// Automatically generated compost outputs for every food type.
 for mod in loadedMods {
-  for item in mod.items {
-    if (item.getSaturationModifier() + item.getHealAmount() > 0) {  /* Try itemStack.getItem() instanceof ItemFood */
-      print("\t\t" ~ item.displayName);      
-      
-      val food_value = 20 + (30 * (item.getSaturationModifier() + item.getHealAmount()));
-      
-      mixer.recipeBuilder()
-        .fluidInputs([<liquid:water> * food_value])
-        .inputs([item * 1])
-        .fluidOutputs([<liquid:liquid_compost> * food_value])
-        .duration(240)
-        .EUt(9)
-        .buildAndRegister();   
-    }          
-  }
+ for item in mod.items {
+   var food_value = 0; 
+
+   for itemstack, fluidamount in custom_compost_map {
+        if (itemstack.definition.name == item.definition.name) {
+         // If the item is in the custom entries above, use that provided value instead of automatically generating one.
+         print("\t\t CUST: " ~ item.displayName);    
+         food_value = fluidamount as int; // Even though the value is int, we need to typecast 
+      } else if (item.getSaturationModifier() + item.getHealAmount() > 0) {
+         print("\t\t AUTO: " ~ item.displayName); 
+         food_value = 20 + (30 * (item.getSaturationModifier() + item.getHealAmount()));      
+      }
+   }
+
+   if (food_value > 0) {
+     mixer.recipeBuilder()
+       .fluidInputs([<liquid:water> * food_value])
+       .inputs([item * 1])
+       .fluidOutputs([<liquid:liquid_compost> * food_value]) // pyure: switch back to compost
+       .duration(240)
+       .EUt(9)
+      .buildAndRegister(); 
+   }         
+ }
 }
 
+/* *****************************************************************************/
 
 // Add single-use batteries to appropriate oredicts
 <ore:batteryLVAll>.add(<metaitem:battery.su.lv.mercury>);
@@ -646,12 +619,12 @@ mixer.recipeBuilder()
 	
 alloy_smelter.findRecipe(8, [<minecraft:sand> * 2, <minecraft:clay_ball> * 1], [null]).remove();
 
-recipes.addShaped(<metaitem:component.resistor> *1, [
+recipes.addShaped("it3_gt_resistor", <metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
   [<ore:wireGtSingleCopper>, <ore:dustCharcoal>, <ore:wireGtSingleCopper>],
   [null, <minecraft:paper>, null]]);
 
-recipes.addShaped(<metaitem:component.resistor> *1, [
+recipes.addShaped("it3_gt_resistor2", <metaitem:component.resistor> *1, [
   [null, <minecraft:paper>, null],
   [<ore:wireFineCopper>, <ore:dustCharcoal>, <ore:wireFineCopper>],
   [null, <minecraft:paper>, null]]);
@@ -667,12 +640,12 @@ var hLeather = <harvestcraft:hardenedleatheritem>;
 recipes.remove(<toolbelt:belt>);
 recipes.remove(<toolbelt:pouch>);
 
-recipes.addShaped(<toolbelt:belt>, [
+recipes.addShaped("it3_gt_toolbelt", <toolbelt:belt>, [
 [<ore:manaString>, hLeather, <ore:manaString>],
 [hLeather, null, hLeather],
 [hLeather, <ore:ringSteel>, hLeather]]);
 
-recipes.addShaped(<toolbelt:pouch>, [
+recipes.addShaped("it3_gt_toolbelt_pouch", <toolbelt:pouch>, [
 [<ore:wireFineBrass>, <minecraft:gold_nugget>, <ore:wireFineBrass>],
 [hLeather, null, hLeather],
 [<ore:wireFineBrass>, hLeather, <ore:wireFineBrass>]]);
@@ -789,19 +762,19 @@ for j, b in rubberDust {
 
 // GT:CE's nerf-wood config doesn't work on GT wood.  Arch is too lazy to fix it his side.
 recipes.removeByRecipeName("gregtech:rubber_wood_planks");
-recipes.addShapeless(<minecraft:planks:3> * 2, [<gregtech:log>]);
+recipes.addShapeless("it3_gt_rubber_planks", <minecraft:planks:3> * 2, [<gregtech:log>]);
 
 //Stone Rods
 var rodStone = <microblockcbe:stone_rod>;
 
 recipes.remove(rodStone);
 
-recipes.addShaped(<ore:rodStone>.firstItem * 1,[
+recipes.addShaped("it3_gt_stone_rod", <ore:rodStone>.firstItem * 1,[
 [craftingToolFileEmptyTag,null,null],
 [null,<ore:stone>,null],
 [null,null,null]]);
 
-recipes.addShaped(<ore:rodCobblestone>.firstItem * 1,[
+recipes.addShaped("it3_gt_cobble_rod", <ore:rodCobblestone>.firstItem * 1,[
 [craftingToolFileEmptyTag,null,null],
 [null,<ore:cobblestone>,null],
 [null,null,null]]);
@@ -816,7 +789,7 @@ lathe.recipeBuilder()
 var woodHammer = <gregtech:meta_tool:7>.withTag({"GT.ToolStats": {PrimaryMaterial: "wood", MaxDurability: 16, DigSpeed: 0.5 as float, AttackDamage: 0.5 as float, HarvestLevel: 1}});
   
 
-recipes.addShaped(woodHammer * 1,[
+recipes.addShaped("it3_gt_wood_hammer", woodHammer * 1,[
 [<ore:plankWood>,<ore:plankWood>,null],
 [<ore:plankWood>,<ore:plankWood>,<ore:stickWood>],
 [<ore:plankWood>,<ore:plankWood>,null]]);  
@@ -830,18 +803,95 @@ chemical_reactor.recipeBuilder().inputs(<ore:gemApatite> * 1).fluidInputs(<liqui
 chemical_reactor.recipeBuilder().inputs(<ore:combApatite> * 1).fluidInputs(<liquid:liquid_compost> * 50).outputs(fertilizer * 8).duration(35).EUt(14).buildAndRegister();
 
 // Empty all the cells
-recipes.addShapeless(<metaitem:large_fluid_cell.tungstensteel>, [<metaitem:large_fluid_cell.tungstensteel>]);
-recipes.addShapeless(<metaitem:large_fluid_cell.steel>, [<metaitem:large_fluid_cell.steel>]);
-recipes.addShapeless(<metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
+recipes.addShapeless("it3_gt_empty_tsteel_cell", <metaitem:large_fluid_cell.tungstensteel>, [<metaitem:large_fluid_cell.tungstensteel>]);
+recipes.addShapeless("it3_gt_empty_steel_cell", <metaitem:large_fluid_cell.steel>, [<metaitem:large_fluid_cell.steel>]);
+recipes.addShapeless("it3_gt_empty_cell", <metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
 
 // Saw + Rubber Log -> 4 Planks
-recipes.addShaped(<minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
+recipes.addShaped("it3_gt_saw_rubber", <minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
 
-// Cobble to Gravel Forge Hammer
-forge_hammer.recipeBuilder()		
-	.inputs(<ore:cobblestone> * 1)
-	.outputs(<ore:gravel>.firstItem * 1)
-	.duration(120)
+cutting_saw.recipeBuilder()
+	.inputs(<gregtech:log> * 1)
+	.fluidInputs(<liquid:lubricant> * 1)
+	.outputs(<minecraft:planks:3> * 6, <ore:dustWood>.firstItem * 2)
+	.duration(200)
+	.EUt(8)
+	.buildAndRegister();
+
+//Fluid extractor recipe for nuts
+<ore:listAllnut>.add(<harvestcraft:hazelnutitem>); // Pyure: reminder, Agrax didn't invent this shitty oredict name.  Came from Pam's.
+var pulpBiomass = <thermalfoundation:material:816>;
+
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:listAllnut> * 1)
+	.fluidOutputs(<liquid:seed.oil> * 65) /* Probably too much seed oil.  At least some of these nuts grow just like any other seeds */
+	.chancedOutput(pulpBiomass * 1, 150)
+	.duration(80)
+	.EUt(8)
+	.buildAndRegister();
+
+var lapotron = <metaitem:lapotron_crystal>;
+var lapis = <ore:plateLapis>;
+var sod = <ore:plateSodalite>;
+var laz = <ore:plateLazurite>;
+var cpu = <metaitem:plate.nano_central_processing_unit>;
+
+recipes.addShaped("it3_gt_lapotron", lapotron * 1, [
+[lapis,<ore:circuitAdvanced>,lapis],
+[lapis,<ore:gemFlawlessSapphire>,lapis],
+[lapis,<ore:circuitAdvanced>,lapis]]);
+
+recipes.addShaped("it3_gt_lapotron2", lapotron * 1, [
+[sod,<ore:circuitAdvanced>,sod],
+[sod,<ore:gemFlawlessSapphire>,sod],
+[sod,<ore:circuitAdvanced>,sod]]);
+
+recipes.addShaped("it3_gt_lapotron3", lapotron * 1, [
+[sod,<ore:circuitAdvanced>,sod],
+[sod,<metaitem:energy_crystal>,sod],
+[sod,<ore:circuitAdvanced>,sod]]);
+
+recipes.addShaped("it3_gt_lapotron4", lapotron * 1, [
+[laz,<ore:circuitAdvanced>,laz],
+[laz,<ore:gemFlawlessSapphire>,laz],
+[laz,<ore:circuitAdvanced>,laz]]);
+
+recipes.addShaped("it3_gt_lapotron5", lapotron * 1, [
+[laz,<ore:circuitAdvanced>,laz],
+[laz,<metaitem:energy_crystal>,laz],
+[laz,<ore:circuitAdvanced>,laz]]);
+
+recipes.addShapeless("it3_gt_lapotron6", lapotron * 1, [
+cpu,<ore:gemExquisiteSapphire>,<ore:stickLapis>
+]);
+
+recipes.addShapeless("it3_gt_lapotron7", lapotron * 1, [
+cpu,<ore:gemExquisiteSapphire>,<ore:stickSodalite>
+]);
+
+recipes.addShapeless("it3_gt_lapotron8", lapotron * 1, [
+cpu,<ore:gemExquisiteSapphire>,<ore:stickLazurite>
+]);
+
+// Steel bullets
+var steel_bullet = <foundry:component:14>;
+var bullet_mold = <foundry:mold:16>;
+fluid_solidifier.recipeBuilder()
+	.notConsumable(bullet_mold)
+	.fluidInputs([<liquid:steel> * 36])
+	.outputs(steel_bullet * 1)
+	.duration(45)
 	.EUt(4)
-.buildAndRegister();
+	.buildAndRegister();
+  
+// Steel pellets
+var steel_pellet = <foundry:component:15>;
+var pellet_mold = <foundry:mold:22>;
+fluid_solidifier.recipeBuilder()
+	.notConsumable(pellet_mold)
+	.fluidInputs([<liquid:steel> * 12])
+	.outputs(steel_pellet * 1)
+	.duration(35)
+	.EUt(4)
+	.buildAndRegister();
 

@@ -156,21 +156,13 @@ var metal_list = [] as Material[];
 var honeydrop_material_list = [Mutagen] as Material[];
 var rod_material_list = [Cobblestone, Sandstone, Clay, Obsidian] as Material[];
 
-var pollinated_material_list = [Lead,Galena,Silver,Beryllium,Emerald,Thorium,Aluminium,Bauxite,Cinnabar,Redstone,Tin,Cassiterite,Quartzite,NetherQuartz,CertusQuartz,Barite,Platinum,Palladium,Copper,
-Stibnite,Chalcopyrite,Malachite,Tetrahedrite,Tenorite,Bornite,Cuprite,Chalcocite,Enargite,Tennantite,Diamond,Graphite,Gold,Lapis,Calcite,Sodalite,Lazurite,Nickel,Garnierite,Pentlandite,Cobaltite,Wulfenite,Powellite,
-Iron,Pyrite,BandedIron,Magnetite,VanadiumMagnetite,BrownLimonite,YellowLimonite,Iridium] as Material[];
 var pollen_material_list = [Lead,Emerald,Aluminium,Redstone,Tin,NetherQuartz,Platinum,Copper,Diamond,Gold,Lapis,Nickel,Iron,Iridium] as Material[];
 
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_crushed_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallCrushedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_purified_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallPurifiedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("bee_comb").setPartType(MaterialSystem.getPartType("item")).setOreDictName("comb").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("honey_drop").setPartType(MaterialSystem.getPartType("item")).setOreDictName("dropHoney").build();
-mods.contenttweaker.MaterialSystem.getPartBuilder().setName("pollinated_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("pollinatedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("pollen").setPartType(MaterialSystem.getPartType("item")).setOreDictName("pollen").build();
-
-for i, pollinated_material in pollinated_material_list {
-    pollinated_material.registerPart("pollinated_ore");
-}
 
 for i, pollen_material in pollen_material_list {
     pollen_material.registerPart("pollen");

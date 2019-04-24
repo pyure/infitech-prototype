@@ -11,22 +11,22 @@ var fluidTranslocator = <translocators:translocator_part:1>;
 recipes.remove(itemTranslocator);
 recipes.remove(fluidTranslocator);
 
-recipes.addShaped(itemTranslocator * 2, [
+recipes.addShaped("it3_transloc_transloc_1", itemTranslocator * 2, [
   [<thermaldynamics:duct_32>, <minecraft:ender_pearl>, <thermaldynamics:duct_32>], 
   [<advgenerators:iron_wiring>, conveyorLV, <advgenerators:iron_wiring> ], 
   [<ore:gearTin>, <ore:plateWroughtIron>, <ore:gearTin>]]);
   
-recipes.addShaped(fluidTranslocator * 2, [
+recipes.addShaped("it3_transloc_fluid_1", fluidTranslocator * 2, [
   [<thermaldynamics:duct_16>, <minecraft:ender_pearl>, <thermaldynamics:duct_16>], 
   [<advgenerators:iron_wiring>, pumpLV, <advgenerators:iron_wiring> ], 
   [<ore:gearCopper>, <ore:plateWroughtIron>, <ore:gearCopper>]]);
   
-recipes.addShaped(itemTranslocator * 4, [
+recipes.addShaped("it3_transloc_transloc_2", itemTranslocator * 4, [
   [<thermaldynamics:duct_32>, <ore:plateEnderium>, <thermaldynamics:duct_32>], 
   [<advgenerators:iron_wiring>, conveyorLV, <advgenerators:iron_wiring> ], 
   [<ore:gearTin>, <ore:plateWroughtIron>, <ore:gearTin>]]);
   
-recipes.addShaped(fluidTranslocator * 4, [
+recipes.addShaped("it3_transloc_fluid_2", fluidTranslocator * 4, [
   [<thermaldynamics:duct_16>, <ore:plateEnderium>, <thermaldynamics:duct_16>], 
   [<advgenerators:iron_wiring>, pumpLV, <advgenerators:iron_wiring> ], 
   [<ore:gearCopper>, <ore:plateWroughtIron>, <ore:gearCopper>]]);
