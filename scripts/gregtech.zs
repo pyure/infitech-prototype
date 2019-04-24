@@ -280,8 +280,8 @@ val uranium235Oxidized = <nuclearcraft:uranium:5>;
 
 centrifuge.recipeBuilder()
 	.fluidInputs([<liquid:uranium_hexafluoride> * 220])
-  .chancedOutput(tinyUranium235 * 2, 500)
-  .chancedOutput(uranium238 * 1, 1150)
+  .chancedOutput(tinyUranium235 * 2, 500, 100)
+  .chancedOutput(uranium238 * 1, 1150, 200)
   .duration(85)
   .EUt(200)
   .buildAndRegister(); 
@@ -553,10 +553,10 @@ fermenter.recipeBuilder()
 var pulpedBiomass = <thermalfoundation:material:816>;
 centrifuge.recipeBuilder()
   .fluidInputs([<liquid:mouldy_compost> * 100])
-  .chancedOutput(pulpedBiomass, 2200)
-  .chancedOutput(pulpedBiomass, 2200)
-  .chancedOutput(pulpedBiomass, 2200)
-  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200, 300)
+  .chancedOutput(pulpedBiomass, 2200, 300)
+  .chancedOutput(pulpedBiomass, 2200, 300)
+  .chancedOutput(pulpedBiomass, 2200, 300)
   .fluidOutputs(<liquid:methane> * 56)
   .duration(45)
   .EUt(12)
@@ -692,7 +692,7 @@ macerator.findRecipe(12, [<ore:crushedCentrifugedUraninite>.firstItem], null).re
 macerator.recipeBuilder()		
 	.inputs(<ore:crushedPurifiedUranium> * 1)
 	.outputs([<ore:dustPureUranium>.firstItem *1])
-  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 500)
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 500, 100)
 	.duration(40)
 	.EUt(18)
 	.buildAndRegister();
@@ -700,7 +700,7 @@ macerator.recipeBuilder()
 macerator.recipeBuilder()		
 	.inputs(<ore:crushedCentrifugedUraninite> * 1)
 	.outputs([<ore:dustUraninite>.firstItem *1])
-  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500, 300)
 	.duration(40)
 	.EUt(12)
 	.buildAndRegister();  
@@ -710,7 +710,7 @@ centrifuge.findRecipe(5, [<ore:dustPureUranium>.firstItem], null).remove();
 centrifuge.recipeBuilder()		
 	.inputs(<ore:dustPureUranium> * 1)
 	.outputs([<ore:dustUranium>.firstItem *1])
-  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500, 300)
 	.duration(952)
 	.EUt(18)
 	.buildAndRegister();  
@@ -825,7 +825,7 @@ var pulpBiomass = <thermalfoundation:material:816>;
 fluid_extractor.recipeBuilder()
 	.inputs(<ore:listAllnut> * 1)
 	.fluidOutputs(<liquid:seed.oil> * 65) /* Probably too much seed oil.  At least some of these nuts grow just like any other seeds */
-	.chancedOutput(pulpBiomass * 1, 150)
+	.chancedOutput(pulpBiomass * 1, 150, 50)
 	.duration(80)
 	.EUt(8)
 	.buildAndRegister();
