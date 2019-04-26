@@ -830,47 +830,39 @@ fluid_extractor.recipeBuilder()
 	.EUt(8)
 	.buildAndRegister();
 
+// Lapotron recipes
 var lapotron = <metaitem:lapotron_crystal>;
 var lapis = <ore:plateLapis>;
-var sod = <ore:plateSodalite>;
-var laz = <ore:plateLazurite>;
+var sodalite = <ore:plateSodalite>;
+var lazurite = <ore:plateLazurite>;
 var cpu = <metaitem:plate.nano_central_processing_unit>;
 
 recipes.addShaped("it3_gt_lapotron", lapotron * 1, [
-[lapis,<ore:circuitAdvanced>,lapis],
-[lapis,<ore:gemFlawlessSapphire>,lapis],
-[lapis,<ore:circuitAdvanced>,lapis]]);
+  [lapis,<ore:circuitAdvanced>,lapis],
+  [lapis,<ore:gemFlawlessSapphire>,lapis],
+  [lapis,<ore:circuitAdvanced>,lapis]]);
 
 recipes.addShaped("it3_gt_lapotron2", lapotron * 1, [
-[sod,<ore:circuitAdvanced>,sod],
-[sod,<ore:gemFlawlessSapphire>,sod],
-[sod,<ore:circuitAdvanced>,sod]]);
+  [sodalite,<ore:circuitAdvanced>,sodalite],
+  [sodalite,<ore:gemFlawlessSapphire>,sodalite],
+  [sodalite,<ore:circuitAdvanced>,sodalite]]);
 
-recipes.addShaped("it3_gt_lapotron3", lapotron * 1, [
-[sod,<ore:circuitAdvanced>,sod],
-[sod,<metaitem:energy_crystal>,sod],
-[sod,<ore:circuitAdvanced>,sod]]);
 
 recipes.addShaped("it3_gt_lapotron4", lapotron * 1, [
-[laz,<ore:circuitAdvanced>,laz],
-[laz,<ore:gemFlawlessSapphire>,laz],
-[laz,<ore:circuitAdvanced>,laz]]);
-
-recipes.addShaped("it3_gt_lapotron5", lapotron * 1, [
-[laz,<ore:circuitAdvanced>,laz],
-[laz,<metaitem:energy_crystal>,laz],
-[laz,<ore:circuitAdvanced>,laz]]);
+  [lazurite,<ore:circuitAdvanced>,lazurite],
+  [lazurite,<ore:gemFlawlessSapphire>,lazurite],
+  [lazurite,<ore:circuitAdvanced>,lazurite]]);
 
 recipes.addShapeless("it3_gt_lapotron6", lapotron * 1, [
-cpu,<ore:gemExquisiteSapphire>,<ore:stickLapis>
+  cpu,<ore:gemExquisiteSapphire>,<ore:stickLapis>
 ]);
 
 recipes.addShapeless("it3_gt_lapotron7", lapotron * 1, [
-cpu,<ore:gemExquisiteSapphire>,<ore:stickSodalite>
+  cpu,<ore:gemExquisiteSapphire>,<ore:stickSodalite>
 ]);
 
 recipes.addShapeless("it3_gt_lapotron8", lapotron * 1, [
-cpu,<ore:gemExquisiteSapphire>,<ore:stickLazurite>
+  cpu,<ore:gemExquisiteSapphire>,<ore:stickLazurite>
 ]);
 
 // Steel bullets
