@@ -8,6 +8,7 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
+val mixer as RecipeMap = RecipeMap.getByName("mixer");
 
 
 // These are covered by GT meta tools
@@ -195,8 +196,8 @@ var pipeSmallStainlessSteel = <ore:pipeSmallStainlessSteel>;
 //Vacuum und Dense Itemducts
 for i in 0 to 5
 {
-	recipes.addShapeless(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 1 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
-	recipes.addShapeless(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 2 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetSilver>, <ore:nuggetSilver>, <ore:nuggetSilver>]);
+	recipes.addShapeless("it3_td_vac_"~i, <thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 1 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
+	recipes.addShapeless("it3_td_dense_"~i, <thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 2 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetSilver>, <ore:nuggetSilver>, <ore:nuggetSilver>]);
 }
 
 // ItemDuct
@@ -482,19 +483,19 @@ var coinCopper = <thermalfoundation:coin:64>;
 <ore:coinCopper>.addTooltip(format.green("1 Copper = 1 Copper"));
 
 // COIN RECIPES
-recipes.addShapeless(coinIridium, [coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum]);
-recipes.addShapeless(coinPlatinum, [coinGold, coinGold, coinGold, coinGold, coinGold, coinGold, coinGold, coinGold]);
-recipes.addShapeless(coinGold, [coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver]);
-recipes.addShapeless(coinSilver, [coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan]);
-recipes.addShapeless(coinConstantan, [coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron]);
-recipes.addShapeless(coinIron, [coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper]);
+recipes.addShapeless("it3_tf_coin_0", coinIridium, [coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum, coinPlatinum]);
+recipes.addShapeless("it3_tf_coin_1", coinPlatinum, [coinGold, coinGold, coinGold, coinGold, coinGold, coinGold, coinGold, coinGold]);
+recipes.addShapeless("it3_tf_coin_2", coinGold, [coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver, coinSilver]);
+recipes.addShapeless("it3_tf_coin_3", coinSilver, [coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan, coinConstantan]);
+recipes.addShapeless("it3_tf_coin_4", coinConstantan, [coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron, coinIron]);
+recipes.addShapeless("it3_tf_coin_5", coinIron, [coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper, coinCopper]);
 
-recipes.addShapeless(coinPlatinum * 8, [coinIridium]);
-recipes.addShapeless(coinGold * 8, [coinPlatinum]);
-recipes.addShapeless(coinSilver * 8, [coinGold]);
-recipes.addShapeless(coinConstantan * 8, [coinSilver]);
-recipes.addShapeless(coinIron * 8, [coinConstantan]);
-recipes.addShapeless(coinCopper * 8, [coinIron]);
+recipes.addShapeless("it3_tf_coin_6", coinPlatinum * 8, [coinIridium]);
+recipes.addShapeless("it3_tf_coin_7", coinGold * 8, [coinPlatinum]);
+recipes.addShapeless("it3_tf_coin_8", coinSilver * 8, [coinGold]);
+recipes.addShapeless("it3_tf_coin_9", coinConstantan * 8, [coinSilver]);
+recipes.addShapeless("it3_tf_coin_10", coinIron * 8, [coinConstantan]);
+recipes.addShapeless("it3_tf_coin_11", coinCopper * 8, [coinIron]);
 
 var dustConstantan = <thermalfoundation:material:100>;
 recipes.remove(dustConstantan);
@@ -692,3 +693,26 @@ recipes.remove(<thermalfoundation:bait:2>);
 
 // Rich Slag
 recipes.remove(<thermalfoundation:material:865>);
+
+// Clay recipe from regular slag
+var water_cell = <gregtech:meta_item_1:32762>.withTag({Fluid: {FluidName: "water", Amount: 1000}});
+var steel_water_cell = <gregtech:meta_item_1:32405>.withTag({Fluid: {FluidName: "water", Amount: 1000}});
+var tungstensteel_water_cell = <gregtech:meta_item_1:32406>.withTag({Fluid: {FluidName: "water", Amount: 1000}});
+
+recipes.addShapeless("it3_tf_clay_0", <minecraft:clay_ball> * 4, [<ore:crystalSlag>, <ore:crystalSlag>, <minecraft:dirt>, water_cell]);
+recipes.addShapeless("it3_tf_clay_1", <minecraft:clay_ball> * 4, [<ore:crystalSlag>, <ore:crystalSlag>, <minecraft:dirt>, steel_water_cell]);
+recipes.addShapeless("it3_tf_clay_2", <minecraft:clay_ball> * 4, [<ore:crystalSlag>, <ore:crystalSlag>, <minecraft:dirt>, tungstensteel_water_cell]);
+
+// Mixer recipe for regular slag
+mixer.recipeBuilder()
+	.inputs(<ore:dirt> * 1, <ore:crystalSlag> * 2)
+  .fluidInputs([<liquid:water> * 1000])
+	.outputs(<minecraft:clay_ball> * 4)
+	.duration(45)
+	.EUt(2)
+	.buildAndRegister();
+
+// Slag -> Dirt.  Archengius really wants this.  I don't care enough to refuse it.
+var pulpedBiomass = <thermalfoundation:material:816>;
+recipes.removeByRecipeName("thermalfoundation:block_dirt");
+recipes.addShapeless("it3_thermalfoundation_block_dirt", <minecraft:dirt> * 3, [pulpedBiomass, pulpedBiomass, <ore:crystalSlag>, <ore:crystalSlag>]);

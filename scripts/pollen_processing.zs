@@ -23,239 +23,239 @@ var pNickel = <ore:pollenNickel>;
 var pIron = <ore:pollenIron>;
 var pIridium = <ore:pollenIridium>;
 
-val pollenIn = 4;
-val oreOut = 2;
+val pollenIn = 7;
+val oreOut = 3;
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
 
 
 /*========== POLLINATED ORE ==========*/
 
 //Lead
-alloy_smelter.recipeBuilder().inputs([<ore:crushedLead> * 1, pLead * pollenIn]).outputs(<ore:pollinatedOreLead>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreLead> * 1).outputs(<ore:crushedPurifiedLead>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedLead>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreLead>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedLead> * 1, pLead * pollenIn]).outputs(<ore:crushedPurifiedLead>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedLead> * 1).outputs(<ore:crushedPurifiedLead>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_28",<ore:crushedPurifiedLead>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedLead>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedGalena> * 1, pLead * pollenIn]).outputs(<ore:pollinatedOreGalena>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreGalena> * 1).outputs(<ore:crushedPurifiedGalena>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedGalena>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreGalena>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedGalena> * 1, pLead * pollenIn]).outputs(<ore:crushedPurifiedGalena>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedGalena> * 1).outputs(<ore:crushedPurifiedGalena>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_20",<ore:crushedPurifiedGalena>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedGalena>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedSilver> * 1, pLead * pollenIn]).outputs(<ore:pollinatedOreSilver>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreSilver> * 1).outputs(<ore:crushedPurifiedSilver>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedSilver>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreSilver>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedSilver> * 1, pLead * pollenIn]).outputs(<ore:crushedPurifiedSilver>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedSilver> * 1).outputs(<ore:crushedPurifiedSilver>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_40",<ore:crushedPurifiedSilver>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedSilver>]);
 
 
 //Emerald
-alloy_smelter.recipeBuilder().inputs([<ore:crushedBeryllium> * 1, pEmerald * pollenIn]).outputs(<ore:pollinatedOreBeryllium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreBeryllium> * 1).outputs(<ore:crushedPurifiedBeryllium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedBeryllium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreBeryllium>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedBeryllium> * 1, pEmerald * pollenIn]).outputs(<ore:crushedPurifiedBeryllium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedBeryllium> * 1).outputs(<ore:crushedPurifiedBeryllium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_5",<ore:crushedPurifiedBeryllium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedBeryllium>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedEmerald> * 1, pEmerald * pollenIn]).outputs(<ore:pollinatedOreEmerald>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreEmerald> * 1).outputs(<ore:crushedPurifiedEmerald>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedEmerald>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreEmerald>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedEmerald> * 1, pEmerald * pollenIn]).outputs(<ore:crushedPurifiedEmerald>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedEmerald> * 1).outputs(<ore:crushedPurifiedEmerald>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_18",<ore:crushedPurifiedEmerald>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedEmerald>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedThorium> * 1, pEmerald * pollenIn]).outputs(<ore:pollinatedOreThorium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreThorium> * 1).outputs(<ore:crushedPurifiedThorium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedThorium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreThorium>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedThorium> * 1, pEmerald * pollenIn]).outputs(<ore:crushedPurifiedThorium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedThorium> * 1).outputs(<ore:crushedPurifiedThorium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_46",<ore:crushedPurifiedThorium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedThorium>]);
 
 
 //Aluminium
-alloy_smelter.recipeBuilder().inputs([<ore:crushedAluminium> * 1, pAluminium * pollenIn]).outputs(<ore:pollinatedOreAluminium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreAluminium> * 1).outputs(<ore:crushedPurifiedAluminium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedAluminium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreAluminium>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedAluminium> * 1, pAluminium * pollenIn]).outputs(<ore:crushedPurifiedAluminium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedAluminium> * 1).outputs(<ore:crushedPurifiedAluminium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_1",<ore:crushedPurifiedAluminium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedAluminium>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedBauxite> * 1, pAluminium * pollenIn]).outputs(<ore:pollinatedOreBauxite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreBauxite> * 1).outputs(<ore:crushedPurifiedBauxite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedBauxite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreBauxite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedBauxite> * 1, pAluminium * pollenIn]).outputs(<ore:crushedPurifiedBauxite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedBauxite> * 1).outputs(<ore:crushedPurifiedBauxite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_4",<ore:crushedPurifiedBauxite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedBauxite>]);
 
 
 //Redstone
-alloy_smelter.recipeBuilder().inputs([<ore:crushedCinnabar> * 1, pRedstone * pollenIn]).outputs(<ore:pollinatedOreCinnabar>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreCinnabar> * 1).outputs(<ore:crushedPurifiedCinnabar>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedCinnabar>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreCinnabar>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedCinnabar> * 1, pRedstone * pollenIn]).outputs(<ore:crushedPurifiedCinnabar>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedCinnabar> * 1).outputs(<ore:crushedPurifiedCinnabar>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_13",<ore:crushedPurifiedCinnabar>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedCinnabar>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedRedstone> * 1, pRedstone * pollenIn]).outputs(<ore:pollinatedOreRedstone>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreRedstone> * 1).outputs(<ore:crushedPurifiedRedstone>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedRedstone>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreRedstone>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedRedstone> * 1, pRedstone * pollenIn]).outputs(<ore:crushedPurifiedRedstone>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedRedstone> * 1).outputs(<ore:crushedPurifiedRedstone>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_39",<ore:crushedPurifiedRedstone>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedRedstone>]);
 
 
 //Tin
-alloy_smelter.recipeBuilder().inputs([<ore:crushedTin> * 1, pTin * pollenIn]).outputs(<ore:pollinatedOreTin>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreTin> * 1).outputs(<ore:crushedPurifiedTin>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedTin>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreTin>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedTin> * 1, pTin * pollenIn]).outputs(<ore:crushedPurifiedTin>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedTin> * 1).outputs(<ore:crushedPurifiedTin>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_47",<ore:crushedPurifiedTin>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedTin>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedCassiterite> * 1, pTin * pollenIn]).outputs(<ore:pollinatedOreCassiterite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreCassiterite> * 1).outputs(<ore:crushedPurifiedCassiterite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedCassiterite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreCassiterite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedCassiterite> * 1, pTin * pollenIn]).outputs(<ore:crushedPurifiedCassiterite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedCassiterite> * 1).outputs(<ore:crushedPurifiedCassiterite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_9",<ore:crushedPurifiedCassiterite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedCassiterite>]);
 
 
 //Quartz
-alloy_smelter.recipeBuilder().inputs([<ore:crushedQuartzite> * 1, pQuartz * pollenIn]).outputs(<ore:pollinatedOreQuartzite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreQuartzite> * 1).outputs(<ore:crushedPurifiedQuartzite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedQuartzite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreQuartzite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedQuartzite> * 1, pQuartz * pollenIn]).outputs(<ore:crushedPurifiedQuartzite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedQuartzite> * 1).outputs(<ore:crushedPurifiedQuartzite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_38",<ore:crushedPurifiedQuartzite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedQuartzite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedNetherQuartz> * 1, pQuartz * pollenIn]).outputs(<ore:pollinatedOreNetherQuartz>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreNetherQuartz> * 1).outputs(<ore:crushedPurifiedNetherQuartz>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedNetherQuartz>.firstItem * 1, [<ore:craftingToolHardHammerNetherQuartz>, <ore:pollinatedOre>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedNetherQuartz> * 1, pQuartz * pollenIn]).outputs(<ore:crushedPurifiedNetherQuartz>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedNetherQuartz> * 1).outputs(<ore:crushedPurifiedNetherQuartz>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_31",<ore:crushedPurifiedNetherQuartz>.firstItem * 1, [<ore:craftingToolHardHammerNetherQuartz>, <ore:crushedPurified>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedCertusQuartz> * 1, pQuartz * pollenIn]).outputs(<ore:pollinatedOreCertusQuartz>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreCertusQuartz> * 1).outputs(<ore:crushedPurifiedCertusQuartz>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedCertusQuartz>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreCertusQuartz>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedCertusQuartz> * 1, pQuartz * pollenIn]).outputs(<ore:crushedPurifiedCertusQuartz>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedCertusQuartz> * 1).outputs(<ore:crushedPurifiedCertusQuartz>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_10",<ore:crushedPurifiedCertusQuartz>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedCertusQuartz>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedBarite> * 1, pQuartz * pollenIn]).outputs(<ore:pollinatedOreBarite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreBarite> * 1).outputs(<ore:crushedPurifiedBarite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedBarite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreBarite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedBarite> * 1, pQuartz * pollenIn]).outputs(<ore:crushedPurifiedBarite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedBarite> * 1).outputs(<ore:crushedPurifiedBarite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_3",<ore:crushedPurifiedBarite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedBarite>]);
 
 
 //Platinum
-alloy_smelter.recipeBuilder().inputs([<ore:crushedPlatinum> * 1, pPlatinum * pollenIn]).outputs(<ore:pollinatedOrePlatinum>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOrePlatinum> * 1).outputs(<ore:crushedPurifiedPlatinum>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedPlatinum>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOrePlatinum>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedPlatinum> * 1, pPlatinum * pollenIn]).outputs(<ore:crushedPurifiedPlatinum>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedPlatinum> * 1).outputs(<ore:crushedPurifiedPlatinum>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_35",<ore:crushedPurifiedPlatinum>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedPlatinum>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedPalladium> * 1, pPlatinum * pollenIn]).outputs(<ore:pollinatedOrePalladium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOrePalladium> * 1).outputs(<ore:crushedPurifiedPalladium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedPalladium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOrePalladium>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedPalladium> * 1, pPlatinum * pollenIn]).outputs(<ore:crushedPurifiedPalladium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedPalladium> * 1).outputs(<ore:crushedPurifiedPalladium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_33",<ore:crushedPurifiedPalladium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedPalladium>]);
 
 
 //Copper
-alloy_smelter.recipeBuilder().inputs([<ore:crushedCopper> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreCopper>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreCopper> * 1).outputs(<ore:crushedPurifiedCopper>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedCopper>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreCopper>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedCopper> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedCopper>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedCopper> * 1).outputs(<ore:crushedPurifiedCopper>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_15",<ore:crushedPurifiedCopper>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedCopper>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedStibnite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreStibnite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreStibnite> * 1).outputs(<ore:crushedPurifiedStibnite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedStibnite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreStibnite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedStibnite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedStibnite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedStibnite> * 1).outputs(<ore:crushedPurifiedStibnite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_42",<ore:crushedPurifiedStibnite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedStibnite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedChalcopyrite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreChalcopyrite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreChalcopyrite> * 1).outputs(<ore:crushedPurifiedChalcopyrite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedChalcopyrite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreChalcopyrite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedChalcopyrite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedChalcopyrite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedChalcopyrite> * 1).outputs(<ore:crushedPurifiedChalcopyrite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_12",<ore:crushedPurifiedChalcopyrite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedChalcopyrite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedMalachite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreMalachite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreMalachite> * 1).outputs(<ore:crushedPurifiedMalachite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedMalachite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreMalachite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedMalachite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedMalachite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedMalachite> * 1).outputs(<ore:crushedPurifiedMalachite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_30",<ore:crushedPurifiedMalachite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedMalachite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedTetrahedrite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreTetrahedrite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreTetrahedrite> * 1).outputs(<ore:crushedPurifiedTetrahedrite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedTetrahedrite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreTetrahedrite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedTetrahedrite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedTetrahedrite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedTetrahedrite> * 1).outputs(<ore:crushedPurifiedTetrahedrite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_45",<ore:crushedPurifiedTetrahedrite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedTetrahedrite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedTenorite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreTenorite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreTenorite> * 1).outputs(<ore:crushedPurifiedTenorite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedTenorite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreTenorite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedTenorite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedTenorite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedTenorite> * 1).outputs(<ore:crushedPurifiedTenorite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_44",<ore:crushedPurifiedTenorite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedTenorite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedBornite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreBornite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreBornite> * 1).outputs(<ore:crushedPurifiedBornite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedBornite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreBornite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedBornite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedBornite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedBornite> * 1).outputs(<ore:crushedPurifiedBornite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_6",<ore:crushedPurifiedBornite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedBornite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedCuprite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreCuprite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreCuprite> * 1).outputs(<ore:crushedPurifiedCuprite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedCuprite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreCuprite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedCuprite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedCuprite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedCuprite> * 1).outputs(<ore:crushedPurifiedCuprite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_16",<ore:crushedPurifiedCuprite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedCuprite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedChalcocite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreChalcocite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreChalcocite> * 1).outputs(<ore:crushedPurifiedChalcocite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedChalcocite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreChalcocite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedChalcocite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedChalcocite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedChalcocite> * 1).outputs(<ore:crushedPurifiedChalcocite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_11",<ore:crushedPurifiedChalcocite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedChalcocite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedEnargite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreEnargite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreEnargite> * 1).outputs(<ore:crushedPurifiedEnargite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedEnargite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreEnargite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedEnargite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedEnargite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedEnargite> * 1).outputs(<ore:crushedPurifiedEnargite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_19",<ore:crushedPurifiedEnargite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedEnargite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedTennantite> * 1, pCopper * pollenIn]).outputs(<ore:pollinatedOreTennantite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreTennantite> * 1).outputs(<ore:crushedPurifiedTennantite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedTennantite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreTennantite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedTennantite> * 1, pCopper * pollenIn]).outputs(<ore:crushedPurifiedTennantite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedTennantite> * 1).outputs(<ore:crushedPurifiedTennantite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_43",<ore:crushedPurifiedTennantite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedTennantite>]);
 
 
 //Diamond
-alloy_smelter.recipeBuilder().inputs([<ore:crushedDiamond> * 1, pDiamond * pollenIn]).outputs(<ore:pollinatedOreDiamond>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreDiamond> * 1).outputs(<ore:crushedPurifiedDiamond>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedDiamond>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreDiamond>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedDiamond> * 1, pDiamond * pollenIn]).outputs(<ore:crushedPurifiedDiamond>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedDiamond> * 1).outputs(<ore:crushedPurifiedDiamond>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_17",<ore:crushedPurifiedDiamond>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedDiamond>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedGraphite> * 1, pDiamond * pollenIn]).outputs(<ore:pollinatedOreGraphite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreGraphite> * 1).outputs(<ore:crushedPurifiedGraphite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedGraphite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreGraphite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedGraphite> * 1, pDiamond * pollenIn]).outputs(<ore:crushedPurifiedGraphite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedGraphite> * 1).outputs(<ore:crushedPurifiedGraphite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_23",<ore:crushedPurifiedGraphite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedGraphite>]);
 
 
 //Gold
-alloy_smelter.recipeBuilder().inputs([<ore:crushedGold> * 1, pGold * pollenIn]).outputs(<ore:pollinatedOreGold>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreGold> * 1).outputs(<ore:crushedPurifiedGold>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedGold>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreGold>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedGold> * 1, pGold * pollenIn]).outputs(<ore:crushedPurifiedGold>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedGold> * 1).outputs(<ore:crushedPurifiedGold>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_22",<ore:crushedPurifiedGold>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedGold>]);
 
 
 //Lapis
-alloy_smelter.recipeBuilder().inputs([<ore:crushedLapis> * 1, pLapis * pollenIn]).outputs(<ore:pollinatedOreLapis>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreLapis> * 1).outputs(<ore:crushedPurifiedLapis>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedLapis>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreLapis>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedLapis> * 1, pLapis * pollenIn]).outputs(<ore:crushedPurifiedLapis>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedLapis> * 1).outputs(<ore:crushedPurifiedLapis>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_26",<ore:crushedPurifiedLapis>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedLapis>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedCalcite> * 1, pLapis * pollenIn]).outputs(<ore:pollinatedOreCalcite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreCalcite> * 1).outputs(<ore:crushedPurifiedCalcite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedCalcite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreCalcite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedCalcite> * 1, pLapis * pollenIn]).outputs(<ore:crushedPurifiedCalcite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedCalcite> * 1).outputs(<ore:crushedPurifiedCalcite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_8",<ore:crushedPurifiedCalcite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedCalcite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedSodalite> * 1, pLapis * pollenIn]).outputs(<ore:pollinatedOreSodalite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreSodalite> * 1).outputs(<ore:crushedPurifiedSodalite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedSodalite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreSodalite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedSodalite> * 1, pLapis * pollenIn]).outputs(<ore:crushedPurifiedSodalite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedSodalite> * 1).outputs(<ore:crushedPurifiedSodalite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_41",<ore:crushedPurifiedSodalite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedSodalite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedLazurite> * 1, pLapis * pollenIn]).outputs(<ore:pollinatedOreLazurite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreLazurite> * 1).outputs(<ore:crushedPurifiedLazurite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedLazurite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreLazurite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedLazurite> * 1, pLapis * pollenIn]).outputs(<ore:crushedPurifiedLazurite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedLazurite> * 1).outputs(<ore:crushedPurifiedLazurite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_27",<ore:crushedPurifiedLazurite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedLazurite>]);
 
 
 //Nickel
-alloy_smelter.recipeBuilder().inputs([<ore:crushedNickel> * 1, pNickel * pollenIn]).outputs(<ore:pollinatedOreNickel>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreNickel> * 1).outputs(<ore:crushedPurifiedNickel>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedNickel>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreNickel>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedNickel> * 1, pNickel * pollenIn]).outputs(<ore:crushedPurifiedNickel>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedNickel> * 1).outputs(<ore:crushedPurifiedNickel>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_32",<ore:crushedPurifiedNickel>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedNickel>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedGarnierite> * 1, pNickel * pollenIn]).outputs(<ore:pollinatedOreGarnierite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreGarnierite> * 1).outputs(<ore:crushedPurifiedGarnierite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedGarnierite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreGarnierite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedGarnierite> * 1, pNickel * pollenIn]).outputs(<ore:crushedPurifiedGarnierite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedGarnierite> * 1).outputs(<ore:crushedPurifiedGarnierite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_21",<ore:crushedPurifiedGarnierite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedGarnierite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedPentlandite> * 1, pNickel * pollenIn]).outputs(<ore:pollinatedOrePentlandite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOrePentlandite> * 1).outputs(<ore:crushedPurifiedPentlandite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedPentlandite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOrePentlandite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedPentlandite> * 1, pNickel * pollenIn]).outputs(<ore:crushedPurifiedPentlandite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedPentlandite> * 1).outputs(<ore:crushedPurifiedPentlandite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_34",<ore:crushedPurifiedPentlandite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedPentlandite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedCobaltite> * 1, pNickel * pollenIn]).outputs(<ore:pollinatedOreCobaltite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreCobaltite> * 1).outputs(<ore:crushedPurifiedCobaltite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedCobaltite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreCobaltite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedCobaltite> * 1, pNickel * pollenIn]).outputs(<ore:crushedPurifiedCobaltite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedCobaltite> * 1).outputs(<ore:crushedPurifiedCobaltite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_14",<ore:crushedPurifiedCobaltite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedCobaltite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedWulfenite> * 1, pNickel * pollenIn]).outputs(<ore:pollinatedOreWulfenite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreWulfenite> * 1).outputs(<ore:crushedPurifiedWulfenite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedWulfenite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreWulfenite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedWulfenite> * 1, pNickel * pollenIn]).outputs(<ore:crushedPurifiedWulfenite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedWulfenite> * 1).outputs(<ore:crushedPurifiedWulfenite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_49",<ore:crushedPurifiedWulfenite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedWulfenite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedPowellite> * 1, pNickel * pollenIn]).outputs(<ore:pollinatedOrePowellite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOrePowellite> * 1).outputs(<ore:crushedPurifiedPowellite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedPowellite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOrePowellite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedPowellite> * 1, pNickel * pollenIn]).outputs(<ore:crushedPurifiedPowellite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedPowellite> * 1).outputs(<ore:crushedPurifiedPowellite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_36",<ore:crushedPurifiedPowellite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedPowellite>]);
 
 
 //Iron
-alloy_smelter.recipeBuilder().inputs([<ore:crushedIron> * 1, pIron * pollenIn]).outputs(<ore:pollinatedOreIron>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreIron> * 1).outputs(<ore:crushedPurifiedIron>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedIron>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreIron>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedIron> * 1, pIron * pollenIn]).outputs(<ore:crushedPurifiedIron>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedIron> * 1).outputs(<ore:crushedPurifiedIron>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_25",<ore:crushedPurifiedIron>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedIron>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedPyrite> * 1, pIron * pollenIn]).outputs(<ore:pollinatedOrePyrite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOrePyrite> * 1).outputs(<ore:crushedPurifiedPyrite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedPyrite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOrePyrite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedPyrite> * 1, pIron * pollenIn]).outputs(<ore:crushedPurifiedPyrite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedPyrite> * 1).outputs(<ore:crushedPurifiedPyrite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_37",<ore:crushedPurifiedPyrite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedPyrite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedBandedIron> * 1, pIron * pollenIn]).outputs(<ore:pollinatedOreBandedIron>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreBandedIron> * 1).outputs(<ore:crushedPurifiedBandedIron>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedBandedIron>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreBandedIron>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedBandedIron> * 1, pIron * pollenIn]).outputs(<ore:crushedPurifiedBandedIron>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedBandedIron> * 1).outputs(<ore:crushedPurifiedBandedIron>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_2",<ore:crushedPurifiedBandedIron>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedBandedIron>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedMagnetite> * 1, pIron * pollenIn]).outputs(<ore:pollinatedOreMagnetite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreMagnetite> * 1).outputs(<ore:crushedPurifiedMagnetite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedMagnetite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreMagnetite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedMagnetite> * 1, pIron * pollenIn]).outputs(<ore:crushedPurifiedMagnetite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedMagnetite> * 1).outputs(<ore:crushedPurifiedMagnetite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_29",<ore:crushedPurifiedMagnetite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedMagnetite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedVanadiumMagnetite> * 1, pIron * pollenIn]).outputs(<ore:pollinatedOreVanadiumMagnetite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreVanadiumMagnetite> * 1).outputs(<ore:crushedPurifiedVanadiumMagnetite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedVanadiumMagnetite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreVanadiumMagnetite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedVanadiumMagnetite> * 1, pIron * pollenIn]).outputs(<ore:crushedPurifiedVanadiumMagnetite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedVanadiumMagnetite> * 1).outputs(<ore:crushedPurifiedVanadiumMagnetite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_48",<ore:crushedPurifiedVanadiumMagnetite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedVanadiumMagnetite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedBrownLimonite> * 1, pIron * pollenIn]).outputs(<ore:pollinatedOreBrownLimonite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreBrownLimonite> * 1).outputs(<ore:crushedPurifiedBrownLimonite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedBrownLimonite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreBrownLimonite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedBrownLimonite> * 1, pIron * pollenIn]).outputs(<ore:crushedPurifiedBrownLimonite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedBrownLimonite> * 1).outputs(<ore:crushedPurifiedBrownLimonite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_7",<ore:crushedPurifiedBrownLimonite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedBrownLimonite>]);
 
-alloy_smelter.recipeBuilder().inputs([<ore:crushedYellowLimonite> * 1, pIron * pollenIn]).outputs(<ore:pollinatedOreYellowLimonite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreYellowLimonite> * 1).outputs(<ore:crushedPurifiedYellowLimonite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedYellowLimonite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreYellowLimonite>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedYellowLimonite> * 1, pIron * pollenIn]).outputs(<ore:crushedPurifiedYellowLimonite>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedYellowLimonite> * 1).outputs(<ore:crushedPurifiedYellowLimonite>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_50",<ore:crushedPurifiedYellowLimonite>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedYellowLimonite>]);
 
 
 //Iridium
-alloy_smelter.recipeBuilder().inputs([<ore:crushedIridium> * 1, pIridium * pollenIn]).outputs(<ore:pollinatedOreIridium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
-forge_hammer.recipeBuilder().inputs(<ore:pollinatedOreIridium> * 1).outputs(<ore:crushedPurifiedIridium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
-recipes.addShapeless(<ore:crushedPurifiedIridium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:pollinatedOreIridium>]);
+alloy_smelter.recipeBuilder().inputs([<ore:crushedIridium> * 1, pIridium * pollenIn]).outputs(<ore:crushedPurifiedIridium>.firstItem * oreOut).duration(60).EUt(30).buildAndRegister();
+forge_hammer.recipeBuilder().inputs(<ore:crushedPurifiedIridium> * 1).outputs(<ore:crushedPurifiedIridium>.firstItem * 1).duration(20).EUt(8).buildAndRegister();
+recipes.addShapeless("it3_combs_purified_24",<ore:crushedPurifiedIridium>.firstItem * 1, [craftingToolHardHammerEmptyTag, <ore:crushedPurifiedIridium>]);
 
 
 /*========== LIQUID POLLEN ==========*/
@@ -275,7 +275,7 @@ for j, b in pollen {
         .duration(100)
         .EUt(8)
         .buildAndRegister();
-	}
+}
 
 
 /*========== COMBS + POLLEN ==========*/

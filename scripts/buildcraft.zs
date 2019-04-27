@@ -61,14 +61,14 @@ oreStickQuartz.addAll(<ore:stickCertusQuartz>);
 
 // Wood Pipes
 recipes.remove(pipeWood);
-recipes.addShaped(pipeWood * 6, [
+recipes.addShaped("it3_buildcraft_pipe_wood", pipeWood * 6, [
   [stickWood, craftingToolHammer, stickWood],
   [stickWood, <minecraft:glass>, stickWood],
   [stickWood, craftingToolSaw, stickWood]]);
 
 // Cobblestone Pipes
 recipes.remove(pipeCobblestone);
-recipes.addShaped(pipeCobblestone * 6,[
+recipes.addShaped("it3_buildcraft_pipe_cobble", pipeCobblestone * 6,[
   [stickCobblestone, craftingToolHammer, stickCobblestone],
   [stickCobblestone, <minecraft:glass>, stickCobblestone],
   [stickCobblestone, craftingToolSaw, stickCobblestone]]);
@@ -77,14 +77,14 @@ assembler.recipeBuilder()
   .inputs(<ore:stickCobblestone> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeCobblestone * 3)
+  .outputs(pipeCobblestone * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();
 
 // Stone Pipes
 recipes.remove(pipeStone);
-recipes.addShaped(pipeStone * 6,[
+recipes.addShaped("it3_buildcraft_pipe_stone", pipeStone * 6,[
   [stickStone, craftingToolHammer, stickStone],
   [stickStone, <minecraft:glass>, stickStone],
   [stickStone, craftingToolSaw, stickStone]]);
@@ -93,7 +93,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickStone> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeStone * 3)
+  .outputs(pipeStone * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();
@@ -101,7 +101,7 @@ assembler.recipeBuilder()
 
 // Quartz Pipes
 recipes.remove(pipeQuartz);
-recipes.addShaped(pipeQuartz * 6,[
+recipes.addShaped("it3_buildcraft_pipe_quartz", pipeQuartz * 6,[
   [oreStickQuartz, craftingToolHammer, oreStickQuartz],
   [oreStickQuartz, <minecraft:glass>, oreStickQuartz],
   [oreStickQuartz, craftingToolSaw, oreStickQuartz]]);
@@ -110,7 +110,7 @@ assembler.recipeBuilder()
   .inputs(oreStickQuartz * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeQuartz * 3)
+  .outputs(pipeQuartz * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();
@@ -121,14 +121,14 @@ assembler.recipeBuilder()
   .inputs(<ore:stickIron> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeIron * 3)
+  .outputs(pipeIron * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();
 
 // Gold Pipes
 recipes.remove(pipeGold);
-recipes.addShaped(pipeGold * 6,[
+recipes.addShaped("it3_buildcraft_pipe_gold", pipeGold * 6,[
   [<ore:stickGold>, craftingToolHammer, <ore:stickGold>],
   [<ore:stickGold>, <minecraft:glass>, <ore:stickGold>],
   [<ore:stickGold>, craftingToolSaw, <ore:stickGold>]]);
@@ -137,7 +137,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickGold> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeGold * 3)
+  .outputs(pipeGold * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -148,7 +148,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickClay> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeClay * 3)
+  .outputs(pipeClay * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -159,7 +159,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickSandstone> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeSandstone * 3)
+  .outputs(pipeSandstone * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -171,7 +171,7 @@ assembler.recipeBuilder()
   .inputs(<minecraft:redstone> * 1, <minecraft:dye> * 1)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeVoid * 3)
+  .outputs(pipeVoid * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -182,7 +182,7 @@ assembler.recipeBuilder()
   .inputs(<ore:rodObsidian> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeObsidian * 3)
+  .outputs(pipeObsidian * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -193,7 +193,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickDiamond> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeDiamond * 3)
+  .outputs(pipeDiamond * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -204,7 +204,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickDiamond> * 3, <ore:stickWood> * 3)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeWoodenDiamond * 3)
+  .outputs(pipeWoodenDiamond * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -215,7 +215,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickLapis> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeLazuli * 3)
+  .outputs(pipeLazuli * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -226,7 +226,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickDiamond> * 3, <ore:stickLapis> * 3)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeDaizuli * 3)
+  .outputs(pipeDaizuli * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -237,7 +237,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickEmerald> * 3, <ore:stickLapis> * 3)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeEmzuli * 3)
+  .outputs(pipeEmzuli * 6)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -249,7 +249,7 @@ assembler.recipeBuilder()
   .inputs(pipeObsidian * 1, <ore:gearGold> * 2)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeStripes * 3)
+  .outputs(pipeStripes * 6)
   .duration(60)
   .EUt(8)
   .buildAndRegister();  

@@ -43,19 +43,19 @@ recipes.removeShaped(<microblockcbe:saw_diamond>);
 recipes.removeShaped(<projectred-fabrication:ic_blueprint>);
 
 //Greggified PR recipes
-recipes.addShapedMirrored(silicon *2, [[<microblockcbe:saw_iron>], [silicon_boule]]);
+recipes.addShapedMirrored("it3_pr_silicon", silicon *2, [[<microblockcbe:saw_iron>], [silicon_boule]]);
 
-recipes.addShaped(<microblockcbe:saw_stone>, [
+recipes.addShaped("it3_pr_stone_saw", <microblockcbe:saw_stone>, [
 [null, null, null],
 [<ore:stickWood>, <ore:rodStone>, <ore:rodStone>],
 [<ore:stickWood>, <minecraft:flint>, <minecraft:flint>]]);
 
-recipes.addShaped(<microblockcbe:saw_iron>, [
+recipes.addShaped("it3_pr_iron_saw", <microblockcbe:saw_iron>, [
 [null, null, null],
 [<ore:stickWood>, <ore:rodStone>, <ore:rodStone>],
 [<ore:stickWood>, <ore:plateIron>, <ore:plateIron>]]);
 
-recipes.addShaped(<microblockcbe:saw_diamond>, [
+recipes.addShaped("it3_pr_diamond_saw", <microblockcbe:saw_diamond>, [
 [null, null, null],
 [<ore:stickWood>, <ore:rodStone>, <ore:rodStone>],
 [<ore:stickWood>, <ore:plateDiamond>, <ore:plateDiamond>]]);
