@@ -1,6 +1,7 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
+import crafttweaker.entity.IEntityEquipmentSlot;
 
 var blockDragonstone = <botania:storage:4>;
 var blockManadiamond = <botania:storage:3>;
