@@ -160,7 +160,7 @@ events.onBlockBreak(function(event as crafttweaker.event.BlockBreakEvent) {
           var maxMana = [9999, 999999, 9999999, 99999999, 999999999, 2147483647] as int[];
           if (pick.tag.mana > maxMana[tier]) {
             event.cancel();
-            event.player.sendChat("Your pickaxe shakes in your hand as you feel mana rush out of it");
+            event.player.sendChat("Your pickaxe shakes in your hand as you feel mana rush out of it.");
             event.player.sendChat("It appears that it contained more mana than it could handle, maybe try reinforcing it?");
             event.player.setItemToSlot(IEntityEquipmentSlot.mainHand(), pick.updateTag({mana: maxMana[tier]}));
           }
