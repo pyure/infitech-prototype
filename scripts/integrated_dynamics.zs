@@ -31,7 +31,7 @@ recipes.addShapeless("it3_ID_menril_planks", <integrateddynamics:menril_planks> 
 fluid_extractor.recipeBuilder()
   .inputs([<integrateddynamics:menril_log> * 1])
   .fluidOutputs([<liquid:menrilresin> * 1000 ])
-  .chancedOutput(<integrateddynamics:menril_berries>, 200)
+  .chancedOutput(<integrateddynamics:menril_berries>, 200, 50)
   .duration(180)
   .EUt(5)
   .buildAndRegister();
