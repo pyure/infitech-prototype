@@ -102,7 +102,74 @@ recipes.remove(<minecraft:blaze_rod> * 9);
 
 // Make terra shatterer require stainless steel
 recipes.removeByRecipeName("botania:terrapick");
-recipes.addShaped("it3_botania_terrapick", <botania:terrapick>, [
+recipes.addShaped("it3_botania_terrapick_tierD", <botania:terrapick>.withTag({tier: 2}).withLore(["§7Supports up to §bB§7 rank§r"]), [
   [<ore:ingotTerrasteel>, <botania:manatablet>, <ore:ingotTerrasteel>], 
   [<ore:ingotTerrasteel>, <ore:stickStainlessSteel>, <ore:ingotTerrasteel>], 
   [null, <ore:stickStainlessSteel>, null]]);
+
+// Defile the terra shatterer via obscene teiring that would be an offense to Vazkii
+// recipes.addShapeless("it3_botania_terrapick_tierC", <botania:terrapick>.withLore(["§7Supports up to §eC§7 rank§r"]), 
+//   [<botania:terrapick>.withTag({display:{Lore:["§7Supports up to §cD§7 rank§r"]}}).marked("pick"), <minecraft:stone:0>],
+//   function (out, ins, cInfo) {
+//     if (!(ins.pick.tag has "tier") || ins.pick.tag.tier == 0) {
+//       return ins.pick.updateTag({tier: 1}).withLore(["§7Supports up to §eC§7 rank§r"]);
+//     } else {
+//       return null;
+//     }
+//   }, null);
+
+// recipes.addShapeless("it3_botania_terrapick_tierB", <botania:terrapick>.withLore(["§7Supports up to §bB§7 rank§r"]), 
+//   [<botania:terrapick>.withTag({display:{Lore:["§7Supports up to §cC§7 rank§r"]}}).marked("pick"), <minecraft:stone:1>],
+//   function (out, ins, cInfo) {
+//     if (!(ins.pick.tag has "tier") || ins.pick.tag.tier == 1) {
+//       return ins.pick.updateTag({tier: 2}).withLore(["§7Supports up to §bB§7 rank§r"]);
+//     } else {
+//       return null;
+//     }
+//   }, null);
+
+recipes.addShapeless("it3_botania_terrapick_tierA", <botania:terrapick>.withLore(["§7Supports up to §aA§7 rank§r"]), 
+  [<botania:terrapick>.marked("pick"), <ore:toolHeadPickaxeTitanium>, <ore:ingotVoid>, <ore:livingwoodTwig>],
+  function (out, ins, cInfo) {
+    if (!(ins.pick.tag has "tier") || ins.pick.tag.tier == 2) {
+      return ins.pick.updateTag({tier: 3}).withLore(["§7Supports up to §aA§7 rank§r"]);
+    } else {
+      return null;
+    }
+  }, null);
+
+recipes.addShapeless("it3_botania_terrapick_tierS", <botania:terrapick>.withLore(["§7Supports up to §dS§7 rank§r"]), 
+  [<botania:terrapick>.onlyWithTag({tier: 3}).marked("pick"), <ore:toolHeadPickaxeOsmiridium>, <ore:eternalLifeEssence>, <ore:dreamwoodTwig>],
+  function (out, ins, cInfo) {
+    return ins.pick.updateTag({tier: 4}).withLore(["§7Supports up to §dS§7 rank§r"]);
+  }, null);
+
+recipes.addShapeless("it3_botania_terrapick_tierSS", <botania:terrapick>.withLore(["§7Supports up to §6SS§7 rank§r"]), 
+  [<botania:terrapick>.onlyWithTag({tier: 4}).marked("pick"), <ore:toolHeadPickaxeNaquadahAlloy>, <ore:gaiaIngot>, <ore:dreamwoodTwig>],
+  function (out, ins, cInfo) {
+    return ins.pick.updateTag({tier: 5}).withLore(["§7Supports up to §6SS§7 rank§r"]);
+  }, null);
+
+events.onBlockBreak(function(event as crafttweaker.event.BlockBreakEvent) {
+  if (event.isPlayer) {
+    if (!isNull(event.player.currentItem)) {
+      if (event.player.currentItem.withEmptyTag().matches(<botania:terrapick>.withEmptyTag())) {
+        var pick = event.player.currentItem;
+        if (pick.tag has "tier") {
+          var tier = pick.tag.tier.asInt();
+          var maxMana = [9999, 999999, 9999999, 99999999, 999999999, 2147483647] as int[];
+          if (pick.tag.mana > maxMana[tier]) {
+            event.cancel();
+            event.player.sendChat("Your pickaxe shakes in your hand as you feel mana rush out of it");
+            event.player.sendChat("It appears that it contained more mana than it could handle, maybe try reinforcing it?");
+            event.player.setItemToSlot(IEntityEquipmentSlot.mainHand(), pick.updateTag({mana: maxMana[tier]}));
+          }
+        } else {
+          event.cancel();
+          event.player.sendChat("Untiered pickaxe detected. Automatically tiering.");
+          event.player.setItemToSlot(IEntityEquipmentSlot.mainHand(), pick.updateTag({tier: 2}).withLore(["§7Supports up to §bB§7 rank§r"]));
+        }
+      }
+    }
+  }
+});
