@@ -491,11 +491,6 @@ forge_hammer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
   
-  
-// Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
-recipes.remove(<minecraft:paper> * 2);
-recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
-recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
 
 /* ************************* FOOD -> COMPOST **********************************/
 
