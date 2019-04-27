@@ -1,6 +1,7 @@
 import mods.gregtech.recipe.RecipeMap;
 
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 
 var pulpedBiomass = <thermalfoundation:material:816>;
 // inputStack, inputFluid, outputStack, outputFluid, duration
@@ -24,13 +25,13 @@ recipes.addShaped("it3_squeezer", <integrateddynamics:squeezer>, [
 
 // Gregify the plank output of menril logs
 recipes.removeShapeless(<integrateddynamics:menril_planks> * 4, [<integrateddynamics:menril_log>]);
-recipes.addShapeless(<integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
+recipes.addShapeless("it3_ID_menril_planks", <integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
 
 // Gregify extraction of liquid menril from logs and planks.  We arbitrarily added a bonus berry output to log processing
 fluid_extractor.recipeBuilder()
   .inputs([<integrateddynamics:menril_log> * 1])
   .fluidOutputs([<liquid:menrilresin> * 1000 ])
-  .chancedOutput(<integrateddynamics:menril_berries>, 200)
+  .chancedOutput(<integrateddynamics:menril_berries>, 200, 50)
   .duration(180)
   .EUt(5)
   .buildAndRegister();
@@ -44,3 +45,11 @@ fluid_extractor.recipeBuilder()
   
 
 
+// Menril Blocks, GT Way
+fluid_solidifier.recipeBuilder()
+	.notConsumable(<metaitem:shape.mold.block>)
+	.fluidInputs([<liquid:menrilresin> * 1000])
+	.outputs(<integrateddynamics:crystalized_menril_block> * 1)
+	.duration(85)
+	.EUt(4)
+	.buildAndRegister();

@@ -43,13 +43,13 @@ var pbf = <gregtech:machine:510>;
 var foundry_clay = <foundry:component:1>;
 
 recipes.remove(pbf);
-recipes.addShaped(pbf, [
+recipes.addShaped("it3_gt_pbf", pbf, [
    [primitive_brick, <minecraft:nether_brick>, primitive_brick],
    [<minecraft:furnace>, craftingToolWrenchEmptyTag, <minecraft:furnace>],
    [primitive_brick, <minecraft:nether_brick>, primitive_brick]]);
 
 recipes.remove(primitive_brick);
-recipes.addShaped(primitive_brick, [
+recipes.addShaped("it3_gt_primitive_brick", primitive_brick, [
    [<minecraft:brick>, craftingToolHardHammerEmptyTag, <minecraft:brick>],
    [<minecraft:netherbrick>, <minecraft:nether_brick>, <minecraft:netherbrick>],
    [<minecraft:brick>, foundry_clay, <minecraft:brick>]]);

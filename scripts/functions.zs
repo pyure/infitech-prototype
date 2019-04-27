@@ -35,6 +35,7 @@ function gregArmorPiece(part as IItemStack, multiplier as int, dust as IIngredie
 	if (!isNull(plate)) {
 		recipes.remove(part);
 		var toolHardHammer = craftingToolHardHammerEmptyTag;
+    // TODO: NEED DYNAMIC RECIPE NAMING HERE
 		if (multiplier == 5) {
 			recipes.addShaped(part,
 				[[plate, plate, plate],

@@ -7,6 +7,6 @@ var tritorch = <stevescarts:modulecomponents:29>;
 var oreKnife = <ore:craftingToolKnife>;
 var manaDiamond = <botania:manaresource:2>;
 
-recipes.addShaped(<torchmaster:mega_torch> *3, [[tritorch, oreKnife, tritorch], 
+recipes.addShaped("it3_tm_mega_torch", <torchmaster:mega_torch> *3, [[tritorch, oreKnife, tritorch], 
     [manaDiamond, fineGoldWire, <thaumcraft:salis_mundus>], 
     [<thaumcraft:stone_arcane>,<ore:fenceWood>,<botania:livingrock>]]);

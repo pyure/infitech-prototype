@@ -43,7 +43,6 @@ config/splash.properties
 config/InvTweaks/InvTweaks.cfg
 config/MouseTweaks.cfg
 config/InvTweaks.cfg
-config/agricraft/json/*
 config/AppliedEnergistics2/Facades.cfg
 config/AppliedEnergistics2/recipes/items.csv
 config/AppliedEnergistics2/items.csv
@@ -54,13 +53,12 @@ config/cd4017be/compiled.dat
 config/thaumicjei_itemstack_aspects.json
 config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/aerecipes/items.csv
-config/agricraft/json/*
 config/jei/jei.cfg
 config/jei/bookmarks.ini
 config/jei/worldSettings.cfg
 config/NEI/client.cfg
 config/ftbutilities.cfg
-
+config/agricraft/json/*
 minecraftinstance.json
 modularmachinery.7z
 servers.dat

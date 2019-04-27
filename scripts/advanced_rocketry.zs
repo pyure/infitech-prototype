@@ -19,13 +19,13 @@ var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.wi
 
 // GT Style gear crafting
 recipes.remove(<advancedrocketry:productgear:0>);
-recipes.addShaped(<advancedrocketry:productgear:0>, [
+recipes.addShaped("it3_advrocketry_gear_0", <advancedrocketry:productgear:0>, [
 	[<ore:stickTitaniumAluminide>, <ore:plateTitaniumAluminide>, <ore:stickTitaniumAluminide>],
 	[<ore:plateTitaniumAluminide>, craftingToolScrewdriverEmptyTag, <ore:plateTitaniumAluminide>],
 	[<ore:stickTitaniumAluminide>, <ore:plateTitaniumAluminide>, <ore:stickTitaniumAluminide>]]);
 
 recipes.remove(<advancedrocketry:productgear:1>);
-recipes.addShaped(<advancedrocketry:productgear:1>, [
+recipes.addShaped("it3_advrocketry_gear_1", <advancedrocketry:productgear:1>, [
 	[<ore:stickTitaniumIridium>, <ore:plateTitaniumIridium>, <ore:stickTitaniumIridium>],
 	[<ore:plateTitaniumIridium>, craftingToolScrewdriverEmptyTag, <ore:plateTitaniumIridium>],
 	[<ore:stickTitaniumIridium>, <ore:plateTitaniumIridium>, <ore:stickTitaniumIridium>]]);
@@ -36,11 +36,12 @@ recipes.remove(<libvulpes:productgear:7>);
 
 // GT Style Rod crafting
 recipes.remove(<advancedrocketry:productrod>);
-recipes.addShaped(<advancedrocketry:productrod>, [
+recipes.addShaped("it3_advrocketry_rod_0", <advancedrocketry:productrod>, [
 	[craftingToolFileEmptyTag, null],
 	[null, <ore:ingotTitaniumAluminide>]]);
+  
 recipes.remove(<advancedrocketry:productrod:1>);
-recipes.addShaped(<advancedrocketry:productrod:1>, [
+recipes.addShaped("it3_advrocketry_rod_1", <advancedrocketry:productrod:1>, [
 	[craftingToolFileEmptyTag, null],
 	[null, <ore:ingotTitaniumIridium>]]);
 
@@ -52,11 +53,11 @@ recipes.remove(<libvulpes:productrod:7>);
 recipes.remove(<libvulpes:productrod:10>);
 
 // GT Style Plate crafting
-recipes.addShaped(<advancedrocketry:productplate>, [
+recipes.addShaped("it3_advrocketry_plate_0", <advancedrocketry:productplate>, [
 	[craftingToolHardHammerEmptyTag],
 	[<ore:ingotTitaniumAluminide>],
 	[<ore:ingotTitaniumAluminide>]]);
-recipes.addShaped(<advancedrocketry:productplate:1>, [
+recipes.addShaped("it3_advrocketry_plate_1", <advancedrocketry:productplate:1>, [
 	[craftingToolHardHammerEmptyTag],
 	[<ore:ingotTitaniumIridium>],
 	[<ore:ingotTitaniumIridium>]]);
@@ -213,7 +214,7 @@ metal_bender.recipeBuilder()
   .buildAndRegister();
 
 recipes.remove(<advancedrocketry:blastbrick>);
-recipes.addShaped(<advancedrocketry:blastbrick> *6, [
+recipes.addShaped("it3_advrocketry_blastbrick", <advancedrocketry:blastbrick> *6, [
   [<minecraft:magma_cream>, <minecraft:ghast_tear>, <forestry:refractory_wax>], 
   [<minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>], 
   [null, null, null]]);
