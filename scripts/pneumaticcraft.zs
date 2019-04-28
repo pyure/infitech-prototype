@@ -1,4 +1,5 @@
 import mods.pneumaticcraft.pressurechamber;
+import mods.pneumaticcraft.liquidplastic;
 import mods.gregtech.recipe.RecipeMap;
 
 var ingotWroughtIron = <ore:ingotWroughtIron>.firstItem;
@@ -116,3 +117,6 @@ recipes.addShaped("it3_pneumaticcraft_harvesting_drone",
 // PC Rotors
 mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:turbine_blade>]);
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:turbineBladeSteel>.firstItem,<ore:plateRedAlloy>.firstItem,<ore:wireFineGold>.firstItem * 12], 3.0, [<pneumaticcraft:turbine_blade>]);
+
+// Plastic Mixer Alternatives
+mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil>, 1000);
