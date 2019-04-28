@@ -124,7 +124,7 @@ var o_diamondBlock = <ore:blockDiamond>;
 var dragonBreath = <minecraft:dragon_breath>;
 var spectralArrow = <minecraft:spectral_arrow>;
 var cobweb = <minecraft:web>;
-var o_bucket = <ore:bucketEmpty>;
+var bucket = <minecraft:bucket>;
 var o_enderPearl = <ore:gemEnderPearl>;
 var n_goldPickaxeEff3 = <minecraft:golden_pickaxe>.withTag({ench: [{lvl: 3 as short, id: 32 as short}]});
 var n_goldPickaxeEff5 = <minecraft:golden_pickaxe>.withTag({ench: [{lvl: 5 as short, id: 32 as short}]});
@@ -509,7 +509,7 @@ recipes.addShaped("it3_rft_rf_mon", rfMonitor, [
 recipes.remove(liquidMonitor);
 recipes.addShaped("it3_rft_liquid_mon", liquidMonitor, [
 	[null, lvSensor, null],
-	[o_bucket, machineFrame, o_bucket],
+	[bucket, machineFrame, bucket],
 	[null, o_basicCircuit, null]]);
 
 

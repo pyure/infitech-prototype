@@ -87,3 +87,32 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil_light> 
 var pulped_biomass = <thermalfoundation:material:816>;
 var slime_ball = <minecraft:slime_ball>;
 mods.pneumaticcraft.heatframecooling.addRecipe(pulped_biomass *4, slime_ball);
+
+
+// Drones
+var vacuum_tube = <gregtech:meta_item_2:32450>;
+
+recipes.removeByRecipeName("pneumaticcraft:drone");
+recipes.addShaped("it3_pneumaticcraft_drone", 
+  <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
+  [null, <pneumaticcraft:turbine_rotor>, null], 
+  [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
+  [null, <pneumaticcraft:turbine_rotor>, <metaitem:robot.arm.lv>]]);
+  
+recipes.removeByRecipeName("pneumaticcraft:logistic_drone");
+recipes.addShaped("it3_pneumaticcraft_logistics_drone", 
+  <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
+  [null, <pneumaticcraft:turbine_rotor>, null], 
+  [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
+  [null, <pneumaticcraft:turbine_rotor>, null]]);
+  
+recipes.removeByRecipeName("pneumaticcraft:harvesting_drone");
+recipes.addShaped("it3_pneumaticcraft_harvesting_drone", 
+  <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
+  [null, <pneumaticcraft:turbine_rotor>, null], 
+  [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
+  [null, <pneumaticcraft:turbine_rotor>, <ore:treeSapling>]]);
+  
+// PC Rotors
+mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:turbine_blade>]);
+mods.pneumaticcraft.pressurechamber.addRecipe([<ore:turbineBladeSteel>.firstItem,<ore:plateRedAlloy>.firstItem,<ore:wireFineGold>.firstItem * 12], 3.0, [<pneumaticcraft:turbine_blade>]);
