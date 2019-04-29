@@ -1196,10 +1196,10 @@ chemical_reactor.recipeBuilder().inputs(<ore:dustFluix> * 1, reddosanudo * 1).fl
 
 // Pure fluix crystals
 autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(PureFluixCrystal * 1, 6000, 500).duration(2000).EUt(24).buildAndRegister();
-autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(PureFluixCrystal * 1, 7000, 800).duration(1000).EUt(24).buildAndRegister();
+autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(PureFluixCrystal * 1, 7000, 700).duration(1000).EUt(24).buildAndRegister();
 // Fluix crystals
-autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(FluixCrystal * 1, 7000, 600).duration(2000).EUt(24).buildAndRegister();
-autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(FluixCrystal * 1, 7500, 900).duration(1000).EUt(24).buildAndRegister();
+autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(FluixCrystal * 1, 7000, 500).duration(2000).EUt(24).buildAndRegister();
+autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(FluixCrystal * 1, 7500, 500).duration(1000).EUt(24).buildAndRegister();
 
 // Fluix crystal recips
 mixer.recipeBuilder().inputs(<minecraft:quartz> * 1, <minecraft:redstone> * 1, ChCertusQuartz * 1).outputs(FluixCrystal * 2).duration(20).EUt(16).buildAndRegister();
