@@ -120,3 +120,44 @@ mods.pneumaticcraft.pressurechamber.addRecipe([<ore:turbineBladeSteel>.firstItem
 
 // Plastic Mixer Alternatives
 mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil>, 1000);
+
+// Exploding dusts into gems, cuz realism
+val dust_to_gem_array = [
+  "Ruby",
+  "Almandine",
+  "BlueTopaz", 
+  "Cinnabar", 
+  "GreenSapphire", 
+  "Lazurite", 
+  "Sapphire",
+  "Sodalite", 
+  "Tanzanite",
+  "Topaz", 
+  "CertusQuartz", 
+  "Quartzite", 
+  "Jasper",
+  "Olivine", 
+  "Diamond",
+  "NetherQuartz",
+  "Lignite",
+  "Opal",
+  "Amethyst",
+  "Lapis",
+  "Apatite",
+  "GarnetRed",
+  "GarnetYellow",
+  "Vinteum",
+  "Monazite",
+  "Coke",
+  "Coal"
+] as string[];
+
+var lossChance = 55; // This percentage of dusts will get voided, on average.
+
+for name in dust_to_gem_array {
+  var gem = oreDict["gem" ~ name].firstItem;
+  var dust = oreDict["dust" ~ name];
+  mods.pneumaticcraft.explosioncrafting.addRecipe(dust, gem, lossChance);
+}
+
+
