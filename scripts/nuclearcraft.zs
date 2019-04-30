@@ -218,7 +218,5 @@ recipes.addShaped("it3_tile.nuclearcraft.fusion_core",
     [machine_hull_luv, <ore:chassis>, machine_hull_luv], 
     [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>]]);
 
-    
-// Remind ppl where Air comes from
-mods.jei.JEI.addDescription(<liquid:air>, "Obtained via Air Collector");
+
 

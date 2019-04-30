@@ -882,3 +882,6 @@ fluid_solidifier.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
+    
+// Remind ppl where Air comes from
+mods.jei.JEI.addDescription(<liquid:air>, "Obtained via Air Collector");
