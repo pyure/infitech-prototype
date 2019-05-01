@@ -229,3 +229,41 @@ recipes.addShaped("it3_rc_steel_tank_gauge", <railcraft:tank_steel_gauge>, [[<or
 // Iron Tank Tooltips
 <railcraft:tank_iron_wall>.addTooltip(format.darkRed("Keep in one chunk!!"));
 <railcraft:tank_steel_wall>.addTooltip(format.darkRed("Keep in one chunk!!"));
+
+
+// Metal Posts (Railcraft)
+val arrayDyes = [ 
+  "Red",
+  "Green",
+  "Brown",
+  "Blue",
+  "Purple",
+  "Cyan",
+  "Silver",
+  "Gray",
+  "Pink",
+  "Lime",
+  "Yellow",
+  "Light_Blue",
+  "Magenta",
+  "Orange",
+  "White"
+] as string[];
+
+
+
+for i in 0 to 15 {
+  var post = <railcraft:post_metal>.definition.makeStack(i);
+  var oreDye = oreDict["dye" ~ arrayDyes[i]];
+  
+  assembler.recipeBuilder()
+    .inputs(<ore:stickIron> * 4, oreDye * 1)
+    .outputs(post * 16)
+    .property("circuit", 7)
+    .duration(24)
+    .EUt(12)
+    .buildAndRegister();
+    
+
+
+}
