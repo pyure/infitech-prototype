@@ -1288,7 +1288,7 @@ macerator.recipeBuilder()
 // Charged Certus Quartz
 var charged_certus_quartz = <appliedenergistics2:material:1>;
 electrolyzer.recipeBuilder()
-	.inputs(<ore:gemCertusQuartz>)
+	.inputs(<ore:gemCertusQuartz> | <ore:crystalCertusQuartz>)
 	.outputs(charged_certus_quartz)
 	.duration(520)
   .EUt(82)

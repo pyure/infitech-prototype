@@ -912,3 +912,12 @@ mixer.recipeBuilder()
 	.duration(160)
 	.EUt(4)
 	.buildAndRegister();    
+  
+// Book automation
+assembler.recipeBuilder()
+  .inputs(<ore:plateWood> * 1, <ore:paper> * 2)
+  .fluidInputs([<liquid:glue> * 100])  
+  .outputs(<minecraft:book> * 1)
+  .duration(220)
+  .EUt(9)
+  .buildAndRegister();  
