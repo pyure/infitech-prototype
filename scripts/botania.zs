@@ -174,3 +174,8 @@ events.onBlockBreak(function(event as crafttweaker.event.BlockBreakEvent) {
     }
   }
 });
+
+
+// Charged Certus Quartz Alchemy
+var charged_quartz = <appliedenergistics2:material:1>;
+mods.botania.ManaInfusion.addAlchemy(charged_quartz, <ore:crystalCertusQuartz>, 900);

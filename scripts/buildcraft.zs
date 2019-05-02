@@ -424,3 +424,10 @@ lathe.recipeBuilder()
   .duration(200)
   .EUt(24)
   .buildAndRegister();    
+  
+// Buildcraft wrench recipe
+recipes.remove(<buildcraftcore:wrench>);
+recipes.addShaped("it3_buildcraftcore_wrench", <buildcraftcore:wrench>, [
+  [<ore:ingotIron>, craftingToolHammer, <ore:ingotIron>], 
+  [null, <ore:ingotIron>, null], 
+  [null, <ore:ingotIron>, null]]);
