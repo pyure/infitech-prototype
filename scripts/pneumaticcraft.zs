@@ -20,13 +20,13 @@ for coal in <ore:blockCoal>.items {
 }
 
 // Coal ore into 3x Coal
-for coal in <ore:oreCoal>.items {
-	mods.pneumaticcraft.pressurechamber.addRecipe([coal * 1], 1.5, [<minecraft:coal> * 3]);
+for oreCoal in <ore:oreCoal>.items {
+	mods.pneumaticcraft.pressurechamber.addRecipe([oreCoal * 1], 1.5, [<minecraft:coal> * 3]);
 }
 // Lignite ore into 3x Lignite
 var lignite = <ore:gemLignite>.firstItem;
-for lignite in <ore:oreLignite>.items {
-	mods.pneumaticcraft.pressurechamber.addRecipe([lignite * 1], 1.5, [lignite * 3]);
+for oreLignite in <ore:oreLignite>.items {
+	mods.pneumaticcraft.pressurechamber.addRecipe([oreLignite * 1], 1.5, [lignite * 3]);
 }
 // Redstone ore into 3x Redstone
 for redstone in <ore:oreRedstone>.items {
