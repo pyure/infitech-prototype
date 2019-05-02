@@ -37,21 +37,21 @@ function gregArmorPiece(part as IItemStack, multiplier as int, dust as IIngredie
 		var toolHardHammer = craftingToolHardHammerEmptyTag;
     // TODO: NEED DYNAMIC RECIPE NAMING HERE
 		if (multiplier == 5) {
-			recipes.addShaped(part,
+			recipes.addShaped(part.displayName, part,
 				[[plate, plate, plate],
 				 [plate, toolHardHammer, plate]]);
 		} else if (multiplier == 8) {
-			recipes.addShaped(part,
+			recipes.addShaped(part.displayName,part,
 				[[plate, toolHardHammer, plate],
 				 [plate, plate, plate],
 				 [plate, plate, plate]]);
 		} else if (multiplier == 7) {
-			recipes.addShaped(part,
+			recipes.addShaped(part.displayName,part,
 				[[plate, plate, plate],
 				 [plate, toolHardHammer, plate],
 				 [plate, null, plate]]);
 		} else if (multiplier == 4) {
-			recipes.addShaped(part,
+			recipes.addShaped(part.displayName,part,
 				[[plate, null, plate],
 				 [plate, toolHardHammer, plate]]);
 		}
