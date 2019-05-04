@@ -1,8 +1,9 @@
 import mods.contenttweaker.VanillaFactory;
-
+import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
+val metal_bender = mods.gregtech.recipe.RecipeMap.getByName("metal_bender");
 
 // These are covered by GT meta tools (or should be)
 // Set to 1 durability via MaterialChanger mod
@@ -68,4 +69,15 @@ recipes.addShaped("it3_tc_vis_generator", <thaumcraft:vis_generator>,
   [<ore:stickThaumium>, <minecraft:piston>, <ore:stickThaumium>], 
   [<ore:foilRedAlloy>, <thaumcraft:vis_resonator>, <ore:foilRedAlloy>]]);
 
+// Add GT Bender recipe for plates
+var plateVoid = <thaumcraft:plate:3>;
 
+metal_bender.recipeBuilder()
+  .inputs(<ore:ingotVoid>)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 0}))
+  .outputs(plateVoid * 1)
+  .duration(60)
+  .EUt(8)
+  .buildAndRegister();  
+
+  

@@ -70,7 +70,7 @@ var FluixCoveredCPurple = <appliedenergistics2:part:30>;
 var FluixCoveredCRed = <appliedenergistics2:part:34>;
 var FluixCoveredCWhite = <appliedenergistics2:part:20>;
 var FluixCoveredCYellow = <appliedenergistics2:part:24>;
-var FluixCrystal = <ore:crystalFluix>;
+var FluixCrystal = <appliedenergistics2:material:7>;
 var FluixDenseCable = <appliedenergistics2:part:516>;
 var FluixDenseCableBlack = <appliedenergistics2:part:515>;
 var FluixDenseCableBlue = <appliedenergistics2:part:511>;
@@ -229,6 +229,7 @@ var pureQuartz = <appliedenergistics2:material:10>;
 var pureNQuartz = <appliedenergistics2:material:11>;
 var pureFluix = <appliedenergistics2:material:12>;
 var quartzFiber = <appliedenergistics2:part:140>;
+var seedCrystal = <appliedenergistics2:crystal_seed:1200>;
 
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
@@ -238,7 +239,8 @@ val wiremill as RecipeMap = RecipeMap.getByName("wiremill");
 val laser_engraver as RecipeMap = RecipeMap.getByName("laser_engraver");
 val forming_press as RecipeMap = RecipeMap.getByName("forming_press");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
-
+val autoclave as RecipeMap = RecipeMap.getByName("autoclave");
+val mixer as RecipeMap = RecipeMap.getByName("mixer");
 
 // --- Removing Recipes ---
 
@@ -1178,14 +1180,29 @@ alloy_smelter.recipeBuilder()
 // --- Chemical Reactor Recipes ---
 
 // --- Seeds
+// - 
 chemical_reactor.recipeBuilder().inputs(<ore:dustCertusQuartz> * 1, <minecraft:sand> * 1).fluidInputs(<liquid:water> * 100).outputs(pureQuartz * 4).duration(100).EUt(16).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs(<ore:dustCertusQuartz> * 1, reddosanudo * 1).fluidInputs(<liquid:water> * 100).outputs(pureQuartz * 4).duration(100).EUt(16).buildAndRegister();
-// -
+
+// - 
 chemical_reactor.recipeBuilder().inputs(<ore:dustNetherQuartz> * 1, <minecraft:sand> * 1).fluidInputs(<liquid:water> * 100).outputs(pureNQuartz * 4).duration(100).EUt(16).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs(<ore:dustNetherQuartz> * 1, reddosanudo * 1).fluidInputs(<liquid:water> * 100).outputs(pureNQuartz * 4).duration(100).EUt(16).buildAndRegister();
-// -
-chemical_reactor.recipeBuilder().inputs(<ore:dustFluix> * 1, <minecraft:sand> * 1).fluidInputs(<liquid:water> * 100).outputs(pureFluix * 4).duration(100).EUt(16).buildAndRegister();
-chemical_reactor.recipeBuilder().inputs(<ore:dustFluix> * 1, reddosanudo * 1).fluidInputs(<liquid:water> * 100).outputs(pureFluix * 4).duration(100).EUt(16).buildAndRegister();
+
+// - 
+chemical_reactor.recipeBuilder().inputs(<ore:dustFluix> * 1, <minecraft:sand> * 1).fluidInputs(<liquid:water> * 100).outputs(seedCrystal * 2).duration(100).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs(<ore:dustFluix> * 1, reddosanudo * 1).fluidInputs(<liquid:water> * 100).outputs(seedCrystal * 2).duration(100).EUt(30).buildAndRegister();
+
+// --- Autoclave recipes ---
+
+// Pure fluix crystals
+autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(PureFluixCrystal * 1, 6000, 500).duration(2000).EUt(24).buildAndRegister();
+autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(PureFluixCrystal * 1, 7000, 700).duration(1000).EUt(24).buildAndRegister();
+// Fluix crystals
+autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(FluixCrystal * 1, 7000, 500).duration(2000).EUt(24).buildAndRegister();
+autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(FluixCrystal * 1, 7500, 500).duration(1000).EUt(24).buildAndRegister();
+
+// Fluix crystal recips
+mixer.recipeBuilder().inputs(<minecraft:quartz> * 1, <minecraft:redstone> * 1, ChCertusQuartz * 1).outputs(FluixCrystal * 2).duration(20).EUt(16).buildAndRegister();
 
 // --- Wiremill Recipes ---
 
@@ -1271,7 +1288,7 @@ macerator.recipeBuilder()
 // Charged Certus Quartz
 var charged_certus_quartz = <appliedenergistics2:material:1>;
 electrolyzer.recipeBuilder()
-	.inputs(<ore:gemCertusQuartz>)
+	.inputs(<ore:gemCertusQuartz> | <ore:crystalCertusQuartz>)
 	.outputs(charged_certus_quartz)
 	.duration(520)
   .EUt(82)

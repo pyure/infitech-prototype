@@ -2,6 +2,9 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemDefinition;
 import mods.gregtech.recipe.RecipeMap;
 
+val assembler as RecipeMap = RecipeMap.getByName("assembler");
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
 recipes.remove(<libvulpes:structuremachine> * 16);
 recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, [[<ore:rodIron>, <ore:plateIron>, <ore:rodIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:rodIron>, <ore:plateIron>, <ore:rodIron>]]);
 
@@ -41,7 +44,7 @@ recipes.remove(<nuclearcraft:spaxelhoe_hard_carbon>);
 recipes.remove(<nuclearcraft:spaxelhoe_boron_nitride>);
 
 // GT Style block crafting
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
 
 var blockUranium = <nuclearcraft:ingot_block:4>;
 var blockBoron = <nuclearcraft:ingot_block:5>;
@@ -217,3 +220,38 @@ recipes.addShaped("it3_tile.nuclearcraft.fusion_core",
     [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>], 
     [machine_hull_luv, <ore:chassis>, machine_hull_luv], 
     [<ore:plateElite>, <ore:solenoidMagnesiumDiboride>, <ore:plateElite>]]);
+
+
+// Solars
+recipes.remove(<nuclearcraft:solar_panel_basic>);
+
+assembler.recipeBuilder()
+  .inputs(<ore:dustGraphite> * 2, <ore:dustQuartz>, <ore:plateSilver> * 8, <ore:solenoidCopper> * 2)
+  .outputs(<nuclearcraft:solar_panel_basic>)
+  .duration(940)
+  .EUt(32)
+  .buildAndRegister();
+  
+recipes.remove(<nuclearcraft:solar_panel_advanced>);
+assembler.recipeBuilder()
+  .inputs(<ore:dustGraphite> * 1, <nuclearcraft:solar_panel_basic> * 3, <ore:solenoidCopper> * 2, <ore:plateAdvanced> * 4)
+  .outputs(<nuclearcraft:solar_panel_advanced>)
+  .duration(940)
+  .EUt(120)
+  .buildAndRegister();
+   
+recipes.remove(<nuclearcraft:solar_panel_du>);
+assembler.recipeBuilder()
+  .inputs(<ore:dustGraphite> * 1, <nuclearcraft:solar_panel_advanced> * 3, <ore:solenoidMagnesiumDiboride> * 2, <ore:plateDU> * 4)
+  .outputs(<nuclearcraft:solar_panel_du>)
+  .duration(940)
+  .EUt(512)
+  .buildAndRegister();
+  
+recipes.remove(<nuclearcraft:solar_panel_elite>);
+assembler.recipeBuilder()
+  .inputs(<ore:gemBoronArsenide> * 1, <nuclearcraft:solar_panel_du> * 3, <ore:solenoidMagnesiumDiboride> * 2, <ore:plateElite> * 4)
+  .outputs(<nuclearcraft:solar_panel_elite>)
+  .duration(940)
+  .EUt(2048)
+  .buildAndRegister();

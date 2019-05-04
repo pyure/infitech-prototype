@@ -1,4 +1,5 @@
 import mods.pneumaticcraft.pressurechamber;
+import mods.pneumaticcraft.liquidplastic;
 import mods.gregtech.recipe.RecipeMap;
 
 var ingotWroughtIron = <ore:ingotWroughtIron>.firstItem;
@@ -19,13 +20,13 @@ for coal in <ore:blockCoal>.items {
 }
 
 // Coal ore into 3x Coal
-for coal in <ore:oreCoal>.items {
-	mods.pneumaticcraft.pressurechamber.addRecipe([coal * 1], 1.5, [<minecraft:coal> * 3]);
+for oreCoal in <ore:oreCoal>.items {
+	mods.pneumaticcraft.pressurechamber.addRecipe([oreCoal * 1], 1.5, [<minecraft:coal> * 3]);
 }
 // Lignite ore into 3x Lignite
 var lignite = <ore:gemLignite>.firstItem;
-for lignite in <ore:oreLignite>.items {
-	mods.pneumaticcraft.pressurechamber.addRecipe([lignite * 1], 1.5, [lignite * 3]);
+for oreLignite in <ore:oreLignite>.items {
+	mods.pneumaticcraft.pressurechamber.addRecipe([oreLignite * 1], 1.5, [lignite * 3]);
 }
 // Redstone ore into 3x Redstone
 for redstone in <ore:oreRedstone>.items {
@@ -87,3 +88,76 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil_light> 
 var pulped_biomass = <thermalfoundation:material:816>;
 var slime_ball = <minecraft:slime_ball>;
 mods.pneumaticcraft.heatframecooling.addRecipe(pulped_biomass *4, slime_ball);
+
+
+// Drones
+var vacuum_tube = <gregtech:meta_item_2:32450>;
+
+recipes.removeByRecipeName("pneumaticcraft:drone");
+recipes.addShaped("it3_pneumaticcraft_drone", 
+  <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
+  [null, <pneumaticcraft:turbine_rotor>, null], 
+  [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
+  [null, <pneumaticcraft:turbine_rotor>, <metaitem:robot.arm.lv>]]);
+  
+recipes.removeByRecipeName("pneumaticcraft:logistic_drone");
+recipes.addShaped("it3_pneumaticcraft_logistics_drone", 
+  <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
+  [null, <pneumaticcraft:turbine_rotor>, null], 
+  [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
+  [null, <pneumaticcraft:turbine_rotor>, null]]);
+  
+recipes.removeByRecipeName("pneumaticcraft:harvesting_drone");
+recipes.addShaped("it3_pneumaticcraft_harvesting_drone", 
+  <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
+  [null, <pneumaticcraft:turbine_rotor>, null], 
+  [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
+  [null, <pneumaticcraft:turbine_rotor>, <ore:treeSapling>]]);
+  
+// PC Rotors
+mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:turbine_blade>]);
+mods.pneumaticcraft.pressurechamber.addRecipe([<ore:turbineBladeSteel>.firstItem,<ore:plateRedAlloy>.firstItem,<ore:wireFineGold>.firstItem * 12], 3.0, [<pneumaticcraft:turbine_blade>]);
+
+// Plastic Mixer Alternatives
+mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil>, 500);
+
+// Exploding dusts into gems, cuz realism
+val dust_to_gem_array = [
+  "Ruby",
+  "Almandine",
+  "BlueTopaz", 
+  "Cinnabar", 
+  "GreenSapphire", 
+  "Lazurite", 
+  "Sapphire",
+  "Sodalite", 
+  "Tanzanite",
+  "Topaz", 
+  "CertusQuartz", 
+  "Quartzite", 
+  "Jasper",
+  "Olivine", 
+  "Diamond",
+  "NetherQuartz",
+  "Lignite",
+  "Opal",
+  "Amethyst",
+  "Lapis",
+  "Apatite",
+  "GarnetRed",
+  "GarnetYellow",
+  "Vinteum",
+  "Monazite",
+  "Coke",
+  "Coal"
+] as string[];
+
+var lossChance = 55; // This percentage of dusts will get voided, on average.
+
+for name in dust_to_gem_array {
+  var gem = oreDict["gem" ~ name].firstItem;
+  var dust = oreDict["dust" ~ name];
+  mods.pneumaticcraft.explosioncrafting.addRecipe(dust, gem, lossChance);
+}
+
+

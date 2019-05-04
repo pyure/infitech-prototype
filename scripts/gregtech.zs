@@ -882,3 +882,42 @@ fluid_solidifier.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
+    
+// Remind ppl where Air comes from
+mods.jei.JEI.addDescription(<liquid:air>, "Obtained via Air Collector");
+
+// Lubricant recipes: make redstone variants less efficient than talc/soapstone
+mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:oil> * 750]).remove();
+mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:creosote> * 750]).remove();
+mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:seed.oil> * 750]).remove();
+
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+  .fluidInputs([<liquid:oil> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+  .fluidInputs([<liquid:creosote> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();  
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+  .fluidInputs([<liquid:seed.oil> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();    
+  
+// Book automation
+assembler.recipeBuilder()
+  .inputs(<ore:plateWood> * 1, <ore:paper> * 2)
+  .fluidInputs([<liquid:glue> * 100])  
+  .outputs(<minecraft:book> * 1)
+  .duration(220)
+  .EUt(9)
+  .buildAndRegister();  

@@ -27,6 +27,10 @@
           "value": "ore:ilmenite"
         },
         {
+          "weight": 8,
+          "value": "ore:rutile"
+        },
+        {
           "weight": 1,
           "value": "block:appliedenergistics2:sky_stone_block"
         }
