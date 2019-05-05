@@ -452,6 +452,7 @@ val liquid_remove_block = {
 "SteelF" : <liquid:liquidsteel>,
 "NickelF" : <liquid:liquidnickel>,
 "InvarF" : <liquid:liquidinvar>,
+"Invar" : <liquid:invar>,
 "ZincF" : <liquid:liquidzinc>,
 "EnderiumF" : <liquid:liquidenderium>,
 "OsmiumF" : <liquid:liquidosmium>
@@ -475,6 +476,7 @@ val liquid_remove_ingot = {
 "SteelF" : <liquid:liquidsteel>,
 "NickelF" : <liquid:liquidnickel>,
 "InvarF" : <liquid:liquidinvar>,
+"Invar" : <liquid:invar>,
 "ZincF" : <liquid:liquidzinc>,
 "EnderiumF" : <liquid:liquidenderium>,
 "OsmiumF" : <liquid:liquidosmium>,

@@ -280,8 +280,8 @@ val uranium235Oxidized = <nuclearcraft:uranium:5>;
 
 centrifuge.recipeBuilder()
 	.fluidInputs([<liquid:uranium_hexafluoride> * 220])
-  .chancedOutput(tinyUranium235 * 2, 500)
-  .chancedOutput(uranium238 * 1, 1150)
+  .chancedOutput(tinyUranium235 * 2, 500, 100)
+  .chancedOutput(uranium238 * 1, 1150, 200)
   .duration(85)
   .EUt(200)
   .buildAndRegister(); 
@@ -491,11 +491,6 @@ forge_hammer.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
   
-  
-// Fix Paper recipe consuming slabs (will eventually get fixed on Exidex's side: https://github.com/GregTechCE/GregTech/issues/341)
-recipes.remove(<minecraft:paper> * 2);
-recipes.addShapeless("thermalfoundation_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <minecraft:water_bucket>]);
-recipes.addShaped("gregtech_paper", <minecraft:paper> * 2, [[null, <minecraft:stone_slab>.reuse(), null], [<ore:dustPaper>, <ore:dustPaper>, <ore:dustPaper>], [null, <minecraft:stone_slab>.reuse(), null]]);
 
 /* ************************* FOOD -> COMPOST **********************************/
 
@@ -553,10 +548,10 @@ fermenter.recipeBuilder()
 var pulpedBiomass = <thermalfoundation:material:816>;
 centrifuge.recipeBuilder()
   .fluidInputs([<liquid:mouldy_compost> * 100])
-  .chancedOutput(pulpedBiomass, 2200)
-  .chancedOutput(pulpedBiomass, 2200)
-  .chancedOutput(pulpedBiomass, 2200)
-  .chancedOutput(pulpedBiomass, 2200)
+  .chancedOutput(pulpedBiomass, 2200, 300)
+  .chancedOutput(pulpedBiomass, 2200, 300)
+  .chancedOutput(pulpedBiomass, 2200, 300)
+  .chancedOutput(pulpedBiomass, 2200, 300)
   .fluidOutputs(<liquid:methane> * 56)
   .duration(45)
   .EUt(12)
@@ -692,7 +687,7 @@ macerator.findRecipe(12, [<ore:crushedCentrifugedUraninite>.firstItem], null).re
 macerator.recipeBuilder()		
 	.inputs(<ore:crushedPurifiedUranium> * 1)
 	.outputs([<ore:dustPureUranium>.firstItem *1])
-  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 500)
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 500, 100)
 	.duration(40)
 	.EUt(18)
 	.buildAndRegister();
@@ -700,7 +695,7 @@ macerator.recipeBuilder()
 macerator.recipeBuilder()		
 	.inputs(<ore:crushedCentrifugedUraninite> * 1)
 	.outputs([<ore:dustUraninite>.firstItem *1])
-  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500, 300)
 	.duration(40)
 	.EUt(12)
 	.buildAndRegister();  
@@ -710,7 +705,7 @@ centrifuge.findRecipe(5, [<ore:dustPureUranium>.firstItem], null).remove();
 centrifuge.recipeBuilder()		
 	.inputs(<ore:dustPureUranium> * 1)
 	.outputs([<ore:dustUranium>.firstItem *1])
-  	.chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500)
+  .chancedOutput(<ore:dustTinyUranium235>.firstItem * 1, 2500, 300)
 	.duration(952)
 	.EUt(18)
 	.buildAndRegister();  
@@ -825,52 +820,44 @@ var pulpBiomass = <thermalfoundation:material:816>;
 fluid_extractor.recipeBuilder()
 	.inputs(<ore:listAllnut> * 1)
 	.fluidOutputs(<liquid:seed.oil> * 65) /* Probably too much seed oil.  At least some of these nuts grow just like any other seeds */
-	.chancedOutput(pulpBiomass * 1, 150)
+	.chancedOutput(pulpBiomass * 1, 150, 50)
 	.duration(80)
 	.EUt(8)
 	.buildAndRegister();
 
+// Lapotron recipes
 var lapotron = <metaitem:lapotron_crystal>;
 var lapis = <ore:plateLapis>;
-var sod = <ore:plateSodalite>;
-var laz = <ore:plateLazurite>;
+var sodalite = <ore:plateSodalite>;
+var lazurite = <ore:plateLazurite>;
 var cpu = <metaitem:plate.nano_central_processing_unit>;
 
 recipes.addShaped("it3_gt_lapotron", lapotron * 1, [
-[lapis,<ore:circuitAdvanced>,lapis],
-[lapis,<ore:gemFlawlessSapphire>,lapis],
-[lapis,<ore:circuitAdvanced>,lapis]]);
+  [lapis,<ore:circuitAdvanced>,lapis],
+  [lapis,<ore:gemFlawlessSapphire>,lapis],
+  [lapis,<ore:circuitAdvanced>,lapis]]);
 
 recipes.addShaped("it3_gt_lapotron2", lapotron * 1, [
-[sod,<ore:circuitAdvanced>,sod],
-[sod,<ore:gemFlawlessSapphire>,sod],
-[sod,<ore:circuitAdvanced>,sod]]);
+  [sodalite,<ore:circuitAdvanced>,sodalite],
+  [sodalite,<ore:gemFlawlessSapphire>,sodalite],
+  [sodalite,<ore:circuitAdvanced>,sodalite]]);
 
-recipes.addShaped("it3_gt_lapotron3", lapotron * 1, [
-[sod,<ore:circuitAdvanced>,sod],
-[sod,<metaitem:energy_crystal>,sod],
-[sod,<ore:circuitAdvanced>,sod]]);
 
 recipes.addShaped("it3_gt_lapotron4", lapotron * 1, [
-[laz,<ore:circuitAdvanced>,laz],
-[laz,<ore:gemFlawlessSapphire>,laz],
-[laz,<ore:circuitAdvanced>,laz]]);
-
-recipes.addShaped("it3_gt_lapotron5", lapotron * 1, [
-[laz,<ore:circuitAdvanced>,laz],
-[laz,<metaitem:energy_crystal>,laz],
-[laz,<ore:circuitAdvanced>,laz]]);
+  [lazurite,<ore:circuitAdvanced>,lazurite],
+  [lazurite,<ore:gemFlawlessSapphire>,lazurite],
+  [lazurite,<ore:circuitAdvanced>,lazurite]]);
 
 recipes.addShapeless("it3_gt_lapotron6", lapotron * 1, [
-cpu,<ore:gemExquisiteSapphire>,<ore:stickLapis>
+  cpu,<ore:gemExquisiteSapphire>,<ore:stickLapis>
 ]);
 
 recipes.addShapeless("it3_gt_lapotron7", lapotron * 1, [
-cpu,<ore:gemExquisiteSapphire>,<ore:stickSodalite>
+  cpu,<ore:gemExquisiteSapphire>,<ore:stickSodalite>
 ]);
 
 recipes.addShapeless("it3_gt_lapotron8", lapotron * 1, [
-cpu,<ore:gemExquisiteSapphire>,<ore:stickLazurite>
+  cpu,<ore:gemExquisiteSapphire>,<ore:stickLazurite>
 ]);
 
 // Steel bullets
@@ -895,3 +882,42 @@ fluid_solidifier.recipeBuilder()
 	.EUt(4)
 	.buildAndRegister();
 
+    
+// Remind ppl where Air comes from
+mods.jei.JEI.addDescription(<liquid:air>, "Obtained via Air Collector");
+
+// Lubricant recipes: make redstone variants less efficient than talc/soapstone
+mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:oil> * 750]).remove();
+mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:creosote> * 750]).remove();
+mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:seed.oil> * 750]).remove();
+
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+  .fluidInputs([<liquid:oil> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+  .fluidInputs([<liquid:creosote> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();  
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+  .fluidInputs([<liquid:seed.oil> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();    
+  
+// Book automation
+assembler.recipeBuilder()
+  .inputs(<ore:plateWood> * 1, <ore:paper> * 2)
+  .fluidInputs([<liquid:glue> * 100])  
+  .outputs(<minecraft:book> * 1)
+  .duration(220)
+  .EUt(9)
+  .buildAndRegister();  

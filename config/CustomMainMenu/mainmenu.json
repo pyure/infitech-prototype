@@ -1,0 +1,239 @@
+{
+	"images": {
+		"title": {
+			"image": "mainmenu:Infitech-3.png",
+			"posX": 160,
+			"posY": 120,
+			"width": 100,
+			"height": 70,
+			"alignment": "top_left"
+		},
+		"black": {
+			"image": "mainmenu:bg_menu.png",
+			"posX": 0,
+			"posY": -80,
+			"width": 150,
+			"height": 1500,
+			"alignment": "top_left"
+		}
+	},
+
+	"buttons": {
+		"singleplayer": {
+			"text": "menu.singleplayer",
+			"hoverText": "Here I come, trees...",
+			"normalTextColor": 12303291,
+			"hoverTextColor": 3125670,
+			"texture": "mainmenu:btn.png",
+			"posX": 0,
+			"posY": -90,
+			"width": 150,
+			"height": 25,
+			"imageWidth": 100,
+			"imageHeight": 50,
+			"alignment": "left_center",
+			"action": {
+				"type": "openGui",
+				"gui": "singleplayer"
+			}
+		},
+
+		"multiplayer": {
+			"text": "menu.multiplayer",
+			"hoverText": "You mine, I'll craft.",
+			"normalTextColor": 12303291,
+			"hoverTextColor": 3125670,
+			"texture": "mainmenu:btn.png",
+			"posX": 0,
+			"posY": -65,
+			"width": 150,
+			"height": 25,
+			"imageWidth": 100,
+			"imageHeight": 50,
+			"alignment": "left_center",
+			"action": {
+				"type": "openGui",
+				"gui": "multiplayer"
+			}
+		},
+
+		"mods": {
+			"text": "fml.menu.mods",
+			"hoverText": "Where's Extra Utilities??",
+			"normalTextColor": 12303291,
+			"hoverTextColor": 3125670,
+			"texture": "mainmenu:btn.png",
+			"posX": 0,
+			"posY": -40,
+			"width": 150,
+			"height": 25,
+			"imageWidth": 100,
+			"imageHeight": 50,
+			"alignment": "left_center",
+			"action": {
+				"type": "openGui",
+				"gui": "mods"
+			}
+		},
+		"options": {
+			"text": "menu.options",
+			"normalTextColor": 12303291,
+			"hoverTextColor": 3125670,
+			"texture": "mainmenu:btn.png",
+			"hoverText": "M binds to like everything.",
+			"posX": 0,
+			"posY": -15,
+			"width": 150,
+			"height": 25,
+			"imageWidth": 100,
+			"imageHeight": 50,
+			"alignment": "left_center",
+			"action": {
+				"type": "openGui",
+				"gui": "options"
+			}
+		},
+		"discord": {
+			"text": "Discord",
+			"normalTextColor": 12303291,
+			"hoverTextColor": 3125670,
+			"texture": "mainmenu:btn.png",
+			"hoverText": "Do you like...people?",
+			"posX": 0,
+			"posY": 10,
+			"width": 150,
+			"height": 25,
+			"alignment": "left_center",
+			"action": {
+				"type": "openLink",
+				"link": "https://discord.gg/d8E6Kc6"
+			}
+		},
+		"language": {
+			"text": "Language",
+			"normalTextColor": 12303291,
+			"hoverTextColor": 3125670,
+			"texture": "mainmenu:btn.png",
+			"hoverText": "Babel Fish.",
+			"posX": 0,
+			"posY": 35,
+			"width": 150,
+			"height": 25,
+			"alignment": "left_center",
+			"action": {
+				"type": "openGui",
+				"gui": "languages"
+			}
+		},
+		"quit": {
+			"text": "menu.quit",
+			"normalTextColor": 12303291,
+			"hoverTextColor": 3125670,
+			"texture": "mainmenu:btn.png",
+			"hoverText": "We understand.  It's hard.",
+			"posX": 0,
+			"posY": 60,
+			"width": 150,
+			"height": 25,
+			"alignment": "left_center",
+			"action": {
+				"type": "quit"
+			}
+		},
+
+
+
+		"refresh": {
+			"text": "",
+			"posX": -54,
+			"posY": 132,
+			"width": 20,
+			"height": 20,
+			"texture": "custommainmenu:textures/gui/buttons.png",
+			"alignment": "right_center",
+			"action": {
+				"type": "refresh"
+			}
+		}
+	},
+
+	"labels": {
+		"mojang": {
+			"text": "Copyright Mojang AB. Do not distribute!",
+			"hoverText": "§nCopyright Mojang AB. Do not distribute!",
+			"posX": -197,
+			"posY": -10,
+			"color": -1,
+			"alignment": "bottom_right",
+			"action": {
+				"type": "openGui",
+				"gui": "credits"
+			}
+		},
+
+		"fml": {
+			"text": "",
+			"posX": 2,
+			"posY": -40,
+			"color": -1,
+			"alignment": "bottom_left"
+		}
+	},
+
+	"other": {
+		"background": {
+			"image": "",
+			"slideshow": {
+				"images": [
+					"mainmenu:slideshow/gear 5.png",
+					"mainmenu:slideshow/gear 6.png",
+					"mainmenu:slideshow/gear 7.png",
+					"mainmenu:slideshow/gear 8.png",
+					"mainmenu:slideshow/gear 9.png",
+					"mainmenu:slideshow/gear 10.png",
+					"mainmenu:slideshow/gear 11.png",
+					"mainmenu:slideshow/gear 12.png",
+					"mainmenu:slideshow/gear 13.png",
+					"mainmenu:slideshow/gear 14.png",
+					"mainmenu:slideshow/gear 15.png",
+					"mainmenu:slideshow/gear 16.png",
+					"mainmenu:slideshow/gear 17.png",
+					"mainmenu:slideshow/gear 18.png",
+					"mainmenu:slideshow/gear 19.png",
+					"mainmenu:slideshow/gear 20.png",
+					"mainmenu:slideshow/gear 21.png",
+					"mainmenu:slideshow/gear 22.png",
+					"mainmenu:slideshow/gear 23.png",
+					"mainmenu:slideshow/gear 24.png",
+					"mainmenu:slideshow/gear 25.png",
+					"mainmenu:slideshow/gear 26.png",
+					"mainmenu:slideshow/gear 27.png",
+					"mainmenu:slideshow/gear 28.png",
+					"mainmenu:slideshow/gear 29.png",
+					"mainmenu:slideshow/gear 30.png",
+					"mainmenu:slideshow/gear 31.png",
+					"mainmenu:slideshow/gear 32.png",
+					"mainmenu:slideshow/gear 33.png",
+					"mainmenu:slideshow/gear 34.png",
+					"mainmenu:slideshow/gear 35.png",
+					"mainmenu:slideshow/gear 36.png",
+					"mainmenu:slideshow/gear 37.png",
+					"mainmenu:slideshow/gear 38.png",
+					"mainmenu:slideshow/gear 39.png",
+					"mainmenu:slideshow/gear 40.png",
+					"mainmenu:slideshow/gear 41.png",
+					"mainmenu:slideshow/gear 42.png",
+					"mainmenu:slideshow/gear 43.png",
+					"mainmenu:slideshow/gear 44.png",
+					"mainmenu:slideshow/gear 45.png",
+					"mainmenu:slideshow/gear 46.png",
+					"mainmenu:slideshow/gear 47.png",
+					"mainmenu:slideshow/gear 48.png"
+				],
+				"displayDuration": 3,
+				"fadeDuration": 0,
+				"mode": "stretch"
+			}
+		}
+	}
+}

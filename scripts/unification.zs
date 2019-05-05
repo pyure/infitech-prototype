@@ -24,6 +24,8 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:blockAluminium>.addAll(<ore:blockAluminum>);
 <ore:plateAluminium>.addAll(<ore:plateAluminum>);
 
+<ore:plateAluminum>.addAll(<ore:plateAluminium>); // Allow GT aluminium to function as Aluminum for some recipes
+
 // Plates
 <ore:plateLead>.add(<railcraft:plate:4>);
 

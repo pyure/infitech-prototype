@@ -402,8 +402,8 @@ assembler.recipeBuilder()
 mods.forestry.Centrifuge.removeRecipe(wisp);
 centrifuge.recipeBuilder()
 	.inputs(propolisSilk * 1)
-	.chancedOutput(wisp, 3000)
-	.chancedOutput(propolisCom, 600)
+	.chancedOutput(wisp, 3000, 300)
+	.chancedOutput(propolisCom, 600, 100)
 	.duration(200)
 	.EUt(32)
 	.buildAndRegister();

@@ -171,7 +171,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12989</itemStack>
+			<oreDict>platePolyvinylChloride</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -189,7 +189,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12956</itemStack>
+			<oreDict>platePolystyrene</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -261,7 +261,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12991</itemStack>
+			<oreDict>plateReinforcedEpoxyResin</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -396,7 +396,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12934</itemStack>
+			<oreDict>platePolyphenyleneSulfide</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -738,7 +738,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12960</itemStack>
+			<oreDict>plateSiliconRubber</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -837,7 +837,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12924</itemStack>
+			<oreDict>plateIndiumGalliumPhosphide</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -882,7 +882,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12953</itemStack>
+			<oreDict>plateStyreneButadieneRubber</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -1053,7 +1053,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12935</itemStack>
+			<oreDict>plateGalliumArsenide</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
@@ -1148,15 +1148,6 @@
 	</Recipe>
 	<Recipe timeRequired="300" power ="20">
 		<input>
-			<oreDict>ingotNeutronium</oreDict>
-			<fluidStack>water 100</fluidStack>
-		</input>
-		<output>
-			<itemStack>gregtech:meta_item_1 1 12972</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="300" power ="20">
-		<input>
 			<oreDict>ingotInvar</oreDict>
 			<fluidStack>water 100</fluidStack>
 		</input>
@@ -1188,7 +1179,7 @@
 			<fluidStack>water 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>gregtech:meta_item_1 1 12921</itemStack>
+			<oreDict>plateNickelZincFerrite</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="100" power ="1">
