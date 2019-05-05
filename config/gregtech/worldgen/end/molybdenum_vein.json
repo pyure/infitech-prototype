@@ -8,7 +8,7 @@
 
   "generator": {
     "type": "ellipsoid",
-    "radius": [8, 8]
+    "radius": [6, 6]
   },
   "filler": {
     "type": "simple",
