@@ -255,3 +255,9 @@ assembler.recipeBuilder()
   .duration(940)
   .EUt(2048)
   .buildAndRegister();
+
+// Replace all usages of Bioplastic sheets with Polyethylene
+var bioplastic_sheet = <nuclearcraft:part:6>;
+var polyethylene_sheet = <ore:platePlastic>.firstItem;
+
+recipes.replaceAllOccurences(bioplastic_sheet, polyethylene_sheet);
