@@ -166,7 +166,7 @@ mods.forestry.Carpenter.addRecipe(backpackApothecaryT2, [[wovenSilk, wovenSilk, 
 * Engraving Bench doesn't seem to be a thing anymore
 */
 
-recipes.addShapeless("it3_rc_track_parts", <railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIron>, <ore:rodIron>]);
+recipes.addShapeless("it3_rc_track_parts", <railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIron>, <ore:stickIron>]);
 
 // Raw firestone.  Need more recipes
 mods.pneumaticcraft.pressurechamber.addRecipe([<railcraft:ore_magic> * 1], 4.5, [<railcraft:firestone_raw>]);

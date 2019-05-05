@@ -6,7 +6,7 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
 recipes.remove(<libvulpes:structuremachine> * 16);
-recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, [[<ore:rodIron>, <ore:plateIron>, <ore:rodIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:rodIron>, <ore:plateIron>, <ore:rodIron>]]);
+recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, [[<ore:stickIron>, <ore:plateIron>, <ore:stickIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]]);
 
 recipes.remove(<libvulpes:advstructuremachine> * 16);
 recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, [[<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>],[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], [<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>]]);
