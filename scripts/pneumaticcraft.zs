@@ -119,7 +119,12 @@ mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:turbine_blade>
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:turbineBladeSteel>.firstItem,<ore:plateRedAlloy>.firstItem,<ore:wireFineGold>.firstItem * 12], 3.0, [<pneumaticcraft:turbine_blade>]);
 
 // Plastic Mixer Alternatives
-mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil>, 500);
+mods.pneumaticcraft.liquidplastic.removeLiquidPlastic(<liquid:plastic>);
+mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:plastic>, 50);
+mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil_light>, 600);
+mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil>, 400);
+mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil_medium>, 400);
+mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil_heavy>, 200);
 
 // Exploding dusts into gems, cuz realism
 val dust_to_gem_array = [
