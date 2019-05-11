@@ -33,6 +33,10 @@
         {
           "weight": 40,
           "value": "ore_dict:oreBoron"
+        },
+        {
+          "weight": 20,
+          "value": "ore:garnetYellow"
         }
       ]
     }

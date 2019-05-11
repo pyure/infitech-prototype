@@ -51,7 +51,7 @@ var ingotCompressedIron = <ore:ingotCompressedIron>; // GT version.  Good name.
 var ingotIronCompressed = <ore:ingotIronCompressed>; // PC version.  Weird name.
 
 blockCompressedIron.addAll(blockIronCompressed);
-blockIronCompressed.addAll(blockCompressedIron);
+blockIronCompressed.addAll(blockCompressedIron); // doesn't seem to help AE2 recipes
 ingotCompressedIron.addAll(ingotIronCompressed);
 ingotIronCompressed.addAll(ingotCompressedIron);
 
