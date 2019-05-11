@@ -39,7 +39,7 @@ recipes.addShaped("it3_openblocks_fan_0", <openblocks:fan>, [[<minecraft:iron_ba
 // Glider.  Disabled in IT2. Let's allow it, mid-game.
 var gliderWing = <openblocks:generic>;
 recipes.remove(<openblocks:hang_glider>);
-recipes.addShaped("it3_openblocks_hang_glider_0", <openblocks:hang_glider>, [[gliderWing, <ore:stickTitanium>, gliderWing]]);
+recipes.addShaped("it3_openblocks_hang_glider_0", <openblocks:hang_glider>, [[gliderWing, <ore:stickAluminium>, gliderWing]]);
 
 // Tank.  IT2 didn't tweak this, but its so awesome I think we should.
 recipes.remove(<openblocks:tank> * 2);
