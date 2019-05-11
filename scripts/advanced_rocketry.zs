@@ -218,3 +218,8 @@ recipes.addShaped("it3_advrocketry_blastbrick", <advancedrocketry:blastbrick> *6
   [<minecraft:magma_cream>, <minecraft:ghast_tear>, <forestry:refractory_wax>], 
   [<minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>], 
   [null, null, null]]);
+  
+// Remove furnace recipe for Iridium, should stop smashing-enchant from allowing iridium ingots
+var libvulpes_iridium_ingot = <libvulpes:productingot:10>;
+var libvulpes_iridium_dust = <libvulpes:productdust:10>;
+furnace.remove(libvulpes_iridium_ingot, libvulpes_iridium_dust);  
