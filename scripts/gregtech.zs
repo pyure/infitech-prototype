@@ -27,6 +27,7 @@ val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
 val lathe as RecipeMap = RecipeMap.getByName("lathe");
 
 var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
+var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammer>.firstItem.withEmptyTag();
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -921,3 +922,10 @@ assembler.recipeBuilder()
   .duration(220)
   .EUt(9)
   .buildAndRegister();  
+  
+  
+// Wood Plank recipe
+recipes.addShaped("it3_gt_wood_plank", lapotron * 1, [
+  [null, craftingToolSoftHammerEmptyTag,null],
+  [null,<ore:plankWood>,null],
+  [null,<ore:plankWood>,null]]);
