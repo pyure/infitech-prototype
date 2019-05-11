@@ -179,3 +179,12 @@ events.onBlockBreak(function(event as crafttweaker.event.BlockBreakEvent) {
 // Charged Certus Quartz Alchemy
 var charged_quartz = <appliedenergistics2:material:1>;
 mods.botania.ManaInfusion.addAlchemy(charged_quartz, <ore:crystalCertusQuartz>, 900);
+
+// 
+var manasteel_pickaxe = <botania:manasteelpick>;
+recipes.remove(manasteel_pickaxe);
+
+recipes.addShaped("it3_botania_manasteel_pickaxe", manasteel_pickaxe, [
+  [<ore:ingotManasteel>, <ore:ingotAluminium>, <ore:ingotManasteel>], 
+  [null, <ore:livingwoodTwig>, null], 
+  [null, <ore:livingwoodTwig>, null]]);
