@@ -925,7 +925,7 @@ assembler.recipeBuilder()
   
   
 // Wood Plank recipe
-recipes.addShaped("it3_gt_wood_plank", lapotron * 1, [
+recipes.addShaped("it3_gt_wood_plank", <ore:plateWood>.firstItem, [
   [null, craftingToolSoftHammerEmptyTag,null],
   [null,<ore:plankWood>,null],
   [null,<ore:plankWood>,null]]);
