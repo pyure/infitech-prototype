@@ -179,7 +179,7 @@ assembler.recipeBuilder()
 // Obsidian Pipes
 recipes.remove(pipeObsidian);
 assembler.recipeBuilder()
-  .inputs(<ore:rodObsidian> * 6)
+  .inputs(<ore:stickObsidian> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
   .outputs(pipeObsidian * 6)
