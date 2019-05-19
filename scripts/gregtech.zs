@@ -18,6 +18,7 @@ val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
 val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
+val implosion_compressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val packer as RecipeMap = RecipeMap.getByName("packer");
@@ -929,3 +930,13 @@ recipes.addShaped("it3_gt_wood_plank", <ore:plateWood>.firstItem, [
   [null, craftingToolSoftHammerEmptyTag,null],
   [null,<ore:plankWood>,null],
   [null,<ore:plankWood>,null]]);
+
+  
+// Add stand-in recipe for imploding diamond dust
+implosion_compressor.recipeBuilder()
+	.inputs(<ore:dustDiamond> * 4)
+	.property("explosives", 2)
+	.outputs(<minecraft:diamond> * 3)
+	.duration(20)
+	.EUt(30)
+	.buildAndRegister();
