@@ -224,9 +224,9 @@ recipes.addShaped("it3_tile.nuclearcraft.fusion_core",
 
 // Solars
 recipes.remove(<nuclearcraft:solar_panel_basic>);
-
+var dustQuartz = <ore:dustQuartz> | <ore:dustCertusQuartz> | <ore:dustNetherQuartz>;
 assembler.recipeBuilder()
-  .inputs(<ore:dustGraphite> * 2, <ore:dustQuartz>, <ore:plateSilver> * 8, <ore:solenoidCopper> * 2)
+  .inputs(<ore:dustGraphite> * 2, dustQuartz, <ore:plateSilver> * 8, <ore:solenoidCopper> * 2)
   .outputs(<nuclearcraft:solar_panel_basic>)
   .duration(940)
   .EUt(32)
