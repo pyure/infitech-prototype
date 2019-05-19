@@ -1268,7 +1268,7 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
 compressor.recipeBuilder()
-	.inputs(<appliedenergistics2:material:10> * 8)
+	.inputs(<appliedenergistics2:material:10> * 16) // Prevents infinite certus exploit
 	.outputs(<appliedenergistics2:quartz_block>)
 	.duration(400).EUt(2)
 	.buildAndRegister();
