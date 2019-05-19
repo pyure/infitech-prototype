@@ -4,6 +4,7 @@ import mods.gregtech.recipe.RecipeMap;
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
 
 recipes.remove(<libvulpes:structuremachine> * 16);
 recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, [[<ore:stickIron>, <ore:plateIron>, <ore:stickIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]]);
@@ -261,3 +262,12 @@ var bioplastic_sheet = <nuclearcraft:part:6>;
 var rubber_sheet = <ore:plateRubber>.firstItem;
 
 recipes.replaceAllOccurences(bioplastic_sheet, rubber_sheet);
+
+// Radaway Item
+fluid_canner.recipeBuilder() 
+    .fluidInputs(<liquid:radaway>)
+    .inputs(<ore:platePlastic> * 2)
+    .outputs(<nuclearcraft:radaway> * 1 )
+    .duration(68)
+    .EUt(8)
+    .buildAndRegister();
