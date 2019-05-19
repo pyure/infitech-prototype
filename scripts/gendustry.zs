@@ -5,7 +5,6 @@ var scoop = <ore:craftingToolScoop>;
 var frameUpgrade = <gendustry:upgrade_frame>;
 var ingotAluminium = <ore:ingotAluminium>;
 var ingotGold = <ore:ingotGold>;
-var frameCobalt = <ore:frameGtCobalt>;
 var blockRedstone = <ore:blockRedstone>;
 var gearAluminium = <ore:gearAluminium>;
 var circuitBasic = <ore:circuitBasic>;
@@ -40,7 +39,7 @@ recipes.addShaped("it3_gendustry_scooporator", scooporator, [
 //recipes.remove(frameUpgrade);
 recipes.addShaped("it3_gendustry_frame_upgrade", frameUpgrade, [
 [ingotAluminium, ingotGold, ingotAluminium],
-[blockRedstone, frameCobalt, blockRedstone],
+[blockRedstone, null, blockRedstone],
 [ingotAluminium, ingotGold, ingotAluminium]]);
 
 //recipes.remove(modulePower);
