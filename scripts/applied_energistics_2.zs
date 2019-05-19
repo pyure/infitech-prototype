@@ -616,9 +616,9 @@ recipes.addShaped("it3_ae2_chest", MEChest, [
 
 // --- ME Drive
 recipes.addShaped("it3_ae2_drive", MEDrive, [
-[TitaniumPlate, EngProc, TitaniumPlate], 
-[FluixGlassCable, MEChest, FluixGlassCable], 
-[TitaniumPlate, <ore:circuitAdcanced>, TitaniumPlate]]);
+  [TitaniumPlate, EngProc, TitaniumPlate], 
+  [FluixGlassCable, MEChest, FluixGlassCable], 
+  [TitaniumPlate, <ore:circuitAdvanced>, TitaniumPlate]]);
 
 // --- CraftingUnit
 recipes.addShaped("it3_ae2_crafting_unit", CraftingUnit, [
@@ -1070,7 +1070,7 @@ recipes.addShaped("it3_ae2_1k_cell_component", StorageComponent1K, [
 // --- Storage Cell Component - 4K
 recipes.addShaped("it3_ae2_4k_cell_component", StorageComponent4K, [
   [plateRAM, StorageComponent1K, plateRAM],
-  [<ore:circuitGood>, LogiProc, <ore:LogiProc>],
+  [<ore:circuitGood>, LogiProc, <ore:circuitGood>],
   [plateRAM, StorageComponent1K, plateRAM]]);
 
 // --- Storage Cell Component - 16K
