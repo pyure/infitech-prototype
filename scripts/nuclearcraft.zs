@@ -4,12 +4,13 @@ import mods.gregtech.recipe.RecipeMap;
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
 
 recipes.remove(<libvulpes:structuremachine> * 16);
 recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, [[<ore:stickIron>, <ore:plateIron>, <ore:stickIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]]);
 
 recipes.remove(<libvulpes:advstructuremachine> * 16);
-recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, [[<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>],[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], [<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>]]);
+recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, [[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>],[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], [<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>]]);
 
 // These are covered by GT meta tools
 recipes.remove(<nuclearcraft:pickaxe_boron>);
@@ -206,11 +207,10 @@ recipes.addShapeless("it3_nc_heu235", fuelHEU235, [<ore:dustUranium235>, <ore:du
 
 // Allow GT Borax Dust to count as Boron oredict
 var ingotBoron = <nuclearcraft:ingot:5>;
-<ore:dustBoron>.addAll(<ore:dustBorax>);
 
 // Add dustBoron for boron ingots instead of NC Boron Dust
 furnace.remove(ingotBoron);
-furnace.addRecipe(ingotBoron, <ore:dustBoron>);
+furnace.addRecipe(ingotBoron, <ore:dustBoron> | <ore:dustBorax>);
 
 var fusionCore = <nuclearcraft:fusion_core>;
 var machine_hull_luv = <gregtech:machine:506>;
@@ -224,9 +224,9 @@ recipes.addShaped("it3_tile.nuclearcraft.fusion_core",
 
 // Solars
 recipes.remove(<nuclearcraft:solar_panel_basic>);
-
+var dustQuartz = <ore:dustQuartz> | <ore:dustCertusQuartz> | <ore:dustNetherQuartz>;
 assembler.recipeBuilder()
-  .inputs(<ore:dustGraphite> * 2, <ore:dustQuartz>, <ore:plateSilver> * 8, <ore:solenoidCopper> * 2)
+  .inputs(<ore:dustGraphite> * 2, dustQuartz, <ore:plateSilver> * 8, <ore:solenoidCopper> * 2)
   .outputs(<nuclearcraft:solar_panel_basic>)
   .duration(940)
   .EUt(32)
@@ -261,3 +261,12 @@ var bioplastic_sheet = <nuclearcraft:part:6>;
 var rubber_sheet = <ore:plateRubber>.firstItem;
 
 recipes.replaceAllOccurences(bioplastic_sheet, rubber_sheet);
+
+// Radaway Item
+fluid_canner.recipeBuilder() 
+    .fluidInputs(<liquid:radaway>)
+    .inputs(<ore:platePlastic> * 2)
+    .outputs(<nuclearcraft:radaway> * 1 )
+    .duration(68)
+    .EUt(8)
+    .buildAndRegister();

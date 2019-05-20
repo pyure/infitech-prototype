@@ -1,5 +1,5 @@
 import mods.pneumaticcraft.pressurechamber;
-import mods.pneumaticcraft.liquidplastic;
+import mods.pneumaticcraft.plasticmixer;
 import mods.gregtech.recipe.RecipeMap;
 
 var ingotWroughtIron = <ore:ingotWroughtIron>.firstItem;
@@ -51,7 +51,7 @@ var ingotCompressedIron = <ore:ingotCompressedIron>; // GT version.  Good name.
 var ingotIronCompressed = <ore:ingotIronCompressed>; // PC version.  Weird name.
 
 blockCompressedIron.addAll(blockIronCompressed);
-blockIronCompressed.addAll(blockCompressedIron);
+blockIronCompressed.addAll(blockCompressedIron); // doesn't seem to help AE2 recipes
 ingotCompressedIron.addAll(ingotIronCompressed);
 ingotIronCompressed.addAll(ingotCompressedIron);
 
@@ -119,7 +119,13 @@ mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:turbine_blade>
 mods.pneumaticcraft.pressurechamber.addRecipe([<ore:turbineBladeSteel>.firstItem,<ore:plateRedAlloy>.firstItem,<ore:wireFineGold>.firstItem * 12], 3.0, [<pneumaticcraft:turbine_blade>]);
 
 // Plastic Mixer Alternatives
-mods.pneumaticcraft.liquidplastic.addLiquidPlastic(<liquid:oil>, 500);
+mods.pneumaticcraft.plasticmixer.removeAllRecipes();
+mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:plastic> * 50, <pneumaticcraft:plastic>);  // 50mb Plastic makes a plastic sheet
+mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:oil_light> * 600, <pneumaticcraft:plastic>); // 600mb light oil makes a plastic sheet
+mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:oil_medium> * 400, <pneumaticcraft:plastic>); // 400mb Medium oil makes a plastic sheet
+mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:oil_heavy> * 200, <pneumaticcraft:plastic>); // 200mb Heavy oil makes a plastic sheet
+mods.pneumaticcraft.plasticmixer.addRecipe(<liquid:oil> * 400, <pneumaticcraft:plastic>, 373);  // 400mb Raw Oil (same quality as Medium) makes a plastic sheet and can be produced from a plastic sheet
+
 
 // Exploding dusts into gems, cuz realism
 val dust_to_gem_array = [
