@@ -37,7 +37,7 @@ var ChCertusQuartz = <appliedenergistics2:material:1>;
 var ChCertusQuartzBlock = <appliedenergistics2:chiseled_quartz_block>;
 var CertusPlate = <ore:plateCertusQuartz>;
 var CertusQuartzBlock = <appliedenergistics2:quartz_block>;
-var CertusQuartz = <ore:gemCertusQuartz>;
+var CertusQuartz = <ore:gemCertusQuartz> | <ore:crystalCertusQuartz>;
 var CertusRod = <ore:stickCertusQuartz>;
 var CertusScrew = <ore:boltCertusQuartz>;
 var Charger = <appliedenergistics2:charger>;
@@ -130,7 +130,6 @@ var FluixSmartCableRed = <appliedenergistics2:part:54>;
 var FluixSmartCableWhite = <appliedenergistics2:part:40>;
 var FluixSmartCableYellow = <appliedenergistics2:part:44>;
 var FormationCore = <appliedenergistics2:material:43>;
-var gemCertusQuartz = <ore:gemCertusQuartz>;
 var GlassPlate = <ore:plateGlass>;
 var GlowstoneDust = <ore:dustGlowstone>;
 var GlowstoneGlass = <thaumcraft:amber_block>;
@@ -813,7 +812,7 @@ recipes.addShaped("it3_ae2_basic_card", <appliedenergistics2:material:25>, [
 // --- Blank Pattern
 recipes.addShaped("it3_ae2_pattern", Pattern, [
 [<appliedenergistics2:quartz_glass>, <ore:plateGlowstone>, <appliedenergistics2:quartz_glass>],
-[<ore:plateGlowstone>, <ore:itemCertusQuartz>, <ore:plateGlowstone>],
+[<ore:plateGlowstone>, CertusQuartz, <ore:plateGlowstone>],
 [plateAluminum, plateAluminum, plateAluminum]]);
 
 
@@ -840,7 +839,7 @@ recipes.addShapeless("it3_ae2_magnet_card", <wct:magnet_card>, [<appliedenergist
 
 // --- Wireless Booster
 recipes.addShaped("it3_ae2_wireless_booster", <appliedenergistics2:material:42>, [
-[FluixDust, <ore:gemCertusQuartz>, <ore:plateEnderPearl>],
+[FluixDust, CertusQuartz, <ore:plateEnderPearl>],
 [plateAluminum, plateAluminum, plateAluminum],
 [null, null, null]]);
 
@@ -921,9 +920,9 @@ recipes.addShapeless("it3_ae2_inverted_toggle2", <appliedenergistics2:part:80>, 
 
 // --- Quartz Wrench
 recipes.addShaped("it3_ae2_quartz_wrench", <appliedenergistics2:certus_quartz_wrench>, [
-[gemCertusQuartz, <ore:craftingToolWrench>, gemCertusQuartz],
-[gemCertusQuartz, gemCertusQuartz, gemCertusQuartz],
-[null, gemCertusQuartz, null]]);
+[CertusQuartz, <ore:craftingToolWrench>, CertusQuartz],
+[CertusQuartz, CertusQuartz, CertusQuartz],
+[null, CertusQuartz, null]]);
 
 // --- Nether Quartz Wrench
 recipes.addShaped("it3_ae2_neth_quartz_wrench", <appliedenergistics2:nether_quartz_wrench>, [
@@ -1004,7 +1003,7 @@ recipes.addShaped("it3_ae2_fluid_terminal_2", <appliedenergistics2:part:520>, [
 // --- Cells ---
 
 // --- View Cell
-recipes.addShapeless("it3_ae2_view_cell", <appliedenergistics2:view_cell>, [UStorageHousing, <ore:gemCertusQuartz>]);
+recipes.addShapeless("it3_ae2_view_cell", <appliedenergistics2:view_cell>, [UStorageHousing, CertusQuartz]);
 
 // --- 1K ME Storage Cell
 recipes.addShapeless("it3_ae2_1k_me_cell", Storage1K, 
@@ -1291,7 +1290,7 @@ macerator.recipeBuilder()
 // Charged Certus Quartz
 var charged_certus_quartz = <appliedenergistics2:material:1>;
 electrolyzer.recipeBuilder()
-	.inputs(<ore:gemCertusQuartz> | <ore:crystalCertusQuartz>)
+	.inputs(CertusQuartz | <ore:crystalCertusQuartz>)
 	.outputs(charged_certus_quartz)
 	.duration(520)
   .EUt(82)
