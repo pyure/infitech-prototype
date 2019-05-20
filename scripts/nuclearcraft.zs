@@ -207,11 +207,10 @@ recipes.addShapeless("it3_nc_heu235", fuelHEU235, [<ore:dustUranium235>, <ore:du
 
 // Allow GT Borax Dust to count as Boron oredict
 var ingotBoron = <nuclearcraft:ingot:5>;
-<ore:dustBoron>.addAll(<ore:dustBorax>);
 
 // Add dustBoron for boron ingots instead of NC Boron Dust
 furnace.remove(ingotBoron);
-furnace.addRecipe(ingotBoron, <ore:dustBoron>);
+furnace.addRecipe(ingotBoron, <ore:dustBoron> | <ore:dustBorax>);
 
 var fusionCore = <nuclearcraft:fusion_core>;
 var machine_hull_luv = <gregtech:machine:506>;
