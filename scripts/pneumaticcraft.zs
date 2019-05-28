@@ -68,9 +68,9 @@ mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:s
 mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20, <liquid:sulfuric_naphtha> * 5, <liquid:sulfuric_gas> * 6]);
 mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20, <liquid:sulfuric_naphtha> * 5]);
 mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 140, <liquid:sulfuric_light_fuel> * 18, <liquid:sulfuric_naphtha> * 3, <liquid:sulfuric_gas> * 48]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 140, <liquid:sulfuric_light_fuel> * 18, <liquid:sulfuric_naphtha> * 3]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 140, <liquid:sulfuric_light_fuel> * 18]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 150, <liquid:sulfuric_light_fuel> * 18, <liquid:sulfuric_naphtha> * 3, <liquid:sulfuric_gas> * 48]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 150, <liquid:sulfuric_light_fuel> * 18, <liquid:sulfuric_naphtha> * 3]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 150, <liquid:sulfuric_light_fuel> * 18]);
 mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20, <liquid:sulfuric_naphtha> * 5, <liquid:sulfuric_gas> * 6]);
 mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20, <liquid:sulfuric_naphtha> * 5]);
 mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20]);
