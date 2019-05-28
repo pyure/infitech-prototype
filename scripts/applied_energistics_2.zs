@@ -850,29 +850,29 @@ recipes.addShaped("it3_ae2_annih_plane", <appliedenergistics2:part:300>, [
 [null, null, null]]);
 
 // --- Cable Anchor
-recipes.addShapeless("it3_ae2_anchor_0", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotIron>]);
+recipes.addShapeless("it3_ae2_anchor_0", <appliedenergistics2:part:120> * 2, [craftingToolKnifeEmptyTag, <ore:ingotIron>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_1", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotCopper>]);
+recipes.addShapeless("it3_ae2_anchor_1", <appliedenergistics2:part:120> * 2, [craftingToolKnifeEmptyTag, <ore:ingotCopper>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_2", <appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotBronze>]);
+recipes.addShapeless("it3_ae2_anchor_2", <appliedenergistics2:part:120> * 3, [craftingToolKnifeEmptyTag, <ore:ingotBronze>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_3", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotTin>]);
+recipes.addShapeless("it3_ae2_anchor_3", <appliedenergistics2:part:120> * 2, [craftingToolKnifeEmptyTag, <ore:ingotTin>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_4", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotIron>]);
+recipes.addShapeless("it3_ae2_anchor_4", <appliedenergistics2:part:120> * 2, [craftingToolKnifeEmptyTag, <ore:ingotIron>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_5", <appliedenergistics2:part:120> * 4, [<ore:craftingToolKnife>, <ore:ingotSteel>]);
+recipes.addShapeless("it3_ae2_anchor_5", <appliedenergistics2:part:120> * 4, [craftingToolKnifeEmptyTag, <ore:ingotSteel>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_6", <appliedenergistics2:part:120> * 4, [<ore:craftingToolKnife>, <ore:ingotAluminium>]);
+recipes.addShapeless("it3_ae2_anchor_6", <appliedenergistics2:part:120> * 4, [craftingToolKnifeEmptyTag, <ore:ingotAluminium>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_7", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotLead>]);
+recipes.addShapeless("it3_ae2_anchor_7", <appliedenergistics2:part:120> * 2, [craftingToolKnifeEmptyTag, <ore:ingotLead>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_8", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotNickel>]);
+recipes.addShapeless("it3_ae2_anchor_8", <appliedenergistics2:part:120> * 2, [craftingToolKnifeEmptyTag, <ore:ingotNickel>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_9", <appliedenergistics2:part:120> * 2, [<ore:craftingToolKnife>, <ore:ingotSilver>]);
+recipes.addShapeless("it3_ae2_anchor_9", <appliedenergistics2:part:120> * 2, [craftingToolKnifeEmptyTag, <ore:ingotSilver>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_10", <appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotBrass>]);
+recipes.addShapeless("it3_ae2_anchor_10", <appliedenergistics2:part:120> * 3, [craftingToolKnifeEmptyTag, <ore:ingotBrass>]);
 // -
-recipes.addShapeless("it3_ae2_anchor_11", <appliedenergistics2:part:120> * 3, [<ore:craftingToolKnife>, <ore:ingotInvar>]);
+recipes.addShapeless("it3_ae2_anchor_11", <appliedenergistics2:part:120> * 3, [craftingToolKnifeEmptyTag, <ore:ingotInvar>]);
 
 // --- ME Export Bus
 recipes.addShaped("it3_ae2_export_bus", <appliedenergistics2:part:260>, [
