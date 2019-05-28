@@ -62,18 +62,18 @@ mods.pneumaticcraft.refinery.removeAllRecipes();
 // Add our oil recipes
 // Current setup is dumb.  Need to make 2-refineries and 3-refineries useful.
 //mods.pneumaticcraft.refinery.addRecipe(int minimumTemperature, ILiquidStack input, ILiquidStack[] outputs);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 7, <liquid:sulfuric_light_fuel> * 10, <liquid:sulfuric_naphtha> * 9, <liquid:sulfuric_gas> * 24]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 7, <liquid:sulfuric_light_fuel> * 10, <liquid:sulfuric_naphtha> * 9]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 7, <liquid:sulfuric_light_fuel> * 10]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25, <liquid:sulfuric_naphtha> * 6, <liquid:sulfuric_gas> * 6]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25, <liquid:sulfuric_naphtha> * 6]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 175, <liquid:sulfuric_light_fuel> * 22, <liquid:sulfuric_naphtha> * 4, <liquid:sulfuric_gas> * 60]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 175, <liquid:sulfuric_light_fuel> * 22, <liquid:sulfuric_naphtha> * 4]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 175, <liquid:sulfuric_light_fuel> * 22]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25, <liquid:sulfuric_naphtha> * 6, <liquid:sulfuric_gas> * 6]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25, <liquid:sulfuric_naphtha> * 6]);
-mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 10, <liquid:sulfuric_light_fuel> * 25]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 6, <liquid:sulfuric_light_fuel> * 8, <liquid:sulfuric_naphtha> * 8, <liquid:sulfuric_gas> * 20]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 6, <liquid:sulfuric_light_fuel> * 8, <liquid:sulfuric_naphtha> * 8]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_light> * 150, [<liquid:sulfuric_heavy_fuel> * 6, <liquid:sulfuric_light_fuel> * 8]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20, <liquid:sulfuric_naphtha> * 5, <liquid:sulfuric_gas> * 6]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20, <liquid:sulfuric_naphtha> * 5]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_medium> * 50, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 140, <liquid:sulfuric_light_fuel> * 18, <liquid:sulfuric_naphtha> * 3, <liquid:sulfuric_gas> * 48]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 140, <liquid:sulfuric_light_fuel> * 18, <liquid:sulfuric_naphtha> * 3]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil_heavy> * 50, [<liquid:sulfuric_heavy_fuel> * 140, <liquid:sulfuric_light_fuel> * 18]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20, <liquid:sulfuric_naphtha> * 5, <liquid:sulfuric_gas> * 6]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20, <liquid:sulfuric_naphtha> * 5]);
+mods.pneumaticcraft.refinery.addRecipe(373, <liquid:oil> * 100, [<liquid:sulfuric_heavy_fuel> * 8, <liquid:sulfuric_light_fuel> * 20]);
 
 // Remove everything from thermopneumaticprocessingplant
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
