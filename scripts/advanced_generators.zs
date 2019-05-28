@@ -121,7 +121,7 @@ assembler.recipeBuilder()
 recipes.remove(<advgenerators:advanced_pressure_valve>);
 assembler.recipeBuilder()
   .inputs(<ore:circuitAdvanced> * 1, <advgenerators:pressure_valve> * 2)
-  .outputs(<advgenerators:pressure_valve>  * 1)
+  .outputs(<advgenerators:advanced_pressure_valve>  * 1)
   .duration(420)
   .EUt(640)
   .buildAndRegister();
