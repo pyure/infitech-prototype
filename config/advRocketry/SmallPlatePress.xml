@@ -26,7 +26,7 @@
 			<oreDict>oreDilithium</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productdust 2</itemStack>
+			<itemStack>libvulpes:productdust 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
@@ -39,26 +39,10 @@
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>oreIron</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust 2 1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
 			<oreDict>blockGold</oreDict>
 		</input>
 		<output>
 			<itemStack>libvulpes:productplate 4 2</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>oreGold</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust 2 2</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
@@ -71,26 +55,10 @@
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>oreCopper</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust 2 4</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
 			<oreDict>blockTin</oreDict>
 		</input>
 		<output>
 			<itemStack>libvulpes:productplate 4 5</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>oreTin</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust 2 5</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
@@ -119,26 +87,10 @@
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>oreAluminum</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust 2 9</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
 			<oreDict>blockIridium</oreDict>
 		</input>
 		<output>
 			<itemStack>libvulpes:productplate 4 10</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>oreIridium</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust 2 10</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">

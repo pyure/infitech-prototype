@@ -117,6 +117,8 @@ assembler.recipeBuilder()
 // Disable the Coal Generator
 scripts.functions.disableItem(<libvulpes:coalgenerator>);
 
+// Disable the Small Plate Press
+scripts.functions.disableItem(<advancedrocketry:platepress>);
 
 // Disable the Arc Furnace  
 scripts.functions.disableItem(<advancedrocketry:arcfurnace>);
