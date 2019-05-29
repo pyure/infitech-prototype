@@ -11,6 +11,7 @@ val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
@@ -29,6 +30,7 @@ val lathe as RecipeMap = RecipeMap.getByName("lathe");
 
 var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
 var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammer>.firstItem.withEmptyTag();
+var craftingToolSawEmptyTag = <ore:craftingToolSaw>.firstItem.withEmptyTag();
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -942,3 +944,23 @@ implosion_compressor.recipeBuilder()
 	.duration(20)
 	.EUt(30)
 	.buildAndRegister();
+
+// We need P-241 varations of a couple recipes that expect P-244, which we don't provide
+var improved_ender_eye = <metaitem:quantumeye>;  
+var improved_nether_star = <metaitem:quantumstar>;  
+chemical_bath.recipeBuilder()
+	.inputs(<ore:gemEnderEye> * 1)
+  .fluidInputs([<liquid:plutonium_241> * 288])
+	.outputs(improved_ender_eye * 1)
+	.duration(480)
+	.EUt(384)
+	.buildAndRegister();
+
+chemical_bath.recipeBuilder()
+	.inputs(<ore:gemNetherStar> * 1)
+  .fluidInputs([<liquid:plutonium_241> * 1152])
+	.outputs(improved_nether_star * 1)
+	.duration(1920)
+	.EUt(384)
+	.buildAndRegister();
+
