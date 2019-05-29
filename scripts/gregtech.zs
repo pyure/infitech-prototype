@@ -245,11 +245,11 @@ oreFuelSparseUranium.addAll(<ore:crushedCentrifugedPitchblende>);
 oreFuelSparseUranium.addAll(<ore:crushedPurifiedPitchblende>);
 oreFuelSparseUranium.addAll(<ore:crushedPitchblende>);
 
-// UF6 (Uranium Hexafluoride from Uranium-rich ores)
+// UF6 (Uranium Hexafluoride from Uranium-rich ores, plus traces of radon)
 chemical_reactor.recipeBuilder()
 	.inputs(oreFuelRichUranium * 1)
 	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
-	.fluidOutputs(<liquid:uranium_hexafluoride> * 7000)
+	.fluidOutputs([<liquid:uranium_hexafluoride> * 7000, <liquid:radon> * 1])
 	.duration(400)
 	.EUt(580)
 	.buildAndRegister();
