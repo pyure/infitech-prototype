@@ -1,7 +1,7 @@
 
 var scooporator = <gendustry:industrial_scoop:100>.withTag({charge: 0});
 var modulePower = <gendustry:power_module>;
-var scoop = <ore:craftingToolScoop>;
+var scoop = <ore:craftingToolScoopEmptyTag>;
 var frameUpgrade = <gendustry:upgrade_frame>;
 var ingotAluminium = <ore:ingotAluminium>;
 var ingotGold = <ore:ingotGold>;

@@ -7,8 +7,7 @@ import mods.contenttweaker.VanillaFactory;
 var stick = <minecraft:stick>;
 var flint = <minecraft:flint:0>;
 
-var craftingToolSawEmptyTag = <ore:craftingToolSaw>.firstItem.withEmptyTag();
-
+var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 var nuggetWroughtIron = <gregtech:meta_item_1:9197>;
 furnace.addRecipe(nuggetWroughtIron, <ore:nuggetIron>);
 
@@ -21,8 +20,6 @@ recipes.remove(<minecraft:tnt> * 1);
 var oreFlint = <ore:ingotFlint>;  // name is a bit silly but makes it simpler to add dynamic recipes
 oreFlint.add(<minecraft:flint>);
 
-var oreSaw = <ore:craftingToolSaw>;
-
 // ALTERNATIVE CHEST RECIPES
  recipes.addShaped("it3_it_chests", <minecraft:chest>*4, [
   [<ore:logWood>, <ore:logWood>, <ore:logWood>], 
@@ -31,4 +28,4 @@ var oreSaw = <ore:craftingToolSaw>;
   
  //Logs to sticks
 recipes.addShapedMirrored("it3_logs_to_sticks", <minecraft:stick>*4, [[<ore:logWood>], [<ore:logWood>]]);
-recipes.addShapedMirrored("it3_saw_logs_to_sticks", <minecraft:stick>*8, [[oreSaw], [<ore:logWood>], [<ore:logWood>]]);
+recipes.addShapedMirrored("it3_saw_logs_to_sticks", <minecraft:stick>*8, [[craftingToolSawEmptyTag], [<ore:logWood>], [<ore:logWood>]]);

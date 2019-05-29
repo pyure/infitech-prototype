@@ -213,8 +213,8 @@ var circuitAdvanced = <ore:circuitAdvanced>;
 var circuitData = <ore:circuitData>;
 var plateEnderium = <ore:plateEnderium>;
 // Tools
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
 
 // Other
 var mvWire = <ore:wireGtSingleCopper>;

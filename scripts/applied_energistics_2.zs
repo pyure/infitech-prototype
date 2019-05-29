@@ -11,11 +11,11 @@ val macerator as RecipeMap = RecipeMap.getByName("macerator");
 val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
 
 // --- Variables ---
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
-var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammer>.firstItem.withEmptyTag();
-var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
-var craftingToolKnifeEmptyTag = <ore:craftingToolKnife>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
+var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammerEmptyTag>;
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
+var craftingToolKnifeEmptyTag = <ore:craftingToolKnifeEmptyTag>;
 
 var AdvAssembler = <meta_tile_entity:assembler.mv>;
 var AdvCircuit = <ore:circuitAdvanced>;
@@ -920,13 +920,13 @@ recipes.addShapeless("it3_ae2_inverted_toggle2", <appliedenergistics2:part:80>, 
 
 // --- Quartz Wrench
 recipes.addShaped("it3_ae2_quartz_wrench", <appliedenergistics2:certus_quartz_wrench>, [
-[CertusQuartz, <ore:craftingToolWrench>, CertusQuartz],
+[CertusQuartz, <ore:craftingToolWrenchEmptyTag>, CertusQuartz],
 [CertusQuartz, CertusQuartz, CertusQuartz],
 [null, CertusQuartz, null]]);
 
 // --- Nether Quartz Wrench
 recipes.addShaped("it3_ae2_neth_quartz_wrench", <appliedenergistics2:nether_quartz_wrench>, [
-[<ore:gemQuartz>, <ore:craftingToolWrench>, <ore:gemQuartz>],
+[<ore:gemQuartz>, <ore:craftingToolWrenchEmptyTag>, <ore:gemQuartz>],
 [<ore:gemQuartz>, <ore:gemQuartz>, <ore:gemQuartz>],
 [null, <ore:gemQuartz>, null]]);
 

@@ -28,9 +28,9 @@ val extruder as RecipeMap = RecipeMap.getByName("extruder");
 val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
 val lathe as RecipeMap = RecipeMap.getByName("lathe");
 
-var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
-var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammer>.firstItem.withEmptyTag();
-var craftingToolSawEmptyTag = <ore:craftingToolSaw>.firstItem.withEmptyTag();
+var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
+var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammerEmptyTag>;
+var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -769,14 +769,14 @@ var rodStone = <microblockcbe:stone_rod>;
 recipes.remove(rodStone);
 
 recipes.addShaped("it3_gt_stone_rod", <ore:rodStone>.firstItem * 1,[
-[craftingToolFileEmptyTag,null,null],
-[null,<ore:stone>,null],
-[null,null,null]]);
+  [craftingToolFileEmptyTag,null,null],
+  [null,<ore:stone>,null],
+  [null,null,null]]);
 
 recipes.addShaped("it3_gt_cobble_rod", <ore:rodCobblestone>.firstItem * 1,[
-[craftingToolFileEmptyTag,null,null],
-[null,<ore:cobblestone>,null],
-[null,null,null]]);
+  [craftingToolFileEmptyTag,null,null],
+  [null,<ore:cobblestone>,null],
+  [null,null,null]]);
 
 lathe.recipeBuilder()
 	.inputs(<ore:stone> * 1)
@@ -809,7 +809,7 @@ recipes.addShapeless("it3_gt_empty_steel_cell", <metaitem:large_fluid_cell.steel
 recipes.addShapeless("it3_gt_empty_cell", <metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
 
 // Saw + Rubber Log -> 4 Planks
-recipes.addShaped("it3_gt_saw_rubber", <minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
+recipes.addShaped("it3_gt_saw_rubber", <minecraft:planks:3> * 4, [[craftingToolSawEmptyTag], [<gregtech:log>]]);
 
 cutting_saw.recipeBuilder()
 	.inputs(<gregtech:log> * 1)

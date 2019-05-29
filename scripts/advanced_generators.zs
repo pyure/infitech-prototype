@@ -3,7 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
-var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
 
 var mv_machine_casing = <gregtech:machine_casing:2>;
 var hv_machine_casing = <gregtech:machine_casing:3>;

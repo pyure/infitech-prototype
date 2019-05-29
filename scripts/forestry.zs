@@ -7,10 +7,10 @@ val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
-var craftingToolSawEmptyTag = <ore:craftingToolSaw>.firstItem.withEmptyTag();
-var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
+var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 
 var engineBiogas = <forestry:engine_biogas>;
 var engineClock = <forestry:engine_clockwork>;

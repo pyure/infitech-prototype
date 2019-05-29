@@ -13,7 +13,7 @@ val metal_bender = mods.gregtech.recipe.RecipeMap.getByName("metal_bender");
 <thaumcraft:thaumium_shovel>.addTooltip(format.red("For crafting only; otherwise useless."));
 <thaumcraft:thaumium_hoe>.addTooltip(format.red("For crafting only; otherwise useless."));
 
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 
 // Removed Plates that have GT Counterpart
 recipes.remove(<thaumcraft:plate>);
