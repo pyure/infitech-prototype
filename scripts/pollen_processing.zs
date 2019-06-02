@@ -25,7 +25,7 @@ var pIridium = <ore:pollenIridium>;
 
 val pollenIn = 7;
 val oreOut = 3;
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 
 
 /*========== POLLINATED ORE ==========*/

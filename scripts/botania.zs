@@ -188,3 +188,7 @@ recipes.addShaped("it3_botania_manasteel_pickaxe", manasteel_pickaxe, [
   [<ore:ingotManasteel>, <ore:ingotAluminium>, <ore:ingotManasteel>], 
   [null, <ore:livingwoodTwig>, null], 
   [null, <ore:livingwoodTwig>, null]]);
+
+  
+// Remove coal duplication
+mods.botania.ManaInfusion.removeRecipe(<minecraft:coal> * 2); 

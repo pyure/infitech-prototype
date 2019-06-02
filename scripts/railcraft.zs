@@ -15,8 +15,8 @@ scripts.functions.disableItem(metal_roller);
 scripts.functions.disableItem(powered_metal_roller);
 
 # Aliases
-var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 
 var backpackApothecary = <railcraft:backpack_apothecary_t1>;
 var backpackApothecaryT2 = <railcraft:backpack_apothecary_t1>;

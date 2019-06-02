@@ -22,7 +22,7 @@ function disableItems(items as IItemStack[]){
 
 
 function gregArmorPiece(part as IItemStack, multiplier as int, dust as IIngredient, plate as IIngredient, ingot as IIngredient, molten as ILiquidStack) {
-  var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+  var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 
 	if (!isNull(dust)) {
 		RecipeMap.getByName("macerator").recipeBuilder()
@@ -34,26 +34,26 @@ function gregArmorPiece(part as IItemStack, multiplier as int, dust as IIngredie
 	}
 	if (!isNull(plate)) {
 		recipes.remove(part);
-		var toolHardHammer = craftingToolHardHammerEmptyTag;
+
     // TODO: NEED DYNAMIC RECIPE NAMING HERE
 		if (multiplier == 5) {
 			recipes.addShaped(part.displayName, part,
 				[[plate, plate, plate],
-				 [plate, toolHardHammer, plate]]);
+				 [plate, craftingToolHardHammerEmptyTag, plate]]);
 		} else if (multiplier == 8) {
 			recipes.addShaped(part.displayName,part,
-				[[plate, toolHardHammer, plate],
+				[[plate, craftingToolHardHammerEmptyTag, plate],
 				 [plate, plate, plate],
 				 [plate, plate, plate]]);
 		} else if (multiplier == 7) {
 			recipes.addShaped(part.displayName,part,
 				[[plate, plate, plate],
-				 [plate, toolHardHammer, plate],
+				 [plate, craftingToolHardHammerEmptyTag, plate],
 				 [plate, null, plate]]);
 		} else if (multiplier == 4) {
 			recipes.addShaped(part.displayName,part,
 				[[plate, null, plate],
-				 [plate, toolHardHammer, plate]]);
+				 [plate, craftingToolHardHammerEmptyTag, plate]]);
 		}
 	}
 	if (!isNull(ingot)) {

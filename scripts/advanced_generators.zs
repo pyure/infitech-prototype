@@ -3,7 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
-var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
 
 var mv_machine_casing = <gregtech:machine_casing:2>;
 var hv_machine_casing = <gregtech:machine_casing:3>;
@@ -121,7 +121,7 @@ assembler.recipeBuilder()
 recipes.remove(<advgenerators:advanced_pressure_valve>);
 assembler.recipeBuilder()
   .inputs(<ore:circuitAdvanced> * 1, <advgenerators:pressure_valve> * 2)
-  .outputs(<advgenerators:pressure_valve>  * 1)
+  .outputs(<advgenerators:advanced_pressure_valve>  * 1)
   .duration(420)
   .EUt(640)
   .buildAndRegister();

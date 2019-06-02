@@ -31,8 +31,8 @@ var pellet_mold = <foundry:mold:22>;
 var shotgun_pump_mold = <foundry:mold:24>;
 var shotgun_frame_mold = <foundry:mold:25>;
 
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
 
 mods.foundry.Casting.addMold(pickaxeHeadMold);
 mods.foundry.Casting.addMold(hammerHeadMold);

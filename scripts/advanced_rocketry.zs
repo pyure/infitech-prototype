@@ -13,9 +13,9 @@ val metal_bender = mods.gregtech.recipe.RecipeMap.getByName("metal_bender");
 var basicMachineStructure = <libvulpes:structuremachine>;
 var advancedMachineStructure = <libvulpes:advstructuremachine>;
 
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
-var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
 
 // GT Style gear crafting
 recipes.remove(<advancedrocketry:productgear:0>);
@@ -117,6 +117,8 @@ assembler.recipeBuilder()
 // Disable the Coal Generator
 scripts.functions.disableItem(<libvulpes:coalgenerator>);
 
+// Disable the Small Plate Press
+scripts.functions.disableItem(<advancedrocketry:platepress>);
 
 // Disable the Arc Furnace  
 scripts.functions.disableItem(<advancedrocketry:arcfurnace>);

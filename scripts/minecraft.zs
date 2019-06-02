@@ -6,8 +6,8 @@ import crafttweaker.recipes.IRecipeAction;
 import mods.gregtech.recipe.RecipeMap;
 
 
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
 
 // These are covered by GT meta tools
 recipes.remove(<minecraft:diamond_pickaxe>);

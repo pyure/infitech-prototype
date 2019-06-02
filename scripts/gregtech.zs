@@ -11,6 +11,7 @@ val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
@@ -27,8 +28,9 @@ val extruder as RecipeMap = RecipeMap.getByName("extruder");
 val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
 val lathe as RecipeMap = RecipeMap.getByName("lathe");
 
-var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
-var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammer>.firstItem.withEmptyTag();
+var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
+var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammerEmptyTag>;
+var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
@@ -243,11 +245,11 @@ oreFuelSparseUranium.addAll(<ore:crushedCentrifugedPitchblende>);
 oreFuelSparseUranium.addAll(<ore:crushedPurifiedPitchblende>);
 oreFuelSparseUranium.addAll(<ore:crushedPitchblende>);
 
-// UF6 (Uranium Hexafluoride from Uranium-rich ores)
+// UF6 (Uranium Hexafluoride from Uranium-rich ores, plus traces of radon)
 chemical_reactor.recipeBuilder()
 	.inputs(oreFuelRichUranium * 1)
 	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
-	.fluidOutputs(<liquid:uranium_hexafluoride> * 7000)
+	.fluidOutputs([<liquid:uranium_hexafluoride> * 7000, <liquid:radon> * 1])
 	.duration(400)
 	.EUt(580)
 	.buildAndRegister();
@@ -767,14 +769,14 @@ var rodStone = <microblockcbe:stone_rod>;
 recipes.remove(rodStone);
 
 recipes.addShaped("it3_gt_stone_rod", <ore:rodStone>.firstItem * 1,[
-[craftingToolFileEmptyTag,null,null],
-[null,<ore:stone>,null],
-[null,null,null]]);
+  [craftingToolFileEmptyTag,null,null],
+  [null,<ore:stone>,null],
+  [null,null,null]]);
 
 recipes.addShaped("it3_gt_cobble_rod", <ore:rodCobblestone>.firstItem * 1,[
-[craftingToolFileEmptyTag,null,null],
-[null,<ore:cobblestone>,null],
-[null,null,null]]);
+  [craftingToolFileEmptyTag,null,null],
+  [null,<ore:cobblestone>,null],
+  [null,null,null]]);
 
 lathe.recipeBuilder()
 	.inputs(<ore:stone> * 1)
@@ -782,14 +784,16 @@ lathe.recipeBuilder()
 	.duration(200)
 	.EUt(24)
 	.buildAndRegister();
-  
+
+/*
+**** Custom wood hammer recipe.  Disabled because GT adds its own now, but we want to retain the script for future reference. ****
 var woodHammer = <gregtech:meta_tool:7>.withTag({"GT.ToolStats": {PrimaryMaterial: "wood", MaxDurability: 16, DigSpeed: 0.5 as float, AttackDamage: 0.5 as float, HarvestLevel: 1}});
   
-
 recipes.addShaped("it3_gt_wood_hammer", woodHammer * 1,[
 [<ore:plankWood>,<ore:plankWood>,null],
 [<ore:plankWood>,<ore:plankWood>,<ore:stickWood>],
 [<ore:plankWood>,<ore:plankWood>,null]]);  
+*/
 
 var fertilizer = <forestry:fertilizer_compound>;
 
@@ -805,7 +809,7 @@ recipes.addShapeless("it3_gt_empty_steel_cell", <metaitem:large_fluid_cell.steel
 recipes.addShapeless("it3_gt_empty_cell", <metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
 
 // Saw + Rubber Log -> 4 Planks
-recipes.addShaped("it3_gt_saw_rubber", <minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
+recipes.addShaped("it3_gt_saw_rubber", <minecraft:planks:3> * 4, [[craftingToolSawEmptyTag], [<gregtech:log>]]);
 
 cutting_saw.recipeBuilder()
 	.inputs(<gregtech:log> * 1)
@@ -940,3 +944,38 @@ implosion_compressor.recipeBuilder()
 	.duration(20)
 	.EUt(30)
 	.buildAndRegister();
+
+// We need P-241 varations of a couple recipes that expect P-244, which we don't provide
+var improved_ender_eye = <metaitem:quantumeye>;  
+var improved_nether_star = <metaitem:quantumstar>;  
+chemical_bath.recipeBuilder()
+	.inputs(<ore:gemEnderEye> * 1)
+  .fluidInputs([<liquid:plutonium_241> * 288])
+	.outputs(improved_ender_eye * 1)
+	.duration(480)
+	.EUt(384)
+	.buildAndRegister();
+
+chemical_bath.recipeBuilder()
+	.inputs(<ore:gemNetherStar> * 1)
+  .fluidInputs([<liquid:plutonium_241> * 1152])
+	.outputs(improved_nether_star * 1)
+	.duration(1920)
+	.EUt(384)
+	.buildAndRegister();
+
+
+// Split Arsenic Trioxide, which is a IT3 specific substance
+electrolyzer.recipeBuilder()
+	.inputs(<ore:dustArsenicTrioxide> * 5)
+	.outputs(<ore:dustArsenic>.firstItem * 2)
+	.fluidOutputs(<liquid:oxygen> * 3000)  
+	.duration(620)
+  .EUt(90)
+	.buildAndRegister();
+  
+
+// Remove cutting-saw/quartz slab recipe due to conflict on GT's side.
+cutting_saw.findRecipe(8, [<ore:blockQuartz>.firstItem * 1], [<liquid:lubricant> * 1]).remove();
+cutting_saw.findRecipe(8, [<ore:blockQuartz>.firstItem * 1], [<liquid:water> * 4]).remove();
+cutting_saw.findRecipe(8, [<ore:blockQuartz>.firstItem * 1], [<liquid:distilled_water> * 3]).remove();
