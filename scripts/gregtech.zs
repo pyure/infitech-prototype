@@ -964,3 +964,12 @@ chemical_bath.recipeBuilder()
 	.EUt(384)
 	.buildAndRegister();
 
+
+// Split Arsenic Trioxide, which is a IT3 specific substance
+electrolyzer.recipeBuilder()
+	.inputs(<ore:dustArsenicTrioxide> * 5)
+	.outputs(<ore:dustArsenic>.firstItem * 2)
+	.fluidOutputs(<liquid:oxygen> * 3000)  
+	.duration(620)
+  .EUt(90)
+	.buildAndRegister();
