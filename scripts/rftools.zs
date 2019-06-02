@@ -670,3 +670,11 @@ recipes.addShaped("infitech3_rftools_storage_scanner", <rftools:storage_scanner>
   [<minecraft:gold_ingot>, <rftools:machine_frame>, <minecraft:gold_ingot>], 
   [<minecraft:redstone_torch>, <minecraft:ender_pearl>, <minecraft:redstone_torch>]]);
 
+// Quarry Shape Card needs tool heads instead of vanilla tools
+var quarry_shape_card = <rftools:shape_card:2>;
+recipes.removeByRecipeName("rftools:shape_card_quarry");
+recipes.addShaped("it3_rftools_shape_card_quarry", quarry_shape_card, [
+  [<minecraft:redstone>, <ore:toolHeadPickaxeDiamond>, <minecraft:redstone>], 
+  [<minecraft:iron_ingot>, <rftools:shape_card>, <minecraft:iron_ingot>], 
+  [<minecraft:redstone>, <ore:toolHeadShovelDiamond>, <minecraft:redstone>]]);
+
