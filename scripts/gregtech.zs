@@ -973,3 +973,9 @@ electrolyzer.recipeBuilder()
 	.duration(620)
   .EUt(90)
 	.buildAndRegister();
+  
+
+// Remove cutting-saw/quartz slab recipe due to conflict on GT's side.
+cutting_saw.findRecipe(8, [<ore:blockQuartz>.firstItem * 1], [<liquid:lubricant> * 1]).remove();
+cutting_saw.findRecipe(8, [<ore:blockQuartz>.firstItem * 1], [<liquid:water> * 4]).remove();
+cutting_saw.findRecipe(8, [<ore:blockQuartz>.firstItem * 1], [<liquid:distilled_water> * 3]).remove();
