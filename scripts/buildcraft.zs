@@ -50,7 +50,7 @@ var pipeSandstoneKinesis = <buildcrafttransport:pipe_sandstone_power>;
 var stickWood = <ore:stickWood>;
 var stickCobblestone = <ore:stickCobblestone>;
 var sealant = <buildcrafttransport:waterproof>;
-var craftingToolHammerEmptyTag = <ore:craftingToolHammerEmptyTag>;
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 var stickStone = <ore:rodStone>; // Forge Microblocks, not GT
 var oreStickQuartz = <ore:stickQuartz>; // Shouldn't exist already
@@ -62,14 +62,14 @@ oreStickQuartz.addAll(<ore:stickCertusQuartz>);
 // Wood Pipes
 recipes.remove(pipeWood);
 recipes.addShaped("it3_buildcraft_pipe_wood", pipeWood * 6, [
-  [stickWood, craftingToolHammerEmptyTag, stickWood],
+  [stickWood, craftingToolHardHammerEmptyTag, stickWood],
   [stickWood, <minecraft:glass>, stickWood],
   [stickWood, craftingToolSawEmptyTag, stickWood]]);
 
 // Cobblestone Pipes
 recipes.remove(pipeCobblestone);
 recipes.addShaped("it3_buildcraft_pipe_cobble", pipeCobblestone * 6,[
-  [stickCobblestone, craftingToolHammerEmptyTag, stickCobblestone],
+  [stickCobblestone, craftingToolHardHammerEmptyTag, stickCobblestone],
   [stickCobblestone, <minecraft:glass>, stickCobblestone],
   [stickCobblestone, craftingToolSawEmptyTag, stickCobblestone]]);
   
@@ -85,7 +85,7 @@ assembler.recipeBuilder()
 // Stone Pipes
 recipes.remove(pipeStone);
 recipes.addShaped("it3_buildcraft_pipe_stone", pipeStone * 6,[
-  [stickStone, craftingToolHammerEmptyTag, stickStone],
+  [stickStone, craftingToolHardHammerEmptyTag, stickStone],
   [stickStone, <minecraft:glass>, stickStone],
   [stickStone, craftingToolSawEmptyTag, stickStone]]);
   
@@ -102,7 +102,7 @@ assembler.recipeBuilder()
 // Quartz Pipes
 recipes.remove(pipeQuartz);
 recipes.addShaped("it3_buildcraft_pipe_quartz", pipeQuartz * 6,[
-  [oreStickQuartz, craftingToolHammerEmptyTag, oreStickQuartz],
+  [oreStickQuartz, craftingToolHardHammerEmptyTag, oreStickQuartz],
   [oreStickQuartz, <minecraft:glass>, oreStickQuartz],
   [oreStickQuartz, craftingToolSawEmptyTag, oreStickQuartz]]);
   
@@ -129,7 +129,7 @@ assembler.recipeBuilder()
 // Gold Pipes
 recipes.remove(pipeGold);
 recipes.addShaped("it3_buildcraft_pipe_gold", pipeGold * 6,[
-  [<ore:stickGold>, craftingToolHammerEmptyTag, <ore:stickGold>],
+  [<ore:stickGold>, craftingToolHardHammerEmptyTag, <ore:stickGold>],
   [<ore:stickGold>, <minecraft:glass>, <ore:stickGold>],
   [<ore:stickGold>, craftingToolSawEmptyTag, <ore:stickGold>]]);
   
@@ -428,6 +428,6 @@ lathe.recipeBuilder()
 // Buildcraft wrench recipe
 recipes.remove(<buildcraftcore:wrench>);
 recipes.addShaped("it3_buildcraftcore_wrench", <buildcraftcore:wrench>, [
-  [<ore:ingotIron>, craftingToolHammerEmptyTag, <ore:ingotIron>], 
+  [<ore:ingotIron>, craftingToolHardHammerEmptyTag, <ore:ingotIron>], 
   [null, <ore:ingotIron>, null], 
   [null, <ore:ingotIron>, null]]);
