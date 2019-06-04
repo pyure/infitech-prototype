@@ -950,7 +950,7 @@ var improved_ender_eye = <metaitem:quantumeye>;
 var improved_nether_star = <metaitem:quantumstar>;  
 chemical_bath.recipeBuilder()
 	.inputs(<ore:gemEnderEye> * 1)
-  .fluidInputs([<liquid:plutonium_241> * 288])
+  .fluidInputs([<liquid:plutonium241> * 288])
 	.outputs(improved_ender_eye * 1)
 	.duration(480)
 	.EUt(384)
@@ -958,7 +958,7 @@ chemical_bath.recipeBuilder()
 
 chemical_bath.recipeBuilder()
 	.inputs(<ore:gemNetherStar> * 1)
-  .fluidInputs([<liquid:plutonium_241> * 1152])
+  .fluidInputs([<liquid:plutonium241> * 1152])
 	.outputs(improved_nether_star * 1)
 	.duration(1920)
 	.EUt(384)
