@@ -45,6 +45,7 @@ recipes.addShaped("it3_storagedrawers_compacting_drawer_2by1_half", drawerCompac
     [plateAluminium, drawerBasic, plateAluminium],
     [plateSteel, pistonMV, plateSteel]]);
 
+recipes.remove(drawerCompacting);
 assembler.recipeBuilder()
   .inputs(drawerCompactingHalf * 2)
   .outputs(drawerCompacting * 1)
@@ -52,6 +53,7 @@ assembler.recipeBuilder()
   .EUt(150)
   .buildAndRegister();  
   
+recipes.remove(drawerCompacting2by1);  
 assembler.recipeBuilder()
   .inputs(drawerCompacting2by1Half * 2)
   .outputs(drawerCompacting2by1 * 1)
