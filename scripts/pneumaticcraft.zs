@@ -167,12 +167,12 @@ for name in dust_to_gem_array {
 }
 
 // Transform GT Resistors into GT SMD Resistors
-mods.pneumaticcraft.assembly.addDrillLaserRecipe(<metaitem:component.resistor>, <metaitem:component.smd.resistor>);
+mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.resistor>, <metaitem:component.smd.resistor>);
 
 // Transform GT Capacitors into GT SMD Capacitors
-mods.pneumaticcraft.assembly.addDrillLaserRecipe(<metaitem:component.capacitor>, <metaitem:component.smd.capacitor>);
+mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.capacitor>, <metaitem:component.smd.capacitor>);
 
 // Transform GT Capacitors into GT SMD Transistors
-mods.pneumaticcraft.assembly.addDrillLaserRecipe(<metaitem:component.transistor>, <metaitem:component.smd.transistor>);
+mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.transistor>, <metaitem:component.smd.transistor>);
 
 
