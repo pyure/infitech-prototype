@@ -101,5 +101,6 @@ val liquidPollenIridium = MaterialRegistry.createFluidMaterial(819, "liquid_poll
 
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);
-<material:quartzite>.addFlags(["GENERATE_PLATE", "GENERATE_ROD",  "GENERATE_GEAR"]);
+<material:quartzite>.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_GEAR"]);
 <material:nickel>.addFlags(["GENERATE_ROD"]);
+<material:cobalt>.addFlags(["GENERATE_ROD", "GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);

@@ -192,3 +192,26 @@ recipes.addShaped("it3_botania_manasteel_pickaxe", manasteel_pickaxe, [
   
 // Remove coal duplication
 mods.botania.ManaInfusion.removeRecipe(<minecraft:coal> * 2); 
+
+// Allow conversion of certus quartz -> prismarine
+mods.botania.ManaInfusion.addAlchemy(<minecraft:prismarine_shard>, <ore:gemCertusQuartz>, 4000);
+
+// Recipe for Combat Maid Headgear, suggested by Furian
+var combatMaidHeadGear = <extrabotany:combatmaidhelm>;
+var shadowWarriorHelmet = <extrabotany:shadowwarriorhelm>.withTag({isnight: 0 as byte});
+var starryHeadGear = <extrabotany:cosmeticmaidhelm>;
+  
+recipes.remove(combatMaidHeadGear);
+recipes.addShaped("it3_extrabotany_recipe_cmhelm", <extrabotany:combatmaidhelm>.withTag({}), [
+  [<ore:gaiaIngot>, <ore:gaiaIngot>, <ore:gaiaIngot>], 
+  [<ore:goldweave>, <botania:terrasteelhelm>, <ore:goldweave>], 
+  [shadowWarriorHelmet, <ore:circuitAdvanced>, starryHeadGear]]);
+
+// Gaia Pylon
+var gaiaPylon = <botania:pylon:2>;
+recipes.remove(gaiaPylon);
+recipes.addShaped("it3_botania_gaia_pylon", gaiaPylon, [
+  [<ore:plateStainlessSteel>, <ore:elvenPixieDust>, <ore:plateStainlessSteel>], 
+  [<ore:ingotElvenElementium>, <botania:pylon>, <ore:ingotElvenElementium>], 
+  [<ore:stickStainlessSteel>, <ore:elvenPixieDust>, <ore:stickStainlessSteel>]]);
+  

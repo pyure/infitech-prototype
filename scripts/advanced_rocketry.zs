@@ -101,6 +101,7 @@ recipes.remove(blockIridium);
 recipes.remove(basicMachineStructure);
 assembler.recipeBuilder()
   .inputs(<ore:plateStainlessSteel> * 4, <ore:stickStainlessSteel> * 4)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
   .outputs(basicMachineStructure * 4)
   .duration(200)
   .EUt(512)
@@ -122,6 +123,10 @@ scripts.functions.disableItem(<advancedrocketry:platepress>);
 
 // Disable the Arc Furnace  
 scripts.functions.disableItem(<advancedrocketry:arcfurnace>);
+
+// Disable the Chemical Reactor sadly
+scripts.functions.disableItem(<advancedrocketry:chemicalreactor>);
+
 
 // Move ingots from Arc Furnace to Blast Furnace
 var ingotTitaniumAluminide = <advancedrocketry:productingot>;
