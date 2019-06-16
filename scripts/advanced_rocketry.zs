@@ -101,6 +101,7 @@ recipes.remove(blockIridium);
 recipes.remove(basicMachineStructure);
 assembler.recipeBuilder()
   .inputs(<ore:plateStainlessSteel> * 4, <ore:stickStainlessSteel> * 4)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
   .outputs(basicMachineStructure * 4)
   .duration(200)
   .EUt(512)
