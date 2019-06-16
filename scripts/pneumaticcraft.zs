@@ -166,4 +166,13 @@ for name in dust_to_gem_array {
   mods.pneumaticcraft.explosioncrafting.addRecipe(dust, gem, lossChance);
 }
 
+// Transform GT Resistors into GT SMD Resistors
+mods.pneumaticcraft.assembly.addDrillLaserRecipe(<metaitem:component.resistor>, <metaitem:component.smd.resistor>);
+
+// Transform GT Capacitors into GT SMD Capacitors
+mods.pneumaticcraft.assembly.addDrillLaserRecipe(<metaitem:component.capacitor>, <metaitem:component.smd.capacitor>);
+
+// Transform GT Capacitors into GT SMD Transistors
+mods.pneumaticcraft.assembly.addDrillLaserRecipe(<metaitem:component.transistor>, <metaitem:component.smd.transistor>);
+
 
