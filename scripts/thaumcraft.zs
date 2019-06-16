@@ -2,6 +2,7 @@ import mods.contenttweaker.VanillaFactory;
 import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import mods.thaumcraft.Infusion;
 
 val metal_bender = mods.gregtech.recipe.RecipeMap.getByName("metal_bender");
 
@@ -49,6 +50,8 @@ var sealBlockBreaker = <thaumcraft:seal:12>;
 
 /* REMINDER for research names: You can type /thaumcraft research list, to get a list of all the names (it gets dumped to log)
 You can also open the thaumcraft .jar and look at the files in \assets\thaumcraft\research, which I found to be easier to search through */
+
+//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
 
 mods.thaumcraft.Infusion.removeRecipe(sealBlockBreaker);
 mods.thaumcraft.Infusion.registerRecipe(
