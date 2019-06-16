@@ -124,6 +124,10 @@ scripts.functions.disableItem(<advancedrocketry:platepress>);
 // Disable the Arc Furnace  
 scripts.functions.disableItem(<advancedrocketry:arcfurnace>);
 
+// Disable the Chemical Reactor sadly
+scripts.functions.disableItem(<advancedrocketry:chemicalreactor>);
+
+
 // Move ingots from Arc Furnace to Blast Furnace
 var ingotTitaniumAluminide = <advancedrocketry:productingot>;
 var ingotTitaniumIridiumAlloy = <advancedrocketry:productingot:1>;
