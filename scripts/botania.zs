@@ -209,6 +209,7 @@ recipes.addShaped("it3_extrabotany_recipe_cmhelm", <extrabotany:combatmaidhelm>.
 
 // Gaia Pylon
 var gaiaPylon = <botania:pylon:2>;
+recipes.remove(gaiaPylon);
 recipes.addShaped("it3_botania_gaia_pylon", gaiaPylon, [
   [<ore:plateStainlessSteel>, <ore:elvenPixieDust>, <ore:plateStainlessSteel>], 
   [<ore:ingotElvenElementium>, <botania:pylon>, <ore:ingotElvenElementium>], 

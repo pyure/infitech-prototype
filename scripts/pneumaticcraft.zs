@@ -172,7 +172,10 @@ mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.resistor>, <meta
 // Transform GT Capacitors into GT SMD Capacitors
 mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.capacitor>, <metaitem:component.smd.capacitor>);
 
-// Transform GT Capacitors into GT SMD Transistors
+// Transform GT Transistors into GT SMD Transistors
 mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.transistor>, <metaitem:component.smd.transistor>);
+
+// Transform GT Diodes into GT SMD Diodes
+mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.diode>, <metaitem:component.smd.diode>);
 
 
