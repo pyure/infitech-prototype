@@ -192,3 +192,6 @@ recipes.addShaped("it3_botania_manasteel_pickaxe", manasteel_pickaxe, [
   
 // Remove coal duplication
 mods.botania.ManaInfusion.removeRecipe(<minecraft:coal> * 2); 
+
+// Allow conversion of certus quartz -> prismarine
+mods.botania.ManaInfusion.addAlchemy(<minecraft:prismarine_shard>, <ore:gemCertusQuartz>, 4000);
