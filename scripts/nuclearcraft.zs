@@ -157,7 +157,6 @@ scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
 scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
 scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
 scripts.functions.disableItem(<nuclearcraft:centrifuge_idle>);
-scripts.functions.disableItem(<nuclearcraft:infuser_idle>);
 scripts.functions.disableItem(<nuclearcraft:helium_collector>);
 scripts.functions.disableItem(<nuclearcraft:helium_collector_compact>);
 scripts.functions.disableItem(<nuclearcraft:helium_collector_dense>);
@@ -176,7 +175,7 @@ mods.nuclearcraft.pressurizer.removeAllRecipes();
 mods.nuclearcraft.chemical_reactor.removeAllRecipes();
 mods.nuclearcraft.extractor.removeAllRecipes();
 mods.nuclearcraft.centrifuge.removeAllRecipes();
-//mods.nuclearcraft.infuser.removeAllRecipes(); can add this after we moved recipes to chemical reactor
+mods.nuclearcraft.infuser.removeAllRecipes(); can add this after we moved recipes to chemical reactor
 
 //Basic plating implosion compressor recipe
 recipes.remove(<nuclearcraft:part>);
@@ -270,3 +269,4 @@ fluid_canner.recipeBuilder()
     .duration(68)
     .EUt(8)
     .buildAndRegister();
+    
