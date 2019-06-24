@@ -175,7 +175,7 @@ mods.nuclearcraft.pressurizer.removeAllRecipes();
 mods.nuclearcraft.chemical_reactor.removeAllRecipes();
 mods.nuclearcraft.extractor.removeAllRecipes();
 mods.nuclearcraft.centrifuge.removeAllRecipes();
-mods.nuclearcraft.infuser.removeAllRecipes(); can add this after we moved recipes to chemical reactor
+mods.nuclearcraft.infuser.removeAllRecipes();
 
 //Basic plating implosion compressor recipe
 recipes.remove(<nuclearcraft:part>);
@@ -269,4 +269,16 @@ fluid_canner.recipeBuilder()
     .duration(68)
     .EUt(8)
     .buildAndRegister();
-    
+
+// Nerf NC Reactor Casing recipes a bit (4 output -> 2)
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.fission_block.casing");    
+recipes.addShaped("it3_nuclearcraft_tile.nuclearcraft.fission_block.casing", <nuclearcraft:fission_block> * 2, [
+  [null, <ore:plateBasic>, null], 
+  [<ore:plateBasic>, <ore:ingotTough>, <ore:plateBasic>], 
+  [null, <ore:plateBasic>, null]]);
+
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.reactor_casing_transparent");  
+recipes.addShaped("it3_nuclearcraft_tile.nuclearcraft.reactor_casing_transparent", <nuclearcraft:reactor_casing_transparent> * 2, [
+  [<ore:blockGlass>, <ore:plateBasic>, <ore:blockGlass>], 
+  [<ore:plateBasic>, <ore:ingotTough>, <ore:plateBasic>], 
+  [<ore:blockGlass>, <ore:plateBasic>, <ore:blockGlass>]]);
