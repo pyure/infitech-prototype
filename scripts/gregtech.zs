@@ -974,3 +974,11 @@ electrolyzer.recipeBuilder()
   .EUt(90)
 	.buildAndRegister();
   
+
+// Allow centrifuges to turn dead bush into dirt with small chance
+centrifuge.recipeBuilder()
+	.inputs(<minecraft:deadbush> * 1)
+  .chancedOutput(<minecraft:dirt> * 1, 800, 300)
+  .duration(45)
+  .EUt(4)
+  .buildAndRegister(); 
