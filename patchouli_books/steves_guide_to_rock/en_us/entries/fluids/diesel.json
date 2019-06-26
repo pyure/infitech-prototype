@@ -1,0 +1,11 @@
+{
+    "name": "Diesel",
+    "icon": "forge:bucketfilled{FluidName:'fuel',Amount:1000}",
+    "category": "fluids",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Diesel is a fluid."
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Creosote Oil",
+    "icon": "forge:bucketfilled{FluidName:'creosote',Amount:1000}",
+    "category": "fluids",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Creosote is a fluid obtained as a byproduct from processing coal and logs in a coke oven. It has a handful of uses, such as the production of wooden ties from railcraft, it can be refined into lubricant, and it can be used to fuel any Large Boiler."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Ore Generation",
+    "category": "general",
+    "icon": "minecraft:stone",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Infitech 3 uses Gregtech's own Ore Generation system, which features extremely large \"veins\" spawning in ellipsoids.  These veins are frequently (but not always) marked on the surface by rocks indicating....(etc)
+
+...can be found using a variety of means, depending on your current technological level... (etc)"
+        }
+    ]
+}
