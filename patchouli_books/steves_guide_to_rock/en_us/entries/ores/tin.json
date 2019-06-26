@@ -1,0 +1,12 @@
+{
+    "name": "Tin",
+    "category": "ores",
+    "icon": "gregtech:meta_item_1:10071",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Veins: Tin
+Byproduct of: Iron, Zinc"
+        }
+    ]
+}
