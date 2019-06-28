@@ -106,7 +106,7 @@ var o_lapis = <ore:gemLapis>;
 var prismarineCrystals = <minecraft:prismarine_crystals>;
 var emerald = <minecraft:emerald>;
 var diamond = <minecraft:diamond>;
-var o_bottle = <ore:bottleEmpty>;
+var glass_bottle = <minecraft:glass_bottle>;
 var slabStone = <minecraft:stone_slab>;
 var o_furnace = <ore:craftingFurnace>;
 var o_coalBlock = <ore:blockCoal>;
@@ -261,7 +261,7 @@ recipes.remove(syringe);
 recipes.addShaped("it3_rft_syringe", syringe, [
 	[o_smallSteelPipe, null, null],
 	[null, o_smallSteelPipe, null],
-	[null, null, o_bottle]]);
+	[null, null, glass_bottle]]);
 
 recipes.remove(machineFrame);
 recipes.addShaped("it3_rft_machine_frame", machineFrame, [
