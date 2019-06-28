@@ -4,7 +4,11 @@
   "max_height": 50,
   "min_height": 35,
   "surface_stone_material": "platinum",
-  "dimension_filter": ["dimension_id:0"],
+  "biome_modifier": {
+    type: "biome_map",
+    "advancedrocketry:Moon": 50,
+    "advancedrocketry:MoonDark": 50
+  },
   "generator": {
     "type": "ellipsoid",
     "radius": [12, 12]
