@@ -1238,7 +1238,7 @@ forming_press.recipeBuilder().inputs(<ore:plateGold> * 1).notConsumable(pressLog
 forming_press.recipeBuilder().inputs(<ore:plateSilicon> * 1).notConsumable(pressSilicon * 1).outputs(SiliCirc * 1).duration(200).EUt(16).buildAndRegister();
 
 //Assembling machine 
-assembler.recipeBuilder().inputs(pressCalculation * 1, SiliCirc * 1).fluidInputs(<liquid:redstone> * 144).outputs(CalcProc * 1).duration(60).EUt(32).buildAndRegister();
+assembler.recipeBuilder().inputs(CalcCirc * 1, SiliCirc * 1).fluidInputs(<liquid:redstone> * 144).outputs(CalcProc * 1).duration(60).EUt(32).buildAndRegister();
 assembler.recipeBuilder().inputs(EngCirc * 1, SiliCirc * 1).fluidInputs(<liquid:redstone> * 144).outputs(EngProc * 1).duration(60).EUt(32).buildAndRegister();
 assembler.recipeBuilder().inputs(LogiCirc * 1, SiliCirc * 1).fluidInputs(<liquid:redstone> * 144).outputs(LogiProc * 1).duration(60).EUt(32).buildAndRegister();
 
