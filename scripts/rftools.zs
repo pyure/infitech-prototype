@@ -210,7 +210,7 @@ var plateIron = <ore:plateIron>;
 var circuitBasic = <ore:circuitBasic>;
 var plateAluminium = <ore:plateAluminium>;
 var circuitAdvanced = <ore:circuitAdvanced>;
-var circuitData = <ore:circuitData>;
+var circuitData = <ore:circuitExtreme>;
 var plateEnderium = <ore:plateEnderium>;
 // Tools
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
