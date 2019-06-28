@@ -4,6 +4,7 @@
   "max_height": 40,
   "min_height": 10,
   "priority": -100,
+  "dimension_filter": ["dimension_id:0"],
   "count_as_vein": false,
   "generation_predicate": "any",
   "vein_populator": {

@@ -4,7 +4,7 @@
   "max_height": 120,
   "min_height": 40,
   "surface_stone_material": "tin",
-
+  "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
     "radius": [17, 19]

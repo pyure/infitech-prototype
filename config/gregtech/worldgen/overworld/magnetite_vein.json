@@ -4,7 +4,7 @@
   "max_height": 120,
   "min_height": 50,
   "surface_stone_material": "gold",
-
+  "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
     "radius": [19, 22]

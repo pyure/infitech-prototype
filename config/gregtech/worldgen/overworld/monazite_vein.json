@@ -4,7 +4,7 @@
   "max_height": 40,
   "min_height": 20,
   "surface_stone_material": "neodymium",
-
+  "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
     "radius": [13, 13]
