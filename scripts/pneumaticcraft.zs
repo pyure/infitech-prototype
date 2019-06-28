@@ -217,10 +217,11 @@ recipes.addShaped("it3_pneumaticcraft_pneumatic_leggings", <pneumaticcraft:pneum
   [<ore:ingotIronCompressed>, null, <ore:ingotIronCompressed>]]);
 
 // Pneumatic Ironman Suit - Helmet
-recipes.removeByRecipeName("pneumaticcraft:pneumatic_helmet");
-recipes.addShaped("it3_pneumaticcraft_pneumatic_helmet", <pneumaticcraft:pneumatic_helmet>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
-  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
-  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.helmet_steel>, <pneumaticcraft:air_canister:*>]]);
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_boots");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_boots", <pneumaticcraft:pneumatic_helmet>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.boots_steel>, <pneumaticcraft:air_canister:*>]]);
+
 
 // Micromissiles
 var fuel_cell = <metaitem:fluid_cell>.withTag({Fluid: {FluidName: "fuel", Amount: 1000}});

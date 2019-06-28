@@ -1,12 +1,13 @@
 {
-  "weight": 70,
-  "density": 0.4,
-  "max_height": 80,
+  "weight": 95,
+  "density": 0.6,
+  "max_height": 120,
   "min_height": 40,
-  "dimension_filter": ["dimension_id:0"],
+  "surface_stone_material": "tin",
+  "dimension_filter": ["dimension_id:3"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [12, 14]
+    "radius": [14, 16]
   },
   "filler": {
     "type": "simple",
@@ -14,16 +15,12 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 600,
-          "value": "ore:quartzite"
+          "weight": 300,
+          "value": "ore:tin"
         },
         {
-          "weight": 320,
-          "value": "ore:barite"
-        },
-        {
-          "weight": 400,
-          "value": "ore:certus_quartz"
+          "weight": 180,
+          "value": "ore:cassiterite"
         },
         {
           "weight": 1,

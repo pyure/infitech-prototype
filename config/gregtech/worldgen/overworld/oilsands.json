@@ -6,8 +6,7 @@
   "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [12, 19],
-    "height": [2, 3]
+    "radius": [12, 15]
   },
   "biome_modifier": {
     "type": "biome_dictionary",
