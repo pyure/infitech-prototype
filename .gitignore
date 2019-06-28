@@ -59,6 +59,7 @@ config/jei/worldSettings.cfg
 config/NEI/client.cfg
 config/ftbutilities.cfg
 config/agricraft/json/*
+config/pneumaticcraft/MicromissileDefaults.cfg
 minecraftinstance.json
 modularmachinery.7z
 servers.dat

@@ -964,3 +964,12 @@ centrifuge.recipeBuilder()
   .duration(45)
   .EUt(4)
   .buildAndRegister(); 
+  
+// Fertilizer (5mb Nitrogen + 6 Phosphorus + 6 Potassium + 2 Calcium + 1 Magnesium -> Fertilizer)
+mixer.recipeBuilder()
+	.inputs(<ore:dustPhosphorus> * 4, <ore:dustPotassium> * 3, <ore:dustCalcium> * 2)
+  .fluidInputs(<liquid:nitrogen> * 5)  
+	.outputs(<forestry:fertilizer_compound> * 16)
+	.duration(50)
+	.EUt(9)
+	.buildAndRegister();

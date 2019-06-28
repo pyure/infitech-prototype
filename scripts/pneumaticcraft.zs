@@ -194,3 +194,45 @@ recipes.addShaped("it3_pneumaticcraft_liquid_hopper", <pneumaticcraft:liquid_hop
   [<ore:blockGlass>, craftingToolWrenchEmptyTag, <ore:blockGlass>], 
   [<ore:blockGlass>, <pneumaticcraft:omnidirectional_hopper>, <ore:blockGlass>], 
   [null, gregtech_bronze_tank, null]]);
+
+  
+// Pneumatic Ironman Suit - Helmet
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_helmet");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_helmet", <pneumaticcraft:pneumatic_helmet>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.helmet_steel>, <pneumaticcraft:air_canister:*>]]);
+
+// Pneumatic Ironman Suit - Chestplate
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_chestplate");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_chestplate", <pneumaticcraft:pneumatic_chestplate>.withTag({volume: 28000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.plate_steel>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <pneumaticcraft:air_canister:*>, <pneumaticcraft:air_canister:*>]]);
+
+// Pneumatic Ironman Suit - Leggings
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_leggings");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_leggings", <pneumaticcraft:pneumatic_leggings>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.legs_steel>, <pneumaticcraft:air_canister:*>], 
+  [<ore:ingotIronCompressed>, null, <ore:ingotIronCompressed>]]);
+
+// Pneumatic Ironman Suit - Helmet
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_helmet");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_helmet", <pneumaticcraft:pneumatic_helmet>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.helmet_steel>, <pneumaticcraft:air_canister:*>]]);
+
+// Micromissiles
+var fuel_cell = <metaitem:fluid_cell>.withTag({Fluid: {FluidName: "fuel", Amount: 1000}});
+recipes.removeByRecipeName("pneumaticcraft:micromissiles");
+recipes.addShaped("it3_pneumaticcraft_micromissiles", <pneumaticcraft:micromissiles>, [
+  [<ore:boltCobalt>, <ore:circuitGood>, <ore:boltCobalt>], 
+  [<ore:platePlastic>, fuel_cell, <ore:platePlastic>], 
+  [<ore:platePlastic>, <minecraft:fire_charge>, <ore:platePlastic>]]);
+
+// Jet Boot upgrade
+recipes.removeByRecipeName("pneumaticcraft:jet_boots_upgrade");
+recipes.addShaped("it3_pneumaticcraft_jet_boots_upgrade", <pneumaticcraft:jet_boots_upgrade>, [
+  [<ore:circuitGood>, <pneumaticcraft:advanced_pressure_tube>, <ore:circuitGood>], 
+  [<pneumaticcraft:vortex_cannon>, <pneumaticcraft:advanced_air_compressor>, <pneumaticcraft:vortex_cannon>], 
+  [<ore:circuitGood>, <pneumaticcraft:advanced_pressure_tube>, <ore:circuitGood>]]);
