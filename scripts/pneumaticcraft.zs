@@ -4,6 +4,7 @@ import mods.gregtech.recipe.RecipeMap;
 
 var ingotWroughtIron = <ore:ingotWroughtIron>.firstItem;
 var ingotCompressedWroughtIron = <ore:ingotCompressedWroughtIron>.firstItem;
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
 
 // Wrought Iron into Compressed Wrought Iron
 mods.pneumaticcraft.pressurechamber.addRecipe([ingotWroughtIron * 1], 2.0, [ingotCompressedWroughtIron]);
@@ -178,4 +179,18 @@ mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.transistor>, <me
 // Transform GT Diodes into GT SMD Diodes
 mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.diode>, <metaitem:component.smd.diode>);
 
+// Hoppers (Omnidirectional and fluid)
 
+var gregtech_bronze_tank = <gregtech:machine:812>;
+
+recipes.removeByRecipeName("pneumaticcraft:omnidirectional_hopper");
+recipes.addShaped("it3_pneumaticcraft_omnidirectional_hopper", <pneumaticcraft:omnidirectional_hopper>.withTag({UpgradeInventory: {}}), [
+  [<ore:ingotIronCompressed>, craftingToolWrenchEmptyTag, <ore:ingotIronCompressed>], 
+  [<ore:ingotIronCompressed>, <minecraft:hopper>, <ore:ingotIronCompressed>], 
+  [null, <ore:ingotIronCompressed>, null]]);
+
+recipes.removeByRecipeName("pneumaticcraft:liquid_hopper");
+recipes.addShaped("it3_pneumaticcraft_liquid_hopper", <pneumaticcraft:liquid_hopper>.withTag({UpgradeInventory: {}}), [
+  [<ore:blockGlass>, craftingToolWrenchEmptyTag, <ore:blockGlass>], 
+  [<ore:blockGlass>, <pneumaticcraft:omnidirectional_hopper>, <ore:blockGlass>], 
+  [null, gregtech_bronze_tank, null]]);
