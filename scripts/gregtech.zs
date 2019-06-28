@@ -297,24 +297,6 @@ recipes.addShapeless("it3_gt_uranium235", uranium235, [tinyUranium235, tinyUrani
 // Disable default Uranium238 -> TinyPlutonium + TinyUranium235
 centrifuge.findRecipe(320, [<ore:dustUranium>.firstItem * 1], null).remove();
 
-// Oxidized 238
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:dustUranium> * 1)
-	.fluidInputs([<liquid:oxygen> * 400])
-	.outputs([uranium238Oxidized * 1])
-	.duration(2)
-	.EUt(8100)
-	.buildAndRegister();
-  
-// Oxidized 235
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:dustUranium235> * 1)
-	.fluidInputs([<liquid:oxygen> * 400])
-	.outputs([uranium235Oxidized * 1])
-	.duration(2)
-	.EUt(8100)
-	.buildAndRegister();
-  
 alloy_smelter.recipeBuilder()		//Blue Alloy
 	.inputs(<ore:dustSilver> * 1, <ore:dustCobaltAluminate> * 1)
 	.outputs(<ore:ingotBlueAlloy>.firstItem * 2)
