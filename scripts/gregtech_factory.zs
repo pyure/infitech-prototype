@@ -34,6 +34,11 @@ materialCobaltOxide.addFlags(["DISABLE_DECOMPOSITION"]);
 val materialArsenicTrioxide = MaterialRegistry.createDustMaterial(708, "arsenic_trioxide", 15856113, "dull", 0, [<material:arsenic> * 2, <material:oxygen> * 3]);
 materialArsenicTrioxide.addFlags(["DISABLE_DECOMPOSITION"]);
 
+val materialThoriumDioxide = MaterialRegistry.createDustMaterial(709, "thorium_dioxide", 0x141414, "shiny", 0, [<material:thorium> * 1, <material:oxygen> * 2]);
+val materialThoriumHydroxide = MaterialRegistry.createDustMaterial(710, "thorium_hydroxide", 0x313131, "shiny", 0, [<material:thorium> * 1, <material:oxygen> * 4, <material:hydrogen> * 4]);
+val materialCrudeThoriumPrecipitate = MaterialRegistry.createDustMaterial(711, "crude_thorium_precipitate", 0x242424, "shiny", 0, [<material:thorium> * 1, <material:oxygen> * 4, <material:chlorine> * 1]);
+
+
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
 val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(752, "enderium_base", 0x4D756E , "fluid" );
