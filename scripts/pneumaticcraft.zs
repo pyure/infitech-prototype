@@ -192,8 +192,8 @@ recipes.addShaped("it3_pneumaticcraft_omnidirectional_hopper", <pneumaticcraft:o
 recipes.removeByRecipeName("pneumaticcraft:liquid_hopper");
 recipes.addShaped("it3_pneumaticcraft_liquid_hopper", <pneumaticcraft:liquid_hopper>.withTag({UpgradeInventory: {}}), [
   [<ore:blockGlass>, craftingToolWrenchEmptyTag, <ore:blockGlass>], 
-  [<ore:blockGlass>, <pneumaticcraft:omnidirectional_hopper>, <ore:blockGlass>], 
-  [null, gregtech_bronze_tank, null]]);
+  [<ore:blockGlass>, gregtech_bronze_tank, <ore:blockGlass>], 
+  [null, <pneumaticcraft:omnidirectional_hopper>, null]]);
 
   
 // Pneumatic Ironman Suit - Helmet
