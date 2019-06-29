@@ -1,0 +1,11 @@
+{
+    "name": "Diamond",
+    "category": "ores",
+    "icon": "minecraft:diamond",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Diamond veins spawn from heights 5-50, and is indicated by a graphite nugget"
+        }
+    ]
+}

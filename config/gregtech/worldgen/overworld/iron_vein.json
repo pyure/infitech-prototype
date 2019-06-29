@@ -4,10 +4,10 @@
   "max_height": 55,
   "min_height": 5,
   "surface_stone_material": "iron",
-
+  "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [13, 13]
+    "radius": [12, 12]
   },
   "filler": {
     "type": "simple",

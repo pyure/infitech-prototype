@@ -3,10 +3,10 @@
   "density": 0.7,
   "max_height": 90,
   "min_height": 40,
-
+  "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [14, 17]
+    "radius": [12, 14]
   },
   "filler": {
     "type": "simple",

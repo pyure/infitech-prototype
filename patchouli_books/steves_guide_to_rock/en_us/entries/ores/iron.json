@@ -1,0 +1,12 @@
+{
+    "name": "Iron",
+    "category": "ores",
+    "icon": "minecraft:iron_ingot",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Veins: Iron, Copper, Magnetite, Limonite...
+Byproduct of: Nickel, Copper..."
+        }
+    ]
+}

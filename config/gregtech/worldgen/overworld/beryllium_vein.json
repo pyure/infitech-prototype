@@ -3,11 +3,11 @@
   "density": 0.3,
   "max_height": 35,
   "min_height": 5,
-  "surface_stone_material": "thorium",
-
+  "surface_stone_material": "beryllium",
+  "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [13, 13]
+    "radius": [9, 10]
   },
   "filler": {
     "type": "simple",
@@ -23,13 +23,9 @@
           "value": "ore:emerald"
         },
         {
-          "weight": 120,
-          "value": "ore:thorium"
-        },
-		{
-			"weight": 1,
-			"value": "block:appliedenergistics2:sky_stone_block"
-		} 
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        } 
       ]
     }
   }

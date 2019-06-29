@@ -5,6 +5,8 @@ import mods.gregtech.recipe.RecipeMap;
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
+val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
+val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 
 recipes.remove(<libvulpes:structuremachine> * 16);
 recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, [[<ore:stickIron>, <ore:plateIron>, <ore:stickIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]]);
@@ -157,7 +159,6 @@ scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
 scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
 scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
 scripts.functions.disableItem(<nuclearcraft:centrifuge_idle>);
-scripts.functions.disableItem(<nuclearcraft:infuser_idle>);
 scripts.functions.disableItem(<nuclearcraft:helium_collector>);
 scripts.functions.disableItem(<nuclearcraft:helium_collector_compact>);
 scripts.functions.disableItem(<nuclearcraft:helium_collector_dense>);
@@ -176,7 +177,7 @@ mods.nuclearcraft.pressurizer.removeAllRecipes();
 mods.nuclearcraft.chemical_reactor.removeAllRecipes();
 mods.nuclearcraft.extractor.removeAllRecipes();
 mods.nuclearcraft.centrifuge.removeAllRecipes();
-//mods.nuclearcraft.infuser.removeAllRecipes(); can add this after we moved recipes to chemical reactor
+mods.nuclearcraft.infuser.removeAllRecipes();
 
 //Basic plating implosion compressor recipe
 recipes.remove(<nuclearcraft:part>);
@@ -270,3 +271,82 @@ fluid_canner.recipeBuilder()
     .duration(68)
     .EUt(8)
     .buildAndRegister();
+
+// Nerf NC Reactor Casing recipes a bit (4 output -> 2)
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.fission_block.casing");    
+recipes.addShaped("it3_nuclearcraft_tile.nuclearcraft.fission_block.casing", <nuclearcraft:fission_block> * 2, [
+  [null, <ore:plateBasic>, null], 
+  [<ore:plateBasic>, <ore:ingotTough>, <ore:plateBasic>], 
+  [null, <ore:plateBasic>, null]]);
+
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.reactor_casing_transparent");  
+recipes.addShaped("it3_nuclearcraft_tile.nuclearcraft.reactor_casing_transparent", <nuclearcraft:reactor_casing_transparent> * 2, [
+  [<ore:blockGlass>, <ore:plateBasic>, <ore:blockGlass>], 
+  [<ore:plateBasic>, <ore:ingotTough>, <ore:plateBasic>], 
+  [<ore:blockGlass>, <ore:plateBasic>, <ore:blockGlass>]]);
+
+  
+// THORIUM FUEL PROCESSING
+/*
+Finely ground monazite sand is carefully treated with a concentrated NaOH solution at 138 °C (280 °F) to produce a solid thorium hydroxide product. 
+===> Crushed Monazite + NaOH 2 + Distilled Water (1000) -> Chemical Reactor -> Thorium Hydroxide Dust + NC Thorium Dust (4%) + Rare Earths (4%) + Sodium (2)
+===> Thorium Hydroxide Dust -> Electrolyzer -> Thorium Dust + Oxygen + Hydrogen
+
+Treatment with hydrochloric acid yields a solution of thorium and rare earth chlorides.
+===> Thorium Hydroxide Dust + Hydrochloric Acid -> Chemical Reactor -> Crude Thorium Precipitate (Gem?) + NC Thorium Dust (6%) + Rare Earths (6%)
+===> Crude Thorium Precipitate -> Electrolyzer -> Thorium Dust + Oxygen + Hydrogen + Chlorine
+
+The crude thorium hydroxide precipitate is then dissolved in nitric acid for final purification by solvent extraction... Thermal concentration of the purified thorium nitrate solution yields a product suitable...
+===> Crude Thorium Precipitate + Nitric Acid -> Chemical Reactor -> Thorium Dioxide + NC Thorium Dust (12%) + Rare Earths (12%)
+===> Thorium Dioxide -> Electrolyzer -> Thorium + Oxygen (2000)
+
+ThO2 + Hydrogen (2000) + Fluorine (100) -> Chemical Reactor -> NC Thorium Dust + Oxygen (1000) + Water (3000)
+*/
+
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustSodiumHydroxide> * 1)
+	.fluidInputs(<liquid:water> * 1000)
+	.fluidOutputs(<liquid:sodium_hydroxide_solution> * 1000)  
+	.duration(200)
+	.EUt(14)
+	.buildAndRegister();
+
+chemical_bath.recipeBuilder()
+	.inputs(<ore:crushedPurifiedMonazite> * 10)
+	.fluidInputs(<liquid:sodium_hydroxide_solution> * 100)
+	.outputs([<ore:dustThoriumHydroxide>.firstItem * 1, <ore:dustSodium>.firstItem * 2, <ore:nuggetThorium232>.firstItem * 2])
+	.duration(70)
+	.EUt(110)
+	.buildAndRegister();
+ 
+chemical_bath.recipeBuilder()
+	.inputs(<ore:dustThoriumHydroxide> * 1)
+	.fluidInputs(<liquid:hydrochloric_acid> * 100)
+	.outputs([<ore:dustCrudeThoriumPrecipitate>.firstItem * 1, <ore:nuggetThorium232>.firstItem * 2])
+  .chancedOutput(<ore:nuggetThorium232>.firstItem * 1, 900, 400)  
+	.duration(50)
+	.EUt(220)
+	.buildAndRegister();  
+  
+chemical_bath.recipeBuilder()
+	.inputs(<ore:dustCrudeThoriumPrecipitate> * 1)
+	.fluidInputs(<liquid:nitric_acid> * 100)
+	.outputs([<ore:dustThoriumDioxide>.firstItem * 1, <ore:nuggetThorium232>.firstItem * 3])
+  .chancedOutput(<ore:nuggetThorium232>.firstItem * 1, 1200, 400)  
+	.duration(50)
+	.EUt(510)
+	.buildAndRegister();    
+  
+chemical_reactor.recipeBuilder()
+	.inputs(<ore:dustThoriumDioxide> * 1)
+	.fluidInputs(<liquid:hydrogen> * 2000)
+	.outputs([<ore:ingotThorium232>.firstItem * 1])
+  .fluidOutputs(<liquid:oxygen> * 1000, <liquid:water> * 3000)  
+	.duration(25)
+	.EUt(1040)
+	.buildAndRegister();   
+  
+  
+mods.nuclearcraft.isotope_separator.removeRecipeWithInput([<ore:dustThorium>]);  
+mods.nuclearcraft.isotope_separator.addRecipe([<ore:dustThorium>, <ore:nuggetThorium232>.firstItem, <ore:nuggetThorium230>.firstItem]);
+mods.nuclearcraft.isotope_separator.addRecipe([<ore:ingotThorium>, <ore:nuggetThorium232>.firstItem, <ore:nuggetThorium230>.firstItem]);

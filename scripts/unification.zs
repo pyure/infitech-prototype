@@ -32,7 +32,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 /* ========== Ore Unification ========== */
 
-var meta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as int[];
+var meta = [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13] as int[]; // We do not unify 6, which is Netherrack variant
 
 /*
 <gregtech:ore_cooperite_0>
@@ -847,6 +847,15 @@ for i in meta
 	<ore:oreTennantite>.add(ore);	
 }
 
+/*
+<gregtech:ore_rutile_0>
+*/
+
+for i in meta
+{
+	var ore = <gregtech:ore_rutile_0>.definition.makeStack(i);
+	<ore:oreRutile>.add(ore);	
+}
 
 /* Special oredicts for chisel-able blocks */
 for i in <ore:blockCopper>.items {

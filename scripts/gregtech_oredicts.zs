@@ -36,3 +36,7 @@ for item in <ore:craftingToolFile>.items{
 for item in <ore:craftingToolScoop>.items{
     <ore:craftingToolScoopEmptyTag>.add(item.withEmptyTag());
 }
+
+for item in <ore:craftingToolMortar>.items{
+    <ore:craftingToolMortarEmptyTag>.add(item.withEmptyTag());
+}

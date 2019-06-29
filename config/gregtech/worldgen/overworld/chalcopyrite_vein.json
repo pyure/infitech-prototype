@@ -4,10 +4,10 @@
   "max_height": 40,
   "min_height": 10,
   "surface_stone_material": "copper",
-
+  "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [17, 19]
+    "radius": [15, 16]
   },
   "filler": {
     "type": "simple",

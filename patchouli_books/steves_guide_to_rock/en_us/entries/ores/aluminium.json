@@ -1,0 +1,12 @@
+{
+    "name": "Aluminium",
+    "category": "ores",
+    "icon": "gregtech:meta_item_1:10001",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Technically spelled 'Aluminum' due to being in en_us, it's found in bauxite veins.
+It is also a byproduct of spodumene, bentonite, and every gem but diamonds and coal."
+        }
+    ]
+}

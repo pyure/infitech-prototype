@@ -1,0 +1,40 @@
+{
+  "weight": 0,
+  "density": 0.6,
+  "max_height": 50,
+  "min_height": 35,
+  "surface_stone_material": "platinum",
+  "biome_modifier": {
+    type: "biome_map",
+    "advancedrocketry:Moon": 10,
+    "advancedrocketry:MoonDark": 20
+  },
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [12, 12]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+		    {
+          "weight": 1000,
+          "value": "ore:platinum"
+        },
+        {
+          "weight": 800,
+          "value": "ore:palladium"
+        },
+        {
+          "weight": 400,
+          "value": "ore:iridium"
+        },
+        {
+          "weight": 1,
+          "value": "block:appliedenergistics2:sky_stone_block"
+        }
+      ]
+    }
+  }
+}

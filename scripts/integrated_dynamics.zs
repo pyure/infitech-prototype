@@ -1,4 +1,6 @@
 import mods.gregtech.recipe.RecipeMap;
+import mods.integrateddynamics.MechanicalSqueezer;
+import mods.integrateddynamics.Squeezer;
 
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
@@ -53,3 +55,10 @@ fluid_solidifier.recipeBuilder()
 	.duration(85)
 	.EUt(4)
 	.buildAndRegister();
+  
+// Squeezer shouldn't produce so much bonemeal
+Squeezer.removeRecipesWithOutput(<minecraft:dye:15> * 6, 1);  
+Squeezer.addRecipe(<minecraft:bone>, <minecraft:dye:15> * 5);
+
+MechanicalSqueezer.removeRecipesWithOutput(<minecraft:dye:15> * 6, 1, <minecraft:dye:15> * 2, 0.5, <minecraft:dye:15> * 2, 0.5);  
+MechanicalSqueezer.addRecipe(<minecraft:bone>, <minecraft:dye:15> * 5);

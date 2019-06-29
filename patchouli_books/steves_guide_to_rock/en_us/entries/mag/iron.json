@@ -1,0 +1,11 @@
+{
+    "name": "Iron",
+    "category": "mag",
+    "icon": "minecraft:iron_ingot",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Iron is a common metal which can be extracted directly and indirectly from a large number of ores... (see $(l:ores/iron)Here$())"
+        }
+    ]
+}

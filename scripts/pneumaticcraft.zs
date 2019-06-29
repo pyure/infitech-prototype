@@ -4,6 +4,7 @@ import mods.gregtech.recipe.RecipeMap;
 
 var ingotWroughtIron = <ore:ingotWroughtIron>.firstItem;
 var ingotCompressedWroughtIron = <ore:ingotCompressedWroughtIron>.firstItem;
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
 
 // Wrought Iron into Compressed Wrought Iron
 mods.pneumaticcraft.pressurechamber.addRecipe([ingotWroughtIron * 1], 2.0, [ingotCompressedWroughtIron]);
@@ -178,4 +179,61 @@ mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.transistor>, <me
 // Transform GT Diodes into GT SMD Diodes
 mods.pneumaticcraft.assembly.addLaserRecipe(<metaitem:component.diode>, <metaitem:component.smd.diode>);
 
+// Hoppers (Omnidirectional and fluid)
 
+var gregtech_bronze_tank = <gregtech:machine:812>;
+
+recipes.removeByRecipeName("pneumaticcraft:omnidirectional_hopper");
+recipes.addShaped("it3_pneumaticcraft_omnidirectional_hopper", <pneumaticcraft:omnidirectional_hopper>.withTag({UpgradeInventory: {}}), [
+  [<ore:ingotIronCompressed>, craftingToolWrenchEmptyTag, <ore:ingotIronCompressed>], 
+  [<ore:ingotIronCompressed>, <minecraft:hopper>, <ore:ingotIronCompressed>], 
+  [null, <ore:ingotIronCompressed>, null]]);
+
+recipes.removeByRecipeName("pneumaticcraft:liquid_hopper");
+recipes.addShaped("it3_pneumaticcraft_liquid_hopper", <pneumaticcraft:liquid_hopper>.withTag({UpgradeInventory: {}}), [
+  [<ore:blockGlass>, craftingToolWrenchEmptyTag, <ore:blockGlass>], 
+  [<ore:blockGlass>, gregtech_bronze_tank, <ore:blockGlass>], 
+  [null, <pneumaticcraft:omnidirectional_hopper>, null]]);
+
+  
+// Pneumatic Ironman Suit - Helmet
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_helmet");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_helmet", <pneumaticcraft:pneumatic_helmet>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.helmet_steel>, <pneumaticcraft:air_canister:*>]]);
+
+// Pneumatic Ironman Suit - Chestplate
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_chestplate");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_chestplate", <pneumaticcraft:pneumatic_chestplate>.withTag({volume: 28000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.plate_steel>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <pneumaticcraft:air_canister:*>, <pneumaticcraft:air_canister:*>]]);
+
+// Pneumatic Ironman Suit - Leggings
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_leggings");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_leggings", <pneumaticcraft:pneumatic_leggings>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.legs_steel>, <pneumaticcraft:air_canister:*>], 
+  [<ore:ingotIronCompressed>, null, <ore:ingotIronCompressed>]]);
+
+// Pneumatic Ironman Suit - Helmet
+recipes.removeByRecipeName("pneumaticcraft:pneumatic_boots");
+recipes.addShaped("it3_pneumaticcraft_pneumatic_boots", <pneumaticcraft:pneumatic_helmet>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:air_canister:*>], 
+  [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.boots_steel>, <pneumaticcraft:air_canister:*>]]);
+
+
+// Micromissiles
+var fuel_cell = <metaitem:fluid_cell>.withTag({Fluid: {FluidName: "fuel", Amount: 1000}});
+recipes.removeByRecipeName("pneumaticcraft:micromissiles");
+recipes.addShaped("it3_pneumaticcraft_micromissiles", <pneumaticcraft:micromissiles>, [
+  [<ore:boltCobalt>, <ore:circuitGood>, <ore:boltCobalt>], 
+  [<ore:platePlastic>, fuel_cell, <ore:platePlastic>], 
+  [<ore:platePlastic>, <minecraft:fire_charge>, <ore:platePlastic>]]);
+
+// Jet Boot upgrade
+recipes.removeByRecipeName("pneumaticcraft:jet_boots_upgrade");
+recipes.addShaped("it3_pneumaticcraft_jet_boots_upgrade", <pneumaticcraft:jet_boots_upgrade>, [
+  [<ore:circuitGood>, <pneumaticcraft:advanced_pressure_tube>, <ore:circuitGood>], 
+  [<pneumaticcraft:vortex_cannon>, <pneumaticcraft:advanced_air_compressor>, <pneumaticcraft:vortex_cannon>], 
+  [<ore:circuitGood>, <pneumaticcraft:advanced_pressure_tube>, <ore:circuitGood>]]);
