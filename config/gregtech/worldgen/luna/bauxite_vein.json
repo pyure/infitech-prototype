@@ -1,13 +1,13 @@
 {
-  "weight": 90,
+  "weight": 0,
   "density": 0.6,
   "max_height": 90,
   "min_height": 40,
   "surface_stone_material": "aluminium",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 50,
-    "advancedrocketry:MoonDark": 50
+    "advancedrocketry:Moon": 22,
+    "advancedrocketry:MoonDark": 45
   },
   "generator": {
     "type": "ellipsoid",

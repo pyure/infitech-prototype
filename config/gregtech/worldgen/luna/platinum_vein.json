@@ -1,13 +1,13 @@
 {
-  "weight": 20,
+  "weight": 0,
   "density": 0.6,
   "max_height": 50,
   "min_height": 35,
   "surface_stone_material": "platinum",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 50,
-    "advancedrocketry:MoonDark": 50
+    "advancedrocketry:Moon": 10,
+    "advancedrocketry:MoonDark": 20
   },
   "generator": {
     "type": "ellipsoid",

@@ -1,13 +1,13 @@
 {
-  "weight": 45,
+  "weight": 0,
   "density": 0.5,
   "max_height": 40,
   "min_height": 10,
   "surface_stone_material": "uranium",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 50,
-    "advancedrocketry:MoonDark": 50
+    "advancedrocketry:Moon": 15,
+    "advancedrocketry:MoonDark": 30
   },
   "generator": {
     "type": "ellipsoid",
