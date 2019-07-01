@@ -973,3 +973,13 @@ mixer.recipeBuilder()
 	.duration(50)
 	.EUt(9)
 	.buildAndRegister();
+
+// Alternative Cobalt Oxide recipe.  HV, and wastes oxygen.  Use Cobalt Ore EBF variant, people.
+var cobaltOxide = <gregtech:meta_item_1:2707>;
+chemical_reactor.recipeBuilder()
+  .inputs(<ore:dustCobalt> * 1)
+  .fluidInputs(<liquid:oxygen> * 2000) // Lots of waste
+  .outputs(cobaltOxide)
+  .duration(345)
+  .EUt(240)
+  .buildAndRegister();
