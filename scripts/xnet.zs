@@ -7,8 +7,8 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 
-// Blue cables.  Others are colored variants of this one via dye.
-val blue_cable = <xnet:netcable>.withTag({display: {LocName: "tile.xnet.netcable_blue.name"}});
+// Basic Cable
+val blue_cable = <xnet:netcable>.withEmptyTag();
 recipes.removeByRecipeName("xnet:netcable_0");
 assembler.recipeBuilder()
   .inputs(<ore:wireFineAluminium> * 2, <ore:wireFineRedAlloy> * 1, <ore:wireFineGold> * 1)
@@ -26,7 +26,7 @@ recipes.addShaped("it3_xnet_routing_cable", routing_cable * 3, [
   [<ore:wireFineRedAlloy>, <xnet:netcable>, <ore:wireFineRedAlloy>]]);
   
 // Blue Connectors
-val blue_connector = <xnet:connector>.withTag({display: {LocName: "tile.xnet.connector_blue.name"}});
+val blue_connector = <xnet:connector>.withEmptyTag();
 recipes.removeByRecipeName("xnet:connector_0");
 assembler.recipeBuilder()
   .inputs(<ore:plateAluminium> * 1, <ore:wireFineRedAlloy> * 2, <ore:wireFineGold> * 2)
@@ -34,6 +34,7 @@ assembler.recipeBuilder()
   .duration(120)
   .EUt(115)
   .buildAndRegister();
+
   
 // Controller
 val controller = <xnet:controller>;
