@@ -177,7 +177,6 @@ mods.nuclearcraft.pressurizer.removeAllRecipes();
 mods.nuclearcraft.chemical_reactor.removeAllRecipes();
 mods.nuclearcraft.extractor.removeAllRecipes();
 mods.nuclearcraft.centrifuge.removeAllRecipes();
-mods.nuclearcraft.infuser.removeAllRecipes();
 
 //Basic plating implosion compressor recipe
 recipes.remove(<nuclearcraft:part>);
