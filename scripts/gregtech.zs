@@ -983,3 +983,18 @@ chemical_reactor.recipeBuilder()
   .duration(345)
   .EUt(240)
   .buildAndRegister();
+  
+// This generates some logistical oredicts.  In particular allRegularDust might be useful
+for entry in oreDict {
+  if entry.name.startsWith("dustTiny") {
+   <ore:allTinyDust>.addAll(entry);
+  } else if entry.name.startsWith("dustSmall") {
+   <ore:allSmallDust>.addAll(entry);
+  } else if entry.name.startsWith("dustPure") {
+   <ore:allPureDust>.addAll(entry);
+  } else if entry.name.startsWith("dustImpure") {
+   <ore:allImpureDust>.addAll(entry);
+  } else if entry.name.startsWith("dust") {   
+   <ore:allRegularDust>.addAll(entry);
+  }
+}  
