@@ -216,11 +216,12 @@ recipes.addShaped("it3_pneumaticcraft_pneumatic_leggings", <pneumaticcraft:pneum
   [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.legs_steel>, <pneumaticcraft:air_canister:*>], 
   [<ore:ingotIronCompressed>, null, <ore:ingotIronCompressed>]]);
 
-// Pneumatic Ironman Suit - Helmet
+// Pneumatic Ironman Suit - Boots
 recipes.removeByRecipeName("pneumaticcraft:pneumatic_boots");
-recipes.addShaped("it3_pneumaticcraft_pneumatic_boots", <pneumaticcraft:pneumatic_helmet>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
-  [<pneumaticcraft:air_canister:*>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:air_canister:*>], 
+recipes.addShaped("it3_pneumaticcraft_pneumatic_boots", <pneumaticcraft:pneumatic_boots>.withTag({volume: 12000, UpgradeInventory: {}, air: 0}), [
+  [<pneumaticcraft:air_canister:*>, <ore:circuitGood>, <pneumaticcraft:air_canister:*>], 
   [<pneumaticcraft:air_canister:*>, <thermalfoundation:armor.boots_steel>, <pneumaticcraft:air_canister:*>]]);
+
 
 
 // Micromissiles

@@ -215,3 +215,8 @@ recipes.addShaped("it3_botania_gaia_pylon", gaiaPylon, [
   [<ore:ingotElvenElementium>, <botania:pylon>, <ore:ingotElvenElementium>], 
   [<ore:stickStainlessSteel>, <ore:elvenPixieDust>, <ore:stickStainlessSteel>]]);
   
+// Botania Manasteel
+var manasteel = <botania:manaresource>;
+mods.botania.ManaInfusion.removeRecipe(manasteel);
+mods.botania.ManaInfusion.addInfusion(manasteel, <ore:ingotSteel>, 3000);
+mods.botania.ManaInfusion.addInfusion(manasteel, <ore:ingotCompressedWroughtIron>, 3000);
