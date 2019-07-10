@@ -28,9 +28,9 @@ var tankStar = <fluidtank:blocktank7>;
 
 // Wood Tank
 recipes.addShaped("it3_fluidtank_tankwood", tankWood, [
-  [<ore:plankWood>, null, <ore:plankWood>], 
-  [<ore:plankWood>, <ore:logWood>, <ore:plankWood>], 
-  [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);  
+  [<ore:blockGlass>, null, <ore:blockGlass>], 
+  [<ore:blockGlass>, <ore:logWood>, <ore:blockGlass>], 
+  [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);  
   
 // Stone Tank
 recipes.addShaped("it3_fluidtank_tankstone", tankStone, [
