@@ -717,7 +717,7 @@ recipes.addShapeless("it3_thermalfoundation_block_dirt", <minecraft:dirt> * 3, [
 
 // Resonant Ender Gregified
 fluid_extractor.recipeBuilder()
-	.inputs(<ore:enderPearl>| <ore:dustEnderPearl>)
+	.inputs(<ore:enderpearl>| <ore:dustEnderPearl>)
 	.fluidOutputs([<liquid:ender> * 250])
 	.duration(420)
 	.EUt(120)
