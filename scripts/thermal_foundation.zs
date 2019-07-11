@@ -9,7 +9,7 @@ val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
-
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 // These are covered by GT meta tools
 recipes.remove(<thermalfoundation:tool.pickaxe_copper>);
@@ -714,3 +714,11 @@ mixer.recipeBuilder()
 var pulpedBiomass = <thermalfoundation:material:816>;
 recipes.removeByRecipeName("thermalfoundation:block_dirt");
 recipes.addShapeless("it3_thermalfoundation_block_dirt", <minecraft:dirt> * 3, [pulpedBiomass, pulpedBiomass, <ore:crystalSlag>, <ore:crystalSlag>]);
+
+// Resonant Ender Gregified
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:enderPearl>| <ore:dustEnderPearl>)
+	.fluidOutputs([<liquid:ender> * 250])
+	.duration(420)
+	.EUt(120)
+	.buildAndRegister();
