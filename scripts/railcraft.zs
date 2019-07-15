@@ -15,6 +15,9 @@ scripts.functions.disableItem(metal_roller);
 scripts.functions.disableItem(powered_metal_roller);
 
 # Aliases
+var advItemLoader = <railcraft:manipulator:2>;
+var advItemUnloader = <railcraft:manipulator:3>;
+
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 
@@ -95,6 +98,26 @@ scripts.functions.disableItem(<railcraft:blast_furnace>);
 scripts.functions.disableItem(<railcraft:coke_oven_red>);
 
 # Recipe tweaks
+
+// Advanced Item Loader
+recipes.remove(advItemLoader);
+recipes.addShaped("railcraft_manipulator_2", <railcraft:manipulator:2>, 
+[
+[<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], 
+[<ore:dustRedstone>, <railcraft:manipulator>, <ore:dustRedstone>], 
+[<ore:ingotSteel>, <minecraft:piston>, <ore:ingotSteel>]
+]);
+
+// Advanced Item Unloader
+recipes.remove(advItemUnloader);
+recipes.addShaped("railcraft_manipulator_3", <railcraft:manipulator:3>, 
+[
+[<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], 
+[<ore:dustRedstone>, <railcraft:manipulator:1>, <ore:dustRedstone>], 
+[<ore:ingotSteel>, <minecraft:piston>, <ore:ingotSteel>]
+]);
+
+
 recipes.addShapeless("it3_rc_wood_rail", railWooden * 3, [ingotIron, stickWood]);
 
 recipes.remove(fireboxSolid);
