@@ -101,7 +101,7 @@ scripts.functions.disableItem(<railcraft:coke_oven_red>);
 
 // Advanced Item Loader
 recipes.remove(advItemLoader);
-recipes.addShaped("railcraft_manipulator_2", <railcraft:manipulator:2>, 
+recipes.addShaped("railcraft_manipulator_2", advItemLoader, 
 [
 [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], 
 [<ore:dustRedstone>, <railcraft:manipulator>, <ore:dustRedstone>], 
@@ -110,7 +110,7 @@ recipes.addShaped("railcraft_manipulator_2", <railcraft:manipulator:2>,
 
 // Advanced Item Unloader
 recipes.remove(advItemUnloader);
-recipes.addShaped("railcraft_manipulator_3", <railcraft:manipulator:3>, 
+recipes.addShaped("railcraft_manipulator_3", advItemUnloader, 
 [
 [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], 
 [<ore:dustRedstone>, <railcraft:manipulator:1>, <ore:dustRedstone>], 
