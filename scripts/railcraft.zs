@@ -60,6 +60,8 @@ var ingotSteel = <ore:ingotSteel>;
 var ingotTitanium = <ore:ingotTitanium>;
 var ingotTungsten = <ore:ingotTungsten>;
 var ironBars = <minecraft:iron_bars>;
+var itemLoader = <railcraft:manipulator>;
+var itemUnloader = <railcraft:manipulator:1>;
 var pickaxeDiamond = <minecraft:diamond_pickaxe>;
 var piston = <minecraft:piston>;
 var plankWood = <ore:plankWood>;
@@ -104,7 +106,7 @@ recipes.remove(advItemLoader);
 recipes.addShaped("railcraft_manipulator_2", advItemLoader, 
 [
 [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], 
-[<ore:dustRedstone>, <railcraft:manipulator>, <ore:dustRedstone>], 
+[<ore:dustRedstone>, itemLoader, <ore:dustRedstone>], 
 [<ore:ingotSteel>, <minecraft:piston>, <ore:ingotSteel>]
 ]);
 
@@ -113,7 +115,7 @@ recipes.remove(advItemUnloader);
 recipes.addShaped("railcraft_manipulator_3", advItemUnloader, 
 [
 [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], 
-[<ore:dustRedstone>, <railcraft:manipulator:1>, <ore:dustRedstone>], 
+[<ore:dustRedstone>, itemUnloader, <ore:dustRedstone>], 
 [<ore:ingotSteel>, <minecraft:piston>, <ore:ingotSteel>]
 ]);
 
