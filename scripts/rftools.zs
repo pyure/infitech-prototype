@@ -73,6 +73,10 @@ var screen = <rftools:screen>;
 var levelEmitter = <rftools:level_emitter>;
 var remoteStorage = <rftools:remote_storage>;
 
+var tier1StorageModule = <rftools:storage_module>;
+var tier2StorageModule = <rftools:storage_module:1>;
+var tier3StorageModule = <rftools:storage_module:2>;
+
 var n_syringeIronGolem = syringe.withTag({mobName: "Iron Golem", level: 10, mobId: "minecraft:villager_golem"});
 var n_syringePolarBear = syringe.withTag({mobName: "Polar Bear", level: 10, mobId: "minecraft:polar_bear"});
 var n_syringeHorse = syringe.withTag({mobName: "Horse", level: 10, mobId: "minecraft:horse"});
@@ -212,6 +216,11 @@ var plateAluminium = <ore:plateAluminium>;
 var circuitAdvanced = <ore:circuitAdvanced>;
 var circuitData = <ore:circuitExtreme>;
 var plateEnderium = <ore:plateEnderium>;
+var plateNetherQuartz = <ore:plateNetherQuartz>;
+var blockNetherQuartz = <minecraft:quartz_block>;
+var certusQuartz =  <ore:gemCertusQuartz>;
+var fluixCrystal = <ore:crystalFluix>;
+
 // Tools
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
@@ -226,6 +235,29 @@ var o_skull = <ore:itemSkull>;
 //
 // Recipes start
 //
+
+recipes.remove(tier1StorageModule);
+recipes.remove(tier2StorageModule);
+recipes.remove(tier3StorageModule);
+
+recipes.addShaped("rftools_storage_module", tier1StorageModule, [
+[null, <ore:chest>, null], 
+[o_plateSteel, o_plateWroughtIron, o_plateSteel], 
+[netherQuartz, o_basicCircuit, netherQuartz]]);
+
+recipes.addShaped("rftools_storage_module_1", tier2StorageModule, [
+[null, <ore:chest>, null], 
+[plateAluminium, tier1StorageModule.marked("module"), plateAluminium], 
+[certusQuartz, o_goodCircuit, certusQuartz]], function(out, ins, cInfo) {
+    return out.withTag(ins.module.tag);
+}, function(x,y,z){});
+
+recipes.addShaped("rftools_storage_module_2", tier3StorageModule, [
+[null, <ore:chest>, null], 
+[o_plateStainlessSteel, tier2StorageModule.marked("module"), o_plateStainlessSteel], 
+[fluixCrystal, o_advCircuit, fluixCrystal]], function(out, ins, cInfo) {
+    return out.withTag(ins.module.tag);
+}, function(x,y,z){});
 
 recipes.remove(smartWrench);
 recipes.addShaped("it3_rft_smart_wrench", smartWrench, [[null, craftingToolWrenchEmptyTag], [o_lapis, null]]);
