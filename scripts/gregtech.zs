@@ -349,6 +349,20 @@ centrifuge.recipeBuilder()		//Saltpeter
 	.duration(400)
 	.EUt(30)
 	.buildAndRegister();
+
+// Remove helium from end dust centrifuge
+
+var tinyPlatinum = <ore:dustTinyPlatinum>.firstItem;
+var smallTungstate = <ore:dustSmallTungstate>.firstItem;
+var sand = <minecraft:sand>;
+
+centrifuge.findRecipe(20,[<ore:dustEndstone>.firstItem *1], null).remove();
+
+centrifuge.recipeBuilder().inputs(<ore:dustEndstone> *1)
+.chancedOutput(tinyPlatinum * 1 , 625, 100)
+.chancedOutput(smallTungstate * 1 , 1250,100)
+.chancedOutput(sand * 1 , 9000, 100)
+.duration(320).EUt(20).buildAndRegister();	
   
   
 // Add oredicts to facilitate some questing
