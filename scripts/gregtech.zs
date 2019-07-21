@@ -36,7 +36,18 @@ var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotWroughtIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotPigIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
+blast_furnace.findRecipe(480, [<ore:ingotNickel>.firstItem * 4, <ore:ingotChrome>.firstItem * 1], null ).remove();
 
+blast_furnace.recipeBuilder()
+	.inputs(<ore:ingotNickel> * 4)
+	.inputs(<ore:ingotChrome> * 1)
+	.fluidInputs([<liquid:helium3> * 25])
+	.outputs(<ore:ingotHotNichrome>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
+	.property("temperature", 2700)
+	.duration(2700)
+	.EUt(480)
+	.buildAndRegister();
+	
 blast_furnace.recipeBuilder()
 	.inputs(<ore:ingotCompressedWroughtIron> * 1)
 	.fluidInputs([<liquid:oxygen> * 500])
