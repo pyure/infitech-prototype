@@ -98,7 +98,6 @@ recipes.remove(blockIridium);
 
 
 // New Machine Structure recipes
-recipes.remove(basicMachineStructure);
 assembler.recipeBuilder()
   .inputs(<ore:plateStainlessSteel> * 4, <ore:stickStainlessSteel> * 4)
   .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
@@ -107,9 +106,9 @@ assembler.recipeBuilder()
   .EUt(512)
   .buildAndRegister();
   
-recipes.remove(advancedMachineStructure);  
 assembler.recipeBuilder()
-  .inputs(<ore:plateTitanium> * 4, <ore:plateTitanium> * 4)
+  .inputs(<ore:plateTitanium> * 4, <ore:stickTitanium> * 4)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))  
   .outputs(advancedMachineStructure * 4)
   .duration(200)
   .EUt(2048)
