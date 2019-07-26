@@ -62,3 +62,5 @@ Squeezer.addRecipe(<minecraft:bone>, <minecraft:dye:15> * 5);
 
 MechanicalSqueezer.removeRecipesWithOutput(<minecraft:dye:15> * 6, 1, <minecraft:dye:15> * 2, 0.5, <minecraft:dye:15> * 2, 0.5);  
 MechanicalSqueezer.addRecipe(<minecraft:bone>, <minecraft:dye:15> * 5);
+
+ 
