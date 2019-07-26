@@ -167,7 +167,6 @@ var Pattern = <appliedenergistics2:material:52>;
 var PatternTerminal = <appliedenergistics2:part:340>;
 var pistonSticky = <minecraft:sticky_piston>;
 var plateSteel = <ore:plateSteel>;
-var plateLapis = <ore:plateLapis>;
 var PlatinumCable = <ore:cableGtQuadruplePlatinum>;
 
 var PureCertusQCrystal = <ore:crystalPureCertusQuartz>;
