@@ -130,6 +130,64 @@ var FluixSmartCableRed = <appliedenergistics2:part:54>;
 var FluixSmartCableWhite = <appliedenergistics2:part:40>;
 var FluixSmartCableYellow = <appliedenergistics2:part:44>;
 var FormationCore = <appliedenergistics2:material:43>;
+
+var DenseSmartCableWhite = <appliedenergistics2:part:60>;
+var DenseSmartCableOrange = <appliedenergistics2:part:61>;
+var DenseSmartCableMagenta = <appliedenergistics2:part:62>;
+var DenseSmartCableLightBlue = <appliedenergistics2:part:63>;
+var DenseSmartCableYellow = <appliedenergistics2:part:64>;
+var DenseSmartCableLime = <appliedenergistics2:part:65>;
+var DenseSmartCablePink = <appliedenergistics2:part:66>;
+var DenseSmartCableGray = <appliedenergistics2:part:67>;
+var DenseSmartCableLightGray = <appliedenergistics2:part:68>;
+var DenseSmartCableCyan = <appliedenergistics2:part:69>;
+var DenseSmartCablePurple = <appliedenergistics2:part:70>;
+var DenseSmartCableBlue = <appliedenergistics2:part:71>;
+var DenseSmartCableBrown = <appliedenergistics2:part:72>;
+var DenseSmartCableGreen = <appliedenergistics2:part:73>;
+var DenseSmartCableRed = <appliedenergistics2:part:74>;
+var DenseSmartCableBlack = <appliedenergistics2:part:75>;
+var DenseSmartCableFluix = <appliedenergistics2:part:76>;
+
+// Make an oredict that contains all dense smart cables
+<ore:smartCableDenseAny>.add(DenseSmartCableWhite);
+<ore:smartCableDenseAny>.add(DenseSmartCableOrange);
+<ore:smartCableDenseAny>.add(DenseSmartCableMagenta);
+<ore:smartCableDenseAny>.add(DenseSmartCableLightBlue);
+<ore:smartCableDenseAny>.add(DenseSmartCableYellow);
+<ore:smartCableDenseAny>.add(DenseSmartCableLime);
+<ore:smartCableDenseAny>.add(DenseSmartCablePink);
+<ore:smartCableDenseAny>.add(DenseSmartCableGray);
+<ore:smartCableDenseAny>.add(DenseSmartCableLightGray);
+<ore:smartCableDenseAny>.add(DenseSmartCableCyan);
+<ore:smartCableDenseAny>.add(DenseSmartCablePurple);
+<ore:smartCableDenseAny>.add(DenseSmartCableBlue);
+<ore:smartCableDenseAny>.add(DenseSmartCableBrown);
+<ore:smartCableDenseAny>.add(DenseSmartCableGreen);
+<ore:smartCableDenseAny>.add(DenseSmartCableRed);
+<ore:smartCableDenseAny>.add(DenseSmartCableBlack);
+<ore:smartCableDenseAny>.add(DenseSmartCableFluix);
+
+// Recipes to color single cables (instead of 8 at a time)
+recipes.addShapeless("it3_dense_smart_cable_white", DenseSmartCableWhite, [<ore:smartCableDenseAny>, <ore:dyeWhite>]);
+recipes.addShapeless("it3_dense_smart_cable_orange", DenseSmartCableOrange, [<ore:smartCableDenseAny>, <ore:dyeOrange>]);
+recipes.addShapeless("it3_dense_smart_cable_magenta", DenseSmartCableMagenta, [<ore:smartCableDenseAny>, <ore:dyeMagenta>]);
+recipes.addShapeless("it3_dense_smart_cable_lightblue", DenseSmartCableLightBlue, [<ore:smartCableDenseAny>, <ore:dyeLightBlue>]);
+recipes.addShapeless("it3_dense_smart_cable_yellow", DenseSmartCableYellow, [<ore:smartCableDenseAny>, <ore:dyeYellow>]);
+recipes.addShapeless("it3_dense_smart_cable_lime", DenseSmartCableLime, [<ore:smartCableDenseAny>, <ore:dyeLime>]);
+recipes.addShapeless("it3_dense_smart_cable_pink", DenseSmartCablePink, [<ore:smartCableDenseAny>, <ore:dyePink>]);
+recipes.addShapeless("it3_dense_smart_cable_gray", DenseSmartCableGray, [<ore:smartCableDenseAny>, <ore:dyeGray>]);
+recipes.addShapeless("it3_dense_smart_cable_lightgray", DenseSmartCableLightGray, [<ore:smartCableDenseAny>, <ore:dyeLightGray>]);
+recipes.addShapeless("it3_dense_smart_cable_cyan", DenseSmartCableCyan, [<ore:smartCableDenseAny>, <ore:dyeCyan>]);
+recipes.addShapeless("it3_dense_smart_cable_purple", DenseSmartCablePurple, [<ore:smartCableDenseAny>, <ore:dyePurple>]);
+recipes.addShapeless("it3_dense_smart_cable_blue", DenseSmartCableBlue, [<ore:smartCableDenseAny>, <ore:dyeBlue>]);
+recipes.addShapeless("it3_dense_smart_cable_brown", DenseSmartCableBrown, [<ore:smartCableDenseAny>, <ore:dyeBrown>]);
+recipes.addShapeless("it3_dense_smart_cable_green", DenseSmartCableGreen, [<ore:smartCableDenseAny>, <ore:dyeGreen>]);
+recipes.addShapeless("it3_dense_smart_cable_red", DenseSmartCableRed, [<ore:smartCableDenseAny>, <ore:dyeRed>]);
+recipes.addShapeless("it3_dense_smart_cable_black", DenseSmartCableBlack, [<ore:smartCableDenseAny>, <ore:dyeBlack>]);
+recipes.addShapeless("it3_dense_smart_cable_fluix", DenseSmartCableFluix, [<ore:smartCableDenseAny>, <ore:dyeFluix>]);
+
+
 var GlassPlate = <ore:plateGlass>;
 var GlowstoneDust = <ore:dustGlowstone>;
 var GlowstoneGlass = <thaumcraft:amber_block>;
