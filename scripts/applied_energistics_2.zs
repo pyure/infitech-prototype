@@ -312,6 +312,9 @@ recipes.remove(<appliedenergistics2:energy_acceptor>);
 // --- ME Security Terminal
 recipes.remove(<appliedenergistics2:security_station>);
 
+// --- ME Fluid Interface
+recipes.remove(<appliedenergistics2:fluid_interface>);
+
 scripts.functions.disableItem(Charger);
 scripts.functions.disableItem(CrystalAccelerator);
 scripts.functions.disableItem(inscriber);
@@ -696,6 +699,9 @@ recipes.addShaped("it3_ae2_security_station", <appliedenergistics2:security_stat
 [FluixGlassCable, StorageComponent16K, FluixGlassCable],
 [plateAluminum, EngProc, plateAluminum]]);
 
+// --- Fluid Interface
+recipes.addShapeless("it3_ae2_fluid_interface_block", <appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
+
 // --- Items ---
 
 
@@ -986,6 +992,7 @@ recipes.addShapeless("it3_ae2_fluid_form_plane", <appliedenergistics2:part:321>,
 
 // --- ME Fluid Fluid Interface
 recipes.addShapeless("it3_ae2_fluid_interface", <appliedenergistics2:part:441>, [<appliedenergistics2:part:440>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_interface_item", <appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
 
 // --- ME Fluid P2P Channel - Fluid
 recipes.addShapeless("it3_ae2_fluid_p2p", <appliedenergistics2:part:463>, [<appliedenergistics2:part:460>, <minecraft:water_bucket>]);
