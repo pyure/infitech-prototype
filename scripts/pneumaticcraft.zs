@@ -103,17 +103,17 @@ recipes.addShaped("it3_pneumaticcraft_drone",
   [null, <pneumaticcraft:turbine_rotor>, null], 
   [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
   [null, <pneumaticcraft:turbine_rotor>, <metaitem:robot.arm.lv>]]);
-  
+
 recipes.removeByRecipeName("pneumaticcraft:logistic_drone");
 recipes.addShaped("it3_pneumaticcraft_logistics_drone", 
-  <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
+  <pneumaticcraft:logistic_drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
   [null, <pneumaticcraft:turbine_rotor>, null], 
   [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
   [null, <pneumaticcraft:turbine_rotor>, null]]);
   
 recipes.removeByRecipeName("pneumaticcraft:harvesting_drone");
 recipes.addShaped("it3_pneumaticcraft_harvesting_drone", 
-  <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
+  <pneumaticcraft:harvesting_drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
   [null, <pneumaticcraft:turbine_rotor>, null], 
   [<pneumaticcraft:turbine_rotor>, <pneumaticcraft:printed_circuit_board>, <pneumaticcraft:turbine_rotor>], 
   [null, <pneumaticcraft:turbine_rotor>, <ore:treeSapling>]]);
