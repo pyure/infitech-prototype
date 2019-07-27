@@ -36,7 +36,18 @@ var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotWroughtIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotPigIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
+blast_furnace.findRecipe(480, [<ore:ingotNickel>.firstItem * 4, <ore:ingotChrome>.firstItem * 1], null ).remove();
 
+blast_furnace.recipeBuilder()
+	.inputs(<ore:ingotNickel> * 4)
+	.inputs(<ore:ingotChrome> * 1)
+	.fluidInputs([<liquid:helium3> * 25])
+	.outputs(<ore:ingotHotNichrome>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
+	.property("temperature", 2700)
+	.duration(2700)
+	.EUt(480)
+	.buildAndRegister();
+	
 blast_furnace.recipeBuilder()
 	.inputs(<ore:ingotCompressedWroughtIron> * 1)
 	.fluidInputs([<liquid:oxygen> * 500])
@@ -349,6 +360,20 @@ centrifuge.recipeBuilder()		//Saltpeter
 	.duration(400)
 	.EUt(30)
 	.buildAndRegister();
+
+// Remove helium from end dust centrifuge
+
+var tinyPlatinum = <ore:dustTinyPlatinum>.firstItem;
+var smallTungstate = <ore:dustSmallTungstate>.firstItem;
+var sand = <minecraft:sand>;
+
+centrifuge.findRecipe(20,[<ore:dustEndstone>.firstItem *1], null).remove();
+
+centrifuge.recipeBuilder().inputs(<ore:dustEndstone> *1)
+.chancedOutput(tinyPlatinum * 1 , 625, 100)
+.chancedOutput(smallTungstate * 1 , 1250,100)
+.chancedOutput(sand * 1 , 9000, 100)
+.duration(320).EUt(20).buildAndRegister();	
   
   
 // Add oredicts to facilitate some questing
@@ -419,7 +444,30 @@ fluid_extractor.recipeBuilder()
 	.duration(80)
 	.buildAndRegister();
 	
+// Lava from stone/cobble
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:cobbleStone> | <ore:stone>)
+	.fluidOutputs(<fluid:lava> * 1000)
+	.EUt(140)
+	.duration(410)
+	.buildAndRegister();
 
+// Lava from netherrack
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:netherrack>)
+	.fluidOutputs(<fluid:lava> * 1000)
+	.EUt(140)
+	.duration(330)
+	.buildAndRegister();
+
+// Lava from magma block
+fluid_extractor.recipeBuilder()
+	.inputs(<minecraft:magma>)
+	.fluidOutputs(<fluid:lava> * 2000)
+	.EUt(140)
+	.duration(220)
+	.buildAndRegister();
+  
 //NC Alloys
 var ferroBoron = <nuclearcraft:alloy:6>;
 var toughAlloy = <nuclearcraft:alloy:1>;

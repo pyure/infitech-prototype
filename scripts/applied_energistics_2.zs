@@ -25,6 +25,7 @@ var plateAluminum = <ore:plateAluminium>;
 var stickAluminum = <ore:stickAluminium>;
 var AnnihilationCore = <appliedenergistics2:material:44>;
 var BasicCircuit = <metaitem:circuit.good.regular>;
+var woodenGear = <appliedenergistics2:material:40>;
 
 // The laser engraver doesn't seem to use oredict at all and is using the GT block no matter what we do.
 // Hack: Specifically allow the PC block for these recipes.
@@ -130,6 +131,64 @@ var FluixSmartCableRed = <appliedenergistics2:part:54>;
 var FluixSmartCableWhite = <appliedenergistics2:part:40>;
 var FluixSmartCableYellow = <appliedenergistics2:part:44>;
 var FormationCore = <appliedenergistics2:material:43>;
+
+var DenseSmartCableWhite = <appliedenergistics2:part:60>;
+var DenseSmartCableOrange = <appliedenergistics2:part:61>;
+var DenseSmartCableMagenta = <appliedenergistics2:part:62>;
+var DenseSmartCableLightBlue = <appliedenergistics2:part:63>;
+var DenseSmartCableYellow = <appliedenergistics2:part:64>;
+var DenseSmartCableLime = <appliedenergistics2:part:65>;
+var DenseSmartCablePink = <appliedenergistics2:part:66>;
+var DenseSmartCableGray = <appliedenergistics2:part:67>;
+var DenseSmartCableLightGray = <appliedenergistics2:part:68>;
+var DenseSmartCableCyan = <appliedenergistics2:part:69>;
+var DenseSmartCablePurple = <appliedenergistics2:part:70>;
+var DenseSmartCableBlue = <appliedenergistics2:part:71>;
+var DenseSmartCableBrown = <appliedenergistics2:part:72>;
+var DenseSmartCableGreen = <appliedenergistics2:part:73>;
+var DenseSmartCableRed = <appliedenergistics2:part:74>;
+var DenseSmartCableBlack = <appliedenergistics2:part:75>;
+var DenseSmartCableFluix = <appliedenergistics2:part:76>;
+
+// Make an oredict that contains all dense smart cables
+<ore:smartCableDenseAny>.add(DenseSmartCableWhite);
+<ore:smartCableDenseAny>.add(DenseSmartCableOrange);
+<ore:smartCableDenseAny>.add(DenseSmartCableMagenta);
+<ore:smartCableDenseAny>.add(DenseSmartCableLightBlue);
+<ore:smartCableDenseAny>.add(DenseSmartCableYellow);
+<ore:smartCableDenseAny>.add(DenseSmartCableLime);
+<ore:smartCableDenseAny>.add(DenseSmartCablePink);
+<ore:smartCableDenseAny>.add(DenseSmartCableGray);
+<ore:smartCableDenseAny>.add(DenseSmartCableLightGray);
+<ore:smartCableDenseAny>.add(DenseSmartCableCyan);
+<ore:smartCableDenseAny>.add(DenseSmartCablePurple);
+<ore:smartCableDenseAny>.add(DenseSmartCableBlue);
+<ore:smartCableDenseAny>.add(DenseSmartCableBrown);
+<ore:smartCableDenseAny>.add(DenseSmartCableGreen);
+<ore:smartCableDenseAny>.add(DenseSmartCableRed);
+<ore:smartCableDenseAny>.add(DenseSmartCableBlack);
+<ore:smartCableDenseAny>.add(DenseSmartCableFluix);
+
+// Recipes to color single cables (instead of 8 at a time)
+recipes.addShapeless("it3_dense_smart_cable_white", DenseSmartCableWhite, [<ore:smartCableDenseAny>, <ore:dyeWhite>]);
+recipes.addShapeless("it3_dense_smart_cable_orange", DenseSmartCableOrange, [<ore:smartCableDenseAny>, <ore:dyeOrange>]);
+recipes.addShapeless("it3_dense_smart_cable_magenta", DenseSmartCableMagenta, [<ore:smartCableDenseAny>, <ore:dyeMagenta>]);
+recipes.addShapeless("it3_dense_smart_cable_lightblue", DenseSmartCableLightBlue, [<ore:smartCableDenseAny>, <ore:dyeLightBlue>]);
+recipes.addShapeless("it3_dense_smart_cable_yellow", DenseSmartCableYellow, [<ore:smartCableDenseAny>, <ore:dyeYellow>]);
+recipes.addShapeless("it3_dense_smart_cable_lime", DenseSmartCableLime, [<ore:smartCableDenseAny>, <ore:dyeLime>]);
+recipes.addShapeless("it3_dense_smart_cable_pink", DenseSmartCablePink, [<ore:smartCableDenseAny>, <ore:dyePink>]);
+recipes.addShapeless("it3_dense_smart_cable_gray", DenseSmartCableGray, [<ore:smartCableDenseAny>, <ore:dyeGray>]);
+recipes.addShapeless("it3_dense_smart_cable_lightgray", DenseSmartCableLightGray, [<ore:smartCableDenseAny>, <ore:dyeLightGray>]);
+recipes.addShapeless("it3_dense_smart_cable_cyan", DenseSmartCableCyan, [<ore:smartCableDenseAny>, <ore:dyeCyan>]);
+recipes.addShapeless("it3_dense_smart_cable_purple", DenseSmartCablePurple, [<ore:smartCableDenseAny>, <ore:dyePurple>]);
+recipes.addShapeless("it3_dense_smart_cable_blue", DenseSmartCableBlue, [<ore:smartCableDenseAny>, <ore:dyeBlue>]);
+recipes.addShapeless("it3_dense_smart_cable_brown", DenseSmartCableBrown, [<ore:smartCableDenseAny>, <ore:dyeBrown>]);
+recipes.addShapeless("it3_dense_smart_cable_green", DenseSmartCableGreen, [<ore:smartCableDenseAny>, <ore:dyeGreen>]);
+recipes.addShapeless("it3_dense_smart_cable_red", DenseSmartCableRed, [<ore:smartCableDenseAny>, <ore:dyeRed>]);
+recipes.addShapeless("it3_dense_smart_cable_black", DenseSmartCableBlack, [<ore:smartCableDenseAny>, <ore:dyeBlack>]);
+recipes.addShapeless("it3_dense_smart_cable_fluix", DenseSmartCableFluix, [<ore:smartCableDenseAny>, <ore:dyeFluix>]);
+
+
 var GlassPlate = <ore:plateGlass>;
 var GlowstoneDust = <ore:dustGlowstone>;
 var GlowstoneGlass = <thaumcraft:amber_block>;
@@ -1199,12 +1258,19 @@ chemical_reactor.recipeBuilder().inputs(<ore:dustFluix> * 1, reddosanudo * 1).fl
 // Pure fluix crystals
 autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(PureFluixCrystal * 1, 6000, 500).duration(2000).EUt(24).buildAndRegister();
 autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(PureFluixCrystal * 1, 7000, 700).duration(1000).EUt(24).buildAndRegister();
-// Fluix crystals
+
+// Fluix crystals from Dust
 autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(FluixCrystal * 1, 7000, 500).duration(2000).EUt(24).buildAndRegister();
 autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(FluixCrystal * 1, 7500, 500).duration(1000).EUt(24).buildAndRegister();
 
-// Fluix crystal recips
-mixer.recipeBuilder().inputs(<minecraft:quartz> * 1, <minecraft:redstone> * 1, ChCertusQuartz * 1).outputs(FluixCrystal * 2).duration(20).EUt(16).buildAndRegister();
+// Fluix crystal recipes
+mixer.recipeBuilder().inputs(<minecraft:quartz> * 1, <minecraft:redstone> * 4, ChCertusQuartz * 1).outputs(FluixCrystal * 1).duration(20).EUt(16).buildAndRegister();
+mixer.recipeBuilder().inputs(<minecraft:quartz> * 1, <ore:gemExquisiteRuby> * 1, ChCertusQuartz * 1).outputs(FluixCrystal * 4).duration(20).EUt(16).buildAndRegister();
+mixer.recipeBuilder().inputs(<ore:gemExquisiteNetherQuartz> * 1, <minecraft:redstone> * 4, ChCertusQuartz * 1).outputs(FluixCrystal * 4).duration(20).EUt(16).buildAndRegister();
+mixer.recipeBuilder().inputs(<ore:gemExquisiteNetherQuartz> * 1, <ore:gemExquisiteRuby> * 1, ChCertusQuartz * 1).outputs(FluixCrystal * 12).duration(20).EUt(16).buildAndRegister();
+
+
+
 
 // --- Wiremill Recipes ---
 
@@ -1242,8 +1308,8 @@ assembler.recipeBuilder().inputs(CalcCirc * 1, SiliCirc * 1).fluidInputs(<liquid
 assembler.recipeBuilder().inputs(EngCirc * 1, SiliCirc * 1).fluidInputs(<liquid:redstone> * 144).outputs(EngProc * 1).duration(60).EUt(32).buildAndRegister();
 assembler.recipeBuilder().inputs(LogiCirc * 1, SiliCirc * 1).fluidInputs(<liquid:redstone> * 144).outputs(LogiProc * 1).duration(60).EUt(32).buildAndRegister();
 
-//pyure's something
-recipes.removeShaped(<appliedenergistics2:material:40>, [
+//Wooden gear
+recipes.removeShaped(woodenGear, [
 	[null, <ore:stickWood>, null],
 	[<ore:stickWood>, null, <ore:stickWood>],
 	[null, <ore:stickWood>, null]]);
@@ -1295,3 +1361,4 @@ electrolyzer.recipeBuilder()
 	.duration(520)
   .EUt(82)
 	.buildAndRegister();  
+

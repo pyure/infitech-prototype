@@ -60,6 +60,7 @@ config/NEI/client.cfg
 config/ftbutilities.cfg
 config/agricraft/json/*
 config/pneumaticcraft/MicromissileDefaults.cfg
+config/betterfps.json
 minecraftinstance.json
 modularmachinery.7z
 servers.dat

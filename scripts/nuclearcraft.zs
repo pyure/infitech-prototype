@@ -7,12 +7,23 @@ val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
+val packer as RecipeMap = RecipeMap.getByName("packer");
 
 recipes.remove(<libvulpes:structuremachine> * 16);
-recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, [[<ore:stickIron>, <ore:plateIron>, <ore:stickIron>],[<ore:plateIron>, <ore:wrench> , <ore:plateIron>], [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]]);
+recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, 
+[
+	[<ore:stickStainlessSteel>, <ore:plateStainlessSteel>, <ore:stickStainlessSteel>],
+	[<ore:plateStainlessSteel>, <ore:wrench> , <ore:plateStainlessSteel>], 
+	[<ore:stickStainlessSteel>, <ore:plateStainlessSteel>, <ore:stickStainlessSteel>]
+]);
 
 recipes.remove(<libvulpes:advstructuremachine> * 16);
-recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, [[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>],[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], [<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>]]);
+recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, 
+[
+	[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>],
+	[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], 
+	[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>]
+]);
 
 // These are covered by GT meta tools
 recipes.remove(<nuclearcraft:pickaxe_boron>);
@@ -349,3 +360,110 @@ chemical_reactor.recipeBuilder()
 mods.nuclearcraft.isotope_separator.removeRecipeWithInput([<ore:dustThorium>]);  
 mods.nuclearcraft.isotope_separator.addRecipe([<ore:dustThorium>, <ore:nuggetThorium232>.firstItem, <ore:nuggetThorium230>.firstItem]);
 mods.nuclearcraft.isotope_separator.addRecipe([<ore:ingotThorium>, <ore:nuggetThorium232>.firstItem, <ore:nuggetThorium230>.firstItem]);
+
+
+// Packager recipes for tiny clumps
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetThorium230> * 9).outputs(<ore:ingotThorium230>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetThorium232> * 9).outputs(<ore:ingotThorium232>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetUranium233> * 9).outputs(<ore:ingotUranium233>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetUranium235> * 9).outputs(<ore:ingotUranium235>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetUranium238> * 9).outputs(<ore:ingotUranium238>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetNeptunium236> * 9).outputs(<ore:ingotNeptunium236>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetNeptunium237> * 9).outputs(<ore:ingotNeptunium237>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetPlutonium238> * 9).outputs(<ore:ingotPlutonium238>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetPlutonium239> * 9).outputs(<ore:ingotPlutonium239>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetPlutonium241> * 9).outputs(<ore:ingotPlutonium241>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetPlutonium242> * 9).outputs(<ore:ingotPlutonium242>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetAmericium241> * 9).outputs(<ore:ingotAmericium241>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetAmericium242> * 9).outputs(<ore:ingotAmericium242>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetAmericium243> * 9).outputs(<ore:ingotAmericium243>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCurium243> * 9).outputs(<ore:ingotCurium243>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCurium245> * 9).outputs(<ore:ingotCurium245>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCurium246> * 9).outputs(<ore:ingotCurium246>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCurium247> * 9).outputs(<ore:ingotCurium247>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetBerkelium247> * 9).outputs(<ore:ingotBerkelium247>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetBerkelium248> * 9).outputs(<ore:ingotBerkelium248>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium249> * 9).outputs(<ore:ingotCalifornium249>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium250> * 9).outputs(<ore:ingotCalifornium250>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium251> * 9).outputs(<ore:ingotCalifornium251>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium252> * 9).outputs(<ore:ingotCalifornium252>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetBoron10> * 9).outputs(<ore:ingotBoron10>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetBoron11> * 9).outputs(<ore:ingotBoron11>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetLithium6> * 9).outputs(<ore:ingotLithium6>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetLithium7> * 9).outputs(<ore:ingotLithium7>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetThorium230Oxide> * 9).outputs(<ore:ingotThorium230Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetThorium232Oxide> * 9).outputs(<ore:ingotThorium232Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetUranium233Oxide> * 9).outputs(<ore:ingotUranium233Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetUranium235Oxide> * 9).outputs(<ore:ingotUranium235Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetUranium238Oxide> * 9).outputs(<ore:ingotUranium238Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetNeptunium236Oxide> * 9).outputs(<ore:ingotNeptunium236Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetNeptunium237Oxide> * 9).outputs(<ore:ingotNeptunium237Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetPlutonium238Oxide> * 9).outputs(<ore:ingotPlutonium238Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetPlutonium239Oxide> * 9).outputs(<ore:ingotPlutonium239Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetPlutonium241Oxide> * 9).outputs(<ore:ingotPlutonium241Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetPlutonium242Oxide> * 9).outputs(<ore:ingotPlutonium242Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetAmericium241Oxide> * 9).outputs(<ore:ingotAmericium241Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetAmericium242Oxide> * 9).outputs(<ore:ingotAmericium242Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetAmericium243Oxide> * 9).outputs(<ore:ingotAmericium243Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCurium243Oxide> * 9).outputs(<ore:ingotCurium243Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCurium245Oxide> * 9).outputs(<ore:ingotCurium245Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCurium246Oxide> * 9).outputs(<ore:ingotCurium246Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCurium247Oxide> * 9).outputs(<ore:ingotCurium247Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetBerkelium247Oxide> * 9).outputs(<ore:ingotBerkelium247Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetBerkelium248Oxide> * 9).outputs(<ore:ingotBerkelium248Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium249Oxide> * 9).outputs(<ore:ingotCalifornium249Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium250Oxide> * 9).outputs(<ore:ingotCalifornium250Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium251Oxide> * 9).outputs(<ore:ingotCalifornium251Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+
+packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium252Oxide> * 9).outputs(<ore:ingotCalifornium252Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
+

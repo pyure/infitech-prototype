@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipes>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:stone</item>
+        </input>
+        <output>
+            <item>minecraft:cobblestone</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:cobblestone</item>
+        </input>
+        <output>
+            <item>minecraft:gravel</item>
+            <item chance="0.5">minecraft:flint</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:gravel</item>
+        </input>
+        <output>
+            <item amount="2">minecraft:flint</item>
+        </output>
+        <properties>
+            <duration>30</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:stonebrick</item>
+        </input>
+        <output>
+            <item meta="2">minecraft:stonebrick</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:sandstone</item>
+        </input>
+        <output>
+            <item amount="2">minecraft:sand</item>
+        </output>
+        <properties>
+            <duration>30</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:red_sandstone</item>
+        </input>
+        <output>
+            <item amount="2" meta="1">minecraft:sand</item>
+        </output>
+        <properties>
+            <duration>30</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:glowstone</item>
+        </input>
+        <output>
+            <item amount="4">minecraft:glowstone_dust</item>
+        </output>
+        <properties>
+            <duration>30</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:quartz_ore</item>
+        </input>
+        <output>
+            <item amount="3">minecraft:quartz</item>
+            <item chance="0.5">minecraft:quartz</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <condition type="oredict">dustObsidian</condition>
+        <input>
+            <item>minecraft:obsidian</item>
+        </input>
+        <output>
+            <item type="oredict" amount="2">dustObsidian</item>
+        </output>
+        <properties>
+            <duration>60</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:diamond_ore</item>
+        </input>
+        <output>
+            <item amount="2">minecraft:diamond</item>
+            <item chance="0.5">minecraft:diamond</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:emerald_ore</item>
+        </input>
+        <output>
+            <item amount="2">minecraft:emerald</item>
+            <item chance="0.5">minecraft:emerald</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:coal_ore</item>
+        </input>
+        <output>
+            <item amount="2">minecraft:coal</item>
+            <item chance="0.5">minecraft:coal</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:magma</item>
+        </input>
+        <output>
+            <item amount="4">minecraft:magma_cream</item>
+        </output>
+        <properties>
+            <duration>40</duration>
+        </properties>
+    </recipe>
+
+    <recipe type="integrateddynamics:mechanical_squeezer">
+        <tag>ores</tag>
+        <condition type="config">mechanical_squeezer</condition>
+        <input>
+            <item>minecraft:prismarine_shard</item>
+        </input>
+        <output>
+            <item>minecraft:prismarine_crystals</item>
+        </output>
+        <properties>
+            <duration>30</duration>
+        </properties>
+    </recipe>
+
+</recipes>
