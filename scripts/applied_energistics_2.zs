@@ -25,6 +25,7 @@ var plateAluminum = <ore:plateAluminium>;
 var stickAluminum = <ore:stickAluminium>;
 var AnnihilationCore = <appliedenergistics2:material:44>;
 var BasicCircuit = <metaitem:circuit.good.regular>;
+var woodenGear = <appliedenergistics2:material:40>;
 
 // The laser engraver doesn't seem to use oredict at all and is using the GT block no matter what we do.
 // Hack: Specifically allow the PC block for these recipes.
@@ -1264,12 +1265,19 @@ chemical_reactor.recipeBuilder().inputs(<ore:dustFluix> * 1, reddosanudo * 1).fl
 // Pure fluix crystals
 autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(PureFluixCrystal * 1, 6000, 500).duration(2000).EUt(24).buildAndRegister();
 autoclave.recipeBuilder().inputs(seedCrystal * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(PureFluixCrystal * 1, 7000, 700).duration(1000).EUt(24).buildAndRegister();
-// Fluix crystals
+
+// Fluix crystals from Dust
 autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:water> * 1000).chancedOutput(FluixCrystal * 1, 7000, 500).duration(2000).EUt(24).buildAndRegister();
 autoclave.recipeBuilder().inputs(<ore:dustFluix> * 1).fluidInputs(<liquid:distilled_water> * 1000).chancedOutput(FluixCrystal * 1, 7500, 500).duration(1000).EUt(24).buildAndRegister();
 
-// Fluix crystal recips
-mixer.recipeBuilder().inputs(<minecraft:quartz> * 1, <minecraft:redstone> * 1, ChCertusQuartz * 1).outputs(FluixCrystal * 2).duration(20).EUt(16).buildAndRegister();
+// Fluix crystal recipes
+mixer.recipeBuilder().inputs(<minecraft:quartz> * 1, <minecraft:redstone> * 4, ChCertusQuartz * 1).outputs(FluixCrystal * 1).duration(20).EUt(16).buildAndRegister();
+mixer.recipeBuilder().inputs(<minecraft:quartz> * 1, <ore:gemExquisiteRuby> * 1, ChCertusQuartz * 1).outputs(FluixCrystal * 4).duration(20).EUt(16).buildAndRegister();
+mixer.recipeBuilder().inputs(<ore:gemExquisiteNetherQuartz> * 1, <minecraft:redstone> * 4, ChCertusQuartz * 1).outputs(FluixCrystal * 4).duration(20).EUt(16).buildAndRegister();
+mixer.recipeBuilder().inputs(<ore:gemExquisiteNetherQuartz> * 1, <ore:gemExquisiteRuby> * 1, ChCertusQuartz * 1).outputs(FluixCrystal * 12).duration(20).EUt(16).buildAndRegister();
+
+
+
 
 // --- Wiremill Recipes ---
 
@@ -1307,8 +1315,8 @@ assembler.recipeBuilder().inputs(CalcCirc * 1, SiliCirc * 1).fluidInputs(<liquid
 assembler.recipeBuilder().inputs(EngCirc * 1, SiliCirc * 1).fluidInputs(<liquid:redstone> * 144).outputs(EngProc * 1).duration(60).EUt(32).buildAndRegister();
 assembler.recipeBuilder().inputs(LogiCirc * 1, SiliCirc * 1).fluidInputs(<liquid:redstone> * 144).outputs(LogiProc * 1).duration(60).EUt(32).buildAndRegister();
 
-//pyure's something
-recipes.removeShaped(<appliedenergistics2:material:40>, [
+//Wooden gear
+recipes.removeShaped(woodenGear, [
 	[null, <ore:stickWood>, null],
 	[<ore:stickWood>, null, <ore:stickWood>],
 	[null, <ore:stickWood>, null]]);
@@ -1360,3 +1368,4 @@ electrolyzer.recipeBuilder()
 	.duration(520)
   .EUt(82)
 	.buildAndRegister();  
+
