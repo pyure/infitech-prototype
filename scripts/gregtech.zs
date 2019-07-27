@@ -444,7 +444,30 @@ fluid_extractor.recipeBuilder()
 	.duration(80)
 	.buildAndRegister();
 	
+// Lava from stone/cobble
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:cobbleStone> | <ore:stone>)
+	.fluidOutputs(<fluid:lava> * 1000)
+	.EUt(140)
+	.duration(410)
+	.buildAndRegister();
 
+// Lava from netherrack
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:netherrack>)
+	.fluidOutputs(<fluid:lava> * 1000)
+	.EUt(140)
+	.duration(330)
+	.buildAndRegister();
+
+// Lava from magma block
+fluid_extractor.recipeBuilder()
+	.inputs(<minecraft:magma>)
+	.fluidOutputs(<fluid:lava> * 2000)
+	.EUt(140)
+	.duration(220)
+	.buildAndRegister();
+  
 //NC Alloys
 var ferroBoron = <nuclearcraft:alloy:6>;
 var toughAlloy = <nuclearcraft:alloy:1>;

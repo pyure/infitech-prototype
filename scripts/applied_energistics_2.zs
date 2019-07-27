@@ -130,6 +130,64 @@ var FluixSmartCableRed = <appliedenergistics2:part:54>;
 var FluixSmartCableWhite = <appliedenergistics2:part:40>;
 var FluixSmartCableYellow = <appliedenergistics2:part:44>;
 var FormationCore = <appliedenergistics2:material:43>;
+
+var DenseSmartCableWhite = <appliedenergistics2:part:60>;
+var DenseSmartCableOrange = <appliedenergistics2:part:61>;
+var DenseSmartCableMagenta = <appliedenergistics2:part:62>;
+var DenseSmartCableLightBlue = <appliedenergistics2:part:63>;
+var DenseSmartCableYellow = <appliedenergistics2:part:64>;
+var DenseSmartCableLime = <appliedenergistics2:part:65>;
+var DenseSmartCablePink = <appliedenergistics2:part:66>;
+var DenseSmartCableGray = <appliedenergistics2:part:67>;
+var DenseSmartCableLightGray = <appliedenergistics2:part:68>;
+var DenseSmartCableCyan = <appliedenergistics2:part:69>;
+var DenseSmartCablePurple = <appliedenergistics2:part:70>;
+var DenseSmartCableBlue = <appliedenergistics2:part:71>;
+var DenseSmartCableBrown = <appliedenergistics2:part:72>;
+var DenseSmartCableGreen = <appliedenergistics2:part:73>;
+var DenseSmartCableRed = <appliedenergistics2:part:74>;
+var DenseSmartCableBlack = <appliedenergistics2:part:75>;
+var DenseSmartCableFluix = <appliedenergistics2:part:76>;
+
+// Make an oredict that contains all dense smart cables
+<ore:smartCableDenseAny>.add(DenseSmartCableWhite);
+<ore:smartCableDenseAny>.add(DenseSmartCableOrange);
+<ore:smartCableDenseAny>.add(DenseSmartCableMagenta);
+<ore:smartCableDenseAny>.add(DenseSmartCableLightBlue);
+<ore:smartCableDenseAny>.add(DenseSmartCableYellow);
+<ore:smartCableDenseAny>.add(DenseSmartCableLime);
+<ore:smartCableDenseAny>.add(DenseSmartCablePink);
+<ore:smartCableDenseAny>.add(DenseSmartCableGray);
+<ore:smartCableDenseAny>.add(DenseSmartCableLightGray);
+<ore:smartCableDenseAny>.add(DenseSmartCableCyan);
+<ore:smartCableDenseAny>.add(DenseSmartCablePurple);
+<ore:smartCableDenseAny>.add(DenseSmartCableBlue);
+<ore:smartCableDenseAny>.add(DenseSmartCableBrown);
+<ore:smartCableDenseAny>.add(DenseSmartCableGreen);
+<ore:smartCableDenseAny>.add(DenseSmartCableRed);
+<ore:smartCableDenseAny>.add(DenseSmartCableBlack);
+<ore:smartCableDenseAny>.add(DenseSmartCableFluix);
+
+// Recipes to color single cables (instead of 8 at a time)
+recipes.addShapeless("it3_dense_smart_cable_white", DenseSmartCableWhite, [<ore:smartCableDenseAny>, <ore:dyeWhite>]);
+recipes.addShapeless("it3_dense_smart_cable_orange", DenseSmartCableOrange, [<ore:smartCableDenseAny>, <ore:dyeOrange>]);
+recipes.addShapeless("it3_dense_smart_cable_magenta", DenseSmartCableMagenta, [<ore:smartCableDenseAny>, <ore:dyeMagenta>]);
+recipes.addShapeless("it3_dense_smart_cable_lightblue", DenseSmartCableLightBlue, [<ore:smartCableDenseAny>, <ore:dyeLightBlue>]);
+recipes.addShapeless("it3_dense_smart_cable_yellow", DenseSmartCableYellow, [<ore:smartCableDenseAny>, <ore:dyeYellow>]);
+recipes.addShapeless("it3_dense_smart_cable_lime", DenseSmartCableLime, [<ore:smartCableDenseAny>, <ore:dyeLime>]);
+recipes.addShapeless("it3_dense_smart_cable_pink", DenseSmartCablePink, [<ore:smartCableDenseAny>, <ore:dyePink>]);
+recipes.addShapeless("it3_dense_smart_cable_gray", DenseSmartCableGray, [<ore:smartCableDenseAny>, <ore:dyeGray>]);
+recipes.addShapeless("it3_dense_smart_cable_lightgray", DenseSmartCableLightGray, [<ore:smartCableDenseAny>, <ore:dyeLightGray>]);
+recipes.addShapeless("it3_dense_smart_cable_cyan", DenseSmartCableCyan, [<ore:smartCableDenseAny>, <ore:dyeCyan>]);
+recipes.addShapeless("it3_dense_smart_cable_purple", DenseSmartCablePurple, [<ore:smartCableDenseAny>, <ore:dyePurple>]);
+recipes.addShapeless("it3_dense_smart_cable_blue", DenseSmartCableBlue, [<ore:smartCableDenseAny>, <ore:dyeBlue>]);
+recipes.addShapeless("it3_dense_smart_cable_brown", DenseSmartCableBrown, [<ore:smartCableDenseAny>, <ore:dyeBrown>]);
+recipes.addShapeless("it3_dense_smart_cable_green", DenseSmartCableGreen, [<ore:smartCableDenseAny>, <ore:dyeGreen>]);
+recipes.addShapeless("it3_dense_smart_cable_red", DenseSmartCableRed, [<ore:smartCableDenseAny>, <ore:dyeRed>]);
+recipes.addShapeless("it3_dense_smart_cable_black", DenseSmartCableBlack, [<ore:smartCableDenseAny>, <ore:dyeBlack>]);
+recipes.addShapeless("it3_dense_smart_cable_fluix", DenseSmartCableFluix, [<ore:smartCableDenseAny>, <ore:dyeFluix>]);
+
+
 var GlassPlate = <ore:plateGlass>;
 var GlowstoneDust = <ore:dustGlowstone>;
 var GlowstoneGlass = <thaumcraft:amber_block>;
@@ -310,6 +368,9 @@ recipes.remove(<appliedenergistics2:energy_acceptor>);
 
 // --- ME Security Terminal
 recipes.remove(<appliedenergistics2:security_station>);
+
+// --- ME Fluid Interface
+recipes.remove(<appliedenergistics2:fluid_interface>);
 
 scripts.functions.disableItem(Charger);
 scripts.functions.disableItem(CrystalAccelerator);
@@ -623,10 +684,10 @@ recipes.addShaped("it3_ae2_drive", MEDrive, [
 recipes.addShaped("it3_ae2_crafting_unit", CraftingUnit, [
 [plateAluminum, LogiProc, plateAluminum],
 [BasicCircuit, EngProc, BasicCircuit],
-[plateAluminum, CalcCirc, plateAluminum]]);
+[plateAluminum, CalcProc, plateAluminum]]);
 
 // --- CoCraftingUnit
-recipes.addShapeless("it3_ae2_cocrafting_unit", CoCraftingUnit, [CraftingUnit, CalcCirc, LogiProc, EngProc]);
+recipes.addShapeless("it3_ae2_cocrafting_unit", CoCraftingUnit, [CraftingUnit, CalcProc, LogiProc, EngProc]);
 
 // --- Molecular Assembler
 recipes.addShaped("it3_ae2_assembler", MolecularAssembler, [
@@ -668,7 +729,7 @@ recipes.addShapeless("it3_ae2_interface_2", <appliedenergistics2:interface>, [In
 // --- Cell Workbench
 recipes.addShaped("it3_ae2_cell_workbench", <appliedenergistics2:cell_workbench>, [
 [<minecraft:wool>, <rftools:screen>, <minecraft:wool>],
-[plateAluminum, CalcCirc, plateAluminum],
+[plateAluminum, CalcProc, plateAluminum],
 [plateAluminum, plateAluminum, plateAluminum]]);
 
 // --- ME IO Port
@@ -694,6 +755,9 @@ recipes.addShaped("it3_ae2_security_station", <appliedenergistics2:security_stat
 [plateAluminum, MEChest, plateAluminum],
 [FluixGlassCable, StorageComponent16K, FluixGlassCable],
 [plateAluminum, EngProc, plateAluminum]]);
+
+// --- Fluid Interface
+recipes.addShapeless("it3_ae2_fluid_interface_block", <appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
 
 // --- Items ---
 
@@ -800,13 +864,13 @@ recipes.addShapeless("it3_ae2_lightdetector", LightDetector, [ChCertusQuartz, Ir
 // --- Advanced Card
 recipes.addShaped("it3_ae2_advanced_card", <appliedenergistics2:material:28>, [
 [<ore:platePlatinum>, plateAluminum, null],
-[<ore:plateRedAlloy>, CalcCirc, plateAluminum],
+[<ore:plateRedAlloy>, CalcProc, plateAluminum],
 [<ore:platePlatinum>, plateAluminum, null]]);
 
 // --- Basic Card
 recipes.addShaped("it3_ae2_basic_card", <appliedenergistics2:material:25>, [
 [<ore:plateGold>, plateAluminum, null],
-[<ore:plateRedAlloy>, CalcCirc, plateAluminum],
+[<ore:plateRedAlloy>, CalcProc, plateAluminum],
 [<ore:plateGold>, plateAluminum, null]]);
 
 // --- Blank Pattern
@@ -823,13 +887,13 @@ recipes.addShapeless("it3_ae2_capac_card", <appliedenergistics2:material:27>, [<
 recipes.addShapeless("it3_ae2_craft_card", <appliedenergistics2:material:53>, [<appliedenergistics2:material:25>, <appliedenergistics2:material:35>, <appliedenergistics2:material:35>, <ore:craftingWorkBench>]);
 
 // --- Redstone Card
-recipes.addShapeless("it3_ae2_redstone_card", <appliedenergistics2:material:26>, [<appliedenergistics2:material:25>, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcCirc]);
+recipes.addShapeless("it3_ae2_redstone_card", <appliedenergistics2:material:26>, [<appliedenergistics2:material:25>, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcProc]);
 
 // --- Fuzzy Card
-recipes.addShapeless("it3_ae2_fuzzy_card", <appliedenergistics2:material:29>, [<appliedenergistics2:material:28>, EngProc, LogiProc, CalcCirc]);
+recipes.addShapeless("it3_ae2_fuzzy_card", <appliedenergistics2:material:29>, [<appliedenergistics2:material:28>, EngProc, LogiProc, CalcProc]);
 
 // --- Inverter Card
-recipes.addShapeless("it3_ae2_inverter_card", <appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, inverter, inverter, CalcCirc]);
+recipes.addShapeless("it3_ae2_inverter_card", <appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, inverter, inverter, CalcProc]);
 
 // --- Acceleration Card
 recipes.addShapeless("it3_ae2_accell_card", <appliedenergistics2:material:30>, [<appliedenergistics2:material:28>, EngProc, LogiProc, FluixCrystal]);
@@ -938,7 +1002,7 @@ recipes.addShaped("it3_ae2_amtter_cannon", <appliedenergistics2:matter_cannon>, 
 
 // --- Memory Card
 recipes.addShaped("it3_ae2_mem_card", <appliedenergistics2:memory_card>, [
-[CalcCirc, plateAluminum, plateAluminum],
+[CalcProc, plateAluminum, plateAluminum],
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],
 [null, null, null]]);
 
@@ -985,6 +1049,7 @@ recipes.addShapeless("it3_ae2_fluid_form_plane", <appliedenergistics2:part:321>,
 
 // --- ME Fluid Fluid Interface
 recipes.addShapeless("it3_ae2_fluid_interface", <appliedenergistics2:part:441>, [<appliedenergistics2:part:440>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_interface_item", <appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
 
 // --- ME Fluid P2P Channel - Fluid
 recipes.addShapeless("it3_ae2_fluid_p2p", <appliedenergistics2:part:463>, [<appliedenergistics2:part:460>, <minecraft:water_bucket>]);
@@ -1075,13 +1140,13 @@ recipes.addShaped("it3_ae2_4k_cell_component", StorageComponent4K, [
 // --- Storage Cell Component - 16K
 recipes.addShaped("it3_ae2_16k_cell_component", StorageComponent16K, [
   [plateRAM, StorageComponent4K, plateRAM],
-  [<ore:circuitAdvanced>, CalcCirc, <ore:circuitAdvanced>],
+  [<ore:circuitAdvanced>, CalcProc, <ore:circuitAdvanced>],
   [plateRAM, StorageComponent4K, plateRAM]]);
 
 // --- Storage Cell Component - 64K
 recipes.addShaped("it3_ae2_64k_cell_component", StorageComponent64K, [
   [plateRAM, StorageComponent16K, plateRAM],
-  [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
+  [<ore:circuitExtreme>, CalcProc, <ore:circuitExtreme>],
   [plateRAM, StorageComponent16K, plateRAM]]);
 
   
@@ -1106,7 +1171,7 @@ recipes.addShaped("it3_ae2_16k_fluid_component", FluStorageComponent16K, [
 // --- Fluid Storage Cell Component - 64K
 recipes.addShaped("it3_ae2_64k_fluid_component", FluStorageComponent64K, [
   [plateRAM, FluStorageComponent16K, plateRAM],
-  [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
+  [<ore:circuitExtreme>, CalcProc, <ore:circuitExtreme>],
   [plateRAM, FluStorageComponent16K, plateRAM]]);
   
 // --- 2 Spatial Component
