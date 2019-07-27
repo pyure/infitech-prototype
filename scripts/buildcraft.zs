@@ -126,6 +126,12 @@ assembler.recipeBuilder()
   .EUt(12)
   .buildAndRegister();
 
+recipes.addShaped("it3_buildcraft_pipe_iron", pipeIron * 6,[
+  [<ore:stickIron>, craftingToolHardHammerEmptyTag, <ore:stickIron>],
+  [<ore:stickIron>, <minecraft:glass>, <ore:stickIron>],
+  [<ore:stickIron>, craftingToolSawEmptyTag, <ore:stickIron>]]);
+  
+  
 // Gold Pipes
 recipes.remove(pipeGold);
 recipes.addShaped("it3_buildcraft_pipe_gold", pipeGold * 6,[
@@ -143,6 +149,11 @@ assembler.recipeBuilder()
   .buildAndRegister();  
 
 // Clay Pipes
+
+recipes.addShaped("it3_clay_rod_file", <contenttweaker:clay_rod>, [
+  [<ore:craftingToolFileEmptyTag>, null], 
+  [null, <ore:blockClay>]]);
+
 recipes.remove(pipeClay);
 assembler.recipeBuilder()
   .inputs(<ore:stickClay> * 6)
@@ -152,6 +163,11 @@ assembler.recipeBuilder()
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
+  
+recipes.addShaped("it3_buildcraft_pipe_Clay", pipeClay * 6,[
+  [<ore:stickClay>, craftingToolHardHammerEmptyTag, <ore:stickClay>],
+  [<ore:stickClay>, <minecraft:glass>, <ore:stickClay>],
+  [<ore:stickClay>, craftingToolSawEmptyTag, <ore:stickClay>]]);  
   
 // Sandstone Pipes
 recipes.remove(pipeSandstone);
@@ -164,6 +180,14 @@ assembler.recipeBuilder()
   .EUt(12)
   .buildAndRegister();  
   
+recipes.addShaped("it3_buildcraft_pipe_Sandstone", pipeSandstone * 6,[
+  [<ore:stickSandstone>, craftingToolHardHammerEmptyTag, <ore:stickSandstone>],
+  [<ore:stickSandstone>, <minecraft:glass>, <ore:stickSandstone>],
+  [<ore:stickSandstone>, craftingToolSawEmptyTag, <ore:stickSandstone>]]);  
+
+recipes.addShaped("it3_sandstone_rod_file", <contenttweaker:sandstone_rod>, [
+  [<ore:craftingToolFileEmptyTag>, null], 
+  [null, <minecraft:sandstone>]]);
   
 // Void Pipes
 recipes.remove(pipeVoid);
@@ -187,6 +211,15 @@ assembler.recipeBuilder()
   .EUt(12)
   .buildAndRegister();  
   
+recipes.addShaped("it3_buildcraft_pipe_Obsidian", pipeObsidian * 6,[
+  [<ore:stickObsidian>, craftingToolHardHammerEmptyTag, <ore:stickObsidian>],
+  [<ore:stickObsidian>, <minecraft:glass>, <ore:stickObsidian>],
+  [<ore:stickObsidian>, craftingToolSawEmptyTag, <ore:stickObsidian>]]);  
+  
+recipes.addShaped("it3_obsidian_rod_file", <contenttweaker:obsidian_rod>, [
+  [<ore:craftingToolFileEmptyTag>, null], 
+  [null, <ore:blockObsidian>]]);
+  
 // Diamond Pipes
 recipes.remove(pipeDiamond);
 assembler.recipeBuilder()
@@ -197,6 +230,12 @@ assembler.recipeBuilder()
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
+
+recipes.addShaped("it3_buildcraft_pipe_Diamond", pipeDiamond * 6,[
+  [<ore:stickDiamond>, craftingToolHardHammerEmptyTag, <ore:stickDiamond>],
+  [<ore:stickDiamond>, <minecraft:glass>, <ore:stickDiamond>],
+  [<ore:stickDiamond>, craftingToolSawEmptyTag, <ore:stickDiamond>]]);  
+
   
 // WoodenDiamond Pipes
 recipes.remove(pipeWoodenDiamond);
