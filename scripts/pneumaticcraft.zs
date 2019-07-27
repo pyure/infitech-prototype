@@ -95,6 +95,9 @@ mods.pneumaticcraft.heatframecooling.addRecipe(pulped_biomass *4, slime_ball);
 var vacuum_tube = <gregtech:meta_item_2:32450>;
 
 recipes.removeByRecipeName("pneumaticcraft:drone");
+recipes.removeByRecipeName("pneumaticcraft:drone_from_harvesting_drone");
+recipes.removeByRecipeName("pneumaticcraft:drone_from_logistic_drone");
+
 recipes.addShaped("it3_pneumaticcraft_drone", 
   <pneumaticcraft:drone>.withTag({volume: 12000.0 as float, UpgradeInventory: {}, currentAir: 0.0 as float}), [
   [null, <pneumaticcraft:turbine_rotor>, null], 
