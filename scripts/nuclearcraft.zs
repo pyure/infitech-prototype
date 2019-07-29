@@ -9,22 +9,6 @@ val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 val packer as RecipeMap = RecipeMap.getByName("packer");
 
-recipes.remove(<libvulpes:structuremachine> * 16);
-recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, 
-[
-	[<ore:stickStainlessSteel>, <ore:plateStainlessSteel>, <ore:stickStainlessSteel>],
-	[<ore:plateStainlessSteel>, <ore:wrench> , <ore:plateStainlessSteel>], 
-	[<ore:stickStainlessSteel>, <ore:plateStainlessSteel>, <ore:stickStainlessSteel>]
-]);
-
-recipes.remove(<libvulpes:advstructuremachine> * 16);
-recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, 
-[
-	[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>],
-	[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], 
-	[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>]
-]);
-
 // These are covered by GT meta tools
 recipes.remove(<nuclearcraft:pickaxe_boron>);
 recipes.remove(<nuclearcraft:pickaxe_tough>);
