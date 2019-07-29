@@ -42,7 +42,7 @@ blast_furnace.recipeBuilder()
 	.inputs(<ore:ingotNickel> * 4)
 	.inputs(<ore:ingotChrome> * 1)
 	.fluidInputs([<liquid:helium3> * 25])
-	.outputs(<ore:ingotHotNichrome>.firstItem * 1, <ore:dustSmallDarkAsh>.firstItem * 2)
+	.outputs(<ore:ingotHotNichrome>.firstItem * 5, <ore:dustSmallDarkAsh>.firstItem * 2)
 	.property("temperature", 2700)
 	.duration(2700)
 	.EUt(480)
@@ -349,7 +349,7 @@ turfMoonCentrifuge.add(<advancedrocketry:moonturf_dark>);
 centrifuge.recipeBuilder()
     .inputs(<ore:turfMoonCentrifuge> * 1)
     .outputs(<minecraft:gravel> * 1)
-    .fluidOutputs(<liquid:helium3> * 125)
+    .fluidOutputs(<liquid:helium> * 125)
     .duration(320)
     .EUt(30)
     .buildAndRegister();
@@ -370,10 +370,10 @@ var sand = <minecraft:sand>;
 centrifuge.findRecipe(20,[<ore:dustEndstone>.firstItem *1], null).remove();
 
 centrifuge.recipeBuilder().inputs(<ore:dustEndstone> *1)
-.chancedOutput(tinyPlatinum * 1 , 625, 100)
-.chancedOutput(smallTungstate * 1 , 1250,100)
-.chancedOutput(sand * 1 , 9000, 100)
-.duration(320).EUt(20).buildAndRegister();	
+  .chancedOutput(tinyPlatinum * 1 , 625, 100)
+  .chancedOutput(smallTungstate * 1 , 1250,100)
+  .chancedOutput(sand * 1 , 9000, 100)
+  .duration(320).EUt(20).buildAndRegister();	
   
   
 // Add oredicts to facilitate some questing
@@ -468,46 +468,7 @@ fluid_extractor.recipeBuilder()
 	.duration(220)
 	.buildAndRegister();
   
-//NC Alloys
-var ferroBoron = <nuclearcraft:alloy:6>;
-var toughAlloy = <nuclearcraft:alloy:1>;
-var hardCarbon = <nuclearcraft:alloy:2>;
-var magnesiumDiboride = <nuclearcraft:alloy:3>;
-var lithiumManganeseDioxide = <nuclearcraft:alloy:4>;
-var dustManganeseOxide = <nuclearcraft:dust_oxide:2>;
-var dustManganeseDioxide = <nuclearcraft:dust_oxide:3>;
-var ingotManganeseOxide = <nuclearcraft:ingot_oxide:2>;
-var ingotManganeseDioxide = <nuclearcraft:ingot_oxide:3>;
-
-var ingotMagnesium = <gregtech:meta_item_1:10039>;
-
-recipes.remove(ferroBoron);
-recipes.remove(toughAlloy);
-recipes.remove(hardCarbon);
-recipes.remove(magnesiumDiboride);
-recipes.remove(lithiumManganeseDioxide);
-recipes.remove(dustManganeseOxide);
-recipes.remove(dustManganeseDioxide);
-recipes.remove(ingotManganeseOxide);
-recipes.remove(ingotManganeseDioxide);
-
-furnace.remove(ingotMagnesium, dustManganeseOxide);
-furnace.addRecipe(<ore:ingotManganeseOxide>.firstItem * 1, <ore:dustManganeseOxide>);
-
-alloy_smelter.recipeBuilder()
-	.inputs(<ore:ingotSteel> * 1, <ore:ingotBoron> * 1)
-	.outputs(<ore:ingotFerroboron>.firstItem * 2)
-	.duration(200)
-	.EUt(16)
-	.buildAndRegister();
-	
-alloy_smelter.recipeBuilder()
-	.inputs(<ore:ingotFerroboron> * 1, <ore:ingotLithium> * 1)
-	.outputs(<ore:ingotTough>.firstItem * 2)
-	.duration(300)
-	.EUt(16)
-	.buildAndRegister();
-
+ 
 // Forge Hammer: Gravel -> Flint
 forge_hammer.recipeBuilder()
 	.inputs([<minecraft:gravel> * 1])

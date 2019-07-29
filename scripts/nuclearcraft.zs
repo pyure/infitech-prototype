@@ -9,22 +9,6 @@ val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 val packer as RecipeMap = RecipeMap.getByName("packer");
 
-recipes.remove(<libvulpes:structuremachine> * 16);
-recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, 
-[
-	[<ore:stickStainlessSteel>, <ore:plateStainlessSteel>, <ore:stickStainlessSteel>],
-	[<ore:plateStainlessSteel>, <ore:wrench> , <ore:plateStainlessSteel>], 
-	[<ore:stickStainlessSteel>, <ore:plateStainlessSteel>, <ore:stickStainlessSteel>]
-]);
-
-recipes.remove(<libvulpes:advstructuremachine> * 16);
-recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, 
-[
-	[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>],
-	[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], 
-	[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>]
-]);
-
 // These are covered by GT meta tools
 recipes.remove(<nuclearcraft:pickaxe_boron>);
 recipes.remove(<nuclearcraft:pickaxe_tough>);
@@ -164,7 +148,7 @@ scripts.functions.disableItem(<nuclearcraft:manufactory_idle>);
 scripts.functions.disableItem(<nuclearcraft:alloy_furnace_idle>);
 scripts.functions.disableItem(<nuclearcraft:melter_idle>);
 scripts.functions.disableItem(<nuclearcraft:electrolyser_idle>);
-scripts.functions.disableItem(<nuclearcraft:irradiator_idle>);
+
 scripts.functions.disableItem(<nuclearcraft:ingot_former_idle>);
 scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
 scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
@@ -182,7 +166,7 @@ mods.nuclearcraft.manufactory.removeAllRecipes();
 mods.nuclearcraft.alloy_furnace.removeAllRecipes();
 mods.nuclearcraft.melter.removeAllRecipes();
 mods.nuclearcraft.electrolyser.removeAllRecipes();
-mods.nuclearcraft.irradiator.removeAllRecipes();
+
 mods.nuclearcraft.ingot_former.removeAllRecipes();
 mods.nuclearcraft.pressurizer.removeAllRecipes();
 mods.nuclearcraft.chemical_reactor.removeAllRecipes();
@@ -467,3 +451,13 @@ packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Conf
 
 packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium252Oxide> * 9).outputs(<ore:ingotCalifornium252Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
 
+
+// Helium Cooler
+var helium_cooler = <nuclearcraft:cooler:8>;
+fluid_canner.recipeBuilder() 
+    .fluidInputs(<liquid:helium>)
+    .inputs(<nuclearcraft:cooler>)
+    .outputs(helium_cooler * 1 )
+    .duration(50)
+    .EUt(42)
+    .buildAndRegister();

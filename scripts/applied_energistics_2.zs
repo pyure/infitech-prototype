@@ -446,13 +446,15 @@ recipes.remove(<appliedenergistics2:material:28>);
 recipes.remove(Pattern);
 
 // --- Basic Card
-recipes.remove(<appliedenergistics2:material:25>);
+var basic_card = <appliedenergistics2:material:25>;
+recipes.remove(basic_card);
 
 // --- Blank Pattern
 recipes.remove(<appliedenergistics2:material:52>);
 
 // --- Capacity Card
-recipes.remove(<appliedenergistics2:material:27>);
+var capacity_card = <appliedenergistics2:material:27>;
+recipes.remove(capacity_card);
 
 // --- Crafting Card
 recipes.remove(<appliedenergistics2:material:53>);
@@ -533,7 +535,8 @@ recipes.remove(<appliedenergistics2:crystal_seed:1200>);
 recipes.remove(<appliedenergistics2:nether_quartz_wrench>);
 
 // --- ME Fluid Storage Bus
-recipes.remove(<appliedenergistics2:part:221>);
+var fluid_storage_bus = <appliedenergistics2:part:221>;
+recipes.remove(fluid_storage_bus);
 
 // --- ME Fluid Import Bus
 recipes.remove(<appliedenergistics2:part:241>);
@@ -550,7 +553,7 @@ recipes.remove(<appliedenergistics2:part:302>);
 // --- ME Fluid Formation
 recipes.remove(<appliedenergistics2:part:321>);
 
-// --- ME Fluid Fluid Interface
+// --- ME Fluid   ace
 recipes.remove(<appliedenergistics2:part:441>);
 
 // --- ME Fluid P2P Channel - Fluid
@@ -682,10 +685,10 @@ recipes.addShaped("it3_ae2_drive", MEDrive, [
 recipes.addShaped("it3_ae2_crafting_unit", CraftingUnit, [
 [plateAluminum, LogiProc, plateAluminum],
 [BasicCircuit, EngProc, BasicCircuit],
-[plateAluminum, CalcCirc, plateAluminum]]);
+[plateAluminum, CalcProc, plateAluminum]]);
 
 // --- CoCraftingUnit
-recipes.addShapeless("it3_ae2_cocrafting_unit", CoCraftingUnit, [CraftingUnit, CalcCirc, LogiProc, EngProc]);
+recipes.addShapeless("it3_ae2_cocrafting_unit", CoCraftingUnit, [CraftingUnit, CalcProc, LogiProc, EngProc]);
 
 // --- Molecular Assembler
 recipes.addShaped("it3_ae2_assembler", MolecularAssembler, [
@@ -727,7 +730,7 @@ recipes.addShapeless("it3_ae2_interface_2", <appliedenergistics2:interface>, [In
 // --- Cell Workbench
 recipes.addShaped("it3_ae2_cell_workbench", <appliedenergistics2:cell_workbench>, [
 [<minecraft:wool>, <rftools:screen>, <minecraft:wool>],
-[plateAluminum, CalcCirc, plateAluminum],
+[plateAluminum, CalcProc  , plateAluminum],
 [plateAluminum, plateAluminum, plateAluminum]]);
 
 // --- ME IO Port
@@ -735,6 +738,9 @@ recipes.addShaped("it3_ae2_io_port", <appliedenergistics2:io_port>, [
 [GlassPlate, GlassPlate, GlassPlate],
 [MEDrive, FluixGlassCable, MEDrive],
 [plateAluminum, LogiProc, plateAluminum]]);
+
+// --- Fluid Interface
+recipes.addShapeless("it3_ae2_fluid_interface_block", <appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
 
 // --- Matter Condenser
 recipes.addShaped("it3_ae2_matter_condensor", <appliedenergistics2:condenser>, [
@@ -859,13 +865,13 @@ recipes.addShapeless("it3_ae2_lightdetector", LightDetector, [ChCertusQuartz, Ir
 // --- Advanced Card
 recipes.addShaped("it3_ae2_advanced_card", <appliedenergistics2:material:28>, [
 [<ore:platePlatinum>, plateAluminum, null],
-[<ore:plateRedAlloy>, CalcCirc, plateAluminum],
+[<ore:plateRedAlloy>, CalcProc, plateAluminum],
 [<ore:platePlatinum>, plateAluminum, null]]);
 
 // --- Basic Card
-recipes.addShaped("it3_ae2_basic_card", <appliedenergistics2:material:25>, [
+recipes.addShaped("it3_ae2_basic_card", basic_card, [
 [<ore:plateGold>, plateAluminum, null],
-[<ore:plateRedAlloy>, CalcCirc, plateAluminum],
+[<ore:plateRedAlloy>, CalcProc, plateAluminum],
 [<ore:plateGold>, plateAluminum, null]]);
 
 // --- Blank Pattern
@@ -876,19 +882,19 @@ recipes.addShaped("it3_ae2_pattern", Pattern, [
 
 
 // --- Capacity Card
-recipes.addShapeless("it3_ae2_capac_card", <appliedenergistics2:material:27>, [<appliedenergistics2:material:25>, <appliedenergistics2:material:35>, <appliedenergistics2:material:35>, ChCertusQuartz]);
+recipes.addShapeless("it3_ae2_capac_card", capacity_card, [basic_card, StorageComponent1K, StorageComponent1K, ChCertusQuartz]);
 
 // --- Crafting Card
-recipes.addShapeless("it3_ae2_craft_card", <appliedenergistics2:material:53>, [<appliedenergistics2:material:25>, <appliedenergistics2:material:35>, <appliedenergistics2:material:35>, <ore:craftingWorkBench>]);
+recipes.addShapeless("it3_ae2_craft_card", <appliedenergistics2:material:53>, [basic_card, StorageComponent1K, StorageComponent1K, <ore:craftingWorkBench>]);
 
 // --- Redstone Card
-recipes.addShapeless("it3_ae2_redstone_card", <appliedenergistics2:material:26>, [<appliedenergistics2:material:25>, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcCirc]);
+recipes.addShapeless("it3_ae2_redstone_card", <appliedenergistics2:material:26>, [basic_card, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcProc]);
 
 // --- Fuzzy Card
-recipes.addShapeless("it3_ae2_fuzzy_card", <appliedenergistics2:material:29>, [<appliedenergistics2:material:28>, EngProc, LogiProc, CalcCirc]);
+recipes.addShapeless("it3_ae2_fuzzy_card", <appliedenergistics2:material:29>, [<appliedenergistics2:material:28>, EngProc, LogiProc, CalcProc]);
 
 // --- Inverter Card
-recipes.addShapeless("it3_ae2_inverter_card", <appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, inverter, inverter, CalcCirc]);
+recipes.addShapeless("it3_ae2_inverter_card", <appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, inverter, inverter, CalcProc]);
 
 // --- Acceleration Card
 recipes.addShapeless("it3_ae2_accell_card", <appliedenergistics2:material:30>, [<appliedenergistics2:material:28>, EngProc, LogiProc, FluixCrystal]);
@@ -935,14 +941,14 @@ recipes.addShapeless("it3_ae2_anchor_11", <appliedenergistics2:part:120> * 3, [c
 
 // --- ME Export Bus
 recipes.addShaped("it3_ae2_export_bus", <appliedenergistics2:part:260>, [
-[plateAluminum, <appliedenergistics2:material:43>, plateAluminum],
+[plateAluminum, FormationCore, plateAluminum],
 [null, <minecraft:piston>, null],
 [null, null, null]]);
 
 // --- ME Formation Plane
 recipes.addShaped("it3_ae2_form_plane", <appliedenergistics2:part:320>, [
 [FluixDust, FluixDust, FluixDust],
-[plateAluminum, <appliedenergistics2:material:43>, plateAluminum],
+[plateAluminum, FormationCore, plateAluminum],
 [null, null, null]]);
 
 // --- ME Import Bus
@@ -991,13 +997,13 @@ recipes.addShaped("it3_ae2_neth_quartz_wrench", <appliedenergistics2:nether_quar
 
 // --- Matter Cannon
 recipes.addShaped("it3_ae2_amtter_cannon", <appliedenergistics2:matter_cannon>, [
-[plateAluminum, plateAluminum, <appliedenergistics2:material:43>],
-[<appliedenergistics2:material:38>, <appliedenergistics2:dense_energy_cell>, null],
+[plateAluminum, plateAluminum, FormationCore],
+[StorageComponent64K, <appliedenergistics2:dense_energy_cell>, null],
 [plateAluminum, null, null]]);
 
 // --- Memory Card
 recipes.addShaped("it3_ae2_mem_card", <appliedenergistics2:memory_card>, [
-[CalcCirc, plateAluminum, plateAluminum],
+[CalcProc, plateAluminum, plateAluminum],
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],
 [null, null, null]]);
 
@@ -1015,8 +1021,8 @@ recipes.addShaped("it3_ae2_entropy_manip", <appliedenergistics2:entropy_manipula
 
 // --- Color Applicator
 recipes.addShaped("it3_ae2_color_applic", <appliedenergistics2:color_applicator>, [
-[<ore:wireGtSingleAluminium>, <appliedenergistics2:material:43>, <ore:wireGtSingleAluminium>],
-[<appliedenergistics2:material:36>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:36>],
+[<ore:wireGtSingleAluminium>, FormationCore, <ore:wireGtSingleAluminium>],
+[StorageComponent4K, <appliedenergistics2:energy_cell>, StorageComponent4K],
 [null, <ore:stickSteel>, null]]);
 
 // --- Biometric Card
@@ -1025,7 +1031,7 @@ recipes.addShaped("it3_ae2_biometric_card", <appliedenergistics2:biometric_card>
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],[null, null, null]]);
 
 // --- ME Fluid Storage Bus
-recipes.addShapeless("it3_ae2_fluid_storage_bus", <appliedenergistics2:part:221>, [<appliedenergistics2:part:220>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_storage_bus", fluid_storage_bus, [<appliedenergistics2:part:220>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Import Bus
 recipes.addShapeless("it3_ae2_fluid_import_bus", <appliedenergistics2:part:241>, [<appliedenergistics2:part:240>, <minecraft:water_bucket>]);
@@ -1043,7 +1049,7 @@ recipes.addShapeless("it3_ae2_fluid_annih_plane", <appliedenergistics2:part:302>
 recipes.addShapeless("it3_ae2_fluid_form_plane", <appliedenergistics2:part:321>, [<appliedenergistics2:part:320>, <minecraft:water_bucket>]);
 
 // --- ME Fluid Fluid Interface
-recipes.addShapeless("it3_ae2_fluid_interface", <appliedenergistics2:part:441>, [<appliedenergistics2:part:440>, <minecraft:water_bucket>]);
+recipes.addShapeless("it3_ae2_fluid_interface_flat", <appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
 
 // --- ME Fluid P2P Channel - Fluid
 recipes.addShapeless("it3_ae2_fluid_p2p", <appliedenergistics2:part:463>, [<appliedenergistics2:part:460>, <minecraft:water_bucket>]);
@@ -1134,13 +1140,13 @@ recipes.addShaped("it3_ae2_4k_cell_component", StorageComponent4K, [
 // --- Storage Cell Component - 16K
 recipes.addShaped("it3_ae2_16k_cell_component", StorageComponent16K, [
   [plateRAM, StorageComponent4K, plateRAM],
-  [<ore:circuitAdvanced>, CalcCirc, <ore:circuitAdvanced>],
+  [<ore:circuitAdvanced>, CalcProc, <ore:circuitAdvanced>],
   [plateRAM, StorageComponent4K, plateRAM]]);
 
 // --- Storage Cell Component - 64K
 recipes.addShaped("it3_ae2_64k_cell_component", StorageComponent64K, [
   [plateRAM, StorageComponent16K, plateRAM],
-  [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
+  [<ore:circuitExtreme>, CalcProc, <ore:circuitExtreme>],
   [plateRAM, StorageComponent16K, plateRAM]]);
 
   
@@ -1165,7 +1171,7 @@ recipes.addShaped("it3_ae2_16k_fluid_component", FluStorageComponent16K, [
 // --- Fluid Storage Cell Component - 64K
 recipes.addShaped("it3_ae2_64k_fluid_component", FluStorageComponent64K, [
   [plateRAM, FluStorageComponent16K, plateRAM],
-  [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
+  [<ore:circuitExtreme>, CalcProc, <ore:circuitExtreme>],
   [plateRAM, FluStorageComponent16K, plateRAM]]);
   
 // --- 2 Spatial Component
