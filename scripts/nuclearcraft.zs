@@ -467,3 +467,13 @@ packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Conf
 
 packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium252Oxide> * 9).outputs(<ore:ingotCalifornium252Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
 
+
+// Helium Cooler
+var helium_cooler = <nuclearcraft:cooler:8>;
+fluid_canner.recipeBuilder() 
+    .fluidInputs(<liquid:helium>)
+    .inputs(<nuclearcraft:cooler>)
+    .outputs(helium_cooler * 1 )
+    .duration(50)
+    .EUt(42)
+    .buildAndRegister();
