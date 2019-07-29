@@ -17,6 +17,22 @@ var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
 var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
 
+recipes.remove(<libvulpes:structuremachine> * 16);
+recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, 
+[
+	[<ore:stickStainlessSteel>, <ore:plateStainlessSteel>, <ore:stickStainlessSteel>],
+	[<ore:plateStainlessSteel>, <ore:wrench> , <ore:plateStainlessSteel>], 
+	[<ore:stickStainlessSteel>, <ore:plateStainlessSteel>, <ore:stickStainlessSteel>]
+]);
+
+recipes.remove(<libvulpes:advstructuremachine> * 16);
+recipes.addShaped("it3_libvulpes_structure_advanced", <libvulpes:advstructuremachine> * 2, 
+[
+	[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>],
+	[<ore:plateTitanium>, <ore:wrench> , <ore:plateTitanium>], 
+	[<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>]
+]);
+
 // GT Style gear crafting
 recipes.remove(<advancedrocketry:productgear:0>);
 recipes.addShaped("it3_advrocketry_gear_0", <advancedrocketry:productgear:0>, [
