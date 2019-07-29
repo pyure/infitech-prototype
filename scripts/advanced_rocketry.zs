@@ -228,4 +228,52 @@ recipes.addShaped("it3_advrocketry_blastbrick", <advancedrocketry:blastbrick> *6
 // Remove furnace recipe for Iridium, should stop smashing-enchant from allowing iridium ingots
 var libvulpes_iridium_ingot = <libvulpes:productingot:10>;
 var libvulpes_iridium_dust = <libvulpes:productdust:10>;
+var libvulpes_aluminum =  <libvulpes:productingot:9>;
+
 furnace.remove(libvulpes_iridium_ingot, libvulpes_iridium_dust);  
+
+// There might be weird ways (such as orechid) to get libvulpes aluminum ore.  Disable its furnace recipe.
+furnace.remove(libvulpes_aluminum);
+
+// Add all Aluminium to the Aluminum oredict.  We don't know specifically that this is useful.
+<ore:ingotAluminum>.addAll(<ore:ingotAluminium>);
+
+var gold_coil = <libvulpes:coil0:2>;
+var copper_coil = <libvulpes:coil0:4>;
+var titanium_coil = <libvulpes:coil0:7>;
+var aluminum_coil = <libvulpes:coil0:9>;
+var iridium_coil = <libvulpes:coil0:10>;
+
+recipes.removeByRecipeName("advancedrocketry:coilaluminum");
+recipes.addShaped("it3_advancedrocketry_coilaluminum", aluminum_coil, [
+  [<ore:wireGtQuadrupleAluminium>, <ore:wireGtQuadrupleAluminium>, <ore:wireGtQuadrupleAluminium>], 
+  [<ore:wireGtQuadrupleAluminium>, <ore:craftingToolWrenchEmptyTag>, <ore:wireGtQuadrupleAluminium>], 
+  [<ore:wireGtQuadrupleAluminium>, <ore:wireGtQuadrupleAluminium>, <ore:wireGtQuadrupleAluminium>]]);
+
+recipes.removeByRecipeName("advancedrocketry:coilgold");
+recipes.addShaped("it3_advancedrocketry_coilgold", gold_coil, [
+  [<ore:wireGtQuadrupleGold>, <ore:wireGtQuadrupleGold>, <ore:wireGtQuadrupleGold>], 
+  [<ore:wireGtQuadrupleGold>, <ore:craftingToolWrenchEmptyTag>, <ore:wireGtQuadrupleGold>], 
+  [<ore:wireGtQuadrupleGold>, <ore:wireGtQuadrupleGold>, <ore:wireGtQuadrupleGold>]]);
+
+recipes.removeByRecipeName("advancedrocketry:coilcopper");
+recipes.addShaped("it3_advancedrocketry_coilcopper", copper_coil, [
+  [<ore:wireGtQuadrupleCopper>, <ore:wireGtQuadrupleCopper>, <ore:wireGtQuadrupleCopper>], 
+  [<ore:wireGtQuadrupleCopper>, <ore:craftingToolWrenchEmptyTag>, <ore:wireGtQuadrupleCopper>], 
+  [<ore:wireGtQuadrupleCopper>, <ore:wireGtQuadrupleCopper>, <ore:wireGtQuadrupleCopper>]]);
+
+recipes.removeByRecipeName("advancedrocketry:coiltitanium");
+recipes.addShaped("it3_advancedrocketry_coiltitanium", titanium_coil, [
+  [<ore:wireGtQuadrupleTitanium>, <ore:wireGtQuadrupleTitanium>, <ore:wireGtQuadrupleTitanium>], 
+  [<ore:wireGtQuadrupleTitanium>, <ore:craftingToolWrenchEmptyTag>, <ore:wireGtQuadrupleTitanium>], 
+  [<ore:wireGtQuadrupleTitanium>, <ore:wireGtQuadrupleTitanium>, <ore:wireGtQuadrupleTitanium>]]);  
+  
+// Iridium Coil recipe requires an Assembler because a) its buffest, and b) We don't have wires to use as ingredients.
+recipes.removeByRecipeName("advancedrocketry:coilsteel");
+assembler.recipeBuilder()
+  .inputs(<ore:wireGtQuadrupleSteel> * 8)
+  .fluidInputs([<liquid:iridium> * 488])
+  .outputs(iridium_coil * 1)
+  .duration(140)
+  .EUt(512)
+  .buildAndRegister();  
