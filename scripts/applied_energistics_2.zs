@@ -370,9 +370,6 @@ recipes.remove(<appliedenergistics2:energy_acceptor>);
 // --- ME Security Terminal
 recipes.remove(<appliedenergistics2:security_station>);
 
-// --- ME Fluid Interface
-recipes.remove(<appliedenergistics2:fluid_interface>);
-
 scripts.functions.disableItem(Charger);
 scripts.functions.disableItem(CrystalAccelerator);
 scripts.functions.disableItem(inscriber);
@@ -685,10 +682,10 @@ recipes.addShaped("it3_ae2_drive", MEDrive, [
 recipes.addShaped("it3_ae2_crafting_unit", CraftingUnit, [
 [plateAluminum, LogiProc, plateAluminum],
 [BasicCircuit, EngProc, BasicCircuit],
-[plateAluminum, CalcProc, plateAluminum]]);
+[plateAluminum, CalcCirc, plateAluminum]]);
 
 // --- CoCraftingUnit
-recipes.addShapeless("it3_ae2_cocrafting_unit", CoCraftingUnit, [CraftingUnit, CalcProc, LogiProc, EngProc]);
+recipes.addShapeless("it3_ae2_cocrafting_unit", CoCraftingUnit, [CraftingUnit, CalcCirc, LogiProc, EngProc]);
 
 // --- Molecular Assembler
 recipes.addShaped("it3_ae2_assembler", MolecularAssembler, [
@@ -730,7 +727,7 @@ recipes.addShapeless("it3_ae2_interface_2", <appliedenergistics2:interface>, [In
 // --- Cell Workbench
 recipes.addShaped("it3_ae2_cell_workbench", <appliedenergistics2:cell_workbench>, [
 [<minecraft:wool>, <rftools:screen>, <minecraft:wool>],
-[plateAluminum, CalcProc, plateAluminum],
+[plateAluminum, CalcCirc, plateAluminum],
 [plateAluminum, plateAluminum, plateAluminum]]);
 
 // --- ME IO Port
@@ -756,9 +753,6 @@ recipes.addShaped("it3_ae2_security_station", <appliedenergistics2:security_stat
 [plateAluminum, MEChest, plateAluminum],
 [FluixGlassCable, StorageComponent16K, FluixGlassCable],
 [plateAluminum, EngProc, plateAluminum]]);
-
-// --- Fluid Interface
-recipes.addShapeless("it3_ae2_fluid_interface_block", <appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
 
 // --- Items ---
 
@@ -865,13 +859,13 @@ recipes.addShapeless("it3_ae2_lightdetector", LightDetector, [ChCertusQuartz, Ir
 // --- Advanced Card
 recipes.addShaped("it3_ae2_advanced_card", <appliedenergistics2:material:28>, [
 [<ore:platePlatinum>, plateAluminum, null],
-[<ore:plateRedAlloy>, CalcProc, plateAluminum],
+[<ore:plateRedAlloy>, CalcCirc, plateAluminum],
 [<ore:platePlatinum>, plateAluminum, null]]);
 
 // --- Basic Card
 recipes.addShaped("it3_ae2_basic_card", <appliedenergistics2:material:25>, [
 [<ore:plateGold>, plateAluminum, null],
-[<ore:plateRedAlloy>, CalcProc, plateAluminum],
+[<ore:plateRedAlloy>, CalcCirc, plateAluminum],
 [<ore:plateGold>, plateAluminum, null]]);
 
 // --- Blank Pattern
@@ -888,13 +882,13 @@ recipes.addShapeless("it3_ae2_capac_card", <appliedenergistics2:material:27>, [<
 recipes.addShapeless("it3_ae2_craft_card", <appliedenergistics2:material:53>, [<appliedenergistics2:material:25>, <appliedenergistics2:material:35>, <appliedenergistics2:material:35>, <ore:craftingWorkBench>]);
 
 // --- Redstone Card
-recipes.addShapeless("it3_ae2_redstone_card", <appliedenergistics2:material:26>, [<appliedenergistics2:material:25>, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcProc]);
+recipes.addShapeless("it3_ae2_redstone_card", <appliedenergistics2:material:26>, [<appliedenergistics2:material:25>, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcCirc]);
 
 // --- Fuzzy Card
-recipes.addShapeless("it3_ae2_fuzzy_card", <appliedenergistics2:material:29>, [<appliedenergistics2:material:28>, EngProc, LogiProc, CalcProc]);
+recipes.addShapeless("it3_ae2_fuzzy_card", <appliedenergistics2:material:29>, [<appliedenergistics2:material:28>, EngProc, LogiProc, CalcCirc]);
 
 // --- Inverter Card
-recipes.addShapeless("it3_ae2_inverter_card", <appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, inverter, inverter, CalcProc]);
+recipes.addShapeless("it3_ae2_inverter_card", <appliedenergistics2:material:31>, [<appliedenergistics2:material:28>, inverter, inverter, CalcCirc]);
 
 // --- Acceleration Card
 recipes.addShapeless("it3_ae2_accell_card", <appliedenergistics2:material:30>, [<appliedenergistics2:material:28>, EngProc, LogiProc, FluixCrystal]);
@@ -1003,7 +997,7 @@ recipes.addShaped("it3_ae2_amtter_cannon", <appliedenergistics2:matter_cannon>, 
 
 // --- Memory Card
 recipes.addShaped("it3_ae2_mem_card", <appliedenergistics2:memory_card>, [
-[CalcProc, plateAluminum, plateAluminum],
+[CalcCirc, plateAluminum, plateAluminum],
 [<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>],
 [null, null, null]]);
 
@@ -1050,7 +1044,6 @@ recipes.addShapeless("it3_ae2_fluid_form_plane", <appliedenergistics2:part:321>,
 
 // --- ME Fluid Fluid Interface
 recipes.addShapeless("it3_ae2_fluid_interface", <appliedenergistics2:part:441>, [<appliedenergistics2:part:440>, <minecraft:water_bucket>]);
-recipes.addShapeless("it3_ae2_fluid_interface_item", <appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
 
 // --- ME Fluid P2P Channel - Fluid
 recipes.addShapeless("it3_ae2_fluid_p2p", <appliedenergistics2:part:463>, [<appliedenergistics2:part:460>, <minecraft:water_bucket>]);
@@ -1141,13 +1134,13 @@ recipes.addShaped("it3_ae2_4k_cell_component", StorageComponent4K, [
 // --- Storage Cell Component - 16K
 recipes.addShaped("it3_ae2_16k_cell_component", StorageComponent16K, [
   [plateRAM, StorageComponent4K, plateRAM],
-  [<ore:circuitAdvanced>, CalcProc, <ore:circuitAdvanced>],
+  [<ore:circuitAdvanced>, CalcCirc, <ore:circuitAdvanced>],
   [plateRAM, StorageComponent4K, plateRAM]]);
 
 // --- Storage Cell Component - 64K
 recipes.addShaped("it3_ae2_64k_cell_component", StorageComponent64K, [
   [plateRAM, StorageComponent16K, plateRAM],
-  [<ore:circuitExtreme>, CalcProc, <ore:circuitExtreme>],
+  [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
   [plateRAM, StorageComponent16K, plateRAM]]);
 
   
@@ -1172,7 +1165,7 @@ recipes.addShaped("it3_ae2_16k_fluid_component", FluStorageComponent16K, [
 // --- Fluid Storage Cell Component - 64K
 recipes.addShaped("it3_ae2_64k_fluid_component", FluStorageComponent64K, [
   [plateRAM, FluStorageComponent16K, plateRAM],
-  [<ore:circuitExtreme>, CalcProc, <ore:circuitExtreme>],
+  [<ore:circuitExtreme>, CalcCirc, <ore:circuitExtreme>],
   [plateRAM, FluStorageComponent16K, plateRAM]]);
   
 // --- 2 Spatial Component
