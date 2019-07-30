@@ -148,7 +148,7 @@ scripts.functions.disableItem(<nuclearcraft:manufactory_idle>);
 scripts.functions.disableItem(<nuclearcraft:alloy_furnace_idle>);
 scripts.functions.disableItem(<nuclearcraft:melter_idle>);
 scripts.functions.disableItem(<nuclearcraft:electrolyser_idle>);
-scripts.functions.disableItem(<nuclearcraft:irradiator_idle>);
+
 scripts.functions.disableItem(<nuclearcraft:ingot_former_idle>);
 scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
 scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
@@ -166,7 +166,7 @@ mods.nuclearcraft.manufactory.removeAllRecipes();
 mods.nuclearcraft.alloy_furnace.removeAllRecipes();
 mods.nuclearcraft.melter.removeAllRecipes();
 mods.nuclearcraft.electrolyser.removeAllRecipes();
-mods.nuclearcraft.irradiator.removeAllRecipes();
+
 mods.nuclearcraft.ingot_former.removeAllRecipes();
 mods.nuclearcraft.pressurizer.removeAllRecipes();
 mods.nuclearcraft.chemical_reactor.removeAllRecipes();
