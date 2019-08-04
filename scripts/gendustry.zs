@@ -32,7 +32,7 @@ var sampler = <gendustry:sampler>;
 
 //Recipes
 scripts.functions.disableItem(<gendustry:mutatron>);
-scripts.functions.disableItem(<gendustry:mutagenProducer>);
+scripts.functions.disableItem(<gendustry:mutagen_producer>);
 
 //recipes.remove(scooporator);
 recipes.addShaped("it3_gendustry_scooporator", scooporator, [
@@ -64,11 +64,6 @@ recipes.addShaped("it3_gendustry_bee_receptacle", beeReceptacle, [
 [ingotAluminium, glassPane, ingotAluminium],
 [blockRedstone, pressurePlateLightWeighted, blockRedstone]]);
 
-//recipes.remove(mutagenProducer);
-recipes.addShaped("it3_gendustry_mut_producer", mutagenProducer, [
-[plateAluminium, pipeSmallBronze, plateAluminium],
-[modulePower, hullMachineHV, modulePower],
-[gearAluminium, tankMutagen, gearAluminium]]);
 
 //recipes.remove(apiaryIndustrial);	
 recipes.addShaped("it3_gendustry_indust_apiary", apiaryIndustrial, [
