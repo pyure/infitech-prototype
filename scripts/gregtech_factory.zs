@@ -87,6 +87,7 @@ MaterialRegistry.createFluidMaterial(804, "titanium_grinding_solution", 0xDDA1F1
 MaterialRegistry.createFluidMaterial(805, "tungstensteel_grinding_solution", 0x6565A1 , "fluid" );
 
 
+
 //Liquified Pollen
 val liquidPollenLead = MaterialRegistry.createFluidMaterial(806, "liquid_pollen_lead", 0x8C648C, "fluid", null);
 val liquidPollenEmerald = MaterialRegistry.createFluidMaterial(807, "liquid_pollen_emerald", 0x248F24, "fluid", null);
@@ -103,6 +104,9 @@ val liquidPollenNickel = MaterialRegistry.createFluidMaterial(817, "liquid_polle
 val liquidPollenIron = MaterialRegistry.createFluidMaterial(818, "liquid_pollen_iron", 0xAAAAAA, "fluid", null);
 val liquidPollenIridium = MaterialRegistry.createFluidMaterial(819, "liquid_pollen_iridium", 0xFFFFFF, "fluid", null);
 
+#Helium
+val concentrated_helium = MaterialRegistry.createFluidMaterial(820, "concentrated_helium", 0xA3A400, "FLUID");
+concentrated_helium.addFlags(["GENERATE_FLUID_BLOCK"]);
 
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);
