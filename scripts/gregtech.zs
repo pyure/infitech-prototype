@@ -360,6 +360,13 @@ centrifuge.recipeBuilder()
     .duration(230)
     .EUt(42)
     .buildAndRegister();    
+    
+centrifuge.recipeBuilder()
+    .inputs(<ore:pollenDilithium> * 1)
+    .chancedOutput(<ore:crystalDilithium>.firstItem * 1 , 325, 200)
+    .duration(530)
+    .EUt(220)
+    .buildAndRegister();        
 	
 centrifuge.recipeBuilder()		//Saltpeter
 	.inputs(<ore:sand> * 4)
