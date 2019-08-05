@@ -1,0 +1,35 @@
+{
+    "block_pools": [
+        {
+            "name": "Moon Soil",
+            "type": {
+                "type": "block",
+                "name": "advancedrocketry:moonturf"
+            },
+            "clicktype": "right",
+            "properties": [
+
+                {
+                    "type": "consume_block",
+                    "name": "contenttweaker:moon_soil"
+                },
+                {
+                    "type": "require_item",
+                    "name": "gregtech:meta_tool",
+                    "meta": 4
+                },
+                {
+                  "type": "play_sound",
+                  "name": "minecraft:item.hoe.till"
+                },
+                {
+                  "type": "damage_item",
+                  "amount": 1
+                },
+                {
+                  "type": "swing_hand"
+                }                
+            ]
+        }
+    ]
+}

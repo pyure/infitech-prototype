@@ -349,7 +349,7 @@ turfMoonCentrifuge.add(<advancedrocketry:moonturf_dark>);
 centrifuge.recipeBuilder()
     .inputs(<ore:turfMoonCentrifuge> * 1)
     .outputs(<minecraft:gravel> * 1)
-    .fluidOutputs(<liquid:helium> * 125)
+    .fluidOutputs(<liquid:helium> * 5)
     .duration(320)
     .EUt(30)
     .buildAndRegister();
