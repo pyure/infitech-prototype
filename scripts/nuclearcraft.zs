@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemDefinition;
 import mods.gregtech.recipe.RecipeMap;
 
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
@@ -461,3 +462,20 @@ fluid_canner.recipeBuilder()
     .duration(50)
     .EUt(42)
     .buildAndRegister();
+
+    
+// NC/GT Compat Steel: Disable it.  All of it.
+alloy_smelter.findRecipe(16, [<minecraft:iron_ingot> * 1, <ore:ingotGraphite>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustIron>.firstItem * 1, <ore:ingotGraphite>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:iron_ingot> * 1, <ore:dustGraphite>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustIron>.firstItem * 1, <ore:dustGraphite>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:coal> * 2, <minecraft:iron_ingot> * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:coal> * 2, <ore:dustIron>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustCoal>.firstItem * 2, <minecraft:iron_ingot> * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustCoal>.firstItem * 2, <ore:dustIron>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:iron_ingot> * 2, <ore:dustCoke>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustIron>.firstItem * 2, <ore:dustCoke>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:iron_ingot> * 2, <ore:gemCoke>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustIron>.firstItem * 2, <ore:gemCoke>.firstItem * 1], null).remove();
+
+
