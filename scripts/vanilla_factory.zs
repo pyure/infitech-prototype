@@ -3,6 +3,10 @@
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.ActionResult;
 import mods.contenttweaker.Block;
+import mods.contenttweaker.IBlockAction;
+import mods.contenttweaker.World;
+import mods.contenttweaker.BlockPos;
+import mods.contenttweaker.BlockState;
 import mods.contenttweaker.Item;
 import crafttweaker.item.IItemStack;
 import mods.contenttweaker.IItemDestroySpeed;
@@ -44,3 +48,20 @@ item.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     return ActionResult.pass();
 };  
 item.register();
+
+var luna_dimension = 3; // May change, we've seen 2 in the past.  
+
+// Moon Soil.  Move to appropriate file when sober.
+var moonSoilBlock = VanillaFactory.createBlock("moon_soil", <blockmaterial:ground>);
+moonSoilBlock.setBlockHardness(0.5);
+moonSoilBlock.setBlockHardness(2.5);
+moonSoilBlock.setToolClass("shovel");
+moonSoilBlock.setToolLevel(0);
+moonSoilBlock.setFullBlock(false);
+moonSoilBlock.setBlockSoundType(<soundtype:ground>);
+moonSoilBlock.onRandomTick = function(world, blockPos, blockState) {
+    if (world.getDimension() != 3) {
+        world.setBlockState(<block:advancedrocketry:moonturf>, blockPos);
+    }
+};
+moonSoilBlock.register();
