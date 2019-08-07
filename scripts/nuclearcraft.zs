@@ -147,7 +147,6 @@ compressor.recipeBuilder()
 
 scripts.functions.disableItem(<nuclearcraft:manufactory_idle>);
 scripts.functions.disableItem(<nuclearcraft:alloy_furnace_idle>);
-scripts.functions.disableItem(<nuclearcraft:melter_idle>);
 scripts.functions.disableItem(<nuclearcraft:electrolyser_idle>);
 
 scripts.functions.disableItem(<nuclearcraft:ingot_former_idle>);
@@ -165,9 +164,7 @@ scripts.functions.disableItem(<nuclearcraft:nitrogen_collector_dense>);
 //Remove recipes from disabled machines
 mods.nuclearcraft.manufactory.removeAllRecipes();
 mods.nuclearcraft.alloy_furnace.removeAllRecipes();
-mods.nuclearcraft.melter.removeAllRecipes();
 mods.nuclearcraft.electrolyser.removeAllRecipes();
-
 mods.nuclearcraft.ingot_former.removeAllRecipes();
 mods.nuclearcraft.pressurizer.removeAllRecipes();
 mods.nuclearcraft.chemical_reactor.removeAllRecipes();
