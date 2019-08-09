@@ -293,3 +293,6 @@ assembler.recipeBuilder()
   .duration(140)
   .EUt(512)
   .buildAndRegister();  
+  
+// Thermite should allow Aluminium Dust (with an extra I)  
+recipes.addShapeless("it3_advancedrocketry_thermite", <advancedrocketry:thermite> * 3, [<ore:dustAluminium>, <ore:dustIron>, <ore:dustIron>]);

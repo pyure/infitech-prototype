@@ -5,6 +5,7 @@ contenttweaker.part.bee_comb=%s Comb
 contenttweaker.part.honey_drop=%s Drop
 contenttweaker.part.pollinated_ore=Pollinated %s Ore
 contenttweaker.part.pollen=%s Pollen
+contenttweaker.part.seed=%s Seed
 
 // MOLDS
 item.contenttweaker.sword_blade_mold.name=Sword Blade Mold
@@ -55,4 +56,4 @@ material.ammonia=Ammonia
 
 // BLOCKS
 tile.contenttweaker.cokebrick.name=Coke Oven Brick
-
+tile.contenttweaker.moon_soil.name=Moon Soil

@@ -1,11 +1,86 @@
 <Asteroids>
-	<asteroid name="Small Asteroid" distance="10" mass="100" massVariability="0.5" minLevel="0" probability="10" richness="0.2" richnessVariability="0.5">
-		<ore itemStack="minecraft:iron_ore" chance="15" />
-		<ore itemStack="minecraft:gold_ore" chance="10" />
-		<ore itemStack="minecraft:redstone_ore" chance="10" />
+  <asteroid name="Ultra Rare" distance="200" mass="1000" massVariability="0.3" minLevel="0" probability="1" richness="0.8" richnessVariability="0.75">
+    <ore itemStack="minecraft:iron_ore" chance="50" />
+    <ore itemStack="gregtech:ore_ilmenite_0 0" chance="40" />
+    <ore itemStack="gregtech:ore_rutile_0 0" chance="40" />
+    <ore itemStack="gregtech:ore_platinum_0 0" chance="25" />    
+    <ore itemStack="gregtech:ore_lithium_0 0" chance="15" />    
+    <ore itemStack="gregtech:ore_scheelite_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_pyrolusite_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_grossular_0 0" chance="10" />
+		<ore itemStack="gregtech:ore_iridium_0 0" chance="5" />
+    <ore itemStack="gregtech:ore_tungstate_0 0" chance="5" />   
+    <ore itemStack="gregtech:ore_osmium_0 0" chance="1" />   
+	</asteroid>       
+  <asteroid name="Rare" distance="200" mass="800" massVariability="0.3" minLevel="0" probability="3" richness="0.4" richnessVariability="0.75">
+    <ore itemStack="minecraft:iron_ore" chance="100" />
+    <ore itemStack="gregtech:ore_ilmenite_0 0" chance="40" />
+    <ore itemStack="gregtech:ore_rutile_0 0" chance="40" />
+    <ore itemStack="gregtech:ore_platinum_0 0" chance="25" />    
+    <ore itemStack="gregtech:ore_lithium_0 0" chance="15" />    
+    <ore itemStack="gregtech:ore_scheelite_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_pyrolusite_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_grossular_0 0" chance="10" />
+		<ore itemStack="gregtech:ore_iridium_0 0" chance="5" />
+    <ore itemStack="gregtech:ore_tungstate_0 0" chance="5" />   
+    <ore itemStack="gregtech:ore_osmium_0 0" chance="1" />    
+	</asteroid>    
+  <asteroid name="Exotic" distance="150" mass="1000" massVariability="0.3" minLevel="0" probability="8" richness="0.65" richnessVariability="0.75">
+    <ore itemStack="gregtech:ore_nether_quartz_0 0" chance="100" />
+    <ore itemStack="gregtech:ore_lapis_0 0" chance="20" />
+    <ore itemStack="gregtech:ore_saltpeter_0 0" chance="20" />    
+		<ore itemStack="gregtech:ore_chromite_0 0" chance="10" />
+    <ore itemStack="deepresonance:resonating_ore 0" chance="10" />
+    <ore itemStack="gregtech:ore_scheelite_0 0" chance="5" />
+    <ore itemStack="gregtech:ore_iridium_0 0" chance="2" />
+	</asteroid>  
+   <asteroid name="Radiating" distance="100" mass="1000" massVariability="0.3" minLevel="0" probability="10" richness="0.6" richnessVariability="0.75">
+    <ore itemStack="gregtech:ore_monazite_0 0" chance="50" />
+		<ore itemStack="gregtech:ore_uraninite_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_thorium_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_uranium_0 0" chance="5" />
+    <ore itemStack="gregtech:ore_naquadah_0 0" chance="1" />    
+    <ore itemStack="gregtech:ore_uranium235_0 0" chance="1" />
+	</asteroid>  
+	<asteroid name="Resonating" distance="60" mass="1200" massVariability="0.3" minLevel="0" probability="25" richness="0.6" richnessVariability="0.75">
+    <ore itemStack="gregtech:ore_redstone_0 0" chance="40" />    
+		<ore itemStack="deepresonance:resonating_ore 0" chance="20" />
+    <ore itemStack="appliedenergistics2:material 1" chance="10" />
 	</asteroid>
-	<asteroid name="Iridium Enriched asteroid" distance="100" mass="25" massVariability="0.5" minLevel="0" probability="0.75" richness="0.2" richnessVariability="0.3">
-		<ore itemStack="minecraft:iron_ore" chance="25" />
-		<ore itemStack="libvulpes:ore0 10" chance="5" />
+	<asteroid name="Sparkling" distance="90" mass="1200" massVariability="0.3" minLevel="0" probability="30" richness="0.7" richnessVariability="0.75">
+    <ore itemStack="gregtech:ore_quartzite_0 0" chance="40" />
+    <ore itemStack="gregtech:ore_ruby_0 0" chance="20" />    
+    <ore itemStack="gregtech:ore_sapphire_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_green_sapphire_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_garnet_red_0 0" chance="10" /> 
+		<ore itemStack="gregtech:ore_diamond_0 0" chance="5" />
+    <ore itemStack="gregtech:ore_emerald_0 0" chance="5" />    
+	</asteroid>    
+	<asteroid name="Heavy" distance="50" mass="2000" massVariability="0.3" minLevel="0" probability="60" richness="0.75" richnessVariability="0.75">
+    <ore itemStack="gregtech:ore_iron_0 0" chance="100" />
+    <ore itemStack="gregtech:ore_copper_0 0" chance="50" />
+    <ore itemStack="gregtech:ore_tin_0 0" chance="45" />   
+    <ore itemStack="gregtech:ore_molybdenite_0 0" chance="30" />
+    <ore itemStack="gregtech:ore_silver_0 0" chance="30" />
+    <ore itemStack="gregtech:ore_nickel_0 0" chance="25" />    
+    <ore itemStack="gregtech:ore_lead_0 0" chance="15" />    
+    <ore itemStack="gregtech:ore_redstone_0 0" chance="15" />    
+    <ore itemStack="gregtech:ore_gold_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_diamond_0 0" chance="7" />
+    <ore itemStack="gregtech:ore_coal_0 0" chance="7" />
+    <ore itemStack="gregtech:ore_stibnite_0 0" chance="2" />
 	</asteroid>
+	<asteroid name="Basic" distance="30" mass="2000" massVariability="0.3" minLevel="0" probability="500" richness="0.4" richnessVariability="0.75">
+    <ore itemStack="gregtech:ore_iron_0 0" chance="100" />
+    <ore itemStack="gregtech:ore_copper_0 0" chance="50" />
+    <ore itemStack="gregtech:ore_tin_0 0" chance="45" />    
+    <ore itemStack="gregtech:ore_silver_0 0" chance="30" />
+    <ore itemStack="gregtech:ore_nickel_0 0" chance="25" />    
+    <ore itemStack="gregtech:ore_lead_0 0" chance="15" />    
+    <ore itemStack="gregtech:ore_redstone_0 0" chance="15" />    
+    <ore itemStack="gregtech:ore_gold_0 0" chance="10" />
+    <ore itemStack="gregtech:ore_diamond_0 0" chance="7" />
+    <ore itemStack="gregtech:ore_coal_0 0" chance="7" />
+	</asteroid>    
 </Asteroids>
+

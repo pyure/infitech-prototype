@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemDefinition;
 import mods.gregtech.recipe.RecipeMap;
 
+val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
@@ -42,8 +43,6 @@ recipes.remove(<nuclearcraft:spaxelhoe_hard_carbon>);
 recipes.remove(<nuclearcraft:spaxelhoe_boron_nitride>);
 
 // GT Style block crafting
-
-
 var blockUranium = <nuclearcraft:ingot_block:4>;
 var blockBoron = <nuclearcraft:ingot_block:5>;
 var blockZirconium = <nuclearcraft:ingot_block:10>;
@@ -75,6 +74,30 @@ recipes.remove(<nuclearcraft:block_depleted_uranium>);
 recipes.remove(<nuclearcraft:block_depleted_thorium>);
 recipes.remove(<nuclearcraft:block_depleted_californium>);
 recipes.remove(<nuclearcraft:block_depleted_berkelium>);
+
+scripts.functions.disableItem(<nuclearcraft:manufactory_idle>);
+scripts.functions.disableItem(<nuclearcraft:alloy_furnace_idle>);
+scripts.functions.disableItem(<nuclearcraft:electrolyser_idle>);
+
+scripts.functions.disableItem(<nuclearcraft:ingot_former_idle>);
+scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
+scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
+scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
+scripts.functions.disableItem(<nuclearcraft:helium_collector>);
+scripts.functions.disableItem(<nuclearcraft:helium_collector_compact>);
+scripts.functions.disableItem(<nuclearcraft:helium_collector_dense>);
+scripts.functions.disableItem(<nuclearcraft:nitrogen_collector>);
+scripts.functions.disableItem(<nuclearcraft:nitrogen_collector_compact>);
+scripts.functions.disableItem(<nuclearcraft:nitrogen_collector_dense>);
+
+//Remove recipes from disabled machines
+mods.nuclearcraft.manufactory.removeAllRecipes();
+mods.nuclearcraft.alloy_furnace.removeAllRecipes();
+mods.nuclearcraft.electrolyser.removeAllRecipes();
+mods.nuclearcraft.ingot_former.removeAllRecipes();
+mods.nuclearcraft.pressurizer.removeAllRecipes();
+mods.nuclearcraft.chemical_reactor.removeAllRecipes();
+mods.nuclearcraft.extractor.removeAllRecipes();
 
 compressor.recipeBuilder()
 	.inputs(<ore:ingotUranium> * 9)
@@ -144,34 +167,8 @@ compressor.recipeBuilder()
   
   
 
-scripts.functions.disableItem(<nuclearcraft:manufactory_idle>);
-scripts.functions.disableItem(<nuclearcraft:alloy_furnace_idle>);
-scripts.functions.disableItem(<nuclearcraft:melter_idle>);
-scripts.functions.disableItem(<nuclearcraft:electrolyser_idle>);
 
-scripts.functions.disableItem(<nuclearcraft:ingot_former_idle>);
-scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
-scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
-scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
-scripts.functions.disableItem(<nuclearcraft:centrifuge_idle>);
-scripts.functions.disableItem(<nuclearcraft:helium_collector>);
-scripts.functions.disableItem(<nuclearcraft:helium_collector_compact>);
-scripts.functions.disableItem(<nuclearcraft:helium_collector_dense>);
-scripts.functions.disableItem(<nuclearcraft:nitrogen_collector>);
-scripts.functions.disableItem(<nuclearcraft:nitrogen_collector_compact>);
-scripts.functions.disableItem(<nuclearcraft:nitrogen_collector_dense>);
 
-//Remove recipes from disabled machines
-mods.nuclearcraft.manufactory.removeAllRecipes();
-mods.nuclearcraft.alloy_furnace.removeAllRecipes();
-mods.nuclearcraft.melter.removeAllRecipes();
-mods.nuclearcraft.electrolyser.removeAllRecipes();
-
-mods.nuclearcraft.ingot_former.removeAllRecipes();
-mods.nuclearcraft.pressurizer.removeAllRecipes();
-mods.nuclearcraft.chemical_reactor.removeAllRecipes();
-mods.nuclearcraft.extractor.removeAllRecipes();
-mods.nuclearcraft.centrifuge.removeAllRecipes();
 
 //Basic plating implosion compressor recipe
 recipes.remove(<nuclearcraft:part>);
@@ -461,3 +458,52 @@ fluid_canner.recipeBuilder()
     .duration(50)
     .EUt(42)
     .buildAndRegister();
+
+    
+// NC/GT Compat Steel: Disable it.  All of it.
+alloy_smelter.findRecipe(16, [<minecraft:iron_ingot> * 1, <ore:ingotGraphite>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustIron>.firstItem * 1, <ore:ingotGraphite>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:iron_ingot> * 1, <ore:dustGraphite>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustIron>.firstItem * 1, <ore:dustGraphite>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:coal> * 2, <minecraft:iron_ingot> * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:coal> * 2, <ore:dustIron>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustCoal>.firstItem * 2, <minecraft:iron_ingot> * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustCoal>.firstItem * 2, <ore:dustIron>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:iron_ingot> * 2, <ore:dustCoke>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustIron>.firstItem * 2, <ore:dustCoke>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<minecraft:iron_ingot> * 2, <ore:gemCoke>.firstItem * 1], null).remove();
+alloy_smelter.findRecipe(16, [<ore:dustIron>.firstItem * 2, <ore:gemCoke>.firstItem * 1], null).remove();
+
+// Disable Melter recipes that bypass GT gates (e.g. easy blast-furnace ingots) or bypass our in-house fuel processing (thorium, uranium)
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:oreUranium235>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:oreAluminium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustAluminium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustChrome>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustIridium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustNeodymium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustOsmium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustPalladium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:oreThorium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustThorium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:oreTitanium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustTungsten>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustVanadium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustYttrium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustKanthal>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustNichrome>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustUltimet>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustOsmiridium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustHssg>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustHsse>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustHsss>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:oreNaquadah>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustNaquadah>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustYtterbium>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:oreAluminum>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustAluminum>);
+mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium_fluoride> * 144);
+mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium_fluoride> * 144);
+mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium_fluoride_flibe> * 144);
+mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium_fluoride_flibe> * 144);
+mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium> * 144);
+mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium> * 144);

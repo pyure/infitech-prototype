@@ -139,7 +139,8 @@ var Cobblestone = MaterialSystem.getMaterialBuilder().setName('Cobblestone').set
 var Sandstone = MaterialSystem.getMaterialBuilder().setName('Sandstone').setColor(0xE4DEAA).build();
 var Clay = MaterialSystem.getMaterialBuilder().setName('Clay').setColor(0xC8C8DC).build();
 var Obsidian = MaterialSystem.getMaterialBuilder().setName('Obsidian').setColor(0x503264).build();
-
+var Helium = MaterialSystem.getMaterialBuilder().setName('Helium').setColor(0xA3A400).build();
+var Dilithium = MaterialSystem.getMaterialBuilder().setName('Dilithium').setColor(0xE2F5F5).build();
 
 var ore_byproducts_list = [Iridium,Bismuth,Lead,Gold,Copper,Silver,Zinc,Iron,Cobalt,Nickel,Platinum,Uranium,Uranium235,Beryllium,Naquadah,Coal,Neodymium,Sulfur,Aluminium,Quartzite,Pyrite,
 Salt,BandedIron,Sphalerite,Tin,Garnierite,Magnetite,Stibnite,Uraninite,Cassiterite,Cinnabar,Pentlandite,Phosphor,NetherQuartz,CertusQuartz,Phosphate,Pyrolusite,RockSalt,Molybdenite,Monazite,
@@ -156,7 +157,7 @@ var metal_list = [] as Material[];
 var honeydrop_material_list = [Mutagen] as Material[];
 var rod_material_list = [Cobblestone, Sandstone, Clay, Obsidian] as Material[];
 
-var pollen_material_list = [Lead,Emerald,Aluminium,Redstone,Tin,NetherQuartz,Platinum,Copper,Diamond,Gold,Lapis,Nickel,Iron,Iridium] as Material[];
+var pollen_material_list = [Lead,Emerald,Aluminium,Redstone,Tin,NetherQuartz,Platinum,Copper,Diamond,Gold,Lapis,Nickel,Iron,Iridium,Helium, Dilithium] as Material[];
 
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_crushed_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallCrushedOre").build();
 mods.contenttweaker.MaterialSystem.getPartBuilder().setName("small_purified_ore").setPartType(MaterialSystem.getPartType("item")).setOreDictName("smallPurifiedOre").build();

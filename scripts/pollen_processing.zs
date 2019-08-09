@@ -7,6 +7,7 @@ val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
 val mixer as RecipeMap = RecipeMap.getByName("mixer") as RecipeMap;
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor") as RecipeMap;
+val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 
 var pLead = <ore:pollenLead>;
 var pEmerald  = <ore:pollenEmerald>;
@@ -376,3 +377,7 @@ chemical_reactor.recipeBuilder().inputs([<ore:crushedYellowLimonite> * 1, combIr
 
 //Iridium
 chemical_reactor.recipeBuilder().inputs([<ore:crushedIridium> * 1, combIridium * 4]).fluidInputs([<liquid:liquid_pollen_iridium> * 1000]).outputs(<ore:crushedPurifiedIridium>.firstItem * pureOut).duration(120).EUt(30).buildAndRegister();
+
+
+// Heliopis
+centrifuge.recipeBuilder().inputs([<ore:pollenHelium> * 1]).fluidOutputs([<liquid:helium> * 10]).duration(40).EUt(12).buildAndRegister();

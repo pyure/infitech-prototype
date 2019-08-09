@@ -349,10 +349,24 @@ turfMoonCentrifuge.add(<advancedrocketry:moonturf_dark>);
 centrifuge.recipeBuilder()
     .inputs(<ore:turfMoonCentrifuge> * 1)
     .outputs(<minecraft:gravel> * 1)
-    .fluidOutputs(<liquid:helium> * 125)
+    .fluidOutputs(<liquid:helium> * 5)
     .duration(320)
     .EUt(30)
     .buildAndRegister();
+    
+centrifuge.recipeBuilder()
+    .fluidInputs(<liquid:concentrated_helium> * 1000)
+    .fluidOutputs(<liquid:helium> * 970, <liquid:helium3> * 30)
+    .duration(230)
+    .EUt(42)
+    .buildAndRegister();    
+    
+centrifuge.recipeBuilder()
+    .inputs(<ore:pollenDilithium> * 1)
+    .chancedOutput(<ore:crystalDilithium>.firstItem * 1 , 325, 200)
+    .duration(530)
+    .EUt(220)
+    .buildAndRegister();        
 	
 centrifuge.recipeBuilder()		//Saltpeter
 	.inputs(<ore:sand> * 4)
