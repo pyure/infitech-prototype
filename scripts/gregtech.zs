@@ -1019,5 +1019,12 @@ for entry in oreDict {
    <ore:allImpureDust>.addAll(entry);
   } else if entry.name.startsWith("dust") {   
    <ore:allRegularDust>.addAll(entry);
+  } else if entry.name.startsWith("crushedPurified") {
+   <ore:allPurifiedOre>.addAll(entry);
+  } else if entry.name.startsWith("crushedCentrifuged") {
+   <ore:allCentrifugedOre>.addAll(entry);
+  } else if entry.name.startsWith("crushed") {
+   <ore:allCrushedOre>.addAll(entry);
   }
+  
 }  
