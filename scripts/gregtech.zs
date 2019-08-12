@@ -244,17 +244,9 @@ val oreFuelRichUranium = <ore:fuelsDenseUranium>;
 val oreFuelMediumUranium = <ore:fuelsMediumUranium>;
 val oreFuelSparseUranium = <ore:fuelsSparseUranium>;
 
-oreFuelRichUranium.addAll(<ore:crushedCentrifugedUranium>);
-oreFuelRichUranium.addAll(<ore:crushedPurifiedUranium>);
-oreFuelRichUranium.addAll(<ore:crushedUranium>);
-
-oreFuelMediumUranium.addAll(<ore:crushedCentrifugedUraninite>);
-oreFuelMediumUranium.addAll(<ore:crushedPurifiedUraninite>);
-oreFuelMediumUranium.addAll(<ore:crushedUraninite>);
-
-oreFuelSparseUranium.addAll(<ore:crushedCentrifugedPitchblende>);
-oreFuelSparseUranium.addAll(<ore:crushedPurifiedPitchblende>);
-oreFuelSparseUranium.addAll(<ore:crushedPitchblende>);
+oreFuelRichUranium.addAll(<ore:dustRawUranium>);
+oreFuelMediumUranium.addAll(<ore:dustUraninite>);
+oreFuelSparseUranium.addAll(<ore:dustPitchblende>);
 
 // UF6 (Uranium Hexafluoride from Uranium-rich ores, plus traces of radon)
 chemical_reactor.recipeBuilder()
