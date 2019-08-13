@@ -522,14 +522,6 @@ assembler.recipeBuilder()
   .duration(200)
   .EUt(128)
   .buildAndRegister();
-
-assembler.recipeBuilder()
-  .inputs(<ore:plateBasic> * 4, <ore:plateGraphite> * 4)
-  .fluidInputs(<liquid:uranium_235> * 576)
-  .outputs(<nuclearcraft:rtg_uranium>)
-  .duration(200)
-  .EUt(128)
-  .buildAndRegister();
   
 assembler.recipeBuilder()
   .inputs(<ore:plateAdvanced> * 4, <ore:plateGraphite> * 4)
