@@ -4,10 +4,13 @@ import mods.gregtech.recipe.RecipeMap;
 
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
-val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
+val vacuum_freezer as RecipeMap = RecipeMap.getByName("vacuum_freezer");
+
 val packer as RecipeMap = RecipeMap.getByName("packer");
 
 // These are covered by GT meta tools
@@ -165,11 +168,6 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
   
-  
-
-
-
-
 //Basic plating implosion compressor recipe
 recipes.remove(<nuclearcraft:part>);
 val icompressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
@@ -546,3 +544,21 @@ assembler.recipeBuilder()
   .duration(200)
   .EUt(8192)
   .buildAndRegister();  
+  
+var basic_reactor_plate = <nuclearcraft:part>;
+
+vacuum_freezer.recipeBuilder()
+	.inputs(<contenttweaker:basic_reactor_plate_hot> * 1)
+	.fluidInputs(<liquid:liquidhelium> * 100)
+	.outputs(basic_reactor_plate * 1)
+	.duration(60)
+	.EUt(260)
+	.buildAndRegister();
+
+blast_furnace.recipeBuilder()
+	.inputs([<ore:plateSteel> * 1, <ore:ingotCarbon> * 1])
+	.outputs(<contenttweaker:basic_reactor_plate_hot>)
+	.property("temperature", 3200)
+	.duration(120)
+	.EUt(512)
+	.buildAndRegister();  

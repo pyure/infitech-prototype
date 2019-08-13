@@ -30,6 +30,9 @@ var grindy_comb = VanillaFactory.createItem("grindy_comb");
 grindy_comb.maxStackSize = 64;
 grindy_comb.register();
 
+var basic_reactor_plate_hot = VanillaFactory.createItem("basic_reactor_plate_hot");
+basic_reactor_plate_hot.maxStackSize = 64;
+basic_reactor_plate_hot.register();
 
 // Fire Bow
 var item = VanillaFactory.createItem("fire_bow");
