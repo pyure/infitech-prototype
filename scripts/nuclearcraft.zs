@@ -507,3 +507,50 @@ mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium_fluoride_flib
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium_fluoride_flibe> * 144);
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium> * 144);
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium> * 144);
+
+
+// RTGs
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_uranium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_americium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_plutonium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_californium");  
+
+assembler.recipeBuilder()
+  .inputs(<ore:plateBasic> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:uranium_235> * 576)
+  .outputs(<nuclearcraft:rtg_uranium>)
+  .duration(200)
+  .EUt(128)
+  .buildAndRegister();
+
+assembler.recipeBuilder()
+  .inputs(<ore:plateBasic> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:uranium_235> * 576)
+  .outputs(<nuclearcraft:rtg_uranium>)
+  .duration(200)
+  .EUt(128)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateAdvanced> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:americium_242> * 576)
+  .outputs(<nuclearcraft:rtg_americium>)
+  .duration(200)
+  .EUt(512)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateDU> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:plutonium_241> * 576)
+  .outputs(<nuclearcraft:rtg_plutonium>)
+  .duration(200)
+  .EUt(2048)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateElite> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:californium_249> * 576)
+  .outputs(<nuclearcraft:rtg_californium>)
+  .duration(200)
+  .EUt(8192)
+  .buildAndRegister();  
