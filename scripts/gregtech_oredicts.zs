@@ -41,4 +41,4 @@ for item in <ore:craftingToolMortar>.items{
 }
 
 /* Adds Nether Quartz Ore to oreNetherQuartz.  Probably breaks a pulverizer byproduct somewhere */
-<ore:oreNetherQuartz>.addAll(<ore:oreNetherNetherQuartz>);
+<ore:oreNetherQuartz>.addAll(<ore:oreNetherrackNetherQuartz>);
