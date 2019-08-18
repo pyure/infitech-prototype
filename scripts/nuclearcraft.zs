@@ -450,7 +450,7 @@ packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Conf
 // Helium Cooler
 var helium_cooler = <nuclearcraft:cooler:8>;
 fluid_canner.recipeBuilder() 
-    .fluidInputs(<liquid:helium>)
+    .fluidInputs(<liquid:helium> * 1000)
     .inputs(<nuclearcraft:cooler>)
     .outputs(helium_cooler * 1 )
     .duration(50)
