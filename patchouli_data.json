@@ -1,1 +1,30 @@
-{"bookGuiScale":0,"clickedVisualize":false,"bookData":{}}
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "patchouli:steves_guide_to_rock": {
+      "viewedEntries": [
+        "patchouli:general/ore_generation",
+        "patchouli:fluids/nitro_diesel",
+        "patchouli:fluids/diesel",
+        "patchouli:fluids/creosote",
+        "patchouli:ores/tin",
+        "patchouli:ores/diamond",
+        "patchouli:mag/iron",
+        "patchouli:ores/iron"
+      ],
+      "bookmarks": [],
+      "history": [
+        "patchouli:mag/iron",
+        "patchouli:ores/iron",
+        "patchouli:fluids/diesel",
+        "patchouli:ores/diamond",
+        "patchouli:ores/tin",
+        "patchouli:fluids/creosote",
+        "patchouli:fluids/nitro_diesel",
+        "patchouli:general/ore_generation"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}
