@@ -885,7 +885,7 @@ recipes.addShaped("it3_ae2_pattern", Pattern, [
 recipes.addShapeless("it3_ae2_capac_card", capacity_card, [basic_card, StorageComponent1K, StorageComponent1K, ChCertusQuartz]);
 
 // --- Crafting Card
-recipes.addShapeless("it3_ae2_craft_card", <appliedenergistics2:material:53>, [basic_card, StorageComponent1K, StorageComponent1K, <ore:craftingWorkBench>]);
+recipes.addShapeless("it3_ae2_craft_card", <appliedenergistics2:material:53>, [basic_card, StorageComponent1K, StorageComponent1K, <ore:workbench>]);
 
 // --- Redstone Card
 recipes.addShapeless("it3_ae2_redstone_card", <appliedenergistics2:material:26>, [basic_card, <ore:craftingRedstoneTorch>, <ore:craftingRedstoneTorch>, CalcProc]);

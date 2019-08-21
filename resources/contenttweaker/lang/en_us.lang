@@ -19,6 +19,7 @@ contenttweaker.part.small_crushed_ore=Small Crushed %s Ore
 
 item.contenttweaker.fire_bow.name=Fire Bow
 item.contenttweaker.grindy_comb.name=Grindy Comb
+item.contenttweaker.basic_reactor_plate_hot.name=Hot Basic Plating
 
 item.contenttweaker.cluster_cobalt.name=Native Cobalt Cluster
 item.contenttweaker.cluster_platinum.name=Native Platinum Cluster

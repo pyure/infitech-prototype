@@ -1,13 +1,13 @@
 {
-  "weight": 46,
+  "weight": 0,
   "density": 1.0,
   "max_height": 60,
   "min_height": 30,
   "priority": -100,
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 14,
-    "advancedrocketry:MoonDark": 25
+    "advancedrocketry:Moon": 60,
+    "advancedrocketry:MoonDark": 71
   },
   "count_as_vein": false,
   "generation_predicate": "any",

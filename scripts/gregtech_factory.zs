@@ -108,6 +108,11 @@ val liquidPollenIridium = MaterialRegistry.createFluidMaterial(819, "liquid_poll
 val concentrated_helium = MaterialRegistry.createFluidMaterial(820, "concentrated_helium", 0xA3A400, "FLUID");
 concentrated_helium.addFlags(["GENERATE_FLUID_BLOCK"]);
 
+#Raw Uranium, as opposed to U238 Ore
+val materialUranium = MaterialRegistry.createDustMaterial(821, "raw_uranium", 0x39F060, "dull", 0, null);
+materialUranium.addFlags(["DISABLE_DECOMPOSITION"]);
+materialUranium.addFlags(["GENERATE_ORE"]);
+
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);
 <material:quartzite>.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_GEAR"]);

@@ -4,10 +4,13 @@ import mods.gregtech.recipe.RecipeMap;
 
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
-val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
+val vacuum_freezer as RecipeMap = RecipeMap.getByName("vacuum_freezer");
+
 val packer as RecipeMap = RecipeMap.getByName("packer");
 
 // These are covered by GT meta tools
@@ -165,11 +168,6 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
   
-  
-
-
-
-
 //Basic plating implosion compressor recipe
 recipes.remove(<nuclearcraft:part>);
 val icompressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
@@ -452,7 +450,7 @@ packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Conf
 // Helium Cooler
 var helium_cooler = <nuclearcraft:cooler:8>;
 fluid_canner.recipeBuilder() 
-    .fluidInputs(<liquid:helium>)
+    .fluidInputs(<liquid:helium> * 1000)
     .inputs(<nuclearcraft:cooler>)
     .outputs(helium_cooler * 1 )
     .duration(50)
@@ -507,3 +505,60 @@ mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium_fluoride_flib
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium_fluoride_flibe> * 144);
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium> * 144);
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium> * 144);
+
+
+// RTGs
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_uranium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_americium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_plutonium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_californium");  
+
+assembler.recipeBuilder()
+  .inputs(<ore:plateBasic> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:uranium_235> * 576)
+  .outputs(<nuclearcraft:rtg_uranium>)
+  .duration(200)
+  .EUt(128)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateAdvanced> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:americium_242> * 576)
+  .outputs(<nuclearcraft:rtg_americium>)
+  .duration(200)
+  .EUt(512)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateDU> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:plutonium_241> * 576)
+  .outputs(<nuclearcraft:rtg_plutonium>)
+  .duration(200)
+  .EUt(2048)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateElite> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:californium_249> * 576)
+  .outputs(<nuclearcraft:rtg_californium>)
+  .duration(200)
+  .EUt(8192)
+  .buildAndRegister();  
+  
+var basic_reactor_plate = <nuclearcraft:part>;
+
+vacuum_freezer.recipeBuilder()
+	.inputs(<contenttweaker:basic_reactor_plate_hot> * 1)
+	.fluidInputs(<liquid:liquidhelium> * 100)
+	.outputs(basic_reactor_plate * 1)
+	.duration(60)
+	.EUt(260)
+	.buildAndRegister();
+
+blast_furnace.recipeBuilder()
+	.inputs([<ore:plateSteel> * 1, <ore:ingotCarbon> * 1])
+	.outputs(<contenttweaker:basic_reactor_plate_hot>)
+	.property("temperature", 3200)
+	.duration(120)
+	.EUt(512)
+	.buildAndRegister();  
