@@ -50,7 +50,7 @@ var sealBlockBreaker = <thaumcraft:seal:12>;
 
 /* REMINDER for research names: You can type /thaumcraft research list, to get a list of all the names (it gets dumped to log)
 You can also open the thaumcraft .jar and look at the files in \assets\thaumcraft\research, which I found to be easier to search through */
-
+// Instability, 4th parameter, appears to be 1-10.  1 negligible, 10 dangerous.
 //mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
 
 mods.thaumcraft.Infusion.removeRecipe(sealBlockBreaker);
@@ -63,6 +63,25 @@ mods.thaumcraft.Infusion.registerRecipe(
   sealBlank, 
   [<ore:toolHeadShovelDiamond>, <ore:toolHeadAxeDiamond>, <ore:toolHeadPickaxeDiamond>]);
   
+var arcaneBore = <thaumcraft:turret:2>;  
+var automatedTurret = <thaumcraft:turret>;
+var greatwoodPlank = <thaumcraft:plank_greatwood>;
+var complexMechanism = <thaumcraft:mechanism_complex>;
+var brassPlate = <ore:plateBrass>;
+var rareEarths = <thaumcraft:nugget:10>;
+var morphicResonator = <thaumcraft:morphic_resonator>;
+var diamondPickaxe = <gregtech:meta_tool:2>.withTag({"GT.ToolStats": {Material: "diamond"}});
+var diamondShovel = <gregtech:meta_tool:1>.withTag({"GT.ToolStats": {Material: "diamond"}});
+
+mods.thaumcraft.Infusion.removeRecipe(arcaneBore);
+mods.thaumcraft.Infusion.registerRecipe(
+  "it3_arcane_bore", 
+  "ARCANEBORE", 
+  arcaneBore, 
+  5, 
+  [<aspect:machina> * 100, <aspect:motus> * 25, <aspect:potentia> * 25, <aspect:terra> * 25, <aspect:vacuos> * 25], 
+  automatedTurret, 
+  [diamondPickaxe, diamondShovel, greatwoodPlank, greatwoodPlank, complexMechanism, brassPlate, rareEarths, morphicResonator]);
 <thaumcraft:thaumonomicon>.addTooltip(format.aqua("Some recipes may be removed from this tome.  See JEI."));
 
 // Tweak Vis Generator to be a bit later-game
