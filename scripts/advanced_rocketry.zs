@@ -17,6 +17,12 @@ var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
 var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
 
+var advancedRocketryDrill = <advancedrocketry:drill>;
+var diamondDrillHead = <ore:toolHeadDrillDiamond>;
+
+recipes.remove(advancedRocketryDrill);
+recipes.addShapeless("advancedrocketry_drill", advancedRocketryDrill, [<libvulpes:structuremachine>, diamondDrillHead]);
+
 recipes.remove(<libvulpes:structuremachine> * 16);
 recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, 
 [

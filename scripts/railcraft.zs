@@ -288,7 +288,11 @@ for i in 0 to 15 {
     .duration(24)
     .EUt(12)
     .buildAndRegister();
-    
-
-
 }
+
+// Fix Railcraft's tungstensteel
+recipes.removeByRecipeName("railcraft:rail_tungsten_steel");
+recipes.addShaped("it3_railcraft_rail_tungsten_steel", <railcraft:rail> * 48, 
+	[[<ore:ingotTungstenSteel>, null, <ore:ingotTungstenSteel>], 
+	[<ore:ingotTungstenSteel>, null, <ore:ingotTungstenSteel>], 
+	[<ore:ingotTungstenSteel>, null, <ore:ingotTungstenSteel>]]);

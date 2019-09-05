@@ -307,7 +307,7 @@ chemical_reactor.recipeBuilder().inputs([<ore:crushedSilver> * 1, combLead * 4])
 
 //Emerald
 chemical_reactor.recipeBuilder().inputs([<ore:crushedBeryllium> * 1, combEmerald * 4]).fluidInputs([<liquid:liquid_pollen_emerald> * 1000]).outputs(<ore:crushedPurifiedBeryllium>.firstItem * pureOut).duration(120).EUt(30).buildAndRegister();
-chemical_reactor.recipeBuilder().inputs([<ore:crushedBeryllium> * 1, combEmerald * 4]).fluidInputs([<liquid:liquid_pollen_emerald> * 1000]).outputs(<ore:crushedPurifiedBeryllium>.firstItem * pureOut).duration(120).EUt(30).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<ore:crushedEmerald> * 1, combEmerald * 4]).fluidInputs([<liquid:liquid_pollen_emerald> * 1000]).outputs(<ore:crushedPurifiedEmerald>.firstItem * pureOut).duration(120).EUt(30).buildAndRegister();
 chemical_reactor.recipeBuilder().inputs([<ore:crushedThorium> * 1, combEmerald * 4]).fluidInputs([<liquid:liquid_pollen_emerald> * 1000]).outputs(<ore:crushedPurifiedThorium>.firstItem * pureOut).duration(120).EUt(30).buildAndRegister();
 
 //Aluminium

@@ -21,6 +21,61 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="true">
+	<Recipe timeRequired="100" power="400">
+		<input>
+			<oreDict>stickNetherQuartz 2</oreDict>
+			<itemStack>appliedenergistics2:material 1 12</itemStack> 	<!-->Pure Fluix Crystal<!-->
+			<itemStack>appliedenergistics2:material 2 22</itemStack>	<!-->Logic Processor<!-->
+			<fluidStack>helium3 50</fluidStack>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 44</itemStack> <!-->Annihilation Core<!-->
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="800">
+		<input>
+			<oreDict>stickCertusQuartz 2</oreDict>
+			<itemStack>appliedenergistics2:material 1 12</itemStack> 	<!-->Pure Fluix Crystal<!-->
+			<itemStack>appliedenergistics2:material 2 22</itemStack>	<!-->Logic Processor<!-->
+			<fluidStack>helium3 50</fluidStack>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 43</itemStack> <!-->Formation Core<!-->
+		</output>
+	</Recipe>	
+	<Recipe timeRequired="120" power="800">
+		<input>
+			<oreDict>platePlatinum 2</oreDict>
+			<oreDict>plateAluminium 2</oreDict>
+			<itemStack>appliedenergistics2:material 1 23</itemStack>	<!-->Calculation Processor<!-->
+			<fluidStack>helium3 25</fluidStack>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 28</itemStack> <!-->Advanced Card<!-->
+		</output>
+	</Recipe>	
+	<Recipe timeRequired="80" power="800">
+		<input>
+			<oreDict>circuitBasic 3</oreDict>
+			<oreDict>dustFluix 3</oreDict>
+			<itemStack>appliedenergistics2:material 1 22</itemStack>	<!-->Logic Processor<!-->
+			<fluidStack>helium3 50</fluidStack>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 35</itemStack> <!-->1K Storage component<!-->
+		</output>
+	</Recipe>	
+	<Recipe timeRequired="80" power="800">
+		<input>
+			<oreDict>circuitBasic 3</oreDict>
+			<itemStack>gregtech:meta_item_1 3 32762</itemStack> <!-->Empty Cell<!-->
+			<itemStack>appliedenergistics2:material 1 22</itemStack>	<!-->Logic Processor<!-->
+			<fluidStack>helium3 50</fluidStack>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 54</itemStack> <!-->1K Fluid Storage component<!-->
+		</output>
+	</Recipe>
 	<Recipe timeRequired="900" power ="100">
 		<input>
 			<oreDict>ingotGold</oreDict>
