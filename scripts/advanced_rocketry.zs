@@ -10,12 +10,19 @@ val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 val extruder = mods.gregtech.recipe.RecipeMap.getByName("extruder");
 val lathe = mods.gregtech.recipe.RecipeMap.getByName("lathe");
 val metal_bender = mods.gregtech.recipe.RecipeMap.getByName("metal_bender");
+val macerator as RecipeMap = RecipeMap.getByName("macerator");
 var basicMachineStructure = <libvulpes:structuremachine>;
 var advancedMachineStructure = <libvulpes:advstructuremachine>;
 
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
 var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
+
+var advancedRocketryDrill = <advancedrocketry:drill>;
+var diamondDrillHead = <ore:toolHeadDrillDiamond>;
+
+recipes.remove(advancedRocketryDrill);
+recipes.addShapeless("advancedrocketry_drill", advancedRocketryDrill, [<libvulpes:structuremachine>, diamondDrillHead]);
 
 recipes.remove(<libvulpes:structuremachine> * 16);
 recipes.addShaped("it3_libvulpes_structure", <libvulpes:structuremachine> * 2, 
@@ -296,3 +303,11 @@ assembler.recipeBuilder()
   
 // Thermite should allow Aluminium Dust (with an extra I)  
 recipes.addShapeless("it3_advancedrocketry_thermite", <advancedrocketry:thermite> * 3, [<ore:dustAluminium>, <ore:dustIron>, <ore:dustIron>]);
+
+//Dilithium crystals can't be smashed by default for some reason
+macerator.recipeBuilder()		
+	.inputs(<ore:crystalDilithium> * 1)
+	.outputs([<ore:dustDilithium>.firstItem *1])
+	.duration(30)
+	.EUt(8)
+	.buildAndRegister();

@@ -1,7 +1,6 @@
 /* 
 At the time of writing, GT tool oredicts incorporate nbt making them tricky to use in custom recipes.
 Attempts to clean the existing oredicts were unsuccessful, so instead we create our own custom oredicts.
-
 */
 
 // Clean the Crafting Tool Oredicts
@@ -40,3 +39,6 @@ for item in <ore:craftingToolScoop>.items{
 for item in <ore:craftingToolMortar>.items{
     <ore:craftingToolMortarEmptyTag>.add(item.withEmptyTag());
 }
+
+/* Adds Nether Quartz Ore to oreNetherQuartz.  Probably breaks a pulverizer byproduct somewhere */
+<ore:oreNetherQuartz>.addAll(<ore:oreNetherrackNetherQuartz>);

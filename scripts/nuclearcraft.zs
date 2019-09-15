@@ -4,10 +4,13 @@ import mods.gregtech.recipe.RecipeMap;
 
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
-val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
+val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
+val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner") as RecipeMap;
+val vacuum_freezer as RecipeMap = RecipeMap.getByName("vacuum_freezer");
+
 val packer as RecipeMap = RecipeMap.getByName("packer");
 
 // These are covered by GT meta tools
@@ -81,7 +84,6 @@ scripts.functions.disableItem(<nuclearcraft:electrolyser_idle>);
 
 scripts.functions.disableItem(<nuclearcraft:ingot_former_idle>);
 scripts.functions.disableItem(<nuclearcraft:pressurizer_idle>);
-scripts.functions.disableItem(<nuclearcraft:chemical_reactor_idle>);
 scripts.functions.disableItem(<nuclearcraft:extractor_idle>);
 scripts.functions.disableItem(<nuclearcraft:helium_collector>);
 scripts.functions.disableItem(<nuclearcraft:helium_collector_compact>);
@@ -165,11 +167,6 @@ compressor.recipeBuilder()
 	.duration(400).EUt(2)
 	.buildAndRegister();
   
-  
-
-
-
-
 //Basic plating implosion compressor recipe
 recipes.remove(<nuclearcraft:part>);
 val icompressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
@@ -452,7 +449,7 @@ packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Conf
 // Helium Cooler
 var helium_cooler = <nuclearcraft:cooler:8>;
 fluid_canner.recipeBuilder() 
-    .fluidInputs(<liquid:helium>)
+    .fluidInputs(<liquid:helium> * 1000)
     .inputs(<nuclearcraft:cooler>)
     .outputs(helium_cooler * 1 )
     .duration(50)
@@ -507,3 +504,176 @@ mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium_fluoride_flib
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium_fluoride_flibe> * 144);
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:thorium> * 144);
 mods.nuclearcraft.centrifuge.removeRecipeWithInput(<liquid:uranium> * 144);
+
+
+// RTGs
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_uranium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_americium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_plutonium");  
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.rtg_californium");  
+
+assembler.recipeBuilder()
+  .inputs(<ore:plateBasic> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:uranium_235> * 576)
+  .outputs(<nuclearcraft:rtg_uranium>)
+  .duration(200)
+  .EUt(128)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateAdvanced> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:americium_242> * 576)
+  .outputs(<nuclearcraft:rtg_americium>)
+  .duration(200)
+  .EUt(512)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateDU> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:plutonium_241> * 576)
+  .outputs(<nuclearcraft:rtg_plutonium>)
+  .duration(200)
+  .EUt(2048)
+  .buildAndRegister();
+  
+assembler.recipeBuilder()
+  .inputs(<ore:plateElite> * 4, <ore:plateGraphite> * 4)
+  .fluidInputs(<liquid:californium_249> * 576)
+  .outputs(<nuclearcraft:rtg_californium>)
+  .duration(200)
+  .EUt(8192)
+  .buildAndRegister();  
+  
+var basic_reactor_plate = <nuclearcraft:part>;
+
+vacuum_freezer.recipeBuilder()
+	.inputs(<contenttweaker:basic_reactor_plate_hot> * 1)
+	.fluidInputs(<liquid:liquidhelium> * 100)
+	.outputs(basic_reactor_plate * 1)
+	.duration(60)
+	.EUt(260)
+	.buildAndRegister();
+
+blast_furnace.recipeBuilder()
+	.inputs([<ore:plateSteel> * 1, <ore:ingotCarbon> * 1])
+	.outputs(<contenttweaker:basic_reactor_plate_hot>)
+	.property("temperature", 3200)
+	.duration(120)
+	.EUt(512)
+	.buildAndRegister();  
+	
+// Add back Molten Fluoride recipes, they were removed via remove-all above
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:lithium7> * 144, <liquid:fluorine> * 500, <liquid:lif> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:beryllium> * 144, <liquid:fluorine> * 1000, <liquid:bef2> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:oxygen> * 1000, <liquid:fluorine> * 2000, <liquid:oxygen_difluoride> * 2000, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:thorium> * 144, <liquid:fluorine> * 1000, <liquid:thorium_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:uranium> * 144, <liquid:fluorine> * 1000, <liquid:uranium_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:plutonium> * 144, <liquid:fluorine> * 1000, <liquid:plutonium_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:thorium_230> * 144, <liquid:fluorine> * 1000, <liquid:thorium_230_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:uranium_233> * 144, <liquid:fluorine> * 1000, <liquid:uranium_233_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:uranium_235> * 144, <liquid:fluorine> * 1000, <liquid:uranium_235_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:uranium_238> * 144, <liquid:fluorine> * 1000, <liquid:uranium_238_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:neptunium_236> * 144, <liquid:fluorine> * 1000, <liquid:neptunium_236_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:neptunium_237> * 144, <liquid:fluorine> * 1000, <liquid:neptunium_237_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:plutonium_238> * 144, <liquid:fluorine> * 1000, <liquid:plutonium_238_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:plutonium_239> * 144, <liquid:fluorine> * 1000, <liquid:plutonium_239_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:plutonium_241> * 144, <liquid:fluorine> * 1000, <liquid:plutonium_241_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:plutonium_242> * 144, <liquid:fluorine> * 1000, <liquid:plutonium_242_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:americium_241> * 144, <liquid:fluorine> * 1000, <liquid:americium_241_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:americium_242> * 144, <liquid:fluorine> * 1000, <liquid:americium_242_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:americium_243> * 144, <liquid:fluorine> * 1000, <liquid:americium_243_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:curium_243> * 144, <liquid:fluorine> * 1000, <liquid:curium_243_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:curium_245> * 144, <liquid:fluorine> * 1000, <liquid:curium_245_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:curium_246> * 144, <liquid:fluorine> * 1000, <liquid:curium_246_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:curium_247> * 144, <liquid:fluorine> * 1000, <liquid:curium_247_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:berkelium_247> * 144, <liquid:fluorine> * 1000, <liquid:berkelium_247_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:berkelium_248> * 144, <liquid:fluorine> * 1000, <liquid:berkelium_248_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:californium_249> * 144, <liquid:fluorine> * 1000, <liquid:californium_249_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:californium_250> * 144, <liquid:fluorine> * 1000, <liquid:californium_250_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:californium_251> * 144, <liquid:fluorine> * 1000, <liquid:californium_251_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:californium_252> * 144, <liquid:fluorine> * 1000, <liquid:californium_252_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_tbu> * 144, <liquid:fluorine> * 1000, <liquid:fuel_tbu_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_leu_233> * 144, <liquid:fluorine> * 1000, <liquid:fuel_leu_233_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_heu_233> * 144, <liquid:fluorine> * 1000, <liquid:fuel_heu_233_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_leu_235> * 144, <liquid:fluorine> * 1000, <liquid:fuel_leu_235_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_heu_235> * 144, <liquid:fluorine> * 1000, <liquid:fuel_heu_235_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_len_236> * 144, <liquid:fluorine> * 1000, <liquid:fuel_len_236_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hen_236> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hen_236_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_lep_239> * 144, <liquid:fluorine> * 1000, <liquid:fuel_lep_239_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hep_239> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hep_239_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_lep_241> * 144, <liquid:fluorine> * 1000, <liquid:fuel_lep_241_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hep_241> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hep_241_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_lea_242> * 144, <liquid:fluorine> * 1000, <liquid:fuel_lea_242_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hea_242> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hea_242_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_lecm_243> * 144, <liquid:fluorine> * 1000, <liquid:fuel_lecm_243_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hecm_243> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hecm_243_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_lecm_245> * 144, <liquid:fluorine> * 1000, <liquid:fuel_lecm_245_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hecm_245> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hecm_245_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_lecm_247> * 144, <liquid:fluorine> * 1000, <liquid:fuel_lecm_247_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hecm_247> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hecm_247_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_leb_248> * 144, <liquid:fluorine> * 1000, <liquid:fuel_leb_248_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_heb_248> * 144, <liquid:fluorine> * 1000, <liquid:fuel_heb_248_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_lecf_249> * 144, <liquid:fluorine> * 1000, <liquid:fuel_lecf_249_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hecf_249> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hecf_249_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_lecf_251> * 144, <liquid:fluorine> * 1000, <liquid:fuel_lecf_251_fluoride> * 144, null, 1, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fuel_hecf_251> * 144, <liquid:fluorine> * 1000, <liquid:fuel_hecf_251_fluoride> * 144, null, 1, 0.5]);
+
+// Same as last, except with GT
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:lithium7> * 144,  <liquid:fluorine> * 500]).fluidOutputs([<liquid:lif> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:beryllium> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:bef2> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:oxygen> * 1000,  <liquid:fluorine> * 2000]).fluidOutputs([<liquid:oxygen_difluoride> * 2000]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:thorium> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:thorium_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:uranium> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:uranium_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:plutonium> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:plutonium_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:thorium_230> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:thorium_230_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:uranium_233> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:uranium_233_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:uranium_235> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:uranium_235_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:uranium_238> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:uranium_238_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:neptunium_236> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:neptunium_236_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:neptunium_237> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:neptunium_237_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:plutonium_238> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:plutonium_238_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:plutonium_239> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:plutonium_239_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:plutonium_241> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:plutonium_241_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:plutonium_242> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:plutonium_242_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:americium_241> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:americium_241_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:americium_242> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:americium_242_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:americium_243> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:americium_243_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:curium_243> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:curium_243_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:curium_245> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:curium_245_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:curium_246> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:curium_246_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:curium_247> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:curium_247_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:berkelium_247> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:berkelium_247_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:berkelium_248> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:berkelium_248_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:californium_249> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:californium_249_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:californium_250> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:californium_250_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:californium_251> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:californium_251_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:californium_252> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:californium_252_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_tbu> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_tbu_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_leu_233> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_leu_233_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_heu_233> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_heu_233_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_leu_235> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_leu_235_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_heu_235> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_heu_235_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_len_236> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_len_236_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hen_236> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hen_236_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_lep_239> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_lep_239_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hep_239> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hep_239_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_lep_241> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_lep_241_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hep_241> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hep_241_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_lea_242> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_lea_242_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hea_242> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hea_242_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_lecm_243> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_lecm_243_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hecm_243> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hecm_243_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_lecm_245> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_lecm_245_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hecm_245> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hecm_245_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_lecm_247> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_lecm_247_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hecm_247> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hecm_247_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_leb_248> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_leb_248_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_heb_248> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_heb_248_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_lecf_249> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_lecf_249_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hecf_249> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hecf_249_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_lecf_251> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_lecf_251_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hecf_251> * 144,  <liquid:fluorine> * 1000]).fluidOutputs([<liquid:fuel_hecf_251_fluoride> * 144]).duration(20).EUt(45).buildAndRegister();
+
+// Add NC and GT recipe for calcium sulfate solution 
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fluorite_water> * 666, <liquid:sulfuric_acid> * 1000, <liquid:hydrofluoric_acid> * 2000, <liquid:calcium_sulfate_solution> * 666, 4.5, 4.0]);
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:fluorite_water> * 666, <liquid:sulfuric_acid> * 1000]).fluidOutputs([<liquid:hydrofluoric_acid> * 2000, <liquid:calcium_sulfate_solution> * 666]).duration(20).EUt(130).buildAndRegister();
