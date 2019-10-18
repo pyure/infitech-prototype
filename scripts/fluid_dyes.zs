@@ -107,5 +107,24 @@ for j, b in itemDyes {
         .duration(8)
         .EUt(8)
         .buildAndRegister();
+		
+	val carpetDef = (<minecraft:carpet>.definition as IItemDefinition).makeStack(15-j);
+
+    chemical_bath.recipeBuilder()
+        .fluidInputs([chemDyes[j] * 72])
+        .inputs([<minecraft:carpet:0>])
+        .outputs([carpetDef])
+        .duration(8)
+        .EUt(8)
+        .buildAndRegister();
+
+    chemical_bath.recipeBuilder()
+        .fluidInputs([waterDyes[j] * 144])
+        .inputs([<minecraft:carpet:0>])
+        .outputs([carpetDef])
+        .duration(8)
+        .EUt(8)
+        .buildAndRegister();
+
 
 }
