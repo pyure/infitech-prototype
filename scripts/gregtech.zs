@@ -355,7 +355,7 @@ centrifuge.recipeBuilder()
     
 centrifuge.recipeBuilder()
     .inputs(<ore:pollenDilithium> * 1)
-    .chancedOutput(<ore:crystalDilithium>.firstItem * 1 , 325, 200)
+    .chancedOutput(<ore:gemDilithium>.firstItem * 1 , 325, 200)
     .duration(530)
     .EUt(220)
     .buildAndRegister();        
