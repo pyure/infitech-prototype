@@ -291,13 +291,6 @@ The crude thorium hydroxide precipitate is then dissolved in nitric acid for fin
 ThO2 + Hydrogen (2000) + Fluorine (100) -> Chemical Reactor -> NC Thorium Dust + Oxygen (1000) + Water (3000)
 */
 
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:dustSodiumHydroxide> * 1)
-	.fluidInputs(<liquid:water> * 1000)
-	.fluidOutputs(<liquid:sodium_hydroxide_solution> * 1000)  
-	.duration(200)
-	.EUt(14)
-	.buildAndRegister();
 
 chemical_bath.recipeBuilder()
 	.inputs(<ore:crushedPurifiedMonazite> * 10)

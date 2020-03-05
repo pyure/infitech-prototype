@@ -895,6 +895,22 @@ mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:creosote> * 750]).remov
 mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:seed.oil> * 750]).remove();
 
 mixer.recipeBuilder()
+	.inputs(<ore:dustTalc> * 1)
+	.fluidInputs([<liquid:oil_medium> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();    
+	
+mixer.recipeBuilder()
+	.inputs(<ore:dustSoapstone> * 1)
+	.fluidInputs([<liquid:oil_medium> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();    	
+	
+mixer.recipeBuilder()
 	.inputs(<minecraft:redstone> * 10)
 	.fluidInputs([<liquid:oil> * 750])
 	.fluidOutputs(<liquid:lubricant> * 750)
