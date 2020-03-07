@@ -66,6 +66,9 @@ ingotIronCompressed.addAll(ingotCompressedIron);
 // Remove everything from refinery
 mods.pneumaticcraft.refinery.removeAllRecipes();
 
+// Allow shapeless-empying a refinery
+recipes.addShapeless("it3_empty_pc_refinery", <pneumaticcraft:refinery>, [<pneumaticcraft:refinery>]);
+
 // Add our oil recipes
 // Current setup is dumb.  Need to make 2-refineries and 3-refineries useful.
 //mods.pneumaticcraft.refinery.addRecipe(int minimumTemperature, ILiquidStack input, ILiquidStack[] outputs);
