@@ -263,4 +263,16 @@
 			<itemStack>advancedrocketry:beaconfinder</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="520" power ="1">
+		<input>
+			<itemStack>gregtech:meta_item_2 1 32443</itemStack> <!-->Coated Circuit Board<!-->
+			<itemStack>gregtech:meta_item_2 2 32455</itemStack> <!-->Resistor<!-->
+			<oreDict>plateSteel 1</oreDict>
+			<oreDict>circuitPrimitive 1</oreDict>
+			<oreDict>cableGtSingleRedAlloy 2</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_2 1 32487</itemStack> <!-->Basic Circuit<!-->
+		</output>
+	</Recipe>	
 </Recipes>
