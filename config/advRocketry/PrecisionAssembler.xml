@@ -263,7 +263,7 @@
 			<itemStack>advancedrocketry:beaconfinder</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="520" power ="1">
+	<Recipe timeRequired="520" power ="46">
 		<input>
 			<itemStack>gregtech:meta_item_2 1 32443</itemStack> <!-->Coated Circuit Board<!-->
 			<itemStack>gregtech:meta_item_2 2 32455</itemStack> <!-->Resistor<!-->
@@ -275,4 +275,16 @@
 			<itemStack>gregtech:meta_item_2 1 32487</itemStack> <!-->Basic Circuit<!-->
 		</output>
 	</Recipe>	
+	<Recipe timeRequired="520" power ="94">
+		<input>
+			<itemStack>gregtech:meta_item_2 1 32451</itemStack> <!-->Diode<!-->
+			<itemStack>gregtech:meta_item_2 3 32487</itemStack> <!-->Basic Circuit<!-->
+			<oreDict>cableGtSingleRedAlloy 2</oreDict>
+			<oreDict>plateSteel 2</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_2 1 32489</itemStack> <!-->Good Circuit<!-->
+		</output>
+	</Recipe>	
+
 </Recipes>
