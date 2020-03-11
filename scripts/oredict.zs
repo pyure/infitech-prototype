@@ -16,6 +16,11 @@ var dustSignalumGt = <ore:dustSignalumGt>;
 var dustSaltpeterGt = <ore:dustSaltpeterGt>;
 var fuelCoke = <ore:fuelCoke>;
 
+// Any Quartz
+<ore:craftingQuartz>.addAll(<ore:gemQuartzite>);
+<ore:craftingQuartz>.addAll(<ore:gemCertusQuartz>);
+<ore:craftingQuartz>.addAll(<ore:gemNetherQuartz>);
+
 
 /* =====Adding Items===== */
 
