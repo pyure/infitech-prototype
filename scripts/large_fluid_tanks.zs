@@ -102,6 +102,6 @@ recipes.addShaped("it3_fluidtank_tankEmerald", tankEmerald, [
 // *** TIER 5 ***
 // Star Tank
 recipes.addShaped("it3_fluidtank_tankStar", tankStar, [
-  [<ore:plateStar>, <ore:fluidTankTier5>, <ore:plateStar>], 
+  [<ore:plateNetherStar>, <ore:fluidTankTier5>, <ore:plateNetherStar>], 
   [<ore:fluidTankTier5>, <ore:plateNaquadria>, <ore:fluidTankTier5>], 
   [<ore:plateNaquadria>, <ore:fluidTankTier5>, <ore:plateNaquadria>]]);   
