@@ -13,13 +13,14 @@ val metal_bender = mods.gregtech.recipe.RecipeMap.getByName("metal_bender");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
 var basicMachineStructure = <libvulpes:structuremachine>;
 var advancedMachineStructure = <libvulpes:advstructuremachine>;
-
 var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
 var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
-
 var advancedRocketryDrill = <advancedrocketry:drill>;
 var diamondDrillHead = <ore:toolHeadDrillDiamond>;
+var tracking_circuit = <advancedrocketry:ic:1>;
+var mv_sensor = <metaitem:sensor.mv>;
+var hv_sensor = <metaitem:sensor.hv>;
 
 recipes.remove(advancedRocketryDrill);
 recipes.addShapeless("advancedrocketry_drill", advancedRocketryDrill, [<libvulpes:structuremachine>, diamondDrillHead]);
@@ -148,6 +149,9 @@ scripts.functions.disableItem(<advancedrocketry:arcfurnace>);
 
 // Disable the Chemical Reactor sadly
 scripts.functions.disableItem(<advancedrocketry:chemicalreactor>);
+
+// Disable the Jackhammer
+scripts.functions.disableItem(<advancedrocketry:jackhammer>);
 
 
 // Move ingots from Arc Furnace to Blast Furnace
@@ -300,7 +304,64 @@ assembler.recipeBuilder()
   .duration(140)
   .EUt(512)
   .buildAndRegister();  
+var satellite_id_chip = <advancedrocketry:satelliteidchip>;
+var planet_id_chip = <advancedrocketry:planetidchip>;
+
+// Tracking Circuit
+assembler.recipeBuilder()
+  .inputs(<ore:circuitBasic>)
+  .inputs(mv_sensor)
+  .fluidInputs([<liquid:redstone> * 144])
+  .outputs(tracking_circuit)
+  .duration(900)
+  .EUt(512)
+  .buildAndRegister();    
+
+// Satellite ID Chip 
+recipes.remove(satellite_id_chip);
+assembler.recipeBuilder()
+  .inputs(<ore:circuitExtreme>)
+  .inputs(<ore:wireFineRedAlloy> * 4)
+  .inputs(<metaitem:plate.random_access_memory>)
+  .fluidInputs([<liquid:soldering_alloy> * 36])
+  .outputs(satellite_id_chip)
+  .duration(280)
+  .EUt(300)
+  .buildAndRegister();    
+assembler.recipeBuilder()
+  .inputs(<ore:circuitExtreme>)
+  .inputs(<ore:wireFineRedAlloy> * 4)
+  .inputs(<metaitem:plate.random_access_memory>)
+  .fluidInputs([<liquid:liquidtin> * 72])
+  .outputs(satellite_id_chip)
+  .duration(360)
+  .EUt(300)
+  .buildAndRegister();      
   
+// Planet ID Chip 
+recipes.remove(planet_id_chip);
+assembler.recipeBuilder()
+  .inputs(<ore:circuitGood> * 3)
+  .inputs(<ore:wireFineElectrum> * 8)
+  .inputs(<metaitem:plate.random_access_memory> * 2)
+  .fluidInputs([<liquid:soldering_alloy> * 36])
+  .outputs(planet_id_chip)
+  .duration(280)
+  .EUt(300)
+  .buildAndRegister();    
+assembler.recipeBuilder()
+  .inputs(<ore:circuitGood> * 3)
+  .inputs(<ore:wireFineElectrum> * 8)
+  .inputs(<metaitem:plate.random_access_memory> * 2)
+  .fluidInputs([<liquid:liquidtin> * 72])
+  .outputs(planet_id_chip)
+  .duration(360)
+  .EUt(300)
+  .buildAndRegister();      
+  
+// Data Storage unit: craft directly 1:1 from Data Stick.
+recipes.addShapeless("it3_advancedrocketry_dataunit", <advancedrocketry:dataunit>, [<metaitem:tool.datastick>]);
+
 // Thermite should allow Aluminium Dust (with an extra I)  
 recipes.addShapeless("it3_advancedrocketry_thermite", <advancedrocketry:thermite> * 3, [<ore:dustAluminium>, <ore:dustIron>, <ore:dustIron>]);
 
@@ -311,3 +372,238 @@ macerator.recipeBuilder()
 	.duration(30)
 	.EUt(8)
 	.buildAndRegister();
+
+// Pressure Tanks in Bending Machine
+
+
+metal_bender.recipeBuilder()
+  .inputs(<ore:plateIron> * 3)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
+  .outputs(<advancedrocketry:pressuretank> * 1)
+  .duration(220)
+  .EUt(140)
+  .buildAndRegister();
+  
+metal_bender.recipeBuilder()
+  .inputs(<ore:plateSteel> * 3)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
+  .outputs(<advancedrocketry:pressuretank:1> * 1)
+  .duration(220)
+  .EUt(512)
+  .buildAndRegister();  
+    
+metal_bender.recipeBuilder()
+  .inputs(<ore:plateAluminium> * 3)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
+  .outputs(<advancedrocketry:pressuretank:2> * 1)
+  .duration(220)
+  .EUt(2048)
+  .buildAndRegister();  
+
+metal_bender.recipeBuilder()
+  .inputs(<ore:plateTitanium> * 3)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
+  .outputs(<advancedrocketry:pressuretank:3> * 1)
+  .duration(220)
+  .EUt(8192)
+  .buildAndRegister();    
+  
+// Titanium Iridium Alloy Sheet (note that it has a better 1:3 ratio in AR-specific machine)
+metal_bender.recipeBuilder()
+  .inputs(<ore:plateTitaniumIridium> * 1)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 0}))
+  .outputs(<advancedrocketry:productplate:1>)
+  .duration(220)
+  .EUt(160)
+  .buildAndRegister();      
+  
+// Titanium Aluminide Sheet (note that it has a better 1:3 ratio in AR-specific machine)
+metal_bender.recipeBuilder()
+  .inputs(<ore:plateTitaniumAluminide> * 1)
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 0}))
+  .outputs(<advancedrocketry:productplate:0>)
+  .duration(220)
+  .EUt(160)
+  .buildAndRegister();     
+  
+// Structure Tower
+recipes.remove(<advancedrocketry:structuretower> * 8);
+recipes.addShapeless("it3_advancedrocketry_structure_tower", <advancedrocketry:structuretower>, [<gregtech:frame_steel>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Liquid Fuel Tank
+var titanium_tank = <gregtech:machine:815>;
+recipes.remove(<advancedrocketry:fueltank>);
+recipes.addShaped("it3_advancedrocketry_blockfueltank", <advancedrocketry:fueltank>, [
+	[<ore:stickSteel>, null, <ore:stickSteel>], 
+	[<ore:plateSteel>, titanium_tank, <ore:plateSteel>], 
+	[<ore:stickSteel>, null, <ore:stickSteel>]]);
+
+// User Interface - User Interface: in HV assembler, requires 64 SMD Diodes, 1x Central Processing Unit, 1x glass pane, 2x dyeLime, 4x SMD transistor, and 288 mB liquid redstone. (This recipe tries to mimic a LED display)
+var user_interface = <advancedrocketry:misc>;
+recipes.remove(user_interface);
+assembler.recipeBuilder()
+  .inputs(<metaitem:component.smd.diode> * 3)
+  .inputs(<metaitem:plate.central_processing_unit> * 1)
+  .inputs(<ore:paneGlass> * 1)
+  .inputs(<ore:dyeLime> * 2)
+  .inputs(<metaitem:component.smd.transistor> * 4)
+  .outputs(user_interface)
+  .duration(200)
+  .EUt(140)
+  .buildAndRegister();     
+
+// Basic Lens  
+recipes.remove(<advancedrocketry:lens>);
+recipes.addShapeless("it3_advancedrocketry_basic_lens", <advancedrocketry:lens>, [<ore:lensWhite>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Optical Sensor - Optical Sensor: replace glowstone by lensGreenSapphire. replace Gold Plate by Sensor(EV).
+recipes.remove(<advancedrocketry:satelliteprimaryfunction>);
+recipes.addShaped("it3_advancedrocketry_opticalsensor", <advancedrocketry:satelliteprimaryfunction>, [
+	[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>], 
+	[null, <ore:lensGreenSapphire>, null], 
+	[null, <metaitem:sensor.ev>, null]]);
+
+// Composition Sensor
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:1>);
+recipes.addShaped("it3_advancedrocketry_compositionsensor", <advancedrocketry:satelliteprimaryfunction:1>, [
+	[<advancedrocketry:satelliteprimaryfunction>, <advancedrocketry:ic:1>, <advancedrocketry:satelliteprimaryfunction>], 
+	[<metaitem:wafer.glowstone>, <ore:circuitExtreme>, <metaitem:wafer.glowstone>]]);
+
+// Mass Detector
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:2>);
+recipes.addShaped("it3_advancedrocketry_massdetector", <advancedrocketry:satelliteprimaryfunction:2>, [
+	[<advancedrocketry:satelliteprimaryfunction>, <ore:gemDilithium>, <advancedrocketry:satelliteprimaryfunction>], 
+	[<metaitem:wafer.glowstone>, <ore:circuitExtreme>, <metaitem:wafer.glowstone>]]);
+
+// Microwave transmittor
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:3>);
+recipes.addShaped("it3_advancedrocketry_microwavetransmitter", <advancedrocketry:satelliteprimaryfunction:3>, [
+	[<advancedrocketry:lens>, <advancedrocketry:ic:1>, <advancedrocketry:lens>], 
+	[<metaitem:wafer.glowstone>, <ore:circuitExtreme>, <metaitem:wafer.glowstone>]]);
+
+// Saw Blade Assembly
+recipes.remove(<advancedrocketry:sawblade>);
+recipes.addShaped("it3_advancedrocketry_sawblade", <advancedrocketry:sawblade>, [
+	[<ore:stickIron>, null, <ore:stickIron>], 
+	[<ore:plateIron>, <ore:craftingDiamondBlade>, <ore:plateIron>], 
+	[<ore:plateIron>, null, <ore:plateIron>]]);
+
+// Small Battery
+recipes.remove(<libvulpes:battery> * 4);
+recipes.addShapeless("it3_advancedrocketry_battery", <libvulpes:battery>, [<ore:batteryMVAll>, <ore:craftingToolWrenchEmptyTag>]);
+
+// 2x Small Battery
+recipes.remove(<libvulpes:battery:1>);
+recipes.addShapeless("it3_advancedrocketry_battery2x", <libvulpes:battery:1>, [<ore:batteryHVAll>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Ore Scanner
+recipes.remove(<advancedrocketry:orescanner>);
+recipes.addShaped("it3_advancedrocketry_orescanner", <advancedrocketry:orescanner>, [
+	[<minecraft:lever>, hv_sensor, <minecraft:lever>], 
+	[<metaitem:lapotron_crystal>, <advancedrocketry:misc>, <metaitem:lapotron_crystal>], 
+	[null, null, null]]);
+
+// Basic Solar Panel
+recipes.remove(<advancedrocketry:satellitepowersource>);
+recipes.addShapeless("it3_advancedrocketry_basic_solar", <advancedrocketry:satellitepowersource>, [<metaitem:cover.solar.panel>, <ore:craftingToolWrenchEmptyTag>]);
+
+
+// Large Solar Panel
+recipes.remove(<advancedrocketry:satellitepowersource:1>);
+recipes.addShapeless("it3_advancedrocketry_large_solar", <advancedrocketry:satellitepowersource:1>, [<metaitem:cover.solar.panel.ulv>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Ore Mapper
+recipes.remove(<advancedrocketry:satelliteprimaryfunction:4>);
+recipes.addShaped("it3_advancedrocketry_oremapper", <advancedrocketry:satelliteprimaryfunction:4>, [
+	[null, <ore:stickCopper>, null], 
+	[<ore:plateHssg>, <ore:plateHssg>, <ore:plateHssg>], 
+	[<ore:circuitExtreme>, <advancedrocketry:orescanner>, <ore:circuitExtreme>]]);
+
+// Satellite 
+recipes.remove(<advancedrocketry:satellite>);
+recipes.addShaped("it3_advancedrocketry_satellite", <advancedrocketry:satellite>, [
+	[<ore:sheetAluminum>, <ore:sheetAluminum>, <ore:sheetAluminum>], 
+	[<ore:stickTitanium>, <ore:circuitExtreme>, <ore:stickTitanium>], 
+	[<ore:sheetAluminum>, <ore:sheetAluminum>, <ore:sheetAluminum>]]);
+
+// Space Station ID chip
+recipes.remove(<advancedrocketry:spacestationchip>);
+recipes.addShapeless("it3_advancedrocketry_spacestationidchip", <advancedrocketry:spacestationchip>, [<ore:circuitExtreme>, <libvulpes:linker>]);
+
+// Carbon Scrubber Cartridge
+recipes.remove(<advancedrocketry:carbonscrubbercartridge>);
+recipes.addShaped("it3_advancedrocketry_carbonscrubbercartidge", <advancedrocketry:carbonscrubbercartridge>, [
+	[<ore:sheetIron>, <minecraft:iron_bars>, <ore:sheetIron>], 
+	[<ore:sheetIron>, <minecraft:iron_bars>, <ore:sheetIron>], 
+	[<ore:sheetIron>, <minecraft:iron_bars>, <ore:sheetIron>]]);
+	
+assembler.recipeBuilder()
+  .inputs(<ore:sheetIron> * 6)
+  .inputs(<minecraft:iron_bars> * 3)
+  .outputs(<advancedrocketry:carbonscrubbercartridge>)
+  .duration(120)
+  .EUt(8)
+  .buildAndRegister();    
+  
+// Jetpack
+recipes.remove(<advancedrocketry:jetpack>);
+recipes.addShaped("it3_advancedrocketry_jetpack", <advancedrocketry:jetpack>, [
+	[<advancedrocketry:pressuretank:*>, <ore:plateTungstenSteel>, <advancedrocketry:pressuretank:*>], 
+	[<minecraft:lever>, <ore:wireFineSteel>, <minecraft:lever>], 
+	[<minecraft:fire_charge>, null, <minecraft:fire_charge>]]);
+
+// Input Hatch
+recipes.remove(<libvulpes:hatch>); 
+recipes.addShapeless("it3_advancedrocketry_inputhatch", <libvulpes:hatch>, [<meta_tile_entity:item_bus.import.hv>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Fluid Input Hatch
+recipes.remove(<libvulpes:hatch:2>); 
+recipes.addShapeless("it3_advancedrocketry_fluidinputhatch", <libvulpes:hatch:2>, [<meta_tile_entity:fluid_hatch.import.hv>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Output Hatch
+recipes.remove(<libvulpes:hatch:1>); 
+recipes.addShapeless("it3_advancedrocketry_outputhatch", <libvulpes:hatch:1>, [<meta_tile_entity:item_bus.export.hv>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Fluid Output Hatch
+recipes.remove(<libvulpes:hatch:3>); 
+recipes.addShapeless("it3_advancedrocketry_fluidoutputhatch", <libvulpes:hatch:3>, [<meta_tile_entity:fluid_hatch.export.hv>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Energy Input Hatch
+recipes.remove(<libvulpes:forgepowerinput>);
+recipes.addShapeless("it3_advancedrocketry_forgepowerinput", <libvulpes:forgepowerinput>, [<meta_tile_entity:energy_hatch.input.hv>, <ore:craftingToolWrenchEmptyTag>]);
+
+// Motor
+recipes.remove(<libvulpes:motor>);
+recipes.addShaped("it3_advancedrocketry_motor", <libvulpes:motor>, [
+	[null, <ore:stickLongStainlessSteel>, null], 
+	[null, <metaitem:electric.motor.mv>, null], 
+	[null, <ore:craftingToolWrenchEmptyTag>, null]]);
+	
+// Advanced Motor
+recipes.remove(<libvulpes:advancedmotor>);
+recipes.addShaped("it3_advancedrocketry_advancedmotor", <libvulpes:advancedmotor>, [
+	[null, <ore:stickLongTitanium>, null], 
+	[null, <metaitem:electric.motor.hv>, null], 
+	[null, <ore:craftingToolWrenchEmptyTag>, null]]);
+	
+// Enhanced Motor
+recipes.remove(<libvulpes:enhancedmotor>);
+recipes.addShaped("it3_advancedrocketry_enhancedmotor", <libvulpes:enhancedmotor>, [
+	[null, <ore:stickLongTungstenSteel>, null], 
+	[null, <metaitem:electric.motor.ev>, null], 
+	[null, <ore:craftingToolWrenchEmptyTag>, null]]);
+	
+// Elite Motor
+recipes.remove(<libvulpes:elitemotor>);
+recipes.addShaped("it3_advancedrocketry_elitemotor", <libvulpes:elitemotor>, [
+	[null, <ore:stickLongHssg>, null], 
+	[null, <metaitem:electric.motor.iv>, null], 
+	[null, <ore:craftingToolWrenchEmptyTag>, null]]);
+
+// Rocket Assembling Machine
+recipes.remove(<advancedrocketry:rocketbuilder>);
+recipes.addShaped("it3_advancedrocketry_rocketbuilder", <advancedrocketry:rocketbuilder>, [
+	[<ore:stickTitanium>, <advancedrocketry:misc>, <ore:stickTitanium>], 
+	[<advancedrocketry:ic:3>, <libvulpes:structuremachine>, <advancedrocketry:ic:3>], 
+	[<ore:gearTitanium>, <advancedrocketry:concrete>, <ore:gearTitanium>]]);
+
