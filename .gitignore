@@ -61,9 +61,11 @@ config/ftbutilities.cfg
 config/agricraft/json/*
 config/pneumaticcraft/MicromissileDefaults.cfg
 config/betterfps.json
+config/Guide-API/Guide-API.cfg
 minecraftinstance.json
 modularmachinery.7z
 servers.dat
+
 
 # Windows image file caches
 Thumbs.db
