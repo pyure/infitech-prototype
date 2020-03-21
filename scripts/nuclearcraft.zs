@@ -670,3 +670,4 @@ chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hecf_251> * 144,  <li
 // Add NC and GT recipe for calcium sulfate solution 
 mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fluorite_water> * 666, <liquid:sulfuric_acid> * 1000, <liquid:hydrofluoric_acid> * 2000, <liquid:calcium_sulfate_solution> * 666, 4.5, 4.0]);
 chemical_reactor.recipeBuilder().fluidInputs([<liquid:fluorite_water> * 666, <liquid:sulfuric_acid> * 1000]).fluidOutputs([<liquid:hydrofluoric_acid> * 2000, <liquid:calcium_sulfate_solution> * 666]).duration(20).EUt(130).buildAndRegister();
+

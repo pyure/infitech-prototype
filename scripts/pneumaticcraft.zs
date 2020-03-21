@@ -36,7 +36,7 @@ for redstone in <ore:oreRedstone>.items {
 }
 
 // Lapis ore into 8x Lapis
-for lapis in <ore:oreLapisLazuli>.items {
+for lapis in <ore:oreLapis>.items {
 	mods.pneumaticcraft.pressurechamber.addRecipe([lapis * 1], 1.5, [lapis_lazuli * 8]);
 }
 

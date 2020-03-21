@@ -536,8 +536,14 @@ for mod in loadedMods {
 <ore:batteryLVAll>.add(<metaitem:battery.su.lv.sulfuricacid>);
 <ore:batteryMVAll>.add(<metaitem:battery.su.mv.mercury>);
 <ore:batteryMVAll>.add(<metaitem:battery.su.mv.sulfuricacid>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.sodium>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.lithium>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.cadmium>);
 <ore:batteryHVAll>.add(<metaitem:battery.su.hv.mercury>);
 <ore:batteryHVAll>.add(<metaitem:battery.su.hv.sulfuricacid>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.sodium>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.lithium>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.cadmium>);
 
 fermenter.recipeBuilder()
 	.fluidInputs([<liquid:liquid_compost> * 3000])

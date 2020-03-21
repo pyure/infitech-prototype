@@ -1182,7 +1182,7 @@
 			<oreDict>plateNickelZincFerrite</oreDict>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="1">
+	<Recipe timeRequired="200" power ="21">
 		<input>
 			<oreDict>sheetIron 2</oreDict>
 			<fluidStack>water 100</fluidStack>
@@ -1191,7 +1191,7 @@
 			<itemStack>advancedrocketry:pressuretank</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="200" power ="2">
+	<Recipe timeRequired="300" power ="32">
 		<input>
 			<oreDict>sheetSteel 2</oreDict>
 			<fluidStack>water 100</fluidStack>
@@ -1200,7 +1200,7 @@
 			<itemStack>advancedrocketry:pressuretank 1 1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="1">
+	<Recipe timeRequired="400" power ="41">
 		<input>
 			<oreDict>sheetAluminum 2</oreDict>
 			<fluidStack>water 100</fluidStack>
@@ -1209,7 +1209,7 @@
 			<itemStack>advancedrocketry:pressuretank 1 2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="1000" power ="8">
+	<Recipe timeRequired="500" power ="48">
 		<input>
 			<oreDict>sheetTitanium 2</oreDict>
 			<fluidStack>water 100</fluidStack>
