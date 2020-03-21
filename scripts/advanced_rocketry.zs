@@ -663,7 +663,28 @@ recipes.addShaped("it3_advancedrocketry_crystallizer", <advancedrocketry:crystal
 	[<minecraft:quartz>, <advancedrocketry:misc>, <minecraft:quartz>], 
 	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
 	[<ore:cableGtSingleGold>, <ore:plateSteel>, <ore:cableGtSingleGold>]]);
-	
+
+// Lathe
+recipes.remove(<advancedrocketry:lathe>);
+recipes.addShaped("it3_advancedrocketry_lathe", <advancedrocketry:lathe>, [
+	[<ore:stickIron>, <advancedrocketry:misc>, <ore:stickIron>], 
+	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
+	[<ore:plateSteel>, <ore:gearSteel>, <ore:plateSteel>]]);
+
+// Rolling Machine
+recipes.remove(<advancedrocketry:rollingmachine>);
+recipes.addShaped("it3_advancedrocketry_rollingmachine", <advancedrocketry:rollingmachine>, [
+	[<ore:gearSteel>, <advancedrocketry:misc>, <ore:gearSteel>], 
+	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
+	[<minecraft:iron_block>, <ore:circuitAdvanced>, <minecraft:iron_block>]]);
+
+// Electrolyzer
+recipes.remove(<advancedrocketry:electrolyser>);
+recipes.addShaped("it3_advancedrocketry_electrolyser", <advancedrocketry:electrolyser>, [
+	[<ore:plateSteel>, <advancedrocketry:misc>, <ore:plateSteel>], 
+	[<ore:wireGtQuadrupleElectrum>, <libvulpes:structuremachine>, <ore:wireGtQuadrupleElectrum>], 
+	[<ore:circuitAdvanced>, <minecraft:redstone_torch>, <ore:circuitAdvanced>]]);
+
 // Cutting Machine
 recipes.remove(<advancedrocketry:cuttingmachine>);
 recipes.addShaped("it3_advancedrocketry_cuttingmachine", <advancedrocketry:cuttingmachine>, [
@@ -692,33 +713,12 @@ recipes.addShaped("it3_advancedrocketry_guidancecomputer", <advancedrocketry:gui
 	[<ore:cableGtSingleGold>, <libvulpes:structuremachine>, <ore:cableGtSingleGold>], 
 	[<advancedrocketry:ic:1>, <ore:cableGtSingleGold>, <advancedrocketry:ic:1>]]);
 
-// Lathe
-recipes.remove(<advancedrocketry:lathe>);
-recipes.addShaped("it3_advancedrocketry_lathe", <advancedrocketry:lathe>, [
-	[<ore:stickIron>, <advancedrocketry:misc>, <ore:stickIron>], 
-	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
-	[<ore:plateSteel>, <ore:gearSteel>, <ore:plateSteel>]]);
-
-// Rolling Machine
-recipes.remove(<advancedrocketry:rollingmachine>);
-recipes.addShaped("it3_advancedrocketry_rollingmachine", <advancedrocketry:rollingmachine>, [
-	[<ore:gearSteel>, <advancedrocketry:misc>, <ore:gearSteel>], 
-	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
-	[<minecraft:iron_block>, <ore:circuitAdvanced>, <minecraft:iron_block>]]);
-
 // Space station assembler
 recipes.remove(<advancedrocketry:stationbuilder>);
 recipes.addShaped("it3_advancedrocketry_stationbuilder", <advancedrocketry:stationbuilder>, [
 	[<ore:gearTitanium>, <ore:dustDilithium>, <ore:gearTitanium>], 
 	[<ore:dustDilithium>, <advancedrocketry:rocketbuilder>, <ore:dustDilithium>], 
 	[<ore:circuitExtreme>, <ore:dustDilithium>, <ore:circuitExtreme>]]);
-
-// Electrolyzer
-recipes.remove(<advancedrocketry:electrolyser>);
-recipes.addShaped("it3_advancedrocketry_electrolyser", <advancedrocketry:electrolyser>, [
-	[<ore:plateSteel>, <advancedrocketry:misc>, <ore:plateSteel>], 
-	[<ore:wireGtQuadrupleElectrum>, <libvulpes:structuremachine>, <ore:wireGtQuadrupleElectrum>], 
-	[<ore:circuitAdvanced>, <minecraft:redstone_torch>, <ore:circuitAdvanced>]]);
 
 // CO2 Scrubber
 recipes.remove(<advancedrocketry:oxygenscrubber>);
