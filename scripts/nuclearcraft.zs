@@ -291,13 +291,6 @@ The crude thorium hydroxide precipitate is then dissolved in nitric acid for fin
 ThO2 + Hydrogen (2000) + Fluorine (100) -> Chemical Reactor -> NC Thorium Dust + Oxygen (1000) + Water (3000)
 */
 
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:dustSodiumHydroxide> * 1)
-	.fluidInputs(<liquid:water> * 1000)
-	.fluidOutputs(<liquid:sodium_hydroxide_solution> * 1000)  
-	.duration(200)
-	.EUt(14)
-	.buildAndRegister();
 
 chemical_bath.recipeBuilder()
 	.inputs(<ore:crushedPurifiedMonazite> * 10)
@@ -677,3 +670,4 @@ chemical_reactor.recipeBuilder().fluidInputs([<liquid:fuel_hecf_251> * 144,  <li
 // Add NC and GT recipe for calcium sulfate solution 
 mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:fluorite_water> * 666, <liquid:sulfuric_acid> * 1000, <liquid:hydrofluoric_acid> * 2000, <liquid:calcium_sulfate_solution> * 666, 4.5, 4.0]);
 chemical_reactor.recipeBuilder().fluidInputs([<liquid:fluorite_water> * 666, <liquid:sulfuric_acid> * 1000]).fluidOutputs([<liquid:hydrofluoric_acid> * 2000, <liquid:calcium_sulfate_solution> * 666]).duration(20).EUt(130).buildAndRegister();
+

@@ -1,6 +1,7 @@
 // --- Created by Jason McRay --- 
 import mods.gregtech.recipe.RecipeMap;
 import mods.pneumaticcraft.pressurechamber;
+import crafttweaker.oredict.IOreDictEntry;
 
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
@@ -290,9 +291,37 @@ for i in 0 to 15 {
     .buildAndRegister();
 }
 
-// Fix Railcraft's tungstensteel
+// Remove the existing rail recipes
+recipes.removeByRecipeName("railcraft:rail#0$10");
+recipes.removeByRecipeName("railcraft:rail#0$1");
+recipes.removeByRecipeName("railcraft:rail#0$2");
+recipes.removeByRecipeName("railcraft:rail#0$8");
+recipes.removeByRecipeName("railcraft:rail#0$9");
+recipes.removeByRecipeName("railcraft:rail_tungsten");
+recipes.removeByRecipeName("railcraft:rail_titanium");
+recipes.removeByRecipeName("railcraft:rail_invar");
+recipes.removeByRecipeName("railcraft:rail_steel");
 recipes.removeByRecipeName("railcraft:rail_tungsten_steel");
-recipes.addShaped("it3_railcraft_rail_tungsten_steel", <railcraft:rail> * 48, 
-	[[<ore:ingotTungstenSteel>, null, <ore:ingotTungstenSteel>], 
-	[<ore:ingotTungstenSteel>, null, <ore:ingotTungstenSteel>], 
-	[<ore:ingotTungstenSteel>, null, <ore:ingotTungstenSteel>]]);
+
+// These oredicts create these many "rails" which are used to make tracks
+val rail_metal_map = {
+  <ore:stickIron> : 12,
+  <ore:stickBronze> : 16,
+  <ore:stickInvar> : 20,
+  <ore:stickSteel> : 48,
+  <ore:stickStainlessSteel> : 64
+} as int[IOreDictEntry];
+
+// Create the new recipes using metal rods
+var counter = 0;
+for oredict_stick, number_rails in rail_metal_map {
+	var recipe_name = "it3_stick_rail_" ~ counter;
+	recipes.addShaped(recipe_name, <railcraft:rail> * number_rails, [
+		[oredict_stick, null, oredict_stick],
+		[oredict_stick, null, oredict_stick],
+		[oredict_stick, null, oredict_stick]]);
+	counter = counter + 1;
+}
+
+
+

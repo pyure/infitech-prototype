@@ -20,7 +20,7 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
+<Recipes useDefault="false">
 	<Recipe timeRequired="100" power="400">
 		<input>
 			<oreDict>stickNetherQuartz 2</oreDict>
@@ -76,82 +76,11 @@
 			<itemStack>appliedenergistics2:material 1 54</itemStack> <!-->1K Fluid Storage component<!-->
 		</output>
 	</Recipe>
-	<Recipe timeRequired="900" power ="100">
-		<input>
-			<oreDict>ingotGold</oreDict>
-			<oreDict>dustRedstone</oreDict>
-			<oreDict>waferSilicon</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:itemcircuitplate</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="900" power ="100">
-		<input>
-			<oreDict>ingotGold</oreDict>
-			<itemStack>minecraft:redstone_block</itemStack>
-			<oreDict>waferSilicon</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:itemcircuitplate 1 1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="500" power ="60">
-		<input>
-			<oreDict>gemEmerald</oreDict>
-			<itemStack>advancedrocketry:ic</itemStack>
-			<oreDict>dustRedstone</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:dataunit</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="900" power ="50">
-		<input>
-			<itemStack>advancedrocketry:itemcircuitplate</itemStack>
-			<itemStack>minecraft:ender_eye</itemStack>
-			<oreDict>dustRedstone</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:ic 1 1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="200" power ="10">
-		<input>
-			<oreDict>plateSilicon</oreDict>
-			<oreDict>plateGold</oreDict>
-			<oreDict>dustRedstone</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:ic 1 4</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="200" power ="10">
-		<input>
-			<oreDict>plateSilicon</oreDict>
-			<oreDict>plateCopper</oreDict>
-			<oreDict>dustRedstone</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:ic 1 3</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="200" power ="10">
-		<input>
-			<oreDict>plateSilicon</oreDict>
-			<itemStack>minecraft:dye 1 4</itemStack>
-			<oreDict>dustRedstone</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:ic 1 5</itemStack>
-		</output>
-	</Recipe>
 	<Recipe timeRequired="400" power ="1">
 		<input>
-			<oreDict>dustRedstone</oreDict>
-			<itemStack>minecraft:redstone_torch</itemStack>
-			<itemStack>advancedrocketry:ic</itemStack>
-			<itemStack>advancedrocketry:ic 1 3</itemStack>
+			<oreDict>cableGtSingleRedAlloy</oreDict>
+			<itemStack>gregtech:meta_item_1 1 32693</itemStack> <!-->EV Sensor<!-->
+			<oreDict>circuitAdvanced</oreDict>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:itemupgrade</itemStack>
@@ -160,9 +89,8 @@
 	<Recipe timeRequired="400" power ="1">
 		<input>
 			<itemStack>minecraft:fire_charge</itemStack>
-			<oreDict>gemDiamond</oreDict>
-			<itemStack>advancedrocketry:ic 1 2</itemStack>
-			<itemStack>advancedrocketry:ic 1 3</itemStack>
+			<itemStack>gregtech:meta_item_1 1 32603</itemStack> <!-->EV Motor<!-->
+			<oreDict>circuitAdvanced</oreDict>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:itemupgrade 1 1</itemStack>
@@ -170,9 +98,9 @@
 	</Recipe>
 	<Recipe timeRequired="400" power ="1">
 		<input>
-			<itemStack>libvulpes:motor</itemStack>
-			<oreDict>rodTitanium</oreDict>
-			<itemStack>advancedrocketry:ic 1 3</itemStack>
+			<itemStack>gregtech:meta_item_1 1 32603</itemStack>  <!-->EV Motor<!-->
+			<oreDict>stickTitanium</oreDict>
+			<oreDict>circuitAdvanced</oreDict>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:itemupgrade 1 2</itemStack>
@@ -182,8 +110,7 @@
 		<input>
 			<itemStack>minecraft:leather_boots</itemStack>
 			<itemStack>minecraft:feather</itemStack>
-			<itemStack>advancedrocketry:ic 1 2</itemStack>
-			<itemStack>advancedrocketry:ic 1 3</itemStack>
+			<oreDict>circuitAdvanced</oreDict>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:itemupgrade 1 3</itemStack>
@@ -193,8 +120,7 @@
 		<input>
 			<itemStack>libvulpes:battery</itemStack>
 			<itemStack>advancedrocketry:lens</itemStack>
-			<itemStack>advancedrocketry:ic 1 2</itemStack>
-			<itemStack>advancedrocketry:ic 1 3</itemStack>
+			<oreDict>circuitAdvanced</oreDict>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:itemupgrade 1 4</itemStack>
@@ -203,7 +129,7 @@
 	<Recipe timeRequired="1000" power ="1">
 		<input>
 			<itemStack>libvulpes:battery</itemStack>
-			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<oreDict>circuitAdvanced</oreDict>
 			<oreDict>plateTin</oreDict>
 			<itemStack>advancedrocketry:lens</itemStack>
 			<itemStack>advancedrocketry:misc</itemStack>
@@ -214,10 +140,9 @@
 	</Recipe>
 	<Recipe timeRequired="1000" power ="1">
 		<input>
-			<itemStack>libvulpes:battery</itemStack>
-			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<itemStack>gregtech:meta_item_2 1 32213</itemStack> <!-->lapotron crystal<!-->
+			<oreDict>circuitElite</oreDict>
 			<oreDict>plateTin</oreDict>
-			<itemStack>advancedrocketry:ic 1 1</itemStack>
 			<itemStack>advancedrocketry:misc</itemStack>
 		</input>
 		<output>
@@ -228,18 +153,18 @@
 		<input>
 			<oreDict>stickCopper 2</oreDict>
 			<oreDict>stickTitanium</oreDict>
-			<oreDict>waferSilicon 2</oreDict>
-			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<oreDict>gregtech:meta_item_2 1 32441></oreDict> <!-->glowstone doped wafer<!-->
+			<oreDict>circuitExtreme</oreDict>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:satelliteprimaryfunction 1 5</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="1">
+	<Recipe timeRequired="14000" power ="920">
 		<input>
 			<itemStack>minecraft:glass 3</itemStack>
 			<oreDict>itemLens 3</oreDict>
-			<oreDict>stickIron</oreDict>
+			<itemStack>gregtech:meta_item_2 3 32435</itemStack> <!--> GT Reinforced Iridium Alloy <!-->
 		</input>
 		<output>
 			<itemStack>advancedrocketry:blocklens</itemStack>
@@ -247,7 +172,7 @@
 	</Recipe>
 	<Recipe timeRequired="100" power ="1">
 		<input>
-			<itemStack>advancedrocketry:ic 1 1</itemStack>
+			<oreDict>circuitAdvanced</oreDict>
 			<itemStack>advancedrocketry:spacestationchip</itemStack>
 		</input>
 		<output>
@@ -256,11 +181,35 @@
 	</Recipe>
 	<Recipe timeRequired="100" power ="1">
 		<input>
-			<itemStack>advancedrocketry:ic 1 1</itemStack>
+			<oreDict>circuitAdvanced</oreDict>
 			<itemStack>advancedrocketry:itemupgrade 1 4</itemStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:beaconfinder</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="520" power ="46">
+		<input>
+			<itemStack>gregtech:meta_item_2 1 32443</itemStack> <!-->Coated Circuit Board<!-->
+			<itemStack>gregtech:meta_item_2 2 32455</itemStack> <!-->Resistor<!-->
+			<oreDict>plateSteel 1</oreDict>
+			<oreDict>circuitPrimitive 1</oreDict>
+			<oreDict>cableGtSingleRedAlloy 2</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_2 1 32487</itemStack> <!-->Basic Circuit<!-->
+		</output>
+	</Recipe>	
+	<Recipe timeRequired="520" power ="94">
+		<input>
+			<itemStack>gregtech:meta_item_2 1 32451</itemStack> <!-->Diode<!-->
+			<itemStack>gregtech:meta_item_2 3 32487</itemStack> <!-->Basic Circuit<!-->
+			<oreDict>cableGtSingleRedAlloy 2</oreDict>
+			<oreDict>plateSteel 2</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:meta_item_2 1 32489</itemStack> <!-->Good Circuit<!-->
+		</output>
+	</Recipe>	
+
 </Recipes>

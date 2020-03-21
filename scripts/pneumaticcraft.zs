@@ -5,6 +5,7 @@ import mods.gregtech.recipe.RecipeMap;
 var ingotWroughtIron = <ore:ingotWroughtIron>.firstItem;
 var ingotCompressedWroughtIron = <ore:ingotCompressedWroughtIron>.firstItem;
 var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
+var lapis_lazuli = <minecraft:dye:4>;
 
 // Wrought Iron into Compressed Wrought Iron
 mods.pneumaticcraft.pressurechamber.addRecipe([ingotWroughtIron * 1], 2.0, [ingotCompressedWroughtIron]);
@@ -29,9 +30,14 @@ var lignite = <ore:gemLignite>.firstItem;
 for oreLignite in <ore:oreLignite>.items {
 	mods.pneumaticcraft.pressurechamber.addRecipe([oreLignite * 1], 1.5, [lignite * 3]);
 }
-// Redstone ore into 3x Redstone
+// Redstone ore into 7x Redstone
 for redstone in <ore:oreRedstone>.items {
 	mods.pneumaticcraft.pressurechamber.addRecipe([redstone * 1], 1.5, [<minecraft:redstone> * 7]);
+}
+
+// Lapis ore into 8x Lapis
+for lapis in <ore:oreLapis>.items {
+	mods.pneumaticcraft.pressurechamber.addRecipe([lapis * 1], 1.5, [lapis_lazuli * 8]);
 }
 
 // GT Style block crafting
@@ -59,6 +65,9 @@ ingotIronCompressed.addAll(ingotCompressedIron);
 
 // Remove everything from refinery
 mods.pneumaticcraft.refinery.removeAllRecipes();
+
+// Allow shapeless-empying a refinery
+recipes.addShapeless("it3_empty_pc_refinery", <pneumaticcraft:refinery>, [<pneumaticcraft:refinery>]);
 
 // Add our oil recipes
 // Current setup is dumb.  Need to make 2-refineries and 3-refineries useful.

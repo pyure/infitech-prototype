@@ -27,10 +27,6 @@
           "value": "ore:palladium"
         },
         {
-          "weight": 400,
-          "value": "ore:iridium"
-        },
-        {
           "weight": 1,
           "value": "block:appliedenergistics2:sky_stone_block"
         }

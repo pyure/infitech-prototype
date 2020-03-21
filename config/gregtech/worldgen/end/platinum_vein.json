@@ -22,10 +22,6 @@
 		{
           "weight": 35,
           "value": "ore:palladium"
-        },
-		{
-          "weight": 20,
-          "value": "ore:iridium"
         }
       ]
     }

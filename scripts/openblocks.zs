@@ -4,7 +4,7 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 
 
 // Elevators
-for i in 0 to 15 {
+for i in 0 to 16 {
   var recipe_name = "it3_openblocks_elevator_" ~ i;
   var rotating_recipe_name = "it3_openblocks_rotating_elevator_" ~ i;
   var converting_recipe_name = "it3_openblocks_converted_elevator_" ~ i;

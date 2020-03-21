@@ -536,8 +536,14 @@ for mod in loadedMods {
 <ore:batteryLVAll>.add(<metaitem:battery.su.lv.sulfuricacid>);
 <ore:batteryMVAll>.add(<metaitem:battery.su.mv.mercury>);
 <ore:batteryMVAll>.add(<metaitem:battery.su.mv.sulfuricacid>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.sodium>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.lithium>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.cadmium>);
 <ore:batteryHVAll>.add(<metaitem:battery.su.hv.mercury>);
 <ore:batteryHVAll>.add(<metaitem:battery.su.hv.sulfuricacid>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.sodium>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.lithium>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.cadmium>);
 
 fermenter.recipeBuilder()
 	.fluidInputs([<liquid:liquid_compost> * 3000])
@@ -895,22 +901,59 @@ mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:creosote> * 750]).remov
 mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:seed.oil> * 750]).remove();
 
 mixer.recipeBuilder()
+	.inputs(<ore:dustTalc> * 1)
+	.fluidInputs([<liquid:oil_medium> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();    
+	
+mixer.recipeBuilder()
+	.inputs(<ore:dustSoapstone> * 1)
+	.fluidInputs([<liquid:oil_medium> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();    	
+	
+mixer.recipeBuilder()
 	.inputs(<minecraft:redstone> * 10)
-  .fluidInputs([<liquid:oil> * 750])
+	.fluidInputs([<liquid:oil> * 750])
 	.fluidOutputs(<liquid:lubricant> * 750)
 	.duration(160)
 	.EUt(4)
 	.buildAndRegister();
 mixer.recipeBuilder()
 	.inputs(<minecraft:redstone> * 10)
-  .fluidInputs([<liquid:creosote> * 750])
+	.fluidInputs([<liquid:oil_light> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();	
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+	.fluidInputs([<liquid:oil_medium> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();	
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+	.fluidInputs([<liquid:oil_heavy> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();		
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+	.fluidInputs([<liquid:creosote> * 750])
 	.fluidOutputs(<liquid:lubricant> * 750)
 	.duration(160)
 	.EUt(4)
 	.buildAndRegister();  
 mixer.recipeBuilder()
 	.inputs(<minecraft:redstone> * 10)
-  .fluidInputs([<liquid:seed.oil> * 750])
+	.fluidInputs([<liquid:seed.oil> * 750])
 	.fluidOutputs(<liquid:lubricant> * 750)
 	.duration(160)
 	.EUt(4)

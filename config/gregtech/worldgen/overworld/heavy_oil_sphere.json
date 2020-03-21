@@ -1,5 +1,5 @@
 {
-  "weight": 41,
+  "weight": 15,
   "density": 1.0,
   "max_height": 40,
   "min_height": 10,
@@ -17,7 +17,7 @@
   },
   "generator": {
     "type": "sphere",
-    "radius": [7, 10]
+    "radius": [13, 18]
   },
   "filler": {
     "type": "ignore_bedrock",
