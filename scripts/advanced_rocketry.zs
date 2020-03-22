@@ -632,7 +632,7 @@ recipes.addShaped("it3_advancedrocketry_satellitebuilder", <advancedrocketry:sat
 
 // Data Bus
 recipes.remove(<advancedrocketry:loader>);
-recipes.addShaped("it3_advancedrocketry_databus", <advancedrocketry:loader>, [[<libvulpes:structuremachine>], [<metaitem:tool.datastick>], [null]]);
+recipes.addShaped("it3_advancedrocketry_databus", <advancedrocketry:loader> * 4, [[<libvulpes:structuremachine>], [<metaitem:tool.datastick>], [null]]);
 
 // Rocket Unloader
 recipes.remove(<advancedrocketry:loader:2>);
