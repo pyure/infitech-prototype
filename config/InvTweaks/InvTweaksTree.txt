@@ -29,6 +29,7 @@
                 <stoneSword id="stone_sword"/>
                 <goldSword id="golden_sword"/>
                 <woodSword id="wooden_sword"/>
+                <craftingToolSword oreDictName="craftingToolSword"/>
             </sword>
             <shield id="shield"/>
             <munition>
@@ -46,6 +47,7 @@
                 <ironPickaxe id="iron_pickaxe"/>
                 <stonePickaxe id="stone_pickaxe"/>
                 <woodPickaxe id="wooden_pickaxe"/>
+                <craftingToolPickaxe oreDictName="craftingToolPickaxe"/>
             </pickaxe>
             <shovel>
                 <goldShovel id="golden_shovel"/>
@@ -53,6 +55,7 @@
                 <ironShovel id="iron_shovel"/>
                 <stoneShovel id="stone_shovel"/>
                 <woodShovel id="wooden_shovel"/>
+                <craftingToolShovel oreDictName="craftingToolShovel"/>
             </shovel>
             <axe>
                 <goldAxe id="golden_axe"/>
@@ -60,6 +63,7 @@
                 <ironAxe id="iron_axe"/>
                 <stoneAxe id="stone_axe"/>
                 <woodAxe id="wooden_axe"/>
+                <craftingToolAxe oreDictName="craftingToolAxe"/>
             </axe>
             <hoe>
                 <goldHoe id="golden_hoe"/>
@@ -67,7 +71,11 @@
                 <ironHoe id="stone_hoe"/>
                 <stoneHoe id="iron_hoe"/>
                 <woodHoe id="wooden_hoe"/>
+                <craftingToolHoe oreDictName="craftingToolHoe"/>
             </hoe>
+            <craftingToolHardHammer oreDictName="craftingToolHardHammer"/>
+            <craftingToolMiningDrill oreDictName="craftingToolMiningDrill"/>
+            <craftingToolSaw oreDictName="craftingToolSaw"/>
             <shears id="shears"/>
             <fishingRod id="fishing_rod"/>
             <carrotOnAStick id="carrot_on_a_stick"/>
