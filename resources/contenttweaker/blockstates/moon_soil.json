@@ -1,0 +1,27 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/moon_soil"
+    },
+    "model": "base:storage",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },  
+  "variants": {
+    "normal": [{
+      "textures": {
+        "north": "advancedrocketry:blocks/moon_turf",
+        "south": "advancedrocketry:blocks/moon_turf",
+        "west": "advancedrocketry:blocks/moon_turf",
+        "east": "advancedrocketry:blocks/moon_turf",
+        "up": "contenttweaker:blocks/moon_soil"
+      },
+      "model": "contenttweaker:moon_soil"
+    }],
+    "inventory": {
+        "model": "contenttweaker:moon_soil",
+        "transform": "forge:default-item"
+    }
+  }
+}

@@ -11,6 +11,7 @@ val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
+val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 val chemical_reactor as RecipeMap = RecipeMap.getByName("chemical_reactor");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
@@ -18,6 +19,7 @@ val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
 val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
+val implosion_compressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val packer as RecipeMap = RecipeMap.getByName("packer");
@@ -26,13 +28,26 @@ val extruder as RecipeMap = RecipeMap.getByName("extruder");
 val forge_hammer as RecipeMap = RecipeMap.getByName("forge_hammer");
 val lathe as RecipeMap = RecipeMap.getByName("lathe");
 
-var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
+var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
+var craftingToolSoftHammerEmptyTag = <ore:craftingToolSoftHammerEmptyTag>;
+var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 
 //Electric Blast Furnace
 blast_furnace.findRecipe(120, [<minecraft:iron_ingot> * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotWroughtIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
 blast_furnace.findRecipe(120, [<ore:ingotPigIron>.firstItem * 1], [<liquid:oxygen> * 1000]).remove();
+blast_furnace.findRecipe(480, [<ore:ingotNickel>.firstItem * 4, <ore:ingotChrome>.firstItem * 1], null ).remove();
 
+blast_furnace.recipeBuilder()
+	.inputs(<ore:ingotNickel> * 4)
+	.inputs(<ore:ingotChrome> * 1)
+	.fluidInputs([<liquid:helium3> * 25])
+	.outputs(<ore:ingotHotNichrome>.firstItem * 5, <ore:dustSmallDarkAsh>.firstItem * 2)
+	.property("temperature", 2700)
+	.duration(2700)
+	.EUt(480)
+	.buildAndRegister();
+	
 blast_furnace.recipeBuilder()
 	.inputs(<ore:ingotCompressedWroughtIron> * 1)
 	.fluidInputs([<liquid:oxygen> * 500])
@@ -229,23 +244,15 @@ val oreFuelRichUranium = <ore:fuelsDenseUranium>;
 val oreFuelMediumUranium = <ore:fuelsMediumUranium>;
 val oreFuelSparseUranium = <ore:fuelsSparseUranium>;
 
-oreFuelRichUranium.addAll(<ore:crushedCentrifugedUranium>);
-oreFuelRichUranium.addAll(<ore:crushedPurifiedUranium>);
-oreFuelRichUranium.addAll(<ore:crushedUranium>);
+oreFuelRichUranium.addAll(<ore:dustRawUranium>);
+oreFuelMediumUranium.addAll(<ore:dustUraninite>);
+oreFuelSparseUranium.addAll(<ore:dustPitchblende>);
 
-oreFuelMediumUranium.addAll(<ore:crushedCentrifugedUraninite>);
-oreFuelMediumUranium.addAll(<ore:crushedPurifiedUraninite>);
-oreFuelMediumUranium.addAll(<ore:crushedUraninite>);
-
-oreFuelSparseUranium.addAll(<ore:crushedCentrifugedPitchblende>);
-oreFuelSparseUranium.addAll(<ore:crushedPurifiedPitchblende>);
-oreFuelSparseUranium.addAll(<ore:crushedPitchblende>);
-
-// UF6 (Uranium Hexafluoride from Uranium-rich ores)
+// UF6 (Uranium Hexafluoride from Uranium-rich ores, plus traces of radon)
 chemical_reactor.recipeBuilder()
 	.inputs(oreFuelRichUranium * 1)
 	.fluidInputs([<liquid:hydrofluoric_acid> * 1000, <liquid:water> * 1000])
-	.fluidOutputs(<liquid:uranium_hexafluoride> * 7000)
+	.fluidOutputs([<liquid:uranium_hexafluoride> * 7000, <liquid:radon> * 1])
 	.duration(400)
 	.EUt(580)
 	.buildAndRegister();
@@ -293,24 +300,6 @@ recipes.addShapeless("it3_gt_uranium235", uranium235, [tinyUranium235, tinyUrani
 // Disable default Uranium238 -> TinyPlutonium + TinyUranium235
 centrifuge.findRecipe(320, [<ore:dustUranium>.firstItem * 1], null).remove();
 
-// Oxidized 238
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:dustUranium> * 1)
-	.fluidInputs([<liquid:oxygen> * 400])
-	.outputs([uranium238Oxidized * 1])
-	.duration(2)
-	.EUt(8100)
-	.buildAndRegister();
-  
-// Oxidized 235
-chemical_reactor.recipeBuilder()
-	.inputs(<ore:dustUranium235> * 1)
-	.fluidInputs([<liquid:oxygen> * 400])
-	.outputs([uranium235Oxidized * 1])
-	.duration(2)
-	.EUt(8100)
-	.buildAndRegister();
-  
 alloy_smelter.recipeBuilder()		//Blue Alloy
 	.inputs(<ore:dustSilver> * 1, <ore:dustCobaltAluminate> * 1)
 	.outputs(<ore:ingotBlueAlloy>.firstItem * 2)
@@ -352,10 +341,24 @@ turfMoonCentrifuge.add(<advancedrocketry:moonturf_dark>);
 centrifuge.recipeBuilder()
     .inputs(<ore:turfMoonCentrifuge> * 1)
     .outputs(<minecraft:gravel> * 1)
-    .fluidOutputs(<liquid:helium3> * 125)
+    .fluidOutputs(<liquid:helium> * 5)
     .duration(320)
     .EUt(30)
     .buildAndRegister();
+    
+centrifuge.recipeBuilder()
+    .fluidInputs(<liquid:concentrated_helium> * 1000)
+    .fluidOutputs(<liquid:helium> * 970, <liquid:helium3> * 30)
+    .duration(230)
+    .EUt(42)
+    .buildAndRegister();    
+    
+centrifuge.recipeBuilder()
+    .inputs(<ore:pollenDilithium> * 1)
+    .chancedOutput(<ore:gemDilithium>.firstItem * 1 , 325, 200)
+    .duration(530)
+    .EUt(220)
+    .buildAndRegister();        
 	
 centrifuge.recipeBuilder()		//Saltpeter
 	.inputs(<ore:sand> * 4)
@@ -363,6 +366,20 @@ centrifuge.recipeBuilder()		//Saltpeter
 	.duration(400)
 	.EUt(30)
 	.buildAndRegister();
+
+// Remove helium from end dust centrifuge
+
+var tinyPlatinum = <ore:dustTinyPlatinum>.firstItem;
+var smallTungstate = <ore:dustSmallTungstate>.firstItem;
+var sand = <minecraft:sand>;
+
+centrifuge.findRecipe(20,[<ore:dustEndstone>.firstItem *1], null).remove();
+
+centrifuge.recipeBuilder().inputs(<ore:dustEndstone> *1)
+  .chancedOutput(tinyPlatinum * 1 , 625, 100)
+  .chancedOutput(smallTungstate * 1 , 1250,100)
+  .chancedOutput(sand * 1 , 9000, 100)
+  .duration(320).EUt(20).buildAndRegister();	
   
   
 // Add oredicts to facilitate some questing
@@ -433,47 +450,31 @@ fluid_extractor.recipeBuilder()
 	.duration(80)
 	.buildAndRegister();
 	
-
-//NC Alloys
-var ferroBoron = <nuclearcraft:alloy:6>;
-var toughAlloy = <nuclearcraft:alloy:1>;
-var hardCarbon = <nuclearcraft:alloy:2>;
-var magnesiumDiboride = <nuclearcraft:alloy:3>;
-var lithiumManganeseDioxide = <nuclearcraft:alloy:4>;
-var dustManganeseOxide = <nuclearcraft:dust_oxide:2>;
-var dustManganeseDioxide = <nuclearcraft:dust_oxide:3>;
-var ingotManganeseOxide = <nuclearcraft:ingot_oxide:2>;
-var ingotManganeseDioxide = <nuclearcraft:ingot_oxide:3>;
-
-var ingotMagnesium = <gregtech:meta_item_1:10039>;
-
-recipes.remove(ferroBoron);
-recipes.remove(toughAlloy);
-recipes.remove(hardCarbon);
-recipes.remove(magnesiumDiboride);
-recipes.remove(lithiumManganeseDioxide);
-recipes.remove(dustManganeseOxide);
-recipes.remove(dustManganeseDioxide);
-recipes.remove(ingotManganeseOxide);
-recipes.remove(ingotManganeseDioxide);
-
-furnace.remove(ingotMagnesium, dustManganeseOxide);
-furnace.addRecipe(<ore:ingotManganeseOxide>.firstItem * 1, <ore:dustManganeseOxide>);
-
-alloy_smelter.recipeBuilder()
-	.inputs(<ore:ingotSteel> * 1, <ore:ingotBoron> * 1)
-	.outputs(<ore:ingotFerroboron>.firstItem * 2)
-	.duration(200)
-	.EUt(16)
-	.buildAndRegister();
-	
-alloy_smelter.recipeBuilder()
-	.inputs(<ore:ingotFerroboron> * 1, <ore:ingotLithium> * 1)
-	.outputs(<ore:ingotTough>.firstItem * 2)
-	.duration(300)
-	.EUt(16)
+// Lava from stone/cobble
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:cobbleStone> | <ore:stone>)
+	.fluidOutputs(<fluid:lava> * 1000)
+	.EUt(140)
+	.duration(410)
 	.buildAndRegister();
 
+// Lava from netherrack
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:netherrack>)
+	.fluidOutputs(<fluid:lava> * 1000)
+	.EUt(140)
+	.duration(330)
+	.buildAndRegister();
+
+// Lava from magma block
+fluid_extractor.recipeBuilder()
+	.inputs(<minecraft:magma>)
+	.fluidOutputs(<fluid:lava> * 2000)
+	.EUt(140)
+	.duration(220)
+	.buildAndRegister();
+  
+ 
 // Forge Hammer: Gravel -> Flint
 forge_hammer.recipeBuilder()
 	.inputs([<minecraft:gravel> * 1])
@@ -535,8 +536,14 @@ for mod in loadedMods {
 <ore:batteryLVAll>.add(<metaitem:battery.su.lv.sulfuricacid>);
 <ore:batteryMVAll>.add(<metaitem:battery.su.mv.mercury>);
 <ore:batteryMVAll>.add(<metaitem:battery.su.mv.sulfuricacid>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.sodium>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.lithium>);
+<ore:batteryMVAll>.add(<metaitem:battery.re.mv.cadmium>);
 <ore:batteryHVAll>.add(<metaitem:battery.su.hv.mercury>);
 <ore:batteryHVAll>.add(<metaitem:battery.su.hv.sulfuricacid>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.sodium>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.lithium>);
+<ore:batteryHVAll>.add(<metaitem:battery.re.hv.cadmium>);
 
 fermenter.recipeBuilder()
 	.fluidInputs([<liquid:liquid_compost> * 3000])
@@ -765,14 +772,14 @@ var rodStone = <microblockcbe:stone_rod>;
 recipes.remove(rodStone);
 
 recipes.addShaped("it3_gt_stone_rod", <ore:rodStone>.firstItem * 1,[
-[craftingToolFileEmptyTag,null,null],
-[null,<ore:stone>,null],
-[null,null,null]]);
+  [craftingToolFileEmptyTag,null,null],
+  [null,<ore:stone>,null],
+  [null,null,null]]);
 
 recipes.addShaped("it3_gt_cobble_rod", <ore:rodCobblestone>.firstItem * 1,[
-[craftingToolFileEmptyTag,null,null],
-[null,<ore:cobblestone>,null],
-[null,null,null]]);
+  [craftingToolFileEmptyTag,null,null],
+  [null,<ore:cobblestone>,null],
+  [null,null,null]]);
 
 lathe.recipeBuilder()
 	.inputs(<ore:stone> * 1)
@@ -780,14 +787,16 @@ lathe.recipeBuilder()
 	.duration(200)
 	.EUt(24)
 	.buildAndRegister();
-  
+
+/*
+**** Custom wood hammer recipe.  Disabled because GT adds its own now, but we want to retain the script for future reference. ****
 var woodHammer = <gregtech:meta_tool:7>.withTag({"GT.ToolStats": {PrimaryMaterial: "wood", MaxDurability: 16, DigSpeed: 0.5 as float, AttackDamage: 0.5 as float, HarvestLevel: 1}});
   
-
 recipes.addShaped("it3_gt_wood_hammer", woodHammer * 1,[
 [<ore:plankWood>,<ore:plankWood>,null],
 [<ore:plankWood>,<ore:plankWood>,<ore:stickWood>],
 [<ore:plankWood>,<ore:plankWood>,null]]);  
+*/
 
 var fertilizer = <forestry:fertilizer_compound>;
 
@@ -803,7 +812,7 @@ recipes.addShapeless("it3_gt_empty_steel_cell", <metaitem:large_fluid_cell.steel
 recipes.addShapeless("it3_gt_empty_cell", <metaitem:fluid_cell>, [<metaitem:fluid_cell>]);
 
 // Saw + Rubber Log -> 4 Planks
-recipes.addShaped("it3_gt_saw_rubber", <minecraft:planks:3> * 4, [[<ore:craftingToolSaw>], [<gregtech:log>]]);
+recipes.addShaped("it3_gt_saw_rubber", <minecraft:planks:3> * 4, [[craftingToolSawEmptyTag], [<gregtech:log>]]);
 
 cutting_saw.recipeBuilder()
 	.inputs(<gregtech:log> * 1)
@@ -892,22 +901,59 @@ mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:creosote> * 750]).remov
 mixer.findRecipe(4, [<minecraft:redstone> * 1], [<liquid:seed.oil> * 750]).remove();
 
 mixer.recipeBuilder()
+	.inputs(<ore:dustTalc> * 1)
+	.fluidInputs([<liquid:oil_medium> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();    
+	
+mixer.recipeBuilder()
+	.inputs(<ore:dustSoapstone> * 1)
+	.fluidInputs([<liquid:oil_medium> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();    	
+	
+mixer.recipeBuilder()
 	.inputs(<minecraft:redstone> * 10)
-  .fluidInputs([<liquid:oil> * 750])
+	.fluidInputs([<liquid:oil> * 750])
 	.fluidOutputs(<liquid:lubricant> * 750)
 	.duration(160)
 	.EUt(4)
 	.buildAndRegister();
 mixer.recipeBuilder()
 	.inputs(<minecraft:redstone> * 10)
-  .fluidInputs([<liquid:creosote> * 750])
+	.fluidInputs([<liquid:oil_light> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();	
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+	.fluidInputs([<liquid:oil_medium> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();	
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+	.fluidInputs([<liquid:oil_heavy> * 750])
+	.fluidOutputs(<liquid:lubricant> * 750)
+	.duration(160)
+	.EUt(4)
+	.buildAndRegister();		
+mixer.recipeBuilder()
+	.inputs(<minecraft:redstone> * 10)
+	.fluidInputs([<liquid:creosote> * 750])
 	.fluidOutputs(<liquid:lubricant> * 750)
 	.duration(160)
 	.EUt(4)
 	.buildAndRegister();  
 mixer.recipeBuilder()
 	.inputs(<minecraft:redstone> * 10)
-  .fluidInputs([<liquid:seed.oil> * 750])
+	.fluidInputs([<liquid:seed.oil> * 750])
 	.fluidOutputs(<liquid:lubricant> * 750)
 	.duration(160)
 	.EUt(4)
@@ -921,3 +967,100 @@ assembler.recipeBuilder()
   .duration(220)
   .EUt(9)
   .buildAndRegister();  
+  
+  
+// Wood Plank recipe
+recipes.addShaped("it3_gt_wood_plank", <ore:plateWood>.firstItem, [
+  [null, craftingToolSoftHammerEmptyTag,null],
+  [null,<ore:plankWood>,null],
+  [null,<ore:plankWood>,null]]);
+
+  
+// Add stand-in recipe for imploding diamond dust
+implosion_compressor.recipeBuilder()
+	.inputs(<ore:dustDiamond> * 4)
+	.property("explosives", 2)
+	.outputs(<minecraft:diamond> * 3)
+	.duration(20)
+	.EUt(30)
+	.buildAndRegister();
+
+// We need P-241 varations of a couple recipes that expect P-244, which we don't provide
+var improved_ender_eye = <metaitem:quantumeye>;  
+var improved_nether_star = <metaitem:quantumstar>;  
+chemical_bath.recipeBuilder()
+	.inputs(<ore:gemEnderEye> * 1)
+  .fluidInputs([<liquid:plutonium241> * 288])
+	.outputs(improved_ender_eye * 1)
+	.duration(480)
+	.EUt(384)
+	.buildAndRegister();
+
+chemical_bath.recipeBuilder()
+	.inputs(<ore:gemNetherStar> * 1)
+  .fluidInputs([<liquid:plutonium241> * 1152])
+	.outputs(improved_nether_star * 1)
+	.duration(1920)
+	.EUt(384)
+	.buildAndRegister();
+
+
+// Split Arsenic Trioxide, which is a IT3 specific substance
+electrolyzer.recipeBuilder()
+	.inputs(<ore:dustArsenicTrioxide> * 5)
+	.outputs(<ore:dustArsenic>.firstItem * 2)
+	.fluidOutputs(<liquid:oxygen> * 3000)  
+	.duration(620)
+  .EUt(90)
+	.buildAndRegister();
+  
+
+// Allow centrifuges to turn dead bush into dirt with small chance
+centrifuge.recipeBuilder()
+	.inputs(<minecraft:deadbush> * 1)
+  .chancedOutput(<minecraft:dirt> * 1, 800, 300)
+  .duration(45)
+  .EUt(4)
+  .buildAndRegister(); 
+  
+// Fertilizer (5mb Nitrogen + 6 Phosphorus + 6 Potassium + 2 Calcium + 1 Magnesium -> Fertilizer)
+mixer.recipeBuilder()
+	.inputs(<ore:dustPhosphorus> * 4, <ore:dustPotassium> * 3, <ore:dustCalcium> * 2)
+  .fluidInputs(<liquid:nitrogen> * 5)  
+	.outputs(<forestry:fertilizer_compound> * 16)
+	.duration(50)
+	.EUt(9)
+	.buildAndRegister();
+
+// Alternative Cobalt Oxide recipe.  HV, and wastes oxygen.  Use Cobalt Ore EBF variant, people.
+var cobaltOxide = <gregtech:meta_item_1:2707>;
+chemical_reactor.recipeBuilder()
+  .inputs(<ore:dustCobalt> * 1)
+  .fluidInputs(<liquid:oxygen> * 2000) // Lots of waste
+  .outputs(cobaltOxide)
+  .duration(345)
+  .EUt(240)
+  .buildAndRegister();
+  
+// This generates some logistical oredicts.  In particular allRegularDust might be useful
+for entry in oreDict {
+  if entry.name.startsWith("dustTiny") {
+   <ore:allTinyDust>.addAll(entry);
+  } else if entry.name.startsWith("dustSmall") {
+   <ore:allSmallDust>.addAll(entry);
+  } else if entry.name.startsWith("dustPure") {
+   <ore:allPureDust>.addAll(entry);
+  } else if entry.name.startsWith("dustImpure") {
+   <ore:allImpureDust>.addAll(entry);
+  } else if entry.name.startsWith("dust") {   
+   <ore:allRegularDust>.addAll(entry);
+  } else if entry.name.startsWith("crushedPurified") {
+   <ore:allPurifiedOre>.addAll(entry);
+  } else if entry.name.startsWith("crushedCentrifuged") {
+   <ore:allCentrifugedOre>.addAll(entry);
+  } else if entry.name.startsWith("crushed") {
+   <ore:allCrushedOre>.addAll(entry);
+  }
+  
+}  
+

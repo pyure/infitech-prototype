@@ -21,7 +21,7 @@ recipes.addShaped("infitech3_deepresonance_generator", <deepresonance:generator>
 recipes.remove(<deepresonance:purifier>);  
 recipes.addShaped("infitech3_deepresonance_purifier", <deepresonance:purifier>, [
   [<deepresonance:filter>, <deepresonance:filter>, <deepresonance:filter>], 
-  [<ore:craftingFilter>, <deepresonance:machine_frame>, <ore:craftingFilter>], 
+  [<metaitem:item_filter>, <deepresonance:machine_frame>, <metaitem:item_filter>], 
   [<deepresonance:filter>, <ore:circuitBasic>, <deepresonance:filter>]]);
   
 recipes.remove(<deepresonance:laser>);

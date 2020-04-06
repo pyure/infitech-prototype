@@ -1,11 +1,13 @@
+import mods.gregtech.recipe.RecipeMap;
+
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 var scooporator = <gendustry:industrial_scoop:100>.withTag({charge: 0});
 var modulePower = <gendustry:power_module>;
-var scoop = <ore:craftingToolScoop>;
+var scoop = <ore:craftingToolScoopEmptyTag>;
 var frameUpgrade = <gendustry:upgrade_frame>;
 var ingotAluminium = <ore:ingotAluminium>;
 var ingotGold = <ore:ingotGold>;
-var frameCobalt = <ore:frameGtCobalt>;
 var blockRedstone = <ore:blockRedstone>;
 var gearAluminium = <ore:gearAluminium>;
 var circuitBasic = <ore:circuitBasic>;
@@ -30,6 +32,7 @@ var sampler = <gendustry:sampler>;
 
 //Recipes
 scripts.functions.disableItem(<gendustry:mutatron>);
+scripts.functions.disableItem(<gendustry:mutagen_producer>);
 
 //recipes.remove(scooporator);
 recipes.addShaped("it3_gendustry_scooporator", scooporator, [
@@ -40,7 +43,7 @@ recipes.addShaped("it3_gendustry_scooporator", scooporator, [
 //recipes.remove(frameUpgrade);
 recipes.addShaped("it3_gendustry_frame_upgrade", frameUpgrade, [
 [ingotAluminium, ingotGold, ingotAluminium],
-[blockRedstone, frameCobalt, blockRedstone],
+[blockRedstone, null, blockRedstone],
 [ingotAluminium, ingotGold, ingotAluminium]]);
 
 //recipes.remove(modulePower);
@@ -61,11 +64,6 @@ recipes.addShaped("it3_gendustry_bee_receptacle", beeReceptacle, [
 [ingotAluminium, glassPane, ingotAluminium],
 [blockRedstone, pressurePlateLightWeighted, blockRedstone]]);
 
-//recipes.remove(mutagenProducer);
-recipes.addShaped("it3_gendustry_mut_producer", mutagenProducer, [
-[plateAluminium, pipeSmallBronze, plateAluminium],
-[modulePower, hullMachineHV, modulePower],
-[gearAluminium, tankMutagen, gearAluminium]]);
 
 //recipes.remove(apiaryIndustrial);	
 recipes.addShaped("it3_gendustry_indust_apiary", apiaryIndustrial, [
@@ -114,3 +112,15 @@ recipes.addShaped("it3_gendustry_sampler", sampler, [
 [gearAluminium, processorGenetics, gearAluminium],
 [beeReceptacle, hullMachineHV, <minecraft:diamond>],
 [gearAluminium, tankMutagen, gearAluminium]]);
+
+
+var mutagen_comb = <contenttweaker:mutagen_bee_comb>;
+var mutagen_liquid = <liquid:mutagen>;
+
+// Add fluid extractor recipe for mutagen comb, since we cannot remove the vanilla mutagen recipes from the mutagen producer
+fluid_extractor.recipeBuilder()
+	.inputs(mutagen_comb * 1)
+	.fluidOutputs([mutagen_liquid * 1337])
+	.duration(800)
+	.EUt(512)
+	.buildAndRegister();

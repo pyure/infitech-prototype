@@ -34,6 +34,11 @@ materialCobaltOxide.addFlags(["DISABLE_DECOMPOSITION"]);
 val materialArsenicTrioxide = MaterialRegistry.createDustMaterial(708, "arsenic_trioxide", 15856113, "dull", 0, [<material:arsenic> * 2, <material:oxygen> * 3]);
 materialArsenicTrioxide.addFlags(["DISABLE_DECOMPOSITION"]);
 
+val materialThoriumDioxide = MaterialRegistry.createDustMaterial(709, "thorium_dioxide", 0x141414, "shiny", 0, [<material:thorium> * 1, <material:oxygen> * 2]);
+val materialThoriumHydroxide = MaterialRegistry.createDustMaterial(710, "thorium_hydroxide", 0x313131, "shiny", 0, [<material:thorium> * 1, <material:oxygen> * 4, <material:hydrogen> * 4]);
+val materialCrudeThoriumPrecipitate = MaterialRegistry.createDustMaterial(711, "crude_thorium_precipitate", 0x242424, "shiny", 0, [<material:thorium> * 1, <material:oxygen> * 4, <material:chlorine> * 1]);
+
+
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");
 val fluidEnderiumBase = MaterialRegistry.createFluidMaterial(752, "enderium_base", 0x4D756E , "fluid" );
@@ -82,6 +87,7 @@ MaterialRegistry.createFluidMaterial(804, "titanium_grinding_solution", 0xDDA1F1
 MaterialRegistry.createFluidMaterial(805, "tungstensteel_grinding_solution", 0x6565A1 , "fluid" );
 
 
+
 //Liquified Pollen
 val liquidPollenLead = MaterialRegistry.createFluidMaterial(806, "liquid_pollen_lead", 0x8C648C, "fluid", null);
 val liquidPollenEmerald = MaterialRegistry.createFluidMaterial(807, "liquid_pollen_emerald", 0x248F24, "fluid", null);
@@ -98,8 +104,17 @@ val liquidPollenNickel = MaterialRegistry.createFluidMaterial(817, "liquid_polle
 val liquidPollenIron = MaterialRegistry.createFluidMaterial(818, "liquid_pollen_iron", 0xAAAAAA, "fluid", null);
 val liquidPollenIridium = MaterialRegistry.createFluidMaterial(819, "liquid_pollen_iridium", 0xFFFFFF, "fluid", null);
 
+#Helium
+val concentrated_helium = MaterialRegistry.createFluidMaterial(820, "concentrated_helium", 0xA3A400, "FLUID");
+concentrated_helium.addFlags(["GENERATE_FLUID_BLOCK"]);
+
+#Raw Uranium, as opposed to U238 Ore
+val materialUranium = MaterialRegistry.createDustMaterial(821, "raw_uranium", 0x39F060, "dull", 0, null);
+materialUranium.addFlags(["DISABLE_DECOMPOSITION"]);
+materialUranium.addFlags(["GENERATE_ORE"]);
 
 //Tweaks to existing Materials
 <material:borax>.addFlags(["GENERATE_ORE"]);
-<material:quartzite>.addFlags(["GENERATE_PLATE", "GENERATE_ROD",  "GENERATE_GEAR"]);
+<material:quartzite>.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_GEAR"]);
 <material:nickel>.addFlags(["GENERATE_ROD"]);
+<material:cobalt>.addFlags(["GENERATE_ROD", "GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);

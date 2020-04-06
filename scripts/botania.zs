@@ -88,11 +88,10 @@ compressor.recipeBuilder()
 
 // Change ring of the mantle recipe
 var ringMantle = <botania:miningring>;
-var gtPickaxeDiamond = <gregtech:meta_tool:1>.withTag({"GT.ToolStats": {PrimaryMaterial: "diamond"}});
 
 recipes.remove(ringMantle);
 recipes.addShaped("it3_ringMantle", ringMantle, [
-  [<ore:runeEarthB>, <ore:ingotManasteel>, gtPickaxeDiamond], 
+  [<ore:runeEarthB>, <ore:ingotManasteel>, <ore:toolHeadPickaxeDiamond>], 
   [<ore:ingotManasteel>, null, <ore:ingotManasteel>], 
   [null, <ore:ingotManasteel>, null]]);
 
@@ -179,3 +178,44 @@ events.onBlockBreak(function(event as crafttweaker.event.BlockBreakEvent) {
 // Charged Certus Quartz Alchemy
 var charged_quartz = <appliedenergistics2:material:1>;
 mods.botania.ManaInfusion.addAlchemy(charged_quartz, <ore:crystalCertusQuartz>, 900);
+
+// 
+var manasteel_pickaxe = <botania:manasteelpick>;
+recipes.remove(manasteel_pickaxe);
+
+recipes.addShaped("it3_botania_manasteel_pickaxe", manasteel_pickaxe, [
+  [<ore:ingotManasteel>, <ore:ingotAluminium>, <ore:ingotManasteel>], 
+  [null, <ore:livingwoodTwig>, null], 
+  [null, <ore:livingwoodTwig>, null]]);
+
+  
+// Remove coal duplication
+mods.botania.ManaInfusion.removeRecipe(<minecraft:coal> * 2); 
+
+// Allow conversion of certus quartz -> prismarine
+mods.botania.ManaInfusion.addAlchemy(<minecraft:prismarine_shard>, <ore:gemCertusQuartz>, 4000);
+
+// Recipe for Combat Maid Headgear, suggested by Furian
+var combatMaidHeadGear = <extrabotany:combatmaidhelm>;
+var shadowWarriorHelmet = <extrabotany:shadowwarriorhelm>.withTag({isnight: 0 as byte});
+var starryHeadGear = <extrabotany:cosmeticmaidhelm>;
+  
+recipes.remove(combatMaidHeadGear);
+recipes.addShaped("it3_extrabotany_recipe_cmhelm", <extrabotany:combatmaidhelm>.withTag({}), [
+  [<ore:gaiaIngot>, <ore:gaiaIngot>, <ore:gaiaIngot>], 
+  [<ore:goldweave>, <botania:terrasteelhelm>, <ore:goldweave>], 
+  [shadowWarriorHelmet, <ore:circuitAdvanced>, starryHeadGear]]);
+
+// Gaia Pylon
+var gaiaPylon = <botania:pylon:2>;
+recipes.remove(gaiaPylon);
+recipes.addShaped("it3_botania_gaia_pylon", gaiaPylon, [
+  [<ore:plateStainlessSteel>, <ore:elvenPixieDust>, <ore:plateStainlessSteel>], 
+  [<ore:ingotElvenElementium>, <botania:pylon>, <ore:ingotElvenElementium>], 
+  [<ore:stickStainlessSteel>, <ore:elvenPixieDust>, <ore:stickStainlessSteel>]]);
+  
+// Botania Manasteel
+var manasteel = <botania:manaresource>;
+mods.botania.ManaInfusion.removeRecipe(manasteel);
+mods.botania.ManaInfusion.addInfusion(manasteel, <ore:ingotSteel>, 3000);
+mods.botania.ManaInfusion.addInfusion(manasteel, <ore:ingotCompressedWroughtIron>, 3000);

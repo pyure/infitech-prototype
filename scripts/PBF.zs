@@ -7,8 +7,8 @@ import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.PBFRecipeBuilder;
 import mods.gregtech.recipe.RecipeMaps;
 
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
 
 //Remove recipes from PBF
 for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {

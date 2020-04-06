@@ -6,7 +6,7 @@
   "priority": -100,
   "count_as_vein": false,
   "generation_predicate": "any",
-
+  "dimension_filter": ["dimension_id:0"],
   "biome_modifier": {
     "type": "biome_dictionary",
     "WATER": 10,

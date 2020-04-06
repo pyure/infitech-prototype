@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
 
 var mv_machine_casing = <gregtech:machine_casing:2>;
 var hv_machine_casing = <gregtech:machine_casing:3>;
@@ -95,7 +96,7 @@ recipes.addShaped("it3_iron_tubing", <advgenerators:iron_tubing> * 4, [
 // Iron Frame: Hand
 recipes.remove(<advgenerators:iron_frame>);
 recipes.addShaped("it3_iron_frame", <advgenerators:iron_frame> * 1, [
-  [<ore:craftingToolScrewdriver>, <ore:plateIron>, null], 
+  [craftingToolScrewdriverEmptyTag, <ore:plateIron>, null], 
   [<ore:plateIron>, <ore:boltIron>, <ore:plateIron>], 
   [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>]]);
   
@@ -120,7 +121,7 @@ assembler.recipeBuilder()
 recipes.remove(<advgenerators:advanced_pressure_valve>);
 assembler.recipeBuilder()
   .inputs(<ore:circuitAdvanced> * 1, <advgenerators:pressure_valve> * 2)
-  .outputs(<advgenerators:pressure_valve>  * 1)
+  .outputs(<advgenerators:advanced_pressure_valve>  * 1)
   .duration(420)
   .EUt(640)
   .buildAndRegister();

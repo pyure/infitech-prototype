@@ -32,7 +32,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 /* ========== Ore Unification ========== */
 
-var meta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as int[];
+var meta = [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13] as int[]; // We do not unify 6, which is Netherrack variant
 
 /*
 <gregtech:ore_cooperite_0>
@@ -845,4 +845,87 @@ for i in meta
 {
 	var ore = <gregtech:ore_tennantite_0>.definition.makeStack(i);
 	<ore:oreTennantite>.add(ore);	
+}
+
+/*
+<gregtech:ore_rutile_0>
+*/
+
+for i in meta
+{
+	var ore = <gregtech:ore_rutile_0>.definition.makeStack(i);
+	<ore:oreRutile>.add(ore);	
+}
+
+/* Special oredicts for chisel-able blocks */
+for i in <ore:blockCopper>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniCopper>.add(i);
+  }
+}
+
+for i in <ore:blockTin>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniTin>.add(i);
+  }
+}
+
+for i in <ore:blockBronze>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniBronze>.add(i);
+  }
+}
+
+for i in <ore:blockLead>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniLead>.add(i);
+  }
+}
+
+for i in <ore:blockSilver>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniSilver>.add(i);
+  }
+}
+
+for i in <ore:blockAluminium>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniAluminium>.add(i);
+  }
+}
+
+for i in <ore:blockSteel>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniSteel>.add(i);
+  }
+}
+
+for i in <ore:blockInvar>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniInvar>.add(i);
+  }
+}
+
+for i in <ore:blockElectrum>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniElectrum>.add(i);
+  }
+}
+
+for i in <ore:blockNickel>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniNickel>.add(i);
+  }
+}
+
+for i in <ore:blockPlatinum>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniPlatinum>.add(i);
+  }
+}
+
+for i in <ore:blockCobalt>.items {
+  if (i.definition.owner != "chisel") {
+    <ore:blockUniCobalt>.add(i);
+  }
 }

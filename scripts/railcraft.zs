@@ -1,6 +1,7 @@
 // --- Created by Jason McRay --- 
 import mods.gregtech.recipe.RecipeMap;
 import mods.pneumaticcraft.pressurechamber;
+import crafttweaker.oredict.IOreDictEntry;
 
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
@@ -15,8 +16,11 @@ scripts.functions.disableItem(metal_roller);
 scripts.functions.disableItem(powered_metal_roller);
 
 # Aliases
-var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var advItemLoader = <railcraft:manipulator:2>;
+var advItemUnloader = <railcraft:manipulator:3>;
+
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
 
 var backpackApothecary = <railcraft:backpack_apothecary_t1>;
 var backpackApothecaryT2 = <railcraft:backpack_apothecary_t1>;
@@ -57,6 +61,8 @@ var ingotSteel = <ore:ingotSteel>;
 var ingotTitanium = <ore:ingotTitanium>;
 var ingotTungsten = <ore:ingotTungsten>;
 var ironBars = <minecraft:iron_bars>;
+var itemLoader = <railcraft:manipulator>;
+var itemUnloader = <railcraft:manipulator:1>;
 var pickaxeDiamond = <minecraft:diamond_pickaxe>;
 var piston = <minecraft:piston>;
 var plankWood = <ore:plankWood>;
@@ -95,6 +101,26 @@ scripts.functions.disableItem(<railcraft:blast_furnace>);
 scripts.functions.disableItem(<railcraft:coke_oven_red>);
 
 # Recipe tweaks
+
+// Advanced Item Loader
+recipes.remove(advItemLoader);
+recipes.addShaped("railcraft_manipulator_2", advItemLoader, 
+[
+[<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], 
+[<ore:dustRedstone>, itemLoader, <ore:dustRedstone>], 
+[<ore:ingotSteel>, <minecraft:piston>, <ore:ingotSteel>]
+]);
+
+// Advanced Item Unloader
+recipes.remove(advItemUnloader);
+recipes.addShaped("railcraft_manipulator_3", advItemUnloader, 
+[
+[<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], 
+[<ore:dustRedstone>, itemUnloader, <ore:dustRedstone>], 
+[<ore:ingotSteel>, <minecraft:piston>, <ore:ingotSteel>]
+]);
+
+
 recipes.addShapeless("it3_rc_wood_rail", railWooden * 3, [ingotIron, stickWood]);
 
 recipes.remove(fireboxSolid);
@@ -166,7 +192,7 @@ mods.forestry.Carpenter.addRecipe(backpackApothecaryT2, [[wovenSilk, wovenSilk, 
 * Engraving Bench doesn't seem to be a thing anymore
 */
 
-recipes.addShapeless("it3_rc_track_parts", <railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIron>, <ore:rodIron>]);
+recipes.addShapeless("it3_rc_track_parts", <railcraft:track_parts> * 2, [<ore:boltIron>, <ore:screwIron>, <ore:stickIron>]);
 
 // Raw firestone.  Need more recipes
 mods.pneumaticcraft.pressurechamber.addRecipe([<railcraft:ore_magic> * 1], 4.5, [<railcraft:firestone_raw>]);
@@ -263,7 +289,39 @@ for i in 0 to 15 {
     .duration(24)
     .EUt(12)
     .buildAndRegister();
-    
-
-
 }
+
+// Remove the existing rail recipes
+recipes.removeByRecipeName("railcraft:rail#0$10");
+recipes.removeByRecipeName("railcraft:rail#0$1");
+recipes.removeByRecipeName("railcraft:rail#0$2");
+recipes.removeByRecipeName("railcraft:rail#0$8");
+recipes.removeByRecipeName("railcraft:rail#0$9");
+recipes.removeByRecipeName("railcraft:rail_tungsten");
+recipes.removeByRecipeName("railcraft:rail_titanium");
+recipes.removeByRecipeName("railcraft:rail_invar");
+recipes.removeByRecipeName("railcraft:rail_steel");
+recipes.removeByRecipeName("railcraft:rail_tungsten_steel");
+
+// These oredicts create these many "rails" which are used to make tracks
+val rail_metal_map = {
+  <ore:stickIron> : 12,
+  <ore:stickBronze> : 16,
+  <ore:stickInvar> : 20,
+  <ore:stickSteel> : 48,
+  <ore:stickStainlessSteel> : 64
+} as int[IOreDictEntry];
+
+// Create the new recipes using metal rods
+var counter = 0;
+for oredict_stick, number_rails in rail_metal_map {
+	var recipe_name = "it3_stick_rail_" ~ counter;
+	recipes.addShaped(recipe_name, <railcraft:rail> * number_rails, [
+		[oredict_stick, null, oredict_stick],
+		[oredict_stick, null, oredict_stick],
+		[oredict_stick, null, oredict_stick]]);
+	counter = counter + 1;
+}
+
+
+

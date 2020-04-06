@@ -1,0 +1,11 @@
+{
+    "name": "Gold",
+    "category": "ores",
+    "icon": "minecraft:gold_ingot",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Veins: Magnetite\nByproduct of: Copper, netherrack"
+        }
+    ]
+}

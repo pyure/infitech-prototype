@@ -62,95 +62,94 @@ recipes.addShaped("it3_pr_diamond_saw", <microblockcbe:saw_diamond>, [
 
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 alloy_smelter.recipeBuilder()
-    .inputs(<ore:blockCoal>*1, <ore:sand>*8)
-    .outputs(silicon_boule *1)
-    .duration(140)
-    .EUt(16)
-    .buildAndRegister();
+  .inputs(<ore:blockCoal>*1, <ore:sand>*8)
+  .outputs(silicon_boule *1)
+  .duration(140)
+  .EUt(16)
+  .buildAndRegister();
 
 val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
 
 //Plate recipes
 cutting_saw.recipeBuilder()
-	.inputs(<ore:stoneBricks>*1)
-	.fluidInputs(<liquid:lubricant> * 1)
-    .outputs(prPlate *5)
-    .duration(10)
-    .EUt(8)
-    .buildAndRegister();
+  .inputs(<ore:slabStone> * 1)
+  .fluidInputs(<liquid:lubricant> * 1)
+  .outputs(prPlate * 2)
+  .duration(10)
+  .EUt(8)
+  .buildAndRegister();
 
 cutting_saw.recipeBuilder()
-	.inputs(<ore:stoneBricks>*1)
-	.fluidInputs(<liquid:distilled_water> * 3)
-    .outputs(prPlate *5)
-    .duration(20)
-    .EUt(8)
-    .buildAndRegister();
+  .inputs(<ore:slabStone> * 1)
+  .fluidInputs(<liquid:distilled_water> * 3)
+  .outputs(prPlate * 2)
+  .duration(20)
+  .EUt(8)
+  .buildAndRegister();
 
 cutting_saw.recipeBuilder()
-	.inputs(<ore:stoneBricks>*1)
-	.fluidInputs(<liquid:water> * 5)
-    .outputs(prPlate *5)
-    .duration(80)
-    .EUt(8)
-    .buildAndRegister();
+  .inputs(<ore:slabStone> * 1)
+  .fluidInputs(<liquid:water> * 5)
+  .outputs(prPlate * 2)
+  .duration(80)
+  .EUt(8)
+  .buildAndRegister();
 
 //silicon recipes
+cutting_saw.recipeBuilder()
+  .inputs(silicon_boule *1)
+  .fluidInputs(<liquid:lubricant> * 1)
+  .outputs(silicon *12)
+  .duration(200)
+  .EUt(32)
+  .buildAndRegister();
 
 cutting_saw.recipeBuilder()
-	.inputs(silicon_boule *1)
-	.fluidInputs(<liquid:lubricant> * 1)
-    .outputs(silicon *12)
-    .duration(200)
-    .EUt(32)
-    .buildAndRegister();
-
-cutting_saw.recipeBuilder()
-	.inputs(silicon_boule *1)
-	.fluidInputs(<liquid:distilled_water> * 3)
-    .outputs(silicon *8)
-    .duration(200)
-    .EUt(32)
-    .buildAndRegister();
+  .inputs(silicon_boule *1)
+  .fluidInputs(<liquid:distilled_water> * 3)
+  .outputs(silicon *8)
+  .duration(200)
+  .EUt(32)
+  .buildAndRegister();
 
 cutting_saw.recipeBuilder()
 	.inputs(silicon_boule *1)
 	.fluidInputs(<liquid:water> * 5)
-    .outputs(silicon *8)
-    .duration(800)
-    .EUt(32)
-    .buildAndRegister();
+  .outputs(silicon *8)
+  .duration(800)
+  .EUt(32)
+  .buildAndRegister();
 
 val chemical_bath as RecipeMap = RecipeMap.getByName("chemical_bath");
 chemical_bath.recipeBuilder()
 	.inputs(silicon *1)
 	.fluidInputs(<liquid:redstone> * 1152)
-    .outputs(redSilicon * 1)
-    .duration(400)
-    .EUt(32)
-    .buildAndRegister();
+  .outputs(redSilicon * 1)
+  .duration(400)
+  .EUt(32)
+  .buildAndRegister();
 
 chemical_bath.recipeBuilder()
 	.inputs(silicon *1)
 	.fluidInputs(<liquid:glowstone> * 1152)
-    .outputs(goldSilicon * 1)
-    .duration(400)
-    .EUt(32)
-    .buildAndRegister();
+  .outputs(goldSilicon * 1)
+  .duration(400)
+  .EUt(32)
+  .buildAndRegister();
 
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 assembler.recipeBuilder()
 	.inputs(<minecraft:quartz> * 2, <minecraft:diamond> * 1, <ore:circuitPrimitive> * 1)
 	.fluidInputs(<liquid:gold> * 96)
-    .outputs(<projectred-fabrication:ic_chip> * 1)
-    .duration(300)
-    .EUt(32)
-    .buildAndRegister();
+  .outputs(<projectred-fabrication:ic_chip> * 1)
+  .duration(300)
+  .EUt(32)
+  .buildAndRegister();
 
 assembler.recipeBuilder()
 	.inputs(<minecraft:paper> * 1, <minecraft:redstone> * 1)
 	.fluidInputs(<liquid:chemi_dye_blue> * 288)
-    .outputs(<projectred-fabrication:ic_blueprint> * 1)
-    .duration(300)
-    .EUt(32)
-    .buildAndRegister();
+  .outputs(<projectred-fabrication:ic_blueprint> * 1)
+  .duration(300)
+  .EUt(32)
+  .buildAndRegister();

@@ -4,7 +4,7 @@ val assembler as RecipeMap = RecipeMap.getByName("assembler");
 
 
 // Elevators
-for i in 0 to 15 {
+for i in 0 to 16 {
   var recipe_name = "it3_openblocks_elevator_" ~ i;
   var rotating_recipe_name = "it3_openblocks_rotating_elevator_" ~ i;
   var converting_recipe_name = "it3_openblocks_converted_elevator_" ~ i;
@@ -15,17 +15,17 @@ for i in 0 to 15 {
   recipes.remove(elevator);
   // Add new recipe for the basic elevator
   recipes.addShaped(recipe_name, elevator, [
-    [<ore:rodTitanium>, wool, <ore:rodTitanium>], 
+    [<ore:stickTitanium>, wool, <ore:stickTitanium>], 
     [wool, <botania:platform>, wool], 
-    [<ore:rodTitanium>, <ore:plateTitanium>, <ore:rodTitanium>]]);
+    [<ore:stickTitanium>, <ore:plateTitanium>, <ore:stickTitanium>]]);
     
     
   recipes.remove(rotating_elevator);
   // Add new recipe for the rotating elevator
   recipes.addShaped(rotating_recipe_name, rotating_elevator, [
-    [<ore:rodTitanium>, wool, <ore:rodTitanium>], 
+    [<ore:stickTitanium>, wool, <ore:stickTitanium>], 
     [wool, <botania:platform>, wool], 
-    [<ore:rodTitanium>, <ore:ringTitanium>, <ore:rodTitanium>]]);
+    [<ore:stickTitanium>, <ore:ringTitanium>, <ore:stickTitanium>]]);
    
   // Bring back recipe to convert normal elevator into rotating.  Unchanged.
   recipes.addShapeless(converting_recipe_name, rotating_elevator, [elevator, <ore:ingotIron>, <ore:ingotIron>]);
@@ -39,14 +39,14 @@ recipes.addShaped("it3_openblocks_fan_0", <openblocks:fan>, [[<minecraft:iron_ba
 // Glider.  Disabled in IT2. Let's allow it, mid-game.
 var gliderWing = <openblocks:generic>;
 recipes.remove(<openblocks:hang_glider>);
-recipes.addShaped("it3_openblocks_hang_glider_0", <openblocks:hang_glider>, [[gliderWing, <ore:stickTitanium>, gliderWing]]);
+recipes.addShaped("it3_openblocks_hang_glider_0", <openblocks:hang_glider>, [[gliderWing, <ore:stickAluminium>, gliderWing]]);
 
 // Tank.  IT2 didn't tweak this, but its so awesome I think we should.
 recipes.remove(<openblocks:tank> * 2);
 recipes.addShaped("it3_openblocks_tank_0", <openblocks:tank> * 2, [
-  [<ore:plateBlackBronze>, <ore:paneGlass>, <ore:plateBlackBronze>], 
+  [<ore:plateStainlessSteel>, <ore:paneGlass>, <ore:plateStainlessSteel>], 
   [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>], 
-  [<ore:plateBlackBronze>, <ore:paneGlass>, <ore:plateBlackBronze>]]);
+  [<ore:plateStainlessSteel>, <ore:paneGlass>, <ore:plateStainlessSteel>]]);
 
 // Auto Anvil.  IT2 didn't tweak this, but its so awesome I think we should.
 recipes.remove(<openblocks:auto_anvil>);

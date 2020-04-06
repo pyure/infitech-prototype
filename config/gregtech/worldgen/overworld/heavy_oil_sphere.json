@@ -1,9 +1,10 @@
 {
-  "weight": 41,
+  "weight": 15,
   "density": 1.0,
   "max_height": 40,
   "min_height": 10,
   "priority": -100,
+  "dimension_filter": ["dimension_id:0"],
   "count_as_vein": false,
   "generation_predicate": "any",
   "vein_populator": {
@@ -16,7 +17,7 @@
   },
   "generator": {
     "type": "sphere",
-    "radius": [7, 10]
+    "radius": [13, 18]
   },
   "filler": {
     "type": "ignore_bedrock",

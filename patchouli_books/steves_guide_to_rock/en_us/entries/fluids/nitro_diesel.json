@@ -1,0 +1,11 @@
+{
+    "name": "Nitro Diesel",
+    "icon": "forge:bucketfilled{FluidName:'nitro_fuel',Amount:1000}",
+    "category": "fluids",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Nitro Diesel is a fluid."
+        }
+    ]
+}

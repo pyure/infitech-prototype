@@ -5,9 +5,11 @@ import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.recipes.IRecipeAction;
 import mods.gregtech.recipe.RecipeMap;
 
+val macerator as RecipeMap = RecipeMap.getByName("macerator");
 
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolFileEmptyTag = <ore:craftingToolFileEmptyTag>;
+var craftingToolMortarEmptyTag = <ore:craftingToolMortarEmptyTag>;
 
 // These are covered by GT meta tools
 recipes.remove(<minecraft:diamond_pickaxe>);
@@ -155,3 +157,22 @@ recipes.addShaped("it3_shears", <minecraft:shears>, [
   [craftingToolFileEmptyTag, <ore:plateIron>, null],
   [<ore:plateIron>, craftingToolHardHammerEmptyTag, null],
   [null, null, null]]);
+
+// Bonemeal
+recipes.removeByRecipeName("minecraft:bone_meal_from_bone");
+recipes.addShapeless("it3_minecraft_bone_meal_from_bone", <minecraft:dye:15> * 1, [<ore:bone>]);
+
+// Bonemeal from Mortars is productive
+recipes.addShaped("it3_bonemeal_from_mortar", <minecraft:dye:15> * 4, [
+  [null, <ore:bone>, null],
+  [null, craftingToolMortarEmptyTag, null],
+  [null, null, null]]);
+
+// Bonemeal from Macerators is very productive
+macerator.recipeBuilder()		
+	.inputs(<ore:bone> * 1)
+	.outputs([<minecraft:dye:15> * 6])
+  .chancedOutput(<minecraft:dye:15> * 2, 1000, 100)
+	.duration(35)
+	.EUt(6)
+	.buildAndRegister();  

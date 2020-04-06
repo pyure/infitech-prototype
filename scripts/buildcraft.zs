@@ -50,8 +50,8 @@ var pipeSandstoneKinesis = <buildcrafttransport:pipe_sandstone_power>;
 var stickWood = <ore:stickWood>;
 var stickCobblestone = <ore:stickCobblestone>;
 var sealant = <buildcrafttransport:waterproof>;
-var craftingToolHammer = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolSaw = <ore:craftingToolSaw>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 var stickStone = <ore:rodStone>; // Forge Microblocks, not GT
 var oreStickQuartz = <ore:stickQuartz>; // Shouldn't exist already
 oreStickQuartz.addAll(<ore:stickQuartzite>);
@@ -62,22 +62,22 @@ oreStickQuartz.addAll(<ore:stickCertusQuartz>);
 // Wood Pipes
 recipes.remove(pipeWood);
 recipes.addShaped("it3_buildcraft_pipe_wood", pipeWood * 6, [
-  [stickWood, craftingToolHammer, stickWood],
+  [stickWood, craftingToolHardHammerEmptyTag, stickWood],
   [stickWood, <minecraft:glass>, stickWood],
-  [stickWood, craftingToolSaw, stickWood]]);
+  [stickWood, craftingToolSawEmptyTag, stickWood]]);
 
 // Cobblestone Pipes
 recipes.remove(pipeCobblestone);
 recipes.addShaped("it3_buildcraft_pipe_cobble", pipeCobblestone * 6,[
-  [stickCobblestone, craftingToolHammer, stickCobblestone],
+  [stickCobblestone, craftingToolHardHammerEmptyTag, stickCobblestone],
   [stickCobblestone, <minecraft:glass>, stickCobblestone],
-  [stickCobblestone, craftingToolSaw, stickCobblestone]]);
+  [stickCobblestone, craftingToolSawEmptyTag, stickCobblestone]]);
   
 assembler.recipeBuilder()
   .inputs(<ore:stickCobblestone> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeCobblestone * 6)
+  .outputs(pipeCobblestone * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();
@@ -85,15 +85,15 @@ assembler.recipeBuilder()
 // Stone Pipes
 recipes.remove(pipeStone);
 recipes.addShaped("it3_buildcraft_pipe_stone", pipeStone * 6,[
-  [stickStone, craftingToolHammer, stickStone],
+  [stickStone, craftingToolHardHammerEmptyTag, stickStone],
   [stickStone, <minecraft:glass>, stickStone],
-  [stickStone, craftingToolSaw, stickStone]]);
+  [stickStone, craftingToolSawEmptyTag, stickStone]]);
   
 assembler.recipeBuilder()
   .inputs(<ore:stickStone> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeStone * 6)
+  .outputs(pipeStone * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();
@@ -102,15 +102,15 @@ assembler.recipeBuilder()
 // Quartz Pipes
 recipes.remove(pipeQuartz);
 recipes.addShaped("it3_buildcraft_pipe_quartz", pipeQuartz * 6,[
-  [oreStickQuartz, craftingToolHammer, oreStickQuartz],
+  [oreStickQuartz, craftingToolHardHammerEmptyTag, oreStickQuartz],
   [oreStickQuartz, <minecraft:glass>, oreStickQuartz],
-  [oreStickQuartz, craftingToolSaw, oreStickQuartz]]);
+  [oreStickQuartz, craftingToolSawEmptyTag, oreStickQuartz]]);
   
 assembler.recipeBuilder()
   .inputs(oreStickQuartz * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeQuartz * 6)
+  .outputs(pipeQuartz * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();
@@ -121,37 +121,53 @@ assembler.recipeBuilder()
   .inputs(<ore:stickIron> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeIron * 6)
+  .outputs(pipeIron * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();
 
+recipes.addShaped("it3_buildcraft_pipe_iron", pipeIron * 6,[
+  [<ore:stickIron>, craftingToolHardHammerEmptyTag, <ore:stickIron>],
+  [<ore:stickIron>, <minecraft:glass>, <ore:stickIron>],
+  [<ore:stickIron>, craftingToolSawEmptyTag, <ore:stickIron>]]);
+  
+  
 // Gold Pipes
 recipes.remove(pipeGold);
 recipes.addShaped("it3_buildcraft_pipe_gold", pipeGold * 6,[
-  [<ore:stickGold>, craftingToolHammer, <ore:stickGold>],
+  [<ore:stickGold>, craftingToolHardHammerEmptyTag, <ore:stickGold>],
   [<ore:stickGold>, <minecraft:glass>, <ore:stickGold>],
-  [<ore:stickGold>, craftingToolSaw, <ore:stickGold>]]);
+  [<ore:stickGold>, craftingToolSawEmptyTag, <ore:stickGold>]]);
   
 assembler.recipeBuilder()
   .inputs(<ore:stickGold> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeGold * 6)
+  .outputs(pipeGold * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
 
 // Clay Pipes
+
+recipes.addShaped("it3_clay_rod_file", <contenttweaker:clay_rod>, [
+  [<ore:craftingToolFileEmptyTag>, null], 
+  [null, <ore:blockClay>]]);
+
 recipes.remove(pipeClay);
 assembler.recipeBuilder()
   .inputs(<ore:stickClay> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeClay * 6)
+  .outputs(pipeClay * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
+  
+recipes.addShaped("it3_buildcraft_pipe_Clay", pipeClay * 6,[
+  [<ore:stickClay>, craftingToolHardHammerEmptyTag, <ore:stickClay>],
+  [<ore:stickClay>, <minecraft:glass>, <ore:stickClay>],
+  [<ore:stickClay>, craftingToolSawEmptyTag, <ore:stickClay>]]);  
   
 // Sandstone Pipes
 recipes.remove(pipeSandstone);
@@ -159,11 +175,19 @@ assembler.recipeBuilder()
   .inputs(<ore:stickSandstone> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeSandstone * 6)
+  .outputs(pipeSandstone * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
   
+recipes.addShaped("it3_buildcraft_pipe_Sandstone", pipeSandstone * 6,[
+  [<ore:stickSandstone>, craftingToolHardHammerEmptyTag, <ore:stickSandstone>],
+  [<ore:stickSandstone>, <minecraft:glass>, <ore:stickSandstone>],
+  [<ore:stickSandstone>, craftingToolSawEmptyTag, <ore:stickSandstone>]]);  
+
+recipes.addShaped("it3_sandstone_rod_file", <contenttweaker:sandstone_rod>, [
+  [<ore:craftingToolFileEmptyTag>, null], 
+  [null, <minecraft:sandstone>]]);
   
 // Void Pipes
 recipes.remove(pipeVoid);
@@ -171,7 +195,7 @@ assembler.recipeBuilder()
   .inputs(<minecraft:redstone> * 1, <minecraft:dye> * 1)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeVoid * 6)
+  .outputs(pipeVoid * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -179,13 +203,22 @@ assembler.recipeBuilder()
 // Obsidian Pipes
 recipes.remove(pipeObsidian);
 assembler.recipeBuilder()
-  .inputs(<ore:rodObsidian> * 6)
+  .inputs(<ore:stickObsidian> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeObsidian * 6)
+  .outputs(pipeObsidian * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
+  
+recipes.addShaped("it3_buildcraft_pipe_Obsidian", pipeObsidian * 6,[
+  [<ore:stickObsidian>, craftingToolHardHammerEmptyTag, <ore:stickObsidian>],
+  [<ore:stickObsidian>, <minecraft:glass>, <ore:stickObsidian>],
+  [<ore:stickObsidian>, craftingToolSawEmptyTag, <ore:stickObsidian>]]);  
+  
+recipes.addShaped("it3_obsidian_rod_file", <contenttweaker:obsidian_rod>, [
+  [<ore:craftingToolFileEmptyTag>, null], 
+  [null, <ore:blockObsidian>]]);
   
 // Diamond Pipes
 recipes.remove(pipeDiamond);
@@ -193,10 +226,16 @@ assembler.recipeBuilder()
   .inputs(<ore:stickDiamond> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeDiamond * 6)
+  .outputs(pipeDiamond * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
+
+recipes.addShaped("it3_buildcraft_pipe_Diamond", pipeDiamond * 6,[
+  [<ore:stickDiamond>, craftingToolHardHammerEmptyTag, <ore:stickDiamond>],
+  [<ore:stickDiamond>, <minecraft:glass>, <ore:stickDiamond>],
+  [<ore:stickDiamond>, craftingToolSawEmptyTag, <ore:stickDiamond>]]);  
+
   
 // WoodenDiamond Pipes
 recipes.remove(pipeWoodenDiamond);
@@ -204,7 +243,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickDiamond> * 3, <ore:stickWood> * 3)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeWoodenDiamond * 6)
+  .outputs(pipeWoodenDiamond * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -215,7 +254,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickLapis> * 6)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeLazuli * 6)
+  .outputs(pipeLazuli * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -226,7 +265,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickDiamond> * 3, <ore:stickLapis> * 3)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeDaizuli * 6)
+  .outputs(pipeDaizuli * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -237,7 +276,7 @@ assembler.recipeBuilder()
   .inputs(<ore:stickEmerald> * 3, <ore:stickLapis> * 3)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeEmzuli * 6)
+  .outputs(pipeEmzuli * 8)
   .duration(60)
   .EUt(12)
   .buildAndRegister();  
@@ -249,7 +288,7 @@ assembler.recipeBuilder()
   .inputs(pipeObsidian * 1, <ore:gearGold> * 2)
   .property("circuit", 6)
   .fluidInputs(<liquid:glass> * 144)
-  .outputs(pipeStripes * 6)
+  .outputs(pipeStripes * 8)
   .duration(60)
   .EUt(8)
   .buildAndRegister();  
@@ -428,6 +467,6 @@ lathe.recipeBuilder()
 // Buildcraft wrench recipe
 recipes.remove(<buildcraftcore:wrench>);
 recipes.addShaped("it3_buildcraftcore_wrench", <buildcraftcore:wrench>, [
-  [<ore:ingotIron>, craftingToolHammer, <ore:ingotIron>], 
+  [<ore:ingotIron>, craftingToolHardHammerEmptyTag, <ore:ingotIron>], 
   [null, <ore:ingotIron>, null], 
   [null, <ore:ingotIron>, null]]);

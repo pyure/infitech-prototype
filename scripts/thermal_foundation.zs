@@ -9,7 +9,7 @@ val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
-
+val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 
 // These are covered by GT meta tools
 recipes.remove(<thermalfoundation:tool.pickaxe_copper>);
@@ -202,11 +202,11 @@ for i in 0 to 5
 
 // ItemDuct
 recipes.remove(itemduct);
-assembler.recipeBuilder().inputs(pipeSmallSteel * 2, <ore:plateGlass> * 2, <minecraft:quartz> * 2).fluidInputs(<liquid:redstone> * 36).outputs(itemduct * 2).duration(240).EUt(15).buildAndRegister();
+assembler.recipeBuilder().inputs(pipeSmallSteel * 1, <ore:plateGlass> * 2, <minecraft:quartz> * 2).fluidInputs(<liquid:redstone> * 36).outputs(itemduct * 2).duration(240).EUt(15).buildAndRegister();
   
 // ItemDuct Opaque
 recipes.remove(itemductOpaque);
-assembler.recipeBuilder().inputs(pipeSmallSteel * 2, <ore:plateGlass> * 2, <ore:dustStone> * 2).fluidInputs(<liquid:redstone> * 36).outputs(itemductOpaque * 2).duration(240).EUt(15).buildAndRegister();
+assembler.recipeBuilder().inputs(pipeSmallSteel * 1, <ore:plateGlass> * 2, <ore:dustStone> * 2).fluidInputs(<liquid:redstone> * 36).outputs(itemductOpaque * 2).duration(240).EUt(15).buildAndRegister();
   
 // Impulse Itemduct
 recipes.remove(itemductImpulse);
@@ -231,8 +231,6 @@ fluid_canner.recipeBuilder()
 // Fluiduct
 recipes.remove(fluiduct);
 assembler.recipeBuilder().inputs(pipeSmallBronze * 2, <ore:dustGlass> * 2, <minecraft:quartz> * 2).fluidInputs(<liquid:redstone> * 36).outputs(fluiduct * 2).duration(240).EUt(15).buildAndRegister();
-  
-
 
 // Opaque Fluiduct
 recipes.remove(fluiductOpaque);
@@ -716,3 +714,11 @@ mixer.recipeBuilder()
 var pulpedBiomass = <thermalfoundation:material:816>;
 recipes.removeByRecipeName("thermalfoundation:block_dirt");
 recipes.addShapeless("it3_thermalfoundation_block_dirt", <minecraft:dirt> * 3, [pulpedBiomass, pulpedBiomass, <ore:crystalSlag>, <ore:crystalSlag>]);
+
+// Resonant Ender Gregified
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:enderpearl>| <ore:dustEnderPearl>)
+	.fluidOutputs([<liquid:ender> * 250])
+	.duration(420)
+	.EUt(120)
+	.buildAndRegister();

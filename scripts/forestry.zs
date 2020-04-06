@@ -7,10 +7,10 @@ val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 val centrifuge as RecipeMap = RecipeMap.getByName("centrifuge");
 
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriver>.firstItem.withEmptyTag();
-var craftingToolSawEmptyTag = <ore:craftingToolSaw>.firstItem.withEmptyTag();
-var craftingToolWrenchEmptyTag = <ore:craftingToolWrench>.firstItem.withEmptyTag();
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammerEmptyTag>;
+var craftingToolScrewdriverEmptyTag = <ore:craftingToolScrewdriverEmptyTag>;
+var craftingToolWrenchEmptyTag = <ore:craftingToolWrenchEmptyTag>;
+var craftingToolSawEmptyTag = <ore:craftingToolSawEmptyTag>;
 
 var engineBiogas = <forestry:engine_biogas>;
 var engineClock = <forestry:engine_clockwork>;
@@ -20,6 +20,9 @@ var blockGlass = <ore:blockGlass>;
 var gearCopper = <ore:gearCopper>;
 var piston = <ore:craftingPiston>;
 var plateBronze = <ore:plateBronze>;
+var plateCompressedWroughtIron = <ore:plateCompressedWroughtIron>;
+var screwCompressedWroughtIron = <ore:screwCompressedWroughtIron>;
+
 var gearBronze = <ore:gearBronze>;
 var frameIron = <ore:frameGtIron>;
 var frameBronze = <ore:frameGtBronze>;
@@ -48,7 +51,8 @@ var rainTank = <forestry:raintank>;
 var thermionicFabricator = <forestry:fabricator>;
 var moltenRedstone = <liquid:redstone>;
 var worktable = <forestry:worktable>;
-var steelCasing = <gregtech:metal_casing:4>;
+var steelCasing = <gregtech:metal_casing:4>; // Solid Steel
+var invarCasing = <gregtech:metal_casing:1>; // Primitive Brick
 var foilCopper = <ore:foilCopper>;
 var tubeTin = <forestry:thermionic_tubes:1>;
 var tubeCopper = <forestry:thermionic_tubes>;
@@ -172,11 +176,18 @@ recipes.addShaped("it3_forestry_raintank", rainTank, [
 recipes.remove(thermionicFabricator);
 mods.forestry.Carpenter.addRecipe(thermionicFabricator, [[steelScrew, gtBronzeTank, steelScrew],[gaCoil, sturdyCasing, gaCoil],[steelScrew, electricMotorLV, steelScrew]], 300, moltenRedstone * 1008, worktable);
 
+// STURDY CASINGS.  
+// We have both a Steel and a pre-Steel version (which requires a bit of pneumaticraft)
 recipes.remove(sturdyCasing);
 recipes.addShaped("it3_forestry_sturdy_casing", sturdyCasing, [
 	[plateBronze, steelScrew, plateBronze],
 	[steelScrew, steelCasing, steelScrew],
 	[plateBronze, steelScrew, plateBronze]]);
+  
+recipes.addShaped("it3_forestry_sturdy_casing_2", sturdyCasing, [
+	[plateCompressedWroughtIron, screwCompressedWroughtIron, plateCompressedWroughtIron],
+	[screwCompressedWroughtIron, invarCasing, screwCompressedWroughtIron],
+	[plateCompressedWroughtIron, screwCompressedWroughtIron, plateCompressedWroughtIron]]);  
 
 assembler.recipeBuilder()
 	.inputs(steelCasing *1, plateBronze *4)
@@ -185,6 +196,13 @@ assembler.recipeBuilder()
 	.EUt(2)
 	.buildAndRegister();
 
+assembler.recipeBuilder()
+	.inputs(invarCasing *1, plateCompressedWroughtIron *4)
+	.outputs(sturdyCasing)
+	.duration(400)
+	.EUt(2)
+	.buildAndRegister();
+  
 //Electron Tubes
 mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes>);
 mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:1>);

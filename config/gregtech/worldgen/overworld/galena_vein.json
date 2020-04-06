@@ -4,10 +4,10 @@
   "max_height": 60,
   "min_height": 30,
   "surface_stone_material": "silver",
-
+  "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [13, 16]
+    "radius": [12, 14]
   },
   "filler": {
     "type": "simple",
