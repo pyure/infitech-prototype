@@ -216,6 +216,10 @@ recipes.addShaped("it3_botania_gaia_pylon", gaiaPylon, [
   
 // Botania Manasteel
 var manasteel = <botania:manaresource>;
+var manaSteelBlock = <botania:storage>;
 mods.botania.ManaInfusion.removeRecipe(manasteel);
 mods.botania.ManaInfusion.addInfusion(manasteel, <ore:ingotSteel>, 3000);
 mods.botania.ManaInfusion.addInfusion(manasteel, <ore:ingotCompressedWroughtIron>, 3000);
+mods.botania.ManaInfusion.removeRecipe(manaSteelBlock);
+mods.botania.ManaInfusion.addInfusion(manaSteelBlock, <ore:blockSteel>, 27000);
+mods.botania.ManaInfusion.addInfusion(manaSteelBlock, <ore:blockCompressedWroughtIron>, 27000);
