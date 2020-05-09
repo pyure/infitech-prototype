@@ -529,8 +529,8 @@ mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*6, <liquid:liquidnick
 mods.foundry.AlloyingCrucible.removeRecipe(<liquid:liquidcopper>*3, <liquid:nickel>*6);
 mods.foundry.AlloyingCrucible.removeRecipe(<liquid:copper>*6, <liquid:nickel>*6);
 
-mods.foundry.AlloyingCrucible.addRecipe(<liquid:bronze>*12, <liquid:copper>*12, <liquid:tin>*3);
-mods.foundry.AlloyingCrucible.addRecipe(<liquid:brass>*12, <liquid:copper>*12, <liquid:zinc>*3);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:bronze>*12, <liquid:copper>*9, <liquid:tin>*3);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:brass>*12, <liquid:copper>*9, <liquid:zinc>*3);
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:electrum>*6, <liquid:gold>*3, <liquid:silver>*3);
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:cupronickel>*6, <liquid:copper>*3, <liquid:nickel>*3);
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:invar>*9, <liquid:iron>*6, <liquid:nickel>*3);
