@@ -149,7 +149,8 @@ val tool_array = [
   "Brass" ,
   "Bronze",
   "WroughtIron",
-  "CompressedWroughtIron"
+  "CompressedWroughtIron",
+  "Invar"
 ] as string[];
 
 val gear_array = [
@@ -160,7 +161,8 @@ val gear_array = [
   "Brass" ,
   "Bronze",
   "Copper",
-  "WroughtIron"
+  "WroughtIron",
+  "Invar"
 ] as string[];
 
 val rod_array = [
@@ -173,7 +175,8 @@ val rod_array = [
   "Copper",
   "WroughtIron",
   "Tin",
-  "Lead"
+  "Lead",
+  "Invar"
 ] as string[];
 
 
@@ -243,7 +246,8 @@ val metal_liquid_map = {
   "WroughtIron" : <liquid:wrought_iron>,
   "CompressedWroughtIron" : <liquid:compressed_wrought_iron>,
   "WroughtIron" : <liquid:wrought_iron>,
-  "RedAlloy" : <liquid:red_alloy>
+  "RedAlloy" : <liquid:red_alloy>,
+  "Invar" : <liquid:invar>
 } as ILiquidStack[string];
 
 for name in tool_array {
