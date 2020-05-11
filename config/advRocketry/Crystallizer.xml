@@ -21,7 +21,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="3000" power="800">
 		<input>
 			<itemStack>contenttweaker:helium_infused_dilithium_dust 3 0</itemStack>
 		</input>
