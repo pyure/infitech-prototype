@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.liquid.ILiquidStack;
 
 import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
@@ -1064,3 +1065,16 @@ for entry in oreDict {
   
 }  
 
+//Remove easy Rocket Fuel recipe
+chemical_reactor.findRecipe(388, [<metaitem:circuit.integrated>.withTag({Configuration: 1})], [<liquid:oxygen>*500, <liquid:hydrogen>*3000, <liquid:nitrogen_dioxide>*1000]).remove();
+
+//change Sodium Bisulfate Dust recipe to fix chemical dyes
+var sodiumBisulfate = <gregtech:meta_item_1:2382>;
+chemical_reactor.findRecipe(30, [<ore:dustSalt>.firstItem*2], [<liquid:sulfuric_acid>*1000]).remove();
+chemical_reactor.recipeBuilder()
+  .inputs(<ore:dustSalt>*2, <metaitem:circuit.integrated>.withTag({Configuration: 1}))
+  .fluidInputs(<liquid:sulfuric_acid>*1000)
+  .outputs(sodiumBisulfate * 1)
+  .duration(60)
+  .EUt(30)
+  .buildAndRegister();

@@ -196,9 +196,23 @@ var pipeSmallStainlessSteel = <ore:pipeSmallStainlessSteel>;
 //Vacuum und Dense Itemducts
 for i in 0 to 5
 {
-	recipes.addShapeless("it3_td_vac_"~i, <thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 1 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
-	recipes.addShapeless("it3_td_dense_"~i, <thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 2 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetSilver>, <ore:nuggetSilver>, <ore:nuggetSilver>]);
+assembler.recipeBuilder()
+	.inputs(<thermaldynamics:duct_32>.definition.makeStack(i))
+	.fluidInputs(<liquid:lead>*48)
+	.outputs(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 1 as byte}) * 1)
+	.duration(120)
+	.EUt(24)
+	.buildAndRegister();
+	
+assembler.recipeBuilder()
+	.inputs(<thermaldynamics:duct_32>.definition.makeStack(i))
+	.fluidInputs(<liquid:silver>*48)
+	.outputs(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 2 as byte}) * 1)
+	.duration(120)
+	.EUt(24)
+	.buildAndRegister();	
 }
+
 
 // ItemDuct
 recipes.remove(itemduct);
@@ -722,3 +736,7 @@ fluid_extractor.recipeBuilder()
 	.duration(420)
 	.EUt(120)
 	.buildAndRegister();
+	
+//Enderium Blend furnace recipe removal
+recipes.remove(<thermalfoundation:material:103>);
+furnace.remove(<thermalfoundation:material:167>, <thermalfoundation:material:103>);
