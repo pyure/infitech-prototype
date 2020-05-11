@@ -5,7 +5,6 @@
   "min_height": 10,
   "dimension_filter": ["is_nether"],
   "surface_stone_material": "nickel",
-
   "generator": {
     "type": "ellipsoid",
     "radius": [7, 9]
