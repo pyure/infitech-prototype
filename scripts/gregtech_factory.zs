@@ -38,6 +38,8 @@ val materialThoriumDioxide = MaterialRegistry.createDustMaterial(709, "thorium_d
 val materialThoriumHydroxide = MaterialRegistry.createDustMaterial(710, "thorium_hydroxide", 0x313131, "shiny", 0, [<material:thorium> * 1, <material:oxygen> * 4, <material:hydrogen> * 4]);
 val materialCrudeThoriumPrecipitate = MaterialRegistry.createDustMaterial(711, "crude_thorium_precipitate", 0x242424, "shiny", 0, [<material:thorium> * 1, <material:oxygen> * 4, <material:chlorine> * 1]);
 
+val materialTritanite = MaterialRegistry.createDustMaterial(712, "tritanite", 0x443474, "shiny", 4, [<material:iron> * 3, <material:carbon> * 3, <material:tritanium> * 1]);
+materialTritanite.addFlags(["DISABLE_DECOMPOSITION", "GENERATE_ORE"]);
 
 //Fluid		createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents)
 val fluidUraniumHexafluoride = MaterialRegistry.createFluidMaterial(751, "uranium_hexafluoride", 0x20b23b, "fluid");

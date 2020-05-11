@@ -34,6 +34,10 @@ var basic_reactor_plate_hot = VanillaFactory.createItem("basic_reactor_plate_hot
 basic_reactor_plate_hot.maxStackSize = 64;
 basic_reactor_plate_hot.register();
 
+var helium_infused_dilithium_dust = VanillaFactory.createItem("helium_infused_dilithium_dust");
+helium_infused_dilithium_dust.maxStackSize = 64;
+helium_infused_dilithium_dust.register();
+
 // Fire Bow
 var item = VanillaFactory.createItem("fire_bow");
 item.maxStackSize = 1;

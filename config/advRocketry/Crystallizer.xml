@@ -23,10 +23,10 @@
 <Recipes useDefault="false">
 	<Recipe timeRequired="300" power ="20">
 		<input>
-			<oreDict>dustDilithium</oreDict>
+			<itemStack>contenttweaker:helium_infused_dilithium_dust 3 0</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productcrystal</itemStack>
+			<itemStack>libvulpes:productgem</itemStack>
 		</output>
 	</Recipe>
 </Recipes>
