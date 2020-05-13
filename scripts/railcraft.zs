@@ -323,5 +323,22 @@ for oredict_stick, number_rails in rail_metal_map {
 	counter = counter + 1;
 }
 
+// Track Relayer Cart - Replace MC Diamond Pickaxe with a GT Diamond Pickaxe Head
+recipes.removeByRecipeName("railcraft:mow_track_relayer#0$1");
+recipes.addShaped("it3_railcraft_mow_track_relayer", <railcraft:mow_track_relayer>, [
+	[<ore:dyeYellow>, <minecraft:redstone_lamp>, <ore:dyeYellow>], 
+	[<minecraft:blaze_rod>, <ore:blockSteel>, <minecraft:blaze_rod>], 
+	[<ore:toolHeadPickaxeDiamond>, <minecraft:minecart>, <ore:toolHeadPickaxeDiamond>]]);
 
+// Cut Firestone - Replace MC Diamond Pickaxe with a GT Diamond Pickaxe Head
+recipes.removeByRecipeName("railcraft:firestone_cut$1");
+recipes.addShaped("it3_railcraft_firestone_cut$1", <railcraft:firestone_cut>, [
+	[null, <ore:toolHeadPickaxeDiamond>, null], 
+	[<ore:toolHeadPickaxeDiamond>, <railcraft:firestone_raw:*>, <ore:toolHeadPickaxeDiamond>], 
+	[null, <ore:toolHeadPickaxeDiamond>, null]]);
 
+recipes.removeByRecipeName("railcraft:mow_undercutter#0$1");
+recipes.addShaped("it3_railcraft_mow_undercutter#0$1", <railcraft:mow_undercutter>, [
+	[<ore:dyeYellow>, <minecraft:redstone_lamp>, <ore:dyeYellow>], 
+	[<minecraft:piston>, <ore:blockSteel>, <minecraft:piston>], 
+	[<ore:toolHeadShovelDiamond>, <minecraft:minecart>, <ore:toolHeadShovelDiamond>]]);
