@@ -162,17 +162,15 @@ recipes.addShaped("it3_shears", <minecraft:shears>, [
 recipes.removeByRecipeName("minecraft:bone_meal_from_bone");
 recipes.addShapeless("it3_minecraft_bone_meal_from_bone", <minecraft:dye:15> * 1, [<ore:bone>]);
 
-// Bonemeal from Mortars is productive
 recipes.addShaped("it3_bonemeal_from_mortar", <minecraft:dye:15> * 4, [
-  [null, <ore:bone>, null],
-  [null, craftingToolMortarEmptyTag, null],
-  [null, null, null]]);
+  [<ore:bone>],
+  [craftingToolMortarEmptyTag]]);
 
 // Bonemeal from Macerators is very productive
 macerator.recipeBuilder()		
 	.inputs(<ore:bone> * 1)
 	.outputs([<minecraft:dye:15> * 6])
-  .chancedOutput(<minecraft:dye:15> * 2, 1000, 100)
+  	.chancedOutput(<minecraft:dye:15> * 2, 1000, 100)
 	.duration(35)
 	.EUt(6)
 	.buildAndRegister();  
