@@ -174,15 +174,15 @@ electrolyzer.recipeBuilder()
 	.inputs(resonating_ore)
 	.outputs(resonating_plate_block)
 	.duration(820)
-  .EUt(2)
+	.EUt(2)
 	.buildAndRegister();
 
 cutting_saw.recipeBuilder()
 	.inputs(resonating_plate_block)
 	.outputs(resonating_plate * 9)
 	.duration(420)
-  .EUt(2)
-  .buildAndRegister();
+	.EUt(2)
+	.buildAndRegister();
 
 var dynamite = <metaitem:dynamite>;
 recipes.remove(dynamite);
