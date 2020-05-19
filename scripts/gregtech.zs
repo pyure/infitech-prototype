@@ -19,6 +19,7 @@ val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
 val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
 val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val fluid_heater as RecipeMap = RecipeMap.getByName("fluid_heater");
 val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 val implosion_compressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
@@ -1078,3 +1079,13 @@ chemical_reactor.recipeBuilder()
   .duration(60)
   .EUt(30)
   .buildAndRegister();
+
+// Turn liquid oxygen into oxygen.  Because for some magical reason that should require a machine in standard pressure/temp.  Go minecraft physics!
+fluid_heater.recipeBuilder()
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+  .fluidInputs(<liquid:liquid_oxygen> * 100)
+  .fluidOutputs(<liquid:oxygen> * 1000)  
+  .duration(400)
+  .EUt(32)
+  .buildAndRegister();
+  

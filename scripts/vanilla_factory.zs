@@ -72,3 +72,10 @@ moonSoilBlock.onRandomTick = function(world, blockPos, blockState) {
     }
 };
 moonSoilBlock.register();
+
+// FLUIDS
+var liquid_oxygen = VanillaFactory.createFluid("liquid_oxygen", 9425151); // Defined via ContentTweaker because it seems to play nicer with Adv. Rocketry planet worldgen
+liquid_oxygen.temperature = 90;
+liquid_oxygen.density = 1141;
+liquid_oxygen.viscosity = 250;
+liquid_oxygen.register();
