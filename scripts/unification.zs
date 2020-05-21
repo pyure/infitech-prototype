@@ -849,12 +849,19 @@ for i in meta
 
 /*
 <gregtech:ore_rutile_0>
+<gregtech:ore_raw_uranium_0>
 */
 
 for i in meta
 {
 	var ore = <gregtech:ore_rutile_0>.definition.makeStack(i);
 	<ore:oreRutile>.add(ore);	
+}
+
+for i in meta
+{
+	var ore = <gregtech:ore_raw_uranium_0>.definition.makeStack(i);
+	<ore:oreRawUranium>.add(ore);	
 }
 
 /* Special oredicts for chisel-able blocks */
