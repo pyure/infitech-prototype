@@ -120,7 +120,21 @@ recipes.remove(blockCopper);
 recipes.remove(blockIridium);
 
 
-
+/* Recipe for infused dilithium */
+chemical_reactor.recipeBuilder()
+	.inputs([<ore:dustDilithium> * 1, <ore:ingotCurium246>])
+	.fluidInputs([<liquid:helium3> * 500])	
+	.outputs(<contenttweaker:helium_infused_dilithium_dust>)
+	.duration(4400).EUt(2048)
+	.buildAndRegister();
+	
+chemical_reactor.recipeBuilder()
+	.inputs([<ore:dustDilithium> * 1, <ore:ingotUranium235>])
+	.fluidInputs([<liquid:helium3> * 500])	
+	.outputs(<contenttweaker:helium_infused_dilithium_dust>)
+	.duration(12400).EUt(3072)
+	.buildAndRegister();	
+	
 // New Machine Structure recipes
 assembler.recipeBuilder()
   .inputs(<ore:plateStainlessSteel> * 4, <ore:stickStainlessSteel> * 4)

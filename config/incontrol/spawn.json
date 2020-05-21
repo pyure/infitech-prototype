@@ -1,0 +1,7 @@
+[
+  {
+    "mob": "foundry:gun_skeleton",
+	"onjoin": true,
+    "result": "deny"
+  }
+]

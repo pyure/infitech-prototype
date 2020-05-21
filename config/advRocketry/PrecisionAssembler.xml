@@ -153,7 +153,7 @@
 		<input>
 			<oreDict>stickCopper 2</oreDict>
 			<oreDict>stickTitanium</oreDict>
-			<oreDict>gregtech:meta_item_2 1 32441></oreDict> <!-->glowstone doped wafer<!-->
+			<itemStack>gregtech:meta_item_2 1 32441></itemStack> <!-->glowstone doped wafer<!-->
 			<oreDict>circuitExtreme</oreDict>
 		</input>
 		<output>

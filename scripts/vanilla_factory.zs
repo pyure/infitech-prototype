@@ -34,6 +34,10 @@ var basic_reactor_plate_hot = VanillaFactory.createItem("basic_reactor_plate_hot
 basic_reactor_plate_hot.maxStackSize = 64;
 basic_reactor_plate_hot.register();
 
+var helium_infused_dilithium_dust = VanillaFactory.createItem("helium_infused_dilithium_dust");
+helium_infused_dilithium_dust.maxStackSize = 64;
+helium_infused_dilithium_dust.register();
+
 // Fire Bow
 var item = VanillaFactory.createItem("fire_bow");
 item.maxStackSize = 1;
@@ -68,3 +72,10 @@ moonSoilBlock.onRandomTick = function(world, blockPos, blockState) {
     }
 };
 moonSoilBlock.register();
+
+// FLUIDS
+var liquid_oxygen = VanillaFactory.createFluid("liquid_oxygen", 9425151); // Defined via ContentTweaker because it seems to play nicer with Adv. Rocketry planet worldgen
+liquid_oxygen.temperature = 90;
+liquid_oxygen.density = 1141;
+liquid_oxygen.viscosity = 250;
+liquid_oxygen.register();
