@@ -11,10 +11,11 @@ recipes.addShaped("it3_harvestcraft_grinder", <harvestcraft:grinder>, [
 
 var clay_water_bucket = <ceramics:clay_bucket>.withTag({fluids: {FluidName: "water", Amount: 1000}});
 
-var valid_water = <ore:listAllwater> | clay_water_bucket;
+// Add the clay water bucket from Ceramics to the All Water oredict
+<ore:listAllwater>.add(clay_water_bucket);
 
 // Paper with Pams Water
-recipes.addShapeless("it3_pams_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, valid_water]);
+recipes.addShapeless("it3_pams_paper", <minecraft:paper> * 2, [<ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:listAllwater>]);
 
 // Let GT flour cooperate
 <ore:foodFlour>.addAll(<ore:dustWheat>);
