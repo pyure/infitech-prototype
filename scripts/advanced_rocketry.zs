@@ -120,7 +120,21 @@ recipes.remove(blockCopper);
 recipes.remove(blockIridium);
 
 
-
+/* Recipe for infused dilithium */
+chemical_reactor.recipeBuilder()
+	.inputs([<ore:dustDilithium> * 1, <ore:ingotCurium246>])
+	.fluidInputs([<liquid:helium3> * 500])	
+	.outputs(<contenttweaker:helium_infused_dilithium_dust>)
+	.duration(4400).EUt(2048)
+	.buildAndRegister();
+	
+chemical_reactor.recipeBuilder()
+	.inputs([<ore:dustDilithium> * 1, <ore:ingotUranium235>])
+	.fluidInputs([<liquid:helium3> * 500])	
+	.outputs(<contenttweaker:helium_infused_dilithium_dust>)
+	.duration(12400).EUt(3072)
+	.buildAndRegister();	
+	
 // New Machine Structure recipes
 assembler.recipeBuilder()
   .inputs(<ore:plateStainlessSteel> * 4, <ore:stickStainlessSteel> * 4)
@@ -334,7 +348,7 @@ assembler.recipeBuilder()
   .inputs(<ore:circuitExtreme>)
   .inputs(<ore:wireFineRedAlloy> * 4)
   .inputs(<metaitem:plate.random_access_memory>)
-  .fluidInputs([<liquid:liquidtin> * 72])
+  .fluidInputs([<liquid:tin> * 72])
   .outputs(satellite_id_chip)
   .duration(360)
   .EUt(300)
@@ -355,7 +369,7 @@ assembler.recipeBuilder()
   .inputs(<ore:circuitGood> * 3)
   .inputs(<ore:wireFineElectrum> * 8)
   .inputs(<metaitem:plate.random_access_memory> * 2)
-  .fluidInputs([<liquid:liquidtin> * 72])
+  .fluidInputs([<liquid:tin> * 72])
   .outputs(planet_id_chip)
   .duration(360)
   .EUt(300)
@@ -632,7 +646,7 @@ recipes.addShaped("it3_advancedrocketry_satellitebuilder", <advancedrocketry:sat
 
 // Data Bus
 recipes.remove(<advancedrocketry:loader>);
-recipes.addShaped("it3_advancedrocketry_databus", <advancedrocketry:loader>, [[<libvulpes:structuremachine>], [<metaitem:tool.datastick>], [null]]);
+recipes.addShaped("it3_advancedrocketry_databus", <advancedrocketry:loader> * 4, [[<libvulpes:structuremachine>], [<metaitem:tool.datastick>], [null]]);
 
 // Rocket Unloader
 recipes.remove(<advancedrocketry:loader:2>);

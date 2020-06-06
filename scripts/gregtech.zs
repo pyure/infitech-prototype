@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.liquid.ILiquidStack;
 
 import crafttweaker.item.IItemTransformer;
 import mods.gregtech.recipe.RecipeMap;
@@ -18,6 +19,7 @@ val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
 val electrolyzer as RecipeMap = RecipeMap.getByName("electrolyzer");
 val fermenter as RecipeMap = RecipeMap.getByName("fermenter");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+val fluid_heater as RecipeMap = RecipeMap.getByName("fluid_heater");
 val fluid_solidifier as RecipeMap = RecipeMap.getByName("fluid_solidifier");
 val implosion_compressor as RecipeMap = RecipeMap.getByName("implosion_compressor");
 val macerator as RecipeMap = RecipeMap.getByName("macerator");
@@ -173,15 +175,15 @@ electrolyzer.recipeBuilder()
 	.inputs(resonating_ore)
 	.outputs(resonating_plate_block)
 	.duration(820)
-  .EUt(2)
+	.EUt(2)
 	.buildAndRegister();
 
 cutting_saw.recipeBuilder()
 	.inputs(resonating_plate_block)
 	.outputs(resonating_plate * 9)
 	.duration(420)
-  .EUt(2)
-  .buildAndRegister();
+	.EUt(2)
+	.buildAndRegister();
 
 var dynamite = <metaitem:dynamite>;
 recipes.remove(dynamite);
@@ -355,7 +357,7 @@ centrifuge.recipeBuilder()
     
 centrifuge.recipeBuilder()
     .inputs(<ore:pollenDilithium> * 1)
-    .chancedOutput(<ore:gemDilithium>.firstItem * 1 , 325, 200)
+    .chancedOutput(<ore:dustDilithium>.firstItem * 1, 325, 200)
     .duration(530)
     .EUt(220)
     .buildAndRegister();        
@@ -1064,3 +1066,26 @@ for entry in oreDict {
   
 }  
 
+//Remove easy Rocket Fuel recipe
+chemical_reactor.findRecipe(388, [<metaitem:circuit.integrated>.withTag({Configuration: 1})], [<liquid:oxygen>*500, <liquid:hydrogen>*3000, <liquid:nitrogen_dioxide>*1000]).remove();
+
+//change Sodium Bisulfate Dust recipe to fix chemical dyes
+var sodiumBisulfate = <gregtech:meta_item_1:2382>;
+chemical_reactor.findRecipe(30, [<ore:dustSalt>.firstItem*2], [<liquid:sulfuric_acid>*1000]).remove();
+chemical_reactor.recipeBuilder()
+  .inputs(<ore:dustSalt>*2, <metaitem:circuit.integrated>.withTag({Configuration: 1}))
+  .fluidInputs(<liquid:sulfuric_acid>*1000)
+  .outputs(sodiumBisulfate * 1)
+  .duration(60)
+  .EUt(30)
+  .buildAndRegister();
+
+// Turn liquid oxygen into oxygen.  Because for some magical reason that should require a machine in standard pressure/temp.  Go minecraft physics!
+fluid_heater.recipeBuilder()
+  .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+  .fluidInputs(<liquid:liquid_oxygen> * 100)
+  .fluidOutputs(<liquid:oxygen> * 1000)  
+  .duration(400)
+  .EUt(32)
+  .buildAndRegister();
+  

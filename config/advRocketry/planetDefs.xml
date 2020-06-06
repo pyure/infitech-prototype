@@ -102,7 +102,7 @@
 				<atmosphereDensity>16</atmosphereDensity>
 				<seaLevel>73</seaLevel>
 				<biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
-				<oceanBlock>advancedrocketry:oxygenfluid</oceanBlock>
+				<oceanBlock>contenttweaker:liquid_oxygen</oceanBlock>
 			</planet>
 			<oceanBlock>minecraft:lava</oceanBlock>
 		</planet>
@@ -357,7 +357,7 @@
 				<atmosphereDensity>20</atmosphereDensity>
 				<seaLevel>76</seaLevel>
 				<biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
-				<oceanBlock>advancedrocketry:oxygenfluid</oceanBlock>
+				<oceanBlock>contenttweaker:liquid_oxygen</oceanBlock>
 			</planet>
 		</planet>
 		<planet name="Sol-29" DIMID="29">
@@ -426,7 +426,7 @@
 				<atmosphereDensity>13</atmosphereDensity>
 				<seaLevel>72</seaLevel>
 				<biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
-				<oceanBlock>advancedrocketry:oxygenfluid</oceanBlock>
+				<oceanBlock>contenttweaker:liquid_oxygen</oceanBlock>
 			</planet>
 			<oceanBlock>minecraft:lava</oceanBlock>
 		</planet>
@@ -499,7 +499,7 @@
 				<atmosphereDensity>25</atmosphereDensity>
 				<seaLevel>77</seaLevel>
 				<biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
-				<oceanBlock>advancedrocketry:oxygenfluid</oceanBlock>
+				<oceanBlock>contenttweaker:liquid_oxygen</oceanBlock>
 			</planet>
 			<planet name="Sol-39: 1" DIMID="41">
 				<isKnown>false</isKnown>
@@ -946,7 +946,7 @@
 				<atmosphereDensity>18</atmosphereDensity>
 				<seaLevel>75</seaLevel>
 				<biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
-				<oceanBlock>advancedrocketry:oxygenfluid</oceanBlock>
+				<oceanBlock>contenttweaker:liquid_oxygen</oceanBlock>
 			</planet>
 			<planet name="Sol-80: 2" DIMID="83">
 				<isKnown>false</isKnown>

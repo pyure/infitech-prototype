@@ -29,3 +29,4 @@ oreFlint.add(<minecraft:flint>);
  //Logs to sticks
 recipes.addShapedMirrored("it3_logs_to_sticks", <minecraft:stick>*4, [[<ore:logWood>], [<ore:logWood>]]);
 recipes.addShapedMirrored("it3_saw_logs_to_sticks", <minecraft:stick>*8, [[craftingToolSawEmptyTag], [<ore:logWood>], [<ore:logWood>]]);
+recipes.addShapedMirrored("it3_plank_to_sticks", <minecraft:stick>*2, [[craftingToolSawEmptyTag], [<ore:plankWood>]]);

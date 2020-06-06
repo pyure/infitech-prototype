@@ -40,5 +40,16 @@ for item in <ore:craftingToolMortar>.items{
     <ore:craftingToolMortarEmptyTag>.add(item.withEmptyTag());
 }
 
+for item in <ore:craftingToolPickaxe>.items{
+    <ore:craftingToolPickaxeEmptyTag>.add(item.withEmptyTag());
+}
+
+for item in <ore:craftingToolShovel>.items{
+    <ore:craftingToolShovelEmptyTag>.add(item.withEmptyTag());
+}
+
+for item in <ore:craftingToolAxe>.items{
+    <ore:craftingToolAxeEmptyTag>.add(item.withEmptyTag());
+}
 /* Adds Nether Quartz Ore to oreNetherQuartz.  Probably breaks a pulverizer byproduct somewhere */
 <ore:oreNetherQuartz>.addAll(<ore:oreNetherrackNetherQuartz>);

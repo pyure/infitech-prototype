@@ -4,7 +4,7 @@
   "max_height": 50,
   "min_height": 20,
   "dimension_filter": ["name:the_end"],
-
+  "surface_stone_material": "aluminium",
   "generator": {
     "type": "ellipsoid",
     "radius": [7, 8]

@@ -2,14 +2,18 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.gregtech.recipe.RecipeMap;
 
-
 //GT Machines
 val assembler as RecipeMap = RecipeMap.getByName("assembler");
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val cutting_saw as RecipeMap = RecipeMap.getByName("cutting_saw");
 val fluid_canner as RecipeMap = RecipeMap.getByName("fluid_canner");
 val alloy_smelter as RecipeMap = RecipeMap.getByName("alloy_smelter");
 val mixer as RecipeMap = RecipeMap.getByName("mixer");
 val fluid_extractor as RecipeMap = RecipeMap.getByName("fluid_extractor");
+
+var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
+var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
+var craftingToolSawEmptyTag = <ore:craftingToolSaw>.firstItem.withEmptyTag();
 
 // These are covered by GT meta tools
 recipes.remove(<thermalfoundation:tool.pickaxe_copper>);
@@ -196,9 +200,23 @@ var pipeSmallStainlessSteel = <ore:pipeSmallStainlessSteel>;
 //Vacuum und Dense Itemducts
 for i in 0 to 5
 {
-	recipes.addShapeless("it3_td_vac_"~i, <thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 1 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]);
-	recipes.addShapeless("it3_td_dense_"~i, <thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 2 as byte}) * 1, [<thermaldynamics:duct_32>.definition.makeStack(i), <ore:nuggetSilver>, <ore:nuggetSilver>, <ore:nuggetSilver>]);
+assembler.recipeBuilder()
+	.inputs(<thermaldynamics:duct_32>.definition.makeStack(i))
+	.fluidInputs(<liquid:lead>*48)
+	.outputs(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 1 as byte}) * 1)
+	.duration(120)
+	.EUt(24)
+	.buildAndRegister();
+	
+assembler.recipeBuilder()
+	.inputs(<thermaldynamics:duct_32>.definition.makeStack(i))
+	.fluidInputs(<liquid:silver>*48)
+	.outputs(<thermaldynamics:duct_32>.definition.makeStack(i).withTag({DenseType: 2 as byte}) * 1)
+	.duration(120)
+	.EUt(24)
+	.buildAndRegister();	
 }
+
 
 // ItemDuct
 recipes.remove(itemduct);
@@ -337,13 +355,16 @@ assembler.recipeBuilder()
 recipes.remove(<thermaldynamics:duct_48>);
 var ductStructure = <thermaldynamics:duct_48>;
 
-assembler.recipeBuilder()
-	.inputs(<ore:frameGtIron> * 1, <ore:pipeSmallCopper> * 1, <ore:foilLead> * 2)
-	.fluidInputs(<liquid:concrete> * 144)
-	.outputs(ductStructure * 6)
-	.duration(120)
-	.EUt(16)
+cutting_saw.recipeBuilder()
+	.inputs(<ore:blockConcrete>)
+	.outputs(ductStructure * 12)
+	.duration(420)
+	.EUt(22)
 	.buildAndRegister();
+
+recipes.addShaped("it3_structure_ducts", ductStructure * 6, [
+  [craftingToolSawEmptyTag],
+  [<ore:blockConcrete>]]);	
 
 var servo = <thermaldynamics:servo>;
 var hardened_servo = <thermaldynamics:servo:1>;
@@ -649,8 +670,6 @@ for i, item in glassOutput {
 }
 
 // Shears
-var craftingToolHardHammerEmptyTag = <ore:craftingToolHardHammer>.firstItem.withEmptyTag();
-var craftingToolFileEmptyTag = <ore:craftingToolFile>.firstItem.withEmptyTag();
 
 recipes.removeByRecipeName("thermalfoundation:tool.shears_copper");
 recipes.addShaped("it3_shears_copper", <thermalfoundation:tool.shears_copper>, [  [craftingToolFileEmptyTag, <ore:plateCopper>, null], [<ore:plateCopper>, craftingToolHardHammerEmptyTag, null], [null, null, null]]);
@@ -722,3 +741,7 @@ fluid_extractor.recipeBuilder()
 	.duration(420)
 	.EUt(120)
 	.buildAndRegister();
+	
+//Enderium Blend furnace recipe removal
+recipes.remove(<thermalfoundation:material:103>);
+furnace.remove(<thermalfoundation:material:167>, <thermalfoundation:material:103>);
