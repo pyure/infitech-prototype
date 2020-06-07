@@ -256,27 +256,24 @@ recipes.addShaped("it3_rc_steel_tank_gauge", <railcraft:tank_steel_gauge>, [[<or
 <railcraft:tank_iron_wall>.addTooltip(format.darkRed("Keep in one chunk!!"));
 <railcraft:tank_steel_wall>.addTooltip(format.darkRed("Keep in one chunk!!"));
 
-
 // Metal Posts (Railcraft)
 val arrayDyes = [ 
-  "Red",
-  "Green",
-  "Brown",
-  "Blue",
-  "Purple",
-  "Cyan",
-  "Silver",
-  "Gray",
-  "Pink",
-  "Lime",
-  "Yellow",
-  "Light_Blue",
-  "Magenta",
+  "White",
   "Orange",
-  "White"
+  "Magenta",
+  "Light_Blue",
+  "Yellow",
+  "Lime",
+  "Pink",
+  "Gray",
+  "Silver",
+  "Cyan",
+  "Purple",
+  "Blue",
+  "Brown",
+  "Green",
+  "Red"
 ] as string[];
-
-
 
 for i in 0 to 15 {
   var post = <railcraft:post_metal>.definition.makeStack(i);
