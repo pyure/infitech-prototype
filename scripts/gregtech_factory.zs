@@ -10,7 +10,7 @@ val materialCompressedWroughtIron = MaterialRegistry.createIngotMaterial(700, "c
 materialCompressedWroughtIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 
 val materialCompressedIron = MaterialRegistry.createIngotMaterial(701, "compressed_iron", 0xC8D4D4, "dull", 2, [<material:iron> * 1], 6.5, 7.0, 435);
-materialCompressedIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
+materialCompressedIron.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_BOLT_SCREW", "DISABLE_DECOMPOSITION"]);
 
 val materialEnderium = MaterialRegistry.createIngotMaterial(702, "enderium", 0x2E574F, "shiny", 3, null, 8.0, 7.0, 256, 3000);
 materialEnderium.addFlags(["GENERATE_BOLT_SCREW", "GENERATE_GEAR"]);
