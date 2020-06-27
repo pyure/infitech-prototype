@@ -383,7 +383,15 @@ centrifuge.recipeBuilder().inputs(<ore:dustEndstone> *1)
   .chancedOutput(sand * 1 , 9000, 100)
   .duration(320).EUt(20).buildAndRegister();	
   
-  
+// Centrifuge: Remove Air -> Noble gases since it was an easy way to get Helium.  Let's remove Argon too while we're at it.
+centrifuge.findRecipe(5, null, [<liquid:liquid_air> * 53000]).remove();
+centrifuge.recipeBuilder()
+	.fluidInputs(<liquid:liquid_air> * 51000)
+	.fluidOutputs([<liquid:nitrogen> * 32000, <liquid:nitrogen> * 8000, <liquid:oxygen> * 11000])
+	.duration(1500)
+	.EUt(5)
+	.buildAndRegister();	
+
 // Add oredicts to facilitate some questing
 var oreIronQuestOres = <ore:ironQuestOres>;  
 var oreCopperQuestOres = <ore:copperQuestOres>;  

@@ -538,17 +538,21 @@ assembler.recipeBuilder()
   .buildAndRegister();  
   
 var basic_reactor_plate = <nuclearcraft:part>;
+var advanced_reactor_plate = <nuclearcraft:part:1>;
+
+// New recipe for advanced plate: Get basic plate super hot and infuse
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.part.plate_advanced");    
 
 vacuum_freezer.recipeBuilder()
 	.inputs(<contenttweaker:basic_reactor_plate_hot> * 1)
-	.fluidInputs(<liquid:liquidhelium> * 100)
-	.outputs(basic_reactor_plate * 1)
-	.duration(60)
-	.EUt(260)
+	.fluidInputs(<liquid:liquidhelium> * 50)
+	.outputs(advanced_reactor_plate * 1)
+	.duration(960)
+	.EUt(1024)
 	.buildAndRegister();
 
 blast_furnace.recipeBuilder()
-	.inputs([<ore:plateSteel> * 1, <ore:ingotCarbon> * 1])
+	.inputs([basic_reactor_plate * 1, <ore:dustCarbon> * 50])
 	.outputs(<contenttweaker:basic_reactor_plate_hot>)
 	.property("temperature", 3200)
 	.duration(120)
