@@ -137,8 +137,6 @@ mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:plastic> * 50, <p
 mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:oil_light> * 600, <pneumaticcraft:plastic>); // 600mb light oil makes a plastic sheet
 mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:oil_medium> * 400, <pneumaticcraft:plastic>); // 400mb Medium oil makes a plastic sheet
 mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:oil_heavy> * 200, <pneumaticcraft:plastic>); // 200mb Heavy oil makes a plastic sheet
-mods.pneumaticcraft.plasticmixer.addRecipe(<liquid:oil> * 400, <pneumaticcraft:plastic>, 373);  // 400mb Raw Oil (same quality as Medium) makes a plastic sheet and can be produced from a plastic sheet
-
 
 // Exploding dusts into gems, cuz realism
 val dust_to_gem_array = [
