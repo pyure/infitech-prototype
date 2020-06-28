@@ -762,14 +762,14 @@ recipes.addShaped("it3_advancedrocketry_observatory", <advancedrocketry:observat
 	[<advancedrocketry:satelliteprimaryfunction>, <libvulpes:structuremachine>, <advancedrocketry:satelliteprimaryfunction>], 
 	[<ore:plateStainlessSteel>, <ore:gemDilithium>, <ore:plateStainlessSteel>]]);
 
-// Warp Core
+// Warp Core (Allows travel to other planets)
 recipes.remove(<advancedrocketry:warpcore>);
 recipes.addShaped("it3_advancedrocketry_warpcore", <advancedrocketry:warpcore>, [
 	[<ore:plateTitanium>, <ore:circuitExtreme>, <ore:plateTitanium>], 
-	[<ore:plateTungstenSteel>, tungstensteel_coil, <ore:plateTungstenSteel>], 
-	[<ore:plateTitanium>, <ore:circuitExtreme>, <ore:plateTitanium>]]);
+	[<ore:coilIridium>, tungstensteel_coil, <ore:coilIridium>], 
+	[<ore:coilIridium>, <ore:coilIridium>, <ore:coilIridium>]]);
 
-// Warp Controller
+// Warp Controller (Allows travel to other systems)
 recipes.remove(<advancedrocketry:warpmonitor>);
 recipes.addShaped("it3_advancedrocketry_warpmonitor", <advancedrocketry:warpmonitor>, [
 	[<ore:plateTungstenSteel>, <advancedrocketry:misc>, <ore:plateTungstenSteel>], 
