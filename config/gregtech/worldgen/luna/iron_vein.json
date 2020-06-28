@@ -6,8 +6,8 @@
   "surface_stone_material": "iron",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 40,
-    "advancedrocketry:MoonDark": 80
+    "advancedrocketry:Moon": 70,
+    "advancedrocketry:MoonDark": 45
   },
   "generator": {
     "type": "ellipsoid",

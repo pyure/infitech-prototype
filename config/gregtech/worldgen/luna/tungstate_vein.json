@@ -6,7 +6,7 @@
   "surface_stone_material": "aluminium",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 14,
+    "advancedrocketry:Moon": 5,
     "advancedrocketry:MoonDark": 25
   },
   "generator": {

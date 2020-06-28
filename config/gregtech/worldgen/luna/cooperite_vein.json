@@ -1,13 +1,16 @@
 {
-  "weight": 20,
+  "weight": 0,
   "density": 0.6,
   "max_height": 50,
   "min_height": 35,
-  "surface_stone_material": "palladium",
-  "dimension_filter": ["dimension_id:0"],
+  "surface_stone_material": "platinum",
+  "biome_modifier": {
+    type: "biome_map"
+    "advancedrocketry:MoonDark": 20
+  },
   "generator": {
     "type": "ellipsoid",
-    "radius": [6, 8]
+    "radius": [6, 9]
   },
   "filler": {
     "type": "simple",
@@ -15,12 +18,16 @@
       "type": "weight_random",
       "values": [
 		    {
-          "weight": 1000,
-          "value": "ore:platinum"
+          "weight": 300,
+          "value": "ore:cooperite"
         },
         {
-          "weight": 800,
+          "weight": 600,
           "value": "ore:palladium"
+        },
+        {
+          "weight": 600,
+          "value": "ore:nickel"
         },
         {
           "weight": 1,

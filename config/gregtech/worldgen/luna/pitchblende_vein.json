@@ -6,7 +6,6 @@
   "surface_stone_material": "uranium",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 15,
     "advancedrocketry:MoonDark": 30
   },
   "generator": {

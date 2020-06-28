@@ -6,8 +6,8 @@
   "surface_stone_material": "tin",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 48,
-    "advancedrocketry:MoonDark": 95
+    "advancedrocketry:Moon": 95,
+    "advancedrocketry:MoonDark": 48
   },
   "generator": {
     "type": "ellipsoid",

@@ -6,8 +6,8 @@
   "surface_stone_material": "olivine",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 27,
-    "advancedrocketry:MoonDark": 55
+    "advancedrocketry:Moon": 55,
+    "advancedrocketry:MoonDark": 25
   },
   "generator": {
     "type": "ellipsoid",

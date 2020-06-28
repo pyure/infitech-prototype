@@ -6,8 +6,8 @@
   "surface_stone_material": "sodalite",
   "biome_modifier": {
     type: "biome_map",
-    "advancedrocketry:Moon": 25,
-    "advancedrocketry:MoonDark": 50
+    "advancedrocketry:Moon": 50,
+    "advancedrocketry:MoonDark": 25
   },
   "generator": {
     "type": "ellipsoid",
