@@ -1,0 +1,5 @@
+
+multiblocktweaker.machine.low_gravity_reactor.name=Low Gravity Chemical Reactor
+
+multiblocktweaker.multiblock.low_gravity_reactor.description=A specialized chemical reactor used to react delicate substances in a low gravity environment.
+recipemap.low_gravity_reactor.name=Low Gravity Chemical Reactions

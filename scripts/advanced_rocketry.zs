@@ -133,7 +133,7 @@ chemical_reactor.recipeBuilder()
 	.fluidInputs([<liquid:helium3> * 500])	
 	.outputs(<contenttweaker:helium_infused_dilithium_dust>)
 	.duration(12400).EUt(3072)
-	.buildAndRegister();	
+	.buildAndRegister();
 	
 // New Machine Structure recipes
 assembler.recipeBuilder()
