@@ -760,7 +760,7 @@ recipes.remove(<advancedrocketry:observatory>);
 recipes.addShaped("it3_advancedrocketry_observatory", <advancedrocketry:observatory>, [
 	[<ore:paneGlass>, <advancedrocketry:misc>, <ore:paneGlass>], 
 	[<advancedrocketry:satelliteprimaryfunction>, <libvulpes:structuremachine>, <advancedrocketry:satelliteprimaryfunction>], 
-	[<ore:plateStainlessSteel>, <ore:plateStainlessSteel>, <ore:plateStainlessSteel>]]);
+	[<ore:plateStainlessSteel>, <ore:gemDilithium>, <ore:plateStainlessSteel>]]);
 
 // Warp Core
 recipes.remove(<advancedrocketry:warpcore>);
