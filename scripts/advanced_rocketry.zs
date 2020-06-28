@@ -312,7 +312,7 @@ recipes.addShaped("it3_advancedrocketry_coiltitanium", titanium_coil, [
   [<ore:wireGtQuadrupleTitanium>, <ore:wireGtQuadrupleTitanium>, <ore:wireGtQuadrupleTitanium>]]);  
   
 // Iridium Coil recipe requires an Assembler because a) its buffest, and b) We don't have wires to use as ingredients.
-recipes.removeByRecipeName("advancedrocketry:coilsteel");
+recipes.removeByRecipeName("advancedrocketry:coiliridium");
 assembler.recipeBuilder()
   .inputs(<ore:wireGtQuadrupleSteel> * 8)
   .fluidInputs([<liquid:iridium> * 488])
