@@ -55,6 +55,7 @@
         <ore itemStack="gregtech:ore_garnet_red_0 0" chance="10" />
         <ore itemStack="gregtech:ore_diamond_0 0" chance="5" />
         <ore itemStack="gregtech:ore_emerald_0 0" chance="5" />
+        <ore itemStack="gregtech:ore_platinum_0 0" chance="2" />
         <ore itemStack="libvulpes:ore0 0" chance="1" />
     </asteroid>
     <asteroid name="Resonating" distance="60" mass="1200" massVariability="0.3" minLevel="0" probability="25" richness="0.6" richnessVariability="0.75">
@@ -76,6 +77,7 @@
         <ore itemStack="gregtech:ore_diamond_0 0" chance="7" />
         <ore itemStack="gregtech:ore_coal_0 0" chance="7" />
         <ore itemStack="gregtech:ore_stibnite_0 0" chance="2" />
+        <ore itemStack="gregtech:ore_platinum_0 0" chance="1" />
         <ore itemStack="libvulpes:ore0 0" chance="1" />
     </asteroid>
     <asteroid name="Basic" distance="35" mass="2000" massVariability="0.3" minLevel="0" probability="500" richness="0.4" richnessVariability="0.75">
@@ -88,6 +90,7 @@
         <ore itemStack="gregtech:ore_redstone_0 0" chance="15" />
         <ore itemStack="gregtech:ore_gold_0 0" chance="10" />
         <ore itemStack="gregtech:ore_diamond_0 0" chance="7" />
+        <ore itemStack="gregtech:ore_platinum_0 0" chance="1" />
         <ore itemStack="gregtech:ore_coal_0 0" chance="7" />
         <ore itemStack="libvulpes:ore0 0" chance="1" />
     </asteroid>
