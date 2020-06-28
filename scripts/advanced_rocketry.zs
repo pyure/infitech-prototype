@@ -598,14 +598,14 @@ recipes.addShaped("it3_advancedrocketry_motor", <libvulpes:motor>, [
 // Advanced Motor
 recipes.remove(<libvulpes:advancedmotor>);
 recipes.addShaped("it3_advancedrocketry_advancedmotor", <libvulpes:advancedmotor>, [
-	[null, <ore:stickLongTitanium>, null], 
+	[null, <ore:stickLongIridium>, null], 
 	[null, <metaitem:electric.motor.hv>, null], 
 	[null, <ore:craftingToolWrenchEmptyTag>, null]]);
 	
 // Enhanced Motor
 recipes.remove(<libvulpes:enhancedmotor>);
 recipes.addShaped("it3_advancedrocketry_enhancedmotor", <libvulpes:enhancedmotor>, [
-	[null, <ore:stickLongTungstenSteel>, null], 
+	[null, <ore:stickLongTritanium>, null], 
 	[null, <metaitem:electric.motor.ev>, null], 
 	[null, <ore:craftingToolWrenchEmptyTag>, null]]);
 	
