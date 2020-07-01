@@ -1,0 +1,8 @@
+{
+  "path": "infitech/mutations/dilinthia_mutation.json",
+  "enabled": true,
+  "chance": 1.0,
+  "child": "infitech:dilinthia_plant",
+  "parent1": "resource:quartzanthemum_plant",
+  "parent2": "infitech:heliopis_plant"
+}

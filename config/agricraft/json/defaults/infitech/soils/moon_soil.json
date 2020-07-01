@@ -1,0 +1,18 @@
+{
+  "path": "infitech/soils/moon_soil.json",
+  "enabled": true,
+  "id": "moon_soil",
+  "name": "Moon Soil",
+  "varients": [
+    {
+      "item": "contenttweaker:moon_soil",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "path": "infitech/mutations/heliopis_mutation.json",
+  "enabled": true,
+  "chance": 1.0,
+  "child": "infitech:heliopis_plant",
+  "parent1": "resource:quartzanthemum_plant",
+  "parent2": "resource:nitorwart_plant"
+}
