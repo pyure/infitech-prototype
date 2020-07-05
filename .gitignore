@@ -58,7 +58,7 @@ config/jei/bookmarks.ini
 config/jei/worldSettings.cfg
 config/NEI/client.cfg
 config/ftbutilities.cfg
-config/agricraft/json/*
+
 config/pneumaticcraft/MicromissileDefaults.cfg
 config/betterfps.json
 config/Guide-API/Guide-API.cfg
