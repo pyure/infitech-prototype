@@ -38,6 +38,14 @@ var helium_infused_dilithium_dust = VanillaFactory.createItem("helium_infused_di
 helium_infused_dilithium_dust.maxStackSize = 64;
 helium_infused_dilithium_dust.register();
 
+var research_book = VanillaFactory.createItem("research_book");
+research_book.maxStackSize = 1;
+research_book.register();
+
+var botany_data = VanillaFactory.createItem("botany_data");
+botany_data.maxStackSize = 64;
+botany_data.register();
+
 // Fire Bow
 var item = VanillaFactory.createItem("fire_bow");
 item.maxStackSize = 1;
