@@ -189,10 +189,18 @@ recipes.addShaped("infitech3_tile.nuclearcraft.bin", <nuclearcraft:bin>, [
   [<ore:cableGtSingleCopper>, <ore:blockObsidian>, itemDuct], 
   [<ore:plateSteel>, <ore:pipeSmallSteel>, <ore:plateSteel>]]);
   
+var fuelLEU233 = <nuclearcraft:fuel_uranium>;
+var fuelHEU233 = <nuclearcraft:fuel_uranium:2>;
 var fuelLEU235 = <nuclearcraft:fuel_uranium:4>;
 var fuelHEU235 = <nuclearcraft:fuel_uranium:6>;
+var uranium238Ingot = <gregtech:meta_item_1:10075>;
+var uranium238Dust = <gregtech:meta_item_1:2075>;
 recipes.addShapeless("it3_nc_leu235", fuelLEU235, [<ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
 recipes.addShapeless("it3_nc_heu235", fuelHEU235, [<ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium235>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>, <ore:dustUranium>]);
+recipes.addShapeless("it3_nc_leu233", fuelLEU233, [<nuclearcraft:uranium>,uranium238Ingot,uranium238Ingot,uranium238Ingot,uranium238Ingot,uranium238Ingot,uranium238Ingot,uranium238Ingot,uranium238Ingot]);
+recipes.addShapeless("it3_nc_leu233_1", fuelLEU233, [<nuclearcraft:uranium>,uranium238Dust,uranium238Dust,uranium238Dust,uranium238Dust,uranium238Dust,uranium238Dust,uranium238Dust,uranium238Dust]);
+recipes.addShapeless("it3_nc_heu233", fuelHEU233, [<nuclearcraft:uranium>,<nuclearcraft:uranium>,<nuclearcraft:uranium>,<nuclearcraft:uranium>,uranium238Dust,uranium238Dust,uranium238Dust,uranium238Dust,uranium238Dust]);
+recipes.addShapeless("it3_nc_heu233_1", fuelHEU233, [<nuclearcraft:uranium>,<nuclearcraft:uranium>,<nuclearcraft:uranium>,<nuclearcraft:uranium>,uranium238Ingot,uranium238Ingot,uranium238Ingot,uranium238Ingot,uranium238Ingot]);
 
 // Allow GT Borax Dust to count as Boron oredict
 var ingotBoron = <nuclearcraft:ingot:5>;
