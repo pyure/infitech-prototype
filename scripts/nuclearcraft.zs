@@ -447,7 +447,7 @@ packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Conf
 packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1})).inputs(<ore:nuggetCalifornium252Oxide> * 9).outputs(<ore:ingotCalifornium252Oxide>.firstItem).duration(10).EUt(12).buildAndRegister();
 
 
-// Helium Cooler
+// 	 Cooler
 var helium_cooler = <nuclearcraft:cooler:8>;
 fluid_canner.recipeBuilder() 
     .fluidInputs(<liquid:helium> * 1000)
@@ -691,3 +691,10 @@ chemical_reactor.recipeBuilder().fluidInputs([<liquid:fluorite_water> * 666, <li
 
 // Add back crushed fluorite recipe with Centrifuge instead so it has a GT presence and doesn't conflict
 centrifuge.recipeBuilder().fluidInputs([<liquid:fluorite_water> * 666]).outputs([crushed_fluorite]).duration(240).EUt(130).buildAndRegister();
+
+// Remove weird sugar -> ethanol recipe.  It doesn't really cause balance issues but it looks weird.
+chemical_reactor.findRecipe(15, null, [<liquid:water> * 1000, <liquid:sugar> * 144]).remove();
+
+// Replace the Ethanol + Glowing Shrooms -> Radaway recipe to use non-NC Ethanol
+chemical_reactor.findRecipe(10, [<nuclearcraft:glowing_mushroom> * 3], [<liquid:ethanol> * 1000]).remove();
+chemical_reactor.recipeBuilder().fluidInputs([<liquid:bio.ethanol> * 250]).inputs([<nuclearcraft:glowing_mushroom> * 3]).fluidOutputs([<liquid:radaway> * 250]).duration(400).EUt(45).buildAndRegister();
