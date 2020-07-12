@@ -628,7 +628,9 @@ mixer.recipeBuilder()
 	.duration(20)
 	.EUt(16)
 	.buildAndRegister();
-	
+
+var graphite_nugget = <gregtech:meta_item_1:9204>;
+alloy_smelter.findRecipe(16, [<minecraft:iron_nugget> *1, graphite_nugget *1], [null]).remove();		
 alloy_smelter.findRecipe(8, [<minecraft:sand> * 2, <minecraft:clay_ball> * 1], [null]).remove();
 
 recipes.addShaped("it3_gt_resistor", <metaitem:component.resistor> *1, [
