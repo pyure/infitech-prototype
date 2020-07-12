@@ -381,3 +381,6 @@ chemical_reactor.recipeBuilder().inputs([<ore:crushedIridium> * 1, combIridium *
 
 // Heliopis
 centrifuge.recipeBuilder().inputs([<ore:pollenHelium> * 1]).fluidOutputs([<liquid:helium> * 10]).duration(40).EUt(12).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<advancedrocketry:moonturf> * 1, <ore:pollenHelium> * 1]).fluidOutputs([<liquid:helium> * 25]).duration(720).EUt(190).buildAndRegister();
+chemical_reactor.recipeBuilder().inputs([<advancedrocketry:moonturf_dark> * 1, <ore:pollenHelium> * 1]).fluidOutputs([<liquid:helium> * 25]).duration(420).EUt(190).buildAndRegister();
+

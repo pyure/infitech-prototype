@@ -59,6 +59,7 @@ var blockThorium = <nuclearcraft:ingot_block:3>;
 var blockLithium = <nuclearcraft:ingot_block:6>;
 var blockMagnesium = <nuclearcraft:ingot_block:7>;
 var crushed_fluorite = <nuclearcraft:gem_dust:5>;
+var helium_cooler = <nuclearcraft:cooler:8>;
 
 recipes.remove(blockUranium);
 recipes.remove(blockBoron);
@@ -448,9 +449,8 @@ packer.recipeBuilder().notConsumable(<metaitem:circuit.integrated>.withTag({Conf
 
 
 // 	 Cooler
-var helium_cooler = <nuclearcraft:cooler:8>;
 fluid_canner.recipeBuilder() 
-    .fluidInputs(<liquid:helium> * 1000)
+    .fluidInputs(<liquid:liquidhelium> * 100)
     .inputs(<nuclearcraft:cooler>)
     .outputs(helium_cooler * 1 )
     .duration(50)
@@ -698,3 +698,7 @@ chemical_reactor.findRecipe(15, null, [<liquid:water> * 1000, <liquid:sugar> * 1
 // Replace the Ethanol + Glowing Shrooms -> Radaway recipe to use non-NC Ethanol
 chemical_reactor.findRecipe(10, [<nuclearcraft:glowing_mushroom> * 3], [<liquid:ethanol> * 1000]).remove();
 chemical_reactor.recipeBuilder().fluidInputs([<liquid:bio.ethanol> * 250]).inputs([<nuclearcraft:glowing_mushroom> * 3]).fluidOutputs([<liquid:radaway> * 250]).duration(400).EUt(45).buildAndRegister();
+
+// Replace the NC Helium Cooler recipe with a "cheaper" one since Liquid Helium is a lot more valuable now.
+mods.nuclearcraft.infuser.removeRecipeWithOutput(helium_cooler);
+mods.nuclearcraft.infuser.addRecipe([<nuclearcraft:cooler>, <liquid:liquidhelium> * 100, helium_cooler, 3.0, 8.5]);
