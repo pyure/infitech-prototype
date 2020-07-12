@@ -315,7 +315,7 @@ recipes.addShaped("it3_advancedrocketry_coiltitanium", titanium_coil, [
 recipes.removeByRecipeName("advancedrocketry:coiliridium");
 assembler.recipeBuilder()
   .inputs(<ore:wireGtQuadrupleSteel> * 8)
-  .fluidInputs([<liquid:iridium> * 488])
+  .fluidInputs([<liquid:iridium> * 976])
   .outputs(iridium_coil * 1)
   .duration(140)
   .EUt(512)
