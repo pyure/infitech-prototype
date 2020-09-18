@@ -7,7 +7,7 @@
   "dimension_filter": ["dimension_id:0"],
   "generator": {
     "type": "ellipsoid",
-    "radius": [14, 16]
+    "radius": [11, 12]
   },
   "filler": {
     "type": "simple",
