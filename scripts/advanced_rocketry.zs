@@ -667,43 +667,43 @@ recipes.addShapeless("it3_advancedrocketry_rocketfluidloader", <advancedrocketry
 // Precision Assembler
 recipes.remove(<advancedrocketry:precisionassemblingmachine>);
 recipes.addShaped("it3_advancedrocketry_precisionassemblingmachine", <advancedrocketry:precisionassemblingmachine>, [
-	[<metaitem:robot.arm.hv>, <advancedrocketry:misc>, <ore:stickDiamond>], 
-	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
-	[<ore:wireGtQuadrupleKanthal>, <ore:gearSteel>, <metaitem:conveyor.module.hv>]]);
+	[<metaitem:robot.arm.mv>, <advancedrocketry:misc>, <ore:stickDiamond>], 
+	[<ore:circuitGood>, <libvulpes:structuremachine>, <ore:circuitGood>], 
+	[<ore:wireGtQuadrupleAluminium>, <ore:gearSteel>, <metaitem:conveyor.module.mv>]]);
 
 // Crystallizer
 recipes.remove(<advancedrocketry:crystallizer>);
 recipes.addShaped("it3_advancedrocketry_crystallizer", <advancedrocketry:crystallizer>, [
 	[<minecraft:quartz>, <advancedrocketry:misc>, <minecraft:quartz>], 
-	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
+	[<ore:circuitGood>, <libvulpes:structuremachine>, <ore:circuitGood>], 
 	[<ore:cableGtSingleGold>, <ore:plateSteel>, <ore:cableGtSingleGold>]]);
 
 // Lathe
 recipes.remove(<advancedrocketry:lathe>);
 recipes.addShaped("it3_advancedrocketry_lathe", <advancedrocketry:lathe>, [
 	[<ore:stickIron>, <advancedrocketry:misc>, <ore:stickIron>], 
-	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
+	[<ore:circuitGood>, <libvulpes:structuremachine>, <ore:circuitGood>], 
 	[<ore:plateSteel>, <ore:gearSteel>, <ore:plateSteel>]]);
 
 // Rolling Machine
 recipes.remove(<advancedrocketry:rollingmachine>);
 recipes.addShaped("it3_advancedrocketry_rollingmachine", <advancedrocketry:rollingmachine>, [
 	[<ore:gearSteel>, <advancedrocketry:misc>, <ore:gearSteel>], 
-	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
-	[<minecraft:iron_block>, <ore:circuitAdvanced>, <minecraft:iron_block>]]);
+	[<ore:circuitGood>, <libvulpes:structuremachine>, <ore:circuitGood>], 
+	[<minecraft:iron_block>, <ore:circuitGood>, <minecraft:iron_block>]]);
 
 // Electrolyzer
 recipes.remove(<advancedrocketry:electrolyser>);
 recipes.addShaped("it3_advancedrocketry_electrolyser", <advancedrocketry:electrolyser>, [
 	[<ore:plateSteel>, <advancedrocketry:misc>, <ore:plateSteel>], 
 	[<ore:wireGtQuadrupleElectrum>, <libvulpes:structuremachine>, <ore:wireGtQuadrupleElectrum>], 
-	[<ore:circuitAdvanced>, <minecraft:redstone_torch>, <ore:circuitAdvanced>]]);
+	[<ore:circuitGood>, <minecraft:redstone_torch>, <ore:circuitGood>]]);
 
 // Cutting Machine
 recipes.remove(<advancedrocketry:cuttingmachine>);
 recipes.addShaped("it3_advancedrocketry_cuttingmachine", <advancedrocketry:cuttingmachine>, [
 	[<ore:gearSteel>, <advancedrocketry:misc>, <ore:craftingDiamondBlade>], 
-	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
+	[<ore:circuitGood>, <libvulpes:structuremachine>, <ore:circuitGood>], 
 	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
 
 // Black Hole Generator
@@ -738,14 +738,14 @@ recipes.addShaped("it3_advancedrocketry_stationbuilder", <advancedrocketry:stati
 recipes.remove(<advancedrocketry:oxygenscrubber>);
 recipes.addShaped("it3_advancedrocketry_oxygenscrubber", <advancedrocketry:oxygenscrubber>, [
 	[<minecraft:iron_bars>, <ore:rotorSteel>, <minecraft:iron_bars>], 
-	[<minecraft:iron_bars>, <metaitem:electric.motor.hv>, <minecraft:iron_bars>], 
+	[<minecraft:iron_bars>, <metaitem:electric.motor.mv>, <minecraft:iron_bars>], 
 	[<minecraft:iron_bars>, <libvulpes:structuremachine>, <minecraft:iron_bars>]]);
 
 // Oxygen Vent
 recipes.remove(<advancedrocketry:oxygenvent>);
 recipes.addShaped("it3_advancedrocketry_oxygenvent", <advancedrocketry:oxygenvent>, [
 	[<minecraft:iron_bars>, <ore:rotorSteel>, <minecraft:iron_bars>], 
-	[<minecraft:iron_bars>, <metaitem:electric.motor.hv>, <minecraft:iron_bars>], 
+	[<minecraft:iron_bars>, <metaitem:electric.motor.mv>, <minecraft:iron_bars>], 
 	[<minecraft:iron_bars>, <advancedrocketry:fueltank>, <minecraft:iron_bars>]]);
 
 // Gas Charge Pad
@@ -781,7 +781,7 @@ recipes.remove(<advancedrocketry:oxygendetection>);
 recipes.addShaped("it3_advancedrocketry_oxygendetection", <advancedrocketry:oxygendetection>, [
 	[<ore:plateSteel>, <advancedrocketry:misc>, <ore:plateSteel>], 
 	[<minecraft:iron_bars>, <libvulpes:structuremachine>, <ore:rotorSteel>], 
-	[<ore:plateSteel>, <ore:circuitAdvanced>, <ore:plateSteel>]]);
+	[<ore:plateSteel>, <ore:circuitGood>, <ore:plateSteel>]]);
 
 // Station gravity Controller
 recipes.remove(<advancedrocketry:gravitycontroller>);
@@ -832,7 +832,7 @@ recipes.addShapeless("it3_advancedrocketry_stationmarker", <advancedrocketry:sta
 
 // Altitude Controller
 recipes.remove(<advancedrocketry:altitudecontroller>);
-recipes.addShapeless("it3_advancedrocketry_altitudecontroller", <advancedrocketry:altitudecontroller>, [<libvulpes:structuremachine>, <ore:circuitAdvanced>, <advancedrocketry:misc>]);
+recipes.addShapeless("it3_advancedrocketry_altitudecontroller", <advancedrocketry:altitudecontroller>, [<libvulpes:structuremachine>, <ore:circuitGood>, <advancedrocketry:misc>]);
 
 // Railgun
 recipes.remove(<advancedrocketry:railgun>);
@@ -874,7 +874,7 @@ recipes.addShaped("it3_advancedrocketry_beacon", <advancedrocketry:beacon>, [
 recipes.remove(<advancedrocketry:blockpump>);
 recipes.addShaped("it3_advancedrocketry_blockpump", <advancedrocketry:blockpump>, [
 	[<ore:gearSteel>, <advancedrocketry:misc>, <ore:gearSteel>], 
-	[<ore:circuitAdvanced>, <meta_tile_entity:hull.ev>, <ore:circuitAdvanced>], 
+	[<ore:circuitGood>, <meta_tile_entity:hull.ev>, <ore:circuitGood>], 
 	[<ore:plateStainlessSteel>, <ore:rotorSteel>, <ore:plateStainlessSteel>]]);
 
 // Essentia Centrifuge
@@ -912,9 +912,9 @@ assembler.recipeBuilder()
 // Guidance Computer Hatch
 recipes.remove(<advancedrocketry:loader:6>);
 recipes.addShaped("it3_advancedrocketry_guidancecomputeraccesshatch", <advancedrocketry:loader:6>, [
-	[null, <ore:circuitAdvanced>, null], 
+	[null, <ore:circuitGood>, null], 
 	[<ore:plateStainlessSteel>, <meta_tile_entity:hull.ev>, <ore:plateStainlessSteel>], 
-	[null, <ore:circuitAdvanced>, null]]);
+	[null, <ore:circuitGood>, null]]);
 
 // Control Circuit Board (no longer used by IT3)
 recipes.remove(<advancedrocketry:ic:3>);
