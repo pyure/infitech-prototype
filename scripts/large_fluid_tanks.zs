@@ -29,79 +29,78 @@ var tankStar = <fluidtank:blocktank7>;
 // *** TIER 0 ***
 // Wood Tank
 recipes.addShaped("it3_fluidtank_tankwood", tankWood, [
-  [<ore:blockGlass>, null, <ore:blockGlass>], 
+  [null, null, null], 
   [<ore:blockGlass>, <ore:logWood>, <ore:blockGlass>], 
   [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);  
 
 // *** TIER 1 ***  
 // Stone Tank
 recipes.addShaped("it3_fluidtank_tankstone", tankStone, [
+  [<ore:stone>, <ore:plateWroughtIron>, <ore:stone>], 
   [<ore:stone>, <ore:fluidTankTier0>, <ore:stone>], 
-  [<ore:fluidTankTier0>, <ore:plateWroughtIron>, <ore:fluidTankTier0>], 
-  [<ore:plateWroughtIron>, <ore:fluidTankTier0>, <ore:plateWroughtIron>]]);
+  [<ore:stone>, <ore:fluidTankTier0>, <ore:stone>]]);
 
 // *** TIER 2 ***  
 // Copper Tank
 recipes.addShaped("it3_fluidtank_tankcopper", tankCopper, [
+  [<ore:plateCopper>, <ore:plateStainlessSteel>, <ore:plateCopper>], 
   [<ore:plateCopper>, <ore:fluidTankTier1>, <ore:plateCopper>], 
-  [<ore:fluidTankTier1>, <ore:plateStainlessSteel>, <ore:fluidTankTier1>], 
-  [<ore:plateStainlessSteel>, <ore:fluidTankTier1>, <ore:plateStainlessSteel>]]);
+  [<ore:plateCopper>, <ore:fluidTankTier1>, <ore:plateCopper>]]);
   
 // Tin Tank
 recipes.addShaped("it3_fluidtank_tanktin", tankTin, [
+  [<ore:plateTin>, <ore:plateStainlessSteel>, <ore:plateTin>], 
   [<ore:plateTin>, <ore:fluidTankTier1>, <ore:plateTin>], 
-  [<ore:fluidTankTier1>, <ore:plateStainlessSteel>, <ore:fluidTankTier1>], 
-  [<ore:plateStainlessSteel>, <ore:fluidTankTier1>, <ore:plateStainlessSteel>]]);
-
+  [<ore:plateTin>, <ore:fluidTankTier1>, <ore:plateTin>]]);
 
 // *** TIER 3 ***  
 // Iron Tank
 recipes.addShaped("it3_fluidtank_tankiron", tankIron, [
+  [<ore:plateIron>, <ore:plateTitanium>, <ore:plateIron>], 
   [<ore:plateIron>, <ore:fluidTankTier2>, <ore:plateIron>], 
-  [<ore:fluidTankTier2>, <ore:plateTitanium>, <ore:fluidTankTier2>], 
-  [<ore:plateTitanium>, <ore:fluidTankTier2>, <ore:plateTitanium>]]);  
+  [<ore:plateIron>, <ore:fluidTankTier2>, <ore:plateIron>]]);  
   
 // Lead Tank
 recipes.addShaped("it3_fluidtank_tankLead", tankLead, [
+  [<ore:plateLead>, <ore:plateTitanium>, <ore:plateLead>], 
   [<ore:plateLead>, <ore:fluidTankTier2>, <ore:plateLead>], 
-  [<ore:fluidTankTier2>, <ore:plateTitanium>, <ore:fluidTankTier2>], 
-  [<ore:plateTitanium>, <ore:fluidTankTier2>, <ore:plateTitanium>]]);    
+  [<ore:plateLead>, <ore:fluidTankTier2>, <ore:plateLead>]]);    
 
 // *** TIER 4 ***
 // Bronze Tank
 recipes.addShaped("it3_fluidtank_tankbronze", tankBronze, [
+  [<ore:plateBronze>, <ore:plateOsmium>, <ore:plateBronze>], 
   [<ore:plateBronze>, <ore:fluidTankTier3>, <ore:plateBronze>], 
-  [<ore:fluidTankTier3>, <ore:plateOsmium>, <ore:fluidTankTier3>], 
-  [<ore:plateOsmium>, <ore:fluidTankTier3>, <ore:plateOsmium>]]);      
+  [<ore:plateBronze>, <ore:fluidTankTier3>, <ore:plateBronze>]]);      
 
 // Silver Tank
 recipes.addShaped("it3_fluidtank_tanksilver", tankSilver, [
+  [<ore:plateSilver>, <ore:plateOsmium>, <ore:plateSilver>], 
   [<ore:plateSilver>, <ore:fluidTankTier3>, <ore:plateSilver>], 
-  [<ore:fluidTankTier3>, <ore:plateOsmium>, <ore:fluidTankTier3>], 
-  [<ore:plateOsmium>, <ore:fluidTankTier3>, <ore:plateOsmium>]]);   
+  [<ore:plateSilver>, <ore:fluidTankTier3>, <ore:plateSilver>]]);   
 
 // *** TIER 5 ***
 // Gold Tank
 recipes.addShaped("it3_fluidtank_tankGold", tankGold, [
+  [<ore:plateGold>, <ore:plateNaquadah>, <ore:plateGold>], 
   [<ore:plateGold>, <ore:fluidTankTier4>, <ore:plateGold>], 
-  [<ore:fluidTankTier4>, <ore:plateNaquadah>, <ore:fluidTankTier4>], 
-  [<ore:plateNaquadah>, <ore:fluidTankTier4>, <ore:plateNaquadah>]]);   
+  [<ore:plateGold>, <ore:fluidTankTier4>, <ore:plateGold>]]);   
     
 // Diamond Tank
 recipes.addShaped("it3_fluidtank_tankDiamond", tankDiamond, [
+  [<ore:plateDiamond>, <ore:plateNaquadah>, <ore:plateDiamond>], 
   [<ore:plateDiamond>, <ore:fluidTankTier4>, <ore:plateDiamond>], 
-  [<ore:fluidTankTier4>, <ore:plateNaquadah>, <ore:fluidTankTier4>], 
-  [<ore:plateNaquadah>, <ore:fluidTankTier4>, <ore:plateNaquadah>]]);   
+  [<ore:plateDiamond>, <ore:fluidTankTier4>, <ore:plateDiamond>]]);   
 
 // Emerald Tank
 recipes.addShaped("it3_fluidtank_tankEmerald", tankEmerald, [
+  [<ore:plateEmerald>, <ore:plateNaquadah>, <ore:plateEmerald>], 
   [<ore:plateEmerald>, <ore:fluidTankTier4>, <ore:plateEmerald>], 
-  [<ore:fluidTankTier4>, <ore:plateNaquadah>, <ore:fluidTankTier4>], 
-  [<ore:plateNaquadah>, <ore:fluidTankTier4>, <ore:plateNaquadah>]]);   
+  [<ore:plateEmerald>, <ore:fluidTankTier4>, <ore:plateEmerald>]]);   
 
 // *** TIER 5 ***
 // Star Tank
 recipes.addShaped("it3_fluidtank_tankStar", tankStar, [
+  [<ore:plateNetherStar>, <ore:plateNaquadria>, <ore:plateNetherStar>], 
   [<ore:plateNetherStar>, <ore:fluidTankTier5>, <ore:plateNetherStar>], 
-  [<ore:fluidTankTier5>, <ore:plateNaquadria>, <ore:fluidTankTier5>], 
-  [<ore:plateNaquadria>, <ore:fluidTankTier5>, <ore:plateNaquadria>]]);   
+  [<ore:plateNetherStar>, <ore:fluidTankTier5>, <ore:plateNetherStar>]]);   
