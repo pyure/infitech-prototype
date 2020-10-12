@@ -459,14 +459,23 @@ var user_interface = <advancedrocketry:misc>;
 recipes.remove(user_interface);
 assembler.recipeBuilder()
   .inputs(<metaitem:component.smd.diode> * 3)
-  .inputs(<metaitem:plate.central_processing_unit> * 1)
-  .inputs(<ore:paneGlass> * 1)
-  .inputs(<ore:dyeLime> * 2)
+  .inputs(<ore:circuitGood> * 1)
+  .inputs(<ore:paneGlass> * 8)
   .inputs(<metaitem:component.smd.transistor> * 4)
   .outputs(user_interface)
   .duration(200)
-  .EUt(140)
+  .EUt(80)
   .buildAndRegister();     
+  
+assembler.recipeBuilder()
+  .inputs(<metaitem:component.diode> * 12)
+  .inputs(<ore:circuitGood> * 1)
+  .inputs(<ore:paneGlass> * 8)
+  .inputs(<metaitem:component.transistor> * 16)
+  .outputs(user_interface)
+  .duration(600)
+  .EUt(80)
+  .buildAndRegister();       
 
 // Basic Lens  
 recipes.remove(<advancedrocketry:lens>);
@@ -477,25 +486,25 @@ recipes.remove(<advancedrocketry:satelliteprimaryfunction>);
 recipes.addShaped("it3_advancedrocketry_opticalsensor", <advancedrocketry:satelliteprimaryfunction>, [
 	[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>], 
 	[null, <ore:craftingLensSilver>, null], 
-	[null, <metaitem:sensor.ev>, null]]);
+	[null, <metaitem:sensor.mv>, null]]);
 
 // Composition Sensor
 recipes.remove(<advancedrocketry:satelliteprimaryfunction:1>);
 recipes.addShaped("it3_advancedrocketry_compositionsensor", <advancedrocketry:satelliteprimaryfunction:1>, [
 	[<advancedrocketry:satelliteprimaryfunction>, <advancedrocketry:ic:1>, <advancedrocketry:satelliteprimaryfunction>], 
-	[<metaitem:wafer.glowstone>, <ore:circuitExtreme>, <metaitem:wafer.glowstone>]]);
+	[<metaitem:wafer.glowstone>, <ore:circuitAdvanced>, <metaitem:wafer.glowstone>]]);
 
 // Mass Detector
 recipes.remove(<advancedrocketry:satelliteprimaryfunction:2>);
 recipes.addShaped("it3_advancedrocketry_massdetector", <advancedrocketry:satelliteprimaryfunction:2>, [
 	[<advancedrocketry:satelliteprimaryfunction>, <ore:gemDilithium>, <advancedrocketry:satelliteprimaryfunction>], 
-	[<metaitem:wafer.glowstone>, <ore:circuitExtreme>, <metaitem:wafer.glowstone>]]);
+	[<metaitem:wafer.glowstone>, <ore:circuitAdvanced>, <metaitem:wafer.glowstone>]]);
 
 // Microwave transmittor
 recipes.remove(<advancedrocketry:satelliteprimaryfunction:3>);
 recipes.addShaped("it3_advancedrocketry_microwavetransmitter", <advancedrocketry:satelliteprimaryfunction:3>, [
 	[<advancedrocketry:lens>, <advancedrocketry:ic:1>, <advancedrocketry:lens>], 
-	[<metaitem:wafer.glowstone>, <ore:circuitExtreme>, <metaitem:wafer.glowstone>]]);
+	[<metaitem:wafer.glowstone>, <ore:circuitAdvanced>, <metaitem:wafer.glowstone>]]);
 
 // Saw Blade Assembly
 recipes.remove(<advancedrocketry:sawblade>);
@@ -533,18 +542,18 @@ recipes.remove(<advancedrocketry:satelliteprimaryfunction:4>);
 recipes.addShaped("it3_advancedrocketry_oremapper", <advancedrocketry:satelliteprimaryfunction:4>, [
 	[null, <ore:stickCopper>, null], 
 	[<ore:plateTungstenSteel>, <ore:plateTungstenSteel>, <ore:plateTungstenSteel>], 
-	[<ore:circuitExtreme>, <advancedrocketry:orescanner>, <ore:circuitExtreme>]]);
+	[<ore:circuitAdvanced>, <advancedrocketry:orescanner>, <ore:circuitAdvanced>]]);
 
 // Satellite 
 recipes.remove(<advancedrocketry:satellite>);
 recipes.addShaped("it3_advancedrocketry_satellite", <advancedrocketry:satellite>, [
 	[<ore:sheetAluminum>, <ore:sheetAluminum>, <ore:sheetAluminum>], 
-	[<ore:stickTitanium>, <ore:circuitExtreme>, <ore:stickTitanium>], 
+	[<ore:stickTitanium>, <ore:circuitAdvanced>, <ore:stickTitanium>], 
 	[<ore:sheetAluminum>, <ore:sheetAluminum>, <ore:sheetAluminum>]]);
 
 // Space Station ID chip
 recipes.remove(<advancedrocketry:spacestationchip>);
-recipes.addShapeless("it3_advancedrocketry_spacestationidchip", <advancedrocketry:spacestationchip>, [<ore:circuitExtreme>, <libvulpes:linker>]);
+recipes.addShapeless("it3_advancedrocketry_spacestationidchip", <advancedrocketry:spacestationchip>, [<ore:circuitAdvanced>, <libvulpes:linker>]);
 
 // Carbon Scrubber Cartridge
 recipes.remove(<advancedrocketry:carbonscrubbercartridge>);
@@ -620,7 +629,7 @@ recipes.addShaped("it3_advancedrocketry_elitemotor", <libvulpes:elitemotor>, [
 recipes.remove(<advancedrocketry:rocketbuilder>);
 recipes.addShaped("it3_advancedrocketry_rocketbuilder", <advancedrocketry:rocketbuilder>, [
 	[<ore:stickTitanium>, <advancedrocketry:misc>, <ore:stickTitanium>], 
-	[<ore:circuitExtreme>, <libvulpes:structuremachine>, <ore:circuitExtreme>], 
+	[<ore:circuitAdvanced>, <libvulpes:structuremachine>, <ore:circuitAdvanced>], 
 	[<ore:gearTitanium>, <ore:plateTitanium>, <ore:gearTitanium>]]);
 
 // Fueling Station
@@ -732,7 +741,7 @@ recipes.remove(<advancedrocketry:stationbuilder>);
 recipes.addShaped("it3_advancedrocketry_stationbuilder", <advancedrocketry:stationbuilder>, [
 	[<ore:gearTitanium>, <ore:dustDilithium>, <ore:gearTitanium>], 
 	[<ore:dustDilithium>, <advancedrocketry:rocketbuilder>, <ore:dustDilithium>], 
-	[<ore:circuitExtreme>, <ore:dustDilithium>, <ore:circuitExtreme>]]);
+	[<ore:circuitAdvanced>, <ore:dustDilithium>, <ore:circuitAdvanced>]]);
 
 // CO2 Scrubber
 recipes.remove(<advancedrocketry:oxygenscrubber>);
@@ -765,7 +774,7 @@ recipes.addShaped("it3_advancedrocketry_observatory", <advancedrocketry:observat
 // Warp Core (Allows travel to other planets)
 recipes.remove(<advancedrocketry:warpcore>);
 recipes.addShaped("it3_advancedrocketry_warpcore", <advancedrocketry:warpcore>, [
-	[<ore:plateTitanium>, <ore:circuitExtreme>, <ore:plateTitanium>], 
+	[<ore:plateTitanium>, <ore:circuitAdvanced>, <ore:plateTitanium>], 
 	[<ore:coilIridium>, tungstensteel_coil, <ore:coilIridium>], 
 	[<ore:coilIridium>, <ore:coilIridium>, <ore:coilIridium>]]);
 
@@ -785,20 +794,20 @@ recipes.addShaped("it3_advancedrocketry_oxygendetection", <advancedrocketry:oxyg
 
 // Station gravity Controller
 recipes.remove(<advancedrocketry:gravitycontroller>);
-recipes.addShapeless("it3_advancedrocketry_gravitycontroller", <advancedrocketry:gravitycontroller>, [<meta_tile_entity:hull.ev>, <metaitem:field.generator.ev>, <ore:circuitExtreme>]);
+recipes.addShapeless("it3_advancedrocketry_gravitycontroller", <advancedrocketry:gravitycontroller>, [<meta_tile_entity:hull.ev>, <metaitem:field.generator.ev>, <ore:circuitAdvanced>]);
 
 // Microwave Receiver
 recipes.remove(<advancedrocketry:microwavereciever>);
 recipes.addShaped("it3_advancedrocketry_microwavereciever", <advancedrocketry:microwavereciever>, [
 	[<ore:plateLapis>, <ore:plateLapis>, <ore:plateLapis>], 
-	[<ore:circuitExtreme>, <meta_tile_entity:hull.ev>, <ore:circuitExtreme>], 
+	[<ore:circuitAdvanced>, <meta_tile_entity:hull.ev>, <ore:circuitAdvanced>], 
 	[<ore:plateGold>, <advancedrocketry:satelliteprimaryfunction>, <ore:plateGold>]]);
 
 // Biome Scanner
 recipes.remove(<advancedrocketry:biomescanner>);
 recipes.addShaped("it3_advancedrocketry_biomescanner", <advancedrocketry:biomescanner>, [
 	[<ore:plateTungstenSteel>, <advancedrocketry:satelliteprimaryfunction>, <ore:plateTungstenSteel>], 
-	[<ore:circuitExtreme>, <meta_tile_entity:hull.ev>, <ore:circuitExtreme>], 
+	[<ore:circuitAdvanced>, <meta_tile_entity:hull.ev>, <ore:circuitAdvanced>], 
 	[<ore:plateTungstenSteel>, <ore:plateTungstenSteel>, <ore:plateTungstenSteel>]]);
 
 // Atmosphere Terraformer
@@ -838,14 +847,14 @@ recipes.addShapeless("it3_advancedrocketry_altitudecontroller", <advancedrocketr
 recipes.remove(<advancedrocketry:railgun>);
 recipes.addShaped("it3_advancedrocketry_railgun", <advancedrocketry:railgun>, [
 	[null, <advancedrocketry:ic:1>, null], 
-	[<ore:circuitExtreme>, <meta_tile_entity:hull.ev>, <ore:circuitExtreme>], 
+	[<ore:circuitAdvanced>, <meta_tile_entity:hull.ev>, <ore:circuitAdvanced>], 
 	[<ore:rotorTungstenSteel>, tungstensteel_coil, <ore:rotorTungstenSteel>]]);
 
 // Holographic Planet Selector
 recipes.remove(<advancedrocketry:planetholoselector>);
 recipes.addShaped("it3_advancedrocketry_planetholoselector", <advancedrocketry:planetholoselector>, [
 	[<advancedrocketry:ic:1>, <minecraft:stone_button>, <advancedrocketry:ic:1>], 
-	[<ore:circuitExtreme>, <advancedrocketry:guidancecomputer>,<ore:circuitExtreme>], 
+	[<ore:circuitAdvanced>, <advancedrocketry:guidancecomputer>,<ore:circuitAdvanced>], 
 	[<advancedrocketry:ic:1>, <advancedrocketry:satelliteprimaryfunction:1>, <advancedrocketry:ic:1>]]);
 
 // Force Field Projector
@@ -881,7 +890,7 @@ recipes.addShaped("it3_advancedrocketry_blockpump", <advancedrocketry:blockpump>
 recipes.remove(<advancedrocketry:centrifuge>);
 recipes.addShaped("it3_advancedrocketry_centrifuge", <advancedrocketry:centrifuge>, [
 	[<ore:stickStainlessSteel>, <advancedrocketry:misc>, <ore:stickStainlessSteel>], 
-	[<ore:circuitExtreme>, <meta_tile_entity:hull.ev>, <ore:circuitExtreme>], 
+	[<ore:circuitAdvanced>, <meta_tile_entity:hull.ev>, <ore:circuitAdvanced>], 
 	[<ore:plateStainlessSteel>, <ore:rotorSteel>, <ore:plateStainlessSteel>]]);
 
 // Orbital Laser Drill
@@ -913,7 +922,7 @@ assembler.recipeBuilder()
 recipes.remove(<advancedrocketry:loader:6>);
 recipes.addShaped("it3_advancedrocketry_guidancecomputeraccesshatch", <advancedrocketry:loader:6>, [
 	[null, <ore:circuitGood>, null], 
-	[<ore:plateStainlessSteel>, <meta_tile_entity:hull.ev>, <ore:plateStainlessSteel>], 
+	[<ore:plateStainlessSteel>, <meta_tile_entity:hull.hv>, <ore:plateStainlessSteel>], 
 	[null, <ore:circuitGood>, null]]);
 
 // Control Circuit Board (no longer used by IT3)
